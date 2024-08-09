@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <NavbarSample />
-      <div>App</div>
+      <div className="min-h-screen bg-blue-300 pt-16">App</div>
     </>
   );
 }
