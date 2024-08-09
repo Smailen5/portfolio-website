@@ -3,7 +3,7 @@ import Hero from "./Components/Hero";
 import NavbarSample from "./Components/Navbar";
 import FormComponent from "./Components/FormComponent";
 
-
+const App = ()=>{
   return (
     <>
       <NavbarSample />
