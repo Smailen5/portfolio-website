@@ -2,8 +2,7 @@ import { Button } from "@nextui-org/react";
 
 const Hero = () => {
   return (
-    // rimuovi mb-[80vh] quando riposizioni in App
-    <section className="w-full mb-[80vh]">
+    <section className="w-full">
       <div className="flex flex-col gap-4 px-8">
         {/* icona con animazione con testo */}
         <div className="flex items-center gap-2">
