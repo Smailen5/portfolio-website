@@ -10,30 +10,32 @@ const Skills = () => {
     <section className="mx-auto flex w-full flex-col gap-8">
       <h3 className="text-center text-2xl font-semibold">Skill tecniche</h3>
       <div className="flex h-full w-full flex-col flex-wrap gap-8 md:grid md:grid-cols-3">
-        <div className="flex items-center justify-between bg-green-300 p-4">
-          JavaScript
+        <div className="flex items-center justify-between bg-green-300 p-4 uppercase">
+          <p className="font-semibold uppercase">JavaScript</p>
           <IoLogoJavascript color="yellow" size={24} className="bg-black" />
         </div>
-        <div className="flex items-center justify-between bg-green-300 p-4">
-          tailwind
+        <div className="flex items-center justify-between bg-green-300 p-4 uppercase">
+          <p className="font-semibold uppercase">tailwind</p>
           <RiTailwindCssFill size={24} className="fill-cyan-500" />
         </div>
-        <div className="flex items-center justify-between bg-green-300 p-4">
-          React
+        <div className="flex items-center justify-between bg-green-300 p-4 uppercase">
+          <p className="font-semibold uppercase">React</p>
           <IoLogoReact color="blue" size={24} className="animate-spin-slow" />
         </div>
-        <div className="flex items-center justify-between bg-green-300 p-4">
-          Git
+        <div className="flex items-center justify-between bg-green-300 p-4 uppercase">
+          <p className="font-semibold uppercase">Git</p>
           <FaGitAlt size={24} className="fill-orange-400" />
         </div>
-        <div className="flex items-center justify-between bg-green-300 p-4">
-          NextUI
+        <div className="flex items-center justify-between bg-green-300 p-4 uppercase">
+          <p className="font-semibold uppercase">NextUI</p>
           <SiNextui size={24} className="" />
         </div>
-        
+
         <div className="col-span-3 col-start-1">
           <p className="text-center">Guarda i miei lavori</p>
-          <Button className="w-full">Portfolio</Button>
+          <Button variant="solid" color="primary" className="w-full">
+            Portfolio
+          </Button>
         </div>
       </div>
     </section>
