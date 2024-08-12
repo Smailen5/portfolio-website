@@ -17,9 +17,9 @@ const Skills = () => {
           <SiNextui size={48} className="" />
         </div>
 
-        <div className="col-span-3 col-start-1">
+        <div className="space-y-4 md:col-start-2">
           <p className="text-center">Guarda i miei lavori</p>
-          <Button variant="solid" color="primary" className="w-full">
+          <Button variant="solid" color="primary" size="lg" className="w-full">
             Portfolio
           </Button>
         </div>
