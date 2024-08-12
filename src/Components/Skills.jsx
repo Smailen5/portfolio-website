@@ -14,7 +14,7 @@ const Skills = () => {
         })}
         <div className="flex items-center justify-between bg-green-300 p-4 uppercase">
           <p className="font-semibold uppercase">NextUI</p>
-          <SiNextui size={24} className="" />
+          <SiNextui size={48} className="" />
         </div>
 
         <div className="col-span-3 col-start-1">
