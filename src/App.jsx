@@ -10,7 +10,7 @@ const App = () => {
     <>
       <NavbarSample />
       <div className="min-h-screen bg-blue-300 pt-16">
-        <div className="flex flex-col justify-around gap-20 mt-20">
+        <div className="flex flex-col justify-around gap-20 mt-20 px-8">
           <Hero />
           <Presentation />
           <Skills />

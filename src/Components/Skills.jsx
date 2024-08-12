@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <section className="mx-auto flex w-full flex-col gap-8">
       <h3 className="text-center text-2xl font-semibold">Skill tecniche</h3>
-      <div className="flex h-full w-full flex-col flex-wrap gap-8 px-8 md:grid md:grid-cols-3">
+      <div className="flex h-full w-full flex-col flex-wrap gap-8 md:grid md:grid-cols-3">
         <div className="flex items-center justify-center bg-green-300 p-4">
           JavaScript
         </div>

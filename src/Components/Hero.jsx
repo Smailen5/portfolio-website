@@ -3,7 +3,7 @@ import { Button } from "@nextui-org/react";
 const Hero = () => {
   return (
     <section className="w-full">
-      <div className="flex flex-col gap-4 px-8">
+      <div className="flex flex-col gap-4">
         {/* icona con animazione con testo */}
         <div className="flex items-center gap-2">
           <div className="relative">
