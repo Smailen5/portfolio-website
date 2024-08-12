@@ -4,7 +4,7 @@ const Hero = () => {
   
 
   return (
-    <section className="mx-auto flex h-screen w-3/4 flex-col items-center justify-center gap-4">
+    <section className="mx-auto flex h-screen flex-col items-center justify-center gap-4">
       <div className="space-y-8">
         <div className="space-y-4">
           <div className="flex items-center gap-2">
@@ -22,9 +22,9 @@ const Hero = () => {
           </div>
           <p className="text-2xl">Frontend developer</p>
         </div>
-        <div className="flex flex-col gap-2">
-          <Button>Contattami</Button>
-          <Button>Progetti</Button>
+        <div className="flex flex-col gap-2 md:flex-row">
+          <Button className="flex-1">Contattami</Button>
+          <Button className="flex-1">Progetti</Button>
         </div>
       </div>
       {/* <div className="h-44 w-full bg-red-500"></div> */}
