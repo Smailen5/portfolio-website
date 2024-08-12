@@ -9,7 +9,7 @@ const HomeScreen = () => {
     <>
       <NavbarSample />
       <div className="min-h-screen bg-blue-300 py-16">
-        <div className="mt-20 flex flex-col justify-around gap-20 px-8">
+        <div className="mt-20 flex flex-col justify-around gap-20 px-6">
           <Hero />
           <Presentation />
           <Skills />
