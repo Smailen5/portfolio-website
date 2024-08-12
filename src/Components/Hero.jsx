@@ -17,17 +17,29 @@ const Hero = () => {
 
         {/* presentazione */}
         <div>
-          <h2 className="text-4xl">Ciao, sono </h2>
-          <h1 className="text-5xl font-bold">Smailen Vargas</h1>
+          <h2 className="text-5xl">Ciao, sono </h2>
+          <h1 className="text-6xl font-bold">Smailen Vargas</h1>
         </div>
-        <p className="text-2xl">Frontend developer</p>
+        <p className="text-3xl">Frontend developer</p>
 
         {/* call to action */}
         <div className="md:flex-star flex flex-col flex-wrap gap-2 md:flex-row">
-          <Button className="w-fit" variant="shadow" color="primary" endContent={<MdOutlineEmail />}>
+          <Button
+            className="w-fit"
+            variant="shadow"
+            color="primary"
+            size="lg"
+            endContent={<MdOutlineEmail />}
+          >
             Contattami
           </Button>
-          <Button className="w-fit" variant="shadow" color="secondary" startContent={<GoProjectRoadmap />}>
+          <Button
+            className="w-fit"
+            variant="shadow"
+            color="secondary"
+            size="lg"
+            startContent={<GoProjectRoadmap />}
+          >
             Progetti
           </Button>
         </div>
