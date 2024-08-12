@@ -1,6 +1,7 @@
 import { Button } from "@nextui-org/react";
 import { MdOutlineEmail } from "react-icons/md";
 import { GoProjectRoadmap } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -31,7 +32,7 @@ const Hero = () => {
             size="lg"
             endContent={<MdOutlineEmail />}
           >
-            Contattami
+           <Link to="/contact">Contattami</Link>
           </Button>
           <Button
             className="w-fit"
