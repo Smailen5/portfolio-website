@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 const Social = ({ name, link }) => {
   return (
-    <div className="flex items-center justify-center bg-green-300 p-4">
-      <a href={link} className="font-semibold uppercase">
+    <div className="flex items-center justify-center bg-blue-600 p-4">
+      <a href={link} className="font-semibold uppercase text-white">
         {name}
       </a>
     </div>
