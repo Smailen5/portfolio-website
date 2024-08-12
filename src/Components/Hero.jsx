@@ -41,7 +41,7 @@ const Hero = () => {
             size="lg"
             startContent={<GoProjectRoadmap />}
           >
-            Progetti
+            <Link to="/projects">Progetti</Link>
           </Button>
         </div>
       </div>
