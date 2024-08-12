@@ -1,4 +1,4 @@
-[
+const social = [
   {
     name: "Github",
     link: "https://github.com/smailen",
@@ -12,3 +12,5 @@
     link: "https://www.frontendmentor.io/profile/smailen",
   },
 ];
+
+export default social;
