@@ -1,4 +1,6 @@
 import { Button } from "@nextui-org/react";
+import { MdOutlineEmail } from "react-icons/md";
+import { GoProjectRoadmap } from "react-icons/go";
 
 const Hero = () => {
   return (
@@ -22,10 +24,10 @@ const Hero = () => {
 
         {/* call to action */}
         <div className="md:flex-star flex flex-col flex-wrap gap-2 md:flex-row">
-          <Button className="w-fit" variant="shadow" color="primary">
+          <Button className="w-fit" variant="shadow" color="primary" endContent={<MdOutlineEmail />}>
             Contattami
           </Button>
-          <Button className="w-fit" variant="shadow" color="secondary">
+          <Button className="w-fit" variant="shadow" color="secondary" startContent={<GoProjectRoadmap />}>
             Progetti
           </Button>
         </div>
