@@ -17,5 +17,9 @@ export const routes = [
             path: ":id",
             element: <SingleProject/>
         }
+    },
+    {
+        path: "*",
+        element: <Error/>
     }
 ]
