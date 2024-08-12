@@ -22,10 +22,10 @@ const Hero = () => {
 
         {/* call to action */}
         <div className="md:flex-star flex flex-col flex-wrap gap-2 md:flex-row">
-          <Button className="w-fit" variant="solid">
+          <Button className="w-fit" variant="shadow" color="primary">
             Contattami
           </Button>
-          <Button className="w-fit" variant="solid">
+          <Button className="w-fit" variant="shadow" color="secondary">
             Progetti
           </Button>
         </div>
