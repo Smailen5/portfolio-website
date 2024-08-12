@@ -8,6 +8,7 @@ import {
   DropdownMenu,
   DropdownItem,
 } from "@nextui-org/react";
+import { Link } from "react-router-dom";
 
 const NavbarSample = () => {
   return (
@@ -22,9 +23,9 @@ const NavbarSample = () => {
           </Button>
         </DropdownTrigger>
         <DropdownMenu aria-label="Dropdown Variants">
-          <DropdownItem key="new">Home</DropdownItem>
-          <DropdownItem key="copy">Progetti</DropdownItem>
-          <DropdownItem key="edit">Contattami</DropdownItem>
+          <DropdownItem key="new"><Link to="/">Home</Link></DropdownItem>
+          <DropdownItem key="copy"><Link to="/projects">Progetti</Link></DropdownItem>
+          <DropdownItem key="edit"><Link to="/contact">Contattami</Link></DropdownItem>
         </DropdownMenu>
       </Dropdown>
     </Navbar>
