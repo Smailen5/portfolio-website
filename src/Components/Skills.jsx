@@ -12,7 +12,7 @@ const Skills = () => {
         {icons.map((skill) => {
           return <SkillsIcons key={skill.name} {...skill} />;
         })}
-        <div className="flex items-center justify-between bg-green-300 p-4 uppercase">
+        <div className="flex items-center justify-between rounded-md bg-white p-4 uppercase shadow-md shadow-slate-400">
           <p className="font-semibold uppercase">NextUI</p>
           <SiNextui size={48} className="" />
         </div>
