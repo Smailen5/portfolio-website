@@ -1,6 +1,8 @@
 import { Button } from "@nextui-org/react";
 
 const Hero = () => {
+  
+
   return (
     <section className="mx-auto flex h-screen w-3/4 flex-col items-center justify-center gap-4">
       <div className="space-y-8">
@@ -12,7 +14,7 @@ const Hero = () => {
               <div className="size-4 rounded-full bg-green-600" />
             </div>
 
-            <p className="uppercase">disponibile per un'assunzione</p>
+            <p className="uppercase">disponibile per un&apos;assunzione</p>
           </div>
           <div>
             <h2 className="text-4xl">Ciao, sono </h2>
