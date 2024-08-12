@@ -13,7 +13,7 @@ const Presentation = () => {
           diventare un full-stack developer.
         </p>
         <p>
-          Dai un'occhiata ai miei progetti per vedere come posso essere di
+          Dai un&apos;occhiata ai miei progetti per vedere come posso essere di
           valore per il tuo team.
         </p>
       </section>
