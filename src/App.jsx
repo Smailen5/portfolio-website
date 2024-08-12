@@ -9,10 +9,9 @@ const App = () => {
     <>
       <NavbarSample />
       <div className="min-h-screen bg-blue-300 pt-16">
-        <Hero />
-
         {/* presentazione */}
         <div className="flex flex-col justify-around gap-20">
+          <Hero />
           <Presentation />
 
           {/* sezione competenze */}
