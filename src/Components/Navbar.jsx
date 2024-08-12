@@ -23,9 +23,9 @@ const NavbarSample = () => {
           </Button>
         </DropdownTrigger>
         <DropdownMenu aria-label="Dropdown Variants">
-          <DropdownItem key="new"><Link to="/">Home</Link></DropdownItem>
-          <DropdownItem key="copy"><Link to="/projects">Progetti</Link></DropdownItem>
-          <DropdownItem key="edit"><Link to="/contact">Contattami</Link></DropdownItem>
+          <DropdownItem key="home"><Link to="/">Home</Link></DropdownItem>
+          <DropdownItem key="project"><Link to="/projects">Progetti</Link></DropdownItem>
+          <DropdownItem key="contact"><Link to="/contact">Contattami</Link></DropdownItem>
         </DropdownMenu>
       </Dropdown>
     </Navbar>
