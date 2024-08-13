@@ -10,7 +10,10 @@ const Project = ({ link, title, technologies, liveSite, github }) => {
       {/* PROGETTO SINGOLO */}
       <div className="bg-whit flex flex-col gap-4">
         {/* immagine */}
-        <img src={images[link].small} className="rounded-md" />
+        <picture>
+          <source media="(1024px)" srcSet={images[link].large} />
+          <img src={images[link].small} className="rounded-md" />
+        </picture>
         {/* contenitore nome progetto e descrizione */}
         <div className="flex-1 space-y-2 bg-teal-300 text-left">
           <h3 className="text-2xl">{title}</h3>
