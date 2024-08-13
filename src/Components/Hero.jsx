@@ -2,6 +2,7 @@ import { Button } from "@nextui-org/react";
 import { MdOutlineEmail } from "react-icons/md";
 import { GoProjectRoadmap } from "react-icons/go";
 import { Link } from "react-router-dom";
+import CirclePulse from "./CirclePulse";
 
 const Hero = () => {
   return (
@@ -9,10 +10,7 @@ const Hero = () => {
       <div className="flex flex-col gap-4">
         {/* icona con animazione con testo */}
         <div className="flex items-center gap-2">
-          <div className="relative">
-            <div className="absolute size-4 animate-ping rounded-full bg-green-600/60 duration-1000" />
-            <div className="size-4 rounded-full bg-green-600" />
-          </div>
+          <CirclePulse />
           <p className="uppercase">disponibile per un&apos;assunzione</p>
         </div>
 
