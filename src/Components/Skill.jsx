@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-const SkillsIcons = ({ name, icon }) => {
+const Skills = ({ name, icon }) => {
   return (
     <div className="flex items-center justify-between rounded-md bg-white p-4 uppercase shadow-md shadow-slate-400">
       <p className="font-semibold uppercase">{name}</p>
@@ -8,4 +8,4 @@ const SkillsIcons = ({ name, icon }) => {
   );
 };
 
-export default SkillsIcons;
+export default Skills;

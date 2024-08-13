@@ -2,7 +2,7 @@
 import { Button } from "@nextui-org/react";
 import { SiNextui } from "react-icons/si";
 import skills from "../data/skills";
-import SkillsIcons from "./SkillsIcons";
+import Skill from "./Skill";
 // import { RiJavascriptFill } from "react-skills/ri";
 const Skills = () => {
   return (
@@ -10,7 +10,7 @@ const Skills = () => {
       <h3 className="text-center text-2xl font-semibold">Competenze acquisite</h3>
       <div className="flex h-full w-full flex-col flex-wrap gap-8 md:grid md:grid-cols-3">
         {skills.map((skill) => {
-          return <SkillsIcons key={skill.name} {...skill} />;
+          return <Skill key={skill.name} {...skill} />;
         })}
         <div className="flex items-center justify-between rounded-md bg-white p-4 uppercase shadow-md shadow-slate-400">
           <p className="font-semibold uppercase">NextUI</p>
