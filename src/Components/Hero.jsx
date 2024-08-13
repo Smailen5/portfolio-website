@@ -30,7 +30,7 @@ const Hero = () => {
             size="lg"
             endContent={<MdOutlineEmail />}
           >
-           <Link to="/contact">Contattami</Link>
+            <Link to="/contact">Contattami</Link>
           </Button>
           <Button
             className="w-fit"
