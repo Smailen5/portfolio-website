@@ -5,6 +5,22 @@ import { Button } from "@nextui-org/react";
 import images from "../data/images";
 
 const Project = ({ imageKey, title, technologies, liveSite, github }) => {
+  // Bottoni per aprire il progetto o github
+  const Buttons = (
+    <div className="space-x-8">
+      <Button color="primary" variant="bordered">
+        <a href={liveSite} target="_blank">
+          guarda ora
+        </a>
+      </Button>
+      <Button>
+        <a href={github} target="_blank">
+          codice
+        </a>
+      </Button>
+    </div>
+  );
+
   return (
     <>
       {/* PROGETTO SINGOLO */}
@@ -24,18 +40,7 @@ const Project = ({ imageKey, title, technologies, liveSite, github }) => {
               return <h4 key={tech}>{tech}</h4>;
             })}
           </div>
-          <div className="space-x-8">
-            <Button>
-              <a href={liveSite} target="_blank">
-                guarda ora
-              </a>
-            </Button>
-            <Button>
-              <a href={github} target="_blank">
-                codice
-              </a>
-            </Button>
-          </div>
+          {Buttons}
         </div>
       </div>
     </>
