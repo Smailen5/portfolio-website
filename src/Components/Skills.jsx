@@ -12,6 +12,7 @@ const Skills = () => {
         {skillsData.map((skill) => {
           return <Skill key={skill.name} {...skill} />;
         })}
+        {/* questa icona viene importata diversamente dalle altre */}
         <div className="flex items-center justify-between rounded-md bg-white p-4 uppercase shadow-md shadow-slate-400">
           <p className="font-semibold uppercase">NextUI</p>
           <SiNextui size={48} className="" />
