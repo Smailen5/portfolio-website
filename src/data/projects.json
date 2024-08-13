@@ -3,7 +3,7 @@
     "id": 1,
     "title": "design portfolio",
     "technologies": ["html", "css"],
-    "link": "thumbnailProject1",
+    "imageKey": "thumbnailProject1",
     "liveSite": "#",
     "github": "#"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "title": "e-learning landing page",
     "technologies": ["html", "css"],
-    "link": "thumbnailProject2",
+    "imageKey": "thumbnailProject2",
     "liveSite": "#",
     "github": "#"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "title": "todo web app",
     "technologies": ["html", "css", "javascript"],
-    "link": "thumbnailProject3",
+    "imageKey": "thumbnailProject3",
     "liveSite": "#",
     "github": "#"
   }
