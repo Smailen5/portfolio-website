@@ -1,10 +1,12 @@
+import imag from "../assets/images/base-apparel-desktop.jpeg";
+
 const Project = () => {
   return (
     <>
       {/* PROGETTO SINGOLO */}
-      <div className="flex gap-4 overflow-hidden rounded-md bg-white">
+      <div className="bg-whit flex flex-col gap-4">
         {/* immagine */}
-        <div className="size-40 h-full bg-red-500 md:size-60">img</div>
+        <img src={imag} className="rounded-md" />
         {/* contenitore nome progetto e descrizione */}
         <div className="flex-1 space-y-2 bg-teal-300 text-left">
           <h3 className="text-2xl">nome progetto</h3>
