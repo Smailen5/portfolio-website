@@ -5,8 +5,6 @@ import { Button } from "@nextui-org/react";
 import images from "../data/images";
 
 const Project = ({ link, title, technologies, liveSite, github }) => {
-  console.log(images);
-
   return (
     <>
       {/* PROGETTO SINGOLO */}
