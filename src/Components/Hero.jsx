@@ -11,7 +11,7 @@ const Hero = () => {
         {/* icona con animazione con testo */}
         <div className="flex items-center gap-2">
           <CirclePulse />
-          <p className="uppercase">disponibile per un&apos;assunzione</p>
+          <p className="uppercase">Pronto per nuove sfide</p>
         </div>
 
         {/* presentazione */}
