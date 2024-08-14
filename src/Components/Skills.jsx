@@ -3,6 +3,7 @@ import { Button } from "@nextui-org/react";
 import { SiNextui } from "react-icons/si";
 import skillsData from "../data/skillsData";
 import Skill from "./Skill";
+import { GoProjectRoadmap } from "react-icons/go";
 // import { RiJavascriptFill } from "react-skills/ri";
 const Skills = () => {
   return (
@@ -20,7 +21,7 @@ const Skills = () => {
 
         <div className="space-y-4 md:col-start-2">
           <p className="text-center">Guarda i miei lavori</p>
-          <Button variant="solid" color="primary" size="lg" className="w-full">
+          <Button variant="shadow" color="secondary" size="lg" endContent={<GoProjectRoadmap />} className="w-full">
             Portfolio
           </Button>
         </div>
