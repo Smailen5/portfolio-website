@@ -1,15 +1,15 @@
 const social = [
   {
     name: "Github",
-    link: "https://github.com/smailen",
+    link: "https://github.com/Smailen5",
   },
   {
     name: "Linkedin",
-    link: "https://www.linkedin.com/in/smailen/",
+    link: "https://www.linkedin.com/in/smailen-vargas/",
   },
   {
     name: "Frontend Mentor",
-    link: "https://www.frontendmentor.io/profile/smailen",
+    link: "https://www.frontendmentor.io/profile/Smailen5",
   },
 ];
 
