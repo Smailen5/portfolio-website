@@ -13,7 +13,7 @@ const Project = ({ imageKey, title, technologies, liveSite, github }) => {
           guarda ora
         </a>
       </Button>
-      <Button>
+      <Button color="primary" variant="bordered">
         <a href={github} target="_blank">
           codice
         </a>
