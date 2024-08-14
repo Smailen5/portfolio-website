@@ -24,20 +24,29 @@ const Project = ({ imageKey, title, technologies, liveSite, github }) => {
   return (
     <>
       {/* PROGETTO SINGOLO */}
-      <div className="bg-whit flex flex-col gap-4">
+      <div className="bg-whit flex flex-col gap-4 rounded-md shadow-md">
         {/* immagine */}
         <picture>
           <source media="(1024px)" srcSet={images[imageKey].large} />
-          <img src={images[imageKey].small} className="rounded-md" />
+          <a href={liveSite} target="_blank">
+            <img
+              src={images[imageKey].small}
+              className="rounded-md shadow-lg md:hover:animate-pulse"
+            />
+          </a>
         </picture>
         {/* contenitore nome progetto e descrizione */}
-        <div className="flex-1 space-y-2 bg-teal-300 text-left">
-          <h3 className="text-2xl">{title}</h3>
+        <div className="flex flex-1 flex-col gap-2 p-4 text-left">
+          <h3 className="text-2xl font-bold uppercase">{title}</h3>
           {/* array delle tecnologie utilizzate */}
-          <p>tecnologie usate</p>
+          <p>Fatto con: </p>
           <div className="flex flex-wrap gap-4 uppercase">
             {technologies.map((tech) => {
-              return <h4 key={tech}>{tech}</h4>;
+              return (
+                <h4 key={tech} className="font-semibold">
+                  {tech}
+                </h4>
+              );
             })}
           </div>
           {Buttons}
