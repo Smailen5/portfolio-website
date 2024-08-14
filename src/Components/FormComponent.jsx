@@ -75,7 +75,7 @@ const FormComponent = () => {
           <ErrorMessage name="message" component="p" className="text-red-500" />
 
           <Button type="submit" color="primary" className="w-full">
-            Submit
+            Invia
           </Button>
         </Form>
       )}
