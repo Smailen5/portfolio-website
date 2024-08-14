@@ -24,12 +24,13 @@ const Project = ({ imageKey, title, technologies, liveSite, github }) => {
   return (
     <>
       {/* PROGETTO SINGOLO */}
-      <div className="bg-whit flex flex-col gap-4 rounded-md shadow-md">
+      <div className="bg-white flex flex-col gap-4 rounded-md shadow-md">
         {/* immagine */}
         <picture>
           <source media="(1024px)" srcSet={images[imageKey].large} />
-          <a href={liveSite} target="_blank">
+          <a href={liveSite} target="_blank" rel="noopener noreferrer">
             <img
+              loading="lazy"
               src={images[imageKey].small}
               className="rounded-md shadow-lg lg:hover:animate-pulse"
             />

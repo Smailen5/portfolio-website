@@ -27,15 +27,15 @@
     "id": 4,
     "title": "card nft",
     "technologies": ["html5", "css3", "javascript es6"],
-    "imageKey": "thumbnailProject3",
+    "imageKey": "thumbnailProject4",
     "liveSite": "https://smailen5.github.io/Frontend-Mentor-Challenge/nft-preview-card-component-main-main/",
     "github": "https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/nft-preview-card-component-main-main"
   },
   {
     "id": 5,
-    "title": "landing page",
+    "title": "pagina di accesso landing page",
     "technologies": ["html5", "css3", "javascript es6"],
-    "imageKey": "thumbnailProject3",
+    "imageKey": "thumbnailProject5",
     "liveSite": "https://smailen5.github.io/Frontend-Mentor-Challenge/pod-request-access-landing-page-main/",
     "github": "https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/pod-request-access-landing-page-main"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "title": "card social links",
     "technologies": ["tailwind", "javascript es6", "html5"],
-    "imageKey": "thumbnailProject3",
+    "imageKey": "thumbnailProject6",
     "liveSite": "https://smailen5.github.io/Frontend-Mentor-Challenge/social-links-profile-main-main/",
     "github": "https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/social-links-profile-main-main"
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "title": "wiki cocktail",
     "technologies": ["react", "tailwind", "react router 6", "lottie", "styled components"],
-    "imageKey": "thumbnailProject3",
+    "imageKey": "thumbnailProject7",
     "liveSite": "https://sparkly-taffy-8ba942.netlify.app/",
     "github": "https://github.com/Smailen5/react-esercizi/tree/main/cocktail"
   }
