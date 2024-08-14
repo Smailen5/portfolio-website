@@ -4,11 +4,18 @@ import { object, string } from "yup";
 import { Button } from "@nextui-org/react";
 
 const validationSchema = object({
-  name: string().required("Nome richiesto"),
-  email: string().email("Email non valida").required("Email richiesta"),
+  name: string()
+    .required("Cosa?... Non hai un nome?")
+    .min(4, "Il nome è troppo breve. (min. 4 caratteri)"),
+  email: string()
+    .email("Hmm... Questa email non sembra valida")
+    .required("Oops, l'email è necessaria per contattarti."),
   message: string()
-    .required("Qualcosa devi pur scrivere")
-    .min(100, "Minimo 100 caratteri"),
+    .required("Ehi! Qualcosa devi pur scrivere")
+    .min(
+      100,
+      "Il messaggio è troppo breve. Prova a scrivere un po' di più! (min. 100 caratteri)",
+    ),
 });
 
 const initialValues = {
