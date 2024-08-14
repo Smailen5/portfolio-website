@@ -22,7 +22,7 @@ const useChangeAvatar = () => {
       }, 300);
     }, 2000);
     return () => clearInterval(interval);
-  }, []);
+  }, [currentAvatar]);
   return { currentAvatar, animation };
 };
 
