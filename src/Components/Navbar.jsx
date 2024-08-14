@@ -9,16 +9,18 @@ import {
   DropdownItem,
 } from "@nextui-org/react";
 import { Link } from "react-router-dom";
-import avatarIcon from "../data/images";
+// import avatarIcon from "../data/images";
+import useChangeAvatar from "../utils/useChangeAvatar";
 
 const NavbarSample = () => {
+  const currentAvatar = useChangeAvatar();
   return (
     <Navbar className="fixed left-0 top-0">
       <NavbarBrand>
         <Avatar
           isBordered
           color="primary"
-          src={avatarIcon.avatarIcon}
+          src={currentAvatar}
           name="SV"
           alt="avatar icon"
         />
