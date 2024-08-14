@@ -1,4 +1,6 @@
 import avatarIcon from "../assets/images/avatar/avatar-smailen.jpg";
+import avatarIcon2 from "../assets/images/avatar/avatar-smailen2.jpg";
+import avatarIcon3 from "../assets/images/avatar/avatar-smailen-github.jpg.jpg";
 import thumbnailProject1 from "../assets/images/coming-soon-page.webp";
 import thumbnailProject2 from "../assets/images/generatore-password.webp";
 import thumbnailProject3 from "../assets/images/calcolatore-mance.webp";
@@ -7,8 +9,10 @@ import thumbnailProject5 from "../assets/images/pagina-di-accesso-landing-page.w
 import thumbnailProject6 from "../assets/images/card-social-links.webp";
 import thumbnailProject7 from "../assets/images/wiki-cocktail.webp";
 
+const avatarImages = [avatarIcon, avatarIcon2, avatarIcon3];
+
 const images = {
-  avatarIcon: avatarIcon,
+  avatarImages: avatarImages,
   thumbnailProject1: {
     small: thumbnailProject1,
     large: thumbnailProject1,
