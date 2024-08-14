@@ -23,7 +23,7 @@ const NavbarSample = () => {
           src={currentAvatar}
           name="SV"
           alt="avatar icon"
-          className={`transition-opacity duration-1000 ${animation} `}
+          className={`${animation} `}
         />
       </NavbarBrand>
       <Dropdown>
