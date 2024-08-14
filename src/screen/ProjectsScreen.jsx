@@ -20,6 +20,7 @@ const ProjectsScreen = () => {
               <a
                 href="https://smailen5.github.io/Frontend-Mentor-Challenge/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-blue-500 underline"
               >
                 qui
@@ -28,6 +29,7 @@ const ProjectsScreen = () => {
               <a
                 href="https://github.com/Smailen5?tab=repositories"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-blue-500 underline"
               >
                 GitHub

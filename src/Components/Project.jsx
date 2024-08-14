@@ -9,12 +9,12 @@ const Project = ({ imageKey, title, technologies, liveSite, github }) => {
   const Buttons = (
     <div className="space-x-8">
       <Button color="primary" variant="bordered">
-        <a href={liveSite} target="_blank">
+        <a href={liveSite} target="_blank" rel="noopener noreferrer">
           guarda ora
         </a>
       </Button>
       <Button color="primary" variant="bordered">
-        <a href={github} target="_blank">
+        <a href={github} target="_blank" rel="noopener noreferrer">
           codice
         </a>
       </Button>
@@ -24,7 +24,7 @@ const Project = ({ imageKey, title, technologies, liveSite, github }) => {
   return (
     <>
       {/* PROGETTO SINGOLO */}
-      <div className="bg-white flex flex-col gap-4 rounded-md shadow-md">
+      <div className="flex flex-col gap-4 rounded-md bg-white shadow-md">
         {/* immagine */}
         <picture>
           <source media="(1024px)" srcSet={images[imageKey].large} />
