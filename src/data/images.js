@@ -1,3 +1,4 @@
+import avatarIcon from "../assets/images/avatar/avatar-smailen.jpg";
 import thumbnailProject1 from "../assets/images/coming-soon-page.webp";
 import thumbnailProject2 from "../assets/images/generatore-password.webp";
 import thumbnailProject3 from "../assets/images/calcolatore-mance.webp";
@@ -7,6 +8,7 @@ import thumbnailProject6 from "../assets/images/card-social-links.webp";
 import thumbnailProject7 from "../assets/images/wiki-cocktail.webp";
 
 const images = {
+  avatarIcon: avatarIcon,
   thumbnailProject1: {
     small: thumbnailProject1,
     large: thumbnailProject1,

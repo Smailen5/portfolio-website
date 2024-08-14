@@ -9,12 +9,19 @@ import {
   DropdownItem,
 } from "@nextui-org/react";
 import { Link } from "react-router-dom";
+import avatarIcon from "../data/images";
 
 const NavbarSample = () => {
   return (
-    <Navbar className="fixed top-0 left-0">
+    <Navbar className="fixed left-0 top-0">
       <NavbarBrand>
-        <Avatar src="" name="SV" />
+        <Avatar
+          isBordered
+          color="primary"
+          src={avatarIcon.avatarIcon}
+          name="SV"
+          alt="avatar icon"
+        />
       </NavbarBrand>
       <Dropdown>
         <DropdownTrigger>
@@ -23,9 +30,15 @@ const NavbarSample = () => {
           </Button>
         </DropdownTrigger>
         <DropdownMenu aria-label="Dropdown Variants">
-          <DropdownItem key="home"><Link to="/">Home</Link></DropdownItem>
-          <DropdownItem key="project"><Link to="/projects">Progetti</Link></DropdownItem>
-          <DropdownItem key="contact"><Link to="/contact">Contattami</Link></DropdownItem>
+          <DropdownItem key="home">
+            <Link to="/">Home</Link>
+          </DropdownItem>
+          <DropdownItem key="project">
+            <Link to="/projects">Progetti</Link>
+          </DropdownItem>
+          <DropdownItem key="contact">
+            <Link to="/contact">Contattami</Link>
+          </DropdownItem>
         </DropdownMenu>
       </Dropdown>
     </Navbar>
