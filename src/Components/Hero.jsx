@@ -1,4 +1,4 @@
-import { Button } from "@nextui-org/react";
+import { Button, Tooltip } from "@nextui-org/react";
 import { MdOutlineEmail } from "react-icons/md";
 import { GoProjectRoadmap } from "react-icons/go";
 import { Link } from "react-router-dom";
@@ -17,7 +17,15 @@ const Hero = () => {
         {/* presentazione */}
         <div>
           <h2 className="text-5xl">Ciao, sono </h2>
-          <h1 className="text-6xl font-bold">Smailen Vargas</h1>
+          <h1 className="text-6xl font-bold">
+            Smailen Vargas{" "}
+            <Tooltip
+              color="warning"
+              content="Si, il mio nome significa 'sorridi sempre!'"
+            >
+              <span className="text-4xl">😊</span>
+            </Tooltip>
+          </h1>
         </div>
         <p className="text-3xl">Frontend developer</p>
 
