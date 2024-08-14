@@ -11,7 +11,9 @@ const useChangeAvatar = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setAnimation("animate-appearance-out");
+      // fa apparire il nuovo avatar
       setTimeout(() => {
+        // filtra le immagini per non ripetere l'immagine corrente
         const filteredImages = images.avatarImages.filter(
           (image) => image !== currentAvatar,
         );
