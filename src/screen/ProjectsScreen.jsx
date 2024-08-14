@@ -41,14 +41,6 @@ const ProjectsScreen = () => {
             {projects.map((project) => {
               return <Project key={project.id} {...project} />;
             })}
-            {/* <Project /> */}
-            {/* <Project />
-            <Project />
-            <Project />
-            <Project />
-            <Project />
-            <Project />
-            <Project /> */}
           </section>
         </div>
       </div>
