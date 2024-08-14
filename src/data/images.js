@@ -1,7 +1,8 @@
 // icone per avatar che verranno animate
-import avatarIcon from "../assets/images/avatar/avatar-smailen.jpg";
-import avatarIcon2 from "../assets/images/avatar/avatar-smailen-2.jpg";
-import avatarIcon3 from "../assets/images/avatar/avatar-smailen-github.jpg";
+import avatarIcon from "../assets/images/avatar/avatar-smailen.webp";
+import avatarIcon2 from "../assets/images/avatar/avatar-smailen-2.webp";
+import avatarIcon3 from "../assets/images/avatar/avatar-smailen-github.webp";
+import avatarIcon4 from "../assets/images/avatar/avatar-smailen-linkedin.webp";
 // immagini di anteprima progetti
 import thumbnailProject1 from "../assets/images/coming-soon-page.webp";
 import thumbnailProject2 from "../assets/images/generatore-password.webp";
@@ -11,7 +12,7 @@ import thumbnailProject5 from "../assets/images/pagina-di-accesso-landing-page.w
 import thumbnailProject6 from "../assets/images/card-social-links.webp";
 import thumbnailProject7 from "../assets/images/wiki-cocktail.webp";
 
-const avatarImages = [avatarIcon, avatarIcon2, avatarIcon3];
+const avatarImages = [avatarIcon, avatarIcon2, avatarIcon3, avatarIcon4];
 
 const images = {
   avatarImages: avatarImages,
