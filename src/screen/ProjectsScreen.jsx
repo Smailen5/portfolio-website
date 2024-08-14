@@ -6,7 +6,7 @@ const ProjectsScreen = () => {
   return (
     <>
       <NavbarSample />
-      <div className="flex min-h-screen justify-center bg-green-300 py-16">
+      <div className="flex min-h-screen justify-center bg-neutral-50 py-16">
         <div className="mt-20 flex flex-col justify-around gap-20 px-6 text-center xl:max-w-[1024px]">
           <h4>Breve introduzione di tutti i progetti che ho sviluppato</h4>
           {/* CONTENITORE PROGETTI */}
