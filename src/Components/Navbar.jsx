@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 import useChangeAvatar from "../utils/useChangeAvatar";
 
 const NavbarSample = () => {
-  const currentAvatar = useChangeAvatar();
+  const { currentAvatar, animation } = useChangeAvatar();
   return (
     <Navbar className="fixed left-0 top-0">
       <NavbarBrand>
@@ -23,6 +23,7 @@ const NavbarSample = () => {
           src={currentAvatar}
           name="SV"
           alt="avatar icon"
+          className={`transition-opacity duration-1000 ${animation} `}
         />
       </NavbarBrand>
       <Dropdown>
