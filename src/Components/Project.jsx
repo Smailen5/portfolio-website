@@ -31,7 +31,7 @@ const Project = ({ imageKey, title, technologies, liveSite, github }) => {
           <a href={liveSite} target="_blank">
             <img
               src={images[imageKey].small}
-              className="rounded-md shadow-lg md:hover:animate-pulse"
+              className="rounded-md shadow-lg lg:hover:animate-pulse"
             />
           </a>
         </picture>
