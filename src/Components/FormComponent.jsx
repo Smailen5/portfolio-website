@@ -39,7 +39,7 @@ const FormComponent = () => {
     >
       {({ errors, touched, handleSubmit, isSubmitting }) => (
         <Form
-          className="flex flex-col items-start gap-4"
+          className="flex flex-col items-start gap-4 rounded-md bg-white p-4 shadow-lg"
           onSubmit={handleSubmit}
           noValidate
         >
@@ -59,7 +59,7 @@ const FormComponent = () => {
           />
           <ErrorMessage name="email" component="p" className="text-red-500" />
 
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message">Messaggio</label>
           <Field
             as="textarea"
             type="text"
