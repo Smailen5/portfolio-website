@@ -32,13 +32,13 @@ const NavbarSample = () => {
           </Button>
         </DropdownTrigger>
         <DropdownMenu aria-label="Dropdown Variants">
-          <DropdownItem key="home">
+          <DropdownItem key="home" textValue="Home">
             <Link to="/">Home</Link>
           </DropdownItem>
-          <DropdownItem key="project">
+          <DropdownItem key="project" textValue="Progetti">
             <Link to="/projects">Progetti</Link>
           </DropdownItem>
-          <DropdownItem key="contact">
+          <DropdownItem key="contact" textValue="Contattami">
             <Link to="/contact">Contattami</Link>
           </DropdownItem>
         </DropdownMenu>

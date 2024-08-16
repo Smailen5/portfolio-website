@@ -4,19 +4,8 @@ import NavbarSample from "../Components/Navbar";
 import Presentation from "../Components/Presentation";
 import Skills from "../Components/Skills";
 import Socials from "../Components/Socials";
-import { useGlobalContext } from "../utils/context";
-import { useEffect } from "react";
 
 const HomeScreen = () => {
-  const { deleteScrollPosition, scrollPosition } = useGlobalContext();
-
-  useEffect(() => {
-    if (scrollPosition) {
-      window.scrollTo(0, scrollPosition);
-      deleteScrollPosition();
-    }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
   return (
     <>
       <NavbarSample />

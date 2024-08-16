@@ -2,19 +2,8 @@ import Footer from "../Components/Footer";
 import NavbarSample from "../Components/Navbar";
 import Project from "../Components/Project";
 import projects from "../data/projects.json";
-import { useGlobalContext } from "../utils/context";
-import { useEffect } from "react";
 
 const ProjectsScreen = () => {
-  const { deleteScrollPosition, scrollPosition } = useGlobalContext();
-
-  useEffect(() => {
-    if (scrollPosition) {
-      window.scrollTo(0, scrollPosition);
-      deleteScrollPosition();
-    }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
   return (
     <>
       <NavbarSample />

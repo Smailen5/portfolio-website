@@ -1,27 +1,13 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-refresh/only-export-components */
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  const getScrollPosition = (value) => {
-    setScrollPosition(value);
-  };
-
-  const deleteScrollPosition = (value) => {
-    setScrollPosition(0);
-  };
-
   return (
-    <AppContext.Provider
-      value={{ scrollPosition, getScrollPosition, deleteScrollPosition }}
-    >
-      {children}
-    </AppContext.Provider>
+    <AppContext.Provider value="prova context">{children}</AppContext.Provider>
   );
 };
 
