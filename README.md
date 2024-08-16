@@ -23,8 +23,8 @@ Questo è il portfolio di Smailen, un front-end developer con passione per il we
 
 ### Screenshot
 
-![Smartphone]()
-![Desktop]()
+![Smartphone](/src//assets/screenshot/sito-smartphone.jpeg)
+![Desktop](/src/assets/screenshot/sito-desktop.jpeg)
 
 
 ## Processo
