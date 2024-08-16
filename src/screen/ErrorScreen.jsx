@@ -6,9 +6,6 @@ import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
 
 const ErrorScreen = () => {
-  // non dimenticarti del titolo del sito e della favicon
-  // bisogna aggiungere anche il componente footer
-  // IMPORTANTE: ricorda di aggiungere il link di ringraziamento per icons8 ======================
   return (
     <>
       <NavbarSample />
