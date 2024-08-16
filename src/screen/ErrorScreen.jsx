@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import NavbarSample from "../Components/Navbar";
 import Lottie from "lottie-react";
 import animationData from "../assets/animation/animation-404.json";
@@ -6,9 +5,6 @@ import { Button } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 
 const ErrorScreen = () => {
-  // console.log(animationData);
-
-  // ricordati di fare la pagina di errore XD
   // non dimenticarti del titolo del sito e della favicon
   // bisogna aggiungere anche il componente footer
   // IMPORTANTE: ricorda di aggiungere il link di ringraziamento per icons8 ======================
