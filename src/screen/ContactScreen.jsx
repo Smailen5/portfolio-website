@@ -1,8 +1,19 @@
 import Footer from "../Components/Footer";
 import FormComponent from "../Components/FormComponent";
 import NavbarSample from "../Components/Navbar";
+import { useGlobalContext } from "../utils/context";
+import { useEffect } from "react";
 
 const ContactScreen = () => {
+  const { deleteScrollPosition, scrollPosition } = useGlobalContext();
+
+  useEffect(() => {
+    if (scrollPosition) {
+      window.scrollTo(0, scrollPosition);
+      deleteScrollPosition();
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <>
       <NavbarSample />
