@@ -2,17 +2,18 @@ import { Button, Tooltip } from "@nextui-org/react";
 import { MdOutlineEmail } from "react-icons/md";
 import { GoProjectRoadmap } from "react-icons/go";
 import { Link } from "react-router-dom";
-import CirclePulse from "./CirclePulse";
+// import CirclePulse from "./CirclePulse";
 
 const Hero = () => {
   return (
     <section className="w-full">
       <div className="flex flex-col gap-4">
         {/* icona con animazione con testo */}
-        <div className="flex items-center gap-2">
+        {/* Per il momento la rimuovo, in futuro vorrei fare qualcosa di piu carino */}
+        {/* <div className="flex items-center gap-2">
           <CirclePulse />
           <p className="uppercase">Pronto per nuove sfide</p>
-        </div>
+        </div> */}
 
         {/* presentazione */}
         <div>
