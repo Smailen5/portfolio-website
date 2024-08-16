@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { object, string } from "yup";
 import { Button } from "@nextui-org/react";
@@ -50,7 +49,7 @@ const FormComponent = () => {
         });
       }}
     >
-      {({ errors, touched, handleSubmit, isSubmitting }) => (
+      {({ handleSubmit }) => (
         <Form
           className="flex flex-col items-start gap-4 rounded-md bg-white p-4 shadow-lg lg:flex-1"
           onSubmit={handleSubmit}
