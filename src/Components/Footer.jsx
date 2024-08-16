@@ -6,13 +6,19 @@ import { SiNextui } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-red-30 p-4 text-center bg-white">
+    <div className="bg-red-30 w-full bg-white p-4 text-center">
       <div className="flex justify-center gap-4">
         <img src={tailwindIcon} alt="icona tailwind css" className="size-6" />
         <img src={reactIcon} alt="icona react" className="size-6" />
         <SiNextui alt="icona nextui" className="size-6" />
       </div>
       <p>© 2024 Smailen Vargas. Tutti i diritti riservati.</p>
+      <p>
+        Icons by{" "}
+        <a href="https://icons8.com" className="text-blue-400 underline">
+          Icons8
+        </a>
+      </p>
     </div>
   );
 };
