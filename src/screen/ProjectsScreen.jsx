@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer";
 import NavbarSample from "../Components/Navbar";
 import Project from "../Components/Project";
 import projects from "../data/projects.json";
@@ -46,6 +47,7 @@ const ProjectsScreen = () => {
           </section>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

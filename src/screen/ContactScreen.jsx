@@ -1,3 +1,4 @@
+import Footer from "../Components/Footer";
 import FormComponent from "../Components/FormComponent";
 import NavbarSample from "../Components/Navbar";
 
@@ -19,6 +20,7 @@ const ContactScreen = () => {
           <FormComponent />
         </div>
       </div>
+      <Footer />
     </>
   );
 };
