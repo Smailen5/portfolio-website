@@ -18,7 +18,7 @@ const Footer = () => {
           © 2024 Smailen Vargas. Tutti i diritti riservati.{" "}
           <span>
             Icons by{" "}
-            <a href="https://icons8.com" className="text-blue-400 underline">
+            <a href="https://icons8.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">
               Icons8
             </a>
           </span>
