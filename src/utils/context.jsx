@@ -5,9 +5,21 @@ import PropTypes from "prop-types";
 
 const AppContext = createContext();
 
+// controlla larghezza schermo e ne ritorna il valore
+const useWindowWidth = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return width;
+};
+
 const AppProvider = ({ children }) => {
   return (
-    <AppContext.Provider value="prova context">{children}</AppContext.Provider>
+    <AppContext.Provider value={{ useWindowWidth }}>{children}</AppContext.Provider>
   );
 };
 
