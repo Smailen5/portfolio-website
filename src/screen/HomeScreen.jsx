@@ -4,8 +4,10 @@ import NavbarSample from "../Components/Navbar";
 import Presentation from "../Components/Presentation";
 import Skills from "../Components/Skills";
 import Socials from "../Components/Socials";
+import useScroll from "../utils/useScroll";
 
 const HomeScreen = () => {
+  useScroll();
   return (
     <>
       <NavbarSample />

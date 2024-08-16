@@ -19,7 +19,9 @@ const useWindowWidth = () => {
 
 const AppProvider = ({ children }) => {
   return (
-    <AppContext.Provider value={{ useWindowWidth }}>{children}</AppContext.Provider>
+    <AppContext.Provider value={{ useWindowWidth }}>
+      {children}
+    </AppContext.Provider>
   );
 };
 
