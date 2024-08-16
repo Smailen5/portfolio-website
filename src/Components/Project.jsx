@@ -1,5 +1,6 @@
 import { Button } from "@nextui-org/react";
 import images from "../data/images";
+import PropTypes from "prop-types";
 
 const Project = ({ imageKey, title, technologies, liveSite, github }) => {
   // Bottoni per aprire il progetto o github
@@ -53,5 +54,13 @@ const Project = ({ imageKey, title, technologies, liveSite, github }) => {
     </>
   );
 };
+
+Project.propTypes = {
+  imageKey: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  technologies: PropTypes.array.isRequired,
+  liveSite: PropTypes.string.isRequired,
+  github: PropTypes.string.isRequired,
+}
 
 export default Project;

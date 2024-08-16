@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Skills = ({ name, icon }) => {
   return (
     <div className="flex items-center justify-between rounded-md bg-white p-4 uppercase shadow-md shadow-slate-400">
@@ -6,5 +8,10 @@ const Skills = ({ name, icon }) => {
     </div>
   );
 };
+
+Skills.propTypes = {
+  name: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+}
 
 export default Skills;
