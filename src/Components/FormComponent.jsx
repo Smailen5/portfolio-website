@@ -52,7 +52,7 @@ const FormComponent = () => {
     >
       {({ errors, touched, handleSubmit, isSubmitting }) => (
         <Form
-          className="flex flex-col items-start gap-4 rounded-md bg-white p-4 shadow-lg"
+          className="flex flex-col items-start gap-4 rounded-md bg-white p-4 shadow-lg lg:flex-1"
           onSubmit={handleSubmit}
           noValidate
         >

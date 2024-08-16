@@ -7,8 +7,8 @@ const ContactScreen = () => {
     <>
       <NavbarSample />
       <div className="flex min-h-screen justify-center bg-neutral-50 py-16">
-        <div className="mt-20 flex flex-col justify-around gap-20 px-6 text-center xl:max-w-[1024px]">
-          <div className="space-y-4">
+        <div className="mt-20 flex flex-col justify-around gap-20 px-6 text-center md:max-w-[1024px] lg:flex-row lg:items-center lg:gap-10">
+          <div className="space-y-4 lg:w-1/2 lg:text-left">
             <h3 className="text-2xl font-semibold">Contattami</h3>
             <p>
               Se hai domande, richieste di collaborazione, o semplicemente vuoi
