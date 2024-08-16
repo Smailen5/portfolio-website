@@ -3,6 +3,7 @@ import Lottie from "lottie-react";
 import animationData from "../assets/animation/animation-404.json";
 import { Button } from "@nextui-org/react";
 import { Link } from "react-router-dom";
+import Footer from "../Components/Footer";
 
 const ErrorScreen = () => {
   // non dimenticarti del titolo del sito e della favicon
@@ -30,6 +31,7 @@ const ErrorScreen = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
