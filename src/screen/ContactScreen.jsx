@@ -1,8 +1,10 @@
 import Footer from "../Components/Footer";
 import FormComponent from "../Components/FormComponent";
 import NavbarSample from "../Components/Navbar";
+import useScroll from "../utils/useScroll";
 
 const ContactScreen = () => {
+  useScroll();
   return (
     <>
       <NavbarSample />
