@@ -1,6 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
-// import imag from "../assets/images/base-apparel-desktop.jpeg";
 import { Button } from "@nextui-org/react";
 import images from "../data/images";
 

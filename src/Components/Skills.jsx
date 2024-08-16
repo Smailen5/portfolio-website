@@ -1,11 +1,9 @@
-/* eslint-disable no-unused-vars */
 import { Button } from "@nextui-org/react";
 import { GoProjectRoadmap } from "react-icons/go";
 import { SiNextui } from "react-icons/si";
 import { Link } from "react-router-dom";
 import skillsData from "../data/skillsData";
 import Skill from "./Skill";
-// import { RiJavascriptFill } from "react-skills/ri";
 const Skills = () => {
   return (
     <section className="mx-auto flex w-full flex-col gap-8">

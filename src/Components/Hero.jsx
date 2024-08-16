@@ -2,7 +2,6 @@ import { Button, Tooltip } from "@nextui-org/react";
 import { GoProjectRoadmap } from "react-icons/go";
 import { MdOutlineEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
-// import CirclePulse from "./CirclePulse";
 
 const Hero = () => {
   return (

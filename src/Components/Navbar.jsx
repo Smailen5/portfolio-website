@@ -9,7 +9,6 @@ import {
   NavbarBrand,
 } from "@nextui-org/react";
 import { Link } from "react-router-dom";
-// import avatarIcon from "../data/images";
 import useChangeAvatar from "../utils/useChangeAvatar";
 
 const NavbarSample = () => {
