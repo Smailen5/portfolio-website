@@ -2,6 +2,9 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { object, string } from "yup";
 import { Button } from "@nextui-org/react";
+import { useForm } from "@formspree/react";
+import { useState } from "react";
+
 
 const validationSchema = object({
   name: string()
@@ -25,16 +28,28 @@ const initialValues = {
 };
 
 const FormComponent = () => {
+  
+  const formSpreeKey = import.meta.env.VITE_APP_FORM_SPREE_ACTION_URL;
+  // gestisce l'invio del form con Form spree
+  const [state, handleSubmit] = useForm(formSpreeKey);
+  // gestisce lo stato di invio del form
+  const [formSent, setFormSent] = useState(false);
+
   return (
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
-      onSubmit={(values, { setSubmitting }) => {
-        setSubmitting(true);
-        setTimeout(() => {
+      onSubmit={(values, { setSubmitting, resetForm }) => {
+        handleSubmit(values).then(() => {
           setSubmitting(false);
-          alert(JSON.stringify(values));
-        }, 300);
+          if (state.succeeded) {
+            setFormSent(true);
+            setTimeout(() => {
+              resetForm(initialValues);
+              setFormSent(false);
+            }, 2000);
+          }
+        });
       }}
     >
       {({ errors, touched, handleSubmit, isSubmitting }) => (
@@ -64,6 +79,7 @@ const FormComponent = () => {
             as="textarea"
             type="text"
             name="message"
+            // render verra deprecato, aggiornalo il prima possibile
             render={({ field, form: { touched, errors } }) => (
               <textarea
                 {...field}
@@ -77,6 +93,12 @@ const FormComponent = () => {
           <Button type="submit" color="primary" className="w-full">
             Invia
           </Button>
+          {/* conferma di messaggio inviato da Form spree e da Formik */}
+          {state.succeeded && formSent && (
+            <p className="mt-4 text-green-500">
+              Il messaggio è stato inviato con successo!
+            </p>
+          )}
         </Form>
       )}
     </Formik>
