@@ -1,8 +1,8 @@
-import { ErrorMessage, Field, Form, Formik } from "formik";
-import { object, string } from "yup";
-import { Button } from "@nextui-org/react";
 import { useForm } from "@formspree/react";
+import { Button } from "@nextui-org/react";
+import { ErrorMessage, Field, Form, Formik } from "formik";
 import { useState } from "react";
+import { object, string } from "yup";
 
 const validationSchema = object({
   name: string()
