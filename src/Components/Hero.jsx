@@ -17,7 +17,7 @@ const Hero = () => {
 
         {/* presentazione */}
         <div>
-          <h2 className="text-5xl">Ciao, sono </h2>
+          <h2 className="text-5xl">Ciao, Io sono </h2>
           <h1 className="text-6xl font-bold">
             Smailen Vargas{" "}
             <Tooltip
