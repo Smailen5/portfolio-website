@@ -5,7 +5,6 @@ import { Button } from "@nextui-org/react";
 import { useForm } from "@formspree/react";
 import { useState } from "react";
 
-
 const validationSchema = object({
   name: string()
     .required("Cosa?... Non hai un nome?")
@@ -28,7 +27,6 @@ const initialValues = {
 };
 
 const FormComponent = () => {
-  
   const formSpreeKey = import.meta.env.VITE_APP_FORM_SPREE_ACTION_URL;
   // gestisce l'invio del form con Form spree
   const [state, handleSubmit] = useForm(formSpreeKey);
@@ -60,34 +58,35 @@ const FormComponent = () => {
         >
           <label htmlFor="name">Nome</label>
           <Field
-            type="name"
+            id="name"
+            type="text"
             name="name"
-            className="w-full rounded-md border border-gray-400 p-2 shadow"
+            autoComplete="name"
+            className="w-full rounded-md border border-gray-400 p-2"
           />
           <ErrorMessage name="name" component="p" className="text-red-500" />
 
           <label htmlFor="email">Email</label>
           <Field
+            id="email"
             type="email"
             name="email"
-            className="w-full rounded-md border border-gray-400 p-2 shadow"
+            autoComplete="email"
+            className="w-full rounded-md border border-gray-400 p-2"
           />
           <ErrorMessage name="email" component="p" className="text-red-500" />
 
           <label htmlFor="message">Messaggio</label>
           <Field
+            id="message"
             as="textarea"
-            type="text"
             name="message"
-            // render verra deprecato, aggiornalo il prima possibile
-            render={({ field, form: { touched, errors } }) => (
-              <textarea
-                {...field}
-                rows={10}
-                className="w-full resize-none rounded-md border border-gray-400 p-2 shadow"
-              />
-            )}
+            type="text"
+            autoComplete="off"
+            rows={10}
+            className="w-full resize-none rounded-md border border-gray-400 p-2"
           />
+
           <ErrorMessage name="message" component="p" className="text-red-500" />
 
           <Button type="submit" color="primary" className="w-full">
