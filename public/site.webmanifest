@@ -22,6 +22,11 @@
       "type": "image/jpeg",
       "sizes": "1515x826",
       "form_factor": "wide"
+    },
+    {
+      "src": "/images/sito-smartphone.jpeg",
+      "type": "image/jpeg",
+      "sizes": "425x800"
     }
   ]
 }
