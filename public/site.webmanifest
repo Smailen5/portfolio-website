@@ -1,6 +1,9 @@
 {
   "name": "Smailen Vargas | Frontend Developer",
   "short_name": "Smailen",
+  "start_url": "/",
+  "id": "/",
+  "description": "Smailen Vargas | Frontend Developer",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
