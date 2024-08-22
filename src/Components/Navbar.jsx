@@ -9,6 +9,7 @@ import {
   NavbarBrand,
 } from "@nextui-org/react";
 import { Link } from "react-router-dom";
+import curriculum from "../assets/curriculum/Curriculum-Smailen-Vargas.pdf";
 import { useGlobalContext } from "../utils/context";
 import useChangeAvatar from "../utils/useChangeAvatar";
 
@@ -49,6 +50,11 @@ const NavbarSample = () => {
             </DropdownItem>
             <DropdownItem key="contact" textValue="Contattami">
               <Link to="/contact">Contattami</Link>
+            </DropdownItem>
+            <DropdownItem key="contact" textValue="Contattami">
+              <a href={curriculum} download={"CV-Smailen-Vargas-Frontend.pdf"}>
+                Download CV
+              </a>
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>
