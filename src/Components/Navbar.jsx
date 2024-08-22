@@ -63,6 +63,9 @@ const NavbarSample = () => {
           <Link to="/">Home</Link>
           <Link to="/projects">Progetti</Link>
           <Link to="/contact">Contattami</Link>
+          <a href={curriculum} download={"CV-Smailen-Vargas-Frontend.pdf"}>
+            Download CV
+          </a>
         </>
       )}
     </Navbar>
