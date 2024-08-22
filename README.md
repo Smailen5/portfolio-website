@@ -47,7 +47,7 @@ Questo è il portfolio di Smailen, un front-end developer con passione per il we
 
 Nel futuro prevedo di:
 
-- Implementare la possibilita di scaricare il curriculum o visualizzarlo in una nuova pagina
+- ~~Implementare la possibilita di scaricare il curriculum o visualizzarlo in una nuova pagina~~
 - Implementare la modalita dark mode con TailwindCSS sia automatica che a piacere utilizzando un bottone
 - Cambiare pallette colori aggiungendo differenti temi
 - Aggiungere piu animazioni sia con TailwindCSS che con una libreria JavaScript
