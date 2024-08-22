@@ -38,7 +38,7 @@ const Project = ({ imageKey, title, technologies, liveSite, github }) => {
         <div className="flex flex-1 flex-col gap-2 p-4 text-left">
           <h3 className="text-2xl font-bold uppercase">{title}</h3>
           {/* array delle tecnologie utilizzate */}
-          <p>Fatto con: </p>
+          {/* <p>Fatto con: </p> */}
           <div className="flex flex-wrap gap-4 uppercase">
             {technologies.map((tech) => {
               return (
