@@ -16,6 +16,7 @@ Questo è il portfolio di Smailen, un front-end developer con passione per il we
   - [Road map](#road-map)
   - [Risorse utilizzate](#risorse-utilizzate)
 - [Autore](#autore)
+- [Per me](#per-me)
 
 
 ## Panoramica
@@ -68,3 +69,9 @@ Nel futuro prevedo di:
 - Github - [Smailen5](https://github.com/Smailen5)
 - Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
 - Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
+
+## Per me
+
+### Bugs
+
+- I bottoni di nextUI hanno problemi con i Link di react-router-dom. FIX: Utilizza useNavigate per rimandare correttamente alle pagine, setTimeout per visualizzare l'animazione del bottone
