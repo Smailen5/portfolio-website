@@ -1,10 +1,17 @@
 import { Button } from "@nextui-org/react";
 import { GoProjectRoadmap } from "react-icons/go";
 import { SiNextui } from "react-icons/si";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import skillsData from "../data/skillsData";
 import Skill from "./Skill";
 const Skills = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    setTimeout(() => {
+      navigate("/projects");
+    }, 300);
+  };
   return (
     <section className="mx-auto flex w-full flex-col gap-8">
       <h3 className="text-center text-2xl font-semibold">
@@ -22,15 +29,18 @@ const Skills = () => {
 
         <div className="space-y-4 md:col-start-2">
           <p className="text-center">Guarda i miei lavori</p>
+          {/* <Link to={"/projects"}> */}
           <Button
             variant="shadow"
             color="secondary"
             size="lg"
             endContent={<GoProjectRoadmap />}
             className="w-full"
+            onClick={handleNavigation} 
           >
-            <Link to={"/projects"}>Portfolio</Link>
+            Portfolio
           </Button>
+          {/* </Link> */}
         </div>
       </div>
     </section>
