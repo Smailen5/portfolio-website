@@ -21,6 +21,8 @@ Questo è il portfolio di Smailen, un front-end developer con passione per il we
 
 ## Panoramica
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/33b32928-0abb-4427-ac58-3f980cfc51ed/deploy-status)](https://app.netlify.com/sites/smailenvargas/deploys)
+
 
 ### Screenshot
 
