@@ -20,7 +20,7 @@ const NavbarSample = () => {
   const windowWidth = useWindowWidth();
   const isDesktop = windowWidth >= 1024;
 
-  console.log(isDesktop);
+  // console.log(isDesktop);
 
   return (
     <Navbar className="fixed left-0 top-0">
