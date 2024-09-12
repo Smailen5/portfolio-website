@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 11,
     "title": "Coming soon page",
     "technologies": ["tailwind", "react", "formik"],
     "imageKey": "thumbnailProject1",
@@ -8,7 +8,7 @@
     "github": "https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/base-apparel-coming"
   },
   {
-    "id": 2,
+    "id": 12,
     "title": "generatore di password",
     "technologies": ["javascript es6", "tailwind", "html5"],
     "imageKey": "thumbnailProject2",
@@ -16,7 +16,7 @@
     "github": "https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/password-generator-app"
   },
   {
-    "id": 3,
+    "id": 13,
     "title": "calcolatore di mance",
     "technologies": ["tailwind", "javascript es6"],
     "imageKey": "thumbnailProject3",
@@ -24,7 +24,7 @@
     "github": "https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/tip-calculator-app-main"
   },
   {
-    "id": 4,
+    "id": 14,
     "title": "card nft",
     "technologies": ["html5", "css3", "javascript es6"],
     "imageKey": "thumbnailProject4",
@@ -32,7 +32,7 @@
     "github": "https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/nft-preview-card-component-main-main"
   },
   {
-    "id": 5,
+    "id": 15,
     "title": "pagina di accesso landing page",
     "technologies": ["html5", "css3", "javascript es6"],
     "imageKey": "thumbnailProject5",
@@ -40,7 +40,7 @@
     "github": "https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/pod-request-access-landing-page-main"
   },
   {
-    "id": 6,
+    "id": 16,
     "title": "card social links",
     "technologies": ["tailwind", "javascript es6", "html5"],
     "imageKey": "thumbnailProject6",
@@ -48,11 +48,19 @@
     "github": "https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/social-links-profile-main-main"
   },
   {
-    "id": 7,
+    "id": 17,
     "title": "wiki cocktail",
-    "technologies": ["react", "tailwind", "react router 6", "lottie", "styled components"],
+    "technologies": ["react", "tailwind", "react router 6", "lottie"],
     "imageKey": "thumbnailProject7",
     "liveSite": "https://sparkly-taffy-8ba942.netlify.app/",
     "github": "https://github.com/Smailen5/react-esercizi/tree/main/cocktail"
+  },
+  {
+    "id": 8,
+    "title": "skilled elearning",
+    "technologies": ["react", "tailwind", "shadcn ui", "typescript"],
+    "imageKey": "thumbnailProject8",
+    "liveSite": "https://soft-shortbread-7ebd18.netlify.app/",
+    "github": "https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/skilled-elearning-landing-page"
   }
 ]

@@ -36,7 +36,7 @@ const Project = ({ imageKey, title, technologies, liveSite, github }) => {
           </a>
         </picture>
         {/* contenitore nome progetto e descrizione */}
-        <div className="flex flex-1 flex-col gap-2 p-4 text-left justify-between">
+        <div className="flex flex-1 flex-col justify-between gap-2 p-4 text-left">
           <h3 className="text-2xl font-bold uppercase">{title}</h3>
           {/* array delle tecnologie utilizzate */}
           {/* <p>Fatto con: </p> */}
@@ -62,6 +62,6 @@ Project.propTypes = {
   technologies: PropTypes.array.isRequired,
   liveSite: PropTypes.string.isRequired,
   github: PropTypes.string.isRequired,
-}
+};
 
 export default Project;

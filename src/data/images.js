@@ -11,6 +11,7 @@ import thumbnailProject4 from "../assets/images/card-nft.webp";
 import thumbnailProject5 from "../assets/images/pagina-di-accesso-landing-page.webp";
 import thumbnailProject6 from "../assets/images/card-social-links.webp";
 import thumbnailProject7 from "../assets/images/wiki-cocktail.webp";
+import thumbnailProject8 from "../assets/images/skilled-elearning.webp";
 
 const avatarImages = [avatarIcon, avatarIcon2, avatarIcon3, avatarIcon4];
 
@@ -44,6 +45,10 @@ const images = {
     small: thumbnailProject7,
     large: thumbnailProject7,
   },
+  thumbnailProject8: {
+    small: thumbnailProject8,
+    large: thumbnailProject8,
+  }
 };
 
 export default images;
