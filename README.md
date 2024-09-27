@@ -1,10 +1,8 @@
 # Portfolio Smailen Vargas
 
-
 Questo è il portfolio di Smailen, un front-end developer con passione per il web design e lo sviluppo. Qui puoi esplorare i miei progetti, conoscere le mie competenze e contattarmi per collaborazioni.
 
 👉 [Visita il mio sito](https://smailenvargas.com)
-
 
 ## Sommario
 
@@ -18,17 +16,14 @@ Questo è il portfolio di Smailen, un front-end developer con passione per il we
 - [Autore](#autore)
 - [Per me](#per-me)
 
-
 ## Panoramica
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/33b32928-0abb-4427-ac58-3f980cfc51ed/deploy-status)](https://app.netlify.com/sites/smailenvargas/deploys)
-
 
 ### Screenshot
 
 ![Smartphone](/src//assets/screenshot/sito-smartphone.jpeg)
 ![Desktop](/src/assets/screenshot/sito-desktop.jpeg)
-
 
 ## Processo
 
@@ -50,9 +45,9 @@ Questo è il portfolio di Smailen, un front-end developer con passione per il we
 
 Nel futuro prevedo di:
 
-- ✔~~Implementare la possibilita di scaricare il curriculum o visualizzarlo in una nuova pagina~~
+- ✔ ~~Implementare la possibilita di scaricare il curriculum o visualizzarlo in una nuova pagina~~
 - Implementare la modalita dark mode con TailwindCSS sia automatica che a piacere utilizzando un bottone
-- Cambiare pallette colori aggiungendo differenti temi
+- ❌ ~~Cambiare pallette colori aggiungendo differenti temi~~
 - Aggiungere piu animazioni sia con TailwindCSS che con una libreria JavaScript
 - Aggiungere funzione per tenere traccia dell'esperienza in ogni tecnologia, dato una data di inizio ritorni quanti mesi sono passati
 - Finire di costruire il server e il database per recuperare tutti i progetti
@@ -65,7 +60,6 @@ Nel futuro prevedo di:
 - [Form spree](https://formspree.io/) - Molto utile visto che non volevo scrivere la mia email sul sito, in parte gestisce anche lo spam
 - [React Documentation](https://react.dev/) - Quando dimentico qualcosa e qui che vado
 - [Icons8](https://icons8.it/icons/) - Un grazie per le bellissime icone soprattutto molto semplici da utilizzare, peccato che non tutte le icone le abbia reperite da qui
-
 
 ## Autore
 
