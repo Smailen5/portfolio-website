@@ -35,7 +35,7 @@ const NavbarSample = () => {
       {!isDesktop ? (
         <Dropdown>
           <DropdownTrigger>
-            <Button color="" variant="light">
+            <Button variant="light">
               Menu
             </Button>
           </DropdownTrigger>
