@@ -35,22 +35,30 @@ const NavbarSample = () => {
       {!isDesktop ? (
         <Dropdown>
           <DropdownTrigger>
-            <Button color="" variant="light">
-              Menu
-            </Button>
+            <Button variant="light">Menu</Button>
           </DropdownTrigger>
           <DropdownMenu aria-label="Dropdown Variants">
             <DropdownItem key="home" textValue="Home">
-              <Link to="/">Home</Link>
+              <Link to="/" className="block w-full">
+                Home
+              </Link>
             </DropdownItem>
             <DropdownItem key="project" textValue="Progetti">
-              <Link to="/projects">Progetti</Link>
+              <Link to="/projects" className="block w-full">
+                Progetti
+              </Link>
             </DropdownItem>
             <DropdownItem key="contact" textValue="Contattami">
-              <Link to="/contact">Contattami</Link>
+              <Link to="/contact" className="block w-full">
+                Contattami
+              </Link>
             </DropdownItem>
-            <DropdownItem key="contact" textValue="Contattami">
-              <a href={curriculum} download={"CV-Smailen-Vargas-Frontend.pdf"}>
+            <DropdownItem key="download-cv" textValue="Contattami">
+              <a
+                href={curriculum}
+                download={"CV-Smailen-Vargas-Frontend.pdf"}
+                className="block w-full"
+              >
                 Download CV
               </a>
             </DropdownItem>

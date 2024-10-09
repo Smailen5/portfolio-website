@@ -1,11 +1,15 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
-const AppContext = createContext();
+// Definisce il tipo di contesto
+interface AppContextType {
+  useWindowWidth: () => number;
+}
 
-// controlla larghezza schermo e ne ritorna il valore
+// Crea il contesto e fornisce un valore predefinito
+const AppContext = createContext<AppContextType | undefined>(undefined);
+
+// Controlla larghezza schermo e ne ritorna il valore
 const useWindowWidth = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -17,7 +21,11 @@ const useWindowWidth = () => {
   return width;
 };
 
-const AppProvider = ({ children }) => {
+type AppProviderType = {
+  children: React.ReactNode;
+};
+
+const AppProvider: React.FC<AppProviderType> = ({ children }) => {
   return (
     <AppContext.Provider value={{ useWindowWidth }}>
       {children}
@@ -26,7 +34,11 @@ const AppProvider = ({ children }) => {
 };
 
 const useGlobalContext = () => {
-  return useContext(AppContext);
+  const context = useContext(AppContext);
+  if (!context) {
+    throw new Error("useGlobalCOntext non puo essere usato senza AppProvider");
+  }
+  return context;
 };
 
 AppProvider.propTypes = {

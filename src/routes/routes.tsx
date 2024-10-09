@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-undef */
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../screen/HomeScreen";
 import Contact from "../screen/ContactScreen";
