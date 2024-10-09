@@ -49,7 +49,7 @@ const NavbarSample = () => {
             <DropdownItem key="contact" textValue="Contattami">
               <Link to="/contact">Contattami</Link>
             </DropdownItem>
-            <DropdownItem key="contact" textValue="Contattami">
+            <DropdownItem key="download-cv" textValue="Contattami">
               <a href={curriculum} download={"CV-Smailen-Vargas-Frontend.pdf"}>
                 Download CV
               </a>
