@@ -10,7 +10,7 @@ const Footer = () => {
           <p className="hidden md:block">Powered by</p>
           <img src={tailwindIcon} alt="icona tailwind css" className="size-6" />
           <img src={reactIcon} alt="icona react" className="size-6" />
-          <SiNextui alt="icona nextui" className="size-6" />
+          <SiNextui className="size-6" />
         </div>
         <p>
           © 2024 Smailen Vargas. Tutti i diritti riservati.{" "}
