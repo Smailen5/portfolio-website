@@ -1,6 +1,6 @@
-import Footer from "../Components/Footer";
+import Footer from "../Components/organisms/Footer";
 import FormComponent from "../Components/FormComponent";
-import NavbarSample from "../Components/Navbar";
+import NavbarSample from "../Components/organisms/Navbar";
 import useScroll from "../utils/useScroll";
 
 const ContactScreen = () => {
