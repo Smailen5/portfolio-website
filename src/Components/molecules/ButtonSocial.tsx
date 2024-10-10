@@ -9,7 +9,7 @@ type ButtonSocialType = {
 };
 
 const ButtonSocial: React.FC<ButtonSocialType> = ({ name, link, icon }) => {
-  const IconComponent = icons[icon] as React.FC<React.SVGProps<SVGElement>> | string;
+  const IconComponent = icons[icon];
 
   const handleNavigation = () => {
     setTimeout(() => {
@@ -19,11 +19,8 @@ const ButtonSocial: React.FC<ButtonSocialType> = ({ name, link, icon }) => {
 
   return (
     <Button variant={"ghost"} size="lg" className="" onClick={handleNavigation}>
-      {typeof IconComponent === "string" ? (
-        <img src={IconComponent} alt={`${name} icon`} />
-      ) : (
-        <IconComponent />
-      )}
+      <img srcSet={IconComponent} alt={`${name} icon`} />
+
       {/* {React.createElement(icons[icon])} */}
       <span className="font-semibold uppercase">{name}</span>
     </Button>
