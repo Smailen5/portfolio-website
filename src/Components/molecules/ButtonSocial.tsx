@@ -19,9 +19,7 @@ const ButtonSocial: React.FC<ButtonSocialType> = ({ name, link, icon }) => {
 
   return (
     <Button variant={"ghost"} size="lg" className="" onClick={handleNavigation}>
-      <img srcSet={IconComponent} alt={`${name} icon`} />
-
-      {/* {React.createElement(icons[icon])} */}
+      <img srcSet={IconComponent} alt={`${name} icon`} className="size-5" />
       <span className="font-semibold uppercase">{name}</span>
     </Button>
   );
