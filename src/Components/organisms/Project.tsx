@@ -1,6 +1,5 @@
 import { Button } from "@nextui-org/react";
-import {images} from "../../data/images";
-// import PropTypes from "prop-types";
+import { images } from "../../data/images";
 
 type ProjectType = {
   imageKey: string;
@@ -75,13 +74,5 @@ const Project: React.FC<ProjectType> = ({
     </>
   );
 };
-
-// Project.propTypes = {
-//   imageKey: PropTypes.string.isRequired,
-//   title: PropTypes.string.isRequired,
-//   technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
-//   liveSite: PropTypes.string.isRequired,
-//   github: PropTypes.string.isRequired,
-// };
 
 export default Project;
