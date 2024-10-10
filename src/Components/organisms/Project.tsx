@@ -1,4 +1,3 @@
-// import { Button } from "@nextui-org/react";
 import { images } from "../../data/images";
 import { ButtonsProject } from "../molecules/ButtonsProject";
 
@@ -23,21 +22,6 @@ const Project: React.FC<ProjectType> = ({
     console.error(`La chiave ${imageKey} non e stata trovata`);
     return null;
   }
-  // Bottoni per aprire il progetto o github
-  // const Buttons = (
-  //   <div className="space-x-8">
-  //     <Button color="primary" variant="bordered">
-  //       <a href={liveSite} target="_blank" rel="noopener noreferrer">
-  //         guarda ora
-  //       </a>
-  //     </Button>
-  //     <Button color="primary" variant="bordered">
-  //       <a href={github} target="_blank" rel="noopener noreferrer">
-  //         codice
-  //       </a>
-  //     </Button>
-  //   </div>
-  // );
 
   return (
     <>
@@ -59,7 +43,6 @@ const Project: React.FC<ProjectType> = ({
         <div className="flex flex-1 flex-col justify-between gap-2 p-4 text-left">
           <h3 className="text-2xl font-bold uppercase">{title}</h3>
           {/* array delle tecnologie utilizzate */}
-          {/* <p>Fatto con: </p> */}
           <div className="flex flex-wrap gap-4 uppercase">
             {technologies.map((tech) => {
               return (
