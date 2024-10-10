@@ -5,10 +5,10 @@ const Socials = () => {
   return (
     <section className="flex flex-col gap-8">
       <h3 className="text-center text-2xl font-semibold">Social</h3>
-      <div className="justify-cente flex h-full w-full flex-col justify-start gap-8 md:grid md:grid-cols-3">
-        {social.map((social) => {
-          return <ButtonSocial key={social.name} {...social} />;
-        })}
+      <div className="flex h-full w-full flex-col justify-start gap-8 md:grid md:grid-cols-3">
+        {social.map(({ name, link, icon }) => (
+          <ButtonSocial key={name} name={name} link={link} icon={icon} />
+        ))}
       </div>
     </section>
   );
