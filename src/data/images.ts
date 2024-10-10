@@ -13,10 +13,14 @@ import thumbnailProject6 from "../assets/images/card-social-links.webp";
 import thumbnailProject7 from "../assets/images/wiki-cocktail.webp";
 import thumbnailProject8 from "../assets/images/skilled-elearning.webp";
 
-const avatarImages = [avatarIcon, avatarIcon2, avatarIcon3, avatarIcon4];
+export const avatarImages: string[] = [
+  avatarIcon,
+  avatarIcon2,
+  avatarIcon3,
+  avatarIcon4,
+];
 
-const images = {
-  avatarImages: avatarImages,
+export const images: Record<string, { small: string; large: string }> = {
   thumbnailProject1: {
     small: thumbnailProject1,
     large: thumbnailProject1,
@@ -48,7 +52,5 @@ const images = {
   thumbnailProject8: {
     small: thumbnailProject8,
     large: thumbnailProject8,
-  }
+  },
 };
-
-export default images;
