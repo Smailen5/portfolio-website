@@ -1,5 +1,4 @@
 import { Button } from "@nextui-org/react";
-// import PropTypes from "prop-types";
 
 type ButtonSocialType = {
   name: string;
@@ -23,10 +22,5 @@ const ButtonSocial: React.FC<ButtonSocialType> = ({ name, link }) => {
     </Button>
   );
 };
-
-// ButtonSocial.propTypes = {
-//   name: PropTypes.string.isRequired,
-//   link: PropTypes.string.isRequired,
-// };
 
 export default ButtonSocial;
