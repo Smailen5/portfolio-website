@@ -5,5 +5,5 @@ import FrontendMentorLogoIcon from "./FrontendMentorLogoIcon.svg";
 export const icons = {
   github: GitHubLogoIcon,
   linkedin: LinkedInLogoIcon,
-  "frontend-mentor": FrontendMentorLogoIcon,
+  frontendMentor: FrontendMentorLogoIcon,
 };

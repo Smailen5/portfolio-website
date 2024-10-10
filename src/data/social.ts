@@ -1,4 +1,12 @@
-const social = [
+import { icons } from "../assets/icons/index";
+
+type SocialItem = {
+  name:string;
+  link:string;
+  icon: keyof typeof icons;
+}
+
+const social:SocialItem[] = [
   {
     name: "Github",
     link: "https://github.com/Smailen5",
@@ -12,9 +20,8 @@ const social = [
   {
     name: "Frontend Mentor",
     link: "https://www.frontendmentor.io/profile/Smailen5",
-    icon: "frontend-mentor",
+    icon: "frontendMentor",
   },
 ];
 
 export default social;
-
