@@ -29,7 +29,7 @@ const Project: React.FC<ProjectType> = ({
     <>
       {/* PROGETTO SINGOLO */}
       <div className="flex flex-col gap-4 rounded-md bg-white shadow-md">
-      <PictureProject linkSite={liveSite} key={imageKey} />
+      <PictureProject linkSite={liveSite} imageKey={imageKey} />
         {/* immagine */}
         {/* <picture>
           <source media="(1024px)" srcSet={images[imageKey].large} />
