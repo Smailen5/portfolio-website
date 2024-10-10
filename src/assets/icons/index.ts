@@ -1,9 +1,9 @@
 import GitHubLogoIcon from "./GitHubIcon.svg";
-import LinkedInLogoIcon  from "./LinkedInLogoIcon.svg";
-import { SiFrontendmentor } from "react-icons/si";
+import LinkedInLogoIcon from "./LinkedInLogoIcon.svg";
+import FrontendMentorLogoIcon from "./FrontendMentorLogoIcon.svg";
 
 export const icons = {
   github: GitHubLogoIcon,
   linkedin: LinkedInLogoIcon,
-  "frontend-mentor": SiFrontendmentor,
+  "frontend-mentor": FrontendMentorLogoIcon,
 };
