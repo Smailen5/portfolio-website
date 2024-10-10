@@ -1,5 +1,7 @@
 import { images } from "../../data/images";
 import { ButtonsProject } from "../molecules/ButtonsProject";
+import { ContainerProject } from "../molecules/ContainerProject";
+import { PictureProject } from "../molecules/PictureProject";
 
 type ProjectType = {
   imageKey: string;
@@ -27,8 +29,9 @@ const Project: React.FC<ProjectType> = ({
     <>
       {/* PROGETTO SINGOLO */}
       <div className="flex flex-col gap-4 rounded-md bg-white shadow-md">
+      <PictureProject linkSite={liveSite} key={imageKey} />
         {/* immagine */}
-        <picture>
+        {/* <picture>
           <source media="(1024px)" srcSet={images[imageKey].large} />
           <a href={liveSite} target="_blank" rel="noopener noreferrer">
             <img
@@ -38,22 +41,11 @@ const Project: React.FC<ProjectType> = ({
               className="rounded-md shadow-lg lg:hover:animate-pulse"
             />
           </a>
-        </picture>
+        </picture> */}
         {/* contenitore nome progetto e descrizione */}
-        <div className="flex flex-1 flex-col justify-between gap-2 p-4 text-left">
-          <h3 className="text-2xl font-bold uppercase">{title}</h3>
-          {/* array delle tecnologie utilizzate */}
-          <div className="flex flex-wrap gap-4 uppercase">
-            {technologies.map((tech) => {
-              return (
-                <h4 key={tech} className="font-semibold">
-                  {tech}
-                </h4>
-              );
-            })}
-          </div>
+        <ContainerProject title={title} technologies={technologies}>
           <ButtonsProject linkSite={liveSite} linkRepo={github} />
-        </div>
+        </ContainerProject>
       </div>
     </>
   );
