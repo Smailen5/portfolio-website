@@ -1,5 +1,5 @@
 import { Button } from "@nextui-org/react";
-import images from "../data/images";
+import images from "../../data/images";
 import PropTypes from "prop-types";
 
 const Project = ({ imageKey, title, technologies, liveSite, github }) => {

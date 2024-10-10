@@ -1,6 +1,6 @@
 import Footer from "../Components/organisms/Footer";
 import NavbarSample from "../Components/organisms/Navbar";
-import Project from "../Components/Project";
+import Project from "../Components/organisms/Project";
 import projects from "../data/projects.json";
 import useScroll from "../utils/useScroll";
 

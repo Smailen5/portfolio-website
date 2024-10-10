@@ -1,9 +1,9 @@
 import Footer from "../Components/organisms/Footer";
-import Hero from "../Components/Hero";
+import Hero from "../Components/organisms/Hero";
 import NavbarSample from "../Components/organisms/Navbar";
-import Presentation from "../Components/Presentation";
-import Skills from "../Components/Skills";
-import Socials from "../Components/Socials";
+import Presentation from "../Components/organisms/Presentation";
+import Skills from "../Components/molecules/Skills";
+import Socials from "../Components/organisms/Socials";
 import useScroll from "../utils/useScroll";
 
 const HomeScreen = () => {

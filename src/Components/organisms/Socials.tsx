@@ -1,5 +1,5 @@
-import social from "../data/social";
-import Social from "./Social";
+import social from "../../data/social";
+import Social from "../molecules/Social";
 
 const Socials = () => {
   return (

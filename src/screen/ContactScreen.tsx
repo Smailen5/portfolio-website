@@ -1,5 +1,5 @@
 import Footer from "../Components/organisms/Footer";
-import FormComponent from "../Components/FormComponent";
+import FormComponent from "../Components/organisms/FormComponent";
 import NavbarSample from "../Components/organisms/Navbar";
 import useScroll from "../utils/useScroll";
 
