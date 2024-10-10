@@ -1,7 +1,12 @@
 import { Button } from "@nextui-org/react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
-const Social = ({ name, link }) => {
+type ButtonSocialType = {
+  name: string;
+  link: string;
+};
+
+const ButtonSocial: React.FC<ButtonSocialType> = ({ name, link }) => {
   const handleNavigation = () => {
     setTimeout(() => {
       window.open(link, "_blank", "noopener noreferrer");
@@ -19,9 +24,9 @@ const Social = ({ name, link }) => {
   );
 };
 
-Social.propTypes = {
-  name: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
-};
+// ButtonSocial.propTypes = {
+//   name: PropTypes.string.isRequired,
+//   link: PropTypes.string.isRequired,
+// };
 
-export default Social;
+export default ButtonSocial;
