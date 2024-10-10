@@ -10,11 +10,16 @@ type ButtonSocialType = {
 const ButtonSocial: React.FC<ButtonSocialType> = ({ name, link, icon }) => {
   const IconComponent = icons[icon];
 
-  const handleNavigation = () => window.open(link, "_blank", "noopener noreferrer");
-  
+  const handleNavigation = () =>
+    window.open(link, "_blank", "noopener noreferrer");
 
   return (
-    <Button variant={"ghost"} size="lg" className="" onClick={handleNavigation}>
+    <Button
+      variant={"ghost"}
+      size="lg"
+      onClick={handleNavigation}
+      className="space-x-4"
+    >
       <img srcSet={IconComponent} alt={`${name} icon`} className="size-5" />
       <span className="font-semibold uppercase">{name}</span>
     </Button>
