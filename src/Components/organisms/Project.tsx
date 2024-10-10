@@ -1,8 +1,28 @@
 import { Button } from "@nextui-org/react";
-import images from "../../data/images";
-import PropTypes from "prop-types";
+import {images} from "../../data/images";
+// import PropTypes from "prop-types";
 
-const Project = ({ imageKey, title, technologies, liveSite, github }) => {
+type ProjectType = {
+  imageKey: string;
+  title: string;
+  technologies: string[];
+  liveSite: string;
+  github: string;
+};
+
+const Project: React.FC<ProjectType> = ({
+  imageKey,
+  title,
+  technologies,
+  liveSite,
+  github,
+}) => {
+  const image = images[imageKey];
+
+  if (!image) {
+    console.error(`La chiave ${imageKey} non e stata trovata`);
+    return null;
+  }
   // Bottoni per aprire il progetto o github
   const Buttons = (
     <div className="space-x-8">
@@ -56,12 +76,12 @@ const Project = ({ imageKey, title, technologies, liveSite, github }) => {
   );
 };
 
-Project.propTypes = {
-  imageKey: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  technologies: PropTypes.array.isRequired,
-  liveSite: PropTypes.string.isRequired,
-  github: PropTypes.string.isRequired,
-};
+// Project.propTypes = {
+//   imageKey: PropTypes.string.isRequired,
+//   title: PropTypes.string.isRequired,
+//   technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+//   liveSite: PropTypes.string.isRequired,
+//   github: PropTypes.string.isRequired,
+// };
 
 export default Project;
