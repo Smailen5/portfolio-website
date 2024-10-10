@@ -1,5 +1,6 @@
-import { Button } from "@nextui-org/react";
+// import { Button } from "@nextui-org/react";
 import { images } from "../../data/images";
+import { ButtonsProject } from "../molecules/ButtonsProject";
 
 type ProjectType = {
   imageKey: string;
@@ -23,20 +24,20 @@ const Project: React.FC<ProjectType> = ({
     return null;
   }
   // Bottoni per aprire il progetto o github
-  const Buttons = (
-    <div className="space-x-8">
-      <Button color="primary" variant="bordered">
-        <a href={liveSite} target="_blank" rel="noopener noreferrer">
-          guarda ora
-        </a>
-      </Button>
-      <Button color="primary" variant="bordered">
-        <a href={github} target="_blank" rel="noopener noreferrer">
-          codice
-        </a>
-      </Button>
-    </div>
-  );
+  // const Buttons = (
+  //   <div className="space-x-8">
+  //     <Button color="primary" variant="bordered">
+  //       <a href={liveSite} target="_blank" rel="noopener noreferrer">
+  //         guarda ora
+  //       </a>
+  //     </Button>
+  //     <Button color="primary" variant="bordered">
+  //       <a href={github} target="_blank" rel="noopener noreferrer">
+  //         codice
+  //       </a>
+  //     </Button>
+  //   </div>
+  // );
 
   return (
     <>
@@ -68,7 +69,7 @@ const Project: React.FC<ProjectType> = ({
               );
             })}
           </div>
-          {Buttons}
+          <ButtonsProject linkSite={liveSite} linkRepo={github} />
         </div>
       </div>
     </>
