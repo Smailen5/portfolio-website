@@ -11,11 +11,8 @@ type ButtonSocialType = {
 const ButtonSocial: React.FC<ButtonSocialType> = ({ name, link, icon }) => {
   const IconComponent = icons[icon];
 
-  const handleNavigation = () => {
-    setTimeout(() => {
-      window.open(link, "_blank", "noopener noreferrer");
-    }, 500);
-  };
+  const handleNavigation = () => window.open(link, "_blank", "noopener noreferrer");
+  
 
   return (
     <Button variant={"ghost"} size="lg" className="" onClick={handleNavigation}>
