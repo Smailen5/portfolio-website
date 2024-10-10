@@ -1,12 +1,11 @@
 import {
-  Button,
-  Dropdown,
-  DropdownItem,
-  DropdownMenu,
-  DropdownTrigger,
+    Button,
+    Dropdown,
+    DropdownItem,
+    DropdownMenu,
+    DropdownTrigger,
 } from "@nextui-org/react";
 import { Link } from "react-router-dom";
-// import curriculum from "../../assets/curriculum/Curriculum-Smailen-Vargas.pdf";
 
 export const DropdownNavbar = ({
   linkCurriculum,
