@@ -1,6 +1,5 @@
 import { Button } from "@/Components/atoms/button";
 import { icons } from "../../assets/icons/index";
-import React from "react";
 
 type ButtonSocialType = {
   name: string;
