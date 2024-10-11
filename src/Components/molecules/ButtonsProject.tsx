@@ -1,4 +1,4 @@
-import { Button } from "@nextui-org/react";
+import { Button } from "@/Components/atoms/button";
 
 type ButtonsProjectType = {
   linkSite: string;
@@ -9,14 +9,15 @@ export const ButtonsProject: React.FC<ButtonsProjectType> = ({
   linkSite,
   linkRepo,
 }) => {
+  const buttonClass = "border-primary";
   return (
     <div className="space-x-8">
-      <Button color="primary" variant="bordered">
+      <Button variant="outline" className={`${buttonClass}`}>
         <a href={linkSite} target="_blank" rel="noopener noreferrer">
           guarda ora
         </a>
       </Button>
-      <Button color="primary" variant="bordered">
+      <Button variant="outline" className={`${buttonClass}`}>
         <a href={linkRepo} target="_blank" rel="noopener noreferrer">
           codice
         </a>
