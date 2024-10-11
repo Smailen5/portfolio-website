@@ -11,11 +11,15 @@ export const HeaderProject = () => {
         </p>
         <p>
           Puoi vedere il mio portfolio su{" "}
-          <LinkBlank href="https://smailen5.github.io/Frontend-Mentor-Challenge/">
+          <LinkBlank
+            href="https://smailen5.github.io/Frontend-Mentor-Challenge/" isText
+          >
             Frontend Mentor
           </LinkBlank>
           . Mentre su{" "}
-          <LinkBlank href="https://github.com/Smailen5?tab=repositories">
+          <LinkBlank
+            href="https://github.com/Smailen5?tab=repositories" isText
+          >
             GitHub
           </LinkBlank>{" "}
           trovi la raccolta completa, inclusi i progetti reali in uso.
