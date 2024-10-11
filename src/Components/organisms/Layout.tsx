@@ -1,7 +1,9 @@
-import NavbarSample from "./Navbar";
+import useScroll from "../../utils/useScroll";
 import Footer from "./Footer";
+import NavbarSample from "./Navbar";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
+  useScroll();
   return (
     <>
       <NavbarSample />
