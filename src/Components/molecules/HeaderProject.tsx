@@ -10,10 +10,10 @@ export const HeaderProject = () => {
           sviluppo front-end.
         </p>
         <p>
-          Puoi vedere tutti i miei lavori su Frontend Mentor e React{" "}
+          Puoi vedere tutti i miei lavori migliori su{" "}
           {/* aggiungi link al file readme con tutti gli esercizi */}
           <LinkBlank href="https://smailen5.github.io/Frontend-Mentor-Challenge/">
-            qui
+            Frontend Mentor
           </LinkBlank>
           . Su {/* aggiungi link alle repository di github */}
           <LinkBlank href="https://github.com/Smailen5?tab=repositories">
