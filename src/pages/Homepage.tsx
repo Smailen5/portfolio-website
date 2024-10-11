@@ -2,7 +2,7 @@ import { HomeTemplate } from "@/Components/template/HomeTemplate";
 import { Layout } from "../Components/organisms/Layout";
 import useScroll from "../utils/useScroll";
 
-const HomeScreen = () => {
+const HomePage = () => {
   useScroll();
 
   return (
@@ -12,4 +12,4 @@ const HomeScreen = () => {
   );
 };
 
-export default HomeScreen;
+export default HomePage;

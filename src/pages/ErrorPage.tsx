@@ -5,7 +5,7 @@ import animationData from "../assets/animation/animation-404.json";
 import Footer from "../Components/organisms/Footer";
 import NavbarSample from "../Components/organisms/Navbar";
 
-const ErrorScreen = () => {
+const ErrorPage = () => {
   return (
     <>
       <NavbarSample />
@@ -33,4 +33,4 @@ const ErrorScreen = () => {
   );
 };
 
-export default ErrorScreen;
+export default ErrorPage;

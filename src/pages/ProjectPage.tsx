@@ -1,7 +1,7 @@
 import { Layout } from "@/Components/organisms/Layout";
 import { ProjectTemplate } from "@/Components/template/ProjectTemplate";
 
-const ProjectsScreen = () => {
+const ProjectPage = () => {
   return (
     <>
       <Layout>
@@ -11,4 +11,4 @@ const ProjectsScreen = () => {
   );
 };
 
-export default ProjectsScreen;
+export default ProjectPage;
