@@ -1,4 +1,5 @@
 import { images } from "../../data/images";
+import { LinkBlank } from "../atoms/LinkBlank";
 
 type PictureProject = {
   linkSite: string;
@@ -17,16 +18,18 @@ export const PictureProject: React.FC<PictureProject> = ({
   }
 
   return (
-    <picture>
+    <picture className="overflow-hidden rounded-md">
       <source media="(1024px)" srcSet={image.large} />
-      <a href={linkSite} target="_blank" rel="noopener noreferrer">
+      <LinkBlank href={linkSite}>
+        {/* <a href={linkSite} target="_blank" rel="noopener noreferrer"> */}
         <img
           loading="lazy"
           src={image.small}
           // forse conviene dare una misura fissa a tutte le immagini per evitare dimensioni diverse es.`lg:w-[480px] lg:h-[300px]`
-          className="rounded-md shadow-lg lg:hover:animate-pulse"
+          className="shadow-lg transition-all duration-500 lg:hover:scale-110"
         />
-      </a>
+        {/* </a> */}
+      </LinkBlank>
     </picture>
   );
 };
