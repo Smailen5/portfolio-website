@@ -9,6 +9,7 @@ export const ButtonsProject: React.FC<ButtonsProjectType> = ({
   linkSite,
   linkRepo,
 }) => {
+  // Gestisci qui lo stile dei bottoni
   const buttonClass = "border-primary";
   return (
     <div className="space-x-8">
