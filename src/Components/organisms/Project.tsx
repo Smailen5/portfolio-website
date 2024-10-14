@@ -1,31 +1,23 @@
 import { ButtonsProject } from "../molecules/ButtonsProject";
 import { ContainerProject } from "../molecules/ContainerProject";
-import { PictureProject } from "../molecules/PictureProject";
+// import { PictureProject } from "../molecules/PictureProject";
 
 type ProjectType = {
-  imageKey: string;
-  title: string;
-  technologies: string[];
-  liveSite: string;
-  github: string;
+  name: string;
+  path: string;
+  html_url: string;
 };
 
-const Project: React.FC<ProjectType> = ({
-  imageKey,
-  title,
-  technologies,
-  liveSite,
-  github,
-}) => {
+const Project: React.FC<ProjectType> = ({ name, path, html_url }) => {
   return (
     <>
       {/* PROGETTO SINGOLO */}
       <div className="flex flex-col gap-4 rounded-md bg-white shadow-md">
         {/* immagine */}
-        <PictureProject linkSite={liveSite} imageKey={imageKey} />
+        {/* <PictureProject linkSite={liveSite} imageKey={imageKey} /> */}
         {/* contenitore nome progetto e descrizione */}
-        <ContainerProject title={title} technologies={technologies}>
-          <ButtonsProject linkSite={liveSite} linkRepo={github} />
+        <ContainerProject name={name}>
+          <ButtonsProject linkSite={path} linkRepo={html_url} />
         </ContainerProject>
       </div>
     </>
