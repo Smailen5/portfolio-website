@@ -16,6 +16,15 @@ export const useFetch = () => {
 
   useEffect(() => {
     const fetchProjects = async () => {
+      const cachedProjects = sessionStorage.getItem("projects");
+
+      // Controlla se i progetti sono salvati e li recupera da session storage
+      if(cachedProjects){
+        setProjects(JSON.parse(cachedProjects))
+        setLoading(false)
+        return
+      }
+
       try {
         const response = await axios.get(`${url}`, {
           headers: {
@@ -27,6 +36,8 @@ export const useFetch = () => {
           (item: any) => item.type === "dir",
         );
         setProjects(projectFolders);
+        // Salva i progetti in session storage
+        sessionStorage.setItem("projects", JSON.stringify(projectFolders))
       } catch (error: any) {
         setError(error);
       } finally {
