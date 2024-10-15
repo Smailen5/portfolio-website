@@ -8,6 +8,8 @@ type ContainerProject = {
 
 export const ContainerProject:React.FC<ContainerProject> = ({ name,  children }) => {
   
+  console.log(name);
+  
   return (
     <div className="flex flex-1 flex-col justify-between gap-2 p-4 text-left">
       <h3 className="text-2xl font-bold uppercase">{nameCorrect(name)}</h3>
