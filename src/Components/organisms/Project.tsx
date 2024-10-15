@@ -5,12 +5,12 @@ import { PictureProject } from "../molecules/PictureProject";
 
 type ProjectType = {
   name: string;
-  path: string;
+  // path: string;
   html_url: string;
   image:string;
 };
 
-const Project: React.FC<ProjectType> = ({ name, path, html_url, image }) => {
+const Project: React.FC<ProjectType> = ({ name, html_url, image }) => {
   return (
     <>
       {/* PROGETTO SINGOLO */}
