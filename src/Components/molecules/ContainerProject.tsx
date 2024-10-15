@@ -16,6 +16,7 @@ export const ContainerProject: React.FC<ContainerProject> = ({
       <h3 className="text-2xl font-bold uppercase">{nameCorrect(name)}</h3>
       {/* array delle tecnologie utilizzate */}
       <div className="flex flex-wrap gap-4 uppercase">
+        {/* Fa attenzione che se non trova le tecnologie va in crash */}
         {technologies.map((tech) => {
           return (
             <h4 key={tech} className="font-semibold">
