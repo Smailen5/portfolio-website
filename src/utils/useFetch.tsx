@@ -1,11 +1,20 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { extractTechnologies } from "./extractTechnologies";
 
 type Project = {
   name:string;
   path:string;
   html_url:string;
   image:string;
+  technologies: string[];
+}
+
+type GitHubFolder = {
+  name:string;
+  path:string;
+  html_url:string;
+  type:string;
 }
 
 export const useFetch = () => {
@@ -42,8 +51,16 @@ export const useFetch = () => {
           ...project,
           image: `${imageBaseUrl}${project.name}.jpeg`,
         }));
+
+         // Recupera le tecnologie per ciascun progetto
+         const projectsWithTechnologies = await Promise.all(
+          projectFolders.map(async (folder:GitHubFolder) => {
+            const technologies = await extractTechnologies(folder.name);
+            return { ...folder, technologies };
+          })
+        );
         
-        setProjects(projectFolders);
+        setProjects(projectsWithTechnologies);
         // Salva i progetti in session storage
         sessionStorage.setItem("projects", JSON.stringify(projectFolders))
       } catch (error: any) {
