@@ -11,6 +11,12 @@ export const ContainerProject: React.FC<ContainerProject> = ({
   children,
   technologies,
 }) => {
+  console.log(technologies);
+  // Risolve il bug per cui va in crash ma, bisogna gestire i componenti separatamente secondo atomic design
+  if(technologies === undefined){
+    return null
+  }
+  
   return (
     <div className="flex flex-1 flex-col justify-between gap-2 p-4 text-left">
       <h3 className="text-2xl font-bold uppercase">{nameCorrect(name)}</h3>
