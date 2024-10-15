@@ -1,3 +1,5 @@
+import { nameCorrect } from "@/utils/nameCorrect";
+
 type ContainerProject = {
     name: string;
     // technologies: string[];
@@ -5,9 +7,10 @@ type ContainerProject = {
 }
 
 export const ContainerProject:React.FC<ContainerProject> = ({ name,  children }) => {
+  
   return (
     <div className="flex flex-1 flex-col justify-between gap-2 p-4 text-left">
-      <h3 className="text-2xl font-bold uppercase">{name}</h3>
+      <h3 className="text-2xl font-bold uppercase">{nameCorrect(name)}</h3>
       {/* array delle tecnologie utilizzate */}
       <div className="flex flex-wrap gap-4 uppercase">
         {/* {technologies.map((tech) => {

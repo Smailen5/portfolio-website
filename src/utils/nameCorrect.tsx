@@ -1,0 +1,1 @@
+export const nameCorrect = (name:string) => name.replace(/-|main/g, " ")
