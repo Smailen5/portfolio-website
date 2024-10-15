@@ -37,7 +37,7 @@ export const useFetch = () => {
         });
 
         const projectFolders = response.data.filter(
-          (item: any) => item.type === "dir",
+          (item: any) => item.type === "dir" && ![".github", "screen-capture"].includes(item.name)
         ).map((project:any) => ({
           ...project,
           image: `${imageBaseUrl}${project.name}.jpeg`,
