@@ -1,15 +1,15 @@
 import { nameCorrect } from "@/utils/nameCorrect";
 
 type ContainerProject = {
-    name: string;
-    // technologies: string[];
-    children: React.ReactNode;
-}
+  name: string;
+  // technologies: string[];
+  children: React.ReactNode;
+};
 
-export const ContainerProject:React.FC<ContainerProject> = ({ name,  children }) => {
-  
-  console.log(name);
-  
+export const ContainerProject: React.FC<ContainerProject> = ({
+  name,
+  children,
+}) => {
   return (
     <div className="flex flex-1 flex-col justify-between gap-2 p-4 text-left">
       <h3 className="text-2xl font-bold uppercase">{nameCorrect(name)}</h3>
