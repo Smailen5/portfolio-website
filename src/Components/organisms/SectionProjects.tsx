@@ -3,10 +3,10 @@ import { useFetch } from "@/utils/useFetch";
 import Project from "./Project";
 
 export const SectionProjects = () => {
-  const {projects, loading, error } = useFetch()
+  const { projects, loading, error } = useFetch();
 
-  if(loading) return <p>Loading...</p>
-  if(error) return <p>{error}</p>
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>{error}</p>;
   return (
     <>
       <section className="grid gap-4 lg:grid-cols-2">
