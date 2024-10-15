@@ -27,6 +27,7 @@ export const useFetch = () => {
 
       try {
         const response = await axios.get(`${url}`, {
+          // Token GitHub per aumentare le richieste a 5000, // ! aggiornare ogni 30 giorni
           headers: {
             Authorization: `token ${import.meta.env.VITE_GITHUB_TOKEN}`,
           },
