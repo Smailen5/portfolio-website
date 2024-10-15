@@ -1,1 +1,1 @@
-export const nameCorrect = (name:string) => name.replace(/-|main/g, " ")
+export const nameCorrect = (name:string) => name.replace(/-|main|master|app|component/g, " ")
