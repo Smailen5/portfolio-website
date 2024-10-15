@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// Funzione per estrarre le tecnologie da un file README.md di un progetto
 export const extractTechnologies = async (
   projectName: string,
 ): Promise<string[]> => {
@@ -14,9 +15,11 @@ export const extractTechnologies = async (
     );
 
     if (techSectionMatch) {
+      // Divide le righe trovate e filtra le righe vuote
       const techLines: string[] = techSectionMatch[1]
         .split("\n")
         .filter((line: string) => line.trim() !== "");
+      // Rimuove il prefisso "- " e crea un array di tecnologie
       const technologies: string[] = techLines.map((line: string) =>
         line.replace(/^- /, "").trim(),
       );
