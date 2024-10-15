@@ -8,9 +8,10 @@ type ProjectType = {
   // path: string;
   html_url: string;
   image:string;
+  technologies: string[];
 };
 
-const Project: React.FC<ProjectType> = ({ name, html_url, image }) => {
+const Project: React.FC<ProjectType> = ({ name, html_url, image, technologies }) => {
   return (
     <>
       {/* PROGETTO SINGOLO */}
@@ -18,7 +19,7 @@ const Project: React.FC<ProjectType> = ({ name, html_url, image }) => {
         {/* immagine */}
         <PictureProject linkSite={html_url} image={image} />
         {/* contenitore nome progetto e descrizione */}
-        <ContainerProject name={name}>
+        <ContainerProject name={name} technologies={technologies}>
           <ButtonsProject linkRepo={html_url} />
         </ContainerProject>
       </div>
