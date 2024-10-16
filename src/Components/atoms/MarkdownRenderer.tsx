@@ -5,10 +5,12 @@ import { LinkBlank } from "./LinkBlank";
 
 interface MarkdownRendererProps {
   content: string;
+  nome: string | undefined;
 }
 
 export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
   content,
+  nome,
 }) => {
   console.log(content);
   return (
@@ -40,7 +42,8 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
           ),
           img: ({ node, ...props }) => (
             <img
-              src={`${import.meta.env.VITE_GITHUB_URL_IMAGES_SCREEN}/${props.src}`}
+              src={`${import.meta.env.VITE_GITHUB_URL_IMAGES_SCREEN}${nome}/${props.src}`}
+              className="mb-4 w-full rounded-md md:w-auto"
             />
           ),
         }}
