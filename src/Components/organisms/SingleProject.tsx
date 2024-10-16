@@ -10,14 +10,14 @@ export const SingleProject = () => {
 
   return (
     <Layout>
-      <h1 className="mb- text-2xl font-bold">{nome}</h1>
+      {/* <h1 className="mb- text-2xl font-bold">{nome}</h1> */}
       <div className="readme-content">
         {loading ? (
           <p>Caricamento...</p>
         ) : error ? (
           <p>{error}</p>
         ) : (
-          <MarkdownRenderer content={readmeContent} />
+          <MarkdownRenderer content={readmeContent} nome={nome} />
         )}
       </div>
     </Layout>
