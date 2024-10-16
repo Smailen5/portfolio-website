@@ -12,7 +12,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
   content,
   nome,
 }) => {
-  console.log(content);
+//   console.log(content);
   return (
     <div className="">
       <ReactMarkdown
