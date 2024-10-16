@@ -12,7 +12,6 @@ export const ContainerProject: React.FC<ContainerProject> = ({
   technologies,
 }) => {
   console.log(technologies);
-  // Risolve il bug per cui va in crash ma, bisogna gestire i componenti separatamente secondo atomic design
   if(technologies === undefined){
     return null
   }
