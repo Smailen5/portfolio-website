@@ -62,7 +62,7 @@ export const useFetch = () => {
         
         setProjects(projectsWithTechnologies);
         // Salva i progetti in session storage
-        sessionStorage.setItem("projects", JSON.stringify(projectFolders))
+        sessionStorage.setItem("projects", JSON.stringify(projectsWithTechnologies))
       } catch (error: any) {
         setError(error);
       } finally {
