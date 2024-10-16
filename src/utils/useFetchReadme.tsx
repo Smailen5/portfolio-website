@@ -20,7 +20,7 @@ export const useFetchReadme = (nome: string) => {
 
           const content = await response.text();
 
-            console.log("Fetched README content:", content); // Log del contenuto
+            // console.log("Fetched README content:", content); // Log del contenuto
 
           setReadmeContent(content);
         } catch (error) {

@@ -16,7 +16,7 @@ export const ButtonsProject: React.FC<ButtonsProjectType> = ({
   const navigate = useNavigate()
 
   const goToProject = (nome:string)=>{
-    console.log("Navigate to projects:", nome);
+    // console.log("Navigate to projects:", nome);
     
     navigate(`/projects/${nome}`)
   }
