@@ -11,7 +11,7 @@ export const extractTechnologies = async (
 
     // Cerca la sezione "Tecnologie" nel file README.md
     const techSectionMatch = readmeContent.match(
-      /### Technologies([\s\S]*?)(?=\n##|\n$)/,
+      /### Built with([\s\S]*?)(?=\n##|\n$)/,
     );
 
     if (techSectionMatch) {
