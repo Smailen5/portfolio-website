@@ -11,7 +11,7 @@ export const ContainerProject: React.FC<ContainerProject> = ({
   children,
   technologies,
 }) => {
-  console.log(technologies);
+  // console.log(technologies);
   if(technologies === undefined){
     return null
   }
