@@ -1,14 +1,26 @@
 import { Button } from "@/Components/atoms/button";
+import { useNavigate } from "react-router-dom";
 
 type ButtonsProjectType = {
   // linkSite: string;
-  linkRepo: string;
+  // linkRepo: string;
+  nome:string;
 };
 
 export const ButtonsProject: React.FC<ButtonsProjectType> = ({
   // linkSite,
-  linkRepo,
+  // linkRepo,
+  nome,
 }) => {
+
+  const navigate = useNavigate()
+
+  const goToProject = (nome:string)=>{
+    console.log("Navigate to projects:", nome);
+    
+    navigate(`/projects/${nome}`)
+  }
+
   // Gestisci qui lo stile dei bottoni
   const buttonClass = "border-primary";
   return (
@@ -18,10 +30,10 @@ export const ButtonsProject: React.FC<ButtonsProjectType> = ({
           guarda ora
         </a>
       </Button> */}
-      <Button variant="outline" className={`${buttonClass}`}>
-        <a href={linkRepo} target="_blank" rel="noopener noreferrer">
+      <Button variant="outline" className={`${buttonClass}`} onClick={()=> goToProject(nome)}>
+        {/* <a href={linkRepo} target="_blank" rel="noopener noreferrer"> */}
           dettagli
-        </a>
+        {/* </a> */}
       </Button>
     </div>
   );
