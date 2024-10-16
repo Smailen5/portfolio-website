@@ -1,7 +1,7 @@
 import { useFetchReadme } from "@/utils/useFetchReadme";
 import { useParams } from "react-router-dom";
-import { Layout } from "./Layout";
 import { MarkdownRenderer } from "../atoms/MarkdownRenderer";
+import { Layout } from "./Layout";
 
 export const SingleProject = () => {
   const { nome } = useParams<{ nome: string }>(); // Recupera il parametro "nome" dal percorso
