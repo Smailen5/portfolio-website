@@ -10,6 +10,7 @@ interface MarkdownRendererProps {
 export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
   content,
 }) => {
+  console.log(content);
   return (
     <div className="">
       <ReactMarkdown
@@ -20,12 +21,17 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
             h2: ({ node, ...props }) => <h2 className="text-2xl font-semibold my-3" {...props} />,
             h3: ({ node, ...props }) => <h3 className="text-xl font-semibold my-2" {...props} />,
             p: ({ node, ...props }) => <p className="my-2" {...props} />,
-            a: ({ node, ...props }) => <LinkBlank isText href={props.href} children={props.children} className="text-blue-500 hover:underline" {...props} />,
+            a: ({ node, ...props }) => (
+              <LinkBlank isText href={props.href} {...props} >
+                {props.children}
+              </LinkBlank>
+            ),
             pre: ({node, ...props}) => <pre className="bg-gray-300 overflow-auto p-2 my-4" {...props} />,
-        }}
+            img: ({node, ...props}) => <img src={`${import.meta.env.VITE_GITHUB_URL_IMAGES_SCREEN}/${props.src}`} />}}
       >
         {content}
       </ReactMarkdown>
     </div>
   );
 };
+
