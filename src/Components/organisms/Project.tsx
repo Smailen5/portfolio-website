@@ -20,7 +20,7 @@ const Project: React.FC<ProjectType> = ({ name, html_url, image, technologies })
         <PictureProject linkSite={html_url} image={image} />
         {/* contenitore nome progetto e descrizione */}
         <ContainerProject name={name} technologies={technologies}>
-          <ButtonsProject linkRepo={html_url} />
+          <ButtonsProject  nome={name} />
         </ContainerProject>
       </div>
     </>
