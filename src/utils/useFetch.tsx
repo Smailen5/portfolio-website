@@ -22,9 +22,9 @@ export const useFetch = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const url = import.meta.env.VITE_GITHUB_URL_REPOS;
+  const url = "https://api.github.com/repos/Smailen5/Frontend-Mentor-Challenge/contents/";
   const token = `token ${import.meta.env.VITE_GITHUB_TOKEN}`
-  const imageBaseUrl = import.meta.env.VITE_GITHUB_URL_IMAGES;
+  const imageBaseUrl = "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/screen-capture/";
 
   useEffect(() => {
     const fetchProjects = async () => {

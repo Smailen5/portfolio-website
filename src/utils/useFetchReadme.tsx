@@ -9,7 +9,7 @@ export const useFetchReadme = (nome: string) => {
     const fetchReadme = async () => {
       if (nome) {
         try {
-          const url = `${import.meta.env.VITE_GITHUB_README}${nome}/README.md`;
+          const url = `https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/${nome}/README.md`;
           // console.log("Fetching URL:", url); // Log url
 
           const response = await fetch(url);

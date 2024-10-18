@@ -13,6 +13,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
   nome,
 }) => {
 //   console.log(content);
+const urlImageScreen = "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/"
   return (
     <div className="">
       <ReactMarkdown
@@ -42,7 +43,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
           ),
           img: ({ node, ...props }) => (
             <img
-              src={`${import.meta.env.VITE_GITHUB_URL_IMAGES_SCREEN}${nome}/${props.src}`}
+              src={`${urlImageScreen}${nome}/${props.src}`}
               className="mb-4 w-full rounded-md md:w-auto"
             />
           ),
