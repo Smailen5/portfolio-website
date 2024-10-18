@@ -1,9 +1,9 @@
-import Footer from "../Components/Footer";
-import FormComponent from "../Components/FormComponent";
-import NavbarSample from "../Components/Navbar";
+import Footer from "../Components/organisms/Footer";
+import FormComponent from "../Components/organisms/FormComponent";
+import NavbarSample from "../Components/organisms/Navbar";
 import useScroll from "../utils/useScroll";
 
-const ContactScreen = () => {
+const ContactPage = () => {
   useScroll();
   return (
     <>
@@ -27,4 +27,4 @@ const ContactScreen = () => {
   );
 };
 
-export default ContactScreen;
+export default ContactPage;

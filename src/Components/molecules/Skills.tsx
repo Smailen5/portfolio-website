@@ -2,8 +2,8 @@ import { Button } from "@nextui-org/react";
 import { GoProjectRoadmap } from "react-icons/go";
 import { SiNextui } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
-import skillsData from "../data/skillsData";
-import Skill from "./Skill";
+import skillsData from "../../data/skillsData";
+import Skill from "../atoms/Skill";
 const Skills = () => {
   const navigate = useNavigate();
 
@@ -36,7 +36,7 @@ const Skills = () => {
             size="lg"
             endContent={<GoProjectRoadmap />}
             className="w-full"
-            onClick={handleNavigation} 
+            onClick={handleNavigation}
           >
             Portfolio
           </Button>

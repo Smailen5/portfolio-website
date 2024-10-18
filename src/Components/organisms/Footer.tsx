@@ -1,6 +1,7 @@
 import { SiNextui } from "react-icons/si";
-import reactIcon from "../assets/icons/icons8-react.svg";
-import tailwindIcon from "../assets/icons/icons8-tailwind-css.svg";
+import reactIcon from "../../assets/icons/icons8-react.svg";
+import tailwindIcon from "../../assets/icons/icons8-tailwind-css.svg";
+import { LinkBlank } from "../atoms/LinkBlank";
 
 const Footer = () => {
   return (
@@ -10,20 +11,15 @@ const Footer = () => {
           <p className="hidden md:block">Powered by</p>
           <img src={tailwindIcon} alt="icona tailwind css" className="size-6" />
           <img src={reactIcon} alt="icona react" className="size-6" />
-          <SiNextui alt="icona nextui" className="size-6" />
+          <SiNextui className="size-6" />
         </div>
         <p>
           © 2024 Smailen Vargas. Tutti i diritti riservati.{" "}
           <span>
             Icons by{" "}
-            <a
-              href="https://icons8.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 underline"
-            >
+            <LinkBlank href="https://icons8.com" isText>
               Icons8
-            </a>
+            </LinkBlank>
           </span>
         </p>
       </div>

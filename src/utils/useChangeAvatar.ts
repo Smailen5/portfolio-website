@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
-import images from "../data/images";
+import {avatarImages} from "../data/images";
 
 const useChangeAvatar = () => {
   // gestisce le immagini
-  const [currentAvatar, setCurrentAvatar] = useState(images.avatarImages[0]);
+  const [currentAvatar, setCurrentAvatar] = useState(avatarImages[0]);
   // gestisce l'animazione del nuovo avatar
   const [animation, setAnimation] = useState("");
 
@@ -14,7 +14,7 @@ const useChangeAvatar = () => {
       // fa apparire il nuovo avatar
       setTimeout(() => {
         // filtra le immagini per non ripetere l'immagine corrente
-        const filteredImages = images.avatarImages.filter(
+        const filteredImages = avatarImages.filter(
           (image) => image !== currentAvatar,
         );
 
