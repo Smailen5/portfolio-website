@@ -10,7 +10,6 @@ export const useFetchReadme = (nome: string) => {
       if (nome) {
         try {
           const url = `https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/${nome}/README.md`;
-          // console.log("Fetching URL:", url); // Log url
 
           const response = await fetch(url);
 
@@ -19,8 +18,6 @@ export const useFetchReadme = (nome: string) => {
           }
 
           const content = await response.text();
-
-          // console.log("Fetched README content:", content); // Log del contenuto
 
           setReadmeContent(content);
         } catch (error) {

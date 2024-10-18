@@ -12,7 +12,6 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
   content,
   nome,
 }) => {
-  //   console.log(content);
   const urlImageScreen =
     "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/";
   return (
