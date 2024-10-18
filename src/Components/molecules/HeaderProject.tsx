@@ -21,13 +21,13 @@ export const HeaderProject = () => {
         <p>
           Vuoi scoprire di più? Visita il mio{" "}
           <LinkBlank
-            href="https://smailen5.github.io/Frontend-Mentor-Challenge/"
+            href="https://www.frontendmentor.io/profile/Smailen5"
             isText
           >
             profilo Frontend Mentor
           </LinkBlank>{" "}
           per vedere le sfide completate o il mio{" "}
-          <LinkBlank href="https://github.com/Smailen5?tab=repositories" isText>
+          <LinkBlank href="https://github.com/Smailen5" isText>
             profilo GitHub
           </LinkBlank>{" "}
           per tutti i progetti, incluso il codice sorgente di questo sito.
