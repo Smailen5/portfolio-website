@@ -4,7 +4,8 @@ import axios from "axios";
 export const extractTechnologies = async (
   projectName: string,
 ): Promise<string[]> => {
-  const readmeUrl = "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/";
+  const readmeUrl =
+    "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/";
   try {
     const response = await axios.get(`${readmeUrl}${projectName}/README.md`);
     const readmeContent = response.data;
