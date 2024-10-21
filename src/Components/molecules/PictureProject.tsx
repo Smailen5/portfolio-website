@@ -1,4 +1,3 @@
-// import { images } from "../../data/images";
 import { useState } from "react";
 import { LinkBlank } from "../atoms/LinkBlank";
 import { nameCorrect } from "@/utils/nameCorrect";
@@ -6,13 +5,13 @@ import { nameCorrect } from "@/utils/nameCorrect";
 type PictureProject = {
   linkSite: string;
   image?: string;
-  name:string;
+  name: string;
 };
 
 export const PictureProject: React.FC<PictureProject> = ({
   linkSite,
   image,
-  name
+  name,
 }) => {
   const [error, setError] = useState(false);
 
