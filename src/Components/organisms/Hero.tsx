@@ -23,8 +23,8 @@ const Hero = () => {
 
         {/* presentazione */}
         <div>
-          <h2 className="text-5xl">Ciao, Io sono </h2>
-          <h1 className="text-6xl font-bold">
+          <p className="text-5xl">Ciao, Io sono </p>
+          <h2 className="text-6xl font-bold">
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger className="">Smailen</TooltipTrigger>
@@ -34,7 +34,7 @@ const Hero = () => {
               </Tooltip>
             </TooltipProvider>{" "}
             Vargas
-          </h1>
+          </h2>
         </div>
         <p className="text-3xl">Frontend developer</p>
 
