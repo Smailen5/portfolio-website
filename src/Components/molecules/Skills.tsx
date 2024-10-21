@@ -24,7 +24,6 @@ const Skills = () => {
 
         <div className="space-y-4 md:col-start-2">
           <p className="text-center">Guarda i miei lavori</p>
-          {/* <Link to={"/projects"}> */}
           <Button
             variant={"secondary"}
             size="lg"
@@ -33,7 +32,6 @@ const Skills = () => {
           >
             <GoProjectRoadmap /> Portfolio
           </Button>
-          {/* </Link> */}
         </div>
       </div>
     </section>
