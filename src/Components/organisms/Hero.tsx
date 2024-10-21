@@ -41,7 +41,7 @@ const Hero = () => {
         {/* call to action */}
         <div className="md:flex-star flex flex-col flex-wrap gap-4 md:flex-row">
           <Button
-            className="w-fit gap-2"
+            className="gap-2"
             size="lg"
             onClick={() => navigate("/contact")}
           >
@@ -49,8 +49,8 @@ const Hero = () => {
             <MdOutlineEmail />
           </Button>
           <Button
-            className="w-fit gap-2"
-            variant={"outline"}
+            className="gap-2"
+            variant={"secondary"}
             size="lg"
             onClick={() => navigate("/projects")}
           >
