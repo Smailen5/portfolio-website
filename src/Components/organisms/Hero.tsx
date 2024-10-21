@@ -1,4 +1,10 @@
-import { Button, Tooltip } from "@nextui-org/react";
+import { Button } from "@/Components/atoms/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/Components/atoms/tooltip";
 import { GoProjectRoadmap } from "react-icons/go";
 import { MdOutlineEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -18,36 +24,32 @@ const Hero = () => {
         <div>
           <h2 className="text-5xl">Ciao, Io sono </h2>
           <h1 className="text-6xl font-bold">
-            Smailen Vargas{" "}
-            <Tooltip
-              color="warning"
-              content="Si, il mio nome significa 'sorridi sempre!'"
-            >
-              <span className="text-4xl">😊</span>
-            </Tooltip>
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger className="">Smailen</TooltipTrigger>
+                <TooltipContent>
+                  <p>Si, il mio nome significa 'sorridi sempre'!</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>{" "}
+            Vargas
           </h1>
         </div>
         <p className="text-3xl">Frontend developer</p>
 
         {/* call to action */}
         <div className="md:flex-star flex flex-col flex-wrap gap-2 md:flex-row">
-          <Button
-            className="w-fit"
-            variant="shadow"
-            color="primary"
-            size="lg"
-            endContent={<MdOutlineEmail />}
-          >
-            <Link to="/contact">Contattami</Link>
+          <Button className="w-fit" color="primary" size="lg">
+            <Link to="/contact">
+              Contattami
+            </Link>
+              <MdOutlineEmail />
           </Button>
-          <Button
-            className="w-fit"
-            variant="shadow"
-            color="secondary"
-            size="lg"
-            startContent={<GoProjectRoadmap />}
-          >
-            <Link to="/projects">Progetti</Link>
+          <Button className="w-fit" color="secondary" size="lg">
+              <GoProjectRoadmap />
+            <Link to="/projects">
+              Progetti
+            </Link>
           </Button>
         </div>
       </div>
