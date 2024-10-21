@@ -39,10 +39,9 @@ const Hero = () => {
         <p className="text-3xl">Frontend developer</p>
 
         {/* call to action */}
-        <div className="md:flex-star flex flex-col flex-wrap gap-2 md:flex-row">
+        <div className="md:flex-star flex flex-col flex-wrap gap-4 md:flex-row">
           <Button
             className="w-fit gap-2"
-            color="primary"
             size="lg"
             onClick={() => navigate("/contact")}
           >
@@ -51,7 +50,7 @@ const Hero = () => {
           </Button>
           <Button
             className="w-fit gap-2"
-            color="secondary"
+            variant={"outline"}
             size="lg"
             onClick={() => navigate("/projects")}
           >
