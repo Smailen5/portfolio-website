@@ -1,15 +1,18 @@
 // import { images } from "../../data/images";
 import { useState } from "react";
 import { LinkBlank } from "../atoms/LinkBlank";
+import { nameCorrect } from "@/utils/nameCorrect";
 
 type PictureProject = {
   linkSite: string;
   image?: string;
+  name:string;
 };
 
 export const PictureProject: React.FC<PictureProject> = ({
   linkSite,
   image,
+  name
 }) => {
   const [error, setError] = useState(false);
 
@@ -36,6 +39,7 @@ export const PictureProject: React.FC<PictureProject> = ({
           onError={handleError}
           // forse conviene dare una misura fissa a tutte le immagini per evitare dimensioni diverse es.`lg:w-[480px] lg:h-[300px]`
           className="shadow-lg transition-all duration-500 lg:hover:scale-110"
+          alt={`${nameCorrect(name)}`}
         />
       </LinkBlank>
     </picture>
