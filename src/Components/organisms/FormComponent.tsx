@@ -50,7 +50,7 @@ const FormComponent = () => {
       }}
     >
       {({ handleSubmit }) => (
-        <section aria-labelledby="contact-form-heading" id="contact-form">
+        <section aria-labelledby="contact-form-heading" id="contact-form" className="flex-1">
           <h2 id="contact-form-heading" className="sr-only">Modulo di contatto</h2>
           <Form
             className="flex flex-col items-start gap-4 rounded-md bg-white p-4 shadow-lg lg:flex-1"
