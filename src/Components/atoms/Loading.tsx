@@ -4,7 +4,7 @@ export const Loading = () => {
   return (
     <section
       aria-labelledby="loading"
-      className="flex items-center justify-center"
+      className="flex items-center justify-center h-96"
     >
       <p id="loading" className="sr-only">
         Caricamento in corso, attendi
