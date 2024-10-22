@@ -42,7 +42,7 @@ const FormComponent = () => {
           if (state.succeeded) {
             setFormSent(true);
             setTimeout(() => {
-              resetForm(initialValues);
+              resetForm();
               setFormSent(false);
             }, 2000);
           }
