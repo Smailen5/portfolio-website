@@ -3,11 +3,9 @@ import { ContactTemplate } from "@/Components/template/ContactTemplate";
 
 const ContactPage = () => {
   return (
-    <>
-      <Layout>
-        <ContactTemplate />
-      </Layout>
-    </>
+    <Layout>
+      <ContactTemplate />
+    </Layout>
   );
 };
 
