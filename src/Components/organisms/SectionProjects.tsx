@@ -1,10 +1,11 @@
 import { useFetch } from "@/utils/useFetch";
 import Project from "./Project";
+import { Loading } from "../atoms/Loading";
 
 export const SectionProjects = () => {
   const { projects, loading, error } = useFetch();
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Loading/>;
   if (error) return <p>{error}</p>;
   return (
     <>
