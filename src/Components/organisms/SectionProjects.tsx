@@ -1,5 +1,4 @@
 import { useFetch } from "@/utils/useFetch";
-// import projects from "../../data/projects.json";
 import Project from "./Project";
 
 export const SectionProjects = () => {
