@@ -17,7 +17,7 @@ const Project: React.FC<ProjectType> = ({ name, html_url, image, technologies })
       {/* PROGETTO SINGOLO */}
       <div className="flex flex-col gap-4 rounded-md bg-white shadow-md">
         {/* immagine */}
-        <PictureProject linkSite={html_url} image={image} />
+        <PictureProject linkSite={html_url} image={image} name={name} />
         {/* contenitore nome progetto e descrizione */}
         <ContainerProject name={name} technologies={technologies}>
           <ButtonsProject  nome={name} />

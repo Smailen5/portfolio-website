@@ -10,7 +10,7 @@ export const LinkBlank: React.FC<LinkBlank> = ({ href, children, isText }) => {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`${isText && "text-blue-500 hover:underline"}`}
+      className={`${isText && "text-blue-500 hover:underline"} focus:border focus:border-primary`}
     >
       {children}
     </a>

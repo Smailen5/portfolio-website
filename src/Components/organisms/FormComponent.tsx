@@ -42,7 +42,7 @@ const FormComponent = () => {
           if (state.succeeded) {
             setFormSent(true);
             setTimeout(() => {
-              resetForm(initialValues);
+              resetForm();
               setFormSent(false);
             }, 2000);
           }
@@ -50,54 +50,61 @@ const FormComponent = () => {
       }}
     >
       {({ handleSubmit }) => (
-        <Form
-          className="flex flex-col items-start gap-4 rounded-md bg-white p-4 shadow-lg lg:flex-1"
-          onSubmit={handleSubmit}
-          noValidate
-        >
-          <label htmlFor="name">Nome</label>
-          <Field
-            id="name"
-            type="text"
-            name="name"
-            autoComplete="name"
-            className="w-full rounded-md border border-gray-400 p-2"
-          />
-          <ErrorMessage name="name" component="p" className="text-red-500" />
+        <section aria-labelledby="contact-form-heading" id="contact-form" className="flex-1">
+          <h2 id="contact-form-heading" className="sr-only">Modulo di contatto</h2>
+          <Form
+            className="flex flex-col items-start gap-4 rounded-md bg-white p-4 shadow-lg lg:flex-1"
+            onSubmit={handleSubmit}
+            noValidate
+          >
+            <label htmlFor="name">Nome</label>
+            <Field
+              id="name"
+              type="text"
+              name="name"
+              autoComplete="name"
+              className="w-full rounded-md border border-gray-400 p-2"
+            />
+            <ErrorMessage name="name" component="p" className="text-red-500" />
 
-          <label htmlFor="email">Email</label>
-          <Field
-            id="email"
-            type="email"
-            name="email"
-            autoComplete="email"
-            className="w-full rounded-md border border-gray-400 p-2"
-          />
-          <ErrorMessage name="email" component="p" className="text-red-500" />
+            <label htmlFor="email">Email</label>
+            <Field
+              id="email"
+              type="email"
+              name="email"
+              autoComplete="email"
+              className="w-full rounded-md border border-gray-400 p-2"
+            />
+            <ErrorMessage name="email" component="p" className="text-red-500" />
 
-          <label htmlFor="message">Messaggio</label>
-          <Field
-            id="message"
-            as="textarea"
-            name="message"
-            type="text"
-            autoComplete="off"
-            rows={10}
-            className="w-full resize-none rounded-md border border-gray-400 p-2"
-          />
+            <label htmlFor="message">Messaggio</label>
+            <Field
+              id="message"
+              as="textarea"
+              name="message"
+              type="text"
+              autoComplete="off"
+              rows={10}
+              className="w-full resize-none rounded-md border border-gray-400 p-2"
+            />
 
-          <ErrorMessage name="message" component="p" className="text-red-500" />
+            <ErrorMessage
+              name="message"
+              component="p"
+              className="text-red-500"
+            />
 
-          <Button type="submit" color="primary" className="w-full">
-            Invia
-          </Button>
-          {/* conferma di messaggio inviato da Form spree e da Formik */}
-          {state.succeeded && formSent && (
-            <p className="mt-4 text-green-500">
-              Il messaggio è stato inviato con successo!
-            </p>
-          )}
-        </Form>
+            <Button type="submit" color="primary" className="w-full">
+              Invia
+            </Button>
+            {/* conferma di messaggio inviato da Form spree e da Formik */}
+            {state.succeeded && formSent && (
+              <p className="mt-4 text-green-500">
+                Il messaggio è stato inviato con successo!
+              </p>
+            )}
+          </Form>
+        </section>
       )}
     </Formik>
   );

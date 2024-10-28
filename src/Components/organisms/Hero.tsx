@@ -1,9 +1,16 @@
-import { Button, Tooltip } from "@nextui-org/react";
+import { Button } from "@/Components/atoms/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/Components/atoms/tooltip";
 import { GoProjectRoadmap } from "react-icons/go";
 import { MdOutlineEmail } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <section className="w-full">
       <div className="flex flex-col gap-4">
@@ -16,38 +23,39 @@ const Hero = () => {
 
         {/* presentazione */}
         <div>
-          <h2 className="text-5xl">Ciao, Io sono </h2>
-          <h1 className="text-6xl font-bold">
-            Smailen Vargas{" "}
-            <Tooltip
-              color="warning"
-              content="Si, il mio nome significa 'sorridi sempre!'"
-            >
-              <span className="text-4xl">😊</span>
-            </Tooltip>
-          </h1>
+          <p className="text-5xl">Ciao, Io sono </p>
+          <h2 className="text-6xl font-bold">
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger className="">Smailen</TooltipTrigger>
+                <TooltipContent>
+                  <p>Si, il mio nome significa 'sorridi sempre'!</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>{" "}
+            Vargas
+          </h2>
         </div>
         <p className="text-3xl">Frontend developer</p>
 
         {/* call to action */}
-        <div className="md:flex-star flex flex-col flex-wrap gap-2 md:flex-row">
+        <div className="md:flex-star flex flex-col flex-wrap gap-4 md:flex-row">
           <Button
-            className="w-fit"
-            variant="shadow"
-            color="primary"
+            className="gap-2"
             size="lg"
-            endContent={<MdOutlineEmail />}
+            onClick={() => navigate("/contact")}
           >
-            <Link to="/contact">Contattami</Link>
+            Contattami
+            <MdOutlineEmail />
           </Button>
           <Button
-            className="w-fit"
-            variant="shadow"
-            color="secondary"
+            className="gap-2"
+            variant={"secondary"}
             size="lg"
-            startContent={<GoProjectRoadmap />}
+            onClick={() => navigate("/projects")}
           >
-            <Link to="/projects">Progetti</Link>
+            <GoProjectRoadmap />
+            Progetti
           </Button>
         </div>
       </div>
