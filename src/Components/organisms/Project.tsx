@@ -15,14 +15,14 @@ const Project: React.FC<ProjectType> = ({ name, html_url, image, technologies })
   return (
     <>
       {/* PROGETTO SINGOLO */}
-      <div className="flex flex-col gap-4 rounded-md bg-white shadow-md">
+      <article className="flex flex-col gap-4 rounded-md bg-white shadow-md">
         {/* immagine */}
         <PictureProject linkSite={html_url} image={image} name={name} />
         {/* contenitore nome progetto e descrizione */}
         <ContainerProject name={name} technologies={technologies}>
           <ButtonsProject  nome={name} />
         </ContainerProject>
-      </div>
+      </article>
     </>
   );
 };

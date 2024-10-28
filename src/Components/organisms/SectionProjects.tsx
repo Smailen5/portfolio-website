@@ -9,7 +9,7 @@ export const SectionProjects = () => {
   if (error) return <p>{error}</p>;
   return (
     <>
-      <section className="grid gap-4 lg:grid-cols-2">
+      <section className="grid gap-4 md:grid-cols-2">
         {projects.map((project) => {
           return <Project key={project.name} {...project} />;
         })}

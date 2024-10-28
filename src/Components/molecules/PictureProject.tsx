@@ -22,7 +22,7 @@ export const PictureProject: React.FC<PictureProject> = ({
   // Se non ho ancora caricato l'immagine
   if (error) {
     return (
-      <div className="flex h-44 w-full items-center justify-center rounded-md bg-gray-200">
+      <div className="flex h-full min-h-[195px] w-full items-center justify-center rounded-md bg-gray-200 md:min-h-[300px]">
         <p>Immagine non ancora disponibile</p>
       </div>
     );
