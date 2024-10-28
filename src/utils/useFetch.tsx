@@ -55,7 +55,7 @@ export const useFetch = () => {
           )
           .map((project: any) => ({
             ...project,
-            image: `${imageBaseUrl}${project.name}.jpeg`,
+            image: `${imageBaseUrl}${project.name}.webp`,
           }));
 
         // Recupera le tecnologie per ciascun progetto
