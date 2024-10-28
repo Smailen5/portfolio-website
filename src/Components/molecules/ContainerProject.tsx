@@ -17,19 +17,19 @@ export const ContainerProject: React.FC<ContainerProject> = ({
   }
   
   return (
-    <div className="flex flex-1 flex-col justify-between gap-2 p-4 text-left">
+    <header className="flex flex-1 flex-col justify-between gap-2 p-4 text-left">
       <h3 className="text-2xl font-bold uppercase">{nameCorrect(name)}</h3>
       {/* array delle tecnologie utilizzate */}
-      <div className="flex flex-wrap gap-4 uppercase">
+      <ul className="flex flex-wrap gap-4 uppercase">
         {technologies.map((tech) => {
           return (
-            <h4 key={tech} className="font-semibold">
+            <li key={tech} className="font-semibold">
               {tech}
-            </h4>
+            </li>
           );
         })}
-      </div>
+      </ul>
       {children}
-    </div>
+    </header>
   );
 };
