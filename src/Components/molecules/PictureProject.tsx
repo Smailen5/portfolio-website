@@ -29,18 +29,17 @@ export const PictureProject: React.FC<PictureProject> = ({
   }
 
   return (
-    <picture className="overflow-hidden rounded-md">
-      <source media="(1024px)" srcSet={image} />
+    <div className="overflow-hidden rounded-md">
       <LinkBlank href={linkSite}>
         <img
           loading="lazy"
           src={image}
           onError={handleError}
           // forse conviene dare una misura fissa a tutte le immagini per evitare dimensioni diverse es.`lg:w-[480px] lg:h-[300px]`
-          className="shadow-lg transition-all duration-500 lg:hover:scale-110"
-          alt={`${nameCorrect(name)}`}
+          className="shadow-lg transition-all duration-500 lg:hover:scale-110 object-cover"
+          alt={`Anteprima del progetto ${nameCorrect(name)}`}
         />
       </LinkBlank>
-    </picture>
+    </div>
   );
 };
