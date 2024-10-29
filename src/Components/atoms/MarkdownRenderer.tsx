@@ -45,6 +45,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
             <img
               src={`${urlImageScreen}${nome}/${props.src}`}
               className="mb-4 w-full rounded-md md:w-auto"
+              alt={`${nome} anteprima`}
             />
           ),
         }}
