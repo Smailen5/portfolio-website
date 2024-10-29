@@ -37,7 +37,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
           ),
           pre: ({ node, ...props }) => (
             <pre
-              className="my-4 overflow-auto rounded-lg bg-gray-200 p-4"
+              className="my-4 overflow-auto rounded-lg bg-muted p-4 text-muted-foreground"
               {...props}
             />
           ),
