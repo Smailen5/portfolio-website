@@ -1,17 +1,12 @@
-// import { Button } from "@/Components/atoms/button";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/Components/atoms/tooltip";
-// import { GoProjectRoadmap } from "react-icons/go";
-// import { MdOutlineEmail } from "react-icons/md";
-// import { useNavigate } from "react-router-dom";
 import { ButtonAction } from "../atoms/ButtonAction";
 
 const Hero = () => {
-  // const navigate = useNavigate();
   return (
     <section className="w-full">
       <div className="flex flex-col gap-4">
@@ -41,26 +36,8 @@ const Hero = () => {
 
         {/* call to action */}
         <div className="md:flex-star flex flex-col flex-wrap gap-4 md:flex-row">
-          {/* <Button
-            className="gap-2"
-            size="lg"
-            onClick={() => navigate("/contact")}
-          >
-            Contattami
-            <MdOutlineEmail />
-          </Button> */}
-          <ButtonAction navigateTo="contact" >Contattami</ButtonAction>
+          <ButtonAction navigateTo="contact">Contattami</ButtonAction>
           <ButtonAction navigateTo="projects">Progetti</ButtonAction>
-
-          {/* <Button
-            className="gap-2"
-            variant={"secondary"}
-            size="lg"
-            onClick={() => navigate("/projects")}
-          >
-            <GoProjectRoadmap />
-            Progetti
-          </Button> */}
         </div>
       </div>
     </section>

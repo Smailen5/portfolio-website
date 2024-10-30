@@ -1,11 +1,7 @@
-// import { Button } from "@/Components/atoms/button";
-// import { GoProjectRoadmap } from "react-icons/go";
-// import { useNavigate } from "react-router-dom";
-import Skills from "../molecules/Skills";
 import { ButtonAction } from "../atoms/ButtonAction";
+import Skills from "../molecules/Skills";
 
 export const SectionSkill = () => {
-  //   const navigate = useNavigate();
   return (
     <section className="mx-auto flex w-full flex-col gap-8">
       <h3 className="text-center text-2xl font-semibold">
@@ -20,14 +16,6 @@ export const SectionSkill = () => {
           <ButtonAction navigateTo="projects" buttonClass="w-full">
             Portfolio
           </ButtonAction>
-          {/* <Button
-            variant={"secondary"}
-            size="lg"
-            className="w-full gap-2"
-            onClick={() => navigate("/projects")}
-          >
-            <GoProjectRoadmap /> Portfolio
-          </Button> */}
         </div>
       </div>
     </section>
