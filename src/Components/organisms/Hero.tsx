@@ -10,12 +10,6 @@ const Hero = () => {
   return (
     <section className="w-full">
       <div className="flex flex-col gap-4">
-        {/* icona con animazione con testo */}
-        {/* Per il momento la rimuovo, in futuro vorrei fare qualcosa di piu carino */}
-        {/* <div className="flex items-center gap-2">
-          <CirclePulse />
-          <p className="uppercase">Pronto per nuove sfide</p>
-        </div> */}
 
         {/* presentazione */}
         <div>
