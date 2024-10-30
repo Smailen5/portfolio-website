@@ -6,9 +6,10 @@ const Presentation = () => {
         appassionato di creare interfacce utente intuitive e coinvolgenti.
       </p>
       <p>
-        Con competenze in <b>React</b>, <b>Vite</b> e <b>Tailwind CSS</b>,
-        trasformo idee in esperienze digitali fluide. Sono sempre alla ricerca
-        di nuove tecnologie e puntualmente migliorare le mie competenze per
+        Con competenze in <strong>React</strong>, <strong>Vite</strong> e
+        <strong> Tailwind CSS</strong>, trasformo idee in esperienze digitali
+        fluide. Sono sempre alla ricerca di nuove tecnologie e puntualmente
+        migliorare le mie competenze per
         <strong> diventare full-stack developer</strong>.
       </p>
       <p>
