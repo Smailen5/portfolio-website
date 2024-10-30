@@ -5,7 +5,7 @@ import { LinkBlank } from "../atoms/LinkBlank";
 
 const Footer = () => {
   return (
-    <footer className="bg-red-30 w-full bg-white p-4 px-6 text-center xl:flex xl:justify-center">
+    <footer className="bg-red-30 w-full bg-background p-4 px-6 text-center xl:flex xl:justify-center">
       <div className="flex max-w-[1024px] flex-col gap-2 md:flex-row md:items-center md:justify-between xl:min-w-[1024px]">
         <div className="flex justify-center gap-4 md:order-2">
           <p className="hidden md:block">Powered by</p>

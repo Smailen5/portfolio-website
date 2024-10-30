@@ -50,10 +50,16 @@ const FormComponent = () => {
       }}
     >
       {({ handleSubmit }) => (
-        <section aria-labelledby="contact-form-heading" id="contact-form" className="flex-1">
-          <h2 id="contact-form-heading" className="sr-only">Modulo di contatto</h2>
+        <section
+          aria-labelledby="contact-form-heading"
+          id="contact-form"
+          className="flex-1"
+        >
+          <h2 id="contact-form-heading" className="sr-only">
+            Modulo di contatto
+          </h2>
           <Form
-            className="flex flex-col items-start gap-4 rounded-md bg-white p-4 shadow-lg lg:flex-1"
+            className="flex flex-col items-start gap-4 rounded-md bg-card p-4 text-card-foreground shadow-lg lg:flex-1"
             onSubmit={handleSubmit}
             noValidate
           >
@@ -63,9 +69,9 @@ const FormComponent = () => {
               type="text"
               name="name"
               autoComplete="name"
-              className="w-full rounded-md border border-gray-400 p-2"
+              className="w-full rounded-md border border-border p-2"
             />
-            <ErrorMessage name="name" component="p" className="text-red-500" />
+            <ErrorMessage name="name" component="p" className="text-destructive" />
 
             <label htmlFor="email">Email</label>
             <Field
@@ -73,9 +79,9 @@ const FormComponent = () => {
               type="email"
               name="email"
               autoComplete="email"
-              className="w-full rounded-md border border-gray-400 p-2"
+              className="w-full rounded-md border border-border p-2"
             />
-            <ErrorMessage name="email" component="p" className="text-red-500" />
+            <ErrorMessage name="email" component="p" className="text-destructive" />
 
             <label htmlFor="message">Messaggio</label>
             <Field
@@ -85,13 +91,13 @@ const FormComponent = () => {
               type="text"
               autoComplete="off"
               rows={10}
-              className="w-full resize-none rounded-md border border-gray-400 p-2"
+              className="w-full resize-none rounded-md border border-border p-2"
             />
 
             <ErrorMessage
               name="message"
               component="p"
-              className="text-red-500"
+              className="text-destructive"
             />
 
             <Button type="submit" color="primary" className="w-full">
