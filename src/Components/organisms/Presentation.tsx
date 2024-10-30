@@ -1,6 +1,9 @@
 const Presentation = () => {
   return (
     <section className="flex flex-col gap-4">
+      <h2 id="presentation-title" className="sr-only">
+        Presentazione
+      </h2>
       <p>
         Ciao, mi chiamo Smailen, <strong>frontend developer </strong>
         appassionato di creare interfacce utente intuitive e coinvolgenti.
