@@ -37,7 +37,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
           ),
           pre: ({ node, ...props }) => (
             <pre
-              className="my-4 overflow-auto rounded-lg bg-gray-200 p-4"
+              className="my-4 overflow-auto rounded-lg bg-muted p-4 text-muted-foreground"
               {...props}
             />
           ),
@@ -45,6 +45,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
             <img
               src={`${urlImageScreen}${nome}/${props.src}`}
               className="mb-4 w-full rounded-md md:w-auto"
+              alt={`${nome} anteprima`}
             />
           ),
         }}

@@ -15,16 +15,9 @@ export const ButtonsProject: React.FC<ButtonsProjectType> = ({
     navigate(`/projects/${nome}`)
   }
 
-  // Gestisci qui lo stile dei bottoni
-  const buttonClass = "border-primary";
   return (
     <div className="space-x-8">
-      {/* <Button variant="outline" className={`${buttonClass}`}>
-        <a href={linkSite} target="_blank" rel="noopener noreferrer">
-          guarda ora
-        </a>
-      </Button> */}
-      <Button variant="outline" className={`${buttonClass}`} onClick={()=> goToProject(nome)}>
+      <Button variant="outline" onClick={()=> goToProject(nome)}>
           dettagli
       </Button>
     </div>

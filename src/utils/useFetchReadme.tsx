@@ -21,8 +21,7 @@ export const useFetchReadme = (nome: string) => {
 
           setReadmeContent(content);
         } catch (error) {
-          console.error("Errore nel recupero del README.md:", error);
-          setError("Errore nel caricamento del README.md.");
+          setError(`${error}. Errore nel caricamento del file README.md. Prova a ricaricare la pagina`);
         } finally {
           setLoading(false);
         }
