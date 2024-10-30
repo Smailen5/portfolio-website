@@ -16,7 +16,7 @@ export const ButtonsProject: React.FC<ButtonsProjectType> = ({
   }
 
   // Gestisci qui lo stile dei bottoni
-  const buttonClass = "border-primary";
+  const buttonClass = "";
   return (
     <div className="space-x-8">
       {/* <Button variant="outline" className={`${buttonClass}`}>
