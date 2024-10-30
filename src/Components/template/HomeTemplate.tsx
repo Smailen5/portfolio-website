@@ -1,4 +1,4 @@
-import Hero from "../organisms/Hero";
+import { Hero } from "../organisms/Hero";
 import Presentation from "../organisms/Presentation";
 import { SectionSkill } from "../organisms/SectionSkill";
 import Socials from "../organisms/Socials";
