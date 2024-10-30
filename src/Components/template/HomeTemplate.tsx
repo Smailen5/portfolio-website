@@ -1,6 +1,6 @@
-import Skills from "../molecules/Skills";
-import Hero from "../organisms/Hero";
+import { Hero } from "../organisms/Hero";
 import Presentation from "../organisms/Presentation";
+import { SectionSkill } from "../organisms/SectionSkill";
 import Socials from "../organisms/Socials";
 
 export const HomeTemplate = () => {
@@ -8,7 +8,7 @@ export const HomeTemplate = () => {
     <>
       <Hero />
       <Presentation />
-      <Skills />
+      <SectionSkill />
       <Socials />
     </>
   );
