@@ -11,7 +11,7 @@ export const SectionSkill = () => {
         <Skills />
 
         <div className="space-y-4 md:col-start-2">
-          <p className="text-center">Guarda i miei lavori</p>
+          <h3 className="text-center text-2xl font-semibold">Guarda i miei lavori</h3>
           {/* Qui sarebbe bello mostrare gli ultimi lavori, massimo due o tre */}
           <ButtonAction navigateTo="projects" buttonClass="w-full">
             Portfolio
