@@ -1,30 +1,32 @@
-
 import { ButtonsProject } from "../molecules/ButtonsProject";
 import { ContainerProject } from "../molecules/ContainerProject";
 import { PictureProject } from "../molecules/PictureProject";
 
-type ProjectType = {
+interface CardProjectType {
   name: string;
   // path: string;
   html_url: string;
-  image:string;
+  image: string;
   technologies: string[];
-};
+}
 
-const Project: React.FC<ProjectType> = ({ name, html_url, image, technologies }) => {
+export const CardProject: React.FC<CardProjectType> = ({
+  name,
+  html_url,
+  image,
+  technologies,
+}) => {
   return (
     <>
       {/* PROGETTO SINGOLO */}
-      <article className="flex flex-col gap-4 rounded-md bg-white shadow-md">
+      <article className="flex flex-col gap-4 rounded-md border border-border bg-background text-foreground shadow-md">
         {/* immagine */}
         <PictureProject linkSite={html_url} image={image} name={name} />
         {/* contenitore nome progetto e descrizione */}
         <ContainerProject name={name} technologies={technologies}>
-          <ButtonsProject  nome={name} />
+          <ButtonsProject nome={name} />
         </ContainerProject>
       </article>
     </>
   );
 };
-
-export default Project;

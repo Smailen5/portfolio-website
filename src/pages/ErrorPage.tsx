@@ -9,9 +9,9 @@ const ErrorPage = () => {
   return (
     <>
       <NavbarSample />
-      <div className="min-h-screen bg-neutral-50 pt-16 md:flex md:justify-center">
+      <div className="min-h-screen bg-background text-foreground pt-16 md:flex md:justify-center">
         <div className="mt-20 px-6">
-          <div className="space-y-4 rounded-md bg-white p-4 text-center shadow-md">
+          <div className="space-y-4 rounded-md bg-background p-4 text-center shadow-md">
             <div className="text-3xl font-semibold">
               <p>Errore:</p>
               <Lottie
