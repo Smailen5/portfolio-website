@@ -1,5 +1,5 @@
 import { Hero } from "../organisms/Hero";
-import Presentation from "../organisms/Presentation";
+import Presentation from "../molecules/Presentation";
 import { SectionSkill } from "../organisms/SectionSkill";
 import Socials from "../organisms/Socials";
 
