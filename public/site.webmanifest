@@ -1,11 +1,11 @@
 {
   "name": "Smailen Vargas | Frontend Developer",
-  "short_name": "Smailen",
+  "short_name": "Smailen Vargas",
   "start_url": "/",
   "id": "/",
   "scope": "/",
   "lang": "it",
-  "description": "Smailen Vargas | Frontend Developer",
+  "description": "Portfolio personale di Smailen Vargas, Frontend Developer appassionato di React, TypeScript e design UI. Scopri i miei progetti e le mie competenze.",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
