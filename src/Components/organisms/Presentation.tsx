@@ -1,9 +1,4 @@
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "../atoms/tooltip";
+import { TooltipCustom } from "../atoms/TooltipCustom";
 
 const Presentation = () => {
   return (
@@ -13,57 +8,31 @@ const Presentation = () => {
       </h2>
       <p>
         Sono un <strong>frontend developer</strong>. Ho iniziato a programmare
-        da bambino, con uno{" "}
-        <TooltipProvider>
-          <Tooltip>
-            <TooltipTrigger>ZX Spectrum</TooltipTrigger>
-            <TooltipContent>
-              Un computer personale degli anni '80, famoso per i suoi giochi e
-              programmi.
-            </TooltipContent>
-          </Tooltip>
-        </TooltipProvider>{" "}
+        da bambino, con uno
+        <TooltipCustom
+          trigger="ZX Spectrum"
+          content="Un computer personale degli anni '80, famoso per i suoi giochi e programmi"
+        />
         e vari manuali di Basic, creando piccoli giochi e programmi, e da allora
         il mio interesse per la tecnologia non si è mai fermato.
       </p>
       <p>
         Negli anni ho esplorato vari aspetti creativi della tecnologia: dalla{" "}
-        <TooltipProvider>
-          <Tooltip>
-            <TooltipTrigger>
-              <strong>modellazione 3D</strong>
-            </TooltipTrigger>
-            <TooltipContent>
-              Creazione di modelli tridimensionali utilizzando software come 3ds
-              Max e SketchUp
-            </TooltipContent>
-          </Tooltip>
-        </TooltipProvider>{" "}
-        e il{" "}
-        <TooltipProvider>
-          <Tooltip>
-            <TooltipTrigger>
-              <strong>disegno digitale</strong>
-            </TooltipTrigger>
-            <TooltipContent>
-              Uso di software come Clip Studio Paint per creare illustrazioni
-              digitali
-            </TooltipContent>
-          </Tooltip>
-        </TooltipProvider>{" "}
-        al mondo di {" "}
-        <TooltipProvider>
-          <Tooltip>
-            <TooltipTrigger><strong>Arduino</strong></TooltipTrigger>
-            <TooltipContent>
-              <p>
-                Piattaforma open-source per creare progetti di elettronica e
-                programmazione.
-              </p>
-            </TooltipContent>
-          </Tooltip>
-        </TooltipProvider>
-        . Dopo esperienze in vari settori, ho scelto di focalizzarmi sullo
+        <TooltipCustom
+          trigger="modellazione 3D"
+          content="Creazione di modelli tridimensionali utilizzando software come 3ds Max e SketchUp"
+        />
+        e il
+        <TooltipCustom
+          trigger="disegno digitale"
+          content="Uso di software come Clipt Studio Paint per creare illustrazioni digitali"
+        />
+        al mondo di
+        <TooltipCustom
+          trigger="arduino."
+          content="Piattaforma open-source per creare progetti di elettronica e programmazione"
+        />
+        Dopo esperienze in vari settori, ho scelto di focalizzarmi sullo
         sviluppo <strong>frontend</strong>, dove posso dare forma a idee
         trasformandole in applicazioni web fluide e ben strutturate.
       </p>
