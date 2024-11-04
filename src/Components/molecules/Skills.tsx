@@ -12,7 +12,7 @@ const Skills = ({ title, program }: SkillsProps) => {
     <>
       <div className="space-y-4">
         <header>
-          <h3 className="text-xl font-semibold">{title}</h3>
+          <h3 className="text-xl font-semibold text-center">{title}</h3>
         </header>
         <ul className="grid md:grid-cols-4 gap-2">
           {program.map((skill) => (
