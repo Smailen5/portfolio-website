@@ -15,7 +15,7 @@ const Skills = ({ name, icon }: { name: string; icon: string }) => {
   if (width < 720) {
     return (
       <>
-        <li className="mb-4 flex items-center justify-between rounded-md bg-card p-2">
+        <li className="mb-4 flex items-center justify-between rounded-md border-2 border-card p-2 text-card-foreground">
           <p className="font-semibold uppercase">{name}</p>
           <img src={icon} alt={name + "icon"} className={`${iconSize}`} />
         </li>
