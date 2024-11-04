@@ -33,13 +33,13 @@ const icons = [
   },
 ];
 
-export const program = [
+export const language = [
   {
     name: "HTML5",
     icon: html5Icon,
   },
   {
-    name: "css3",
+    name: "Css3",
     icon: css3Icon,
   },
   {
@@ -79,7 +79,7 @@ export const framework = [
   },
 ];
 
-export const library = [
+export const utility = [
   {
     name: "Axios",
     icon: axiosIcon,
