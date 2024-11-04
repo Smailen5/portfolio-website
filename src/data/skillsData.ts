@@ -58,20 +58,13 @@ export const framework = [
     icon: reactIcon,
   },
   {
-    name: "Next ui",
-    icon: nextuiIcon,
-  },
-  {
     name: "Shadcn ui",
     icon: shadcnIcon,
   },
   {
-    name: "Formik",
-    icon: formikIcon,
+    name: "Next ui",
+    icon: nextuiIcon,
   },
-];
-
-export const library = [
   {
     name: "Tailwind",
     icon: tailwindIcon,
@@ -81,16 +74,19 @@ export const library = [
     icon: bootstrapIcon,
   },
   {
-    name: "Git",
-    icon: gitIcon,
+    name: "Formik",
+    icon: formikIcon,
   },
+];
+
+export const library = [
   {
     name: "Axios",
     icon: axiosIcon,
   },
   {
-    name: "Form spree",
-    icon: formspreeIcon,
+    name: "Git",
+    icon: gitIcon,
   },
   {
     name: "GitHub",
@@ -99,6 +95,10 @@ export const library = [
   {
     name: "Netlify",
     icon: netlifyIcon,
+  },
+  {
+    name: "Form spree",
+    icon: formspreeIcon,
   },
 ];
 export default icons;
