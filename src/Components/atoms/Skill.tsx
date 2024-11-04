@@ -1,9 +1,25 @@
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "./tooltip";
+
 const Skills = ({ name, icon }: { name: string; icon: string }) => {
   return (
-    <div className="flex items-center justify-between rounded-md bg-card p-4 uppercase text-card-foreground shadow-md shadow-secondary">
-      <p className="font-semibold uppercase">{name}</p>
-      <img src={icon} alt={name + " icon"} />
-    </div>
+    <>
+      <li className="">
+        {/* <p className="text-xs font-semibold uppercase hidden">{name}</p> */}
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger>
+              <img src={icon} alt={name + " icon"} />
+            </TooltipTrigger>
+            <TooltipContent>{name}</TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      </li>
+    </>
   );
 };
 
