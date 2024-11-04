@@ -1,10 +1,8 @@
-import { ButtonAction } from "../atoms/ButtonAction";
-// import { Section } from "../atoms/Section";
-import Skills from "../molecules/Skills";
 import { framework, library, program } from "../../data/skillsData";
+import { ButtonAction } from "../atoms/ButtonAction";
+import Skills from "../molecules/Skills";
 
 export const SectionSkill = () => {
-  // const linguaggi = ["Git", "React", "JavaScript", "Tailwind"];
   return (
     <section className="mx-auto flex w-full flex-col gap-8">
       <h3 className="text-center text-2xl font-semibold">
@@ -15,9 +13,6 @@ export const SectionSkill = () => {
         <Skills program={framework} title="Framework e librerie" />
         <Skills program={library} title="Strumenti e Tecnologie " />
 
-        {/* Questa e una prova */}
-        {/* <Section title="prova di title" content={skillsData} /> */}
-        
         <div className="space-y-4 md:col-start-2">
           <h3 className="text-center text-2xl font-semibold">
             Guarda i miei lavori

@@ -10,12 +10,12 @@ const Skills = ({ name, icon }: { name: string; icon: string }) => {
   const { useWindowWidth } = useGlobalContext();
   const width = useWindowWidth();
 
-  const iconSize = "w-12 h-12"
+  const iconSize = "w-12 h-12";
 
   if (width < 720) {
     return (
       <>
-        <li className="flex items-center justify-between rounded-md bg-card p-2 mb-4">
+        <li className="mb-4 flex items-center justify-between rounded-md bg-card p-2">
           <p className="font-semibold uppercase">{name}</p>
           <img src={icon} alt={name + "icon"} className={`${iconSize}`} />
         </li>
@@ -26,7 +26,6 @@ const Skills = ({ name, icon }: { name: string; icon: string }) => {
   return (
     <>
       <li className="">
-        {/* <p className="text-xs font-semibold uppercase hidden">{name}</p> */}
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger>
