@@ -10,8 +10,8 @@ export const SectionSkill = () => {
       </h3>
       <div className="flex h-full w-full flex-col flex-wrap gap-8 md:grid md:grid-cols-3">
         <Skills program={program} title="Linguaggi" />
-        <Skills program={framework} title="Framework e librerie" />
-        <Skills program={library} title="Strumenti e Tecnologie " />
+        <Skills program={framework} title="Framework e Librerie" />
+        <Skills program={library} title="Strumenti di Sviluppo" />
 
         <div className="space-y-4 md:col-start-2">
           <h3 className="text-center text-2xl font-semibold">
