@@ -25,7 +25,7 @@ const Skills = ({ name, icon }: { name: string; icon: string }) => {
 
   return (
     <>
-      <li className="">
+      <li>
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger>
