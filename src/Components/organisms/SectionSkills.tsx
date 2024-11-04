@@ -9,9 +9,9 @@ export const SectionSkill = () => {
         Competenze acquisite
       </h3>
       <div className="flex h-full w-full flex-col flex-wrap gap-8 md:grid md:grid-cols-3">
-        <Skills program={language} title="Linguaggi" />
-        <Skills program={framework} title="Framework e Librerie" />
-        <Skills program={utility} title="Strumenti di Sviluppo" />
+        <Skills section={language} title="Linguaggi" />
+        <Skills section={framework} title="Framework e Librerie" />
+        <Skills section={utility} title="Strumenti di Sviluppo" />
 
         <div className="space-y-4 md:col-start-2">
           <h3 className="text-center text-2xl font-semibold">
