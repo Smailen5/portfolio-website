@@ -11,7 +11,7 @@ const Skills = ({ title }: SkillsProps) => {
         <header>
           <h3 className="text-xl font-semibold">{title}</h3>
         </header>
-        <ul className="grid grid-cols-4 gap-2">
+        <ul className="grid md:grid-cols-4 gap-2">
           {skillsData.map((skill) => (
             <Skill key={skill.name} {...skill} />
           ))}
