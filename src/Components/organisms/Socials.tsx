@@ -9,8 +9,8 @@ const Socials = () => {
     <section className="flex flex-col gap-8">
       <h3 className="text-center text-3xl font-semibold">Contatti</h3>
       <div className="grid md:grid-cols-2">
-        <div>
-          <HeroContact />
+        <div className="grid gap-8 md:gap-0">
+          <HeroContact noHeader />
           <div className="flex flex-col gap-8 md:grid md:grid-cols-2 md:gap-0">
             {social.map((el, index) => (
               <ButtonSocial key={index} {...el} />
