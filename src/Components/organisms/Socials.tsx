@@ -17,7 +17,6 @@ const Socials = () => {
             ))}
           </div>
         </div>
-        {/* <HeroContact/> */}
         <FormComponent />
       </div>
     </section>
