@@ -5,7 +5,7 @@ import Skills from "../molecules/Skills";
 export const SectionSkill = () => {
   return (
     <section className="mx-auto flex w-full flex-col gap-8">
-      <h3 className="text-center text-2xl font-semibold">
+      <h3 className="text-center text-3xl font-semibold">
         Competenze acquisite
       </h3>
       <div className="flex h-full w-full flex-col flex-wrap gap-8 md:grid md:grid-cols-3">
