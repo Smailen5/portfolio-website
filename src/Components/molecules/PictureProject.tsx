@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import { LinkBlank } from "../atoms/LinkBlank";
 import { nameCorrect } from "@/utils/nameCorrect";
 
@@ -19,13 +18,7 @@ export const PictureProject: React.FC<PictureProject> = ({
   onError,
   imageLoadFailed,
 }) => {
-  // const [error, setError] = useState(false);
-
-  // const handleError = () => {
-  //   setError(true);
-  // };
-
-  // Se non ho ancora caricato l'immagine
+  // Se non ho ancora caricato l'immagine del progetto
   if (imageLoadFailed) {
     return (
       <div className="flex h-full min-h-[195px] w-full items-center justify-center rounded-md bg-muted text-muted-foreground md:min-h-[300px]">
