@@ -13,7 +13,7 @@ export const Hero = () => {
 
         {/* presentazione */}
         <header className="space-y-4">
-          <p className="text-5xl">Ciao, Io sono </p>
+          <p className="text-5xl">&lt;Hello World&gt;, sono</p>
           <h2 className="text-6xl font-bold text-secondary">
             <TooltipProvider>
               <Tooltip>

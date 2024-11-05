@@ -1,6 +1,6 @@
 import { Hero } from "../organisms/Hero";
-import Presentation from "../organisms/Presentation";
-import { SectionSkill } from "../organisms/SectionSkill";
+import Presentation from "../molecules/Presentation";
+import { SectionSkill } from "../organisms/SectionSkills";
 import Socials from "../organisms/Socials";
 
 export const HomeTemplate = () => {

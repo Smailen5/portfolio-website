@@ -1,16 +1,22 @@
-import { SiNextui } from "react-icons/si";
-import skillsData from "../../data/skillsData";
 import Skill from "../atoms/Skill";
-const Skills = () => {
+
+interface SkillsProps {
+  title: string;
+  section: { name: string; icon: string }[];
+}
+const Skills = ({ title, section }: SkillsProps) => {
+
   return (
     <>
-      {skillsData.map((skill) => {
-        return <Skill key={skill.name} {...skill} />;
-      })}
-      {/* questa icona viene importata diversamente dalle altre */}
-      <div className="flex items-center justify-between rounded-md bg-card p-4 uppercase shadow-md shadow-secondary">
-        <p className="font-semibold uppercase">NextUI</p>
-        <SiNextui size={48} className="" />
+      <div className="space-y-12">
+        <header>
+          <h3 className="text-center text-xl font-semibold">{title}</h3>
+        </header>
+        <ul className="grid gap-2 md:grid-cols-4">
+          {section.map((skill) => (
+            <Skill key={skill.name} {...skill} />
+          ))}
+        </ul>
       </div>
     </>
   );
