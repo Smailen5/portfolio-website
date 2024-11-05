@@ -1,12 +1,15 @@
+import { twMerge } from "tailwind-merge";
+
 interface HeroContactProps {
   noHeader?: boolean;
+  className?: string;
 }
 
-export const HeroContact = ({ noHeader }: HeroContactProps) => {
+export const HeroContact = ({ noHeader, className }: HeroContactProps) => {
   return (
     <section
       aria-labelledby="contact-heading"
-      className="flex-1 space-y-4 md:flex md:flex-col md:justify-center md:text-left lg:w-1/2 lg:text-left"
+      className={twMerge("flex-1 space-y-4 md:flex md:flex-col md:justify-center md:text-left lg:w-1/2 lg:text-left", className)}
     >
       <h3 id="contact-heading" className="sr-only">
         Contattami
