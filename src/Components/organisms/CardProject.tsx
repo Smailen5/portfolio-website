@@ -6,7 +6,6 @@ import Skeleton from "react-loading-skeleton";
 
 interface CardProjectType {
   name: string;
-  // path: string;
   html_url: string;
   image: string;
   technologies: string[];
@@ -21,7 +20,6 @@ export const CardProject: React.FC<CardProjectType> = ({
   const [imageLoad, setImgLoad] = useState(false);
   const [error, setError] = useState(false);
 
-  // if (error) setImgLoad(false);
   return (
     <>
       {/* PROGETTO SINGOLO */}
