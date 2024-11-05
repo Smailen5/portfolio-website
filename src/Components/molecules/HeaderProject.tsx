@@ -3,7 +3,7 @@ import { LinkBlank } from "../atoms/LinkBlank";
 export const HeaderProject = () => {
   return (
     <>
-      <div className="space-y-4 text-left">
+      <header className="space-y-4 text-left">
         <p>
           Questi progetti sono stati sviluppati nell'ambito delle sfide di
           Frontend Mentor e sono stati fondamentali per affinare le competenze
@@ -46,7 +46,7 @@ export const HeaderProject = () => {
           </LinkBlank>
           .
         </p>
-      </div>
+      </header>
     </>
   );
 };
