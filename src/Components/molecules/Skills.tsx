@@ -8,7 +8,7 @@ const Skills = ({ title, section }: SkillsProps) => {
 
   return (
     <>
-      <div className="space-y-4">
+      <div className="space-y-12">
         <header>
           <h3 className="text-center text-xl font-semibold">{title}</h3>
         </header>
