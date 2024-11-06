@@ -4,7 +4,7 @@ import { TooltipCustom } from "../atoms/TooltipCustom";
 
 const Presentation = () => {
   return (
-    <Section>
+    <Section className="gap-4">
       <Header className="sr-only">Presentazione</Header>
       <p>
         Sono un <strong>frontend developer</strong>. Ho iniziato a programmare
