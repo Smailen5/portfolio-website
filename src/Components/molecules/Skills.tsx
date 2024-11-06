@@ -1,4 +1,5 @@
 import { Header } from "../atoms/Header";
+import { Section } from "../atoms/Section";
 import Skill from "../atoms/Skill";
 
 interface SkillsProps {
@@ -9,7 +10,7 @@ const Skills = ({ title, section }: SkillsProps) => {
 
   return (
     <>
-      <article className="space-y-12">
+      <Section className="gap-10">
         <Header type="h3">
           {title}
         </Header>
@@ -18,7 +19,7 @@ const Skills = ({ title, section }: SkillsProps) => {
             <Skill key={skill.name} {...skill} />
           ))}
         </ul>
-      </article>
+      </Section>
     </>
   );
 };
