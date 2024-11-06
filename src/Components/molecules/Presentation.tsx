@@ -1,11 +1,11 @@
+import { Header } from "../atoms/Header";
+import { Section } from "../atoms/Section";
 import { TooltipCustom } from "../atoms/TooltipCustom";
 
 const Presentation = () => {
   return (
-    <section className="flex flex-col gap-4">
-      <h2 id="presentation-title" className="sr-only">
-        Presentazione
-      </h2>
+    <Section>
+      <Header className="sr-only">Presentazione</Header>
       <p>
         Sono un <strong>frontend developer</strong>. Ho iniziato a programmare
         da bambino, con uno
@@ -46,7 +46,7 @@ const Presentation = () => {
         Dai un'occhiata ai miei progetti per vedere come posso contribuire al
         tuo team e portare valore con le mie competenze e la mia passione.
       </p>
-    </section>
+    </Section>
   );
 };
 
