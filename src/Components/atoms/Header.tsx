@@ -5,7 +5,7 @@ interface HeaderProps {
   children: string;
   titleID?: string;
   className?: string;
-  type: "h1" | "h2" | "h3" | "h4";
+  type?: "h1" | "h2" | "h3" | "h4";
 }
 
 export const Header = ({ children, titleID, className, type="h1" }: HeaderProps) => {
