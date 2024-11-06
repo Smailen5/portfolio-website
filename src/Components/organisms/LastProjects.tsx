@@ -14,7 +14,7 @@ export const LastProjects = () => {
     <>
       <Section>
         <Header type="h2" titleID="ultimi lavori">Guarda i miei ultimi lavori</Header>
-        <main className="grid grid-cols-3 gap-4">
+        <main className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {loading
             ? arraySkeleton.map((_, index) => (
                 <SkeletonLoaderCard key={index} />

@@ -12,15 +12,15 @@ export const Header = ({ children, titleID, className, type="h1" }: HeaderProps)
     // Un po to much, ma sono stanco quindi va bene
     let textSize
     switch (type) {
-        case "h1": textSize ="text-4xl" 
+        case "h1": textSize ="text-3xl lg:text-4xl" 
             break;
-        case "h2": textSize ="text-3xl";
+        case "h2": textSize ="text-2xl lg:text-3xl";
             break;
-        case "h3": textSize ="text-2xl";
+        case "h3": textSize ="text-xl lg:text-2xl";
             break;
-        case "h4": textSize ="text-xl";
+        case "h4": textSize ="text-lg lg:text-xl";
             break;
-        default: textSize ="text-lg"
+        default: textSize ="text-sm lg:text-lg"
             break;
     }
   return (
