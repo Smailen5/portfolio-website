@@ -8,7 +8,7 @@ const Skills = ({ title, section }: SkillsProps) => {
 
   return (
     <>
-      <div className="space-y-12">
+      <article className="space-y-12">
         <header>
           <h3 className="text-center text-xl font-semibold">{title}</h3>
         </header>
@@ -17,7 +17,7 @@ const Skills = ({ title, section }: SkillsProps) => {
             <Skill key={skill.name} {...skill} />
           ))}
         </ul>
-      </div>
+      </article>
     </>
   );
 };
