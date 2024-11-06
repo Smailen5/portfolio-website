@@ -7,7 +7,7 @@ interface SectionProps {
 
 export const Section = ({ children, className }: SectionProps) => {
   return (
-    <section className={twMerge("mx-auto flex w-full flex-col gap-12", className)}>
+    <section className={twMerge("mx-auto flex w-full flex-col gap-16", className)}>
       {children}
     </section>
   );
