@@ -15,8 +15,8 @@ export const SectionProjects = () => {
       <section className="grid gap-4 md:grid-cols-2">
         {loading
           ? arraySkeleton.map((_, index) => <SkeletonLoaderCard key={index} />)
-          : projects.map((project) => {
-              return <CardProject key={project.name} {...project} />;
+          : projects.map((project, index) => {
+              return <CardProject key={index} {...project} />;
             })}
       </section>
     </>
