@@ -1,25 +1,27 @@
 import social from "../../data/social";
+import { Header } from "../atoms/Header";
 import { HeroContact } from "../atoms/HeroContact";
+import { Section } from "../atoms/Section";
 // import { HeroContact } from "../atoms/HeroContact";
 import ButtonSocial from "../molecules/ButtonSocial";
 import FormComponent from "./FormComponent";
 
 const Socials = () => {
   return (
-    <section className="flex flex-col gap-12">
-      <h3 className="text-center text-3xl font-semibold">Contatti</h3>
-      <div className="grid md:grid-cols-2 gap-8">
+    <Section>
+      <Header type="h2">Contatti</Header>
+      <main className="grid gap-8 md:grid-cols-2">
         <div className="grid gap-8 md:gap-0">
           <HeroContact noHeader className="lg:w-full" />
-          <div className="flex flex-col gap-8 md:grid md:grid-cols-2 md:gap-0 md:gap-x-4 md:items-center h-40">
+          <div className="flex h-40 flex-col gap-8 md:grid md:grid-cols-2 md:items-center md:gap-0 md:gap-x-4">
             {social.map((el, index) => (
               <ButtonSocial key={index} {...el} />
             ))}
           </div>
         </div>
         <FormComponent />
-      </div>
-    </section>
+      </main>
+    </Section>
   );
 };
 

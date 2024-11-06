@@ -13,7 +13,7 @@ export const LastProjects = () => {
   return (
     <>
       <Section>
-        <Header titleID="ultimi lavori">Guarda i miei ultimi lavori</Header>
+        <Header type="h2" titleID="ultimi lavori">Guarda i miei ultimi lavori</Header>
         <main className="grid grid-cols-3 gap-4">
           {loading
             ? arraySkeleton.map((_, index) => (
