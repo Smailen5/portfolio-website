@@ -1,4 +1,4 @@
-import { Label, Option, Select } from "./SelectCustom";
+import { Label, Option, Select, Selection } from "./SelectCustom";
 
 export const SelectFilter = () => {
   return (
@@ -19,14 +19,12 @@ export const SelectFilter = () => {
             react
           </option>
         </select>
-        <Label htmlFor="prova">prova</Label>
-        <Select name="prova" id="prova">
-          <Option>prova di selezione</Option>
-          <Option>prova di selezione 2</Option>
-          <Option>prova di selezione 3</Option>
-        </Select>
-
-        
+        <Selection label="prova di label" name="opzioni">
+            <Option>prova </Option>
+            <Option>prova 2</Option>
+            <Option>prova 3</Option>
+            <Option>prova 4</Option>
+        </Selection>
       </div>
     </>
   );
