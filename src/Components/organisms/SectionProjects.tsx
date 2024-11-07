@@ -1,6 +1,7 @@
 import { useFetch } from "@/utils/useFetch";
 import { SkeletonLoaderCard } from "../atoms/SkeletonLoaderCard";
 import { CardProject } from "./CardProject";
+import { Filter } from "../molecules/Filter";
 
 export const SectionProjects = () => {
   const { projects, loading, error } = useFetch();
@@ -12,6 +13,7 @@ export const SectionProjects = () => {
 
   return (
     <>
+    <Filter/>
       <section className="grid gap-4 md:grid-cols-2">
         {loading
           ? arraySkeleton.map((_, index) => <SkeletonLoaderCard key={index} />)
