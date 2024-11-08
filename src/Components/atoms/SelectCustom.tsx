@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 interface LabelProps {
@@ -8,7 +8,7 @@ interface LabelProps {
 
 const Label = ({ children, labelID }: LabelProps) => {
   return (
-    <div role="label" aria-labelledby={labelID} className="text-sm font-medium">
+    <div aria-labelledby={labelID} className="text-sm font-medium">
       {children}
     </div>
   );
@@ -23,10 +23,19 @@ interface OptionProps {
 }
 
 const Option = ({ children }: OptionProps) => {
+  const onClick = () => {
+    console.log(children);
+  };
   return (
-    <div role="option" tabIndex={0}>
+    <li
+      role="option"
+      tabIndex={0}
+      onClick={onClick}
+      onKeyDown={(e) => e.key === "Enter" && onClick()}
+      className="cursor-pointer p-2 hover:bg-gray-200 "
+    >
       {children}
-    </div>
+    </li>
   );
 };
 
@@ -42,15 +51,19 @@ interface SelectProps {
 }
 
 const Select = ({ id, children, open, className }: SelectProps) => {
-  if (open) className = "block";
   return (
-    <div
-      role="select"
+    <ul
+      role="listbox"
       id={id}
-      className={twMerge("hidden h-6 bg-white pl-2 text-left", className)}
+      aria-hidden={!open}
+      className={twMerge(
+        "absolute z-10 translate-y-1/2 bg-gray-300 text-left",
+        open ? "block" : "hidden",
+        className,
+      )}
     >
       {children}
-    </div>
+    </ul>
   );
 };
 
@@ -74,24 +87,42 @@ const Selection = ({
   className,
 }: SelectionProps) => {
   const selectID = id || `select-${name}`;
-
   const [open, setOpen] = useState(false);
-  const handleOpen = () => {
-    setOpen(!open);
-    console.log(open);
-  };
+  const selectionRef = useRef<HTMLDivElement>(null);
+
+  const handleOpen = () => setOpen((prev) => !prev);
+
+  // Chiude il menu quando si clicca fuori
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (
+        selectionRef.current &&
+        !selectionRef.current.contains(e.target as Node)
+      ) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
     <>
-      <Label labelID={selectID}>{label}</Label>
-      <button
-        onClick={handleOpen}
-        className={twMerge("flex flex-col gap-2 bg-white pl-2", className)}
-      >
-        clicca
-      </button>
-      <Select id={selectID} open={open}>
-        {children}
-      </Select>
+      <div className="relative flex flex-col gap-2" ref={selectionRef}>
+        <Label labelID={selectID}>{label}</Label>
+        <button
+          aria-haspopup="listbox"
+          aria-expanded={open}
+          aria-controls={selectID}
+          onClick={handleOpen}
+          className={twMerge("flex flex-col gap-2 bg-white pl-2", className)}
+        >
+          Seleziona
+        </button>
+        <Select id={selectID} open={open}>
+          {children}
+        </Select>
+      </div>
     </>
   );
 };
