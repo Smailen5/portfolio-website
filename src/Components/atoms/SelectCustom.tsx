@@ -1,17 +1,20 @@
+import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 interface LabelProps {
-  htmlFor: string;
   children: string;
+  labelID: string;
 }
 
-const Label = ({ htmlFor, children }: LabelProps) => {
+const Label = ({ children, labelID }: LabelProps) => {
   return (
-    <label htmlFor={htmlFor} className="text-sm font-medium">
+    <div role="label" aria-labelledby={labelID} className="text-sm font-medium">
       {children}
-    </label>
+    </div>
   );
 };
+
+Label.displayName = "label";
 
 // --------------------------------------------------------------------------------->
 
@@ -20,24 +23,38 @@ interface OptionProps {
 }
 
 const Option = ({ children }: OptionProps) => {
-  return <option value={children}>{children}</option>;
+  return (
+    <div role="option" tabIndex={0}>
+      {children}
+    </div>
+  );
 };
+
+Option.displayName = "option";
 
 // --------------------------------------------------------------------------------->
 
 interface SelectProps {
-  name: string;
   id: string;
   children: React.ReactNode;
+  open: boolean;
+  className?: string;
 }
 
-const Select = ({ name, id, children }: SelectProps) => {
+const Select = ({ id, children, open, className }: SelectProps) => {
+  if (open) className = "block";
   return (
-    <select name={name} id={id}>
+    <div
+      role="select"
+      id={id}
+      className={twMerge("hidden h-6 bg-white pl-2 text-left", className)}
+    >
       {children}
-    </select>
+    </div>
   );
 };
+
+Select.displayName = "select";
 
 // --------------------------------------------------------------------------------->
 
@@ -46,21 +63,39 @@ interface SelectionProps {
   name: string;
   label: string;
   id?: string;
-  className?:string;
+  className?: string;
 }
 
-const Selection = ({ children, id, name, label, className }: SelectionProps) => {
+const Selection = ({
+  children,
+  id,
+  name,
+  label,
+  className,
+}: SelectionProps) => {
   const selectID = id || `select-${name}`;
+
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => {
+    setOpen(!open);
+    console.log(open);
+  };
   return (
-    <div className={twMerge("flex flex-col gap-2", className)}>
-      <Label htmlFor={selectID}>{label}</Label>
-      <Select id={selectID} name={name}>
+    <>
+      <Label labelID={selectID}>{label}</Label>
+      <button
+        onClick={handleOpen}
+        className={twMerge("flex flex-col gap-2 bg-white pl-2", className)}
+      >
+        clicca
+      </button>
+      <Select id={selectID} open={open}>
         {children}
       </Select>
-    </div>
+    </>
   );
 };
 
 // --------------------------------------------------------------------------------->
 
-export { Label, Option, Select, Selection };
+export { Option, Select, Selection };
