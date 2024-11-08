@@ -21,18 +21,22 @@ Label.displayName = "label";
 interface OptionProps {
   children: string;
 }
+let variabile: string;
 
 const Option = ({ children }: OptionProps) => {
+  
   const onClick = () => {
-    console.log(children);
+    variabile = children;
+    console.log("selezione", variabile);
   };
+
   return (
     <li
       role="option"
       tabIndex={0}
       onClick={onClick}
       onKeyDown={(e) => e.key === "Enter" && onClick()}
-      className="cursor-pointer p-2 hover:bg-gray-200 "
+      className="cursor-pointer p-2 hover:bg-gray-200"
     >
       {children}
     </li>
@@ -57,7 +61,7 @@ const Select = ({ id, children, open, className }: SelectProps) => {
       id={id}
       aria-hidden={!open}
       className={twMerge(
-        "absolute z-10 translate-y-1/2 bg-gray-300 text-left",
+        "absolute top-full z-10 min-w-max whitespace-nowrap rounded-md bg-gray-300 text-left",
         open ? "block" : "hidden",
         className,
       )}
@@ -88,6 +92,7 @@ const Selection = ({
 }: SelectionProps) => {
   const selectID = id || `select-${name}`;
   const [open, setOpen] = useState(false);
+  const [testoBottone, setTestoBottone] = useState("");
   const selectionRef = useRef<HTMLDivElement>(null);
 
   const handleOpen = () => setOpen((prev) => !prev);
@@ -106,6 +111,12 @@ const Selection = ({
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Cambia il testo del bottone con l'opzione selezionata
+  useEffect(() => {
+    setTestoBottone(variabile);
+    console.log(testoBottone);
+  }, [variabile]);
+
   return (
     <>
       <div className="relative flex flex-col gap-2" ref={selectionRef}>
@@ -117,7 +128,7 @@ const Selection = ({
           onClick={handleOpen}
           className={twMerge("flex flex-col gap-2 bg-white pl-2", className)}
         >
-          Seleziona
+          {testoBottone || "Seleziona"}
         </button>
         <Select id={selectID} open={open}>
           {children}
