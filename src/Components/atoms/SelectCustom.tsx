@@ -26,7 +26,6 @@ let variabile: string;
 const Option = ({ children }: OptionProps) => {
   const onClick = () => {
     variabile = children;
-    console.log("selezione", variabile);
   };
 
   return (
@@ -113,7 +112,6 @@ const Selection = ({
   // Cambia il testo del bottone con l'opzione selezionata
   useEffect(() => {
     setTestoBottone(variabile);
-    console.log(testoBottone);
   }, [variabile]);
 
   return (
