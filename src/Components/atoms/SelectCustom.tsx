@@ -24,7 +24,6 @@ interface OptionProps {
 let variabile: string;
 
 const Option = ({ children }: OptionProps) => {
-  
   const onClick = () => {
     variabile = children;
     console.log("selezione", variabile);
@@ -128,7 +127,7 @@ const Selection = ({
           onClick={handleOpen}
           className={twMerge("flex flex-col gap-2 bg-white pl-2", className)}
         >
-          {testoBottone || "Seleziona"}
+          Selezionato: {testoBottone || "Tutto"}
         </button>
         <Select id={selectID} open={open}>
           {children}
