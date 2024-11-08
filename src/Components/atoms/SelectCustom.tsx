@@ -114,7 +114,6 @@ const Selection = ({
     setOpen(false);
   };
 
-  console.log(testoBottone);
   return (
     <>
       <div className="relative flex flex-col gap-2" ref={selectionRef}>
