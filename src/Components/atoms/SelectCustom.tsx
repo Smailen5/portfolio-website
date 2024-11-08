@@ -123,7 +123,7 @@ const Selection = ({
           aria-expanded={open}
           aria-controls={selectID}
           onClick={handleOpen}
-          className={twMerge("flex flex-col gap-2 bg-white pl-2", className)}
+          className={twMerge("flex flex-col gap-2 bg-white px-2", className)}
         >
           Selezionato: {testoBottone || "Tutto"}
         </button>
