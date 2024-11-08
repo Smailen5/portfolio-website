@@ -90,7 +90,7 @@ const Selection = ({
 }: SelectionProps) => {
   const selectID = id || `select-${name}`;
   const [open, setOpen] = useState(false);
-  const [testoBottone, setTestoBottone] = useState("");
+  const [testoBottone, setTestoBottone] = useState<string>("Tutto");
   const selectionRef = useRef<HTMLDivElement>(null);
 
   const handleOpen = () => setOpen((prev) => !prev);
@@ -111,9 +111,13 @@ const Selection = ({
 
   // Cambia il testo del bottone con l'opzione selezionata
   useEffect(() => {
+    // la variabile viene creata ma non inizializzata
+    if (variabile === undefined) return;
     setTestoBottone(variabile);
+    setOpen(false);
   }, [variabile]);
 
+  console.log(testoBottone);
   return (
     <>
       <div className="relative flex flex-col gap-2" ref={selectionRef}>
@@ -125,7 +129,7 @@ const Selection = ({
           onClick={handleOpen}
           className={twMerge("flex flex-col gap-2 bg-white px-2", className)}
         >
-          Selezionato: {testoBottone || "Tutto"}
+          Selezionato: {testoBottone}
         </button>
         <Select id={selectID} open={open}>
           {children}
