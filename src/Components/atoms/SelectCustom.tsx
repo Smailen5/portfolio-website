@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -20,20 +21,16 @@ Label.displayName = "label";
 
 interface OptionProps {
   children: string;
+  onClick?: () => void;
 }
-let variabile: string;
 
-const Option = ({ children }: OptionProps) => {
-  const onClick = () => {
-    variabile = children;
-  };
-
+const Option = ({ children, onClick }: OptionProps) => {
   return (
     <li
       role="option"
       tabIndex={0}
       onClick={onClick}
-      onKeyDown={(e) => e.key === "Enter" && onClick()}
+      onKeyDown={(e) => e.key === "Enter" && onClick && onClick()}
       className="cursor-pointer p-2 hover:bg-gray-200"
     >
       {children}
@@ -79,6 +76,7 @@ interface SelectionProps {
   label: string;
   id?: string;
   className?: string;
+  onSelectionChange: (value: string) => void;
 }
 
 const Selection = ({
@@ -87,6 +85,7 @@ const Selection = ({
   name,
   label,
   className,
+  onSelectionChange,
 }: SelectionProps) => {
   const selectID = id || `select-${name}`;
   const [open, setOpen] = useState(false);
@@ -109,13 +108,11 @@ const Selection = ({
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Cambia il testo del bottone con l'opzione selezionata
-  useEffect(() => {
-    // la variabile viene creata ma non inizializzata
-    if (variabile === undefined) return;
-    setTestoBottone(variabile);
+  const handleOptionClick = (value: string) => {
+    setTestoBottone(value);
+    onSelectionChange(value);
     setOpen(false);
-  }, [variabile]);
+  };
 
   console.log(testoBottone);
   return (
@@ -132,7 +129,14 @@ const Selection = ({
           Selezionato: {testoBottone}
         </button>
         <Select id={selectID} open={open}>
-          {children}
+          {/* Codice di chatGPT */}
+          {React.Children.map(children, (child) =>
+            React.isValidElement<OptionProps>(child) && child.type === Option
+              ? React.cloneElement(child, {
+                  onClick: () => handleOptionClick(child.props.children),
+                })
+              : child,
+          )}
         </Select>
       </div>
     </>
