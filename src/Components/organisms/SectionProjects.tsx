@@ -8,7 +8,6 @@ export const SectionProjects = () => {
   const { loading, error } = useFetch();
   const {
     filteredProjects,
-    selectedFilter,
     setSelectedFilter,
     numberFilteredProjects,
   } = useFilter();
@@ -20,7 +19,6 @@ export const SectionProjects = () => {
   return (
     <>
       <Filter
-        selectedFilter={selectedFilter}
         setSelectedFilter={setSelectedFilter}
         number={numberFilteredProjects}
       />
