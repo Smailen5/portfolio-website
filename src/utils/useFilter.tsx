@@ -18,6 +18,9 @@ export const useFilter = () => {
   // Numero progetti filtrati
   const numberFilteredProjects = filteredProjects.length;
 
+  console.log("progetti filtrati:", filteredProjects);
+  
+
   return {
     filteredProjects,
     selectedFilter,
