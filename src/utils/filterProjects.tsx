@@ -5,16 +5,18 @@ export const filterProjects = () => {
   const [selectedFilter, setSelectedFilter] = useState("Tutto");
   const { projects } = useFetch();
 
-  // Array filtrato
-  const filteredProjects =
-    selectedFilter === "Tutto"
-      ? projects
-      : projects.filter((project) =>
-          project.technologies.includes(selectedFilter),
-        );
-        
+
+    // Array filtrato
+    const filteredProjects =
+      selectedFilter === "Tutto"
+        ? projects
+        : projects.filter((project) =>
+            project.technologies.includes(selectedFilter),
+          );
+
+
   // Numero progetti filtrati
-  const numberFilteredProjects = filterProjects.length;
+  const numberFilteredProjects = filteredProjects.length;
 
   return {
     filteredProjects,
