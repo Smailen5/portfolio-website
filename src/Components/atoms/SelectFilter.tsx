@@ -14,12 +14,14 @@ export const SelectFilter = ({
         name="opzioni"
         onSelectionChange={onSelectionChange}
       >
-        <Option>Html 5 </Option>
-        <Option>CSS 3</Option>
+        <Option>Tutto</Option>
+        <Option>HTML5</Option>
+        <Option>CSS</Option>
         <Option>JavaScript</Option>
         <Option>TypeScript</Option>
         <Option>Tailwind CSS</Option>
         <Option>React</Option>
+        <Option>Work in progress</Option>
       </Selection>
       {/* </div> */}
     </>
