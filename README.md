@@ -50,8 +50,8 @@ Nel futuro prevedo di:
 - ❌ ~~Cambiare pallette colori aggiungendo differenti temi~~
 - Aggiungere piu animazioni sia con TailwindCSS che con una libreria JavaScript
 - Aggiungere funzione per tenere traccia dell'esperienza in ogni tecnologia, dato una data di inizio ritorni quanti mesi sono passati
-- Finire di costruire il server e il database per recuperare tutti i progetti
-- Aggiungere la possibilita di filtrare i progetti per tecnologia
+- ❌ ~~Finire di costruire il server e il database per recuperare tutti i progetti~~
+- ✔ Aggiungere la possibilita di filtrare i progetti per tecnologia
 
 ### Risorse utilizzate
 
