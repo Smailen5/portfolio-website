@@ -31,7 +31,7 @@ const Option = ({ children, onClick }: OptionProps) => {
       tabIndex={0}
       onClick={onClick}
       onKeyDown={(e) => e.key === "Enter" && onClick && onClick()}
-      className="m-1 cursor-pointer rounded-md p-2 pr-10 hover:bg-secondary hover:font-semibold hover:text-secondary-foreground focus-visible:bg-secondary focus-visible:font-semibold focus-visible:text-secondary-foreground"
+      className="w-full cursor-pointer rounded-md p-2 hover:bg-secondary hover:font-semibold hover:text-secondary-foreground focus-visible:bg-secondary focus-visible:font-semibold focus-visible:text-secondary-foreground"
     >
       {children}
     </li>
@@ -56,7 +56,7 @@ const Select = ({ id, children, open, className }: SelectProps) => {
       id={id}
       aria-hidden={!open}
       className={twMerge(
-        "absolute top-full z-10 min-w-max overflow-hidden whitespace-nowrap rounded-md bg-popover text-left text-popover-foreground",
+        "absolute top-full z-10 w-40 min-w-max space-y-2 overflow-hidden whitespace-nowrap rounded-md bg-popover p-1 text-left text-popover-foreground",
         open ? "block" : "hidden",
         className,
       )}
