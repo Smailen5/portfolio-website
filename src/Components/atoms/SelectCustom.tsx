@@ -31,7 +31,7 @@ const Option = ({ children, onClick }: OptionProps) => {
       tabIndex={0}
       onClick={onClick}
       onKeyDown={(e) => e.key === "Enter" && onClick && onClick()}
-      className="cursor-pointer p-2 hover:bg-gray-200"
+      className="m-1 cursor-pointer rounded-md p-2 pr-10 hover:bg-secondary hover:font-semibold hover:text-secondary-foreground focus-visible:bg-secondary focus-visible:font-semibold focus-visible:text-secondary-foreground"
     >
       {children}
     </li>
@@ -56,7 +56,7 @@ const Select = ({ id, children, open, className }: SelectProps) => {
       id={id}
       aria-hidden={!open}
       className={twMerge(
-        "absolute top-full z-10 min-w-max whitespace-nowrap rounded-md bg-gray-300 text-left",
+        "absolute top-full z-10 min-w-max overflow-hidden whitespace-nowrap rounded-md bg-popover text-left text-popover-foreground",
         open ? "block" : "hidden",
         className,
       )}
@@ -123,7 +123,10 @@ const Selection = ({
           aria-expanded={open}
           aria-controls={selectID}
           onClick={handleOpen}
-          className={twMerge("flex flex-col gap-2 bg-white px-2", className)}
+          className={twMerge(
+            "flex flex-col gap-2 rounded-md border-1 border-input bg-background px-2 text-foreground",
+            className,
+          )}
         >
           Selezionato: {testoBottone}
         </button>
