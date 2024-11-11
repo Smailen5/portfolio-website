@@ -9,13 +9,13 @@ export const SelectFilter = ({
   return (
     <>
       <Selection
-        label="prova di label"
-        name="opzioni"
+        label="Seleziona una tecnologia"
+        name="tecnologia"
         onSelectionChange={onSelectionChange}
       >
         <Option>Tutto</Option>
         {/* disabilita bottone html5 o rimuovilo */}
-        <Option>HTML5</Option>
+        {/* <Option>HTML5</Option> */}
         <Option>CSS</Option>
         <Option>JavaScript</Option>
         <Option>TypeScript</Option>
