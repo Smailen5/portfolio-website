@@ -8,7 +8,6 @@ export const SelectFilter = ({
 }) => {
   return (
     <>
-      {/* <div className="flex flex-col"> */}
       <Selection
         label="prova di label"
         name="opzioni"
@@ -23,7 +22,6 @@ export const SelectFilter = ({
         <Option>React</Option>
         <Option>Work in progress</Option>
       </Selection>
-      {/* </div> */}
     </>
   );
 };
