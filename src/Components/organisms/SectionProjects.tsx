@@ -14,11 +14,11 @@ export const SectionProjects = () => {
 
 // Funzione per filtrare i progetti
 const filteredProjects = selectedFilter === "Tutto" ? projects : projects.filter((project)=> project.technologies.includes(selectedFilter))
-
+const numberProjects = filteredProjects.length
 
   return (
     <>
-    <Filter setSelectedFilter={setSelectedFilter}/>
+    <Filter setSelectedFilter={setSelectedFilter} selectedFilter={selectedFilter} numberProjects={numberProjects}/>
     
       <section className="grid gap-4 md:grid-cols-2">
         {loading
