@@ -1,10 +1,10 @@
 import { Button } from "../atoms/button";
 import { SelectFilter } from "../atoms/SelectFilter";
-import { filterProjects } from "@/utils/filterProjects";
+import { useFilter } from "@/utils/useFilter";
 
 export const Filter = () => {
   const { setSelectedFilter, selectedFilter, numberFilteredProjects } =
-    filterProjects();
+    useFilter();
   const handleSearch = () => {
     console.log("filtra progetti per:");
   };

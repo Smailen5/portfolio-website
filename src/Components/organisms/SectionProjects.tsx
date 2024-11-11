@@ -2,11 +2,11 @@ import { useFetch } from "@/utils/useFetch";
 import { SkeletonLoaderCard } from "../atoms/SkeletonLoaderCard";
 import { CardProject } from "./CardProject";
 import { Filter } from "../molecules/Filter";
-import { filterProjects } from "@/utils/filterProjects";
+import { useFilter } from "@/utils/useFilter";
 
 export const SectionProjects = () => {
   const { loading, error } = useFetch();
-  const { filteredProjects } = filterProjects();
+  const { filteredProjects } = useFilter();
 
   if (error) return <p>{error}</p>;
   // Cambia qui quante card skeleton visualizzare
