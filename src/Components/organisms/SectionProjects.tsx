@@ -6,11 +6,8 @@ import { useFilter } from "@/utils/useFilter";
 
 export const SectionProjects = () => {
   const { loading, error } = useFetch();
-  const {
-    filteredProjects,
-    setSelectedFilter,
-    numberFilteredProjects,
-  } = useFilter();
+  const { filteredProjects, setSelectedFilter, numberFilteredProjects } =
+    useFilter();
 
   if (error) return <p>{error}</p>;
   // Cambia qui quante card skeleton visualizzare
