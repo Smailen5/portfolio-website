@@ -17,8 +17,6 @@ export const SectionProjects = () => {
   // Cambia qui quante card skeleton visualizzare
   const arraySkeleton = Array.from({ length: 4 });
 
-  console.log("Progetti in arrivo:", filteredProjects);
-
   return (
     <>
       <Filter
