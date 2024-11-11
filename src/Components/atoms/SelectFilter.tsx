@@ -14,13 +14,14 @@ export const SelectFilter = ({
         onSelectionChange={onSelectionChange}
       >
         <Option>Tutto</Option>
+        {/* disabilita bottone html5 o rimuovilo */}
         <Option>HTML5</Option>
         <Option>CSS</Option>
         <Option>JavaScript</Option>
         <Option>TypeScript</Option>
-        <Option>Tailwind CSS</Option>
+        <Option>Tailwind</Option>
         <Option>React</Option>
-        <Option>Work in progress</Option>
+        {/* <Option>Work in progress</Option> */}
       </Selection>
     </>
   );
