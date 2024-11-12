@@ -10,9 +10,7 @@ export const HomeTemplate = () => {
       <Hero />
       <Presentation />
       <SectionSkill />
-
       <LastProjects />
-
       <Socials />
     </>
   );
