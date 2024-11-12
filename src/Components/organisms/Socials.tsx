@@ -10,8 +10,8 @@ const Socials = () => {
   return (
     <Section>
       <Header type="h2">Contatti</Header>
-      <main className="grid gap-8 md:grid-cols-2">
-        <div className="grid gap-8 md:gap-0">
+      <main className="grid gap-14 md:grid-cols-2">
+        <div className="grid gap-10 md:gap-0">
           <HeroContact noHeader className="lg:w-full" />
           <div className="flex h-40 flex-col gap-8 md:grid md:grid-cols-2 md:items-center md:gap-0 md:gap-x-4">
             {social.map((el, index) => (
