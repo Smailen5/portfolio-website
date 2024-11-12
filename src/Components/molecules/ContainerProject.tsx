@@ -1,4 +1,6 @@
 import { nameCorrect } from "@/utils/nameCorrect";
+import { Header } from "../atoms/Header";
+import { Section } from "../atoms/Section";
 
 type ContainerProject = {
   name: string;
@@ -11,24 +13,26 @@ export const ContainerProject: React.FC<ContainerProject> = ({
   children,
   technologies,
 }) => {
-  if(technologies === undefined){
-    return null
+  if (technologies === undefined) {
+    return null;
   }
-  
+
   return (
-    <header className="flex flex-1 flex-col justify-between gap-2 p-4 text-left">
-      <h3 className="text-2xl font-bold uppercase">{nameCorrect(name)}</h3>
+    <Section className="gap-4 p-4 md:gap-6">
+      <Header type="h3" className="text-left uppercase">
+        {nameCorrect(name)}
+      </Header>
       {/* array delle tecnologie utilizzate */}
       <ul className="flex flex-wrap gap-4 uppercase">
         {technologies.map((tech) => {
           return (
-            <li key={tech} className="font-semibold">
+            <li key={tech} className="text-xs font-semibold md:text-sm">
               {tech}
             </li>
           );
         })}
       </ul>
       {children}
-    </header>
+    </Section>
   );
 };

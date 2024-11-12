@@ -1,24 +1,37 @@
 import { useFetch } from "@/utils/useFetch";
 import { SkeletonLoaderCard } from "../atoms/SkeletonLoaderCard";
 import { CardProject } from "./CardProject";
+import { Filter } from "../molecules/Filter";
+import { useFilter } from "@/utils/useFilter";
 
 export const SectionProjects = () => {
-  const { projects, loading, error } = useFetch();
+  const { loading, error } = useFetch();
+  const { filteredProjects, setSelectedFilter, numberFilteredProjects } =
+    useFilter();
 
+  if (error) return <p>{error}</p>;
   // Cambia qui quante card skeleton visualizzare
   const arraySkeleton = Array.from({ length: 4 });
 
-  if (error) return <p>{error}</p>;
-
   return (
     <>
-      <section className="grid gap-4 md:grid-cols-2">
-        {loading
-          ? arraySkeleton.map((_, index) => <SkeletonLoaderCard key={index} />)
-          : projects.map((project) => {
-              return <CardProject key={project.name} {...project} />;
-            })}
-      </section>
+      <Filter
+        setSelectedFilter={setSelectedFilter}
+        number={numberFilteredProjects}
+      />
+      {numberFilteredProjects === 0 ? (
+        <p>Nessun progetto trovato.</p>
+      ) : (
+        <section className="grid gap-4 md:grid-cols-2">
+          {loading
+            ? arraySkeleton.map((_, index) => (
+                <SkeletonLoaderCard key={index} />
+              ))
+            : filteredProjects.map((project, index) => {
+                return <CardProject key={index} {...project} />;
+              })}
+        </section>
+      )}
     </>
   );
 };

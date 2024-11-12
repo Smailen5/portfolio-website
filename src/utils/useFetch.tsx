@@ -6,15 +6,9 @@ type Project = {
   name: string;
   path: string;
   html_url: string;
+  updated_at: string;
   image: string;
   technologies: string[];
-};
-
-type GitHubFolder = {
-  name: string;
-  path: string;
-  html_url: string;
-  type: string;
 };
 
 export const useFetch = () => {
@@ -47,26 +41,47 @@ export const useFetch = () => {
           },
         });
 
-        const projectFolders = response.data
-          .filter(
-            (item: any) =>
-              item.type === "dir" &&
-              ![".github", "screen-capture"].includes(item.name),
-          )
-          .map((project: any) => ({
-            ...project,
-            image: `${imageBaseUrl}${project.name}.webp`,
-          }));
+        const projectFolders = response.data.filter(
+          (item: any) =>
+            item.type === "dir" &&
+            ![".github", "screen-capture"].includes(item.name),
+        );
+
+        // Recupera data e immagini dai progetti
+        const detailedProjects = await Promise.all(
+          projectFolders.map(async (project: any) => {
+            // Recupera l'ultimo commit di ogni progetto
+            const commitResponse = await axios.get(
+              `https://api.github.com/repos/Smailen5/Frontend-Mentor-Challenge/commits?path=${project.path}&per_page=1`,
+              { headers: { Authorization: `${token}` } },
+            );
+
+            const updated_at= commitResponse.data[0]?.commit?.committer?.date || "";
+
+            return {
+              ...project,
+              updated_at,
+              image: `${imageBaseUrl}${project.name}.webp`,
+            };
+          }),
+        );
+
+        // Ordina i progetti dal piu recente al piu vecchio
+        const sortedProjects = detailedProjects.sort(
+          (a, b) =>
+            new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime(),
+        );
 
         // Recupera le tecnologie per ciascun progetto
         const projectsWithTechnologies = await Promise.all(
-          projectFolders.map(async (folder: GitHubFolder) => {
-            const technologies = await extractTechnologies(folder.name);
-            return { ...folder, technologies };
+          sortedProjects.map(async (project: Project) => {
+            const technologies = await extractTechnologies(project.name);
+            return { ...project, technologies };
           }),
         );
 
         setProjects(projectsWithTechnologies);
+        console.log(projectsWithTechnologies)
         // Salva i progetti in session storage
         sessionStorage.setItem(
           "projects",
