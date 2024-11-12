@@ -18,7 +18,7 @@ const Ring = ({
 }: RingProps) => {
   return (
     <div
-      className={`flex size-${avatarSize} items-center justify-center overflow-hidden rounded-${rounded} border-2 border-${borderColor} bg-center p-0.5`}
+      className={`flex w-${avatarSize} h-${avatarSize} items-center justify-center overflow-hidden rounded-${rounded} border-2 border-${borderColor} bg-center p-0.5`}
     >
       {children}
     </div>
