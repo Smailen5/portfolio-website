@@ -40,6 +40,7 @@ Questo è il portfolio di Smailen, un front-end developer con passione per il we
 - **Responsive Design**: Creare un portfolio che sia non solo visivamente accattivante, ma anche altamente funzionale, adattabile a diverse dimensioni di schermo.
 - **Progetti Interattivi**: Ogni progetto include una immagine di anteprima, le tecnologie utilizzate e un link alla demo o al repository GitHub.
 - **Form di Contatto**: Form per permettere agli utenti di contattarmi direttamente dal sito.
+- **API GitHub**: Implementare la API di GitHub per recuperare la repository con i progetti mi ha dato molto filo da torcere, soprattutto nel recuperare le immagini dei progetti e le tecnologie utilizzate scritte nei file `Readme.md` di ogni progetto. 
 
 ### Road map
 
@@ -50,8 +51,8 @@ Nel futuro prevedo di:
 - ❌ ~~Cambiare pallette colori aggiungendo differenti temi~~
 - Aggiungere piu animazioni sia con TailwindCSS che con una libreria JavaScript
 - Aggiungere funzione per tenere traccia dell'esperienza in ogni tecnologia, dato una data di inizio ritorni quanti mesi sono passati
-- Finire di costruire il server e il database per recuperare tutti i progetti
-- Aggiungere la possibilita di filtrare i progetti per tecnologia
+- ❌ ~~Finire di costruire il server e il database per recuperare tutti i progetti~~
+- ✔ Aggiungere la possibilita di filtrare i progetti per tecnologia
 
 ### Risorse utilizzate
 
