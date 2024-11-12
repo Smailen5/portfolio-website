@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
-import {avatarImages} from "../data/images";
+import { avatarImages } from "../data/images";
 
 const useChangeAvatar = () => {
   // gestisce le immagini
