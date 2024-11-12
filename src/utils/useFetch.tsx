@@ -11,13 +11,6 @@ type Project = {
   technologies: string[];
 };
 
-// type GitHubFolder = {
-//   name: string;
-//   path: string;
-//   html_url: string;
-//   type: string;
-// };
-
 export const useFetch = () => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
@@ -53,11 +46,6 @@ export const useFetch = () => {
             item.type === "dir" &&
             ![".github", "screen-capture"].includes(item.name),
         );
-        // .map((project: any) => ({
-        //   ...project,
-        //   updated_at: project.data.updated_at,
-        //   image: `${imageBaseUrl}${project.name}.webp`,
-        // }));
 
         // Recupera data e immagini dai progetti
         const detailedProjects = await Promise.all(
