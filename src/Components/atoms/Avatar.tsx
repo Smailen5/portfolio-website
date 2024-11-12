@@ -6,14 +6,14 @@ import { twMerge } from "tailwind-merge";
 interface RingProps {
   children: React.ReactNode;
   borderColor?: "primary" | "secondary" | "muted" | "accent";
-  avatarSize?: number;
+  avatarSize?: "10"| "12"| "14"|"16";
   rounded?: "none" | "full";
 }
 
 const Ring = ({
   children,
   borderColor = "primary",
-  avatarSize = 12,
+  avatarSize = "12",
   rounded = "full",
 }: RingProps) => {
   return (
@@ -28,14 +28,14 @@ const Ring = ({
 interface AvatarProps {
   name?: string;
   borderColor?: "primary" | "secondary" | "muted" | "accent";
-  avatarSize?: number;
+  avatarSize?: "10"| "12"| "14"|"16";
   rounded?: "none" | "full";
 }
 
 export const Avatar = ({
   name,
   borderColor = "primary",
-  avatarSize = 12,
+  avatarSize = "12",
   rounded = "full",
 }: AvatarProps) => {
   const { currentAvatar, animation } = useChangeAvatar();
