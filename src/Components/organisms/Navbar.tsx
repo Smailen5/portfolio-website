@@ -4,6 +4,7 @@ import { useGlobalContext } from "../../utils/context";
 import { Avatar } from "../atoms/Avatar";
 import { DropdownNavbar } from "../molecules/DropdownNavbar";
 import { LinkNavbar } from "../molecules/LinkNavbar";
+import { ModeToggle } from "../molecules/ModeToggle";
 
 const NavbarSample = () => {
   const { useWindowWidth } = useGlobalContext();
@@ -16,9 +17,15 @@ const NavbarSample = () => {
         <Avatar name="Smailen Vargas" />
       </NavbarBrand>
       {!isDesktop ? (
+        <>
+        <ModeToggle />
         <DropdownNavbar linkCurriculum={curriculum} />
+        </>
       ) : (
+        <>
         <LinkNavbar linkCurriculum={curriculum} />
+        {/* <ModeToggle /> */}
+        </>
       )}
     </Navbar>
   );
