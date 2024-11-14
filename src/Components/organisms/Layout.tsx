@@ -7,8 +7,8 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <NavbarSample />
-      <div className="min-h-screen bg-background py-16 xl:flex xl:justify-center">
-        <main className="mt-20 flex flex-col justify-around gap-20 px-6 xl:max-w-[1024px]">
+      <div className="flex h-auto w-full justify-center bg-background">
+        <main className="flex w-full max-w-[1024px] flex-col flex-nowrap gap-20 px-6 pb-14 pt-36 md:items-center">
           {children}
         </main>
       </div>
