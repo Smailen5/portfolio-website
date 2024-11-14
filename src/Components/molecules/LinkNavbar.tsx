@@ -15,8 +15,8 @@ export const LinkNavbar = ({ linkCurriculum }: { linkCurriculum: string }) => {
         >
           Download CV
         </LinkComponent>
-        <ModeToggle />
       </ul>
+      <ModeToggle />
     </>
   );
 };
