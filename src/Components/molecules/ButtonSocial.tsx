@@ -16,7 +16,7 @@ const ButtonSocial: React.FC<ButtonSocialType> = ({ name, link, icon }) => {
   return (
     <Button
       variant={"ghost"}
-      size="lg"
+      size="default"
       onClick={handleNavigation}
       className="space-x-4"
     >

@@ -55,6 +55,6 @@ export default {
       },
     },
   },
-  darkMode: ["class", "class"],
+  darkMode: ["class"],
   plugins: [nextui(), tailwindcssAnimate],
 };
