@@ -32,7 +32,10 @@ export const useFetch = () => {
         try {
           const cachedData = JSON.parse(cachedProjects);
           // Verifica che ci siano sia i progetti che il timestamp
-          if (cachedData.timestamp && Date.now() - cachedData.timestamp < cacheDuration) {
+          if (
+            cachedData.timestamp &&
+            Date.now() - cachedData.timestamp < cacheDuration
+          ) {
             setProjects(cachedData.projects);
             setLoading(false);
             return;
@@ -97,8 +100,8 @@ export const useFetch = () => {
           "projects",
           JSON.stringify({
             projects: projectsWithTechnologies,
-            timestamp: Date.now()
-          })
+            timestamp: Date.now(),
+          }),
         );
       } catch (error: any) {
         setError(error);
