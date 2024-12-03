@@ -24,7 +24,7 @@ const NavbarSample = () => {
         </>
       ) : (
         <>
-        <LinkNavbar linkCurriculum={curriculumIT} />
+        <LinkNavbar linkCurriculumIT={curriculumIT} linkCurriculumEN={curriculumEN} />
         {/* <ModeToggle /> */}
         </>
       )}
