@@ -7,44 +7,39 @@ const Presentation = () => {
     <Section className="gap-4">
       <Header className="sr-only">Presentazione</Header>
       <p>
-        Sono un <strong>frontend developer</strong>. Ho iniziato a programmare
-        da bambino, con uno
-        <TooltipCustom
+        Sono un <strong>frontend developer</strong> con una passione che nasce
+        dall'infanzia. Tutto è iniziato con uno <TooltipCustom
           trigger="ZX Spectrum"
           content="Un computer personale degli anni '80, famoso per i suoi giochi e programmi"
-        />
-        e vari manuali di Basic, creando piccoli giochi e programmi, e da allora
-        il mio interesse per la tecnologia non si è mai fermato.
+        /> e la magia della programmazione in Basic, quei primi programmi
+        rudimentali hanno acceso una scintilla che non si è mai spenta.
       </p>
       <p>
-        Negli anni ho esplorato vari aspetti creativi della tecnologia: dalla{" "}
+        Il mio percorso è stato guidato dalla curiosità e dalla creatività: dalla{" "}
         <TooltipCustom
           trigger="modellazione 3D"
           content="Creazione di modelli tridimensionali utilizzando software come 3ds Max e SketchUp"
-        />
-        e il
+        /> al
         <TooltipCustom
           trigger="disegno digitale"
           content="Uso di software come Clipt Studio Paint per creare illustrazioni digitali"
-        />
-        al mondo di
+        />, fino agli esperimenti con
         <TooltipCustom
           trigger="arduino."
           content="Piattaforma open-source per creare progetti di elettronica e programmazione"
-        />
-        Dopo esperienze in vari settori, ho scelto di focalizzarmi sullo
-        sviluppo <strong>frontend</strong>, dove posso dare forma a idee
-        trasformandole in applicazioni web fluide e ben strutturate.
+        /> Questa varietà di esperienze mi ha portato a trovare la mia vera vocazione
+        nello sviluppo <strong>frontend</strong>.
       </p>
       <p>
-        Il <strong>frontend</strong> rappresenta per me il perfetto equilibrio
-        tra <strong>programmazione</strong> e <strong>design</strong>,
-        consentendomi di tradurre progetti in esperienze digitali intuitive e
-        dinamiche.
+        Nel <strong>frontend development</strong> ho trovato il perfetto equilibrio
+        tra problem solving e creatività. Mi appassiona la sfida di trasformare
+        concept di design in interfacce interattive, ottimizzando ogni dettaglio
+        per creare esperienze web coinvolgenti.
       </p>
       <p>
-        Dai un'occhiata ai miei progetti per vedere come posso contribuire al
-        tuo team e portare valore con le mie competenze e la mia passione.
+        Quando non sono immerso nel codice, mi dedico allo studio autodidatta della
+        chitarra elettrica e sperimento con lo sviluppo di videogiochi usando Phaser
+        e Kaboom.js.
       </p>
     </Section>
   );
