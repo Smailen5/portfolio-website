@@ -31,7 +31,6 @@ const NavbarSample = () => {
             linkCurriculumIT={curriculumIT}
             linkCurriculumEN={curriculumEN}
           />
-          {/* <ModeToggle /> */}
         </>
       )}
     </Navbar>
