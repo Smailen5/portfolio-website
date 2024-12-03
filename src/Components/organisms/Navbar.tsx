@@ -19,13 +19,19 @@ const NavbarSample = () => {
       </NavbarBrand>
       {!isDesktop ? (
         <>
-        <ModeToggle />
-        <DropdownNavbar linkCurriculumIT={curriculumIT} linkCurriculumEN={curriculumEN} />
+          <ModeToggle />
+          <DropdownNavbar
+            linkCurriculumIT={curriculumIT}
+            linkCurriculumEN={curriculumEN}
+          />
         </>
       ) : (
         <>
-        <LinkNavbar linkCurriculumIT={curriculumIT} linkCurriculumEN={curriculumEN} />
-        {/* <ModeToggle /> */}
+          <LinkNavbar
+            linkCurriculumIT={curriculumIT}
+            linkCurriculumEN={curriculumEN}
+          />
+          {/* <ModeToggle /> */}
         </>
       )}
     </Navbar>
