@@ -25,12 +25,24 @@ export const useFetch = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       const cachedProjects = sessionStorage.getItem("projects");
+      const cacheDuration = 1000 * 60 * 60; // 1 ora
 
       // Controlla se i progetti sono salvati e li recupera da session storage
       if (cachedProjects) {
-        setProjects(JSON.parse(cachedProjects));
-        setLoading(false);
-        return;
+        try {
+          const cachedData = JSON.parse(cachedProjects);
+          // Verifica che ci siano sia i progetti che il timestamp
+          if (
+            cachedData.timestamp &&
+            Date.now() - cachedData.timestamp < cacheDuration
+          ) {
+            setProjects(cachedData.projects);
+            setLoading(false);
+            return;
+          }
+        } catch (error) {
+          console.warn("Errore nel parsing della cache:", error);
+        }
       }
 
       try {
@@ -56,7 +68,8 @@ export const useFetch = () => {
               { headers: { Authorization: `${token}` } },
             );
 
-            const updated_at= commitResponse.data[0]?.commit?.committer?.date || "";
+            const updated_at =
+              commitResponse.data[0]?.commit?.committer?.date || "";
 
             return {
               ...project,
@@ -81,11 +94,14 @@ export const useFetch = () => {
         );
 
         setProjects(projectsWithTechnologies);
-        console.log(projectsWithTechnologies)
+        // console.log(projectsWithTechnologies);
         // Salva i progetti in session storage
         sessionStorage.setItem(
           "projects",
-          JSON.stringify(projectsWithTechnologies),
+          JSON.stringify({
+            projects: projectsWithTechnologies,
+            timestamp: Date.now(),
+          }),
         );
       } catch (error: any) {
         setError(error);

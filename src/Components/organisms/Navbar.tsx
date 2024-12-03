@@ -1,5 +1,6 @@
 import { Navbar, NavbarBrand } from "@nextui-org/react";
-import curriculum from "../../assets/curriculum/Curriculum-Smailen-Vargas.pdf";
+import curriculumEN from "../../assets/curriculum/CV-Smailen-Vargas-Frontend-EN.pdf";
+import curriculumIT from "../../assets/curriculum/CV-Smailen-Vargas-Frontend-IT.pdf";
 import { useGlobalContext } from "../../utils/context";
 import { Avatar } from "../atoms/Avatar";
 import { DropdownNavbar } from "../molecules/DropdownNavbar";
@@ -18,13 +19,18 @@ const NavbarSample = () => {
       </NavbarBrand>
       {!isDesktop ? (
         <>
-        <ModeToggle />
-        <DropdownNavbar linkCurriculum={curriculum} />
+          <ModeToggle />
+          <DropdownNavbar
+            linkCurriculumIT={curriculumIT}
+            linkCurriculumEN={curriculumEN}
+          />
         </>
       ) : (
         <>
-        <LinkNavbar linkCurriculum={curriculum} />
-        {/* <ModeToggle /> */}
+          <LinkNavbar
+            linkCurriculumIT={curriculumIT}
+            linkCurriculumEN={curriculumEN}
+          />
         </>
       )}
     </Navbar>

@@ -1,7 +1,13 @@
 import { LinkComponent } from "../atoms/LinkComponent";
 import { ModeToggle } from "./ModeToggle";
 
-export const LinkNavbar = ({ linkCurriculum }: { linkCurriculum: string }) => {
+export const LinkNavbar = ({
+  linkCurriculumIT,
+  linkCurriculumEN,
+}: {
+  linkCurriculumIT: string;
+  linkCurriculumEN: string;
+}) => {
   return (
     <>
       <ul className="flex items-center gap-4">
@@ -10,13 +16,20 @@ export const LinkNavbar = ({ linkCurriculum }: { linkCurriculum: string }) => {
         <LinkComponent linkTo="/contact">Contattami</LinkComponent>
         <LinkComponent
           downloadable
-          linkTo={linkCurriculum}
-          downloadName="CV-Smailen-Vargas-Frontend.pdf"
+          linkTo={linkCurriculumIT}
+          downloadName="CV-Smailen-Vargas-Frontend-IT.pdf"
         >
-          Download CV
+          Download CV ITA
         </LinkComponent>
-        <ModeToggle />
+        <LinkComponent
+          downloadable
+          linkTo={linkCurriculumEN}
+          downloadName="CV-Smailen-Vargas-Frontend-EN.pdf"
+        >
+          Download CV ENG
+        </LinkComponent>
       </ul>
+      <ModeToggle />
     </>
   );
 };
