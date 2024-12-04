@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/Smailen5/portfolio-website/compare/v1.0.0...v1.1.0) (2024-12-04)
+
+
+### Features
+
+* aggiorna il README.md con nuove sezioni e miglioramenti visivi ([7b5e263](https://github.com/Smailen5/portfolio-website/commit/7b5e26335447688cba4b126214103fc793cdb239))
+* aggiunge nuove sezioni al README.md per migliorare la documentazione del portfolio ([ba5e8df](https://github.com/Smailen5/portfolio-website/commit/ba5e8df6cec38c67c90fe5124c5efb724bdee577))
+* migliora il componente Avatar e aggiorna la navbar ([e60854a](https://github.com/Smailen5/portfolio-website/commit/e60854ae6235f86cf839c75e3248250570b07233))
+
 ## [1.0.0](https://github.com/Smailen5/portfolio-website/compare/v0.0.2...v1.0.0) (2024-12-04)
 
 ### [0.0.2](https://github.com/Smailen5/portfolio-website/compare/v0.0.1...v0.0.2) (2024-12-04)

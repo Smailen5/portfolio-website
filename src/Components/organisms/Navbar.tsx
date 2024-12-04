@@ -13,7 +13,7 @@ const NavbarSample = () => {
   const isDesktop = windowWidth >= 1024;
 
   return (
-    <Navbar className="fixed left-0 top-0 z-40 bg-background/70 backdrop-blur-md dark:border-none dark:bg-background/70">
+    <Navbar className="fixed left-0 top-0 z-40 bg-background/70 pt-2 backdrop-blur-md dark:border-none dark:bg-background/70">
       <NavbarBrand>
         <Avatar name="Smailen Vargas" />
       </NavbarBrand>

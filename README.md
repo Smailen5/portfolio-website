@@ -1,69 +1,95 @@
 # Portfolio Smailen Vargas
 
-Questo è il portfolio di Smailen, un front-end developer con passione per il web design e lo sviluppo. Qui puoi esplorare i miei progetti, conoscere le mie competenze e contattarmi per collaborazioni.
-
-👉 [Visita il mio sito](https://smailenvargas.com)
-
-## Sommario
-
-- [Panoramica](#panoramica)
-  - [Screenshot](#screenshot)
-- [Processo](#processo)
-  - [Costruito con](#costruito-con)
-  - [Sfide incontrate](#sfide-incontrate)
-  - [Road map](#road-map)
-  - [Risorse utilizzate](#risorse-utilizzate)
-- [Autore](#autore)
-- [Per me](#per-me)
-
-## Panoramica
+<div align="center">
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/33b32928-0abb-4427-ac58-3f980cfc51ed/deploy-status)](https://app.netlify.com/sites/smailenvargas/deploys)
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 
-### Screenshot
+Portfolio personale che mostra i miei progetti e competenze come Front-end Developer.
 
-![Smartphone](/src//assets/screenshot/sito-smartphone.jpeg)
-![Desktop](/src/assets/screenshot/sito-desktop.jpeg)
+[Esplora il Sito](https://smailenvargas.com)
 
-## Processo
+</div>
 
-### Costruito con
+## 🌟 Caratteristiche Principali
 
-- **Frontend**: React, Tailwind CSS, Nextui
-- **Animazioni**: Lottie
-- **Gestione Stato**: React Context API
-- **Hosting**: Netlify
-- **Dominio**: GoDaddy
+- 📱 Design completamente responsivo
+- 🌓 Tema chiaro/scuro
+- 🔍 Filtro progetti per tecnologia
+- 📄 Download/visualizzazione CV
+- 📬 Form di contatto integrato
+- 🔄 Integrazione API GitHub
 
-### Sfide incontrate
+## 🖼️ Screenshot
+
+<details>
+<summary>Vista Desktop</summary>
+<img src="/src/assets/screenshot/sito-desktop.jpeg" alt="Vista Desktop">
+</details>
+
+<details>
+<summary>Vista Mobile</summary>
+<img src="/src/assets/screenshot/sito-smartphone.jpeg" alt="Vista Mobile">
+</details>
+
+## 🛠️ Tecnologie Utilizzate
+
+### Frontend
+
+- [React](https://react.dev/) - Framework UI
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [NextUI](https://nextui.org/) - Componenti UI
+- [Lottie](https://airbnb.io/lottie/) - Animazioni
+
+### Strumenti
+
+- [pnpm](https://pnpm.io/) - Package Manager
+- [Vite](https://vitejs.dev/) - Build Tool
+- [TypeScript](https://www.typescriptlang.org/) - Type Checking
+- [Formik](https://formik.org/) - Form Management
+
+### Servizi
+
+- [Netlify](https://www.netlify.com/) - Hosting
+- [Formspree](https://formspree.io/) - Form Backend
+- [GoDaddy](https://www.godaddy.com/) - Domain Provider
+
+## 🎯 Sfide Superate
+
+<details>
+<summary>Espandi dettagli</summary>
 
 - **Responsive Design**: Creare un portfolio che sia non solo visivamente accattivante, ma anche altamente funzionale, adattabile a diverse dimensioni di schermo.
 - **Progetti Interattivi**: Ogni progetto include una immagine di anteprima, le tecnologie utilizzate e un link alla demo o al repository GitHub.
 - **Form di Contatto**: Form per permettere agli utenti di contattarmi direttamente dal sito.
-- **API GitHub**: Implementare la API di GitHub per recuperare la repository con i progetti mi ha dato molto filo da torcere, soprattutto nel recuperare le immagini dei progetti e le tecnologie utilizzate scritte nei file `Readme.md` di ogni progetto. 
+- **API GitHub**: Implementare la API di GitHub per recuperare la repository con i progetti.
+</details>
 
-### Road map
+## 📋 Road Map
 
-Nel futuro prevedo di:
+<details>
+<summary>Espandi road map</summary>
 
-- ✔ ~~Implementare la possibilita di scaricare il curriculum o visualizzarlo in una nuova pagina~~
-- Implementare la modalita dark mode con TailwindCSS sia automatica che a piacere utilizzando un bottone
-- ❌ ~~Cambiare pallette colori aggiungendo differenti temi~~
-- Aggiungere piu animazioni sia con TailwindCSS che con una libreria JavaScript
-- Aggiungere funzione per tenere traccia dell'esperienza in ogni tecnologia, dato una data di inizio ritorni quanti mesi sono passati
-- ❌ ~~Finire di costruire il server e il database per recuperare tutti i progetti~~
-- ✔ Aggiungere la possibilita di filtrare i progetti per tecnologia
+- [x] Download/visualizzazione CV
+- [x] Filtro progetti per tecnologia
+- [x] Dark mode automatica/manuale
+- [ ] Animazioni avanzate
+- [ ] Tracciamento esperienza tecnologie
+- [ ] ~~Server e database progetti~~ (Cancellato)
+- [ ] ~~Temi multipli~~ (Cancellato)
+</details>
 
-### Risorse utilizzate
+## 📚 Risorse Utili
 
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs) - Come sempre la documentazione di Tailwind e sempre molto utile quando non capisco qualcosa
-- [Formik Documentation](https://formik.org/docs) - Essenziale finche non ci prendo la mano per impostare e gestire i form correttamente
-- [Form spree](https://formspree.io/) - Molto utile visto che non volevo scrivere la mia email sul sito, in parte gestisce anche lo spam
-- [React Documentation](https://react.dev/) - Quando dimentico qualcosa e qui che vado
-- [Icons8](https://icons8.it/icons/) - Un grazie per le bellissime icone soprattutto molto semplici da utilizzare, peccato che non tutte le icone le abbia reperite da qui
+<details>
+<summary>Espandi risorse</summary>
 
-## Autore
+- [Tailwind CSS Docs](https://tailwindcss.com/docs)
+- [Formik Docs](https://formik.org/docs)
+- [React Docs](https://react.dev/)
+- [Icons8](https://icons8.it/icons/)
+</details>
 
-- Github - [Smailen5](https://github.com/Smailen5)
-- Frontend Mentor - [@ Smailen5](https://www.frontendmentor.io/profile/Smailen5)
-- Linkedin - [Smailen Vargas](https://www.linkedin.com/in/smailen-vargas/)
+## 📝 Note Legali
+
+© 2024 Smailen Vargas. Tutti i diritti riservati.
