@@ -54,6 +54,42 @@ Portfolio personale che mostra i miei progetti e competenze come Front-end Devel
 - [Formspree](https://formspree.io/) - Form Backend
 - [GoDaddy](https://www.godaddy.com/) - Domain Provider
 
+## 🎯 Sfide Superate
+
+<details>
+<summary>Espandi dettagli</summary>
+
+- **Responsive Design**: Creare un portfolio che sia non solo visivamente accattivante, ma anche altamente funzionale, adattabile a diverse dimensioni di schermo.
+- **Progetti Interattivi**: Ogni progetto include una immagine di anteprima, le tecnologie utilizzate e un link alla demo o al repository GitHub.
+- **Form di Contatto**: Form per permettere agli utenti di contattarmi direttamente dal sito.
+- **API GitHub**: Implementare la API di GitHub per recuperare la repository con i progetti.
+</details>
+
+## 📋 Road Map
+
+<details>
+<summary>Espandi road map</summary>
+
+- [x] Download/visualizzazione CV
+- [x] Filtro progetti per tecnologia
+- [x] Dark mode automatica/manuale
+- [ ] Animazioni avanzate
+- [ ] Tracciamento esperienza tecnologie
+- [ ] ~~Server e database progetti~~ (Cancellato)
+- [ ] ~~Temi multipli~~ (Cancellato)
+</details>
+
+## 📚 Risorse Utili
+
+<details>
+<summary>Espandi risorse</summary>
+
+- [Tailwind CSS Docs](https://tailwindcss.com/docs)
+- [Formik Docs](https://formik.org/docs)
+- [React Docs](https://react.dev/)
+- [Icons8](https://icons8.it/icons/)
+</details>
+
 ## 📝 Note Legali
 
 © 2024 Smailen Vargas. Tutti i diritti riservati.
