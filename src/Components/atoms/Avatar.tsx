@@ -16,9 +16,33 @@ const Ring = ({
   avatarSize = "12",
   rounded = "full",
 }: RingProps) => {
+  const borderColors = {
+    primary: "border-primary",
+    secondary: "border-secondary",
+    muted: "border-muted",
+    accent: "border-accent"
+  };
+
+  const sizes = {
+    "10": "w-10 h-10",
+    "12": "w-12 h-12",
+    "14": "w-14 h-14",
+    "16": "w-16 h-16"
+  };
+
+  const roundedVariants = {
+    "none": "rounded-none",
+    "full": "rounded-full"
+  };
+
   return (
     <div
-      className={`flex w-${avatarSize} h-${avatarSize} items-center justify-center overflow-hidden rounded-${rounded} border-2 border-${borderColor} bg-center p-0.5`}
+      className={twMerge(
+        "flex items-center justify-center overflow-hidden border-2 bg-center p-0.5",
+        sizes[avatarSize],
+        borderColors[borderColor],
+        roundedVariants[rounded]
+      )}
     >
       {children}
     </div>
