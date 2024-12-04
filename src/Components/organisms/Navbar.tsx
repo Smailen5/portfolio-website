@@ -1,4 +1,4 @@
-import { Navbar, NavbarBrand } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent } from "@nextui-org/react";
 import curriculumEN from "../../assets/curriculum/CV-Smailen-Vargas-Frontend-EN.pdf";
 import curriculumIT from "../../assets/curriculum/CV-Smailen-Vargas-Frontend-IT.pdf";
 import { useGlobalContext } from "../../utils/context";
@@ -13,26 +13,28 @@ const NavbarSample = () => {
   const isDesktop = windowWidth >= 1024;
 
   return (
-    <Navbar className="fixed left-0 top-0">
+    <Navbar className="fixed left-0 top-0 z-40 bg-background/70 py-4 backdrop-blur-md dark:border-none dark:bg-background/70">
       <NavbarBrand>
         <Avatar name="Smailen Vargas" />
       </NavbarBrand>
-      {!isDesktop ? (
-        <>
-          <ModeToggle />
-          <DropdownNavbar
-            linkCurriculumIT={curriculumIT}
-            linkCurriculumEN={curriculumEN}
-          />
-        </>
-      ) : (
-        <>
-          <LinkNavbar
-            linkCurriculumIT={curriculumIT}
-            linkCurriculumEN={curriculumEN}
-          />
-        </>
-      )}
+      <NavbarContent className="gap-4" justify="end">
+        {!isDesktop ? (
+          <div className="flex items-center gap-4">
+            <ModeToggle />
+            <DropdownNavbar
+              linkCurriculumIT={curriculumIT}
+              linkCurriculumEN={curriculumEN}
+            />
+          </div>
+        ) : (
+          <div className="flex items-center gap-4">
+            <LinkNavbar
+              linkCurriculumIT={curriculumIT}
+              linkCurriculumEN={curriculumEN}
+            />
+          </div>
+        )}
+      </NavbarContent>
     </Navbar>
   );
 };
