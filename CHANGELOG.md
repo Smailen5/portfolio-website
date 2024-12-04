@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/Smailen5/portfolio-website/compare/v0.0.1...v0.0.2) (2024-12-04)
+
+
+### Features
+
+* :sparkles: migliora la navbar con contenuto responsivo e nuovi componenti ([1ef2346](https://github.com/Smailen5/portfolio-website/commit/1ef2346213b06f62da0bf1de59dce22026bd47cc))
+
+
+### Bug Fixes
+
+* rimuove codice non necessario dalla navbar ([ef6ebf5](https://github.com/Smailen5/portfolio-website/commit/ef6ebf50b510b5cdec261bdbdb59b2f42a1c50aa))
+
 ### 0.0.1 (2024-12-04)
 
 
@@ -76,7 +88,7 @@ All notable changes to this project will be documented in this file. See [standa
 * :truck: modifica estensione ([289c4e1](https://github.com/Smailen5/portfolio-website/commit/289c4e1d5f210faab931915a6bdc7000c9fa0b8d))
 * :truck: modifica estensione ([e525306](https://github.com/Smailen5/portfolio-website/commit/e52530603635c397390b4258b5400b30b0657e43))
 * :truck: rimuovi estensione ([9693edb](https://github.com/Smailen5/portfolio-website/commit/9693edbaded6202d07f5a6b9d0fed72ac4e2c350))
-* :truck: rinomina esetensioni ([845236e](https://github.com/Smailen5/portfolio-website/commit/845236ebc2075e70b2dec890ade1aeeda3ac6cbb))
+* :truck: rinomina estensioni ([845236e](https://github.com/Smailen5/portfolio-website/commit/845236ebc2075e70b2dec890ade1aeeda3ac6cbb))
 * :truck: rinomina estensioni ([7dd02fb](https://github.com/Smailen5/portfolio-website/commit/7dd02fbd0f1595a9cbf1d830e411c1cbe794e827))
 * :truck: rinomina estensioni ([9ffc2b4](https://github.com/Smailen5/portfolio-website/commit/9ffc2b472cc1cb60750329f60d20e34091df3316))
 * :wheelchair: modifica ordine heading ([6eceae4](https://github.com/Smailen5/portfolio-website/commit/6eceae4bb814a51de13e43fc9fe01ed0907312fa))
