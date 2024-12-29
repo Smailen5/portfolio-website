@@ -19,7 +19,7 @@ export const DropdownNavbar = ({
   linkCurriculumIT: string;
   linkCurriculumEN: string;
 }) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
     <>
@@ -43,15 +43,13 @@ export const DropdownNavbar = ({
               Contattami
             </Link>
           </DropdownItem>
-          <DropdownItem key="download-cv" textValue="Curriculum">
-            <button onClick={onOpen} className="block w-full text-left">
-              Curriculum
-            </button>
+          <DropdownItem key="download-cv">
+            <Button onPress={onOpen}>Curriculum</Button>
           </DropdownItem>
         </DropdownMenu>
       </Dropdown>
 
-      <Modal isOpen={isOpen} onClose={onClose} className="pb-4">
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange} className="z-40 pb-4">
         <ModalContent>
           <ModalHeader>Scarica il Curriculum</ModalHeader>
           <ModalBody>
