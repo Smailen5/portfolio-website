@@ -14,7 +14,7 @@ const NavbarSample = () => {
 
   return (
     <nav className="fixed left-0 top-0 z-10 w-full bg-background/70 py-4 backdrop-blur-md dark:border-none dark:bg-background/70">
-      <div className="container mx-auto flex items-center justify-between px-4">
+      <div className="mx-auto flex max-w-[1024px] items-center justify-between px-4">
         <div className="flex items-center">
           <Avatar name="Smailen Vargas" />
         </div>
