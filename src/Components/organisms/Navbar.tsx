@@ -21,7 +21,7 @@ const NavbarSample = () => {
         <div className="flex items-center gap-4">
           {!isDesktop ? (
             <>
-              <div className="block rounded-lg p-2 text-foreground hover:bg-primary/20 md:hidden">
+              <div className="block rounded-lg p-2 text-foreground hover:bg-primary/20 lg:hidden">
                 <button onClick={() => setIsOpen(true)}>Menu</button>
               </div>
 

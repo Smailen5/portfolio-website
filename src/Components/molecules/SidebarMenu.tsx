@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Button } from "../atoms/button";
 import { ModeToggle } from "./ModeToggle";
 
 interface SidebarMenuProps {
@@ -17,9 +18,9 @@ export const SidebarMenu = ({
 }: SidebarMenuProps) => {
   const [showCVOptions, setShowCVOptions] = useState(false);
 
-  const toggleSidebar = () => setIsOpen(!isOpen);
+  const toggleSidebar = () => setIsOpen(false);
   const toggleCVOptions = () => setShowCVOptions(!showCVOptions);
-  const cvDownloaded = () => {
+  const toggleCvDownloaded = () => {
     setIsOpen(false);
     setShowCVOptions(false);
   };
@@ -28,7 +29,7 @@ export const SidebarMenu = ({
     <>
       {/* overlay */}
       <div
-        className={`fixed inset-0 z-20 h-screen bg-background transition-opacity duration-300 md:hidden ${
+        className={`fixed inset-0 z-20 h-screen bg-background transition-opacity duration-300 lg:hidden ${
           isOpen ? "opacity-80" : "pointer-events-none opacity-0"
         }`}
         onClick={toggleSidebar}
@@ -36,19 +37,16 @@ export const SidebarMenu = ({
 
       {/* Sfondo sidebar */}
       <div
-        className={`fixed inset-y-0 right-0 top-0 z-50 h-screen w-64 transform border-l bg-background shadow-lg transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-y-0 right-0 top-0 z-50 h-screen w-64 transform bg-background shadow-lg transition-transform duration-300 ease-in-out lg:hidden ${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } md:hidden`}
+        }`}
       >
         <div className="p-4">
           <div className="mb-8 flex items-center justify-between">
             <ModeToggle />
-            <button
-              onClick={toggleSidebar}
-              className="rounded-lg p-2 text-foreground hover:bg-primary/20"
-            >
+            <Button onClick={toggleSidebar} variant={"destructive"}>
               ✕
-            </button>
+            </Button>
           </div>
 
           <nav className="flex flex-col gap-4">
@@ -86,7 +84,7 @@ export const SidebarMenu = ({
                   href={linkCurriculumIT}
                   download="CV-Smailen-Vargas-Frontend-IT.pdf"
                   className="block rounded-lg bg-primary p-2 text-center text-primary-foreground hover:bg-primary/90"
-                  onClick={cvDownloaded}
+                  onClick={toggleCvDownloaded}
                 >
                   Curriculum in Italiano
                 </a>
@@ -94,9 +92,9 @@ export const SidebarMenu = ({
                   href={linkCurriculumEN}
                   download="CV-Smailen-Vargas-Frontend-EN.pdf"
                   className="block rounded-lg bg-primary p-2 text-center text-primary-foreground hover:bg-primary/90"
-                  onClick={cvDownloaded}
+                  onClick={toggleCvDownloaded}
                 >
-                  Curriculum in Inglese
+                  Curriculum in English
                 </a>
               </div>
             )}
