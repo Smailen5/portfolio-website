@@ -1,35 +1,53 @@
-import { LinkComponent } from "../atoms/LinkComponent";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { CurriculumDownload } from "./CurriculumDownload";
 import { ModeToggle } from "./ModeToggle";
+
+// Props per il componente LinkNavbar
+interface LinkNavbarProps {
+  linkCurriculumIT: string; // Link al CV in italiano
+  linkCurriculumEN: string; // Link al CV in inglese
+}
 
 export const LinkNavbar = ({
   linkCurriculumIT,
   linkCurriculumEN,
-}: {
-  linkCurriculumIT: string;
-  linkCurriculumEN: string;
-}) => {
+}: LinkNavbarProps) => {
+  // Stato per il menu a tendina del curriculum
+  const [showCVOptions, setShowCVOptions] = useState(false);
+
   return (
-    <>
-      <ul className="flex items-center gap-4">
-        <LinkComponent linkTo="/">Home</LinkComponent>
-        <LinkComponent linkTo="/projects">Progetti</LinkComponent>
-        <LinkComponent linkTo="/contact">Contattami</LinkComponent>
-        <LinkComponent
-          downloadable
-          linkTo={linkCurriculumIT}
-          downloadName="CV-Smailen-Vargas-Frontend-IT.pdf"
-        >
-          Download CV ITA
-        </LinkComponent>
-        <LinkComponent
-          downloadable
-          linkTo={linkCurriculumEN}
-          downloadName="CV-Smailen-Vargas-Frontend-EN.pdf"
-        >
-          Download CV ENG
-        </LinkComponent>
-      </ul>
+    <nav className="flex items-center gap-4">
+      {/* Link di navigazione principali */}
+      <Link
+        to="/"
+        className="block rounded-lg p-2 text-foreground hover:bg-primary/20"
+      >
+        Home
+      </Link>
+      <Link
+        to="/projects"
+        className="block rounded-lg p-2 text-foreground hover:bg-primary/20"
+      >
+        Progetti
+      </Link>
+      <Link
+        to="/contact"
+        className="block rounded-lg p-2 text-foreground hover:bg-primary/20"
+      >
+        Contattami
+      </Link>
+
+      <CurriculumDownload
+        linkCurriculumIT={linkCurriculumIT}
+        linkCurriculumEN={linkCurriculumEN}
+        showOptions={showCVOptions}
+        onToggle={() => setShowCVOptions(!showCVOptions)}
+        variant="dropdown"
+      />
+
+      {/* Toggle per il tema chiaro/scuro */}
       <ModeToggle />
-    </>
+    </nav>
   );
 };
