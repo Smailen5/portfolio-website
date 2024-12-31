@@ -41,7 +41,7 @@ export const CurriculumDownload = ({
           className={`${
             variant === "dropdown"
               ? "absolute right-0 top-full z-50 mt-2"
-              : "mt-4 w-full"
+              : "mt-6 w-full gap-4"
           } flex w-48 flex-col gap-2 rounded-lg ${
             variant === "dropdown" ? "bg-background p-2 shadow-lg" : ""
           }`}
@@ -49,7 +49,7 @@ export const CurriculumDownload = ({
           <a
             href={linkCurriculumIT}
             download="CV-Smailen-Vargas-Frontend-IT.pdf"
-            className="block rounded-lg bg-primary p-2 text-center text-primary-foreground hover:bg-primary/90"
+            className="block rounded-lg bg-primary p-2 text-center text-primary-foreground hover:opacity-80"
             onClick={handleDownload}
           >
             Curriculum in Italiano
@@ -57,7 +57,7 @@ export const CurriculumDownload = ({
           <a
             href={linkCurriculumEN}
             download="CV-Smailen-Vargas-Frontend-EN.pdf"
-            className="block rounded-lg bg-primary p-2 text-center text-primary-foreground hover:bg-primary/90"
+            className="block rounded-lg bg-primary p-2 text-center text-primary-foreground hover:opacity-80"
             onClick={handleDownload}
           >
             Curriculum in English
