@@ -20,8 +20,8 @@ export const HeroContact = ({ noHeader, className }: HeroContactProps) => {
       {!noHeader && <h3 className="text-3xl font-semibold">Contattami</h3>}
       <p>
         Se hai domande, richieste di collaborazione, o semplicemente vuoi
-        parlare di React, non esitare a contattarmi. Sarò felice di
-        risponderti il prima possibile!
+        parlare di React, non esitare a contattarmi. Sarò felice di risponderti
+        il prima possibile!
       </p>
     </section>
   );
