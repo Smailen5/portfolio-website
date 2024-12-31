@@ -1,8 +1,9 @@
 import { Dispatch, SetStateAction } from "react";
 import { Option, Selection } from "./SelectCustom";
 
+// Componente per filtrare i progetti per tecnologia
 export const SelectFilter = ({
-  onSelectionChange,
+  onSelectionChange, // Funzione per gestire il cambio di selezione
 }: {
   onSelectionChange: Dispatch<SetStateAction<string>>;
 }) => {
