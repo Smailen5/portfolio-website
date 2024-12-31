@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/Smailen5/portfolio-website/compare/v1.1.0...v1.2.0) (2024-12-31)
+
+
+### Features
+
+* aggiorna CurriculumDownload e SidebarMenu per migliorare l'usabilità e la coerenza stilistica ([3e5ba0d](https://github.com/Smailen5/portfolio-website/commit/3e5ba0da2554babdee9f3d90b7d928a5acc01b52))
+* aggiorna i componenti Avatar, MarkdownRenderer, SelectFilter e Skill per migliorare la coerenza e la documentazione ([1325877](https://github.com/Smailen5/portfolio-website/commit/1325877c75193036eefac1e2b6c3bd9c38c73827))
+* aggiorna il componente CurriculumDownload per migliorare la coerenza stilistica e l'usabilità ([c1c8323](https://github.com/Smailen5/portfolio-website/commit/c1c8323e7d68b48abb12113be0f057a55cd9fa93))
+* aggiorna il componente DropdownNavbar e la Navbar per migliorare l'interazione utente ([f2f9bce](https://github.com/Smailen5/portfolio-website/commit/f2f9bce68e4e602601c084a3fcd150251b47797d))
+* aggiorna la Navbar per migliorare la reattività e la coerenza stilistica ([a5487e2](https://github.com/Smailen5/portfolio-website/commit/a5487e2a16bb6500fa271e70e88462a01a9d67ee))
+* aggiorna LinkNavbar e SidebarMenu per migliorare l'usabilità e la coerenza stilistica ([9a8c480](https://github.com/Smailen5/portfolio-website/commit/9a8c480f0138d75078a14cea5f5491b1e4e43b80))
+* aggiorna SidebarMenu e Navbar per migliorare l'usabilità e l'accessibilità ([38f4ebe](https://github.com/Smailen5/portfolio-website/commit/38f4ebe19fabac52071fc40bda109cffd1e209df))
+* migliora la documentazione e la coerenza stilistica dei componenti HeroContact, Section e TooltipCustom ([d8e330b](https://github.com/Smailen5/portfolio-website/commit/d8e330ba226e762d951c3d23884b80e7d372d304))
+* rimuove il componente DropdownNavbar e semplifica il SidebarMenu ([a5cde84](https://github.com/Smailen5/portfolio-website/commit/a5cde84ab5a3ec46c1c7096a3aa2cb8b526043b6))
+
 ## [1.1.0](https://github.com/Smailen5/portfolio-website/compare/v1.0.0...v1.1.0) (2024-12-04)
 
 
