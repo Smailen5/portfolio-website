@@ -30,9 +30,7 @@ export const CurriculumDownload = ({
       <Button
         onClick={onToggle}
         variant="ghost"
-        className={
-          variant === "sidebar" ? "w-full justify-start" : "font-semibold"
-        }
+        className={`text-base ${variant === "sidebar" ? "w-full justify-start px-2" : "font-semibold"}`}
       >
         Curriculum
       </Button>
@@ -43,7 +41,7 @@ export const CurriculumDownload = ({
           className={`${
             variant === "dropdown"
               ? "absolute right-0 top-full z-50 mt-2"
-              : "ml-4"
+              : "mt-4 w-full"
           } flex w-48 flex-col gap-2 rounded-lg ${
             variant === "dropdown" ? "bg-background p-2 shadow-lg" : ""
           }`}

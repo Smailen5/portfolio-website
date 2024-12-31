@@ -22,12 +22,11 @@ export const SidebarMenu = ({
   const [showCVOptions, setShowCVOptions] = useState(false);
 
   // Handlers per le interazioni utente
-  const toggleSidebar = () => setIsOpen(false); // Chiude la sidebar
-  const toggleCVOptions = () => setShowCVOptions(!showCVOptions); // Toggle menu CV
-  const toggleCvDownloaded = () => {
+  const toggleSidebar = () => {
     setIsOpen(false); // Chiude la sidebar
     setShowCVOptions(false); // Chiude il menu CV
   };
+  const toggleCVOptions = () => setShowCVOptions(!showCVOptions); // Toggle menu CV
 
   return (
     <>
@@ -84,7 +83,7 @@ export const SidebarMenu = ({
               linkCurriculumEN={linkCurriculumEN}
               showOptions={showCVOptions}
               onToggle={toggleCVOptions}
-              onDownload={toggleCvDownloaded}
+              onDownload={toggleSidebar}
               variant="sidebar"
             />
           </nav>
