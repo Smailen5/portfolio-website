@@ -46,6 +46,7 @@ export const useFetch = () => {
       }
 
       try {
+        // ! TODO: aggiungere header alla richiesta per evitare errori 403
         const response = await axios.get(`${url}`, {
           // Token GitHub per aumentare le richieste a 5000, // ! aggiornare ogni 30 giorni
           headers: {
