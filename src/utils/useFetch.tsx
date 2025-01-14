@@ -46,6 +46,7 @@ export const useFetch = () => {
       }
 
       try {
+        // ! TODO: aggiungere header alla richiesta per evitare errori 403
         const response = await axios.get(`${url}`, {
           // Token GitHub per aumentare le richieste a 5000, // ! aggiornare ogni 30 giorni
           headers: {
@@ -56,7 +57,7 @@ export const useFetch = () => {
         const projectFolders = response.data.filter(
           (item: any) =>
             item.type === "dir" &&
-            ![".github", "screen-capture"].includes(item.name),
+            ![".github", "screen-capture","screen capture"].includes(item.name),
         );
 
         // Recupera data e immagini dai progetti
