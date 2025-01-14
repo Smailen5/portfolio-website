@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/Smailen5/portfolio-website/compare/v1.2.0...v1.3.0) (2025-01-14)
+
+
+### Features
+
+* aggiorna la configurazione di Vite per ottimizzare la build e migliorare le performance ([dea66f6](https://github.com/Smailen5/portfolio-website/commit/dea66f6d34105b61ac4097dda19b4f5f36620974))
+
+
+### Bug Fixes
+
+* aggiorna il filtro di useFetch per escludere correttamente la cartella "screen-capture" oltre a "screen capture" nel recupero dei progetti ([d934e7e](https://github.com/Smailen5/portfolio-website/commit/d934e7e9296765a0ebf81fdc3355ff89c108968f))
+* corregge il nome della cartella "screen-capture" in "screen capture" nel filtro di useFetch per garantire il corretto recupero dei progetti ([2094d06](https://github.com/Smailen5/portfolio-website/commit/2094d06307486ddee2890940bfad08ea3f129afb))
+
 ## [1.2.0](https://github.com/Smailen5/portfolio-website/compare/v1.1.0...v1.2.0) (2024-12-31)
 
 
