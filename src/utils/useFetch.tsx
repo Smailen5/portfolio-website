@@ -57,7 +57,7 @@ export const useFetch = () => {
         const projectFolders = response.data.filter(
           (item: any) =>
             item.type === "dir" &&
-            ![".github", "screen-capture"].includes(item.name),
+            ![".github", "screen capture"].includes(item.name),
         );
 
         // Recupera data e immagini dai progetti
