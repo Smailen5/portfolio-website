@@ -92,4 +92,4 @@ Portfolio personale che mostra i miei progetti e competenze come Front-end Devel
 
 ## 📝 Note Legali
 
-© 2024 Smailen Vargas. Tutti i diritti riservati.
+© 2024 - 2025 Smailen Vargas. Tutti i diritti riservati.
