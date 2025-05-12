@@ -57,7 +57,9 @@ export const useFetch = () => {
         const projectFolders = response.data.filter(
           (item: any) =>
             item.type === "dir" &&
-            ![".github", "screen-capture","screen capture"].includes(item.name),
+            ![".github", "screen-capture", "screen capture"].includes(
+              item.name,
+            ),
         );
 
         // Recupera data e immagini dai progetti
@@ -71,6 +73,8 @@ export const useFetch = () => {
 
             const updated_at =
               commitResponse.data[0]?.commit?.committer?.date || "";
+
+              console.log(imageBaseUrl)
 
             return {
               ...project,
