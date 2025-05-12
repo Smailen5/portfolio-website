@@ -17,7 +17,7 @@ export const useFetch = () => {
   const [error, setError] = useState(null);
 
   const url =
-    "https://api.github.com/repos/Smailen5/Frontend-Mentor-Challenge/contents/";
+    "https://api.github.com/repos/Smailen5/Frontend-Mentor-Challenge/contents/packages/";
   const token = `token ${import.meta.env.VITE_GITHUB_TOKEN}`;
   const imageBaseUrl =
     "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/screen-capture/";
@@ -57,7 +57,9 @@ export const useFetch = () => {
         const projectFolders = response.data.filter(
           (item: any) =>
             item.type === "dir" &&
-            ![".github", "screen-capture","screen capture"].includes(item.name),
+            ![".github", "screen-capture", "screen capture"].includes(
+              item.name,
+            ),
         );
 
         // Recupera data e immagini dai progetti
@@ -65,12 +67,14 @@ export const useFetch = () => {
           projectFolders.map(async (project: any) => {
             // Recupera l'ultimo commit di ogni progetto
             const commitResponse = await axios.get(
-              `https://api.github.com/repos/Smailen5/Frontend-Mentor-Challenge/commits?path=${project.path}&per_page=1`,
+              `https://api.github.com/repos/Smailen5/Frontend-Mentor-Challenge/commits?path=packages/${project.path}&per_page=1`,
               { headers: { Authorization: `${token}` } },
             );
 
             const updated_at =
               commitResponse.data[0]?.commit?.committer?.date || "";
+
+              console.log(imageBaseUrl)
 
             return {
               ...project,

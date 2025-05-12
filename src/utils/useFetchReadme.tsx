@@ -9,7 +9,7 @@ export const useFetchReadme = (nome: string) => {
     const fetchReadme = async () => {
       if (nome) {
         try {
-          const url = `https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/${nome}/README.md`;
+          const url = `https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/setup/organizzazione-repo/packages/${nome}/README.md`;
 
           const response = await fetch(url);
 
