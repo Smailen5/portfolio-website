@@ -15,7 +15,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
 }) => {
   // URL base per le immagini dei progetti su GitHub
   const urlImageScreen =
-    "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/";
+    "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/packages/";
 
   return (
     <div className="">
