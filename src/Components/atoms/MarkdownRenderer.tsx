@@ -18,7 +18,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
     "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/packages/";
 
   return (
-    <div className="">
+    <div className="w-full">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]} // Plugin per GitHub Flavored Markdown
         rehypePlugins={[rehypeRaw]} // Plugin per HTML raw nel markdown
@@ -51,7 +51,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
           img: ({ node, ...props }) => (
             <img
               src={`${urlImageScreen}${nome}/${props.src}`}
-              className="mb-4 w-full rounded-md md:w-auto"
+              className="mb-4 w-full rounded-md md:w-auto object-contain"
               alt={`${nome} anteprima`}
             />
           ),
