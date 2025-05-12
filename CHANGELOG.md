@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/Smailen5/portfolio-website/compare/v1.3.0...v1.3.1) (2025-05-12)
+
+
+### Bug Fixes
+
+* aggiorna gli URL nei componenti MarkdownRenderer, extractTechnologies e useFetchReadme per puntare correttamente alla cartella "packages" ([cce9ae7](https://github.com/Smailen5/portfolio-website/commit/cce9ae77d4ea21283038a35cd6d82b5c591b3307))
+* aggiorna l'anno di copyright nel README.md da 2024 a 2024 - 2025 ([a4f196b](https://github.com/Smailen5/portfolio-website/commit/a4f196b986e4f1173625556eafa95b3815d873f1))
+* aggiorna l'URL nel hook useFetch per puntare alla cartella "packages" e recuperare correttamente i commit dei progetti ([61e98c9](https://github.com/Smailen5/portfolio-website/commit/61e98c92a431866c674224cc318a9f3b71ebcedc))
+* migliora il filtro di useFetch per escludere correttamente la cartella "screen-capture" e aggiunge un log per l'URL delle immagini ([5c6d50a](https://github.com/Smailen5/portfolio-website/commit/5c6d50a27a2b4c062c0de7b4902aff68ab056bd9))
+
 ## [1.3.0](https://github.com/Smailen5/portfolio-website/compare/v1.2.0...v1.3.0) (2025-01-14)
 
 
