@@ -3,14 +3,13 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/Components/atoms/tooltip";
+} from "@/components/atoms/tooltip";
 import { ButtonAction } from "../atoms/ButtonAction";
 
 export const Hero = () => {
   return (
     <section className="w-full">
       <main className="flex flex-col gap-4">
-
         {/* presentazione */}
         <header className="space-y-4">
           <p className="text-5xl">&lt;Hello World&gt; sono</p>
