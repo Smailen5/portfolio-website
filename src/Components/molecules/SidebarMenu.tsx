@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "../atoms/button";
+import { Button } from "../atoms/Button";
 import { CurriculumDownload } from "./CurriculumDownload";
 import { ModeToggle } from "./ModeToggle";
 
