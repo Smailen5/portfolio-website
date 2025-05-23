@@ -1,5 +1,5 @@
-import { Layout } from "@/Components/organisms/Layout";
-import { ProjectTemplate } from "@/Components/template/ProjectTemplate";
+import { Layout } from "@/components/organisms/Layout";
+import { ProjectTemplate } from "@/components/template/ProjectTemplate";
 import { Helmet } from "react-helmet";
 
 const ProjectPage = () => {
