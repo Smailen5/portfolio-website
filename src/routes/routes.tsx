@@ -1,9 +1,9 @@
-import { createBrowserRouter } from "react-router-dom";
-import Home from "../pages/Homepage";
-import Contact from "../pages/ContactPage";
-import Projects from "../pages/ProjectPage";
-import Error from "../pages/ErrorPage";
 import { SingleProject } from "@/components/organisms/SingleProject";
+import Contact from "@/pages/ContactPage";
+import Error from "@/pages/ErrorPage";
+import Home from "@/pages/Homepage";
+import Projects from "@/pages/ProjectPage";
+import { createBrowserRouter } from "react-router-dom";
 
 export const router = createBrowserRouter([
   {
@@ -24,7 +24,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "/projects/:nome",
-    element: <SingleProject />
+    element: <SingleProject />,
   },
   {
     path: "*",

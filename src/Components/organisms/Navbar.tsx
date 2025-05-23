@@ -1,10 +1,10 @@
+import curriculumEN from "@/assets/curriculum/CV-Smailen-Vargas-Frontend-EN.pdf";
+import curriculumIT from "@/assets/curriculum/CV-Smailen-Vargas-Frontend-IT.pdf";
+import { useGlobalContext } from "@/utils/context";
+import { Avatar } from "@components/atoms/Avatar";
+import { LinkNavbar } from "@components/molecules/LinkNavbar";
+import { SidebarMenu } from "@components/molecules/SidebarMenu";
 import { useState } from "react";
-import curriculumEN from "../../assets/curriculum/CV-Smailen-Vargas-Frontend-EN.pdf";
-import curriculumIT from "../../assets/curriculum/CV-Smailen-Vargas-Frontend-IT.pdf";
-import { useGlobalContext } from "../../utils/context";
-import { Avatar } from "../atoms/Avatar";
-import { LinkNavbar } from "../molecules/LinkNavbar";
-import { SidebarMenu } from "../molecules/SidebarMenu";
 
 const NavbarSample = () => {
   // Stato per controllare l'apertura/chiusura della sidebar mobile

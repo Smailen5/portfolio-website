@@ -1,7 +1,7 @@
-import { framework, language, utility } from "../../data/skillsData";
-import { Header } from "../atoms/Header";
-import { Section } from "../atoms/Section";
-import Skills from "../molecules/Skills";
+import { framework, language, utility } from "@/data/skillsData";
+import { Header } from "@components/atoms/Header";
+import { Section } from "@components/atoms/Section";
+import Skills from "@components/molecules/Skills";
 
 export const SectionSkill = () => {
   return (

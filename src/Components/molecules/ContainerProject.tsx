@@ -1,6 +1,6 @@
 import { nameCorrect } from "@/utils/nameCorrect";
-import { Header } from "../atoms/Header";
-import { Section } from "../atoms/Section";
+import { Header } from "@components/atoms/Header";
+import { Section } from "@components/atoms/Section";
 
 type ContainerProject = {
   name: string;

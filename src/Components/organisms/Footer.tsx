@@ -1,7 +1,7 @@
 import { SiNextui } from "react-icons/si";
-import reactIcon from "../../assets/icons/icons8-react.svg";
-import tailwindIcon from "../../assets/icons/icons8-tailwind-css.svg";
-import { LinkBlank } from "../atoms/LinkBlank";
+import reactIcon from "@/assets/icons/icons8-react.svg";
+import tailwindIcon from "@/assets/icons/icons8-tailwind-css.svg";
+import { LinkBlank } from "@components/atoms/LinkBlank";
 
 const Footer = () => {
   return (

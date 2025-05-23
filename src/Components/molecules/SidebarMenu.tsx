@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "../atoms/Button";
-import { CurriculumDownload } from "./CurriculumDownload";
-import { ModeToggle } from "./ModeToggle";
+import { Button } from "@components/atoms/Button";
+import { CurriculumDownload } from "@components/molecules/CurriculumDownload";
+import { ModeToggle } from "@components/molecules/ModeToggle";
 
 // Props per il componente SidebarMenu
 interface SidebarMenuProps {

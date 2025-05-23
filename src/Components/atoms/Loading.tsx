@@ -1,4 +1,4 @@
-import spinner from "../../assets/icons/svg-spinners--6-dots-rotate.svg";
+import spinner from "@/assets/icons/svg-spinners--6-dots-rotate.svg";
 
 export const Loading = () => {
   return (

@@ -1,8 +1,8 @@
 import { useFetch } from "@/utils/useFetch";
-import { Header } from "../atoms/Header";
-import { Section } from "../atoms/Section";
-import { SkeletonLoaderCard } from "../atoms/SkeletonLoaderCard";
-import { CardProject } from "./CardProject";
+import { Header } from "@components/atoms/Header";
+import { Section } from "@components/atoms/Section";
+import { SkeletonLoaderCard } from "@components/atoms/SkeletonLoaderCard";
+import { CardProject } from "@components/organisms/CardProject";
 
 export const LastProjects = () => {
   const { loading, projects } = useFetch();

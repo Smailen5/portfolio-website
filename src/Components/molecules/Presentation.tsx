@@ -1,6 +1,6 @@
-import { Header } from "../atoms/Header";
-import { Section } from "../atoms/Section";
-import { TooltipCustom } from "../atoms/TooltipCustom";
+import { Header } from "@components/atoms/Header";
+import { Section } from "@components/atoms/Section";
+import { TooltipCustom } from "@components/atoms/TooltipCustom";
 
 const Presentation = () => {
   return (

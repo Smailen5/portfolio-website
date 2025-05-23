@@ -1,8 +1,8 @@
 import { useFetch } from "@/utils/useFetch";
-import { SkeletonLoaderCard } from "../atoms/SkeletonLoaderCard";
-import { CardProject } from "./CardProject";
-import { Filter } from "../molecules/Filter";
 import { useFilter } from "@/utils/useFilter";
+import { SkeletonLoaderCard } from "@components/atoms/SkeletonLoaderCard";
+import { Filter } from "@components/molecules/Filter";
+import { CardProject } from "@components/organisms/CardProject";
 
 export const SectionProjects = () => {
   const { loading, error } = useFetch();

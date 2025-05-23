@@ -1,4 +1,4 @@
-import { LinkBlank } from "../atoms/LinkBlank";
+import { LinkBlank } from "@components/atoms/LinkBlank";
 
 export const HeaderProject = () => {
   return (

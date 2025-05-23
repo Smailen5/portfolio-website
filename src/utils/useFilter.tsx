@@ -1,5 +1,5 @@
+import { useFetch } from "@/utils/useFetch";
 import { useState } from "react";
-import { useFetch } from "./useFetch";
 
 export const useFilter = () => {
   const [selectedFilter, setSelectedFilter] = useState("Tutto");

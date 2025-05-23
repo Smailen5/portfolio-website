@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { extractTechnologies } from "./extractTechnologies";
+import { extractTechnologies } from "@/utils/extractTechnologies";
 
 type Project = {
   name: string;

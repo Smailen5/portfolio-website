@@ -4,7 +4,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/atoms/tooltip";
-import { ButtonAction } from "../atoms/ButtonAction";
+import { ButtonAction } from "@components/atoms/ButtonAction";
 
 export const Hero = () => {
   return (
