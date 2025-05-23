@@ -1,4 +1,4 @@
-import { Button } from "../atoms/button";
+import { Button } from "../atoms/Button";
 
 // Props per il componente CurriculumDownload
 interface CurriculumDownloadProps {
