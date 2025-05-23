@@ -2,8 +2,8 @@ import { Button } from "@nextui-org/react";
 import Lottie from "lottie-react";
 import { Link } from "react-router-dom";
 import animationData from "../assets/animation/animation-404.json";
-import Footer from "../Components/organisms/Footer";
-import NavbarSample from "../Components/organisms/Navbar";
+import Footer from "../components/organisms/Footer";
+import NavbarSample from "../components/organisms/Navbar";
 
 const ErrorPage = () => {
   return (
