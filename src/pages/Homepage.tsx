@@ -1,5 +1,5 @@
-import { HomeTemplate } from "@/Components/template/HomeTemplate";
-import { Layout } from "../Components/organisms/Layout";
+import { HomeTemplate } from "@/components/template/HomeTemplate";
+import { Layout } from "../components/organisms/Layout";
 import useScroll from "../utils/useScroll";
 
 const HomePage = () => {
