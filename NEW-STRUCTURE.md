@@ -1,7 +1,10 @@
 # Nuova struttura del progetto
 
+## 📝 Descrizione
+
 Dato il continuo incremento della complessità del progetto, è necessario una struttura più modulare e scalabile. Ho deciso di adottare una struttura ibrida tra Atomic Design e Feature-based.
-Il progetto sarà suddiviso in 3 cartelle principali in questo modo:
+
+## 📁 Struttura del progetto
 
 ```
 src/
@@ -45,3 +48,29 @@ Vantaggi:
 2. **Feature-based** per logica di business
 3. **Shared** per codice comune
 4. **Pages** per routing
+
+## 📝 Convenzioni di Importazione
+
+Il progetto utilizza path aliases per importazioni più pulite e manutenibili:
+
+```typescript
+// Importazioni di componenti
+import { Button } from "@components/atoms/Button";
+import { ProjectCard } from "@components/molecules/ProjectCard";
+
+// Importazioni di feature
+import { useAuth } from "@features/auth/hooks/useAuth";
+
+// Importazioni di codice condiviso
+import { useTheme } from "@shared/hooks/useTheme";
+
+// Importazioni multiple dalla stessa cartella
+import { Button, Avatar, ErrorMessage } from "@components/atoms";
+```
+
+Anche per importazioni nella stessa cartella, si preferisce usare gli alias per:
+
+- Maggiore consistenza
+- Migliore leggibilità della struttura
+- Facilità di manutenzione
+- Semplicità nel refactoring
