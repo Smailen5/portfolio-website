@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import { GoProjectRoadmap } from "react-icons/go";
 import { MdOutlineEmail } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-import { Button } from "./button";
+import { Button } from "./Button";
 
 interface ButtonActionProps {
   navigateTo: "contact" | "projects";
