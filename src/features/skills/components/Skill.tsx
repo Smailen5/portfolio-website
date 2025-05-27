@@ -4,7 +4,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "./tooltip";
+} from "@components/atoms/tooltip";
 
 // Componente per visualizzare una singola skill/tecnologia
 const Skills = ({
