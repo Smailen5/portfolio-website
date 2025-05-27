@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { ButtonsProject } from "@components/molecules/ButtonsProject";
-import { ContainerProject } from "@components/molecules/ContainerProject";
-import { PictureProject } from "@components/molecules/PictureProject";
+import { ButtonsProject } from "@features/projects/components/ButtonsProject";
+import { ContainerProject } from "@features/projects/components/ContainerProject";
+import { PictureProject } from "@features/projects/components/PictureProject";
 import Skeleton from "react-loading-skeleton";
 
 interface CardProjectType {

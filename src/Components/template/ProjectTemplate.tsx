@@ -1,5 +1,5 @@
-import { HeaderProject } from "@components/molecules/HeaderProject";
-import { SectionProjects } from "@components/organisms/SectionProjects";
+import { HeaderProject } from "@features/projects/components/HeaderProject";
+import { SectionProjects } from "@features/projects/components/SectionProjects";
 
 export const ProjectTemplate = () => {
   return (

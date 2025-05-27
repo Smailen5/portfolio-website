@@ -2,7 +2,7 @@ import { useFetch } from "@/utils/useFetch";
 import { Header } from "@components/atoms/Header";
 import { Section } from "@components/atoms/Section";
 import { SkeletonLoaderCard } from "@components/atoms/SkeletonLoaderCard";
-import { CardProject } from "@components/organisms/CardProject";
+import { CardProject } from "@features/projects/components/CardProject";
 
 export const LastProjects = () => {
   const { loading, projects } = useFetch();
