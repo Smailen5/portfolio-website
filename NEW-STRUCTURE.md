@@ -74,3 +74,6 @@ Anche per importazioni nella stessa cartella, si preferisce usare gli alias per:
 - Migliore leggibilità della struttura
 - Facilità di manutenzione
 - Semplicità nel refactoring
+
+## 📝 Convenzioni di Naming
+
