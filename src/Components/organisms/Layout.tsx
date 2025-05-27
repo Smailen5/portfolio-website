@@ -1,6 +1,6 @@
 import useScroll from "@/utils/useScroll";
 import Footer from "@components/organisms/Footer";
-import NavbarSample from "@components/organisms/Navbar";
+import NavbarSample from "@features/navigation/components/Navbar";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   useScroll();
