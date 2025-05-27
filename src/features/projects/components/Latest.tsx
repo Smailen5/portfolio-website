@@ -1,11 +1,11 @@
 import { CardProject } from "@/features/projects/components/Card";
 import { SkeletonLoaderCard } from "@/features/projects/components/Skeleton";
-import { useFetch } from "@/utils/useFetch";
+import { useFetch } from "@/features/projects/hooks/useFetch";
 import { Header } from "@components/atoms/Header";
 import { Section } from "@components/atoms/Section";
 
 export const LastProjects = () => {
-  const { loading, projects } = useFetch();
+  const { projects, loading } = useFetch();
   // !Modifica qui i progetti da mostrare
   const showLastProjects = 3;
   const arraySkeleton = Array.from({ length: showLastProjects });
