@@ -3,7 +3,7 @@ import { Header } from "@components/atoms/Header";
 import { HeroContact } from "@features/contact/components/HeroContact";
 import { Section } from "@components/atoms/Section";
 // import { HeroContact } from "../atoms/HeroContact";
-import ButtonSocial from "@components/molecules/ButtonSocial";
+import ButtonSocial from "@features/social/components/ButtonSocial";
 import FormComponent from "@features/contact/components/FormComponent";
 
 const Socials = () => {

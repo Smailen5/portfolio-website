@@ -1,8 +1,8 @@
-import Presentation from "@components/molecules/Presentation";
-import { Hero } from "@components/organisms/Hero";
+import Presentation from "@features/about/components/Presentation";
+import { Hero } from "@features/home/components/Hero";
 import { LastProjects } from "@features/projects/components/LastProjects";
 import { SectionSkill } from "@features/skills/components/SectionSkills";
-import Socials from "@components/organisms/Socials";
+import Socials from "@features/social/components/Socials";
 
 export const HomeTemplate = () => {
   return (
