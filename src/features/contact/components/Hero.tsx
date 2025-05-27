@@ -1,11 +1,11 @@
 import { twMerge } from "tailwind-merge";
 
-interface HeroContactProps {
+interface HeroProps {
   noHeader?: boolean;
   className?: string;
 }
 
-export const HeroContact = ({ noHeader, className }: HeroContactProps) => {
+export const Hero = ({ noHeader, className }: HeroProps) => {
   return (
     <section
       aria-labelledby="contact-heading"
