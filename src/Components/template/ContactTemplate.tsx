@@ -1,5 +1,5 @@
-import { HeroContact } from "@components/atoms/HeroContact";
-import FormComponent from "@components/organisms/FormComponent";
+import { HeroContact } from "@features/contact/components/HeroContact";
+import FormComponent from "@features/contact/components/FormComponent";
 
 export const ContactTemplate = () => {
   return (

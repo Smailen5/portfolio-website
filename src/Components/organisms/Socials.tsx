@@ -1,10 +1,10 @@
 import social from "@/data/social";
 import { Header } from "@components/atoms/Header";
-import { HeroContact } from "@components/atoms/HeroContact";
+import { HeroContact } from "@features/contact/components/HeroContact";
 import { Section } from "@components/atoms/Section";
 // import { HeroContact } from "../atoms/HeroContact";
 import ButtonSocial from "@components/molecules/ButtonSocial";
-import FormComponent from "@components/organisms/FormComponent";
+import FormComponent from "@features/contact/components/FormComponent";
 
 const Socials = () => {
   return (
