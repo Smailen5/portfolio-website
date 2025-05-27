@@ -1,6 +1,6 @@
 import { useFetch } from "@/utils/useFetch";
 import { useFilter } from "@/utils/useFilter";
-import { SkeletonLoaderCard } from "@components/atoms/SkeletonLoaderCard";
+import { SkeletonLoaderCard } from "@features/projects/components/SkeletonLoaderCard";
 import { Filter } from "@features/projects/components/Filter";
 import { CardProject } from "@features/projects/components/CardProject";
 

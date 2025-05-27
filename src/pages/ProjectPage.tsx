@@ -1,4 +1,4 @@
-import { Layout } from "@/components/organisms/Layout";
+import { Layout } from "@/components/molecules/Layout";
 import { ProjectTemplate } from "@/components/templates/ProjectTemplate";
 import { Helmet } from "react-helmet";
 

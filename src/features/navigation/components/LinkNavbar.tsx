@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { CurriculumDownload } from "./CurriculumDownload";
-import { ModeToggle } from "./ModeToggle";
+import { CurriculumDownload } from "@features/cv/components/CurriculumDownload";
+import { ModeToggle } from "@features/theme/components/ModeToggle";
 
 // Props per il componente LinkNavbar
 interface LinkNavbarProps {

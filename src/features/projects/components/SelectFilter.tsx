@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
-import { Option, Selection } from "./SelectCustom";
+import { Option, Selection } from "@components/atoms/SelectCustom";
 
 // Componente per filtrare i progetti per tecnologia
 export const SelectFilter = ({

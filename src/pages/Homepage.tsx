@@ -1,4 +1,4 @@
-import { Layout } from "@/components/organisms/Layout";
+import { Layout } from "@components/molecules/Layout";
 import { HomeTemplate } from "@/components/templates/HomeTemplate";
 import useScroll from "@/utils/useScroll";
 
