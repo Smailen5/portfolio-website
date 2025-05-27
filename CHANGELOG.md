@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.2](https://github.com/Smailen5/portfolio-website/compare/v1.3.1...v1.3.2) (2025-05-27)
+
+
+### Bug Fixes
+
+* 🩹 aggiorna l'importazione dei componenti Footer e Navbar ([126c7a9](https://github.com/Smailen5/portfolio-website/commit/126c7a9929bcdc12ee9d076ec2321fc70f12f9c1))
+* 🩹 aggiorna l'importazione dei componenti HomeTemplate e Layout ([f25f82e](https://github.com/Smailen5/portfolio-website/commit/f25f82e40746fd2c368169a74c35142da707c8d3))
+* 🩹 aggiorna l'importazione dei componenti Layout e ProjectTemplate ([2e42162](https://github.com/Smailen5/portfolio-website/commit/2e421628b493f7d0fa528fdf321fdd306ed06793))
+* 🩹 aggiorna l'importazione del componente Button nel CurriculumDownload ([4a60596](https://github.com/Smailen5/portfolio-website/commit/4a6059633df9c2eb499013bb22f6153e3a85ee1f))
+* 🩹 aggiorna l'importazione del componente Button nel ModeToggle ([228d44c](https://github.com/Smailen5/portfolio-website/commit/228d44ccdde1bd2aac46f08a56dd11d4ee5cf797))
+* 🩹 aggiorna l'importazione del componente Button nel SidebarMenu ([9f9e654](https://github.com/Smailen5/portfolio-website/commit/9f9e654088a7d5d20488872d272d711237e690a0))
+* 🩹 aggiorna l'importazione del componente ContactTemplate ([5b656ab](https://github.com/Smailen5/portfolio-website/commit/5b656ab8ffe1afcbdcc8b4b1ef9ea8ff7cbc0cd4))
+* 🩹 aggiorna l'importazione del componente Hero ([d3c204c](https://github.com/Smailen5/portfolio-website/commit/d3c204c8a53c1b3abcb925338b9c59630c33a832))
+* 🩹 aggiorna l'importazione del componente SingleProject ([076bb15](https://github.com/Smailen5/portfolio-website/commit/076bb15e8a035a6ab894623ee15de61e0d32bb11))
+* 🩹 aggiorna le importazioni dei componenti per riflettere la nuova struttura ([eba3eb0](https://github.com/Smailen5/portfolio-website/commit/eba3eb0c804ea8a4604eff81df539d2d093656f2))
+* 🩹 corregge l'importazione del componente Button nel ButtonAction ([ba067a6](https://github.com/Smailen5/portfolio-website/commit/ba067a6e38d7813b2d62f9d756938ff5a57c8938))
+* aggiunge la classe "object-contain" all'immagine nel componente MarkdownRenderer per migliorare la visualizzazione ([1c73bea](https://github.com/Smailen5/portfolio-website/commit/1c73bea8afcad7bfd98085ed7535f4d15dad0b78))
+
 ### [1.3.1](https://github.com/Smailen5/portfolio-website/compare/v1.3.0...v1.3.1) (2025-05-12)
 
 
