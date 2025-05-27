@@ -2,7 +2,7 @@ import { Dispatch, SetStateAction } from "react";
 import { Option, Selection } from "@components/atoms/SelectCustom";
 
 // Componente per filtrare i progetti per tecnologia
-export const SelectFilter = ({
+export const FilterSelect = ({
   onSelectionChange, // Funzione per gestire il cambio di selezione
 }: {
   onSelectionChange: Dispatch<SetStateAction<string>>;
