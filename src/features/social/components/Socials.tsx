@@ -4,7 +4,7 @@ import { Header } from "@components/atoms/Header";
 import { Section } from "@components/atoms/Section";
 // import { HeroContact } from "../atoms/HeroContact";
 import FormComponent from "@/features/contact/components/Form";
-import ButtonSocial from "@features/social/components/ButtonSocial";
+import ButtonSocial from "@/features/social/components/Button";
 
 const Socials = () => {
   return (
