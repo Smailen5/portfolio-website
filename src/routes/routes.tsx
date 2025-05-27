@@ -1,4 +1,4 @@
-import { SingleProject } from "@features/projects/components/SingleProject";
+import { SingleProject } from "@/features/projects/components/Single";
 import Contact from "@/pages/ContactPage";
 import Error from "@/pages/ErrorPage";
 import Home from "@/pages/Homepage";

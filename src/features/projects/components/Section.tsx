@@ -1,8 +1,8 @@
+import { CardProject } from "@/features/projects/components/Card";
+import { SkeletonLoaderCard } from "@/features/projects/components/Skeleton";
 import { useFetch } from "@/utils/useFetch";
 import { useFilter } from "@/utils/useFilter";
-import { SkeletonLoaderCard } from "@features/projects/components/SkeletonLoaderCard";
 import { Filter } from "@features/projects/components/Filter";
-import { CardProject } from "@features/projects/components/CardProject";
 
 export const SectionProjects = () => {
   const { loading, error } = useFetch();

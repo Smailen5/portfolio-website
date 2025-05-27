@@ -1,8 +1,8 @@
+import { CardProject } from "@/features/projects/components/Card";
+import { SkeletonLoaderCard } from "@/features/projects/components/Skeleton";
 import { useFetch } from "@/utils/useFetch";
 import { Header } from "@components/atoms/Header";
 import { Section } from "@components/atoms/Section";
-import { SkeletonLoaderCard } from "@features/projects/components/SkeletonLoaderCard";
-import { CardProject } from "@features/projects/components/CardProject";
 
 export const LastProjects = () => {
   const { loading, projects } = useFetch();
@@ -13,8 +13,10 @@ export const LastProjects = () => {
   return (
     <>
       <Section>
-        <Header type="h2" titleID="ultimi lavori">Guarda i miei ultimi lavori</Header>
-        <main className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <Header type="h2" titleID="ultimi lavori">
+          Guarda i miei ultimi lavori
+        </Header>
+        <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {loading
             ? arraySkeleton.map((_, index) => (
                 <SkeletonLoaderCard key={index} />

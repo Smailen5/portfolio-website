@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
-import { SelectFilter } from "@features/projects/components/SelectFilter";
+import { SelectFilter } from "@/features/projects/components/FilterSelect";
 
 interface FilterProps {
   setSelectedFilter: Dispatch<SetStateAction<string>>;
