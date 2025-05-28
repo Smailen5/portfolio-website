@@ -10,6 +10,11 @@ type Project = {
   technologies: string[];
 };
 
+type CachedData = {
+  projects: Project[];
+  timestamp: number;
+};
+
 export const useFetch = () => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -22,16 +27,15 @@ export const useFetch = () => {
       // Controlla se i progetti sono salvati nel session storage e li recupera
       if (cachedProjects) {
         try {
-          const cachedData = JSON.parse(cachedProjects);
+          const cachedData: CachedData = JSON.parse(cachedProjects);
 
           // Verifica che il timestamp sia valido e che i progetti non siano più vecchi di un'ora
           if (
             cachedData.timestamp &&
             Date.now() - cachedData.timestamp < cachedDuration
           ) {
-            console.log("Progetti recuperati dalla cache");
+            console.log("Progetti recuperati dalla cache:", cachedData.projects);
             setProjects(cachedData.projects);
-            console.log(projects);
             setLoading(false);
             return;
           }
@@ -50,20 +54,23 @@ export const useFetch = () => {
           response.statusText,
         );
         if (response.status === 200) {
-          // Salva i progetti nel session storage aggiungendo il timestamp
-          sessionStorage.setItem(
-            "projects",
-            JSON.stringify({ projects: response.data, timestamp: Date.now() }),
-          );
+          const projectsData = response.data;
+          console.log("Progetti ricevuti dall'API:", projectsData);
+
+          // Salva i progetti nel session storage con una struttura più pulita
+          const cacheData: CachedData = {
+            projects: projectsData,
+            timestamp: Date.now(),
+          };
+          sessionStorage.setItem("projects", JSON.stringify(cacheData));
+
           // Salva i progetti nello stato
-          setProjects(response.data);
+          setProjects(projectsData);
           setLoading(false);
-          console.log(projects);
         }
       } catch (error) {
         console.warn("Errore nel recupero dei progetti:", error);
       }
-      return { projects, loading };
     };
     fetchProjects();
   }, []);
