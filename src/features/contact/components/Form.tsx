@@ -1,5 +1,5 @@
+import { Button } from "@components/atoms/Button";
 import { useForm } from "@formspree/react";
-import { Button } from "@nextui-org/react";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { useState } from "react";
 import { object, string } from "yup";
@@ -71,7 +71,11 @@ const FormComponent = () => {
               autoComplete="name"
               className="w-full rounded-md border border-border p-2"
             />
-            <ErrorMessage name="name" component="p" className="text-destructive" />
+            <ErrorMessage
+              name="name"
+              component="p"
+              className="text-destructive"
+            />
 
             <label htmlFor="email">Email</label>
             <Field
@@ -81,7 +85,11 @@ const FormComponent = () => {
               autoComplete="email"
               className="w-full rounded-md border border-border p-2"
             />
-            <ErrorMessage name="email" component="p" className="text-destructive" />
+            <ErrorMessage
+              name="email"
+              component="p"
+              className="text-destructive"
+            />
 
             <label htmlFor="message">Messaggio</label>
             <Field

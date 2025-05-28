@@ -1,7 +1,7 @@
 import animationData from "@/assets/animation/animation-404.json";
 import Footer from "@/components/organisms/Footer";
+import { Button } from "@components/atoms/Button";
 import NavbarSample from "@features/navigation/components/Navbar";
-import { Button } from "@nextui-org/react";
 import Lottie from "lottie-react";
 import { Link } from "react-router-dom";
 
