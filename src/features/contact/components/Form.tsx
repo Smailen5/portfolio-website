@@ -69,7 +69,7 @@ const FormComponent = () => {
               type="text"
               name="name"
               autoComplete="name"
-              className="w-full rounded-md border border-border p-2"
+              className="w-full rounded-md border border-border p-2 text-black"
             />
             <ErrorMessage
               name="name"
@@ -83,7 +83,7 @@ const FormComponent = () => {
               type="email"
               name="email"
               autoComplete="email"
-              className="w-full rounded-md border border-border p-2"
+              className="w-full rounded-md border border-border p-2 text-black"
             />
             <ErrorMessage
               name="email"
@@ -99,7 +99,7 @@ const FormComponent = () => {
               type="text"
               autoComplete="off"
               rows={10}
-              className="w-full resize-none rounded-md border border-border p-2"
+              className="w-full resize-none rounded-md border border-border p-2 text-black"
             />
 
             <ErrorMessage
