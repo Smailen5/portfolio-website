@@ -1,6 +1,6 @@
 import { CardProject } from "@/features/projects/components/Card";
 import { SkeletonLoaderCard } from "@/features/projects/components/Skeleton";
-import { useFilter } from "@/utils/useFilter";
+import { useFilter } from "@/features/projects/hooks/useFilter";
 import { Filter } from "@features/projects/components/Filter";
 
 export const SectionProjects = () => {
