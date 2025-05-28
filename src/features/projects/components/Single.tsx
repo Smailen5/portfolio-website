@@ -1,24 +1,38 @@
-import { useFetchReadme } from "@/utils/useFetchReadme";
 import { ErrorMessage } from "@components/atoms/ErrorMessage";
 import { Loading } from "@components/atoms/Loading";
 import { MarkdownRenderer } from "@components/atoms/MarkdownRenderer";
 import { Layout } from "@components/molecules/Layout";
 import { useParams } from "react-router-dom";
+import { useFetch } from "../hooks/useFetch";
+import { useGetProjects } from "../hooks/useGetProjects";
 
 export const SingleProject = () => {
-  const { nome } = useParams<{ nome: string }>(); // Recupera il parametro "nome" dal percorso
+  const { nome } = useParams<{ nome: string }>();
+  const { loading } = useFetch();
+  const projects = useGetProjects();
 
-  const { readmeContent, error, loading } = useFetchReadme(nome || "");
+  // Trova il progetto specifico usando il nome
+  const project = projects.find((p) => p.name === nome);
+
+  if (loading) {
+    return (
+      <Layout>
+        <Loading />
+      </Layout>
+    );
+  }
+
+  if (!project) {
+    return (
+      <Layout>
+        <ErrorMessage>Progetto non trovato</ErrorMessage>
+      </Layout>
+    );
+  }
 
   return (
     <Layout>
-      {loading ? (
-        <Loading />
-      ) : error ? (
-        <ErrorMessage>{error}</ErrorMessage>
-      ) : (
-        <MarkdownRenderer content={readmeContent} nome={nome} />
-      )}
+      <MarkdownRenderer content={project.readme} nome={nome} />
     </Layout>
   );
 };
