@@ -1,14 +1,6 @@
+import { useGlobalContext, type Project } from "@/utils/context";
 import { useEffect, useState } from "react";
 import { projectService } from "../services/projectService";
-
-type Project = {
-  name: string;
-  path: string;
-  html_url: string;
-  updated_at: string;
-  image: string;
-  technologies: string[];
-};
 
 type CachedData = {
   projects: Project[];
@@ -16,7 +8,7 @@ type CachedData = {
 };
 
 export const useFetch = () => {
-  const [projects, setProjects] = useState<Project[]>([]);
+  const { projects, setProjects } = useGlobalContext();
   const [loading, setLoading] = useState<boolean>(true);
 
   const cachedProjects = sessionStorage.getItem("projects");
@@ -34,7 +26,10 @@ export const useFetch = () => {
             cachedData.timestamp &&
             Date.now() - cachedData.timestamp < cachedDuration
           ) {
-            console.log("Progetti recuperati dalla cache:", cachedData.projects);
+            console.log(
+              "Progetti recuperati dalla cache:",
+              cachedData.projects,
+            );
             setProjects(cachedData.projects);
             setLoading(false);
             return;
