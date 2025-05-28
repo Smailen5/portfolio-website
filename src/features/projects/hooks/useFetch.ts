@@ -1,36 +1,20 @@
-import { useGlobalContext, type Project } from "@/utils/context";
 import { useEffect, useState } from "react";
 import { projectService } from "../services/projectService";
 
-type CachedData = {
-  projects: Project[];
-  timestamp: number;
-};
-
 export const useFetch = () => {
-  const { projects, setProjects } = useGlobalContext();
   const [loading, setLoading] = useState<boolean>(true);
-
-  const cachedProjects = sessionStorage.getItem("projects");
-  const cachedDuration = 1000 * 60 * 60;
+  const cachedDuration = 1000 * 60 * 60; // 1 ora
 
   useEffect(() => {
     const fetchProjects = async () => {
-      // Controlla se i progetti sono salvati nel session storage e li recupera
+      const cachedProjects = sessionStorage.getItem("projects");
+
+      // Se ci sono progetti in cache e non sono vecchi, usali
       if (cachedProjects) {
         try {
-          const cachedData: CachedData = JSON.parse(cachedProjects);
-
-          // Verifica che il timestamp sia valido e che i progetti non siano più vecchi di un'ora
-          if (
-            cachedData.timestamp &&
-            Date.now() - cachedData.timestamp < cachedDuration
-          ) {
-            console.log(
-              "Progetti recuperati dalla cache:",
-              cachedData.projects,
-            );
-            setProjects(cachedData.projects);
+          const { timestamp } = JSON.parse(cachedProjects);
+          if (Date.now() - timestamp < cachedDuration) {
+            console.log("Usando progetti dalla cache");
             setLoading(false);
             return;
           }
@@ -39,35 +23,27 @@ export const useFetch = () => {
         }
       }
 
-      // Se non ci sono progetti nel session storage, li recupera dall'API
+      // Se non ci sono progetti in cache o sono vecchi, fai la chiamata API
       try {
-        console.log("Inizio recupero dei progetti dall'API");
+        console.log("Recupero progetti dall'API");
         const response = await projectService.getAll();
-        console.log(
-          "Risposta ricevuta: ",
-          response.status,
-          response.statusText,
-        );
         if (response.status === 200) {
-          const projectsData = response.data;
-          console.log("Progetti ricevuti dall'API:", projectsData);
-
-          // Salva i progetti nel session storage con una struttura più pulita
-          const cacheData: CachedData = {
-            projects: projectsData,
-            timestamp: Date.now(),
-          };
-          sessionStorage.setItem("projects", JSON.stringify(cacheData));
-
-          // Salva i progetti nello stato
-          setProjects(projectsData);
-          setLoading(false);
+          const projects = response.data;
+          // Salva in cache con timestamp
+          sessionStorage.setItem(
+            "projects",
+            JSON.stringify({ projects, timestamp: Date.now() }),
+          );
         }
       } catch (error) {
         console.warn("Errore nel recupero dei progetti:", error);
+      } finally {
+        setLoading(false);
       }
     };
+
     fetchProjects();
   }, []);
-  return { projects, loading };
+
+  return { loading };
 };
