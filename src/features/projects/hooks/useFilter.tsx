@@ -1,6 +1,6 @@
 import { useFetch } from "@/features/projects/hooks/useFetch";
-import { useState } from "react";
 import { useGetProjects } from "@/features/projects/hooks/useGetProjects";
+import { useState } from "react";
 
 export const useFilter = () => {
   const [selectedFilter, setSelectedFilter] = useState("Tutto");

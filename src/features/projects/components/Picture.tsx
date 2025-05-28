@@ -1,5 +1,5 @@
-import { LinkBlank } from "@components/atoms/LinkBlank";
 import { nameCorrect } from "@/utils/nameCorrect";
+import { LinkBlank } from "@components/atoms/LinkBlank";
 
 type PictureProject = {
   linkSite: string;

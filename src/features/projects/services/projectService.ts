@@ -29,7 +29,7 @@ export const projectService = {
         throw new Error(
           error.response?.data?.message || "Errore nel recupero del progetto",
         );
-        throw error;
+      throw error;
     }
   },
 };

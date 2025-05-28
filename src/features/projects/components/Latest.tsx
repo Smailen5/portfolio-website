@@ -1,10 +1,10 @@
 import { CardProject } from "@/features/projects/components/Card";
 import { SkeletonLoaderCard } from "@/features/projects/components/Skeleton";
 import { useFetch } from "@/features/projects/hooks/useFetch";
+import { useGetProjects } from "@/features/projects/hooks/useGetProjects";
+import { Project } from "@/features/projects/utils/types";
 import { Header } from "@components/atoms/Header";
 import { Section } from "@components/atoms/Section";
-import { Project } from "@/features/projects/utils/types";
-import { useGetProjects } from "@/features/projects/hooks/useGetProjects";
 
 export const LastProjects = () => {
   const { loading } = useFetch();
