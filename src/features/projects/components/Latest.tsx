@@ -3,12 +3,16 @@ import { SkeletonLoaderCard } from "@/features/projects/components/Skeleton";
 import { useFetch } from "@/features/projects/hooks/useFetch";
 import { Header } from "@components/atoms/Header";
 import { Section } from "@components/atoms/Section";
+import { Project } from "@/features/projects/utils/types";
+import { useGetProjects } from "@/features/projects/hooks/useGetProjects";
 
 export const LastProjects = () => {
-  const { projects, loading } = useFetch();
+  const { loading } = useFetch();
   // !Modifica qui i progetti da mostrare
   const showLastProjects = 3;
   const arraySkeleton = Array.from({ length: showLastProjects });
+
+  const projectsArray = useGetProjects();
 
   return (
     <>
@@ -21,10 +25,10 @@ export const LastProjects = () => {
             ? arraySkeleton.map((_, index) => (
                 <SkeletonLoaderCard key={index} />
               ))
-            : projects
-                .map((project, index) => {
-                  return <CardProject key={index} {...project} />;
-                })
+            : projectsArray
+                .map((project: Project, index: number) => (
+                  <CardProject key={index} {...project} />
+                ))
                 .slice(0, showLastProjects)}
         </main>
       </Section>
