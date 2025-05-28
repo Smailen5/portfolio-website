@@ -1,4 +1,4 @@
-import { useGlobalContext } from "@/utils/context";
+import { useGlobalContext } from "@/shared/utils/context";
 import {
   Tooltip,
   TooltipContent,

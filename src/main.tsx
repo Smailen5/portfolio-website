@@ -1,5 +1,5 @@
 import App from "@/App.tsx";
-import { AppProvider } from "@/utils/context.tsx";
+import { AppProvider } from "@/shared/utils/context";
 import { ThemeProvider } from "@/utils/themeProvider.tsx";
 import { NextUIProvider } from "@nextui-org/react";
 import { StrictMode } from "react";

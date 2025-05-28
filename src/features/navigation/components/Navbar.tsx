@@ -1,6 +1,6 @@
 import curriculumEN from "@/assets/curriculum/CV-Smailen-Vargas-Frontend-EN.pdf";
 import curriculumIT from "@/assets/curriculum/CV-Smailen-Vargas-Frontend-IT.pdf";
-import { useGlobalContext } from "@/utils/context";
+import { useGlobalContext } from "@/shared/utils/context";
 import { Avatar } from "@components/atoms/Avatar";
 import { LinkNavbar } from "@features/navigation/components/LinkNavbar";
 import { SidebarMenu } from "@features/navigation/components/SidebarMenu";
