@@ -1,19 +1,8 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-type Project = {
-  name: string;
-  path: string;
-  html_url: string;
-  updated_at: string;
-  image: string;
-  technologies: string[];
-};
-
 // Definisce il tipo di contesto
 interface AppContextType {
   useWindowWidth: () => number;
-  projects: Project[];
-  setProjects: (projects: Project[]) => void;
 }
 
 // Crea il contesto e fornisce un valore predefinito
@@ -36,9 +25,8 @@ type AppProviderType = {
 };
 
 const AppProvider: React.FC<AppProviderType> = ({ children }) => {
-  const [projects, setProjects] = useState<Project[]>([]);
   return (
-    <AppContext.Provider value={{ useWindowWidth, projects, setProjects }}>
+    <AppContext.Provider value={{ useWindowWidth }}>
       {children}
     </AppContext.Provider>
   );
@@ -52,4 +40,4 @@ const useGlobalContext = () => {
   return context;
 };
 
-export { AppProvider, useGlobalContext, type Project };
+export { AppProvider, useGlobalContext };
