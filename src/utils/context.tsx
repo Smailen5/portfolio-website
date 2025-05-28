@@ -1,5 +1,4 @@
 import { createContext, useContext, useState, useEffect } from "react";
-import PropTypes from "prop-types";
 
 // Definisce il tipo di contesto
 interface AppContextType {
@@ -41,7 +40,5 @@ const useGlobalContext = () => {
   return context;
 };
 
-AppProvider.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+
 export { AppProvider, useGlobalContext };
