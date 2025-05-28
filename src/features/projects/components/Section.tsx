@@ -1,15 +1,14 @@
 import { CardProject } from "@/features/projects/components/Card";
 import { SkeletonLoaderCard } from "@/features/projects/components/Skeleton";
-import { useFetch } from "@/utils/useFetch";
+import { useFetch } from "@/features/projects/hooks/useFetch";
 import { useFilter } from "@/utils/useFilter";
 import { Filter } from "@features/projects/components/Filter";
 
 export const SectionProjects = () => {
-  const { loading, error } = useFetch();
+  const { loading } = useFetch();
   const { filteredProjects, setSelectedFilter, numberFilteredProjects } =
     useFilter();
 
-  if (error) return <p>{error}</p>;
   // Cambia qui quante card skeleton visualizzare
   const arraySkeleton = Array.from({ length: 4 });
 
