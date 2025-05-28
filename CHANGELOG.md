@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/Smailen5/portfolio-website/compare/v1.3.2...v1.4.0) (2025-05-28)
+
+
+### Features
+
+* 🎉 aggiorna il tipo Project per includere il campo readme ([17c0174](https://github.com/Smailen5/portfolio-website/commit/17c0174337a9674d8d2b9a84a27b4b4d0a9a6b8e))
+* 🎉 aggiungi costanti API per la gestione degli endpoint ([53968f2](https://github.com/Smailen5/portfolio-website/commit/53968f2859356c84d8f1b42960c2b1e62ebd8936))
+* 🎉 aggiungi gestione dei progetti nel contesto globale ([7f082fa](https://github.com/Smailen5/portfolio-website/commit/7f082facfc215ad598b910c8b44fac40ac42d0f7))
+* 🎉 aggiungi hook useFetch per il recupero dei progetti ([aea4556](https://github.com/Smailen5/portfolio-website/commit/aea45569d533ed2ec6834522bbb711c3d990301f))
+* 🎉 aggiungi il servizio per la gestione dei progetti ([8afe14e](https://github.com/Smailen5/portfolio-website/commit/8afe14e95cc76368707396e9dc5450d15c358308))
+* 🎉 aggiungi interfaccia Project per la gestione dei progetti ([12d1ed3](https://github.com/Smailen5/portfolio-website/commit/12d1ed3481620fad72a069ac93e8536dcc01048f))
+* 🎉 aggiungi l'hook useGetProjects per il recupero dei progetti dalla cache ([f661ec7](https://github.com/Smailen5/portfolio-website/commit/f661ec75c96f7277d9017b46090729220e40a7e4))
+* 🎉 integra l'hook useGetProjects nel componente LastProjects ([56610dd](https://github.com/Smailen5/portfolio-website/commit/56610ddcebd04bd6121bf6424aa2f959788ad421))
+* 🎉 integra la logica di recupero dei progetti nel componente SingleProject ([e1e3c47](https://github.com/Smailen5/portfolio-website/commit/e1e3c47aa773760dbb3a83b9749fcee6951b5dd1))
+* 🎉 migliora l'hook useFetch per il recupero dei progetti ([48e0df5](https://github.com/Smailen5/portfolio-website/commit/48e0df5341a242cbf82d080e613cf88f9f079e65))
+* 🎉 migliora la gestione della cache nell'hook useFetch ([0cf382d](https://github.com/Smailen5/portfolio-website/commit/0cf382dd1c5504bc2a1f770c5482f02aadd2da28))
+
+
+### Bug Fixes
+
+* 🐛 correggi l'importazione dell'hook useFetch nel componente Latest ([4d34cdb](https://github.com/Smailen5/portfolio-website/commit/4d34cdbb3b4f4c8b206f94b24eb065deb0546276))
+
 ### [1.3.2](https://github.com/Smailen5/portfolio-website/compare/v1.3.1...v1.3.2) (2025-05-27)
 
 
