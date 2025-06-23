@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/Smailen5/portfolio-website/compare/v1.4.0...v2.0.0) (2025-06-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* 🎉 aggiunge la funzione Netlify per recuperare i progetti
+
+### Features
+
+* 🎉 aggiunge il file package.json per la funzione Netlify "hello-world" ([e2bf07c](https://github.com/Smailen5/portfolio-website/commit/e2bf07c16b0044e13b0df852ad096fbf97fc7830))
+* 🎉 aggiunge il file test-db.js per la gestione dei progetti con MongoDB ([306fba7](https://github.com/Smailen5/portfolio-website/commit/306fba7245ddf1b9f7180ecb826a975933c8f61a))
+* 🎉 aggiunge la funzione Netlify per recuperare i progetti ([0e9f347](https://github.com/Smailen5/portfolio-website/commit/0e9f3479d8c141f6e13501b42fdc1f92b9cd3779))
+* 📦 aggiunge il file package-lock.json per la funzione Netlify "hello-world" ([bfa229c](https://github.com/Smailen5/portfolio-website/commit/bfa229c09e579c980b54a2d7de88df7b97e0c271))
+
+
+### Bug Fixes
+
+* 🔧 aggiorna l'endpoint GET_ALL per i progetti ([ec742b7](https://github.com/Smailen5/portfolio-website/commit/ec742b75352d3f4c60cfb37ae54d942d317330cf))
+
 ## [1.4.0](https://github.com/Smailen5/portfolio-website/compare/v1.3.2...v1.4.0) (2025-05-28)
 
 
