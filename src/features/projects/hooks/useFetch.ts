@@ -7,6 +7,7 @@ export const useFetch = () => {
 
   useEffect(() => {
     const fetchProjects = async () => {
+      setLoading(true);
       const cachedProjects = sessionStorage.getItem("projects");
 
       // Se ci sono progetti in cache e non sono vecchi, usali
@@ -26,6 +27,7 @@ export const useFetch = () => {
       // Se non ci sono progetti in cache o sono vecchi, fai la chiamata API
       try {
         console.log("Recupero progetti dall'API");
+        setLoading(true);
         const response = await projectService.getAll();
         if (response.status === 200) {
           const projects = response.data;
@@ -34,6 +36,7 @@ export const useFetch = () => {
             "projects",
             JSON.stringify({ projects, timestamp: Date.now() }),
           );
+          setLoading(false);
         }
       } catch (error) {
         console.warn("Errore nel recupero dei progetti:", error);
