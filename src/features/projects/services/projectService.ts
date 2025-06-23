@@ -17,19 +17,4 @@ export const projectService = {
     }
   },
 
-  // Ottieni un progetto per ID
-  getByID: async (id: string) => {
-    try {
-      const response = await axios.get(
-        API_ENDPOINTS.PROJECTS.GET_BY_ID.replace(":id", id),
-      );
-      return response;
-    } catch (error) {
-      if (error instanceof AxiosError)
-        throw new Error(
-          error.response?.data?.message || "Errore nel recupero del progetto",
-        );
-      throw error;
-    }
-  },
 };
