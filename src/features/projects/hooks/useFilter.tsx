@@ -11,7 +11,9 @@ export const useFilter = () => {
   const filteredProjects = projects.filter((project) =>
     selectedFilter === "Tutto"
       ? true
-      : project.technologies.includes(selectedFilter.toLowerCase()),
+      : project.technologies.some((tech) =>
+          tech.toLowerCase().includes(selectedFilter.toLowerCase()),
+        ),
   );
 
   // Numero progetti filtrati
