@@ -15,12 +15,13 @@ export const FilterSelect = ({
         onSelectionChange={onSelectionChange}
       >
         <Option>Tutto</Option>
-        <Option>CSS</Option>
         <Option>JavaScript</Option>
         <Option>TypeScript</Option>
-        <Option>Tailwind Css</Option>
+        <Option>Tailwind</Option>
         <Option>React</Option>
         <Option>Next.js</Option>
+        <Option>Form</Option>
+        <Option>Responsive</Option>
       </Selection>
     </>
   );
