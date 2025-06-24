@@ -9,6 +9,7 @@ export const useFetch = () => {
     const fetchProjects = async () => {
       setLoading(true);
       const cachedProjects = sessionStorage.getItem("projects");
+      const timeout = 500
 
       // Se ci sono progetti in cache e non sono vecchi, usali
       if (cachedProjects) {
@@ -16,7 +17,7 @@ export const useFetch = () => {
           const { timestamp } = JSON.parse(cachedProjects);
           if (Date.now() - timestamp < cachedDuration) {
             console.log("Usando progetti dalla cache");
-            setLoading(false);
+            setTimeout(()=> setLoading(false), timeout);
             return;
           }
         } catch (error) {
@@ -36,12 +37,18 @@ export const useFetch = () => {
             "projects",
             JSON.stringify({ projects, timestamp: Date.now() }),
           );
-          setLoading(false);
+          setTimeout(() => {
+            setLoading(false);
+            console.log("loading false");
+          }, timeout);
         }
       } catch (error) {
         console.warn("Errore nel recupero dei progetti:", error);
       } finally {
-        setLoading(false);
+        setTimeout(() => {
+          setLoading(false);
+          console.log("loading false");
+        }, timeout);
       }
     };
 
