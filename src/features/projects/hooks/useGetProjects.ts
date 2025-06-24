@@ -10,7 +10,6 @@ export const useGetProjects = (): Project[] => {
 
     return parsed.projects
   } catch (err) {
-    console.warn('Errore nel parsing di sessionStorage.projects: ', err)
     return []
   }
 };
