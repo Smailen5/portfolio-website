@@ -26,7 +26,9 @@ export const LastProjects = () => {
         </Header>
         {error ? (
           <ErrorMessage>{error}</ErrorMessage>
-        ) : noProjects ? <p>Nessun progetto trovato</p> : (
+        ) : noProjects ? (
+          <p>Nessun progetto trovato</p>
+        ) : (
           <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {shouldShowSkeleton
               ? arraySkeleton.map((_, index) => (
