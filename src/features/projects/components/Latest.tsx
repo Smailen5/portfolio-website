@@ -1,3 +1,4 @@
+import { ErrorMessage } from '@/components/atoms/ErrorMessage';
 import { CardProject } from "@/features/projects/components/Card";
 import { SkeletonLoaderCard } from "@/features/projects/components/Skeleton";
 import { useFetch } from "@/features/projects/hooks/useFetch";
@@ -7,7 +8,7 @@ import { Header } from "@components/atoms/Header";
 import { Section } from "@components/atoms/Section";
 
 export const LastProjects = () => {
-  const { loading } = useFetch();
+  const { loading, error } = useFetch();
   // !Modifica qui i progetti da mostrare
   const showLastProjects = 3;
   const arraySkeleton = Array.from({ length: showLastProjects });
@@ -20,7 +21,9 @@ export const LastProjects = () => {
         <Header type="h2" titleID="ultimi lavori">
           Guarda i miei ultimi lavori
         </Header>
-        <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {error ? <ErrorMessage>{error}</ErrorMessage> :
+        (
+          <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {loading
             ? arraySkeleton.map((_, index) => (
                 <SkeletonLoaderCard key={index} />
@@ -31,6 +34,9 @@ export const LastProjects = () => {
                 ))
                 .slice(0, showLastProjects)}
         </main>
+        )
+        }
+
       </Section>
     </>
   );
