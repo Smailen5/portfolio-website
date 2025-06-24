@@ -8,7 +8,5 @@ export const API_ENDPOINTS = {
     SCREENSHOTS: `${env.GITHUB_API_BASE}/repos/${env.GITHUB_USERNAME}/${env.GITHUB_REPO}/contents/screen-capture`,
     README: (projectPath: string) =>
       `${env.GITHUB_API_BASE}/repos/${env.GITHUB_USERNAME}/${env.GITHUB_REPO}/contents/${projectPath}/README.md`,
-    LANGUAGES: (projectPath: string) =>
-      `${env.GITHUB_API_BASE}/repos/${env.GITHUB_USERNAME}/${env.GITHUB_REPO}/contents/${projectPath}`,
   },
 };
