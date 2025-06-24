@@ -37,7 +37,6 @@ export const useFetch = () => {
               "projects",
               JSON.stringify({ projects, timestamp: Date.now() }),
             );
-            console.log('recupero da api')
           }
         } catch (error) {
           setError("Errore nel recupero dei progetti");
