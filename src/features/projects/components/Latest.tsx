@@ -1,4 +1,4 @@
-import { ErrorMessage } from '@/components/atoms/ErrorMessage';
+import { ErrorMessage } from "@/components/atoms/ErrorMessage";
 import { CardProject } from "@/features/projects/components/Card";
 import { SkeletonLoaderCard } from "@/features/projects/components/Skeleton";
 import { useFetch } from "@/features/projects/hooks/useFetch";
@@ -21,22 +21,21 @@ export const LastProjects = () => {
         <Header type="h2" titleID="ultimi lavori">
           Guarda i miei ultimi lavori
         </Header>
-        {error ? <ErrorMessage>{error}</ErrorMessage> :
-        (
+        {error ? (
+          <ErrorMessage>{error}</ErrorMessage>
+        ) : (
           <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {loading
-            ? arraySkeleton.map((_, index) => (
-                <SkeletonLoaderCard key={index} />
-              ))
-            : projectsArray
-                .map((project: Project, index: number) => (
-                  <CardProject key={index} {...project} />
+            {loading
+              ? arraySkeleton.map((_, index) => (
+                  <SkeletonLoaderCard key={index} />
                 ))
-                .slice(0, showLastProjects)}
-        </main>
-        )
-        }
-
+              : projectsArray
+                  .map((project: Project, index: number) => (
+                    <CardProject key={index} {...project} />
+                  ))
+                  .slice(0, showLastProjects)}
+          </main>
+        )}
       </Section>
     </>
   );
