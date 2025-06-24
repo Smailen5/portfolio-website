@@ -13,8 +13,6 @@ export const LastProjects = () => {
   // !Modifica qui i progetti da mostrare
   const showLastProjects = 3;
   const arraySkeleton = Array.from({ length: showLastProjects });
-  // se staimo caricando E non abbiamo dati, mostra skeleton
-  const shouldShowSkeleton = loading && projectsArray.length === 0;
   // se non ci sono progetti e non stiamo caricando, mostra messaggio
   const noProjects = !loading && projectsArray.length === 0;
 
@@ -30,7 +28,7 @@ export const LastProjects = () => {
           <p>Nessun progetto trovato</p>
         ) : (
           <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {shouldShowSkeleton
+            {loading
               ? arraySkeleton.map((_, index) => (
                   <SkeletonLoaderCard key={index} />
                 ))
