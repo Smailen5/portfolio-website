@@ -8,7 +8,7 @@ const Presentation = () => {
       <Header className="sr-only">Presentazione</Header>
       <p>
         Sono un <strong>frontend developer</strong> con una passione che nasce
-        dall'infanzia. Tutto è iniziato con uno{" "}
+        dall&apos;infanzia. Tutto è iniziato con uno{" "}
         <TooltipCustom
           trigger="ZX Spectrum"
           content="Un computer personale degli anni '80, famoso per i suoi giochi e programmi"
