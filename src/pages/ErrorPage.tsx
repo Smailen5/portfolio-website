@@ -1,6 +1,6 @@
 import animationData from "@/assets/animation/animation-404.json";
+import { Button } from '@/components/atoms/Button';
 import Footer from "@/components/organisms/Footer";
-import { Button } from "@components/atoms/Button";
 import NavbarSample from "@features/navigation/components/Navbar";
 import Lottie from "lottie-react";
 import { Link } from "react-router-dom";

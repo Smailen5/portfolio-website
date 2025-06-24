@@ -1,5 +1,5 @@
 import { icons } from "@/assets/icons/index";
-import { Button } from "@components/atoms/Button";
+import { Button } from "@/components/atoms/Button";
 
 type ButtonSocialType = {
   name: string;

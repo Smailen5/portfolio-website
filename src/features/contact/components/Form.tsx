@@ -1,4 +1,4 @@
-import { Button } from "@components/atoms/Button";
+import { Button } from "@/components/atoms/Button";
 import { useForm } from "@formspree/react";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { useState } from "react";
