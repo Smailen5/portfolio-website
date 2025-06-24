@@ -21,19 +21,16 @@ export const useFetch = () => {
         try {
           const { timestamp } = JSON.parse(cachedProjects);
           if (Date.now() - timestamp < cachedDuration) {
-            console.log("Usando progetti dalla cache");
             setShouldFetch(false);
           }
         } catch (error) {
           setError("Errore nel parsing della cache");
-          console.warn("Errore nel parsing della cache:", error);
         }
       }
 
       // Se non ci sono progetti in cache o sono vecchi, fai la chiamata API
       if (shouldFetch) {
         try {
-          console.log("Recupero progetti dall'API");
           setLoading(true);
           const response = await projectService.getAll();
           if (response.status === 200) {
@@ -46,7 +43,6 @@ export const useFetch = () => {
           }
         } catch (error) {
           setError("Errore nel recupero dei progetti");
-          console.warn("Errore nel recupero dei progetti:", error);
         }
       }
       setTimeout(() => setLoading(false), timeout);
