@@ -1,5 +1,5 @@
 import animationData from "@/assets/animation/animation-404.json";
-import { Button } from '@/components/atoms/Button';
+import { Button } from "@/components/atoms/Button";
 import Footer from "@/components/organisms/Footer";
 import NavbarSample from "@features/navigation/components/Navbar";
 import Lottie from "lottie-react";
