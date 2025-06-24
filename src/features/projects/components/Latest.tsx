@@ -9,11 +9,12 @@ import { Section } from "@components/atoms/Section";
 
 export const LastProjects = () => {
   const { loading, error } = useFetch();
+  const projectsArray = useGetProjects();
   // !Modifica qui i progetti da mostrare
   const showLastProjects = 3;
   const arraySkeleton = Array.from({ length: showLastProjects });
-
-  const projectsArray = useGetProjects();
+  // se staimo caricando E non abbiamo dati, mostra skeleton
+  const shouldShowSkeleton = loading && projectsArray.length === 0;
 
   return (
     <>
@@ -25,7 +26,7 @@ export const LastProjects = () => {
           <ErrorMessage>{error}</ErrorMessage>
         ) : (
           <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {loading
+            {shouldShowSkeleton
               ? arraySkeleton.map((_, index) => (
                   <SkeletonLoaderCard key={index} />
                 ))
