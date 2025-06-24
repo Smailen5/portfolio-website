@@ -18,8 +18,9 @@ export const FilterSelect = ({
         <Option>CSS</Option>
         <Option>JavaScript</Option>
         <Option>TypeScript</Option>
-        <Option>Tailwind</Option>
+        <Option>Tailwind Css</Option>
         <Option>React</Option>
+        <Option>Next.js</Option>
       </Selection>
     </>
   );
