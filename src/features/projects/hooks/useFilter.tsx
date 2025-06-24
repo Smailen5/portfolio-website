@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export const useFilter = () => {
   const [selectedFilter, setSelectedFilter] = useState("Tutto");
-  const { loading } = useFetch();
+  const { loading, error } = useFetch();
 
   // Array filtrato
   const filteredProjects = useGetProjects().filter((project) =>
@@ -22,5 +22,6 @@ export const useFilter = () => {
     setSelectedFilter,
     numberFilteredProjects,
     loading,
+    error,
   };
 };
