@@ -11,9 +11,6 @@ export const SectionProjects = () => {
     numberFilteredProjects,
   } = useFilter();
 
-  // Cambia qui quante card skeleton visualizzare
-  const arraySkeleton = Array.from({ length: 4 });
-
   return (
     <>
       <Filter
