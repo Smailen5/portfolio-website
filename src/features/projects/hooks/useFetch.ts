@@ -12,7 +12,7 @@ export const useFetch = () => {
     const fetchProjects = async () => {
       setLoading(true);
       setError(null);
-      let shouldFetch = true
+      let shouldFetch = true;
 
       const cachedProjects = sessionStorage.getItem("projects");
 
@@ -47,6 +47,7 @@ export const useFetch = () => {
     };
 
     fetchProjects();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return { loading, error };
