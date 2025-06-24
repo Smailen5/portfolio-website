@@ -5,12 +5,13 @@ import { useState } from "react";
 export const useFilter = () => {
   const [selectedFilter, setSelectedFilter] = useState("Tutto");
   const { loading, error } = useFetch();
+  const projects = useGetProjects();
 
   // Array filtrato
-  const filteredProjects = useGetProjects().filter((project) =>
+  const filteredProjects = projects.filter((project) =>
     selectedFilter === "Tutto"
       ? true
-      : project.technologies.includes(selectedFilter),
+      : project.technologies.includes(selectedFilter.toLowerCase()),
   );
 
   // Numero progetti filtrati
