@@ -1,4 +1,4 @@
-import useScroll from "@/utils/useScroll";
+import useScroll from "@/shared/hooks/useScroll";
 import Footer from "@components/organisms/Footer";
 import NavbarSample from "@features/navigation/components/Navbar";
 

@@ -1,5 +1,5 @@
-import { getInitials } from "@/utils/getInitials";
-import useChangeAvatar from "@/utils/useChangeAvatar";
+import { getInitials } from "@/shared/utils/getInitials";
+import useChangeAvatar from "@/shared/hooks/useChangeAvatar";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 

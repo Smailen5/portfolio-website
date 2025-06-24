@@ -1,4 +1,4 @@
-import { nameCorrect } from "@/utils/nameCorrect";
+import { nameCorrect } from "@/shared/utils/nameCorrect";
 import { Header } from "@components/atoms/Header";
 import { Section } from "@components/atoms/Section";
 

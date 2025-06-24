@@ -1,4 +1,4 @@
-import { nameCorrect } from "@/utils/nameCorrect";
+import { nameCorrect } from "@/shared/utils/nameCorrect";
 import { LinkBlank } from "@components/atoms/LinkBlank";
 
 type PictureProject = {
