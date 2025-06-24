@@ -3,7 +3,6 @@ import { projectService } from "../services/projectService";
 
 export const useFetch = () => {
   const [loading, setLoading] = useState<boolean>(true);
-  const [shouldFetch, setShouldFetch] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const cachedDuration = 1000 * 60 * 60; // 1 ora
   const timeout = 500;
@@ -11,8 +10,8 @@ export const useFetch = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       setLoading(true);
-      setShouldFetch(true);
       setError(null);
+      let shouldFetch = true
 
       const cachedProjects = sessionStorage.getItem("projects");
 
@@ -20,7 +19,7 @@ export const useFetch = () => {
       if (cachedProjects) {
         try {
           const { timestamp } = JSON.parse(cachedProjects);
-          if (Date.now() - timestamp < cachedDuration) setShouldFetch(false);
+          if (Date.now() - timestamp < cachedDuration) shouldFetch = false;
         } catch (error) {
           setError("Errore nel parsing della cache");
         }
@@ -38,6 +37,7 @@ export const useFetch = () => {
               "projects",
               JSON.stringify({ projects, timestamp: Date.now() }),
             );
+            console.log('recupero da api')
           }
         } catch (error) {
           setError("Errore nel recupero dei progetti");
