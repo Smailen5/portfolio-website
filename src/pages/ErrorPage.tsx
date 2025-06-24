@@ -1,15 +1,15 @@
-import { Button } from "@nextui-org/react";
+import animationData from "@/assets/animation/animation-404.json";
+import Footer from "@/components/organisms/Footer";
+import { Button } from "@components/atoms/Button";
+import NavbarSample from "@features/navigation/components/Navbar";
 import Lottie from "lottie-react";
 import { Link } from "react-router-dom";
-import animationData from "../assets/animation/animation-404.json";
-import Footer from "../Components/organisms/Footer";
-import NavbarSample from "../Components/organisms/Navbar";
 
 const ErrorPage = () => {
   return (
     <>
       <NavbarSample />
-      <div className="min-h-screen bg-background text-foreground pt-16 md:flex md:justify-center">
+      <div className="min-h-screen bg-background pt-16 text-foreground md:flex md:justify-center">
         <div className="mt-20 px-6">
           <div className="space-y-4 rounded-md bg-background p-4 text-center shadow-md">
             <div className="text-3xl font-semibold">

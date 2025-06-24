@@ -1,6 +1,6 @@
-import { HomeTemplate } from "@/Components/template/HomeTemplate";
-import { Layout } from "../Components/organisms/Layout";
-import useScroll from "../utils/useScroll";
+import { Layout } from "@components/molecules/Layout";
+import { HomeTemplate } from "@/components/templates/HomeTemplate";
+import useScroll from "@/utils/useScroll";
 
 const HomePage = () => {
   useScroll();

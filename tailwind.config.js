@@ -1,4 +1,3 @@
-import { nextui } from "@nextui-org/react";
 import tailwindcssAnimate from "tailwindcss-animate";
 
 /** @type {import('tailwindcss').Config} */
@@ -51,10 +50,10 @@ export default {
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))"
+        ring: "hsl(var(--ring))",
       },
     },
   },
   darkMode: ["class"],
-  plugins: [nextui(), tailwindcssAnimate],
+  plugins: [tailwindcssAnimate],
 };

@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { avatarImages } from "../data/images";
+import { avatarImages } from "@/data/images";
+import { useEffect, useState } from "react";
 
 const useChangeAvatar = () => {
   // gestisce le immagini

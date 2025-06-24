@@ -2,6 +2,86 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/Smailen5/portfolio-website/compare/v2.0.0...v2.1.0) (2025-06-24)
+
+
+### Features
+
+* ✨ aggiorna le opzioni del filtro nella componente FilterSelect ([6710362](https://github.com/Smailen5/portfolio-website/commit/6710362473df78eca900cbdc9a689d197dd73d6f))
+* ✨ aggiorna le opzioni del filtro nella componente FilterSelect ([9867dbb](https://github.com/Smailen5/portfolio-website/commit/9867dbb72d06e6321ded0ef8d674bc0e3362a4f5))
+* ✨ aggiunge gestione degli errori nel hook useFetch ([15cd805](https://github.com/Smailen5/portfolio-website/commit/15cd8059d0cd9aea11f9e1a8002f5235b69f7dcb))
+* ✨ aggiunge gestione degli errori nel hook useFilter ([d23e7df](https://github.com/Smailen5/portfolio-website/commit/d23e7df09dc7f67d7f4fcae9cd2f66553036aff8))
+* ✨ aggiunge gestione degli errori nella componente LastProjects ([880a54e](https://github.com/Smailen5/portfolio-website/commit/880a54e0af0e31a8def5e3bc2640863918941e91))
+* ✨ aggiunge visualizzazione degli errori nella sezione progetti ([5f5137c](https://github.com/Smailen5/portfolio-website/commit/5f5137c8eeab0321d2844a929ef347fea8a25553))
+* 🎉 aggiunge il file DEV-SCRIPT.md per il deploy e il test in locale ([d47f008](https://github.com/Smailen5/portfolio-website/commit/d47f00884e7b14f1feb842f4945f58367293f542))
+
+
+### Bug Fixes
+
+* 🐛 semplifica la logica di controllo della variabile shouldFetch nel hook useFetch ([d8fa16b](https://github.com/Smailen5/portfolio-website/commit/d8fa16b0f84fbe66a03014aaa32700526d1234d9))
+* 🔧 gestisce il caricamento durante il recupero dei progetti ([600b106](https://github.com/Smailen5/portfolio-website/commit/600b10653f620ddc586a803551e31e3145410950))
+* 🔧 migliora la gestione del caricamento durante il recupero dei progetti ([32f2fd8](https://github.com/Smailen5/portfolio-website/commit/32f2fd8aff7374757c3c63f6a43d37d41ebfe255))
+* 🔧 migliora la visualizzazione dei progetti nella sezione ([c208265](https://github.com/Smailen5/portfolio-website/commit/c2082658f65095913ed84720708b19d5ad45e744))
+
+## [2.0.0](https://github.com/Smailen5/portfolio-website/compare/v1.4.0...v2.0.0) (2025-06-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* 🎉 aggiunge la funzione Netlify per recuperare i progetti
+
+### Features
+
+* 🎉 aggiunge il file package.json per la funzione Netlify "hello-world" ([e2bf07c](https://github.com/Smailen5/portfolio-website/commit/e2bf07c16b0044e13b0df852ad096fbf97fc7830))
+* 🎉 aggiunge il file test-db.js per la gestione dei progetti con MongoDB ([306fba7](https://github.com/Smailen5/portfolio-website/commit/306fba7245ddf1b9f7180ecb826a975933c8f61a))
+* 🎉 aggiunge la funzione Netlify per recuperare i progetti ([0e9f347](https://github.com/Smailen5/portfolio-website/commit/0e9f3479d8c141f6e13501b42fdc1f92b9cd3779))
+* 📦 aggiunge il file package-lock.json per la funzione Netlify "hello-world" ([bfa229c](https://github.com/Smailen5/portfolio-website/commit/bfa229c09e579c980b54a2d7de88df7b97e0c271))
+
+
+### Bug Fixes
+
+* 🔧 aggiorna l'endpoint GET_ALL per i progetti ([ec742b7](https://github.com/Smailen5/portfolio-website/commit/ec742b75352d3f4c60cfb37ae54d942d317330cf))
+
+## [1.4.0](https://github.com/Smailen5/portfolio-website/compare/v1.3.2...v1.4.0) (2025-05-28)
+
+
+### Features
+
+* 🎉 aggiorna il tipo Project per includere il campo readme ([17c0174](https://github.com/Smailen5/portfolio-website/commit/17c0174337a9674d8d2b9a84a27b4b4d0a9a6b8e))
+* 🎉 aggiungi costanti API per la gestione degli endpoint ([53968f2](https://github.com/Smailen5/portfolio-website/commit/53968f2859356c84d8f1b42960c2b1e62ebd8936))
+* 🎉 aggiungi gestione dei progetti nel contesto globale ([7f082fa](https://github.com/Smailen5/portfolio-website/commit/7f082facfc215ad598b910c8b44fac40ac42d0f7))
+* 🎉 aggiungi hook useFetch per il recupero dei progetti ([aea4556](https://github.com/Smailen5/portfolio-website/commit/aea45569d533ed2ec6834522bbb711c3d990301f))
+* 🎉 aggiungi il servizio per la gestione dei progetti ([8afe14e](https://github.com/Smailen5/portfolio-website/commit/8afe14e95cc76368707396e9dc5450d15c358308))
+* 🎉 aggiungi interfaccia Project per la gestione dei progetti ([12d1ed3](https://github.com/Smailen5/portfolio-website/commit/12d1ed3481620fad72a069ac93e8536dcc01048f))
+* 🎉 aggiungi l'hook useGetProjects per il recupero dei progetti dalla cache ([f661ec7](https://github.com/Smailen5/portfolio-website/commit/f661ec75c96f7277d9017b46090729220e40a7e4))
+* 🎉 integra l'hook useGetProjects nel componente LastProjects ([56610dd](https://github.com/Smailen5/portfolio-website/commit/56610ddcebd04bd6121bf6424aa2f959788ad421))
+* 🎉 integra la logica di recupero dei progetti nel componente SingleProject ([e1e3c47](https://github.com/Smailen5/portfolio-website/commit/e1e3c47aa773760dbb3a83b9749fcee6951b5dd1))
+* 🎉 migliora l'hook useFetch per il recupero dei progetti ([48e0df5](https://github.com/Smailen5/portfolio-website/commit/48e0df5341a242cbf82d080e613cf88f9f079e65))
+* 🎉 migliora la gestione della cache nell'hook useFetch ([0cf382d](https://github.com/Smailen5/portfolio-website/commit/0cf382dd1c5504bc2a1f770c5482f02aadd2da28))
+
+
+### Bug Fixes
+
+* 🐛 correggi l'importazione dell'hook useFetch nel componente Latest ([4d34cdb](https://github.com/Smailen5/portfolio-website/commit/4d34cdbb3b4f4c8b206f94b24eb065deb0546276))
+
+### [1.3.2](https://github.com/Smailen5/portfolio-website/compare/v1.3.1...v1.3.2) (2025-05-27)
+
+
+### Bug Fixes
+
+* 🩹 aggiorna l'importazione dei componenti Footer e Navbar ([126c7a9](https://github.com/Smailen5/portfolio-website/commit/126c7a9929bcdc12ee9d076ec2321fc70f12f9c1))
+* 🩹 aggiorna l'importazione dei componenti HomeTemplate e Layout ([f25f82e](https://github.com/Smailen5/portfolio-website/commit/f25f82e40746fd2c368169a74c35142da707c8d3))
+* 🩹 aggiorna l'importazione dei componenti Layout e ProjectTemplate ([2e42162](https://github.com/Smailen5/portfolio-website/commit/2e421628b493f7d0fa528fdf321fdd306ed06793))
+* 🩹 aggiorna l'importazione del componente Button nel CurriculumDownload ([4a60596](https://github.com/Smailen5/portfolio-website/commit/4a6059633df9c2eb499013bb22f6153e3a85ee1f))
+* 🩹 aggiorna l'importazione del componente Button nel ModeToggle ([228d44c](https://github.com/Smailen5/portfolio-website/commit/228d44ccdde1bd2aac46f08a56dd11d4ee5cf797))
+* 🩹 aggiorna l'importazione del componente Button nel SidebarMenu ([9f9e654](https://github.com/Smailen5/portfolio-website/commit/9f9e654088a7d5d20488872d272d711237e690a0))
+* 🩹 aggiorna l'importazione del componente ContactTemplate ([5b656ab](https://github.com/Smailen5/portfolio-website/commit/5b656ab8ffe1afcbdcc8b4b1ef9ea8ff7cbc0cd4))
+* 🩹 aggiorna l'importazione del componente Hero ([d3c204c](https://github.com/Smailen5/portfolio-website/commit/d3c204c8a53c1b3abcb925338b9c59630c33a832))
+* 🩹 aggiorna l'importazione del componente SingleProject ([076bb15](https://github.com/Smailen5/portfolio-website/commit/076bb15e8a035a6ab894623ee15de61e0d32bb11))
+* 🩹 aggiorna le importazioni dei componenti per riflettere la nuova struttura ([eba3eb0](https://github.com/Smailen5/portfolio-website/commit/eba3eb0c804ea8a4604eff81df539d2d093656f2))
+* 🩹 corregge l'importazione del componente Button nel ButtonAction ([ba067a6](https://github.com/Smailen5/portfolio-website/commit/ba067a6e38d7813b2d62f9d756938ff5a57c8938))
+* aggiunge la classe "object-contain" all'immagine nel componente MarkdownRenderer per migliorare la visualizzazione ([1c73bea](https://github.com/Smailen5/portfolio-website/commit/1c73bea8afcad7bfd98085ed7535f4d15dad0b78))
+
 ### [1.3.1](https://github.com/Smailen5/portfolio-website/compare/v1.3.0...v1.3.1) (2025-05-12)
 
 

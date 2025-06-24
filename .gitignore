@@ -28,3 +28,6 @@ dist-ssr
 *.sw?
 .eslintrc.cjs
 .env
+
+# Local Netlify folder
+.netlify
