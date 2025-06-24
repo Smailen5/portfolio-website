@@ -39,7 +39,6 @@ export const useFetch = () => {
           );
           setTimeout(() => {
             setLoading(false);
-            console.log("loading false");
           }, timeout);
         }
       } catch (error) {
@@ -47,7 +46,6 @@ export const useFetch = () => {
       } finally {
         setTimeout(() => {
           setLoading(false);
-          console.log("loading false");
         }, timeout);
       }
     };
