@@ -5,11 +5,11 @@ export const HeaderProject = () => {
     <>
       <header className="space-y-4 text-left">
         <p>
-          Questi progetti sono stati sviluppati nell'ambito delle sfide di
+          Questi progetti sono stati sviluppati nell&apos;ambito delle sfide di
           Frontend Mentor e sono stati fondamentali per affinare le competenze
           acquisite durante i miei studi. Sono stati tratti come veri e propri
           progetti reali, completamente funzionanti e con particolare attenzione
-          all'accessibilità e al design.
+          all&apos;accessibilità e al design.
         </p>
         <p>
           Alcuni dei progetti più vecchi, realizzati durante il primo anno,
