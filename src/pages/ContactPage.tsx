@@ -1,4 +1,4 @@
-import { Layout } from "@components/molecules/Layout";
+import { Layout } from "@/components/molecules/Layout";
 import { ContactTemplate } from "@/components/templates/ContactTemplate";
 
 const ContactPage = () => {
