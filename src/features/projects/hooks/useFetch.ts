@@ -3,6 +3,7 @@ import { projectService } from "../services/projectService";
 
 export const useFetch = () => {
   const [loading, setLoading] = useState<boolean>(true);
+  const [shouldFetch, setShouldFetch] = useState<boolean>(true)
   const cachedDuration = 1000 * 60 * 60; // 1 ora
 
   useEffect(() => {
@@ -17,8 +18,9 @@ export const useFetch = () => {
           const { timestamp } = JSON.parse(cachedProjects);
           if (Date.now() - timestamp < cachedDuration) {
             console.log("Usando progetti dalla cache");
-            setTimeout(() => setLoading(false), timeout);
-            return;
+            // setTimeout(() => setLoading(false), timeout);
+            // return;
+            setShouldFetch(false)
           }
         } catch (error) {
           console.warn("Errore nel parsing della cache:", error);
@@ -26,23 +28,26 @@ export const useFetch = () => {
       }
 
       // Se non ci sono progetti in cache o sono vecchi, fai la chiamata API
-      try {
-        console.log("Recupero progetti dall'API");
-        setLoading(true);
-        const response = await projectService.getAll();
-        if (response.status === 200) {
-          const projects = response.data;
-          // Salva in cache con timestamp
-          sessionStorage.setItem(
-            "projects",
-            JSON.stringify({ projects, timestamp: Date.now() }),
-          );
+      if (shouldFetch) {
+        try {
+          console.log("Recupero progetti dall'API");
+          setLoading(true);
+          const response = await projectService.getAll();
+          if (response.status === 200) {
+            const projects = response.data;
+            // Salva in cache con timestamp
+            sessionStorage.setItem(
+              "projects",
+              JSON.stringify({ projects, timestamp: Date.now() }),
+            );
+          }
+        } catch (error) {
+          console.warn("Errore nel recupero dei progetti:", error);
         }
-      } catch (error) {
-        console.warn("Errore nel recupero dei progetti:", error);
-      } finally {
-        setTimeout(() => setLoading(false), timeout);
       }
+      setTimeout(() => {
+        setLoading(false);
+      }, timeout);
     };
 
     fetchProjects();
