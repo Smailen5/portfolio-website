@@ -20,9 +20,7 @@ export const useFetch = () => {
       if (cachedProjects) {
         try {
           const { timestamp } = JSON.parse(cachedProjects);
-          if (Date.now() - timestamp < cachedDuration) {
-            setShouldFetch(false);
-          }
+          if (Date.now() - timestamp < cachedDuration) setShouldFetch(false);
         } catch (error) {
           setError("Errore nel parsing della cache");
         }
