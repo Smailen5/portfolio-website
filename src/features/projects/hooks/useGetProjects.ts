@@ -1,10 +1,16 @@
 import { Project } from "../utils/types";
 
 export const useGetProjects = (): Project[] => {
-  const cachedData = sessionStorage.getItem("projects");
-  if (cachedData) {
-    const { projects } = JSON.parse(cachedData);
-    return projects;
+  try {
+    const cachedData = sessionStorage.getItem('projects')
+    if(!cachedData) return []
+
+    const parsed = JSON.parse(cachedData)
+    if(!Array.isArray(parsed.projects)) return []
+
+    return parsed.projects
+  } catch (err) {
+    console.warn('Errore nel parsing di sessionStorage.projects: ', err)
+    return []
   }
-  return [];
 };
