@@ -4,7 +4,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 export const SkeletonLoaderCard = () => {
   return (
     <article
-      className="space-y-4 rounded-md bg-gray-50 p-4"
+      className="space-y-4 rounded-md bg-card p-4"
       aria-label="Caricamento contenuto"
     >
       {/* immagine */}
