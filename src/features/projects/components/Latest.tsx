@@ -15,6 +15,8 @@ export const LastProjects = () => {
   const arraySkeleton = Array.from({ length: showLastProjects });
   // se staimo caricando E non abbiamo dati, mostra skeleton
   const shouldShowSkeleton = loading && projectsArray.length === 0;
+  // se non ci sono progetti e non stiamo caricando, mostra messaggio
+  const noProjects = !loading && projectsArray.length === 0;
 
   return (
     <>
@@ -24,7 +26,7 @@ export const LastProjects = () => {
         </Header>
         {error ? (
           <ErrorMessage>{error}</ErrorMessage>
-        ) : (
+        ) : noProjects ? <p>Nessun progetto trovato</p> : (
           <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {shouldShowSkeleton
               ? arraySkeleton.map((_, index) => (
