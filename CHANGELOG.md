@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/Smailen5/portfolio-website/compare/v2.0.0...v2.1.0) (2025-06-24)
+
+
+### Features
+
+* ✨ aggiorna le opzioni del filtro nella componente FilterSelect ([6710362](https://github.com/Smailen5/portfolio-website/commit/6710362473df78eca900cbdc9a689d197dd73d6f))
+* ✨ aggiorna le opzioni del filtro nella componente FilterSelect ([9867dbb](https://github.com/Smailen5/portfolio-website/commit/9867dbb72d06e6321ded0ef8d674bc0e3362a4f5))
+* ✨ aggiunge gestione degli errori nel hook useFetch ([15cd805](https://github.com/Smailen5/portfolio-website/commit/15cd8059d0cd9aea11f9e1a8002f5235b69f7dcb))
+* ✨ aggiunge gestione degli errori nel hook useFilter ([d23e7df](https://github.com/Smailen5/portfolio-website/commit/d23e7df09dc7f67d7f4fcae9cd2f66553036aff8))
+* ✨ aggiunge gestione degli errori nella componente LastProjects ([880a54e](https://github.com/Smailen5/portfolio-website/commit/880a54e0af0e31a8def5e3bc2640863918941e91))
+* ✨ aggiunge visualizzazione degli errori nella sezione progetti ([5f5137c](https://github.com/Smailen5/portfolio-website/commit/5f5137c8eeab0321d2844a929ef347fea8a25553))
+* 🎉 aggiunge il file DEV-SCRIPT.md per il deploy e il test in locale ([d47f008](https://github.com/Smailen5/portfolio-website/commit/d47f00884e7b14f1feb842f4945f58367293f542))
+
+
+### Bug Fixes
+
+* 🐛 semplifica la logica di controllo della variabile shouldFetch nel hook useFetch ([d8fa16b](https://github.com/Smailen5/portfolio-website/commit/d8fa16b0f84fbe66a03014aaa32700526d1234d9))
+* 🔧 gestisce il caricamento durante il recupero dei progetti ([600b106](https://github.com/Smailen5/portfolio-website/commit/600b10653f620ddc586a803551e31e3145410950))
+* 🔧 migliora la gestione del caricamento durante il recupero dei progetti ([32f2fd8](https://github.com/Smailen5/portfolio-website/commit/32f2fd8aff7374757c3c63f6a43d37d41ebfe255))
+* 🔧 migliora la visualizzazione dei progetti nella sezione ([c208265](https://github.com/Smailen5/portfolio-website/commit/c2082658f65095913ed84720708b19d5ad45e744))
+
 ## [2.0.0](https://github.com/Smailen5/portfolio-website/compare/v1.4.0...v2.0.0) (2025-06-23)
 
 
