@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 // Definisce il tipo di contesto
 interface AppContextType {
@@ -7,6 +7,8 @@ interface AppContextType {
 
 // Crea il contesto e fornisce un valore predefinito
 const AppContext = createContext<AppContextType | undefined>(undefined);
+
+export { AppContext };
 
 // Controlla larghezza schermo e ne ritorna il valore
 const useWindowWidth = () => {
@@ -32,12 +34,4 @@ const AppProvider: React.FC<AppProviderType> = ({ children }) => {
   );
 };
 
-const useGlobalContext = () => {
-  const context = useContext(AppContext);
-  if (!context) {
-    throw new Error("useGlobalCOntext non puo essere usato senza AppProvider");
-  }
-  return context;
-};
-
-export { AppProvider, useGlobalContext };
+export { AppProvider };
