@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.1](https://github.com/Smailen5/portfolio-website/compare/v2.2.0...v2.2.1) (2025-06-24)
+
+
+### Bug Fixes
+
+* 🐛 aggiorna i percorsi di importazione per il componente Button ([ccb0f46](https://github.com/Smailen5/portfolio-website/commit/ccb0f46d87b015e119f120c7ccc5207b6051d73c))
+* 🐛 aggiorna l'URL base per l'API in base all'ambiente ([93388b2](https://github.com/Smailen5/portfolio-website/commit/93388b238a7990476e366fde4340affce7eb1b8d))
+* 🐛 uniforma i percorsi di importazione nel componente ErrorPage ([9e04048](https://github.com/Smailen5/portfolio-website/commit/9e040482518dc805c5229dd8d180cae6c7a17190))
+* rename button.tsx to Button.tsx for case-sensitive deploy ([5f66d77](https://github.com/Smailen5/portfolio-website/commit/5f66d77c2f7acac3070a3b1d9a4f2385efba7269))
+
 ## [2.2.0](https://github.com/Smailen5/portfolio-website/compare/v2.1.0...v2.2.0) (2025-06-24)
 
 
