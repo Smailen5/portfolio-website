@@ -9,6 +9,7 @@ export const useGetProjects = (): Project[] => {
     if(!Array.isArray(parsed.projects)) return []
 
     return parsed.projects
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (err) {
     return []
   }
