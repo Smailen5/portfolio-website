@@ -23,9 +23,9 @@ export const SectionProjects = () => {
       {numberFilteredProjects === 0 ? (
         <p>Nessun progetto trovato.</p>
       ) : (
-        <section className="grid gap-4 md:grid-cols-2">
+        <section className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">
           {loading
-            ? arraySkeleton.map((_, index) => (
+            ? filteredProjects.map((_, index) => (
                 <SkeletonLoaderCard key={index} />
               ))
             : filteredProjects.map((project, index) => {
