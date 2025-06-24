@@ -1,5 +1,5 @@
 import { Button } from "@/components/atoms/Button";
-import { useTheme } from "@/utils/themeProvider";
+import { useTheme } from "@/shared/hooks/useTheme";
 import { Moon, Sun } from "lucide-react";
 
 export function ModeToggle() {
