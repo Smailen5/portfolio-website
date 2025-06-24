@@ -18,7 +18,7 @@ export const Hero = () => {
               <Tooltip>
                 <TooltipTrigger>Smailen</TooltipTrigger>
                 <TooltipContent>
-                  <p>Si, il mio nome significa 'sorridi sempre'! 😊</p>
+                  <p>Si, il mio nome significa &apos;sorridi sempre&apos;! 😊</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>{" "}
