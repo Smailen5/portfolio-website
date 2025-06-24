@@ -19,15 +19,35 @@ export default [
         },
       },
       globals: {
+        // Browser globals
         window: "readonly",
         document: "readonly",
         console: "readonly",
+        localStorage: "readonly",
+        sessionStorage: "readonly",
+
+        // Node.js globals
         process: "readonly",
+        __dirname: "readonly",
+        __filename: "readonly",
+        global: "readonly",
+        Buffer: "readonly",
+
+        // Timer globals
         setTimeout: "readonly",
         setInterval: "readonly",
+        clearTimeout: "readonly",
         clearInterval: "readonly",
-        sessionStorage: "readonly",
-        __dirname: "readonly",
+
+        // React globals (con JSX Transform)
+        React: "readonly",
+
+        // DOM types
+        HTMLDivElement: "readonly",
+        HTMLButtonElement: "readonly",
+        MouseEvent: "readonly",
+        Node: "readonly",
+        Response: "readonly",
       },
     },
     plugins: {
@@ -45,8 +65,11 @@ export default [
       ],
       "react/jsx-no-target-blank": "off",
       "react/no-unescaped-entities": "warn",
+      "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off",
       "no-unused-vars": "off",
       "@typescript-eslint/no-unused-vars": "warn",
+      "no-redeclare": "off",
     },
     settings: {
       react: {
@@ -55,6 +78,6 @@ export default [
     },
   },
   {
-    ignores: ["dist", "eslint.config.js", "test-db.js"],
+    ignores: ["dist", "eslint.config.js", "test-db.js", ".netlify/**/*"],
   },
 ];
