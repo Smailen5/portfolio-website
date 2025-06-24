@@ -4,6 +4,7 @@ import { projectService } from "../services/projectService";
 export const useFetch = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [shouldFetch, setShouldFetch] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null)
   const cachedDuration = 1000 * 60 * 60; // 1 ora
   const timeout = 500;
 
@@ -11,7 +12,8 @@ export const useFetch = () => {
     const fetchProjects = async () => {
       setLoading(true);
       setShouldFetch(true);
-      
+      setError(null)
+
       const cachedProjects = sessionStorage.getItem("projects");
 
       // Se ci sono progetti in cache e non sono vecchi, usali
@@ -23,6 +25,7 @@ export const useFetch = () => {
             setShouldFetch(false);
           }
         } catch (error) {
+          setError('Errore nel parsing della cache')
           console.warn("Errore nel parsing della cache:", error);
         }
       }
@@ -42,6 +45,7 @@ export const useFetch = () => {
             );
           }
         } catch (error) {
+          setError('Errore nel recupero dei progetti')
           console.warn("Errore nel recupero dei progetti:", error);
         }
       }
@@ -51,5 +55,5 @@ export const useFetch = () => {
     fetchProjects();
   }, []);
 
-  return { loading };
+  return { loading, error };
 };
