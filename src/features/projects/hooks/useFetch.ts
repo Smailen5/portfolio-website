@@ -5,12 +5,14 @@ export const useFetch = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [shouldFetch, setShouldFetch] = useState<boolean>(true);
   const cachedDuration = 1000 * 60 * 60; // 1 ora
+  const timeout = 500;
 
   useEffect(() => {
     const fetchProjects = async () => {
       setLoading(true);
+      setShouldFetch(true);
+      
       const cachedProjects = sessionStorage.getItem("projects");
-      const timeout = 500;
 
       // Se ci sono progetti in cache e non sono vecchi, usali
       if (cachedProjects) {
@@ -18,8 +20,6 @@ export const useFetch = () => {
           const { timestamp } = JSON.parse(cachedProjects);
           if (Date.now() - timestamp < cachedDuration) {
             console.log("Usando progetti dalla cache");
-            // setTimeout(() => setLoading(false), timeout);
-            // return;
             setShouldFetch(false);
           }
         } catch (error) {
