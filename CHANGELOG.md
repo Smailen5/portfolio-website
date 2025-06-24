@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/Smailen5/portfolio-website/compare/v2.1.0...v2.2.0) (2025-06-24)
+
+
+### Features
+
+* ✨ aggiunge il custom hook useGlobalContext ([238f7a6](https://github.com/Smailen5/portfolio-website/commit/238f7a61eeb77d68a48c6b4f6e95319cc6ad8d4c))
+* ✨ aggiunge il custom hook useTheme ([5275e83](https://github.com/Smailen5/portfolio-website/commit/5275e83ecdb23fbb2bf33a6cb9f864c4dd4a42fe))
+
+
+### Bug Fixes
+
+* 🐛 aggiorna i percorsi di importazione per i custom hooks e le utility ([6999af9](https://github.com/Smailen5/portfolio-website/commit/6999af91458b36044fadde13ed7e3df0a192017d))
+* 🐛 aggiorna l'importazione del hook useTheme ([6e66da2](https://github.com/Smailen5/portfolio-website/commit/6e66da2d8d299359c3bd4726b18b3a36d14ad01b))
+* 🐛 aggiunge commento per disabilitare l'errore ESLint nel custom hook useGetProjects ([f79e3cc](https://github.com/Smailen5/portfolio-website/commit/f79e3cc88b613b2195248171796fc5b303e8068b))
+* 🐛 aggiunge punto e virgola mancante nel custom hook useFetch ([f56f032](https://github.com/Smailen5/portfolio-website/commit/f56f03275f36006be966ca53c2208db10370ebdb))
+* 🐛 corregge il percorso di importazione del ThemeProvider ([1e4bb89](https://github.com/Smailen5/portfolio-website/commit/1e4bb895af9cfa6b2463a0daa0742b8fcd3fb07c))
+* 🐛 corregge il percorso di importazione del ThemeProvider in main.tsx ([9b837e1](https://github.com/Smailen5/portfolio-website/commit/9b837e164939b458604c50a6379a762236f54eae))
+* 🐛 corregge il percorso di importazione del ThemeProvider nel hook useTheme ([e41e18d](https://github.com/Smailen5/portfolio-website/commit/e41e18d664cb4033ee3b5c84ab59c4141fa59ef7))
+* 🐛 corregge l'uso delle entità HTML nel componente Header ([9e398ae](https://github.com/Smailen5/portfolio-website/commit/9e398aeb335c70347b7fb116cb893a9e735aa89c))
+* 🐛 corregge l'uso delle entità HTML nel componente Hero ([369d7de](https://github.com/Smailen5/portfolio-website/commit/369d7de966d94608b712ec5dda8cf56f3cbefccf))
+* 🐛 corregge l'uso delle entità HTML nel componente Presentation ([cb0b69b](https://github.com/Smailen5/portfolio-website/commit/cb0b69bb07eb0c5e8ec1eed1781562f7bfa5a803))
+* 🐛 disabilita l'errore ESLint per variabili non utilizzate nel custom hook useFetch ([fc83630](https://github.com/Smailen5/portfolio-website/commit/fc836300fbc9276a65e0b3fbe77095a08488838b))
+* 🐛 rinomina Components in components per consistenza ([0d31e23](https://github.com/Smailen5/portfolio-website/commit/0d31e2340a7bb566176f1cde171d01809fab3f18))
+* 🔧 aggiorna il percorso di importazione del componente Layout ([22bd03d](https://github.com/Smailen5/portfolio-website/commit/22bd03d6c4b51c59b0da24608e4b2f540f7e51e4))
+
 ## [2.1.0](https://github.com/Smailen5/portfolio-website/compare/v2.0.0...v2.1.0) (2025-06-24)
 
 
