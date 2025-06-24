@@ -3,7 +3,7 @@ import { projectService } from "../services/projectService";
 
 export const useFetch = () => {
   const [loading, setLoading] = useState<boolean>(true);
-  const [shouldFetch, setShouldFetch] = useState<boolean>(true)
+  const [shouldFetch, setShouldFetch] = useState<boolean>(true);
   const cachedDuration = 1000 * 60 * 60; // 1 ora
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export const useFetch = () => {
             console.log("Usando progetti dalla cache");
             // setTimeout(() => setLoading(false), timeout);
             // return;
-            setShouldFetch(false)
+            setShouldFetch(false);
           }
         } catch (error) {
           console.warn("Errore nel parsing della cache:", error);
@@ -45,9 +45,7 @@ export const useFetch = () => {
           console.warn("Errore nel recupero dei progetti:", error);
         }
       }
-      setTimeout(() => {
-        setLoading(false);
-      }, timeout);
+      setTimeout(() => setLoading(false), timeout);
     };
 
     fetchProjects();
