@@ -37,9 +37,7 @@ export const useFetch = () => {
             "projects",
             JSON.stringify({ projects, timestamp: Date.now() }),
           );
-          setTimeout(() => {
-            setLoading(false);
-          }, timeout);
+          setTimeout(() => setLoading(false), timeout);
         }
       } catch (error) {
         console.warn("Errore nel recupero dei progetti:", error);
