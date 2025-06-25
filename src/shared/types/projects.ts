@@ -5,5 +5,5 @@ export type Project = {
   createdAt: string;
   imageUrl: string | null;
   readmeUrl: string | null;
-  _v: string;
+  version: string;
 };
