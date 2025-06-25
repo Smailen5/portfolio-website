@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/Smailen5/portfolio-website/compare/v2.2.1...v3.0.0) (2025-06-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* Il metodo getAll ora usa un nuovo endpoint JSON; la vecchia API non è più supportata.
+- aggiornato il metodo `getAll` per ottenere i progetti da un nuovo endpoint JSON, migliorando la gestione dei dati.
+- rimosse le logiche di recupero del `package.json` e degli screenshot, semplificando il flusso di dati e migliorando la leggibilità del codice.
+
+### Features
+
+* ✨ aggiunge configurazione per le funzioni Netlify ([d8d8786](https://github.com/Smailen5/portfolio-website/commit/d8d87866a69dea2d3100e2b77c72e815c0462624))
+* ✨ aggiunge supporto CORS e migliora la gestione degli errori nella funzione get-projects ([470ccd9](https://github.com/Smailen5/portfolio-website/commit/470ccd98344d7c5c5c1f606e6439d43bf3e10886))
+* 🎉 aggiorna gli endpoint API per utilizzare le variabili ambientali ([e40dfcc](https://github.com/Smailen5/portfolio-website/commit/e40dfccb0b434a5db58eae941c60b0b0f73eda48))
+* 🎉 aggiorna i tipi Project e PackageJson per una maggiore flessibilità ([8d8cbdf](https://github.com/Smailen5/portfolio-website/commit/8d8cbdf370588f1c984206329ca94c221f3eed78))
+* 🎉 aggiungi il file di configurazione ambientale per l'applicazione ([f70a211](https://github.com/Smailen5/portfolio-website/commit/f70a2119accf59d1d037dea84fe1d93f86c4c18d))
+* 🎉 aggiungi nuovi endpoint API per l'integrazione con GitHub ([538b1b3](https://github.com/Smailen5/portfolio-website/commit/538b1b3134f5f001baf98962d155a174876a8cba))
+* 🎉 implementa il recupero dei progetti dalla monorepo con dettagli aggiuntivi ([5d213b7](https://github.com/Smailen5/portfolio-website/commit/5d213b7aa3e5dd43cce1b863b6bf1e0e293fcea5))
+
+
+### Bug Fixes
+
+* 🐛 aggiorna l'URL base dell'API per l'ambiente di produzione ([85ded7d](https://github.com/Smailen5/portfolio-website/commit/85ded7da4cf9ae8976a8b72128c6f7357886cda1))
+* 🐛 aggiorna la logica per l'URL base dell'API ([eab7f4e](https://github.com/Smailen5/portfolio-website/commit/eab7f4e34bea0c1a66af13553ced00a23ce476c8))
+
+
+* 👽 semplifica il metodo getAll per il recupero dei progetti ([8eb4a4a](https://github.com/Smailen5/portfolio-website/commit/8eb4a4af13e53e86b6db298e9a215d9171666a41))
+
 ### [2.2.1](https://github.com/Smailen5/portfolio-website/compare/v2.2.0...v2.2.1) (2025-06-24)
 
 
