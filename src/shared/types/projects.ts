@@ -7,3 +7,8 @@ export type Project = {
   readmeUrl: string | null;
   version: string;
 };
+
+export type CachedProjects = {
+  projects: Project[];
+  timestamp: number;
+}
