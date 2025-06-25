@@ -1,4 +1,5 @@
 import { API_ENDPOINTS } from "@/shared/constants/api";
+import { Project } from '@/shared/types/projects';
 import { env } from "@/shared/utils/env";
 import axios, { AxiosError } from "axios";
 
@@ -10,14 +11,15 @@ export const projectService = {
         "https://api.github.com/repos/Smailen5/Frontend-Mentor-Challenge/contents/public/projects.json",
         {
           headers: {
-            Authorization: `token ${env.GITHUB_TOKEN}`,
+            ...(env.GITHUB_TOKEN ? {Authorization: `Bearer ${env.GITHUB_TOKEN}`} : {}),
             Accept: "application/vnd.github.v3+json",
           },
         },
       );
-      const projects = atob(response.data.content)
+      console.log(env.GITHUB_TOKEN)
+      const projects: Project[] = JSON.parse(atob(response.data.content))
 
-      return { data: projects };
+      return projects
     } catch (err) {
       // console.log(err);
       throw err;
