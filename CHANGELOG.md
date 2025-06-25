@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/Smailen5/portfolio-website/compare/v3.0.0...v3.1.0) (2025-06-25)
+
+
+### Features
+
+* ✨ migliora la gestione dei progetti nella cache ([43be7a7](https://github.com/Smailen5/portfolio-website/commit/43be7a7da6443b475254e6c0c0ef7abc1e1c408a))
+* 🏷️ aggiungi il tipo CachedProjects per la gestione della cache dei progetti ([60529f4](https://github.com/Smailen5/portfolio-website/commit/60529f4d63835c22d46537537eaf34b1383bab48))
+* 🏷️ aggiungi il tipo Project per la gestione dei progetti ([ca3ea17](https://github.com/Smailen5/portfolio-website/commit/ca3ea17f5fbb8a1e0080bbc5f5643aac1e99d936))
+
 ## [3.0.0](https://github.com/Smailen5/portfolio-website/compare/v2.2.1...v3.0.0) (2025-06-25)
 
 
