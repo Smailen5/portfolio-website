@@ -1,25 +1,25 @@
 import { nameCorrect } from "@/shared/utils/nameCorrect";
-import { LinkBlank } from "@components/atoms/LinkBlank";
+// import { LinkBlank } from "@components/atoms/LinkBlank";
 
 type PictureProject = {
-  linkSite: string;
-  image?: string;
+  // linkSite: string;
+  image: string | null;
   name: string;
   onLoad: () => void;
   onError: () => void;
-  imageLoadFailed?: boolean;
+  // imageLoadFailed?: boolean;
 };
 
 export const PictureProject: React.FC<PictureProject> = ({
-  linkSite,
+  // linkSite,
   image,
   name,
   onLoad,
   onError,
-  imageLoadFailed,
+  // imageLoadFailed,
 }) => {
   // Se non ho ancora caricato l'immagine del progetto
-  if (imageLoadFailed) {
+  if (image === null) {
     return (
       <div className="flex h-full min-h-[195px] w-full items-center justify-center rounded-md bg-muted text-center text-muted-foreground md:min-h-[300px]">
         <p>
@@ -32,7 +32,7 @@ export const PictureProject: React.FC<PictureProject> = ({
 
   return (
     <div className="overflow-hidden rounded-md">
-      <LinkBlank href={linkSite}>
+      {/* <LinkBlank href={linkSite}> */}
         <img
           loading="lazy"
           src={image}
@@ -42,7 +42,7 @@ export const PictureProject: React.FC<PictureProject> = ({
           className="object-cover shadow-lg transition-all duration-500 md:hover:scale-110"
           alt={`Anteprima del progetto ${nameCorrect(name)}`}
         />
-      </LinkBlank>
+      {/* </LinkBlank> */}
     </div>
   );
 };
