@@ -4,12 +4,10 @@ import { MarkdownRenderer } from "@components/atoms/MarkdownRenderer";
 import { Layout } from "@components/molecules/Layout";
 import { useParams } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
-// import { useGetProjects } from "../hooks/useGetProjects";
 
 export const SingleProject = () => {
   const { nome } = useParams<{ nome: string }>();
   const { loading, projects } = useFetch();
-  // const projects = useGetProjects();
 
   // Trova il progetto specifico usando il nome
   const project = projects.find((p) => p.name === nome);
