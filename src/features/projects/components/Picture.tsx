@@ -13,7 +13,7 @@ export const PictureProject: React.FC<PictureProject> = ({
   onLoad,
   onError,
 }) => {
-  // Se non ho ancora caricato l'immagine del progetto
+  // Se l'immagine non è disponibile, mostro un messaggio
   if (image === null) {
     return (
       <div className="flex h-full min-h-[195px] w-full items-center justify-center rounded-md bg-muted text-center text-muted-foreground md:min-h-[300px]">
