@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { projectService } from "../services/projectService";
+import { Project } from '@/shared/types/projects';
 
 export const useFetchReadme = (readmeUrl: string | null, name: string | undefined) => {
   const [error, setError] = useState<boolean>(false);
@@ -10,18 +11,30 @@ export const useFetchReadme = (readmeUrl: string | null, name: string | undefine
       return setError(true);
     }
 
+    // Controllo prima la cache
+    const cached = sessionStorage.getItem('projects')
+
+    if(cached) {
+      const parsed = JSON.parse(cached)
+      const project = parsed.projects.find((project: Project)=> project.name === name)
+      if(project && project.readmeContent) {
+        setReadmeContent(project.readmeContent) // Uso il readme della cache
+        return
+      }
+    }
+
     const fetchReadme = async () => {
       try {
         const response = await projectService.getReadme(readmeUrl);
         setReadmeContent(response.data);
-        
-        const cached = sessionStorage.getItem('projects')
+
+        // Aggiorno la cache
         if(cached) {
           const parsed = JSON.parse(cached)
 
-          const updatedProjects = parsed.projects.map((project: any)=> project.name === name ? {...project, readmeContent: response.data} : project)
+          const updatedProjects = parsed.projects.map((project: Project)=> project.name === name ? {...project, readmeContent: response.data} : project)
 
-          sessionStorage.setItem('projects', JSON.stringify({ projects: updatedProjects, timeStamp: parsed.timeStamp }))
+          sessionStorage.setItem('projects', JSON.stringify({ projects: updatedProjects, timestamp: parsed.timestamp })) // Non modifico il timestamp
         }
       } catch (error) {
         setError(true);
@@ -29,7 +42,7 @@ export const useFetchReadme = (readmeUrl: string | null, name: string | undefine
     };
 
     fetchReadme();
-  }, [readmeUrl]);
+  }, [readmeUrl, name]);
 
   return { error, readmeContent };
 };
