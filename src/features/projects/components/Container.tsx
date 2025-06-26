@@ -15,10 +15,6 @@ export const ContainerProject: React.FC<ContainerProject> = ({
   technologies,
   description,
 }) => {
-  if (technologies === undefined) {
-    return null;
-  }
-
   return (
     <Section className="gap-4 p-4 md:gap-6">
       <Header type="h3" className="text-left uppercase">
@@ -27,13 +23,17 @@ export const ContainerProject: React.FC<ContainerProject> = ({
       {!description ? <p>Descrizione non disponibile</p> : <p>{description}</p>}
       {/* array delle tecnologie utilizzate */}
       <ul className="flex flex-wrap gap-4 uppercase">
-        {!technologies ? <p>Tecnologie non disponibili</p> :technologies.map((tech) => {
-          return (
-            <li key={tech} className="text-xs font-semibold md:text-sm">
-              {tech}
-            </li>
-          );
-        })}
+        {!technologies ? (
+          <p>Tecnologie non disponibili</p>
+        ) : (
+          technologies.map((tech) => {
+            return (
+              <li key={tech} className="text-xs font-semibold md:text-sm">
+                {tech}
+              </li>
+            );
+          })
+        )}
       </ul>
       {children}
     </Section>
