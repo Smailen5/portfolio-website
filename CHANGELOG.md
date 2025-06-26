@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](https://github.com/Smailen5/portfolio-website/compare/v3.1.0...v3.2.0) (2025-06-26)
+
+
+### Features
+
+* ✨ aggiungi il campo descrizione al componente ContainerProject ([dd3132a](https://github.com/Smailen5/portfolio-website/commit/dd3132af4d9fc474cc9ca6b94dbc3ae09ac9279b))
+
 ## [3.1.0](https://github.com/Smailen5/portfolio-website/compare/v3.0.0...v3.1.0) (2025-06-25)
 
 
