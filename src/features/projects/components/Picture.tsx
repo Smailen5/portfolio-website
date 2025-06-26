@@ -3,15 +3,11 @@ import { nameCorrect } from "@/shared/utils/nameCorrect";
 type PictureProject = {
   image: string | null;
   name: string;
-  onLoad: () => void;
-  onError: () => void;
 };
 
 export const PictureProject: React.FC<PictureProject> = ({
   image,
   name,
-  onLoad,
-  onError,
 }) => {
   // Se l'immagine non è disponibile, mostro un messaggio
   if (image === null) {
@@ -30,8 +26,6 @@ export const PictureProject: React.FC<PictureProject> = ({
         <img
           loading="lazy"
           src={image}
-          onError={onError}
-          onLoad={onLoad}
           // forse conviene dare una misura fissa a tutte le immagini per evitare dimensioni diverse es.`lg:w-[480px] lg:h-[300px]`
           className="object-cover shadow-lg transition-all duration-500 md:hover:scale-110"
           alt={`Anteprima del progetto ${nameCorrect(name)}`}
