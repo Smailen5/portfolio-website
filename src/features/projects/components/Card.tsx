@@ -1,20 +1,14 @@
 import { ButtonsProject } from "@/features/projects/components/Buttons";
 import { ContainerProject } from "@/features/projects/components/Container";
 import { PictureProject } from "@/features/projects/components/Picture";
-import { Project } from "@/shared/types/projects";
+import { CardProjectProps } from "@/shared/types/projects";
 
-export const CardProject: React.FC<Project> = ({
+export const CardProject: React.FC<CardProjectProps> = ({
   name,
   description,
   technologies,
-  createdAt,
   imageUrl,
-  readmeUrl,
-  version,
 }) => {
-
-  const nonUtilizzato = { description, createdAt, version }
-  console.log(nonUtilizzato)
 
   return (
     <>
