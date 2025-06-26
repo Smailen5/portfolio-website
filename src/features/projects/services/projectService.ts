@@ -18,7 +18,6 @@ export const projectService = {
           },
         },
       );
-      console.log(env.GITHUB_TOKEN);
       const projects: Project[] = JSON.parse(atob(response.data.content));
 
       return projects;
