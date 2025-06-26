@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.3.0](https://github.com/Smailen5/portfolio-website/compare/v3.2.0...v3.3.0) (2025-06-26)
+
+
+### Features
+
+* ✨ aggiungi l'hook useFetchReadme per il recupero del contenuto README ([7f72177](https://github.com/Smailen5/portfolio-website/commit/7f7217711ab849ebbe706bc260874a58c6433b15))
+* ✨ integra l'hook useFetchReadme nel componente MarkdownRenderer ([6c45de6](https://github.com/Smailen5/portfolio-website/commit/6c45de600f2211bff3932a18e40b513d96edcf14))
+
 ## [3.2.0](https://github.com/Smailen5/portfolio-website/compare/v3.1.0...v3.2.0) (2025-06-26)
 
 
