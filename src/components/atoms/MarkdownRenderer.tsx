@@ -1,8 +1,9 @@
+import { useFetchReadme } from '@/features/projects/hooks/useFetchReadme';
+import { ErrorMessage } from '@components/atoms/ErrorMessage';
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 import { LinkBlank } from "./LinkBlank";
-import { useFetchReadme } from '@/features/projects/hooks/useFetchReadme';
 
 // Props per il componente MarkdownRenderer
 interface MarkdownRendererProps {
@@ -19,7 +20,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
     "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/packages/";
 
     const {error, readmeContent} = useFetchReadme(content)
-    console.log(error)
+    if(error) return <ErrorMessage>Errore nel recupero del README</ErrorMessage>
 
   return (
     <div className="w-full">
