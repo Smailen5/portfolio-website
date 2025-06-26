@@ -1,3 +1,4 @@
+import { API_ENDPOINTS } from '@/shared/constants/api';
 import { Project } from "@/shared/types/projects";
 import { env } from "@/shared/utils/env";
 import axios from "axios";
@@ -7,7 +8,7 @@ export const projectService = {
   getAll: async () => {
     try {
       const response = await axios.get(
-        "https://api.github.com/repos/Smailen5/Frontend-Mentor-Challenge/contents/public/projects.json",
+        `${API_ENDPOINTS.GITHUB.PROJECTS}`,
         {
           headers: {
             ...(env.GITHUB_TOKEN
