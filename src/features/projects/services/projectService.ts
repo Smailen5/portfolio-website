@@ -1,6 +1,6 @@
 import { Project } from "@/shared/types/projects";
 import { env } from "@/shared/utils/env";
-import axios, { AxiosError } from "axios";
+import axios from "axios";
 
 export const projectService = {
   // Ottieni tutti i progetti dalla monorepo
