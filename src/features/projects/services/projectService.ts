@@ -1,4 +1,4 @@
-// import { API_ENDPOINTS } from "@/shared/constants/api";
+
 import { Project } from '@/shared/types/projects';
 import { env } from "@/shared/utils/env";
 import axios, { AxiosError } from "axios";
@@ -21,7 +21,6 @@ export const projectService = {
 
       return projects
     } catch (err) {
-      // console.log(err);
       throw err;
     }
   },
