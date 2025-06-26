@@ -27,9 +27,9 @@ export const projectService = {
   },
 
   // Ottieni README di un progetto
-  getReadme: async (projectPath: string) => {
+  getReadme: async (readmeContentUrl: string) => {
     try {
-      const response = await axios.get(projectPath);
+      const response = await axios.get(readmeContentUrl);
       return response;
     } catch (error) {
       if (error instanceof AxiosError)
