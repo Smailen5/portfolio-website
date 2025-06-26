@@ -31,12 +31,8 @@ export const projectService = {
     try {
       const response = await axios.get(readmeContentUrl);
       return response;
-    } catch (error) {
-      if (error instanceof AxiosError)
-        throw new Error(
-          error.response?.data?.message || "Errore nel recupero del README",
-        );
-      throw error;
+    } catch (err) {
+      throw err;
     }
   },
 };
