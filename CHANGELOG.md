@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.4.0](https://github.com/Smailen5/portfolio-website/compare/v3.3.1...v3.4.0) (2025-06-26)
+
+
+### Features
+
+* ✨ aggiunge il componente LinkBlank nel progetto Picture ([f2af07a](https://github.com/Smailen5/portfolio-website/commit/f2af07a484bef87ab94e9a87b31668c4da7d957d))
+* ✨ aggiunge la proprietà readmeContent all'interfaccia Project ([2b16a4d](https://github.com/Smailen5/portfolio-website/commit/2b16a4d2120dbe45d07db9b42a3cb39a3d40a521))
+
 ### [3.3.1](https://github.com/Smailen5/portfolio-website/compare/v3.3.0...v3.3.1) (2025-06-26)
 
 
