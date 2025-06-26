@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 import { LinkBlank } from "./LinkBlank";
+import { ENDPOINTS } from '@/shared/constants/api';
 
 // Props per il componente MarkdownRenderer
 interface MarkdownRendererProps {
@@ -15,9 +16,6 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
   content,
   nome,
 }) => {
-  // URL base per le immagini dei progetti su GitHub
-  const urlImageScreen =
-    "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/packages/";
 
   const { error, readmeContent } = useFetchReadme(content);
   if (error) return <ErrorMessage>Errore nel recupero del README</ErrorMessage>;
@@ -55,7 +53,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
           // Immagini con percorso personalizzato e stile responsive
           img: ({ ...props }) => (
             <img
-              src={`${urlImageScreen}${nome}/${props.src}`}
+              src={`${ENDPOINTS.GITHUB.RAW.IMAGES_README_SRC}/${nome}/${props.src}`}
               className="mb-4 w-full rounded-md object-contain md:w-auto"
               alt={`${nome} anteprima`}
             />

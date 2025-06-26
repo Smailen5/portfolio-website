@@ -1,4 +1,4 @@
-import { API_ENDPOINTS } from '@/shared/constants/api';
+import { ENDPOINTS } from '@/shared/constants/api';
 import { Project } from "@/shared/types/projects";
 import { env } from "@/shared/utils/env";
 import axios from "axios";
@@ -8,7 +8,7 @@ export const projectService = {
   getAll: async () => {
     try {
       const response = await axios.get(
-        `${API_ENDPOINTS.GITHUB.PROJECTS}`,
+        `${ENDPOINTS.GITHUB.API.PROJECTS}`,
         {
           headers: {
             ...(env.GITHUB_TOKEN
