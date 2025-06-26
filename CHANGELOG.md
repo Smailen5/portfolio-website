@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.3.1](https://github.com/Smailen5/portfolio-website/compare/v3.3.0...v3.3.1) (2025-06-26)
+
+
+### Bug Fixes
+
+* 🐛 gestisci gli errori nel recupero del README nel componente MarkdownRenderer ([6d5df1f](https://github.com/Smailen5/portfolio-website/commit/6d5df1f5e2fd4182ccd578e513673c91f1b01bb0))
+* 🐛 gestisci la visualizzazione della descrizione nel componente ContainerProject ([d2bdb02](https://github.com/Smailen5/portfolio-website/commit/d2bdb026f9c01ea908a8406ec857a28f7c6033e1))
+* 🐛 gestisci la visualizzazione delle tecnologie nel componente ContainerProject ([295ba54](https://github.com/Smailen5/portfolio-website/commit/295ba54eb693f671bda8121ae4db303ee2519339))
+
 ## [3.3.0](https://github.com/Smailen5/portfolio-website/compare/v3.2.0...v3.3.0) (2025-06-26)
 
 
