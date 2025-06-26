@@ -6,9 +6,8 @@ export const env = {
   // Altre configurazioni
   VITE_APP_ENV: import.meta.env.VITE_APP_ENV,
 
-  // ! Questa e da cambiare urgente perche e esposta
-  FORM_SPREE_ACTION_URL: import.meta.env.VITE_APP_FORM_SPREE_ACTION_URL,
-  GITHUB_TOKEN: import.meta.env.VITE_GITHUB_TOKEN,
+  FORM_SPREE_ACTION_URL: import.meta.env.VITE_APP_FORM_SPREE_ACTION_URL, // ! Sarebbe meglio non esporlo, in futuro cambiera l'invio di mail per non usare servizi esterni
+  GITHUB_TOKEN: import.meta.env.VITE_GITHUB_TOKEN, // ! Fa niente che il token e' esposto, e' in sola lettura e ha una scadenza
 
   // GitHub API endpoints
   GITHUB_API_BASE: import.meta.env.VITE_GITHUB_API_BASE,
