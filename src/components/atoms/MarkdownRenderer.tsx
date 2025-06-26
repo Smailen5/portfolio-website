@@ -2,10 +2,11 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 import { LinkBlank } from "./LinkBlank";
+import { useFetchReadme } from '@/features/projects/hooks/useFetchReadme';
 
 // Props per il componente MarkdownRenderer
 interface MarkdownRendererProps {
-  content: string; // Contenuto markdown da renderizzare
+  content: string | null; // Contenuto markdown da renderizzare
   nome: string | undefined; // Nome del progetto per le immagini
 }
 
@@ -16,6 +17,9 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
   // URL base per le immagini dei progetti su GitHub
   const urlImageScreen =
     "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/packages/";
+
+    const {error, readmeContent} = useFetchReadme(content)
+    console.log(error)
 
   return (
     <div className="w-full">
@@ -57,7 +61,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
           ),
         }}
       >
-        {content}
+        {readmeContent}
       </ReactMarkdown>
     </div>
   );
