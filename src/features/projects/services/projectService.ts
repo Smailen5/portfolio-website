@@ -1,4 +1,4 @@
-import { API_ENDPOINTS } from "@/shared/constants/api";
+// import { API_ENDPOINTS } from "@/shared/constants/api";
 import { Project } from '@/shared/types/projects';
 import { env } from "@/shared/utils/env";
 import axios, { AxiosError } from "axios";
@@ -29,9 +29,7 @@ export const projectService = {
   // Ottieni README di un progetto
   getReadme: async (projectPath: string) => {
     try {
-      const response = await axios.get(
-        API_ENDPOINTS.GITHUB.README(projectPath),
-      );
+      const response = await axios.get(projectPath);
       return response;
     } catch (error) {
       if (error instanceof AxiosError)
