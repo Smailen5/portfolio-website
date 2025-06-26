@@ -1,6 +1,6 @@
+import { Project } from '@/shared/types/projects';
 import { useEffect, useState } from "react";
 import { projectService } from "../services/projectService";
-import { Project } from '@/shared/types/projects';
 
 export const useFetchReadme = (readmeUrl: string | null, name: string | undefined) => {
   const [error, setError] = useState<boolean>(false);
