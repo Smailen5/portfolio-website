@@ -1,5 +1,5 @@
-import { useFetchReadme } from '@/features/projects/hooks/useFetchReadme';
-import { ErrorMessage } from '@components/atoms/ErrorMessage';
+import { useFetchReadme } from "@/features/projects/hooks/useFetchReadme";
+import { ErrorMessage } from "@components/atoms/ErrorMessage";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
@@ -19,8 +19,8 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
   const urlImageScreen =
     "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/packages/";
 
-    const {error, readmeContent} = useFetchReadme(content)
-    if(error) return <ErrorMessage>Errore nel recupero del README</ErrorMessage>
+  const { error, readmeContent } = useFetchReadme(content);
+  if (error) return <ErrorMessage>Errore nel recupero del README</ErrorMessage>;
 
   return (
     <div className="w-full">
@@ -56,7 +56,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
           img: ({ ...props }) => (
             <img
               src={`${urlImageScreen}${nome}/${props.src}`}
-              className="mb-4 w-full rounded-md md:w-auto object-contain"
+              className="mb-4 w-full rounded-md object-contain md:w-auto"
               alt={`${nome} anteprima`}
             />
           ),
