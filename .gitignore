@@ -19,15 +19,11 @@ dist-ssr
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
+idee.md
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-.eslintrc.cjs
 .env
-
-# Local Netlify folder
-.netlify
