@@ -1,22 +1,17 @@
 import { nameCorrect } from "@/shared/utils/nameCorrect";
-// import { LinkBlank } from "@components/atoms/LinkBlank";
 
 type PictureProject = {
-  // linkSite: string;
   image: string | null;
   name: string;
   onLoad: () => void;
   onError: () => void;
-  // imageLoadFailed?: boolean;
 };
 
 export const PictureProject: React.FC<PictureProject> = ({
-  // linkSite,
   image,
   name,
   onLoad,
   onError,
-  // imageLoadFailed,
 }) => {
   // Se non ho ancora caricato l'immagine del progetto
   if (image === null) {
@@ -32,7 +27,6 @@ export const PictureProject: React.FC<PictureProject> = ({
 
   return (
     <div className="overflow-hidden rounded-md">
-      {/* <LinkBlank href={linkSite}> */}
         <img
           loading="lazy"
           src={image}
@@ -42,7 +36,6 @@ export const PictureProject: React.FC<PictureProject> = ({
           className="object-cover shadow-lg transition-all duration-500 md:hover:scale-110"
           alt={`Anteprima del progetto ${nameCorrect(name)}`}
         />
-      {/* </LinkBlank> */}
     </div>
   );
 };
