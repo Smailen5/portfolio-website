@@ -27,7 +27,7 @@ export const ContainerProject: React.FC<ContainerProject> = ({
       {!description ? <p>Descrizione non disponibile</p> : <p>{description}</p>}
       {/* array delle tecnologie utilizzate */}
       <ul className="flex flex-wrap gap-4 uppercase">
-        {technologies.map((tech) => {
+        {!technologies ? <p>Tecnologie non disponibili</p> :technologies.map((tech) => {
           return (
             <li key={tech} className="text-xs font-semibold md:text-sm">
               {tech}
