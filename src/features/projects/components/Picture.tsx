@@ -1,3 +1,4 @@
+import { LinkBlank } from '@/components/atoms/LinkBlank';
 import { nameCorrect } from "@/shared/utils/nameCorrect";
 
 type PictureProject = {
@@ -23,13 +24,15 @@ export const PictureProject: React.FC<PictureProject> = ({
 
   return (
     <div className="overflow-hidden rounded-md">
+      <LinkBlank href={`projects/${name}`}>
         <img
-          loading="lazy"
-          src={image}
-          // forse conviene dare una misura fissa a tutte le immagini per evitare dimensioni diverse es.`lg:w-[480px] lg:h-[300px]`
-          className="object-cover shadow-lg transition-all duration-500 md:hover:scale-110"
-          alt={`Anteprima del progetto ${nameCorrect(name)}`}
+        loading="lazy"
+        src={image}
+        // forse conviene dare una misura fissa a tutte le immagini per evitare dimensioni diverse es.`lg:w-[480px] lg:h-[300px]`
+        className="object-cover shadow-lg transition-all duration-500 md:hover:scale-110"
+        alt={`Anteprima del progetto ${nameCorrect(name)}`}
         />
+        </LinkBlank>
     </div>
   );
 };
