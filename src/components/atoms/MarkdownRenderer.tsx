@@ -1,11 +1,14 @@
+import { useFetchReadme } from "@/features/projects/hooks/useFetchReadme";
+import { ErrorMessage } from "@components/atoms/ErrorMessage";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 import { LinkBlank } from "./LinkBlank";
+import { ENDPOINTS } from '@/shared/constants/api';
 
 // Props per il componente MarkdownRenderer
 interface MarkdownRendererProps {
-  content: string; // Contenuto markdown da renderizzare
+  content: string | null; // Contenuto markdown da renderizzare
   nome: string | undefined; // Nome del progetto per le immagini
 }
 
@@ -13,9 +16,9 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
   content,
   nome,
 }) => {
-  // URL base per le immagini dei progetti su GitHub
-  const urlImageScreen =
-    "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/packages/";
+
+  const { error, readmeContent } = useFetchReadme(content, nome);
+  if (error) return <ErrorMessage>Errore nel recupero del README</ErrorMessage>;
 
   return (
     <div className="w-full">
@@ -50,14 +53,14 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
           // Immagini con percorso personalizzato e stile responsive
           img: ({ ...props }) => (
             <img
-              src={`${urlImageScreen}${nome}/${props.src}`}
-              className="mb-4 w-full rounded-md md:w-auto object-contain"
+              src={`${ENDPOINTS.GITHUB.RAW.IMAGES_README_SRC}/${nome}/${props.src}`}
+              className="mb-4 w-full rounded-md object-contain md:w-auto"
               alt={`${nome} anteprima`}
             />
           ),
         }}
       >
-        {content}
+        {readmeContent}
       </ReactMarkdown>
     </div>
   );

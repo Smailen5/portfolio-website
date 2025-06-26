@@ -1,11 +1,12 @@
-// URL base per l'API - in sviluppo usa localhost, in produzione usa il dominio corrente
-const API_BASE_URL = import.meta.env.PROD
-  ? window.location.origin
-  : "https://smailenvargas.com";
-
-export const API_ENDPOINTS = {
-  // PROJECTS
-  PROJECTS: {
-    GET_ALL: `${API_BASE_URL}/.netlify/functions/get-projects/`,
+export const ENDPOINTS = {
+  GITHUB: {
+    API: {
+      PROJECTS:
+        "https://api.github.com/repos/Smailen5/Frontend-Mentor-Challenge/contents/public/projects.json",
+    },
+    RAW: {
+      IMAGES_README_SRC:
+        "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/packages",
+    },
   },
 };

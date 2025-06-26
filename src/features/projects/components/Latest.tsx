@@ -2,19 +2,17 @@ import { ErrorMessage } from "@/components/atoms/ErrorMessage";
 import { CardProject } from "@/features/projects/components/Card";
 import { SkeletonLoaderCard } from "@/features/projects/components/Skeleton";
 import { useFetch } from "@/features/projects/hooks/useFetch";
-import { useGetProjects } from "@/features/projects/hooks/useGetProjects";
-import { Project } from "@/features/projects/utils/types";
+import { Project } from '@/shared/types/projects';
 import { Header } from "@components/atoms/Header";
 import { Section } from "@components/atoms/Section";
 
 export const LastProjects = () => {
-  const { loading, error } = useFetch();
-  const projectsArray = useGetProjects();
+  const { loading, error, projects } = useFetch();
   // !Modifica qui i progetti da mostrare
   const showLastProjects = 3;
   const arraySkeleton = Array.from({ length: showLastProjects });
-  // se non ci sono progetti e non stiamo caricando, mostra messaggio
-  const noProjects = !loading && projectsArray.length === 0;
+  // se non stiamo caricando, non ci sono errori e non ci sono progetti
+  const noProjects = !loading && !error && projects.length === 0;
 
   return (
     <>
@@ -32,7 +30,7 @@ export const LastProjects = () => {
               ? arraySkeleton.map((_, index) => (
                   <SkeletonLoaderCard key={index} />
                 ))
-              : projectsArray
+              : projects
                   .map((project: Project, index: number) => (
                     <CardProject key={index} {...project} />
                   ))
