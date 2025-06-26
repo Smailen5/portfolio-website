@@ -17,7 +17,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
   nome,
 }) => {
 
-  const { error, readmeContent } = useFetchReadme(content);
+  const { error, readmeContent } = useFetchReadme(content, nome);
   if (error) return <ErrorMessage>Errore nel recupero del README</ErrorMessage>;
 
   return (
