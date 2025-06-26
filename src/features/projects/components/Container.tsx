@@ -6,12 +6,14 @@ type ContainerProject = {
   name: string;
   technologies: string[];
   children: React.ReactNode;
+  description: string | null;
 };
 
 export const ContainerProject: React.FC<ContainerProject> = ({
   name,
   children,
   technologies,
+  description,
 }) => {
   if (technologies === undefined) {
     return null;
@@ -22,6 +24,7 @@ export const ContainerProject: React.FC<ContainerProject> = ({
       <Header type="h3" className="text-left uppercase">
         {nameCorrect(name)}
       </Header>
+      <p>{description}</p>
       {/* array delle tecnologie utilizzate */}
       <ul className="flex flex-wrap gap-4 uppercase">
         {technologies.map((tech) => {
