@@ -17,13 +17,13 @@ export const ContainerProject: React.FC<ContainerProject> = ({
   description,
 }) => {
   return (
-    <Section className="gap-4 p-4 md:gap-6">
+    <Section className="gap-4 p-4 md:gap-6 h-[500px] md:h-[320px] flex flex-col justify-between">
       <Header type="h3" className="text-left uppercase">
         {nameCorrect(name)}
       </Header>
-      {!description ? <p>Descrizione non disponibile</p> : <p>{truncate(description)}</p>}
+      {!description ? <p>Descrizione non disponibile</p> : <p className='line-clamp-3'>{truncate(description)}</p>}
       {/* array delle tecnologie utilizzate */}
-      <ul className="flex flex-wrap gap-4 uppercase">
+      <ul className="flex flex-wrap gap-2 uppercase">
         {!technologies ? (
           <p>Tecnologie non disponibili</p>
         ) : (
