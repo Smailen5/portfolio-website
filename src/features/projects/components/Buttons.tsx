@@ -13,10 +13,10 @@ export const ButtonsProject: React.FC<ButtonsProjectType> = ({ nome }) => {
   };
 
   return (
-    <div className="space-x-8">
+    // <div className="space-x-8">
       <Button variant="outline" onClick={() => goToProject(nome)}>
         dettagli
       </Button>
-    </div>
+    // </div>
   );
 };
