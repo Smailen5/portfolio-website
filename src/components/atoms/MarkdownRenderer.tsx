@@ -9,8 +9,8 @@ import { ENDPOINTS } from '@/shared/constants/api';
 // Props per il componente MarkdownRenderer
 interface MarkdownRendererProps {
   readmeUrl: string | null; // Contenuto markdown da renderizzare
-  nameProject: string | undefined; // Nome del progetto per le immagini
-  nameFolder?: string;
+  nameProject: string | undefined; // Nome del progetto pulito da package.json
+  nameFolder?: string; // Nome della cartella per il recupero delle immagini nel readme
 }
 
 export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
