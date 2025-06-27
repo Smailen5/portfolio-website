@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.7.0](https://github.com/Smailen5/portfolio-website/compare/v3.6.0...v3.7.0) (2025-06-27)
+
+
+### Features
+
+* ✨ aggiunta la proprietà 'nameFolder' all'interfaccia Project ([fb3592f](https://github.com/Smailen5/portfolio-website/commit/fb3592ffd4e5a1a50f05e15b43766579c7178744))
+
+
+### Bug Fixes
+
+* 🔧 aggiorna il percorso delle immagini nel componente MarkdownRenderer ([0e15225](https://github.com/Smailen5/portfolio-website/commit/0e1522546fec9c7d54df7587b71d2643d688df59))
+* 🔧 aggiorna la proprietà 'nameProject' nel componente SingleProject ([8e78169](https://github.com/Smailen5/portfolio-website/commit/8e78169daf1d447e57f51e5d4d56cbc9bae91ff4))
+
 ## [3.6.0](https://github.com/Smailen5/portfolio-website/compare/v3.5.0...v3.6.0) (2025-06-27)
 
 
