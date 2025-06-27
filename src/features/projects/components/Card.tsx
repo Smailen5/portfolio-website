@@ -13,7 +13,7 @@ export const CardProject: React.FC<CardProjectProps> = ({
   return (
     <>
       {/* PROGETTO SINGOLO */}
-      <article className="flex flex-col gap-4 rounded-md border border-border bg-background text-foreground shadow-md overflow-hidden">
+      <article className="flex flex-col gap-4 rounded-md border border-border bg-background text-foreground shadow-md overflow-hidden max-h-[650px]">
 
         {/* immagine */}
         <PictureProject
