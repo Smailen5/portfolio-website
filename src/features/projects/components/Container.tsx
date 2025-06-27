@@ -27,7 +27,7 @@ export const ContainerProject: React.FC<ContainerProject> = ({
         {!technologies ? (
           <p>Tecnologie non disponibili</p>
         ) : (
-          technologies.map((tech) => {
+          [...technologies].sort((a, b) => a.localeCompare(b)).map((tech) => {
             return (
               <li key={tech} className="text-xs font-semibold md:text-sm">
                 {tech}
