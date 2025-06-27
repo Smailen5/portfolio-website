@@ -6,6 +6,7 @@ export interface CardProjectProps {
 }
 
 export interface Project extends CardProjectProps {
+  nameFolder: string;
   createdAt: string;
   readmeUrl: string | null;
   readmeContent: string | null;
