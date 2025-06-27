@@ -17,7 +17,7 @@ export const ContainerProject: React.FC<ContainerProject> = ({
   description,
 }) => {
   return (
-    <Section className="gap-4 p-4 md:gap-6 h-[500px] md:h-[320px] flex flex-col justify-between">
+    <Section className="gap-4 p-4 md:gap-6 md:h-[320px] flex flex-col justify-between">
       <Header type="h3" className="text-left uppercase">
         {nameCorrect(name)}
       </Header>
