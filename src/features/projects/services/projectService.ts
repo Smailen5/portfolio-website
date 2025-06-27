@@ -5,7 +5,6 @@ import axios from "axios";
 
 export const projectService = {
   // Ottieni tutti i progetti dalla monorepo
-  // Ottieni tutti i progetti dalla monorepo
   getAll: async () => {
     try {
       const response = await axios.get(
