@@ -20,7 +20,7 @@ export const PictureProject: React.FC<PictureProject> = ({ image, name }) => {
   }
 
   return (
-    <div className="overflow-hidden rounded-md">
+    <div className="overflow-hidden">
       <LinkBlank href={`projects/${name}`}>
         <img
           loading="lazy"
