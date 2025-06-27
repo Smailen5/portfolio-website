@@ -16,6 +16,7 @@ interface MarkdownRendererProps {
 export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
   readmeUrl,
   nameProject,
+  nameFolder,
 }) => {
 
   const { error, readmeContent } = useFetchReadme(readmeUrl, nameProject);
@@ -54,7 +55,7 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
           // Immagini con percorso personalizzato e stile responsive
           img: ({ ...props }) => (
             <img
-              src={`${ENDPOINTS.GITHUB.RAW.IMAGES_README_SRC}/${nameProject}/${props.src}`}
+              src={`${ENDPOINTS.GITHUB.RAW.IMAGES_README_SRC}/${nameFolder}/${props.src}`}
               className="mb-4 w-full rounded-md object-contain md:w-auto"
               alt={`${nameProject} anteprima`}
             />
