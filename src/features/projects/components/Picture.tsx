@@ -26,7 +26,7 @@ export const PictureProject: React.FC<PictureProject> = ({ image, name }) => {
           loading="lazy"
           src={image}
           // forse conviene dare una misura fissa a tutte le immagini per evitare dimensioni diverse es.`lg:w-[480px] lg:h-[300px]`
-          className="object-cover shadow-lg transition-all duration-500 md:hover:scale-110 h-[300px] w-full"
+          className="object-cover shadow-lg transition-all duration-500 md:hover:scale-110 max-h-[300px] w-full"
           alt={`Anteprima del progetto ${nameCorrect(name)}`}
         />
       </LinkBlank>
