@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.6.0](https://github.com/Smailen5/portfolio-website/compare/v3.5.0...v3.6.0) (2025-06-27)
+
+
+### Features
+
+* ✨ aggiunge funzione di troncamento del testo ([666ded8](https://github.com/Smailen5/portfolio-website/commit/666ded8755f750d3a7ce7255e487f46c183f073d))
+* ✨ integra la funzione di troncamento nel componente Container ([8c7f2f7](https://github.com/Smailen5/portfolio-website/commit/8c7f2f76e44ea8a4de8ea6f7fd51ee2c596a6d89))
+* ✨ ordina le tecnologie nel componente ContainerProject ([012ab98](https://github.com/Smailen5/portfolio-website/commit/012ab987763eb1178a6aedaf7dd271b573672514))
+
+
+### Bug Fixes
+
+* 📝 commenta il contenitore dei pulsanti nel componente ButtonsProject ([b972e02](https://github.com/Smailen5/portfolio-website/commit/b972e02564749b6ff029b929eb45e4188a3f87ee))
+
 ## [3.5.0](https://github.com/Smailen5/portfolio-website/compare/v3.4.0...v3.5.0) (2025-06-27)
 
 
