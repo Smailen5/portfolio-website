@@ -8,16 +8,17 @@ import { ENDPOINTS } from '@/shared/constants/api';
 
 // Props per il componente MarkdownRenderer
 interface MarkdownRendererProps {
-  content: string | null; // Contenuto markdown da renderizzare
-  nome: string | undefined; // Nome del progetto per le immagini
+  readmeUrl: string | null; // Contenuto markdown da renderizzare
+  nameProject: string | undefined; // Nome del progetto per le immagini
+  nameFolder?: string;
 }
 
 export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
-  content,
-  nome,
+  readmeUrl,
+  nameProject,
 }) => {
 
-  const { error, readmeContent } = useFetchReadme(content, nome);
+  const { error, readmeContent } = useFetchReadme(readmeUrl, nameProject);
   if (error) return <ErrorMessage>Errore nel recupero del README</ErrorMessage>;
 
   return (
@@ -53,9 +54,9 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
           // Immagini con percorso personalizzato e stile responsive
           img: ({ ...props }) => (
             <img
-              src={`${ENDPOINTS.GITHUB.RAW.IMAGES_README_SRC}/${nome}/${props.src}`}
+              src={`${ENDPOINTS.GITHUB.RAW.IMAGES_README_SRC}/${nameProject}/${props.src}`}
               className="mb-4 w-full rounded-md object-contain md:w-auto"
-              alt={`${nome} anteprima`}
+              alt={`${nameProject} anteprima`}
             />
           ),
         }}
