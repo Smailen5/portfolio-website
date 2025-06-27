@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.5.0](https://github.com/Smailen5/portfolio-website/compare/v3.4.0...v3.5.0) (2025-06-27)
+
+
+### Features
+
+* ✨ aggiunge un template per la segnalazione di bug ([ad4912d](https://github.com/Smailen5/portfolio-website/commit/ad4912d29a42700cca70791dca626f274db7dc7b))
+* ✨ aggiunge un template per la segnalazione di bug ([703b7c2](https://github.com/Smailen5/portfolio-website/commit/703b7c26714d8bbcb0d94facfa0477fd434ef217))
+* ✨ aggiunge un template per le pull request ([dcf7c42](https://github.com/Smailen5/portfolio-website/commit/dcf7c421cc4b2443260494e4ce7ad1b9b716794a))
+* ✨ aggiunge un template per le pull request ([1edfd84](https://github.com/Smailen5/portfolio-website/commit/1edfd84a4134044a284a7b8b5fbf87ff1f554f9c))
+
+
+### Bug Fixes
+
+* 💄 aggiunge overflow-hidden al contenitore del progetto nel componente Card ([4b1f0fb](https://github.com/Smailen5/portfolio-website/commit/4b1f0fbbb58db8b11588af5fbc3cac52bd92e04f))
+* 📝 rimuove commento superfluo nel servizio progetti ([3d218ec](https://github.com/Smailen5/portfolio-website/commit/3d218ecd46232e77b948a2ec23d80d0838da49e6))
+* 🖼️ rimuove il bordo arrotondato dal contenitore dell'immagine nel componente Picture ([86c1da5](https://github.com/Smailen5/portfolio-website/commit/86c1da55b3c9520292a2435841922c6b17bb8ea1))
+
 ## [3.4.0](https://github.com/Smailen5/portfolio-website/compare/v3.3.1...v3.4.0) (2025-06-26)
 
 
