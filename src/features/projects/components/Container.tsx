@@ -1,4 +1,5 @@
 import { nameCorrect } from "@/shared/utils/nameCorrect";
+import { truncate } from '@/shared/utils/truncate';
 import { Header } from "@components/atoms/Header";
 import { Section } from "@components/atoms/Section";
 
@@ -20,7 +21,7 @@ export const ContainerProject: React.FC<ContainerProject> = ({
       <Header type="h3" className="text-left uppercase">
         {nameCorrect(name)}
       </Header>
-      {!description ? <p>Descrizione non disponibile</p> : <p>{description}</p>}
+      {!description ? <p>Descrizione non disponibile</p> : <p>{truncate(description)}</p>}
       {/* array delle tecnologie utilizzate */}
       <ul className="flex flex-wrap gap-4 uppercase">
         {!technologies ? (
