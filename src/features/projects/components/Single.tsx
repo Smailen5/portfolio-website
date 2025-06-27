@@ -30,7 +30,7 @@ export const SingleProject = () => {
 
   return (
     <Layout>
-      <MarkdownRenderer readmeUrl={project.readmeUrl} nameProject={nome} />
+      <MarkdownRenderer readmeUrl={project.readmeUrl} nameProject={project.name} nameFolder={project.nameFolder} />
     </Layout>
   );
 };
