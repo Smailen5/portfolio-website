@@ -1,6 +1,5 @@
 import axiosIcon from "@/assets/icons/axios.svg";
 import formikIcon from "@/assets/icons/formik.svg";
-import formspreeIcon from "@/assets/icons/formspree.svg";
 import githubIcon from "@/assets/icons/GitHubIcon.svg";
 import bootstrapIcon from "@/assets/icons/icons8-bootstrap.svg";
 import css3Icon from "@/assets/icons/icons8-css3.svg";
@@ -95,10 +94,6 @@ export const utility = [
   {
     name: "Netlify",
     icon: netlifyIcon,
-  },
-  {
-    name: "Form spree",
-    icon: formspreeIcon,
   },
 ];
 export default icons;
