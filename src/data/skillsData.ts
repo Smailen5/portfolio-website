@@ -11,7 +11,9 @@ import reactIcon from "@/assets/icons/icons8-react.svg";
 import tailwindIcon from "@/assets/icons/icons8-tailwind-css.svg";
 import netlifyIcon from "@/assets/icons/netlify.svg";
 import nextuiIcon from "@/assets/icons/nextjs.svg";
+import pnpmIcon from "@/assets/icons/pnpm.svg";
 import shadcnIcon from "@/assets/icons/shadcn.svg";
+import viteIcon from "@/assets/icons/vite.svg";
 
 const icons = [
   {
@@ -79,6 +81,14 @@ export const framework = [
 ];
 
 export const utility = [
+  {
+    name: "Vite",
+    icon: viteIcon,
+  },
+  {
+    name: "pnpm",
+    icon: pnpmIcon,
+  },
   {
     name: "Axios",
     icon: axiosIcon,
