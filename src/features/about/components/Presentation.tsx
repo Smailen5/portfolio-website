@@ -17,18 +17,18 @@ const Presentation = () => {
         rudimentali hanno acceso una scintilla che non si è mai spenta.
       </p>
       <p>
-        Il mio percorso è stato guidato dalla curiosità e dalla creatività:
-        dalla{" "}
+        Il mio percorso è stato guidato dalla curiosità e dalla creatività.
+        Ho esplorato la{" "}
         <TooltipCustom
           trigger="modellazione 3D"
           content="Creazione di modelli tridimensionali utilizzando software come 3ds Max e SketchUp"
-        />{" "}
-        al{" "}
+        />
+        , il{" "}
         <TooltipCustom
           trigger="disegno digitale"
           content="Uso di software come Clipt Studio Paint per creare illustrazioni digitali"
         />
-        , fino agli esperimenti con
+        , e gli esperimenti con{" "}
         <TooltipCustom
           trigger="arduino."
           content="Piattaforma open-source per creare progetti di elettronica e programmazione"
