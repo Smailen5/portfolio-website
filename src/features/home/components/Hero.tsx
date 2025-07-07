@@ -12,13 +12,20 @@ export const Hero = () => {
       <main className="flex flex-col gap-4">
         {/* presentazione */}
         <header className="space-y-4">
-          <p className="text-5xl"><span className="font-mono text-gray-500 tracking-wide animate-typing whitespace-nowrap overflow-hidden border-r-2 w-fit">{"<Hello World>"}</span> sono</p>
+          <p className="text-5xl">
+            <span className="animate-typing w-fit overflow-hidden whitespace-nowrap border-r-2 font-mono tracking-wide text-gray-500">
+              {"<Hello World>"}
+            </span>{" "}
+            sono
+          </p>
           <h2 className="text-6xl font-bold text-secondary">
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger>Smailen</TooltipTrigger>
                 <TooltipContent>
-                  <p>Si, il mio nome significa &apos;sorridi sempre&apos;! 😊</p>
+                  <p>
+                    Si, il mio nome significa &apos;sorridi sempre&apos;! 😊
+                  </p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>{" "}
