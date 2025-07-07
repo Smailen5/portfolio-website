@@ -12,7 +12,7 @@ export const Hero = () => {
       <main className="flex flex-col gap-4">
         {/* presentazione */}
         <header className="space-y-4">
-          <p className="text-5xl">&lt;Hello World&gt; sono</p>
+          <p className="text-5xl"><span className="font-mono text-gray-500 tracking-wide animate-typing whitespace-nowrap overflow-hidden border-r-2 w-fit">{"<Hello World>"}</span> sono</p>
           <h2 className="text-6xl font-bold text-secondary">
             <TooltipProvider>
               <Tooltip>
