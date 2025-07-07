@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.8.0](https://github.com/Smailen5/portfolio-website/compare/v3.7.0...v3.8.0) (2025-07-07)
+
+
+### Features
+
+* ✨ aggiunge funzione di troncamento del testo ([35c914d](https://github.com/Smailen5/portfolio-website/commit/35c914df7592c3bbb72556323aefe943e9653cad))
+* ✨ aggiunta la proprietà 'nameFolder' all'interfaccia Project ([9426f47](https://github.com/Smailen5/portfolio-website/commit/9426f47fb53277913cd9827543fb42c232d66c29))
+* ✨ aggiunti nuovi strumenti al file skillsData ([a394e34](https://github.com/Smailen5/portfolio-website/commit/a394e34ab727e3c5b479541ebf2981bc1a57fdd8))
+* ✨ integra la funzione di troncamento nel componente Container ([6f41e46](https://github.com/Smailen5/portfolio-website/commit/6f41e4642110bba4a479ce507553d30bd23910a3))
+* ✨ ordina le tecnologie nel componente ContainerProject ([266e3cd](https://github.com/Smailen5/portfolio-website/commit/266e3cd0589e5043825d32f15a44c214e487636e))
+
+
+### Bug Fixes
+
+* 💄 aggiunge overflow-hidden al contenitore del progetto nel componente Card ([dc6ff62](https://github.com/Smailen5/portfolio-website/commit/dc6ff62286d8f0e5747031465bd268c3441a2f81))
+* 📝 commenta il contenitore dei pulsanti nel componente ButtonsProject ([a6e11d0](https://github.com/Smailen5/portfolio-website/commit/a6e11d0eae28518e371513bd6d039d3a2707ebbd))
+* 📝 rimuove commento superfluo nel servizio progetti ([e17960d](https://github.com/Smailen5/portfolio-website/commit/e17960d5230085f4a72291b3c1db5c6c0f87a093))
+* 🔧 aggiorna il percorso delle immagini nel componente MarkdownRenderer ([ebf6585](https://github.com/Smailen5/portfolio-website/commit/ebf65852436f9d78f4a475bc4d1059fae56ab02d))
+* 🔧 aggiorna la proprietà 'nameProject' nel componente SingleProject ([c52a922](https://github.com/Smailen5/portfolio-website/commit/c52a92212790d020352ea5560e09ef7b996ad328))
+* 🖼️ rimuove il bordo arrotondato dal contenitore dell'immagine nel componente Picture ([de76ef7](https://github.com/Smailen5/portfolio-website/commit/de76ef753e572fd5d814b24e5f263505e7fc18e3))
+* 🗑️ rimosso l'icona formspree e aggiornato il file skillsData ([0647550](https://github.com/Smailen5/portfolio-website/commit/06475504a4204ed9c64d1e6b98cc2bea65113328))
+
 ## [3.7.0](https://github.com/Smailen5/portfolio-website/compare/v3.6.0...v3.7.0) (2025-06-27)
 
 
