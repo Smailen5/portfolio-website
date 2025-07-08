@@ -12,7 +12,7 @@ const Footer = () => {
           <img src={tailwindIcon} alt="icona tailwind css" className="size-6" />
           <img src={reactIcon} alt="icona react" className="size-6" />
         </div>
-        <div className="space-y-4">
+        <div className="space-y-4 flex flex-col items-start">
           <p>
             © 2024 Smailen Vargas. Tutti i diritti riservati.{" "}
             <span>
