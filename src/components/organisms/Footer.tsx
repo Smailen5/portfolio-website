@@ -1,5 +1,6 @@
 import reactIcon from "@/assets/icons/icons8-react.svg";
 import tailwindIcon from "@/assets/icons/icons8-tailwind-css.svg";
+import SocialIcons from "@/features/social/components/SocialIcons";
 import { LinkBlank } from "@components/atoms/LinkBlank";
 
 const Footer = () => {
@@ -20,6 +21,7 @@ const Footer = () => {
             </LinkBlank>
           </span>
         </p>
+        <SocialIcons />
       </div>
     </footer>
   );
