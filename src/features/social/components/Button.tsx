@@ -22,12 +22,12 @@ const ButtonSocial: React.FC<ButtonSocialType> = ({ name, link, icon }) => {
       onClick={handleNavigation}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={()=> setIsHovered(false)}
-      className={`space-x-4 group ${isHovered ? "space-x-4" : "md:space-x-0"}`}
+      className={`space-x-4 group ${isHovered ? "space-x-4" : "lg:space-x-0"}`}
     >
       <img srcSet={IconComponent} alt={`${name} icon`} className="size-5" />
       <span
-        className={`overflow-hidden font-semibold uppercase transition-all duration-700 ease-in-out md:${
-          isHovered ? "max-w-xs md:opacity-100 " : "max-w-0 md:opacity-0 "
+        className={`overflow-hidden font-semibold uppercase transition-all duration-700 ease-in-out ${
+          isHovered ? "max-w-xs lg:opacity-100 " : "lg:max-w-0 lg:opacity-0 "
         }`}
       >
         {name}
