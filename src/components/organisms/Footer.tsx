@@ -12,16 +12,18 @@ const Footer = () => {
           <img src={tailwindIcon} alt="icona tailwind css" className="size-6" />
           <img src={reactIcon} alt="icona react" className="size-6" />
         </div>
-        <p>
-          © 2024 Smailen Vargas. Tutti i diritti riservati.{" "}
-          <span>
-            Icons by{" "}
-            <LinkBlank href="https://icons8.com" isText>
-              Icons8
-            </LinkBlank>
-          </span>
-        </p>
-        <SocialIcons />
+        <div className="space-y-4">
+          <p>
+            © 2024 Smailen Vargas. Tutti i diritti riservati.{" "}
+            <span>
+              Icons by{" "}
+              <LinkBlank href="https://icons8.com" isText>
+                Icons8
+              </LinkBlank>
+            </span>
+          </p>
+          <SocialIcons />
+        </div>
       </div>
     </footer>
   );
