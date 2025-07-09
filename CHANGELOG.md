@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.9.0](https://github.com/Smailen5/portfolio-website/compare/v3.8.0...v3.9.0) (2025-07-09)
+
+
+### Features
+
+* ✨ aggiunto effetto hover al componente ButtonSocial ([1779031](https://github.com/Smailen5/portfolio-website/commit/17790314362a5bd189f228e7d20384f4504625cc))
+* ✨ aggiunto il componente SocialIcons al footer ([dd571f7](https://github.com/Smailen5/portfolio-website/commit/dd571f715a3f2f7232b5c5d14f68571cc6288f6a))
+* ✨ aggiunto il componente SocialIcons per visualizzare le icone social ([f659131](https://github.com/Smailen5/portfolio-website/commit/f659131bccb89aed9103535357b3e62deb082cbb))
+
 ## [3.8.0](https://github.com/Smailen5/portfolio-website/compare/v3.7.0...v3.8.0) (2025-07-07)
 
 
