@@ -18,7 +18,7 @@ Portfolio personale che mostra i miei progetti e competenze come Front-end Devel
 - 🔍 Filtro progetti per tecnologia
 - 📄 Download/visualizzazione CV
 - 📬 Form di contatto integrato
-- 🔄 Integrazione API GitHub
+- 🔄 ~~Integrazione API GitHub~~ (Sostituito con CDN)
 
 ## 🖼️ Screenshot
 
@@ -53,6 +53,9 @@ Portfolio personale che mostra i miei progetti e competenze come Front-end Devel
 - [Netlify](https://www.netlify.com/) - Hosting
 - [Formspree](https://formspree.io/) - Form Backend
 - [GoDaddy](https://www.godaddy.com/) - Domain Provider
+
+## 📋 Ultima Versione
+**v3.9.1 - Nuova CDN** - [Scopri di piu'](release/v3.9.1.md)
 
 ## 🏗️ Struttura del Progetto
 
