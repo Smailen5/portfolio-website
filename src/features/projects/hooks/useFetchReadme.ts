@@ -1,8 +1,11 @@
-import { Project } from '@/shared/types/projects';
+import { Project } from "@/shared/types/projects";
 import { useEffect, useState } from "react";
 import { projectService } from "../services/projectService";
 
-export const useFetchReadme = (readmeUrl: string | null, name: string | undefined) => {
+export const useFetchReadme = (
+  readmeUrl: string | null,
+  name: string | undefined,
+) => {
   const [error, setError] = useState<boolean>(false);
   const [readmeContent, setReadmeContent] = useState<string | null>(null);
 
@@ -12,29 +15,41 @@ export const useFetchReadme = (readmeUrl: string | null, name: string | undefine
     }
 
     // Controllo prima la cache
-    const cached = sessionStorage.getItem('projects')
+    const cached = sessionStorage.getItem("projects");
 
-    if(cached) {
-      const parsed = JSON.parse(cached)
-      const project = parsed.projects.find((project: Project)=> project.name === name)
-      if(project && project.readmeContent) {
-        setReadmeContent(project.readmeContent) // Uso il readme della cache
-        return
+    if (cached) {
+      const parsed = JSON.parse(cached);
+      const project = parsed.projects.find(
+        (project: Project) => project.name === name,
+      );
+      if (project && project.readmeContent) {
+        setReadmeContent(project.readmeContent); // Uso il readme della cache
+        return;
       }
     }
 
     const fetchReadme = async () => {
       try {
-        const response = await projectService.getReadme(readmeUrl);
-        setReadmeContent(response.data);
+        const readmeText = await projectService.getReadme(readmeUrl);
+        setReadmeContent(readmeText);
 
         // Aggiorno la cache
-        if(cached) {
-          const parsed = JSON.parse(cached)
+        if (cached) {
+          const parsed = JSON.parse(cached);
 
-          const updatedProjects = parsed.projects.map((project: Project)=> project.name === name ? {...project, readmeContent: response.data} : project)
+          const updatedProjects = parsed.projects.map((project: Project) =>
+            project.name === name
+              ? { ...project, readmeContent: readmeText }
+              : project,
+          );
 
-          sessionStorage.setItem('projects', JSON.stringify({ projects: updatedProjects, timestamp: parsed.timestamp })) // Non modifico il timestamp
+          sessionStorage.setItem(
+            "projects",
+            JSON.stringify({
+              projects: updatedProjects,
+              timestamp: parsed.timestamp,
+            }),
+          ); // Non modifico il timestamp
         }
       } catch (error) {
         setError(true);
