@@ -1,5 +1,6 @@
 import reactIcon from "@/assets/icons/icons8-react.svg";
 import tailwindIcon from "@/assets/icons/icons8-tailwind-css.svg";
+import SocialIcons from "@/features/social/components/SocialIcons";
 import { LinkBlank } from "@components/atoms/LinkBlank";
 
 const Footer = () => {
@@ -11,15 +12,18 @@ const Footer = () => {
           <img src={tailwindIcon} alt="icona tailwind css" className="size-6" />
           <img src={reactIcon} alt="icona react" className="size-6" />
         </div>
-        <p>
-          © 2024 Smailen Vargas. Tutti i diritti riservati.{" "}
-          <span>
-            Icons by{" "}
-            <LinkBlank href="https://icons8.com" isText>
-              Icons8
-            </LinkBlank>
-          </span>
-        </p>
+        <div className="space-y-4 flex flex-col items-start">
+          <p>
+            © 2024 Smailen Vargas. Tutti i diritti riservati.{" "}
+            <span>
+              Icons by{" "}
+              <LinkBlank href="https://icons8.com" isText>
+                Icons8
+              </LinkBlank>
+            </span>
+          </p>
+          <SocialIcons />
+        </div>
       </div>
     </footer>
   );

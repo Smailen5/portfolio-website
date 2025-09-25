@@ -10,7 +10,7 @@ export interface Project extends CardProjectProps {
   createdAt: string;
   readmeUrl: string | null;
   readmeContent: string | null;
-  version: string;
+  _v: string;
 }
 
 export type CachedProjects = {

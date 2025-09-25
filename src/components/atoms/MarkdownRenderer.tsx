@@ -1,10 +1,10 @@
 import { useFetchReadme } from "@/features/projects/hooks/useFetchReadme";
+import { ENDPOINTS } from "@/shared/constants/api";
 import { ErrorMessage } from "@components/atoms/ErrorMessage";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 import { LinkBlank } from "./LinkBlank";
-import { ENDPOINTS } from '@/shared/constants/api';
 
 // Props per il componente MarkdownRenderer
 interface MarkdownRendererProps {
@@ -18,7 +18,6 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
   nameProject,
   nameFolder,
 }) => {
-
   const { error, readmeContent } = useFetchReadme(readmeUrl, nameProject);
   if (error) return <ErrorMessage>Errore nel recupero del README</ErrorMessage>;
 

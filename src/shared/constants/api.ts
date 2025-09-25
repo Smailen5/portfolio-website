@@ -1,8 +1,7 @@
 export const ENDPOINTS = {
   GITHUB: {
-    API: {
-      PROJECTS:
-        "https://api.github.com/repos/Smailen5/Frontend-Mentor-Challenge/contents/public/projects.json",
+    CDN: {
+      PROJECTS: "https://portfolio-cdn.netlify.app/projects.json",
     },
     RAW: {
       IMAGES_README_SRC:

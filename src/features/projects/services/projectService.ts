@@ -1,24 +1,28 @@
-import { ENDPOINTS } from '@/shared/constants/api';
+import { ENDPOINTS } from "@/shared/constants/api";
 import { Project } from "@/shared/types/projects";
-import { env } from "@/shared/utils/env";
-import axios from "axios";
 
 export const projectService = {
   // Ottieni tutti i progetti dalla monorepo
   getAll: async () => {
     try {
-      const response = await axios.get(
-        `${ENDPOINTS.GITHUB.API.PROJECTS}`,
-        {
-          headers: {
-            ...(env.GITHUB_TOKEN
-              ? { Authorization: `Bearer ${env.GITHUB_TOKEN}` }
-              : {}),
-            Accept: "application/vnd.github.v3+json",
-          },
-        },
-      );
-      const projects: Project[] = JSON.parse(atob(response.data.content));
+      const response = await fetch(`${ENDPOINTS.GITHUB.CDN.PROJECTS}`);
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+
+      if (!Array.isArray(data)) {
+        throw new Error("I dati non sono un array");
+      }
+
+      const projects: Project[] = data.map((project: Project) => {
+        return {
+          ...project,
+          readmeContent: null,
+        };
+      });
 
       return projects;
     } catch (err) {
@@ -29,8 +33,14 @@ export const projectService = {
   // Ottieni README di un progetto
   getReadme: async (readmeContentUrl: string) => {
     try {
-      const response = await axios.get(readmeContentUrl);
-      return response;
+      const response = await fetch(readmeContentUrl);
+      console.log("response ", response);
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      return await response.text();
     } catch (err) {
       throw err;
     }

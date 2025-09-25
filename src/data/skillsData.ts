@@ -1,6 +1,5 @@
 import axiosIcon from "@/assets/icons/axios.svg";
 import formikIcon from "@/assets/icons/formik.svg";
-import formspreeIcon from "@/assets/icons/formspree.svg";
 import githubIcon from "@/assets/icons/GitHubIcon.svg";
 import bootstrapIcon from "@/assets/icons/icons8-bootstrap.svg";
 import css3Icon from "@/assets/icons/icons8-css3.svg";
@@ -12,7 +11,9 @@ import reactIcon from "@/assets/icons/icons8-react.svg";
 import tailwindIcon from "@/assets/icons/icons8-tailwind-css.svg";
 import netlifyIcon from "@/assets/icons/netlify.svg";
 import nextuiIcon from "@/assets/icons/nextjs.svg";
+import pnpmIcon from "@/assets/icons/pnpm.svg";
 import shadcnIcon from "@/assets/icons/shadcn.svg";
+import viteIcon from "@/assets/icons/vite.svg";
 
 const icons = [
   {
@@ -81,6 +82,14 @@ export const framework = [
 
 export const utility = [
   {
+    name: "Vite",
+    icon: viteIcon,
+  },
+  {
+    name: "pnpm",
+    icon: pnpmIcon,
+  },
+  {
     name: "Axios",
     icon: axiosIcon,
   },
@@ -95,10 +104,6 @@ export const utility = [
   {
     name: "Netlify",
     icon: netlifyIcon,
-  },
-  {
-    name: "Form spree",
-    icon: formspreeIcon,
   },
 ];
 export default icons;
