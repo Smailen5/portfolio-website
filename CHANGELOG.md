@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.9.1](https://github.com/Smailen5/portfolio-website/compare/v3.9.0...v3.9.1) (2025-09-25)
+
+
+### Bug Fixes
+
+* 🔧 aggiornato l'endpoint per i progetti GitHub ([370bd72](https://github.com/Smailen5/portfolio-website/commit/370bd720ce7591ba84c2e5780c11d8c5bfea8bc1))
+
 ## [3.9.0](https://github.com/Smailen5/portfolio-website/compare/v3.8.0...v3.9.0) (2025-07-09)
 
 
