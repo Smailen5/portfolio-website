@@ -55,7 +55,7 @@ Portfolio personale che mostra i miei progetti e competenze come Front-end Devel
 - [GoDaddy](https://www.godaddy.com/) - Domain Provider
 
 ## 📋 Ultima Versione
-**v3.9.1 - Nuova CDN** - [Scopri di piu'](release/v3.9.1.md)
+**v3.9.2 - Rimozione dipendenze** - [Scopri di piu'](release/v3.9.2.md)
 
 ## 🏗️ Struttura del Progetto
 
