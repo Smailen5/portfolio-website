@@ -27,7 +27,10 @@ export const SideBar = ({
         }`}
       >
         <div className="p-4">
-          <button onClick={() => setIsOpen(false)}>chiudi</button>
+          <div className='flex items-center justify-between pb-6'>
+            <div>toggle tema</div>
+            <button onClick={() => setIsOpen(false)}>chiudi</button>
+          </div>
 
           <nav className="flex flex-col gap-4">
             {NAVIGATION_LINKS.map((link) => (
