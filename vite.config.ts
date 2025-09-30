@@ -1,10 +1,12 @@
-import react from "@vitejs/plugin-react";
+import { tanstackStart } from "@tanstack/react-start/plugin/vite";
+import viteReact from "@vitejs/plugin-react";
 import path from "path";
 import { defineConfig } from "vite";
+import tsConfigPaths from "vite-tsconfig-paths";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [tsConfigPaths(), tanstackStart(), viteReact()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
