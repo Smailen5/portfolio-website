@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/Smailen5/portfolio-website/compare/v3.9.2...v4.0.0) (2025-09-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* rimosso react-router-dom dalle dipendenze del progetto.
+
+### Bug Fixes
+
+* 🛠️ aggiornato l'importazione di Link e useNavigate per utilizzare TanStack Router ([d02f464](https://github.com/Smailen5/portfolio-website/commit/d02f46420f5db7482bcedd4fd2d19f9dc16d293c))
+* 🛠️ aggiunta la HomePage come componente della rotta principale ([e854c2f](https://github.com/Smailen5/portfolio-website/commit/e854c2f973b3a1b39e5d3d33be341c6de0756e8d))
+* 🛠️ rimosso react-router-dom dalle dipendenze ([1b258e2](https://github.com/Smailen5/portfolio-website/commit/1b258e23b89154f1c9ee2174b460884610acb1f9))
+* aggiornato l'importazione di useParams da react-router-dom a @tanstack/react-router ([7c63e61](https://github.com/Smailen5/portfolio-website/commit/7c63e6179a3c5645734ccfc2c8b49657317203e2))
+
 ### [3.9.2](https://github.com/Smailen5/portfolio-website/compare/v3.9.1...v3.9.2) (2025-09-29)
 
 ### [3.9.1](https://github.com/Smailen5/portfolio-website/compare/v3.9.0...v3.9.1) (2025-09-25)
