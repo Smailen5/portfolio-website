@@ -1,6 +1,9 @@
-import ErrorPage from '@/pages/ErrorPage'
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute } from "@tanstack/react-router";
 
-export const Route = createFileRoute('/error')({
+export const Route = createFileRoute("/error")({
   component: ErrorPage,
-})
+});
+
+function ErrorPage() {
+  return <div>Error Page</div>;
+}

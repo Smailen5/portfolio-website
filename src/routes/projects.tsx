@@ -1,6 +1,9 @@
-import ProjectPage from '@/pages/ProjectPage'
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute } from "@tanstack/react-router";
 
-export const Route = createFileRoute('/projects')({
+export const Route = createFileRoute("/projects")({
   component: ProjectPage,
-})
+});
+
+function ProjectPage() {
+  return <div>Project Page</div>;
+}
