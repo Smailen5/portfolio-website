@@ -1,12 +1,19 @@
 //src/routes/__root.tsx
 /// <reference types="vite/client" />
 
+import appCss from "@/styles/app.css?url";
+import { Navbar } from "@components/organisms/Navbar";
 import { AppProvider } from "@shared/utils/context";
-import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-router";
+import {
+  createRootRoute,
+  HeadContent,
+  Outlet,
+  Scripts,
+} from "@tanstack/react-router";
 import type { ReactNode } from "react";
 
 export const Route = createRootRoute({
-  head: ()=> ({
+  head: () => ({
     meta: [
       {
         charSet: "utf-8",
@@ -19,9 +26,10 @@ export const Route = createRootRoute({
         title: "Smailen Vargas | Frontend Developer",
       },
     ],
+    links: [{ rel: "stylesheet", href: appCss }],
   }),
   component: RootComponent,
-})
+});
 
 function RootComponent() {
   return (
@@ -30,7 +38,7 @@ function RootComponent() {
         <Outlet />
       </RootDocument>
     </AppProvider>
-  )
+  );
 }
 
 function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
@@ -40,9 +48,10 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
         <HeadContent />
       </head>
       <body>
-        {children}
+        <Navbar />
+        <main>{children}</main>
         <Scripts />
       </body>
     </html>
-  )
+  );
 }
