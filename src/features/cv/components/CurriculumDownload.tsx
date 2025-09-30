@@ -2,7 +2,7 @@ import { useState } from "react";
 
 // Props per il componente CurriculumDownload
 interface CurriculumDownloadProps {
-  closeSideBar: () => void;
+  closeSideBar?: () => void;
 }
 
 export const CurriculumDownload = ({
@@ -12,7 +12,7 @@ export const CurriculumDownload = ({
   // Handler per il click sul download
   const handleDownload = () => {
     setShowOptions(false);
-    closeSideBar();
+    closeSideBar?.();
   };
 
   return (
