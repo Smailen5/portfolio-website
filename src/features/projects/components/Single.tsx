@@ -2,11 +2,11 @@ import { ErrorMessage } from "@components/atoms/ErrorMessage";
 import { Loading } from "@components/atoms/Loading";
 import { MarkdownRenderer } from "@components/atoms/MarkdownRenderer";
 import { Layout } from "@components/molecules/Layout";
-import { useParams } from "react-router-dom";
+import { useParams } from "@tanstack/react-router";
 import { useFetch } from "../hooks/useFetch";
 
 export const SingleProject = () => {
-  const { nome } = useParams<{ nome: string }>();
+  const { nome } = useParams({ from: "/projects/$nome"});
   const { loading, projects } = useFetch();
 
   // Trova il progetto specifico usando il nome
