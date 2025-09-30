@@ -31,7 +31,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           // Separa le librerie React in un chunk dedicato
-          "react-vendor": ["react", "react-dom", "react-router-dom"],
+          "react-vendor": ["react", "react-dom", "@tanstack/react-router"],
           // Separa le librerie di form in un altro chunk
           "form-vendor": ["formik", "yup", "@formspree/react"],
           // Separa le librerie di markdown in un altro chunk
