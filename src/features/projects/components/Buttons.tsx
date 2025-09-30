@@ -1,5 +1,5 @@
 import { Button } from "@/components/atoms/Button";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "@tanstack/react-router";
 
 type ButtonsProjectType = {
   nome: string;
@@ -9,7 +9,7 @@ export const ButtonsProject: React.FC<ButtonsProjectType> = ({ nome }) => {
   const navigate = useNavigate();
 
   const goToProject = (nome: string) => {
-    navigate(`/projects/${nome}`);
+    navigate({ to: `/projects/${nome}`});
   };
 
   return (
