@@ -29,6 +29,7 @@ export const Route = createRootRoute({
     links: [{ rel: "stylesheet", href: appCss }],
   }),
   component: RootComponent,
+  notFoundComponent: NotFoundComponent,
 });
 
 function RootComponent() {
@@ -53,5 +54,14 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
         <Scripts />
       </body>
     </html>
+  );
+}
+
+function NotFoundComponent() {
+  return (
+    <>
+      <p className='text-center text-2xl font-bold'>404 Not Found</p>
+      <p className='text-center text-lg'>La pagina che stai cercando non esiste... hey neanche questa pagina esiste!?</p>
+    </>
   );
 }
