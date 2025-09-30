@@ -36,6 +36,7 @@ export const SideBar = ({
                 to={link.linkTo}
                 params={link.params}
                 className="capitalize"
+                onClick={closeSideBar}
               >
                 {link.params}
               </Link>
