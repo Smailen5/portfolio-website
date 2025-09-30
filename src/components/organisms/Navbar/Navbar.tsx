@@ -1,6 +1,6 @@
 import { useState } from "react";
+import { DesktopNavbar } from "./DesktopNavbar";
 import { SideBar } from "./SideBar";
-import { DesktopNavbar } from '../DesktopNavbar';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +17,7 @@ export const Navbar = () => {
         </div>
 
         {/* Menu Desktop */}
-        <div className='hidden lg:block'>
+        <div className="hidden lg:block">
           <DesktopNavbar />
         </div>
       </nav>
