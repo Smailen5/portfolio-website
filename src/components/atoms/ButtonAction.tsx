@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { GoProjectRoadmap } from "react-icons/go";
 import { MdOutlineEmail } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "@tanstack/react-router";
 import { Button } from "./Button";
 
 interface ButtonActionProps {
@@ -21,7 +21,7 @@ export const ButtonAction = ({
       className={`gap-2 ${buttonClass}`}
       size="lg"
       variant={navigateTo === "projects" ? "secondary" : undefined}
-      onClick={() => navigate(`/${navigateTo}`)}
+      onClick={() => navigate({to: `/${navigateTo}`, params: { navigateTo }})}
     >
       {navigateTo === "projects" && <GoProjectRoadmap />}
       {children}

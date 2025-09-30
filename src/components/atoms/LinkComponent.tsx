@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@tanstack/react-router";
 
 interface LinkComponentProps {
   children: ReactNode;
@@ -14,7 +14,7 @@ export const LinkComponent = ({
   downloadable,
   downloadName,
 }: LinkComponentProps) => {
-  
+
   const linkStyle = "capitalize hover:text-primary p-2"
 
   if (downloadable)
@@ -28,7 +28,7 @@ export const LinkComponent = ({
 
   return (
     <li>
-      <Link to={linkTo} className={linkStyle}>
+      <Link to={linkTo} params={{ linkTo }} className={linkStyle}>
         {children}
       </Link>
     </li>

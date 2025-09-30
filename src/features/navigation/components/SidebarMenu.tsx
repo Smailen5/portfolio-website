@@ -2,7 +2,7 @@ import { Button } from "@/components/atoms/Button";
 import { CurriculumDownload } from "@features/cv/components/CurriculumDownload";
 import { ModeToggle } from "@features/theme/components/ModeToggle";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@tanstack/react-router";
 
 // Props per il componente SidebarMenu
 interface SidebarMenuProps {
@@ -58,6 +58,7 @@ export const SidebarMenu = ({
             {/* Link di navigazione */}
             <Link
               to="/"
+              params={{ linkTo: "home" }}
               className="block rounded-lg p-2 text-foreground hover:bg-primary/20"
               onClick={toggleSidebar}
             >
@@ -65,6 +66,7 @@ export const SidebarMenu = ({
             </Link>
             <Link
               to="/projects"
+              params={{ linkTo: "projects" }}
               className="block rounded-lg p-2 text-foreground hover:bg-primary/20"
               onClick={toggleSidebar}
             >
@@ -72,6 +74,7 @@ export const SidebarMenu = ({
             </Link>
             <Link
               to="/contact"
+              params={{ linkTo: "contact" }}
               className="block rounded-lg p-2 text-foreground hover:bg-primary/20"
               onClick={toggleSidebar}
             >

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@tanstack/react-router";
 import { CurriculumDownload } from "@features/cv/components/CurriculumDownload";
 import { ModeToggle } from "@features/theme/components/ModeToggle";
 
@@ -21,18 +21,21 @@ export const LinkNavbar = ({
       {/* Link di navigazione principali */}
       <Link
         to="/"
+        params={{ linkTo: "home" }}
         className="block rounded-lg p-2 text-foreground hover:bg-primary/20"
       >
         Home
       </Link>
       <Link
         to="/projects"
+        params={{ linkTo: "projects" }}
         className="block rounded-lg p-2 text-foreground hover:bg-primary/20"
       >
         Progetti
       </Link>
       <Link
         to="/contact"
+        params={{ linkTo: "contact" }}
         className="block rounded-lg p-2 text-foreground hover:bg-primary/20"
       >
         Contattami
