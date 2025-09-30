@@ -1,4 +1,3 @@
-import { AppProvider } from "@/shared/utils/context";
 import { ThemeProvider } from "@/shared/utils/themeProvider";
 import { RouterProvider } from "@tanstack/react-router";
 import { StrictMode } from "react";
@@ -13,10 +12,8 @@ console.log("Router tree:", router.routeTree);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <AppProvider>
-      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <RouterProvider router={router} />
-      </ThemeProvider>
-    </AppProvider>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </StrictMode>,
 );
