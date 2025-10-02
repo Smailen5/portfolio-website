@@ -1,7 +1,6 @@
-import { ButtonsProject } from "@/features/projects/components/Buttons";
-import { ContainerProject } from "@/features/projects/components/Container";
-import { PictureProject } from "@/features/projects/components/Picture";
 import { CardProjectProps } from "@/shared/types/projects";
+import { nameCorrect } from "@/shared/utils/nameCorrect";
+import { Link } from "@tanstack/react-router";
 
 export const CardProject: React.FC<CardProjectProps> = ({
   name,
@@ -9,21 +8,41 @@ export const CardProject: React.FC<CardProjectProps> = ({
   technologies,
   imageUrl,
 }) => {
-
   return (
     <>
       {/* PROGETTO SINGOLO */}
-      <article className="flex flex-col rounded-md border border-border bg-background text-foreground shadow-md overflow-hidden max-h-[640px]">
+      <article className="card bg-base-100 w-full shadow-sm" key={name}>
+        <figure>
+          <Link to="/projects" target="_blank" rel="noopener noreferrer">
+            <img src={imageUrl || ""} alt="Shoes" />
+          </Link>
+        </figure>
+        <div className="card-body">
+          <h3 className="card-title uppercase">{nameCorrect(name)}</h3>
+          <p>{description}</p>
 
-        {/* immagine */}
-        <PictureProject
-          image={imageUrl}
-          name={name}
-        />
-        {/* contenitore nome progetto e descrizione */}
-        <ContainerProject name={name} technologies={technologies} description={description}>
-          <ButtonsProject nome={name} />
-        </ContainerProject>
+          {/* array delle tecnologie utilizzate */}
+          <ul className="flex flex-wrap gap-2 uppercase">
+            {!technologies ? (
+              <p>Tecnologie non disponibili</p>
+            ) : (
+              [...technologies]
+                .sort((a, b) => a.localeCompare(b))
+                .map((tech) => {
+                  return (
+                    <li
+                      key={tech}
+                      className="badge badge-outline text-xs font-semibold md:text-sm"
+                    >
+                      {tech}
+                    </li>
+                  );
+                })
+            )}
+          </ul>
+
+          <button className="btn btn-primary btn-wide">Dettagli</button>
+        </div>
       </article>
     </>
   );
