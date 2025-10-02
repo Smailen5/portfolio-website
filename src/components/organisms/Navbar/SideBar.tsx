@@ -28,7 +28,6 @@ export const SideBar = ({
       >
         <div className="p-4">
           <div className='flex items-center justify-between pb-6'>
-            <div>toggle tema</div>
             <button onClick={() => setIsOpen(false)}>chiudi</button>
           </div>
 
