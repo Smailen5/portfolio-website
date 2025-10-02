@@ -4,7 +4,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/atoms/tooltip";
-import { ButtonAction } from "@components/atoms/ButtonAction";
 
 export const Hero = () => {
   return (
@@ -36,8 +35,8 @@ export const Hero = () => {
 
         {/* call to action */}
         <nav className="md:flex-star flex flex-col flex-wrap gap-4 md:flex-row">
-          <ButtonAction navigateTo="contact">Contattami</ButtonAction>
-          <ButtonAction navigateTo="projects">Progetti</ButtonAction>
+          <button>Contattami</button>
+          <button>Progetti</button>
         </nav>
       </main>
     </section>

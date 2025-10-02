@@ -1,7 +1,7 @@
 import { framework, language, utility } from "@/data/skillsData";
 import { Header } from "@components/atoms/Header";
 import { Section } from "@components/atoms/Section";
-import Skills from "@features/skills/components/Skills";
+import Skills from "./Skills";
 
 export const SectionSkill = () => {
   return (

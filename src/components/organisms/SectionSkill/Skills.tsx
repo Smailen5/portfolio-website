@@ -1,6 +1,6 @@
 import { Header } from "@components/atoms/Header";
 import { Section } from "@components/atoms/Section";
-import Skill from "@features/skills/components/Skill";
+import Skill from "./Skill";
 
 interface SkillsProps {
   title: string;
