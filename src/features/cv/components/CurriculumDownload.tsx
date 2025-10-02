@@ -30,7 +30,7 @@ export const CurriculumDownload = ({
       {/* Opzioni di download CV */}
 
       <div
-        className={`absolute left-0 -right-10 mt-2 shadow-lg transition-transform duration-300 ease-in-out ${
+        className={`absolute left-0 -right-10 mt-2 shadow-lg bg-base-100 transition-transform duration-300 ease-in-out ${
           showOptions ? "translate-x-0" : "translate-x-full"
         }`}
       >
