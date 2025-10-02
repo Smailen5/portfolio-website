@@ -12,8 +12,8 @@ export const Hero = () => {
       <main className="flex flex-col gap-4">
         {/* presentazione */}
         <header className="space-y-4">
-          <p className="text-5xl">
-            <span className="animate-typing w-fit overflow-hidden border-r-2 font-mono tracking-wide whitespace-nowrap text-gray-500">
+          <p className="text-4xl">
+            <span className="animate-typing w-fit text-base-content overflow-hidden border-r-2 font-mono tracking-wide whitespace-nowrap">
               {"<Hello World>"}
             </span>{" "}
             sono
