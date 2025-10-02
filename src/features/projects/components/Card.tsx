@@ -41,7 +41,9 @@ export const CardProject: React.FC<CardProjectProps> = ({
             )}
           </ul>
 
-          <button className="btn btn-primary btn-wide">Dettagli</button>
+          <div className="flex justify-center">
+            <button className="btn btn-primary btn-wide">Dettagli</button>
+          </div>
         </div>
       </article>
     </>
