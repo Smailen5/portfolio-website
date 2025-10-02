@@ -26,7 +26,7 @@ export const LastProjects = () => {
   return (
     <>
       <Section>
-        <Header type="h2" titleID="ultimi lavori">
+        <Header type="h2" titleID="ultimi lavori" className='text-primary-content'>
           Guarda i miei ultimi lavori
         </Header>
         <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
