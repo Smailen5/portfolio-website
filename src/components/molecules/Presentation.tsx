@@ -1,13 +1,14 @@
 import { Header } from "@components/atoms/Header";
 import { Section } from "@components/atoms/Section";
 import { TooltipCustom } from "@components/atoms/TooltipCustom";
+import { Strong } from "@/components/atoms/Strong";
 
 const Presentation = () => {
   return (
     <Section className="gap-4">
       <Header className="sr-only">Presentazione</Header>
       <p>
-        Sono un <strong>frontend developer</strong> con una passione che nasce
+        Sono un <Strong>frontend developer</Strong> con una passione che nasce
         dall&apos;infanzia. Tutto è iniziato con uno{" "}
         <TooltipCustom
           trigger="ZX Spectrum"
@@ -34,10 +35,10 @@ const Presentation = () => {
           content="Piattaforma open-source per creare progetti di elettronica e programmazione"
         />{" "}
         Questa varietà di esperienze mi ha portato a trovare la mia vera
-        vocazione nello sviluppo <strong>frontend</strong>.
+        vocazione nello sviluppo <Strong>frontend</Strong>.
       </p>
       <p>
-        Nel <strong>frontend development</strong> ho trovato il perfetto
+        Nel <Strong>frontend development</Strong> ho trovato il perfetto
         equilibrio tra problem solving e creatività. Mi appassiona la sfida di
         trasformare concept di design in interfacce interattive, ottimizzando
         ogni dettaglio per creare esperienze web coinvolgenti.
