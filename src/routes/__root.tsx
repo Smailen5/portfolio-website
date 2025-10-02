@@ -1,6 +1,7 @@
 //src/routes/__root.tsx
 /// <reference types="vite/client" />
 
+import Footer from '@/components/organisms/Footer';
 import appCss from "@/styles/app.css?url";
 import { Navbar } from "@components/organisms/Navbar";
 import {
@@ -48,6 +49,7 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
       <body>
         <Navbar />
         <main>{children}</main>
+        <Footer />
         <Scripts />
       </body>
     </html>
