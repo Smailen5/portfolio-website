@@ -1,6 +1,7 @@
 import { CurriculumDownload } from "@/features/cv/components/CurriculumDownload";
 import { NAVIGATION_LINKS } from "@/shared/constants/navigation";
 import { Link } from "@tanstack/react-router";
+import { CloseIcon } from "@/assets/icons";
 
 export const SideBar = ({
   isOpen,
@@ -12,6 +13,7 @@ export const SideBar = ({
   const closeSideBar = () => {
     setIsOpen(false);
   };
+
   return (
     <>
       {/* Overlay scuro che copre la pagina quando SideBar è aperto */}
@@ -27,8 +29,13 @@ export const SideBar = ({
         }`}
       >
         <div className="p-4">
-          <div className="flex items-center justify-between pb-6">
-            <button onClick={() => setIsOpen(false)}>chiudi</button>
+          <div className="flex items-center justify-end pb-6 pr-2">
+            <button
+              onClick={() => setIsOpen(false)}
+              className="btn btn-error btn-circle"
+            >
+              <img src={CloseIcon} alt="close" />
+            </button>
           </div>
 
           <nav className="flex flex-col gap-4">
