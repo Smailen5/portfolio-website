@@ -3,7 +3,6 @@
 
 import appCss from "@/styles/app.css?url";
 import { Navbar } from "@components/organisms/Navbar";
-import { AppProvider } from "@shared/utils/context";
 import {
   createRootRoute,
   HeadContent,
@@ -34,11 +33,9 @@ export const Route = createRootRoute({
 
 function RootComponent() {
   return (
-    <AppProvider>
-      <RootDocument>
-        <Outlet />
-      </RootDocument>
-    </AppProvider>
+    <RootDocument>
+      <Outlet />
+    </RootDocument>
   );
 }
 
@@ -60,8 +57,11 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
 function NotFoundComponent() {
   return (
     <>
-      <p className='text-center text-2xl font-bold'>404 Not Found</p>
-      <p className='text-center text-lg'>La pagina che stai cercando non esiste... hey neanche questa pagina esiste!?</p>
+      <p className="text-center text-2xl font-bold">404 Not Found</p>
+      <p className="text-center text-lg">
+        La pagina che stai cercando non esiste... hey neanche questa pagina
+        esiste!?
+      </p>
     </>
   );
 }
