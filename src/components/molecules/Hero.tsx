@@ -4,6 +4,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/atoms/tooltip";
+import { Link } from '@tanstack/react-router';
 
 export const Hero = () => {
   return (
@@ -35,8 +36,12 @@ export const Hero = () => {
 
         {/* call to action */}
         <nav className="md:flex-star flex flex-col flex-wrap gap-4 md:flex-row">
-          <button>Contattami</button>
-          <button>Progetti</button>
+          <Link to='/contact' className='btn btn-primary'>
+          Contattami
+          </Link>
+          <Link to='/projects' className='btn btn-secondary'>
+          Progetti
+          </Link>
         </nav>
       </main>
     </section>
