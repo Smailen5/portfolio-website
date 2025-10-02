@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
         <div className="space-y-4 flex flex-col items-start">
           <p>
-            © 2024 Smailen Vargas. Tutti i diritti riservati.{" "}
+            © 2024-{new Date().getFullYear()} Smailen Vargas. Tutti i diritti riservati.{" "}
             <span>
               Icons by{" "}
               <LinkBlank href="https://icons8.com" isText>
