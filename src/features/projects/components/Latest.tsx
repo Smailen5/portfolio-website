@@ -11,6 +11,7 @@ export const LastProjects = () => {
   // !Modifica qui i progetti da mostrare
   const showLastProjects = 3;
 
+  // Server Function che recupera i progetti
   const getProjects = useServerFn(fetchProjects)
 
   useEffect(()=> {
@@ -22,7 +23,6 @@ export const LastProjects = () => {
     })
   },[getProjects])
 
-  // Accedi ai dati dal loader
   return (
     <>
       <Section>
