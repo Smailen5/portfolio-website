@@ -11,7 +11,7 @@ const Skills = ({ title, section }: SkillsProps) => {
   return (
     <>
       <Section className="gap-10">
-        <Header type="h3">
+        <Header type="h3" className='text-secondary'>
           {title}
         </Header>
         <ul className="grid gap-2 md:grid-cols-4">

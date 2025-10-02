@@ -6,7 +6,7 @@ import Skills from "./Skills";
 export const SectionSkill = () => {
   return (
     <Section>
-      <Header type="h2">Competenze acquisite</Header>
+      <Header type="h2" className='text-primary'>Competenze acquisite</Header>
 
       <main className="flex h-full w-full flex-col flex-wrap gap-12 md:grid md:grid-cols-3">
         <Skills section={language} title="Linguaggi" />

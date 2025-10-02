@@ -21,7 +21,7 @@ const Skills = ({
   // Layout mobile: mostra nome e icona affiancati
 
     return (
-      <li className="mb-4 flex items-center justify-between rounded-md border-2 border-card p-2 text-card-foreground">
+      <li className="mb-4 flex items-center justify-between rounded-md border-2 border-accent p-2 text-accent-content">
         <p className="font-semibold uppercase">{name}</p>
         <img src={icon} alt={name + "icon"} className={`${iconSize}`} />
       </li>
