@@ -1,27 +1,32 @@
-import { Avatar } from '@/components/atoms/Avatar';
+import { Avatar } from "@/components/atoms/Avatar";
+import { ToggleTheme } from "@/components/molecules/ToggleTheme";
 import { useState } from "react";
 import { DesktopNavbar } from "./DesktopNavbar";
 import { SideBar } from "./SideBar";
-import { ToggleTheme } from '@/components/molecules/ToggleTheme';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <nav className="flex items-center justify-between bg-base-100 px-4 py-2">
-        <Avatar name='Smailen Vargas'/>
-        <ToggleTheme />
+      <nav className="bg-base-100 flex items-center justify-between px-4 py-2">
+        <Avatar name="Smailen Vargas" />
 
-        {/* Menu Mobile: Bottone menu + SideBar */}
-        <div className="lg:hidden">
-          <button onClick={() => setIsOpen(true)} className='btn'>Menu</button>
+        <div className='flex items-center gap-4'>
+          <ToggleTheme />
 
-          <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
-        </div>
+          {/* Menu Mobile: Bottone menu + SideBar */}
+          <div className="lg:hidden">
+            <button onClick={() => setIsOpen(true)} className="btn">
+              Menu
+            </button>
 
-        {/* Menu Desktop */}
-        <div className="hidden lg:block">
-          <DesktopNavbar />
+            <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
+          </div>
+
+          {/* Menu Desktop */}
+          <div className="hidden lg:block">
+            <DesktopNavbar />
+          </div>
         </div>
       </nav>
     </>
