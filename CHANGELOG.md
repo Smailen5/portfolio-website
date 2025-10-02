@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.1.0](https://github.com/Smailen5/portfolio-website/compare/v4.0.0...v4.1.0) (2025-10-02)
+
+
+### Features
+
+* ✨ aggiornato il componente Navbar per supportare la navigazione desktop e mobile ([a626384](https://github.com/Smailen5/portfolio-website/commit/a626384fdfe9b7cb9f2b6f7dbd01879ff275ca4f))
+* ✨ aggiornato il componente SideBar con navigazione dinamica e chiusura al click ([f6c3237](https://github.com/Smailen5/portfolio-website/commit/f6c323725295015f37cb9b25e7b77cbba0e7542b))
+* ✨ aggiunta configurazione per il plugin daisyui ([471f9d6](https://github.com/Smailen5/portfolio-website/commit/471f9d60de88f1a06366cba1eac81d8b49b8dd55))
+* ✨ aggiunta dipendenza da daisyui ([4b19cb1](https://github.com/Smailen5/portfolio-website/commit/4b19cb12b69798ab346bfc3084e319774071cd0c))
+* ✨ aggiunta funzionalità di apertura del menu nella Navbar ([bc55c1d](https://github.com/Smailen5/portfolio-website/commit/bc55c1d8c6217deea816cc1ad3d8003598fe3ea1))
+* ✨ aggiunti componenti ContactPage, ErrorPage e ProjectPage ([b6b6f99](https://github.com/Smailen5/portfolio-website/commit/b6b6f995b439322227d5798369138f59bfe224ae))
+* ✨ aggiunto componente Avatar nella Navbar ([60d66bf](https://github.com/Smailen5/portfolio-website/commit/60d66bf1cddde9e22de01771e50a7e25cd265efc))
+* ✨ aggiunto componente CurriculumDownload per il download del CV ([6cd22c5](https://github.com/Smailen5/portfolio-website/commit/6cd22c586384a983654893832102c8c959023fad))
+* ✨ aggiunto componente DesktopNavbar per la navigazione desktop ([168c4d6](https://github.com/Smailen5/portfolio-website/commit/168c4d609599b095940edb8ea457774ace1f2b84))
+* ✨ aggiunto componente NotFound per gestire le pagine non trovate ([ac10644](https://github.com/Smailen5/portfolio-website/commit/ac106443fe08c96bd5177179bdafb5bca60f7339))
+* ✨ aggiunto componente SideBar per la navigazione ([6fa782a](https://github.com/Smailen5/portfolio-website/commit/6fa782aec2aa6bb5bf3340fa9de6d269a8cb2a53))
+* ✨ aggiunto toggle tema nella SideBar ([6cff8dc](https://github.com/Smailen5/portfolio-website/commit/6cff8dc6157899bfa9ebfae009e1b7f2ef24c21f))
+* ✨ rimosso il componente ErrorPage e le relative rotte ([2c13433](https://github.com/Smailen5/portfolio-website/commit/2c1343357b38133ae142d6e338edf2ec43920688))
+* 🆕 aggiunta Navbar e importazione di app.css nel componente principale ([7b7d6df](https://github.com/Smailen5/portfolio-website/commit/7b7d6df606ebaac422089574b97274346def8dcc))
+* 🆕 creata la Navbar come componente e aggiunto l'export nel modulo ([5f006d1](https://github.com/Smailen5/portfolio-website/commit/5f006d1e509c3aaedd6a8be8b439874e4c5ea220))
+
+
+### Bug Fixes
+
+* 🐛 aggiunto gestore di chiusura al click nel componente SideBar ([1116bd9](https://github.com/Smailen5/portfolio-website/commit/1116bd9ec042683f138b611e887adb44b8be52fa))
+* 🐛 reso il metodo closeSideBar opzionale nel componente CurriculumDownload ([6cc8ac6](https://github.com/Smailen5/portfolio-website/commit/6cc8ac6d7fd9660fd331a3545b32678648c89c39))
+* 🛠️ ripristinata la funzione HomePage e aggiornato il rendering ([9358248](https://github.com/Smailen5/portfolio-website/commit/935824847c017c1b516af85913c22ea68fca52a0))
+* 🛠️ sposta il provider in __root.tsx ([09961dc](https://github.com/Smailen5/portfolio-website/commit/09961dc459e924d78524074020a42e52a79436b3))
+
 ## [4.0.0](https://github.com/Smailen5/portfolio-website/compare/v3.9.2...v4.0.0) (2025-09-30)
 
 
