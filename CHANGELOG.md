@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.2.0](https://github.com/Smailen5/portfolio-website/compare/v4.1.0...v4.2.0) (2025-10-02)
+
+
+### Features
+
+* ✨ aggiornato il componente CardProject con nuove funzionalità e stili ([2373a24](https://github.com/Smailen5/portfolio-website/commit/2373a24803094c0f6ecedba7c4c830855efca369))
+* ✨ aggiornato il componente Homepage con nuovi elementi ([ca28d22](https://github.com/Smailen5/portfolio-website/commit/ca28d2288cd466ab295e48bc934eef6bf69929ac))
+* ✨ aggiunti hook useFetch e servizio projectService per il recupero dei progetti ([b971a63](https://github.com/Smailen5/portfolio-website/commit/b971a63af10b77bcaf33595a1c428d80123ad754))
+* ✨ aggiunto componente ToggleTheme nella Navbar ([ac37f8f](https://github.com/Smailen5/portfolio-website/commit/ac37f8fab9482aef8bb5798088acd159f482dece))
+* ✨ aggiunto componente ToggleTheme per la gestione del tema ([3c28fae](https://github.com/Smailen5/portfolio-website/commit/3c28fae6244653f79cc66b50ae4c75f8ec03fcce))
+* ✨ aggiunto il componente Strong per evidenziare il testo ([30ed8b0](https://github.com/Smailen5/portfolio-website/commit/30ed8b02a9308a5df0ad973969055ab5da4783d9))
+* ✨ aggiunto nuovo icona di chiusura multipla in formato SVG ([93430f3](https://github.com/Smailen5/portfolio-website/commit/93430f36807d0396ad434a55c567f5a8e41fe7fd))
+* ✨ aggiunto pulsante di chiusura con icona SVG nella SideBar ([5329064](https://github.com/Smailen5/portfolio-website/commit/5329064d7b0156d28079465b174a00867533e020))
+
+
+### Bug Fixes
+
+* 🐛 rimosso il testo "toggle tema" dalla SideBar ([4452939](https://github.com/Smailen5/portfolio-website/commit/4452939caa2e754648a23f97dc0d03054daaa12b))
+
 ## [4.1.0](https://github.com/Smailen5/portfolio-website/compare/v4.0.0...v4.1.0) (2025-10-02)
 
 
