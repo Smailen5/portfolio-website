@@ -1,4 +1,3 @@
-import { LinkBlank } from "@components/atoms/LinkBlank";
 
 export const HeaderProject = () => {
   return (
@@ -17,33 +16,36 @@ export const HeaderProject = () => {
           lasciarli intatti per mostrare il mio percorso di miglioramento e la
           crescita come sviluppatore. La documentazione è scritta in inglese, è
           possibile utilizzare{" "}
-          <LinkBlank
+          <a
             href="https://chromewebstore.google.com/detail/google-traduttore/aapbdbdomjkkjkaonfhkkikfgjllcleb?hl=it"
-            isText
+            target='_blank'
+            rel='noopener noreferrer'
           >
             Google Translate
-          </LinkBlank>{" "}
+          </a>{" "}
           per tradurla.
         </p>
         <p>
           Vuoi scoprire di più? Visita il mio{" "}
-          <LinkBlank
+          <a
             href="https://www.frontendmentor.io/profile/Smailen5"
-            isText
+            target='_blank'
+            rel='noopener noreferrer'
           >
             profilo Frontend Mentor
-          </LinkBlank>{" "}
+          </a>{" "}
           per vedere le sfide completate o il mio{" "}
-          <LinkBlank href="https://github.com/Smailen5" isText>
+          <a href="https://github.com/Smailen5" target='_blank' rel='noopener noreferrer'>
             profilo GitHub
-          </LinkBlank>{" "}
+          </a>{" "}
           per tutti i progetti, incluso il{" "}
-          <LinkBlank
+          <a
             href="https://github.com/Smailen5/portfolio-website"
-            isText
+            target='_blank'
+            rel='noopener noreferrer'
           >
             codice sorgente di questo sito
-          </LinkBlank>
+          </a>
           .
         </p>
       </header>

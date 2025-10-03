@@ -1,5 +1,6 @@
 import { Layout } from "@/components/molecules/Layout";
-import { ProjectTemplate } from "@/components/templates/ProjectTemplate";
+import { HeaderProject } from '@/features/projects/components/Header';
+import { SectionProjects } from '@/features/projects/components/Section';
 import { Helmet } from "react-helmet";
 
 const ProjectPage = () => {
@@ -17,7 +18,8 @@ const ProjectPage = () => {
         />
       </Helmet>
       <Layout>
-        <ProjectTemplate />
+        <HeaderProject />
+        <SectionProjects />
       </Layout>
     </>
   );
