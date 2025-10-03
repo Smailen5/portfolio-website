@@ -34,7 +34,12 @@ export const Filter = ({
 
   // Funzione per filtrare i progetti
   const handleFilter = (technology: string) => {
-    if (technology === "Tutto") return setFilteredProject(projectsNoFiltered), setIsOpen(false), setSelectedTechnology(technology);
+    if (technology === "Tutto")
+      return (
+        setFilteredProject(projectsNoFiltered),
+        setIsOpen(false),
+        setSelectedTechnology(technology)
+      );
 
     const filteredProjects = projectsNoFiltered.filter((project) => {
       // Se non ci sono tecnologie, non filtrare
@@ -49,7 +54,10 @@ export const Filter = ({
   };
 
   return (
-    <section id='filter' className="bg-secondary flex w-full flex-col items-start gap-8 rounded-md p-2 md:flex-row md:items-end md:justify-between md:gap-0">
+    <section
+      id="filter"
+      className="bg-secondary flex w-full flex-col items-start gap-8 rounded-md p-2 md:flex-row md:items-end md:justify-between md:gap-0"
+    >
       <details
         className="dropdown"
         open={isOpen}
@@ -60,13 +68,15 @@ export const Filter = ({
           {technologies.map((tech) => {
             return (
               <li key={tech}>
-                <a href='#filter' onClick={() => handleFilter(tech)}>{tech}</a>
+                <a href="#filter" onClick={() => handleFilter(tech)}>
+                  {tech}
+                </a>
               </li>
             );
           })}
         </ul>
       </details>
-      <p className='text-secondary-content'>
+      <p className="text-secondary-content">
         Progetti{" "}
         {selectedTechnology === "Tutto"
           ? "visualizzati"
