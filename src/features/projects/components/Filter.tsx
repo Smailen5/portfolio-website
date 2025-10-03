@@ -66,7 +66,7 @@ export const Filter = ({
           })}
         </ul>
       </details>
-      <p>
+      <p className='text-secondary-content'>
         Progetti{" "}
         {selectedTechnology === "Tutto"
           ? "visualizzati"
