@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.3.0](https://github.com/Smailen5/portfolio-website/compare/v4.2.0...v4.3.0) (2025-10-03)
+
+
+### Features
+
+* ✨ aggiunti i componenti Icon e SocialIcons per la visualizzazione delle icone social ([9fbb55d](https://github.com/Smailen5/portfolio-website/commit/9fbb55d47afad13e81d3a0290844b06c2f2deeff))
+* ✨ aggiunto il componente Footer nel file __root.tsx ([548d49b](https://github.com/Smailen5/portfolio-website/commit/548d49b922c058992a36637ca783d325781840e7))
+
+
+### Bug Fixes
+
+* 🛠️ aggiornato l'anno di copyright nel footer ([59ba1f9](https://github.com/Smailen5/portfolio-website/commit/59ba1f9c38bf3c2535bd2931ff59ffa5bb4f239c))
+
 ## [4.2.0](https://github.com/Smailen5/portfolio-website/compare/v4.1.0...v4.2.0) (2025-10-02)
 
 
