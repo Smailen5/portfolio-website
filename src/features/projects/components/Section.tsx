@@ -23,7 +23,7 @@ export const SectionProjects = () => {
 
   return (
     <>
-      <div>
+      <div className='flex flex-col gap-8'>
         <Filter number={filteredProjects.length} setFilteredProject={setFilteredProjects} projectsNoFiltered={projects} />
         <section className='grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
         {filteredProjects.map((project : Project) => (

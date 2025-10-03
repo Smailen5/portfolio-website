@@ -49,7 +49,7 @@ export const Filter = ({
   };
 
   return (
-    <section className="bg-secondary text-secondary-foreground flex w-full flex-col items-start gap-8 rounded-md p-2 md:flex-row md:items-end md:justify-between md:gap-0">
+    <section id='filter' className="bg-secondary flex w-full flex-col items-start gap-8 rounded-md p-2 md:flex-row md:items-end md:justify-between md:gap-0">
       <details
         className="dropdown"
         open={isOpen}
@@ -60,7 +60,7 @@ export const Filter = ({
           {technologies.map((tech) => {
             return (
               <li key={tech}>
-                <a onClick={() => handleFilter(tech)}>{tech}</a>
+                <a href='#filter' onClick={() => handleFilter(tech)}>{tech}</a>
               </li>
             );
           })}
