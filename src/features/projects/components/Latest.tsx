@@ -3,7 +3,7 @@ import { Project } from "@/shared/types/projects";
 import { Section } from "@components/atoms/Section";
 import { useServerFn } from '@tanstack/react-start';
 import { useEffect, useState } from 'react';
-import { fetchProjects } from '@server/projectService';
+import { fetchProjects } from '@server/getProjects';
 
 export const LastProjects = () => {
   const [projects, setProjects] = useState<Project[]>([])
