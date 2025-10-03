@@ -11,7 +11,8 @@
       "@components/*": ["./src/components/*"],
       "@features/*": ["./src/features/*"],
       "@shared/*": ["./src/shared/*"],
-      "@pages/*": ["./src/pages/*"]
+      "@pages/*": ["./src/pages/*"],
+      "@server/*": ["./src/server/*"]
     }
   }
 }
