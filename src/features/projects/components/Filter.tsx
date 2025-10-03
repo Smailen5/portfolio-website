@@ -14,8 +14,7 @@ const technologies = [
   "Tailwind CSS",
   "React",
   "Next.js",
-  "Form",
-  "Responsive",
+  "Responsive design",
 ];
 
 export const Filter = ({
