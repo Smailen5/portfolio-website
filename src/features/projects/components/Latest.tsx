@@ -1,6 +1,5 @@
 import { CardProject } from "@/features/projects/components/Card";
 import { Project } from "@/shared/types/projects";
-import { Header } from "@components/atoms/Header";
 import { Section } from "@components/atoms/Section";
 import { useServerFn } from '@tanstack/react-start';
 import { useEffect, useState } from 'react';
@@ -26,9 +25,9 @@ export const LastProjects = () => {
   return (
     <>
       <Section>
-        <Header type="h2" titleID="ultimi lavori" className='text-primary-content'>
+        <h2 className='text-primary-content'>
           Guarda i miei ultimi lavori
-        </Header>
+        </h2>
         <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {projects.slice(0, showLastProjects)
             .map((project: Project) => (

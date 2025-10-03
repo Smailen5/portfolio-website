@@ -1,4 +1,3 @@
-import { Header } from "@components/atoms/Header";
 import { Section } from "@components/atoms/Section";
 import { TooltipCustom } from "@components/atoms/TooltipCustom";
 import { Strong } from "@/components/atoms/Strong";
@@ -6,7 +5,7 @@ import { Strong } from "@/components/atoms/Strong";
 const Presentation = () => {
   return (
     <Section className="gap-4">
-      <Header className="sr-only">Presentazione</Header>
+      <h2 className="sr-only">Presentazione</h2>
       <p>
         Sono un <Strong>frontend developer</Strong> con una passione che nasce
         dall&apos;infanzia. Tutto è iniziato con uno{" "}
