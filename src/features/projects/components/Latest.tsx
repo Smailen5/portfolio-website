@@ -15,7 +15,7 @@ export const LastProjects = () => {
 
   useEffect(()=> {
     getProjects().then(data => {
-      console.log(data)
+      // console.log(data)
       setProjects(data)
     }).catch(err =>{
       console.error(err.message)
