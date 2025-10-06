@@ -1,14 +1,7 @@
-import { useEffect, useState } from "react";
+import { useTheme } from "@/context/ThemeContext";
 
 export const ToggleTheme = () => {
-  const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    document.documentElement.setAttribute(
-      "data-theme",
-      isDark ? "dark" : "light",
-    );
-  }, [isDark]);
+  const { theme, setTheme } = useTheme();
 
   return (
     <label className="swap swap-rotate">
@@ -17,7 +10,7 @@ export const ToggleTheme = () => {
         type="checkbox"
         className="theme-controller"
         value="synthwave"
-        onChange={() => setIsDark(!isDark)}
+        onChange={() => setTheme(theme === "light" ? "dark" : "light")}
       />
 
       {/* sun icon */}

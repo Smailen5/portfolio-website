@@ -1,7 +1,8 @@
 //src/routes/__root.tsx
 /// <reference types="vite/client" />
 
-import Footer from '@/components/organisms/Footer';
+import Footer from "@/components/organisms/Footer";
+import { ThemeProvider } from "@/context/ThemeContext";
 import appCss from "@/styles/app.css?url";
 import { Navbar } from "@components/organisms/Navbar";
 import {
@@ -34,9 +35,11 @@ export const Route = createRootRoute({
 
 function RootComponent() {
   return (
-    <RootDocument>
-      <Outlet />
-    </RootDocument>
+    <ThemeProvider>
+      <RootDocument>
+        <Outlet />
+      </RootDocument>
+    </ThemeProvider>
   );
 }
 
