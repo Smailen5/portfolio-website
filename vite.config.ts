@@ -18,30 +18,4 @@ export default defineConfig({
       "@server": path.resolve(__dirname, "./src/server"),
     },
   },
-  build: {
-    minify: "terser",
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-      },
-      format: {
-        comments: false,
-      },
-    },
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          // Separa le librerie React in un chunk dedicato
-          "react-vendor": ["react", "react-dom", "@tanstack/react-router"],
-          // Separa le librerie di form in un altro chunk
-          "form-vendor": ["formik", "yup", "@formspree/react"],
-          // Separa le librerie di markdown in un altro chunk
-          "markdown-vendor": ["react-markdown", "rehype-raw", "remark-gfm"],
-        },
-      },
-    },
-    // Aumenta il limite di warning per i chunk
-    chunkSizeWarningLimit: 1000,
-  },
 });
