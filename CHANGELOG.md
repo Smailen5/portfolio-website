@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.5.0](https://github.com/Smailen5/portfolio-website/compare/v4.4.0...v4.5.0) (2025-10-09)
+
+
+### Features
+
+* ✨ aggiornato il componente CardProject per utilizzare nameFolder ([550ce53](https://github.com/Smailen5/portfolio-website/commit/550ce539c8d440cdc53b186e28151bda97b8909b))
+* ✨ aggiunto il campo nameFolder all'interfaccia CardProjectProps ([c604107](https://github.com/Smailen5/portfolio-website/commit/c60410731ba857e43156bdaa6e1c5837fb46892e))
+
+
+### Bug Fixes
+
+* 🐛 aggiornato l'endpoint README per il recupero delle immagini ([c209a6d](https://github.com/Smailen5/portfolio-website/commit/c209a6deeff49b3ca53203a0a25c53a280cecc84))
+* 🐛 corretto l'uso dell'apostrofo nel testo della ContactPage ([7c9ce3b](https://github.com/Smailen5/portfolio-website/commit/7c9ce3b0a6baf93f40b06593132bbd85a94d770a))
+* 🐛 semplificato il gestore di eventi nel componente Filter ([e8ac5d0](https://github.com/Smailen5/portfolio-website/commit/e8ac5d0ad93ac24450c941cd7322d74c23a50372))
+
 ## [4.4.0](https://github.com/Smailen5/portfolio-website/compare/v4.3.0...v4.4.0) (2025-10-09)
 
 
