@@ -5,15 +5,11 @@ import path from "path";
 import { defineConfig } from "vite";
 import tsConfigPaths from "vite-tsconfig-paths";
 
-import netlify from "@netlify/vite-plugin-tanstack-start";
-
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   plugins: [
     tsConfigPaths(),
     tanstackStart(),
-    // Usa Netlify plugin solo in build, non in dev
-    ...(mode === "production" ? [netlify()] : []),
     viteReact(),
     tailwindcss(),
   ],
