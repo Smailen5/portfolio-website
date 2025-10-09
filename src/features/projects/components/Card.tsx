@@ -1,12 +1,14 @@
 import { CardProjectProps } from "@/shared/types/projects";
 import { nameCorrect } from "@/shared/utils/nameCorrect";
 import { Link } from "@tanstack/react-router";
+import { ENDPOINTS } from "@/shared/constants/api";
 
 export const CardProject: React.FC<CardProjectProps> = ({
   name,
   description,
   technologies,
   imageUrl,
+  nameFolder,
 }) => {
   return (
     <>
@@ -42,7 +44,8 @@ export const CardProject: React.FC<CardProjectProps> = ({
           </ul>
 
           <div className="flex justify-center">
-            <button className="btn btn-primary btn-wide">Dettagli</button>
+            <Link to={`${ENDPOINTS.GITHUB.README.FOLDER}${nameFolder}`} className="btn btn-primary btn-wide" target="_blank" rel="noopener noreferrer" >
+            Dettagli</Link>
           </div>
         </div>
       </article>
