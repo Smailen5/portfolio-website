@@ -1,7 +1,9 @@
 import { Avatar } from "@/components/atoms/Avatar";
 import { ToggleTheme } from "@/components/molecules/ToggleTheme";
+import { CurriculumDownload } from "@/features/cv/components/CurriculumDownload";
+import { NAVIGATION_LINKS } from "@/shared/constants/navigation";
+import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { DesktopNavbar } from "./DesktopNavbar";
 import { SideBar } from "./SideBar";
 
 export const Navbar = () => {
@@ -11,7 +13,7 @@ export const Navbar = () => {
       <nav className="bg-base-100 flex items-center justify-between px-4 py-2">
         <Avatar name="Smailen Vargas" />
 
-        <div className='flex items-center gap-4'>
+        <div className="flex items-center gap-4">
           <ToggleTheme />
 
           {/* Menu Mobile: Bottone menu + SideBar */}
@@ -25,7 +27,20 @@ export const Navbar = () => {
 
           {/* Menu Desktop */}
           <div className="hidden lg:block">
-            <DesktopNavbar />
+            <nav className="flex items-center gap-4">
+              {NAVIGATION_LINKS.map((link) => (
+                <Link
+                  key={link.params}
+                  to={link.linkTo}
+                  params={link.params}
+                  className="capitalize"
+                >
+                  {link.params}
+                </Link>
+              ))}
+              <CurriculumDownload />
+              <div>toggle tema</div>
+            </nav>
           </div>
         </div>
       </nav>
