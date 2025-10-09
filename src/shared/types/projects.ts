@@ -3,6 +3,7 @@ export interface CardProjectProps {
   description: string | null;
   technologies: string[];
   imageUrl: string | null;
+  nameFolder: string;
 }
 
 export interface Project extends CardProjectProps {
