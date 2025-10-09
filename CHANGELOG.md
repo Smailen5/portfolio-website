@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.4.0](https://github.com/Smailen5/portfolio-website/compare/v4.3.0...v4.4.0) (2025-10-09)
+
+
+### Features
+
+* ✨ aggiunto il file getProjects.ts per il fetch dei progetti ([2fc025c](https://github.com/Smailen5/portfolio-website/commit/2fc025cce80bbbe23dcf47cb3606d95c4c58f0f9))
+* ✨ aggiunto il supporto per la funzione fetch nel file di configurazione ESLint ([3a28838](https://github.com/Smailen5/portfolio-website/commit/3a28838a145c15b1ecf0a9cea04d866a224d83f7))
+* ✨ aggiunto supporto per Netlify nel file di configurazione e aggiornate le dipendenze ([7a98387](https://github.com/Smailen5/portfolio-website/commit/7a9838767af3ebec4d3aeb086a0ee09e894e3eac))
+* ✨ implementato il ThemeContext per la gestione del tema ([80db58e](https://github.com/Smailen5/portfolio-website/commit/80db58ed9b9c991d9207cb2f1effff3b0e59283f))
+
+
+### Bug Fixes
+
+* 🐛 migliorata la gestione della SideBar con useEffect ([cdda6db](https://github.com/Smailen5/portfolio-website/commit/cdda6db904f91cda95157d6558af11365fadf3c1))
+* 🐛 semplificata la logica del filtro nei componenti Filter e Section ([3df052b](https://github.com/Smailen5/portfolio-website/commit/3df052b8b3e9cf7f4c2fdab74f23e86716977b2e))
+* 🗑️ rimosso il supporto per Netlify e aggiornato il file di configurazione ([4fb257b](https://github.com/Smailen5/portfolio-website/commit/4fb257b525b0784dedf99f69c858f6d9613c3bc2))
+
 ## [4.3.0](https://github.com/Smailen5/portfolio-website/compare/v4.2.0...v4.3.0) (2025-10-03)
 
 
