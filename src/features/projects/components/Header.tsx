@@ -1,3 +1,4 @@
+import { Link } from '@tanstack/react-router';
 
 export const HeaderProject = () => {
   return (
@@ -16,36 +17,39 @@ export const HeaderProject = () => {
           lasciarli intatti per mostrare il mio percorso di miglioramento e la
           crescita come sviluppatore. La documentazione è scritta in inglese, è
           possibile utilizzare{" "}
-          <a
-            href="https://chromewebstore.google.com/detail/google-traduttore/aapbdbdomjkkjkaonfhkkikfgjllcleb?hl=it"
+          <Link
+            to="https://chromewebstore.google.com/detail/google-traduttore/aapbdbdomjkkjkaonfhkkikfgjllcleb?hl=it"
             target='_blank'
             rel='noopener noreferrer'
+            className='link link-primary'
           >
             Google Translate
-          </a>{" "}
+          </Link>{" "}
           per tradurla.
         </p>
         <p>
           Vuoi scoprire di più? Visita il mio{" "}
-          <a
-            href="https://www.frontendmentor.io/profile/Smailen5"
+          <Link
+            to="https://www.frontendmentor.io/profile/Smailen5"
             target='_blank'
             rel='noopener noreferrer'
+            className='link link-primary'
           >
             profilo Frontend Mentor
-          </a>{" "}
+          </Link>{" "}
           per vedere le sfide completate o il mio{" "}
-          <a href="https://github.com/Smailen5" target='_blank' rel='noopener noreferrer'>
+          <Link to="https://github.com/Smailen5" target='_blank' rel='noopener noreferrer' className='link link-primary'>
             profilo GitHub
-          </a>{" "}
+          </Link>{" "}
           per tutti i progetti, incluso il{" "}
-          <a
-            href="https://github.com/Smailen5/portfolio-website"
+          <Link
+            to="https://github.com/Smailen5/portfolio-website"
             target='_blank'
             rel='noopener noreferrer'
+            className='link link-primary'
           >
             codice sorgente di questo sito
-          </a>
+          </Link>
           .
         </p>
       </header>
