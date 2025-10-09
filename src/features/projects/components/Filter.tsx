@@ -1,5 +1,5 @@
 import { Project } from "@/shared/types/projects";
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 
 interface FilterProps {
   setFilteredProject: Dispatch<SetStateAction<Project[]>>;
@@ -26,11 +26,6 @@ export const Filter = ({
   const [isOpen, setIsOpen] = useState(false);
   // Stato per il filtro selezionato
   const [selectedTechnology, setSelectedTechnology] = useState("Tutto");
-
-  // Stato iniziale al caricamento della pagina
-  useEffect(() => {
-    setFilteredProject(projectsNoFiltered);
-  }, [projectsNoFiltered, setFilteredProject]);
 
   // Funzione per filtrare i progetti
   const handleFilter = (technology: string) => {
@@ -68,7 +63,7 @@ export const Filter = ({
           {technologies.map((tech) => {
             return (
               <li key={tech}>
-                <a href="#filter" onClick={() => handleFilter(tech)}>
+                <a href="#filter" onClick={(e) => {e.preventDefault(),handleFilter(tech)}}>
                   {tech}
                 </a>
               </li>

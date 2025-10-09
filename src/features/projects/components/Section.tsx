@@ -1,14 +1,10 @@
-
 import { Project } from "@/shared/types/projects";
 import { useState } from "react";
 import { CardProject } from "./Card";
 import { Filter } from "./Filter";
 
 export const SectionProjects = ({ projects }: { projects: Project[] }) => {
-
   const [filteredProjects, setFilteredProjects] = useState<Project[]>(projects);
-
-
 
   return (
     <>
