@@ -27,7 +27,7 @@ function ContactPage() {
           smailenv91@gmail.com
         </Link>
         <p className="text-sm">
-          (Clicca per aprire il tuo client email, oppure copia l'indirizzo)
+          (Clicca per aprire il tuo client email, oppure copia l&apos;indirizzo)
         </p>
       </div>
 
