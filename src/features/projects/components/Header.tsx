@@ -1,4 +1,4 @@
-import { Link } from '@tanstack/react-router';
+import { Link } from "@tanstack/react-router";
 
 export const HeaderProject = () => {
   return (
@@ -19,9 +19,9 @@ export const HeaderProject = () => {
           possibile utilizzare{" "}
           <Link
             to="https://chromewebstore.google.com/detail/google-traduttore/aapbdbdomjkkjkaonfhkkikfgjllcleb?hl=it"
-            target='_blank'
-            rel='noopener noreferrer'
-            className='link link-primary'
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link link-primary"
           >
             Google Translate
           </Link>{" "}
@@ -31,22 +31,27 @@ export const HeaderProject = () => {
           Vuoi scoprire di più? Visita il mio{" "}
           <Link
             to="https://www.frontendmentor.io/profile/Smailen5"
-            target='_blank'
-            rel='noopener noreferrer'
-            className='link link-primary'
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link link-primary"
           >
             profilo Frontend Mentor
           </Link>{" "}
           per vedere le sfide completate o il mio{" "}
-          <Link to="https://github.com/Smailen5" target='_blank' rel='noopener noreferrer' className='link link-primary'>
+          <Link
+            to="https://github.com/Smailen5"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link link-primary"
+          >
             profilo GitHub
           </Link>{" "}
           per tutti i progetti, incluso il{" "}
           <Link
             to="https://github.com/Smailen5/portfolio-website"
-            target='_blank'
-            rel='noopener noreferrer'
-            className='link link-primary'
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link link-primary"
           >
             codice sorgente di questo sito
           </Link>
