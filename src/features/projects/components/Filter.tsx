@@ -63,7 +63,7 @@ export const Filter = ({
           {technologies.map((tech) => {
             return (
               <li key={tech}>
-                <a href="#filter" onClick={(e) => {e.preventDefault(),handleFilter(tech)}}>
+                <a href="#filter" onClick={() => {handleFilter(tech)}}>
                   {tech}
                 </a>
               </li>
