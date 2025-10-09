@@ -1,9 +1,11 @@
 import { Layout } from "@/components/molecules/Layout";
 import { HeaderProject } from '@/features/projects/components/Header';
 import { SectionProjects } from '@/features/projects/components/Section';
+import { useLoaderData } from '@tanstack/react-router';
 import { Helmet } from "react-helmet";
 
 const ProjectPage = () => {
+  const projects = useLoaderData({ from: '/projects/'})
   return (
     <>
       <Helmet>
@@ -19,7 +21,7 @@ const ProjectPage = () => {
       </Helmet>
       <Layout>
         <HeaderProject />
-        <SectionProjects />
+        <SectionProjects projects={projects} />
       </Layout>
     </>
   );

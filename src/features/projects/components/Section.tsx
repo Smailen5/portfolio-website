@@ -1,26 +1,14 @@
-import { fetchProjects } from "@/server/getProjects";
+
 import { Project } from "@/shared/types/projects";
-import { useServerFn } from "@tanstack/react-start";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { CardProject } from "./Card";
 import { Filter } from "./Filter";
 
-export const SectionProjects = () => {
-  const getProjects = useServerFn(fetchProjects);
+export const SectionProjects = ({ projects }: { projects: Project[] }) => {
 
-  const [projects, setProjects] = useState<Project[]>([]);
-  const [filteredProjects, setFilteredProjects] = useState<Project[]>([]);
+  const [filteredProjects, setFilteredProjects] = useState<Project[]>(projects);
 
-  useEffect(() => {
-    getProjects()
-      .then((data) => {
-        // console.log(data)
-        setProjects(data);
-      })
-      .catch((err) => {
-        console.error(err.message);
-      });
-  }, [getProjects]);
+
 
   return (
     <>
