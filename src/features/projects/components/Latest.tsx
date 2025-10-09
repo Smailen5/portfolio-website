@@ -1,26 +1,18 @@
+import { fetchProjects } from '@/api/getProjects';
 import { CardProject } from "@/features/projects/components/Card";
 import { Project } from "@/shared/types/projects";
 import { Section } from "@components/atoms/Section";
-import { useServerFn } from '@tanstack/react-start';
 import { useEffect, useState } from 'react';
-import { fetchProjects } from '@server/getProjects';
 
 export const LastProjects = () => {
   const [projects, setProjects] = useState<Project[]>([])
   // !Modifica qui i progetti da mostrare
   const showLastProjects = 3;
 
-  // Server Function che recupera i progetti
-  const getProjects = useServerFn(fetchProjects)
+useEffect(()=>{
+  fetchProjects().then(data => {setProjects(data)}).catch(error => {console.error(error)})
+},[])
 
-  useEffect(()=> {
-    getProjects().then(data => {
-      // console.log(data)
-      setProjects(data)
-    }).catch(err =>{
-      console.error(err.message)
-    })
-  },[getProjects])
 
   return (
     <>
