@@ -1,7 +1,8 @@
+import { CloseIcon } from "@/assets/icons";
 import { CurriculumDownload } from "@/features/cv/components/CurriculumDownload";
 import { NAVIGATION_LINKS } from "@/shared/constants/navigation";
 import { Link } from "@tanstack/react-router";
-import { CloseIcon } from "@/assets/icons";
+import { useEffect, useState } from 'react';
 
 export const SideBar = ({
   isOpen,
@@ -10,9 +11,11 @@ export const SideBar = ({
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
 }) => {
-  const closeSideBar = () => {
-    setIsOpen(false);
-  };
+  const [mounted, setMounted] = useState(false)
+  const closeSideBar = () => setIsOpen(false);
+
+  // Mantiene la sidebar chiusa al primo rendering
+  useEffect(() => {setMounted(true)},[])
 
   return (
     <>
@@ -24,12 +27,12 @@ export const SideBar = ({
 
       {/* Contenitore principale della SideBar */}
       <div
-        className={`bg-base-200 fixed inset-y-0 top-0 right-0 z-20 h-screen w-[70%] transform shadow-lg transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`bg-base-200 fixed inset-y-0 top-0 right-0 z-20 h-screen w-[70%] transform shadow-lg ${mounted ? "transition-transform duration-300 ease-in-out" : ""}lg:hidden ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="p-4">
-          <div className="flex items-center justify-end pb-6 pr-2">
+          <div className="flex items-center justify-end pr-2 pb-6">
             <button
               onClick={() => setIsOpen(false)}
               className="btn btn-error btn-circle"
