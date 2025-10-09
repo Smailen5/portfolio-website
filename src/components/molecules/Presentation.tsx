@@ -1,10 +1,10 @@
-import { Section } from "@components/atoms/Section";
+// import { Section } from "@components/atoms/Section";
 import { TooltipCustom } from "@components/atoms/TooltipCustom";
 import { Strong } from "@/components/atoms/Strong";
 
 const Presentation = () => {
   return (
-    <Section className="gap-4">
+    <section className="mx-auto flex w-full flex-col gap-16">
       <h2 className="sr-only">Presentazione</h2>
       <p>
         Sono un <Strong>frontend developer</Strong> con una passione che nasce
@@ -47,7 +47,7 @@ const Presentation = () => {
         della chitarra elettrica e sperimento con lo sviluppo di videogiochi
         usando Phaser e Kaboom.js.
       </p>
-    </Section>
+    </section>
   );
 };
 

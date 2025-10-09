@@ -1,4 +1,4 @@
-import { Section } from "@components/atoms/Section";
+// import { Section } from "@components/atoms/Section";
 import Skill from "./Skill";
 
 interface SkillsProps {
@@ -9,7 +9,7 @@ const Skills = ({ title, section }: SkillsProps) => {
 
   return (
     <>
-      <Section className="gap-10">
+      <section className="gap-10 mx-auto flex w-full flex-col">
         <h3 className='text-secondary-content'>
           {title}
         </h3>
@@ -18,7 +18,7 @@ const Skills = ({ title, section }: SkillsProps) => {
             <Skill key={skill.name} {...skill} />
           ))}
         </ul>
-      </Section>
+      </section>
     </>
   );
 };
