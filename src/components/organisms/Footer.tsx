@@ -1,6 +1,7 @@
 import reactIcon from "@/assets/icons/icons8-react.svg";
 import tailwindIcon from "@/assets/icons/icons8-tailwind-css.svg";
 import SocialIcons from "@/components/molecules/Social/SocialIcon";
+import { Link } from '@tanstack/react-router';
 
 const Footer = () => {
   return (
@@ -17,14 +18,14 @@ const Footer = () => {
             riservati.{" "}
             <span>
               Icons by{" "}
-              <a
-                href={"https://icons8.com"}
+              <Link
+                to={"https://icons8.com"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-accent font-bold"
+                className="text-accent font-bold link"
               >
                 Icons8
-              </a>
+              </Link>
             </span>
           </p>
           <SocialIcons />
