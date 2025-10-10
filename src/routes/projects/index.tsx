@@ -1,3 +1,5 @@
+// src/routes/projects/index.tsx
+
 import { fetchProjects } from "@/api/getProjects";
 import { Layout } from "@/components/molecules/Layout";
 import { HeaderProject } from "@/features/projects/components/Header";
