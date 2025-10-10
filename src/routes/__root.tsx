@@ -3,32 +3,10 @@
 
 import Footer from "@/components/organisms/Footer";
 import { ThemeProvider } from "@/context/ThemeContext";
-import appCss from "@/styles/app.css?url";
 import { Navbar } from "@components/organisms/Navbar";
-import {
-  createRootRoute,
-  HeadContent,
-  Outlet,
-  Scripts,
-} from "@tanstack/react-router";
-import type { ReactNode } from "react";
+import { createRootRoute, Outlet } from "@tanstack/react-router";
 
 export const Route = createRootRoute({
-  head: () => ({
-    meta: [
-      {
-        charSet: "utf-8",
-      },
-      {
-        name: "viewport",
-        content: "width=device-width, initial-scale=1.0",
-      },
-      {
-        title: "Smailen Vargas | Frontend Developer",
-      },
-    ],
-    links: [{ rel: "stylesheet", href: appCss }],
-  }),
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
 });
@@ -36,26 +14,12 @@ export const Route = createRootRoute({
 function RootComponent() {
   return (
     <ThemeProvider>
-      <RootDocument>
+      <Navbar />
+      <main>
         <Outlet />
-      </RootDocument>
+      </main>
+      <Footer />
     </ThemeProvider>
-  );
-}
-
-function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
-  return (
-    <html>
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        <Scripts />
-      </body>
-    </html>
   );
 }
 
