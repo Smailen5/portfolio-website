@@ -5,6 +5,7 @@ import Footer from "@/components/organisms/Footer";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { Navbar } from "@components/organisms/Navbar";
 import { createRootRoute, Outlet } from "@tanstack/react-router";
+import { Head } from "@/shared/utils/Head";
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -14,6 +15,7 @@ export const Route = createRootRoute({
 function RootComponent() {
   return (
     <ThemeProvider>
+      <Head />
       <Navbar />
       <main>
         <Outlet />
