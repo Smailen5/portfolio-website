@@ -1,3 +1,5 @@
+// src/routes/contact/index.tsx
+
 import { Layout } from "@/components/molecules/Layout";
 import SocialIcons from "@/components/molecules/Social/SocialIcon";
 import { Head } from "@/shared/utils/Head";
