@@ -4,7 +4,7 @@ import { fetchProjects } from "@/api/getProjects";
 import { Layout } from "@/components/molecules/Layout";
 import { HeaderProject } from "@/features/projects/components/Header";
 import { SectionProjects } from "@/features/projects/components/Section";
-import { Head } from "@/shared/utils/Head";
+import { Head } from "@/components/atoms/Head";
 import { createFileRoute, useLoaderData } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/projects/")({

@@ -5,7 +5,7 @@ import Footer from "@/components/organisms/Footer";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { Navbar } from "@components/organisms/Navbar";
 import { createRootRoute, Outlet } from "@tanstack/react-router";
-import { Head } from "@/shared/utils/Head";
+import { Head } from "@/components/atoms/Head";
 
 export const Route = createRootRoute({
   component: RootComponent,

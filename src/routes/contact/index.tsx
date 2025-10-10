@@ -2,7 +2,7 @@
 
 import { Layout } from "@/components/molecules/Layout";
 import SocialIcons from "@/components/molecules/Social/SocialIcon";
-import { Head } from "@/shared/utils/Head";
+import { Head } from "@/components/atoms/Head";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/contact/")({
