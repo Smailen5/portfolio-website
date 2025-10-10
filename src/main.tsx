@@ -6,9 +6,6 @@ import "@/styles/app.css";
 
 const router = getRouter();
 
-console.log("Router created:", router);
-console.log("Router tree:", router.routeTree);
-
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <RouterProvider router={router} />
