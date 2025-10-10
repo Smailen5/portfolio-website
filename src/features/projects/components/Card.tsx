@@ -1,6 +1,5 @@
 import { CardProjectProps } from "@/shared/types/projects";
 import { nameCorrect } from "@/shared/utils/nameCorrect";
-import { Link } from "@tanstack/react-router";
 import { ENDPOINTS } from "@/shared/constants/api";
 
 export const CardProject: React.FC<CardProjectProps> = ({
@@ -15,9 +14,9 @@ export const CardProject: React.FC<CardProjectProps> = ({
       {/* PROGETTO SINGOLO */}
       <article className="card bg-base-100 w-full shadow-sm" key={name}>
         <figure>
-          <Link to="/projects" target="_blank" rel="noopener noreferrer">
-            <img src={imageUrl || ""} alt="Shoes" />
-          </Link>
+          <a href={`${ENDPOINTS.GITHUB.README.FOLDER}${nameFolder}`} target="_blank" rel="noopener noreferrer">
+            <img src={imageUrl || ""} alt={`Screenshot del progetto ${nameCorrect(name)}`} />
+          </a>
         </figure>
         <div className="card-body">
           <h3 className="card-title uppercase">{nameCorrect(name)}</h3>
@@ -44,8 +43,8 @@ export const CardProject: React.FC<CardProjectProps> = ({
           </ul>
 
           <div className="flex justify-center">
-            <Link to={`${ENDPOINTS.GITHUB.README.FOLDER}${nameFolder}`} className="btn btn-primary btn-wide" target="_blank" rel="noopener noreferrer" >
-            Dettagli</Link>
+            <a href={`${ENDPOINTS.GITHUB.README.FOLDER}${nameFolder}`} className="btn btn-primary btn-wide" target="_blank" rel="noopener noreferrer" >
+            Dettagli</a>
           </div>
         </div>
       </article>
