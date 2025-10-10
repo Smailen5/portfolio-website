@@ -17,9 +17,6 @@ importers:
       '@tanstack/react-router':
         specifier: ^1.132.23
         version: 1.132.47(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@types/react-helmet':
-        specifier: ^6.1.11
-        version: 6.1.11
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -44,9 +41,6 @@ importers:
       tailwind-merge:
         specifier: ^2.6.0
         version: 2.6.0
-      tailwindcss:
-        specifier: ^4.1.13
-        version: 4.1.14
     devDependencies:
       '@eslint/js':
         specifier: ^9.36.0
@@ -63,6 +57,9 @@ importers:
       '@types/react-dom':
         specifier: ^18.3.7
         version: 18.3.7(@types/react@18.3.26)
+      '@types/react-helmet':
+        specifier: ^6.1.11
+        version: 6.1.11
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.44.1
         version: 8.46.0(@typescript-eslint/parser@8.46.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
@@ -75,9 +72,6 @@ importers:
       daisyui:
         specifier: ^5.1.26
         version: 5.1.29
-      dotenv:
-        specifier: ^17.2.2
-        version: 17.2.3
       eslint:
         specifier: ^9.36.0
         version: 9.37.0(jiti@2.6.1)
@@ -99,6 +93,9 @@ importers:
       standard-version:
         specifier: ^9.5.0
         version: 9.5.0
+      tailwindcss:
+        specifier: ^4.1.14
+        version: 4.1.14
       typescript:
         specifier: ^5.9.2
         version: 5.9.3
@@ -1327,10 +1324,6 @@ packages:
   dot-prop@5.3.0:
     resolution: {integrity: sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==}
     engines: {node: '>=8'}
-
-  dotenv@17.2.3:
-    resolution: {integrity: sha512-JVUnt+DUIzu87TABbhPmNfVdBDt18BLOWjMUFJMSi/Qqg7NTYtabbvSNJGOJ7afbRuv9D/lngizHtP7QyLQ+9w==}
-    engines: {node: '>=12'}
 
   dotgitignore@2.1.0:
     resolution: {integrity: sha512-sCm11ak2oY6DglEPpCB8TixLjWAxd3kJTs6UIcSasNYxXdFPV+YKlye92c8H4kKFqV5qYMIh7d+cYecEg0dIkA==}
@@ -4034,8 +4027,6 @@ snapshots:
   dot-prop@5.3.0:
     dependencies:
       is-obj: 2.0.0
-
-  dotenv@17.2.3: {}
 
   dotgitignore@2.1.0:
     dependencies:
