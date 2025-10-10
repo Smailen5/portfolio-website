@@ -15,25 +15,17 @@ export const SITE_INFO = {
   locale: "it_IT",
   themeColor: "#ffffff",
 } as const;
-
 // ========================================
 // Meta Tags SEO Base
 // ========================================
 export const BASE_META_TAGS = [
-  {
-    charSet: "utf-8",
-  },
-  {
-    name: "viewport",
-    content: "width=device-width, initial-scale=1.0",
-  },
   {
     title: "Smailen Vargas | Frontend Developer",
   },
   {
     name: "description",
     content:
-      "Ciao, sono Smailen Vargas, Frontend Developer specializzato in React, TypeScript e Tailwind CSS",
+      "Ciao, sono Smailen Vargas, Frontend Developer specializzato in React, TypeScript e Tailwind CSS. Scopri i miei progetti e competenze.",
   },
   {
     name: "author",
@@ -75,10 +67,6 @@ export const OPEN_GRAPH_TAGS = [
     property: "og:image",
     content: `${SITE_INFO.url}/images/immagine-sito.jpeg`,
   },
-  {
-    property: "og:url",
-    content: SITE_INFO.url,
-  },
 ] as const;
 
 // ========================================
@@ -100,27 +88,6 @@ export const MOBILE_APP_TAGS = [
 ] as const;
 
 // ========================================
-// Links - Favicon, Manifest, Icons
-// ========================================
-export const FAVICON_LINKS = [
-  { rel: "manifest", href: "/site.webmanifest" },
-  { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-  {
-    rel: "icon",
-    type: "image/png",
-    sizes: "16x16",
-    href: "/favicon-16x16.png",
-  },
-  {
-    rel: "icon",
-    type: "image/png",
-    sizes: "32x32",
-    href: "/favicon-32x32.png",
-  },
-  { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
-] as const;
-
-// ========================================
 // JSON-LD Structured Data
 // ========================================
 export const JSON_LD_PERSON = {
@@ -136,7 +103,7 @@ export const JSON_LD_PERSON = {
   ],
   image: `${SITE_INFO.url}/images/immagine-sito.jpeg`,
   description:
-    "Benvenuti nel portfolio di Smailen Vargas, un Frontend Developer specializzato in React, TypeScript e Tailwind CSS",
+    "Ciao, sono Smailen Vargas, Frontend Developer specializzato in React, TypeScript e Tailwind CSS. Scopri i miei progetti e competenze.",
 } as const;
 
 // ========================================
