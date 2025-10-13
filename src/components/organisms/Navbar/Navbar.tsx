@@ -5,14 +5,15 @@ import { NAVIGATION_LINKS } from "@/shared/constants/navigation";
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { SideBar } from "./SideBar";
+import { Layout } from '@/components/molecules/Layout';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       {/* Layout */}
-      <div className="flex w-full justify-center">
-        <div className="w-full max-w-[1024px]">
+          <Layout>
+
           {/* Navbar */}
           <nav className="bg-base-100 flex items-center justify-between px-4 py-2">
             <Avatar name="Smailen Vargas" />
@@ -34,10 +35,10 @@ export const Navbar = () => {
                 <nav className="flex items-center gap-4">
                   {NAVIGATION_LINKS.map((link) => (
                     <Link
-                      key={link.params}
-                      to={link.linkTo}
-                      params={link.params}
-                      className="capitalize"
+                    key={link.params}
+                    to={link.linkTo}
+                    params={link.params}
+                    className="capitalize"
                     >
                       {link.params}
                     </Link>
@@ -47,8 +48,7 @@ export const Navbar = () => {
               </div>
             </div>
           </nav>
-        </div>
-      </div>
+          </Layout>
     </>
   );
 };

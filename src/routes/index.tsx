@@ -13,7 +13,7 @@ export const Route = createFileRoute("/")({
 
 function HomePage() {
   return (
-    <Layout>
+    <Layout classContent="flex flex-col flex-nowrap gap-20 px-6 pb-14 pt-36 md:items-center">
       <Hero />
       <Presentation />
       <SectionSkill />
