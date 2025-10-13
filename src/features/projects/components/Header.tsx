@@ -16,7 +16,7 @@ export const HeaderProject = () => {
         <p>
           Questi progetti sono stati sviluppati nell&apos;ambito delle sfide di
           Frontend Mentor e sono stati fondamentali per affinare le competenze
-          acquisite durante i miei studi. Sono stati tratti come veri e propri
+          acquisite durante i miei studi. Sono stati trattati come veri e propri
           progetti reali, completamente funzionanti e con particolare attenzione
           all&apos;accessibilità e al design.
         </p>
@@ -24,17 +24,7 @@ export const HeaderProject = () => {
           Alcuni dei progetti più vecchi, realizzati durante il primo anno,
           potrebbero contenere errori o soluzioni meno ottimali. Ho deciso di
           lasciarli intatti per mostrare il mio percorso di miglioramento e la
-          crescita come sviluppatore. La documentazione è scritta in inglese, è
-          possibile utilizzare{" "}
-          <Link
-            to="https://chromewebstore.google.com/detail/google-traduttore/aapbdbdomjkkjkaonfhkkikfgjllcleb?hl=it"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link link-primary"
-          >
-            Google Translate
-          </Link>{" "}
-          per tradurla.
+          crescita come sviluppatore.
         </p>
         <p>
           Vuoi scoprire di più? Visita il mio{" "}
