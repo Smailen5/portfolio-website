@@ -1,13 +1,10 @@
-// import { Section } from "@components/atoms/Section";
-import { Strong } from "@/components/atoms/Strong";
-// import { TooltipCustom } from "@components/atoms/TooltipCustom";
 
 const Presentation = () => {
   return (
     <section className="mx-auto flex w-full flex-col gap-16">
       <h2 className="sr-only">Presentazione</h2>
       <p>
-        Sono un <Strong>frontend developer</Strong> con una passione che nasce
+        Sono un <strong className='text-accent'>frontend developer</strong> con una passione che nasce
         dall&apos;infanzia. Tutto è iniziato con uno{" "}
         <strong
           className="lg:tooltip text-accent"
