@@ -14,7 +14,7 @@ import Skills from "./Skills";
 export const SectionSkill = () => {
   return (
     <section className="mx-auto flex w-full flex-col gap-4">
-      <h2 className="text-primary-content">Competenze acquisite</h2>
+      <h2 className="text-primary font-bold">Competenze acquisite</h2>
 
       <main className="flex h-full w-full flex-col flex-wrap gap-12 md:grid md:grid-cols-3">
         <Skills section={language} title="Linguaggi" />
