@@ -4,7 +4,7 @@
   "version": "4.5.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build --minify",
     "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 20",
     "preview": "vite preview",
