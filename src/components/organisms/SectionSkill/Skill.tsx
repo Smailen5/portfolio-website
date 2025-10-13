@@ -12,7 +12,10 @@ const Skills = ({
   // Layout: mostra nome e icone affiancati in mobile e in desktop mostra solo icona con tooltip
 
   return (
-    <li className="border-accent text-accent-content mb-4 flex items-center justify-between rounded-md border-2 p-2 lg:tooltip lg:cursor-pointer" data-tip={name}>
+    <li
+      className="border-accent text-accent-content lg:tooltip mb-4 flex items-center justify-between rounded-md border-2 p-2 lg:cursor-pointer"
+      data-tip={name}
+    >
       <p className="font-semibold uppercase md:hidden">{name}</p>
       <img src={icon} alt={name + "icon"} className={`${iconSize}`} />
     </li>
