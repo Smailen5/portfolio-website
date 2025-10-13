@@ -22,7 +22,7 @@ function ProjectPage() {
         keywords="Smailen Vargas, Progetti, Frontend Developer, React, TypeScript, Portfolio"
         ogUrl="https://smailenvargas.com/projects"
       />
-      <Layout>
+      <Layout classContent="flex flex-col flex-nowrap gap-20 px-6 pb-14 pt-20 md:items-center">
         <HeaderProject />
         <SectionProjects projects={projects} />
       </Layout>
