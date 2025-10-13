@@ -10,6 +10,11 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
+    {/* Layout */}
+    <div className='w-full flex justify-center'>
+
+    <div className='max-w-[1024px] w-full'>
+{/* Navbar */}
       <nav className="bg-base-100 flex items-center justify-between px-4 py-2">
         <Avatar name="Smailen Vargas" />
 
@@ -30,10 +35,10 @@ export const Navbar = () => {
             <nav className="flex items-center gap-4">
               {NAVIGATION_LINKS.map((link) => (
                 <Link
-                  key={link.params}
-                  to={link.linkTo}
-                  params={link.params}
-                  className="capitalize"
+                key={link.params}
+                to={link.linkTo}
+                params={link.params}
+                className="capitalize"
                 >
                   {link.params}
                 </Link>
@@ -43,6 +48,8 @@ export const Navbar = () => {
           </div>
         </div>
       </nav>
+    </div>
+    </div>
     </>
   );
 };
