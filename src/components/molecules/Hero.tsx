@@ -1,5 +1,14 @@
 import { Link } from "@tanstack/react-router";
 
+/**
+ * Componente Hero - Sezione principale della homepage
+ *
+ * Mostra:
+ * - Animazione "Hello World" con effetto typing
+ * - Nome con tooltip informativo
+ * - Ruolo (Frontend Developer)
+ * - CTA (Call To Action) per contatti e progetti
+ */
 export const Hero = () => {
   return (
     <section className="w-full">

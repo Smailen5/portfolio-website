@@ -1,29 +1,41 @@
-import { getInitials } from "@/shared/utils/getInitials";
 import useChangeAvatar from "@/shared/hooks/useChangeAvatar";
+import { getInitials } from "@/shared/utils/getInitials";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-// Componente Ring che gestisce il bordo e il contenitore dell'avatar
-const Ring = ({
-  children
-}: { children: React.ReactNode }) => {
-
+/**
+ * Componente Ring - Contenitore decorativo per avatar
+ *
+ * Fornisce il bordo circolare colorato attorno all'avatar
+ *
+ * @param {React.ReactNode} children - Contenuto da wrappare (immagine o iniziali)
+ */
+const Ring = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div
-      className="flex items-center justify-center overflow-hidden border-2 bg-center p-0.5 rounded-full size-12 border-accent"
-    >
+    <div className="border-accent flex size-12 items-center justify-center overflow-hidden rounded-full border-2 bg-center p-0.5">
       {children}
     </div>
   );
 };
 
-// Componente Avatar principale che gestisce l'immagine e il fallback
-export const Avatar = ({
-  name,
-}: { name?: string }) => {
-  const { currentAvatar, animation } = useChangeAvatar(); // Hook per la gestione dell'avatar
-  const [loadingError, setLoadingError] = useState<boolean>(false); // Stato per gestire errori di caricamento
-  const initialName = getInitials(name || ""); // Ottiene le iniziali dal nome
+/**
+ * Componente Avatar - Immagine profilo con fallback
+ *
+ * Mostra l'immagine dell'avatar con animazione di cambio casuale
+ * In caso di errore di caricamento, mostra le iniziali del nome
+ *
+ * Features:
+ * - Cambio avatar casuale (useChangeAvatar hook)
+ * - Fallback con iniziali se immagine non carica
+ * - Accessibilità (role, aria-label, alt)
+ * - Animazione smooth durante il cambio
+ *
+ * @param {string} [name] - Nome completo per generare iniziali (opzionale)
+ */
+export const Avatar = ({ name }: { name?: string }) => {
+  const { currentAvatar, animation } = useChangeAvatar();
+  const [loadingError, setLoadingError] = useState<boolean>(false);
+  const initialName = getInitials(name || "");
 
   return (
     <Ring>
@@ -32,7 +44,7 @@ export const Avatar = ({
         <div
           role="img"
           aria-label={`${name ? `Avatar di ${name}` : "Avatar"}`}
-          className="rounded-full flex h-full w-full items-center justify-center bg-accent-content text-accent"
+          className="bg-accent-content text-accent flex h-full w-full items-center justify-center rounded-full"
         >
           {initialName}
         </div>

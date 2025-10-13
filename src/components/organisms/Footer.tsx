@@ -3,6 +3,17 @@ import tailwindIcon from "@/assets/icons/icons8-tailwind-css.svg";
 import SocialIcons from "@/components/molecules/Social/SocialIcon";
 import { Layout } from "../molecules/Layout";
 
+/**
+ * Componente Footer - Piè di pagina del sito
+ *
+ * Contiene:
+ * - Copyright e anno dinamico
+ * - Crediti per le icone (Icons8)
+ * - Link social (GitHub, LinkedIn, Frontend Mentor)
+ * - Badge "Powered by" React + Tailwind CSS
+ *
+ * Layout responsive: colonna su mobile, row su desktop
+ */
 const Footer = () => {
   return (
     <Layout>

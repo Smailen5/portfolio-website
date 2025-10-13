@@ -3,15 +3,21 @@ interface SkillProps {
   icon: string;
 }
 
-// Componente per visualizzare una singola skill/tecnologia
-const Skills = ({
-  name, // Nome della tecnologia
-  icon, // URL dell'icona della tecnologia
-}: SkillProps) => {
+/**
+ * Componente Skill - Singola skill/tecnologia
+ *
+ * Visualizza una competenza tecnica con icona
+ *
+ * Layout responsive:
+ * - Mobile: Nome + Icona affiancati
+ * - Desktop: Solo icona con tooltip al hover (nome nascosto)
+ *
+ * @param {string} name - Nome della tecnologia (es: "React", "TypeScript")
+ * @param {string} icon - URL dell'icona SVG/PNG della tecnologia
+ */
+const Skills = ({ name, icon }: SkillProps) => {
   // Dimensione fissa per le icone
   const iconSize = "w-12 h-12";
-
-  // Layout: mostra nome e icone affiancati in mobile e in desktop mostra solo icona con tooltip
 
   return (
     <li

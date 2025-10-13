@@ -6,6 +6,20 @@ type IconType = {
   link: string;
 };
 
+/**
+ * Componente Icon - Singola icona social interattiva
+ *
+ * Link social con effetto hover che mostra il nome
+ *
+ * Effetti:
+ * - Mobile: Sempre visibile icona + nome
+ * - Desktop: Solo icona, nome appare al hover con animazione slide
+ * - Transizione smooth per UX piacevole
+ *
+ * @param {string} name - Nome del social (es: "GitHub")
+ * @param {keyof typeof icons} icon - Chiave icona da assets/icons
+ * @param {string} link - URL profilo social
+ */
 export const Icon: React.FC<IconType> = ({ name, icon, link }) => {
   const IconImg = icons[icon];
   return (

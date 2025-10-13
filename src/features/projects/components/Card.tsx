@@ -1,7 +1,19 @@
+import { ENDPOINTS } from "@/shared/constants/api";
 import { CardProjectProps } from "@/shared/types/projects";
 import { nameCorrect } from "@/shared/utils/nameCorrect";
-import { ENDPOINTS } from "@/shared/constants/api";
 
+/**
+ * Componente CardProject - Card per visualizzare un singolo progetto
+ *
+ * Mostra:
+ * - Immagine di anteprima (cliccabile → GitHub README)
+ * - Nome progetto (formattato con nameCorrect)
+ * - Descrizione breve
+ * - Lista tecnologie utilizzate (badge ordinati alfabeticamente)
+ * - Bottone "Dettagli" → GitHub README completo
+ *
+ * @param {CardProjectProps} props - Dati del progetto da visualizzare
+ */
 export const CardProject: React.FC<CardProjectProps> = ({
   name,
   description,
@@ -14,8 +26,15 @@ export const CardProject: React.FC<CardProjectProps> = ({
       {/* PROGETTO SINGOLO */}
       <article className="card bg-base-100 w-full shadow-sm" key={name}>
         <figure>
-          <a href={`${ENDPOINTS.GITHUB.README.FOLDER}${nameFolder}`} target="_blank" rel="noopener noreferrer">
-            <img src={imageUrl || ""} alt={`Screenshot del progetto ${nameCorrect(name)}`} />
+          <a
+            href={`${ENDPOINTS.GITHUB.README.FOLDER}${nameFolder}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={imageUrl || ""}
+              alt={`Screenshot del progetto ${nameCorrect(name)}`}
+            />
           </a>
         </figure>
         <div className="card-body">
@@ -43,8 +62,14 @@ export const CardProject: React.FC<CardProjectProps> = ({
           </ul>
 
           <div className="flex justify-center">
-            <a href={`${ENDPOINTS.GITHUB.README.FOLDER}${nameFolder}`} className="btn btn-primary btn-wide" target="_blank" rel="noopener noreferrer" >
-            Dettagli</a>
+            <a
+              href={`${ENDPOINTS.GITHUB.README.FOLDER}${nameFolder}`}
+              className="btn btn-primary btn-wide"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Dettagli
+            </a>
           </div>
         </div>
       </article>

@@ -5,14 +5,23 @@ interface SkillsProps {
   title: string;
   section: { name: string; icon: string }[];
 }
-const Skills = ({ title, section }: SkillsProps) => {
 
+/**
+ * Componente Skills - Sezione categoria di competenze
+ *
+ * Raggruppa e visualizza una categoria specifica di skill
+ * (es: Linguaggi, Framework, Strumenti)
+ *
+ * Layout: grid responsive da 1 colonna (mobile) a 4 colonne (desktop)
+ *
+ * @param {string} title - Titolo della categoria (es: "Linguaggi")
+ * @param {Array} section - Array di skill con nome e icona
+ */
+const Skills = ({ title, section }: SkillsProps) => {
   return (
     <>
-      <section className="gap-10 mx-auto flex w-full flex-col">
-        <h3 className='text-secondary-content'>
-          {title}
-        </h3>
+      <section className="mx-auto flex w-full flex-col gap-10">
+        <h3 className="text-secondary-content">{title}</h3>
         <ul className="grid gap-2 md:grid-cols-4">
           {section.map((skill) => (
             <Skill key={skill.name} {...skill} />

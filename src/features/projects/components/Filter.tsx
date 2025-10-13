@@ -7,6 +7,10 @@ interface FilterProps {
   number?: number;
 }
 
+/**
+ * Lista delle tecnologie disponibili per il filtro
+ * "Tutto" resetta il filtro e mostra tutti i progetti
+ */
 const technologies = [
   "Tutto",
   "JavaScript",
@@ -17,6 +21,20 @@ const technologies = [
   "Responsive design",
 ];
 
+/**
+ * Componente Filter - Filtro progetti per tecnologia
+ *
+ * Permette di filtrare i progetti visualizzati in base alla tecnologia utilizzata
+ * usando un dropdown DaisyUI
+ *
+ * Funzionalità:
+ * - Dropdown con lista tecnologie predefinite
+ * - Filtraggio case-insensitive
+ * - Contatore progetti filtrati
+ * - Reset con opzione "Tutto"
+ *
+ * @param {FilterProps} props - Funzione setter, progetti originali, conteggio
+ */
 export const Filter = ({
   setFilteredProject,
   projectsNoFiltered,
@@ -27,7 +45,10 @@ export const Filter = ({
   // Stato per il filtro selezionato
   const [selectedTechnology, setSelectedTechnology] = useState("Tutto");
 
-  // Funzione per filtrare i progetti
+  /**
+   * Filtra i progetti in base alla tecnologia selezionata
+   * Se "Tutto" mostra tutti i progetti, altrimenti filtra per tecnologia
+   */
   const handleFilter = (technology: string) => {
     if (technology === "Tutto")
       return (
@@ -63,7 +84,12 @@ export const Filter = ({
           {technologies.map((tech) => {
             return (
               <li key={tech}>
-                <a href="#filter" onClick={() => {handleFilter(tech)}}>
+                <a
+                  href="#filter"
+                  onClick={() => {
+                    handleFilter(tech);
+                  }}
+                >
                   {tech}
                 </a>
               </li>

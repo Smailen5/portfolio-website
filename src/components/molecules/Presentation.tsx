@@ -1,11 +1,21 @@
-
+/**
+ * Componente Presentation - Sezione "Chi sono"
+ *
+ * Racconta la storia personale e professionale:
+ * - Origini della passione per la programmazione (ZX Spectrum, Basic)
+ * - Percorso creativo (3D, disegno digitale, Arduino)
+ * - Vocazione nel frontend development
+ * - Hobby e interessi personali
+ *
+ * Include tooltip informativi su termini tecnici per migliorare l'UX
+ */
 const Presentation = () => {
   return (
     <section className="mx-auto flex w-full flex-col gap-16">
       <h2 className="sr-only">Presentazione</h2>
       <p>
-        Sono un <strong className='text-accent'>frontend developer</strong> con una passione che nasce
-        dall&apos;infanzia. Tutto è iniziato con uno{" "}
+        Sono un <strong className="text-accent">frontend developer</strong> con
+        una passione che nasce dall&apos;infanzia. Tutto è iniziato con uno{" "}
         <strong
           className="lg:tooltip text-accent"
           data-tip="Un computer personale degli anni '80, famoso per i suoi giochi e programmi"

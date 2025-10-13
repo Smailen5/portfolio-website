@@ -7,6 +7,15 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { SideBar } from "./SideBar";
 
+/**
+ * Componente Navbar - Barra di navigazione principale
+ *
+ * Layout responsive:
+ * - Mobile: Avatar + ToggleTheme + Bottone Menu (apre SideBar)
+ * - Desktop: Avatar + ToggleTheme + Link navigazione + Download CV
+ *
+ * Gestisce lo stato di apertura/chiusura della SideBar mobile
+ */
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (

@@ -1,5 +1,13 @@
 import { useTheme } from "@/context/ThemeContext";
 
+/**
+ * Componente ToggleTheme - Switch per cambiare il tema
+ *
+ * Permette di alternare tra tema chiaro (light) e scuro (dark)
+ * usando DaisyUI swap component con icone sole/luna
+ *
+ * @requires ThemeContext - Context per gestire lo stato del tema
+ */
 export const ToggleTheme = () => {
   const { theme, setTheme } = useTheme();
 

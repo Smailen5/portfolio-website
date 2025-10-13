@@ -2,22 +2,37 @@ import { CloseIcon } from "@/assets/icons";
 import { CurriculumDownload } from "@/features/cv/components/CurriculumDownload";
 import { NAVIGATION_LINKS } from "@/shared/constants/navigation";
 import { Link } from "@tanstack/react-router";
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 interface SideBarProps {
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
 }
 
-export const SideBar = ({
-  isOpen,
-  setIsOpen,
-}: SideBarProps) => {
-  const [mounted, setMounted] = useState(false)
+/**
+ * Componente SideBar - Menu laterale mobile
+ *
+ * Pannello slide-in da destra per la navigazione mobile
+ * con overlay di sfondo semi-trasparente
+ *
+ * Features:
+ * - Animazione slide-in/out da destra
+ * - Overlay cliccabile per chiudere
+ * - Link navigazione + Download CV
+ * - Auto-chiusura dopo click su link
+ * - Previene animazione al primo render (mounted state)
+ *
+ * @param {boolean} isOpen - Stato apertura/chiusura sidebar
+ * @param {Function} setIsOpen - Funzione per cambiare stato sidebar
+ */
+export const SideBar = ({ isOpen, setIsOpen }: SideBarProps) => {
+  const [mounted, setMounted] = useState(false);
   const closeSideBar = () => setIsOpen(false);
 
-  // Mantiene la sidebar chiusa al primo rendering
-  useEffect(() => {setMounted(true)},[])
+  // Previene animazione al primo rendering
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <>

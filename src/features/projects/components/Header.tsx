@@ -1,5 +1,14 @@
 import { Link } from "@tanstack/react-router";
 
+/**
+ * Componente HeaderProject - Intestazione pagina progetti
+ *
+ * Spiega il contesto dei progetti mostrati:
+ * - Origine (sfide Frontend Mentor)
+ * - Approccio professionale e attenzione all'accessibilità
+ * - Nota sui progetti più vecchi (percorso di miglioramento)
+ * - Link utili (Frontend Mentor, GitHub, codice sorgente sito)
+ */
 export const HeaderProject = () => {
   return (
     <>
