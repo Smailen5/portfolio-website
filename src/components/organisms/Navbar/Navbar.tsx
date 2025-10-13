@@ -39,7 +39,6 @@ export const Navbar = () => {
                 </Link>
               ))}
               <CurriculumDownload />
-              <div>toggle tema</div>
             </nav>
           </div>
         </div>
