@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0](https://github.com/Smailen5/portfolio-website/compare/v4.5.0...v5.0.0) (2025-10-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* Rimosso TanStack Start SSR, migrato a TanStack Router SPA
+
+- Refactoring completo architettura a SPA
+- Implementato TanStack Router file-based routing
+- Sistema SEO dinamico con React Helmet
+- Migrato da NextUI a DaisyUI
+- Rimosso form contatto (solo email/social)
+- CDN Netlify per progetti
+- Commenti TSDoc completi in italiano
+- README aggiornato con stack v5.0.0.
+
+### Features
+
+* ✨ aggiunti meta tag globali e componente Head per la gestione SEO ([555ec00](https://github.com/Smailen5/portfolio-website/commit/555ec0086219fec6cf95767f487eed6cdfb62cb5))
+* ✨ aggiunto componente Head per la gestione SEO nelle route ([5747472](https://github.com/Smailen5/portfolio-website/commit/574747294393f2b9f3092a437c1f23d4d3980205))
+* ✨ integrato componente Head nella root route per la gestione SEO ([e9753b1](https://github.com/Smailen5/portfolio-website/commit/e9753b1eba8463724b7f00f9590676f1e06c194a))
+* ✨migrazione completa a SPA con TanStack Router ([dc32489](https://github.com/Smailen5/portfolio-website/commit/dc32489336117fde5ad22a591e40ede81c9617e5))
+* 📄 aggiunti nuovi CV in formato PDF ([1f04e2d](https://github.com/Smailen5/portfolio-website/commit/1f04e2d484a9c242d224b9e526a514060d29aac6))
+
+
+### Bug Fixes
+
+* 🔧 aggiornato lo script di sviluppo in package.json per supportare l'accesso remoto ([0e48a7f](https://github.com/Smailen5/portfolio-website/commit/0e48a7f1d7c8f6226852b272047202da52893eb3))
+* 🔧 corretto un errore di battitura nel componente HeaderProject ([0cd951c](https://github.com/Smailen5/portfolio-website/commit/0cd951c7f1adaabcfc8315d4dc0af48d35cdaded))
+
 ## [4.5.0](https://github.com/Smailen5/portfolio-website/compare/v4.4.0...v4.5.0) (2025-10-09)
 
 
