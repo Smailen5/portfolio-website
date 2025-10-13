@@ -10,46 +10,45 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-    {/* Layout */}
-    <div className='w-full flex justify-center'>
+      {/* Layout */}
+      <div className="flex w-full justify-center">
+        <div className="w-full max-w-[1024px]">
+          {/* Navbar */}
+          <nav className="bg-base-100 flex items-center justify-between px-4 py-2">
+            <Avatar name="Smailen Vargas" />
 
-    <div className='max-w-[1024px] w-full'>
-{/* Navbar */}
-      <nav className="bg-base-100 flex items-center justify-between px-4 py-2">
-        <Avatar name="Smailen Vargas" />
+            <div className="flex items-center gap-4">
+              <ToggleTheme />
 
-        <div className="flex items-center gap-4">
-          <ToggleTheme />
+              {/* Menu Mobile: Bottone menu + SideBar */}
+              <div className="lg:hidden">
+                <button onClick={() => setIsOpen(true)} className="btn">
+                  Menu
+                </button>
 
-          {/* Menu Mobile: Bottone menu + SideBar */}
-          <div className="lg:hidden">
-            <button onClick={() => setIsOpen(true)} className="btn">
-              Menu
-            </button>
+                <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
+              </div>
 
-            <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
-          </div>
-
-          {/* Menu Desktop */}
-          <div className="hidden lg:block">
-            <nav className="flex items-center gap-4">
-              {NAVIGATION_LINKS.map((link) => (
-                <Link
-                key={link.params}
-                to={link.linkTo}
-                params={link.params}
-                className="capitalize"
-                >
-                  {link.params}
-                </Link>
-              ))}
-              <CurriculumDownload />
-            </nav>
-          </div>
+              {/* Menu Desktop */}
+              <div className="hidden lg:block">
+                <nav className="flex items-center gap-4">
+                  {NAVIGATION_LINKS.map((link) => (
+                    <Link
+                      key={link.params}
+                      to={link.linkTo}
+                      params={link.params}
+                      className="capitalize"
+                    >
+                      {link.params}
+                    </Link>
+                  ))}
+                  <CurriculumDownload />
+                </nav>
+              </div>
+            </div>
+          </nav>
         </div>
-      </nav>
-    </div>
-    </div>
+      </div>
     </>
   );
 };
