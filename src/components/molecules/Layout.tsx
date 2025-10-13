@@ -1,15 +1,17 @@
 import useScroll from "@/shared/hooks/useScroll";
 import { twMerge } from "tailwind-merge";
 
+interface LayoutProps {
+  children: React.ReactNode;
+  classLayout?: string;
+  classContent?: string;
+}
+
 export const Layout = ({
   children,
   classLayout,
   classContent,
-}: {
-  children: React.ReactNode;
-  classLayout?: string;
-  classContent?: string;
-}) => {
+}: LayoutProps) => {
   useScroll();
   return (
     <>

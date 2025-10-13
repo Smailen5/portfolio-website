@@ -1,11 +1,13 @@
+interface SkillProps {
+  name: string;
+  icon: string;
+}
+
 // Componente per visualizzare una singola skill/tecnologia
 const Skills = ({
   name, // Nome della tecnologia
   icon, // URL dell'icona della tecnologia
-}: {
-  name: string;
-  icon: string;
-}) => {
+}: SkillProps) => {
   // Dimensione fissa per le icone
   const iconSize = "w-12 h-12";
 

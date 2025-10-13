@@ -4,13 +4,15 @@ import { NAVIGATION_LINKS } from "@/shared/constants/navigation";
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from 'react';
 
+interface SideBarProps {
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
+}
+
 export const SideBar = ({
   isOpen,
   setIsOpen,
-}: {
-  isOpen: boolean;
-  setIsOpen: (isOpen: boolean) => void;
-}) => {
+}: SideBarProps) => {
   const [mounted, setMounted] = useState(false)
   const closeSideBar = () => setIsOpen(false);
 
