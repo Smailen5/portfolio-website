@@ -1,8 +1,8 @@
 // src/routes/contact/index.tsx
 
+import { Head } from "@/components/atoms/Head";
 import { Layout } from "@/components/molecules/Layout";
 import SocialIcons from "@/components/molecules/Social/SocialIcon";
-import { Head } from "@/components/atoms/Head";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/contact/")({
@@ -18,7 +18,7 @@ function ContactPage() {
         keywords="Contatti, Smailen Vargas, Email, Collaborazioni, Frontend Developer"
         ogUrl="https://smailenvargas.com/contact"
       />
-      <Layout>
+      <Layout classContent="p-6">
         <section
           aria-labelledby="contact-heading"
           className="flex-1 space-y-4 md:flex md:flex-col md:justify-center md:text-left lg:w-1/2 lg:text-left"
@@ -31,18 +31,36 @@ function ContactPage() {
           </p>
         </section>
 
-        <div className="flex flex-col gap-4">
-          <p>Scrivimi a:</p>
-          <a href="mailto:smailenv91@gmail.com" className="link link-primary">
-            smailenv91@gmail.com
-          </a>
-          <p className="text-sm">
-            (Clicca per aprire il tuo client email, oppure copia
-            l&apos;indirizzo)
-          </p>
-        </div>
+        <div className="flex flex-col gap-8 pt-10">
+          {/* Email */}
+          <div className="flex flex-col gap-2">
+            <p>
+              Scrivimi a:{" "}
+              <a
+                href="mailto:smailenv91@gmail.com?subject=42-website-contact"
+                className="link link-accent font-semibold"
+              >
+                smailenv91@gmail.com
+              </a>
+            </p>
 
-        <SocialIcons />
+            <p className="text-xs">
+              (Clicca per aprire il tuo client email, oppure copia
+              l&apos;indirizzo)
+            </p>
+          </div>
+
+          {/* Telefono */}
+          <div className="">
+            <p>
+              Per contatto telefonico e dettagli completi, scarica il mio CV, o
+              contattami in uno dei social qui sotto.
+            </p>
+          </div>
+
+          {/* Social */}
+          <SocialIcons />
+        </div>
       </Layout>
     </>
   );
