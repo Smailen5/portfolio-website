@@ -1,9 +1,3 @@
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/atoms/tooltip";
 import { Link } from "@tanstack/react-router";
 
 export const Hero = () => {
@@ -13,23 +7,16 @@ export const Hero = () => {
         {/* presentazione */}
         <header className="space-y-4">
           <p className="text-4xl">
-            <span className="animate-typing w-fit text-base-content overflow-hidden border-r-2 font-mono tracking-wide whitespace-nowrap">
+            <span className="animate-typing text-base-content w-fit overflow-hidden border-r-2 font-mono tracking-wide whitespace-nowrap">
               {"<Hello World>"}
             </span>{" "}
             sono
           </p>
-          <h2 className="text-secondary text-6xl font-bold">
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger>Smailen</TooltipTrigger>
-                <TooltipContent>
-                  <p>
-                    Si, il mio nome significa &apos;sorridi sempre&apos;! 😊
-                  </p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>{" "}
-            Vargas
+          <h2
+            className="text-secondary lg:tooltip text-6xl font-bold"
+            data-tip="Si, il mio nome significa 'sorridi sempre'! 😊"
+          >
+            Smailen Vargas
           </h2>
         </header>
         <p className="text-3xl">Frontend developer</p>
