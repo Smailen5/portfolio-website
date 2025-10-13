@@ -17,7 +17,7 @@ Portfolio personale che mostra i miei progetti e competenze come Front-end Devel
 - 🌓 Tema chiaro/scuro
 - 🔍 Filtro progetti per tecnologia
 - 📄 Download/visualizzazione CV
-- 📬 Form di contatto integrato
+- 📬 ~~Form di contatto integrato~~(Rimosso)
 - 🔄 ~~Integrazione API GitHub~~ (Sostituito con CDN)
 
 ## 🖼️ Screenshot
@@ -38,20 +38,21 @@ Portfolio personale che mostra i miei progetti e competenze come Front-end Devel
 
 - [React](https://react.dev/) - Framework UI
 - [Tailwind CSS](https://tailwindcss.com/) - Styling
-- [NextUI](https://nextui.org/) - Componenti UI
-- [Lottie](https://airbnb.io/lottie/) - Animazioni
+- ~~[NextUI](https://nextui.org/) - Componenti UI~~
+- ~~[Lottie](https://airbnb.io/lottie/) - Animazioni~~
+- [DaisyUI](https://daisyui.com/) - Componenti UI
 
 ### Strumenti
 
 - [pnpm](https://pnpm.io/) - Package Manager
 - [Vite](https://vitejs.dev/) - Build Tool
 - [TypeScript](https://www.typescriptlang.org/) - Type Checking
-- [Formik](https://formik.org/) - Form Management
+- ~~[Formik](https://formik.org/) - Form Management~~
 
 ### Servizi
 
 - [Netlify](https://www.netlify.com/) - Hosting
-- [Formspree](https://formspree.io/) - Form Backend
+- ~~[Formspree](https://formspree.io/) - Form Backend~~
 - [GoDaddy](https://www.godaddy.com/) - Domain Provider
 
 ## 📋 Ultima Versione
@@ -66,8 +67,7 @@ src/
 ├── components/           # Componenti UI riutilizzabili
 │   ├── atoms/            # Componenti base (Button, Input, etc.)
 │   ├── molecules/        # Componenti composti (Form, Card, etc.)
-│   ├── organisms/        # Componenti complessi (Navbar, Footer, etc.)
-│   └── templates/        # Layouts (MainLayout, AuthLayout, etc.)
+│   └── organisms/        # Componenti complessi (Navbar, Footer, etc.)
 │
 ├── features/             # Logica di business per feature
 │   └── auth/             # Tutto relativo all'autenticazione
@@ -162,8 +162,8 @@ I componenti nelle features sono specifici di quella funzionalità e seguono que
 
 - **Responsive Design**: Creare un portfolio che sia non solo visivamente accattivante, ma anche altamente funzionale, adattabile a diverse dimensioni di schermo.
 - **Progetti Interattivi**: Ogni progetto include una immagine di anteprima, le tecnologie utilizzate e un link alla demo o al repository GitHub.
-- **Form di Contatto**: Form per permettere agli utenti di contattarmi direttamente dal sito.
-- **API GitHub**: Implementare la API di GitHub per recuperare la repository con i progetti.
+- ~~**Form di Contatto**: Form per permettere agli utenti di contattarmi direttamente dal sito.~~(Rimosso)
+- ~~**API GitHub**: Implementare la API di GitHub per recuperare la repository con i progetti.~~(Rimosso)
 </details>
 
 ## 📋 Road Map
@@ -186,7 +186,7 @@ I componenti nelle features sono specifici di quella funzionalità e seguono que
 <summary>Espandi risorse</summary>
 
 - [Tailwind CSS Docs](https://tailwindcss.com/docs)
-- [Formik Docs](https://formik.org/docs)
+- ~~[Formik Docs](https://formik.org/docs)~~
 - [React Docs](https://react.dev/)
 - [Icons8](https://icons8.it/icons/)
 </details>
