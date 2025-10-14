@@ -1,5 +1,14 @@
-import { LinkBlank } from "@components/atoms/LinkBlank";
+import { Link } from "@tanstack/react-router";
 
+/**
+ * Componente HeaderProject - Intestazione pagina progetti
+ *
+ * Spiega il contesto dei progetti mostrati:
+ * - Origine (sfide Frontend Mentor)
+ * - Approccio professionale e attenzione all'accessibilità
+ * - Nota sui progetti più vecchi (percorso di miglioramento)
+ * - Link utili (Frontend Mentor, GitHub, codice sorgente sito)
+ */
 export const HeaderProject = () => {
   return (
     <>
@@ -7,7 +16,7 @@ export const HeaderProject = () => {
         <p>
           Questi progetti sono stati sviluppati nell&apos;ambito delle sfide di
           Frontend Mentor e sono stati fondamentali per affinare le competenze
-          acquisite durante i miei studi. Sono stati tratti come veri e propri
+          acquisite durante i miei studi. Sono stati trattati come veri e propri
           progetti reali, completamente funzionanti e con particolare attenzione
           all&apos;accessibilità e al design.
         </p>
@@ -15,35 +24,36 @@ export const HeaderProject = () => {
           Alcuni dei progetti più vecchi, realizzati durante il primo anno,
           potrebbero contenere errori o soluzioni meno ottimali. Ho deciso di
           lasciarli intatti per mostrare il mio percorso di miglioramento e la
-          crescita come sviluppatore. La documentazione è scritta in inglese, è
-          possibile utilizzare{" "}
-          <LinkBlank
-            href="https://chromewebstore.google.com/detail/google-traduttore/aapbdbdomjkkjkaonfhkkikfgjllcleb?hl=it"
-            isText
-          >
-            Google Translate
-          </LinkBlank>{" "}
-          per tradurla.
+          crescita come sviluppatore.
         </p>
         <p>
           Vuoi scoprire di più? Visita il mio{" "}
-          <LinkBlank
-            href="https://www.frontendmentor.io/profile/Smailen5"
-            isText
+          <Link
+            to="https://www.frontendmentor.io/profile/Smailen5"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link link-primary"
           >
             profilo Frontend Mentor
-          </LinkBlank>{" "}
+          </Link>{" "}
           per vedere le sfide completate o il mio{" "}
-          <LinkBlank href="https://github.com/Smailen5" isText>
+          <Link
+            to="https://github.com/Smailen5"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link link-primary"
+          >
             profilo GitHub
-          </LinkBlank>{" "}
+          </Link>{" "}
           per tutti i progetti, incluso il{" "}
-          <LinkBlank
-            href="https://github.com/Smailen5/portfolio-website"
-            isText
+          <Link
+            to="https://github.com/Smailen5/portfolio-website"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link link-primary"
           >
             codice sorgente di questo sito
-          </LinkBlank>
+          </Link>
           .
         </p>
       </header>

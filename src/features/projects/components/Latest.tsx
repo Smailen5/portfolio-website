@@ -1,43 +1,42 @@
-import { ErrorMessage } from "@/components/atoms/ErrorMessage";
+import { fetchProjects } from "@/api/getProjects";
 import { CardProject } from "@/features/projects/components/Card";
-import { SkeletonLoaderCard } from "@/features/projects/components/Skeleton";
-import { useFetch } from "@/features/projects/hooks/useFetch";
-import { Project } from '@/shared/types/projects';
-import { Header } from "@components/atoms/Header";
-import { Section } from "@components/atoms/Section";
+import { Project } from "@/shared/types/projects";
+import { useEffect, useState } from "react";
 
+/**
+ * Componente LastProjects - Ultimi progetti in homepage
+ *
+ * Mostra gli ultimi N progetti (configurabile con showLastProjects)
+ * dalla lista completa recuperata da GitHub API
+ *
+ * @see fetchProjects - Funzione per recuperare i progetti da API
+ * @see CardProject - Componente per visualizzare singolo progetto
+ */
 export const LastProjects = () => {
-  const { loading, error, projects } = useFetch();
+  const [projects, setProjects] = useState<Project[]>([]);
   // !Modifica qui i progetti da mostrare
   const showLastProjects = 3;
-  const arraySkeleton = Array.from({ length: showLastProjects });
-  // se non stiamo caricando, non ci sono errori e non ci sono progetti
-  const noProjects = !loading && !error && projects.length === 0;
+
+  useEffect(() => {
+    fetchProjects()
+      .then((data) => {
+        setProjects(data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
 
   return (
     <>
-      <Section>
-        <Header type="h2" titleID="ultimi lavori">
-          Guarda i miei ultimi lavori
-        </Header>
-        {error ? (
-          <ErrorMessage>{error}</ErrorMessage>
-        ) : noProjects ? (
-          <p>Nessun progetto trovato</p>
-        ) : (
-          <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {loading
-              ? arraySkeleton.map((_, index) => (
-                  <SkeletonLoaderCard key={index} />
-                ))
-              : projects
-                  .map((project: Project, index: number) => (
-                    <CardProject key={index} {...project} />
-                  ))
-                  .slice(0, showLastProjects)}
-          </main>
-        )}
-      </Section>
+      <section className="mx-auto flex w-full flex-col gap-4">
+        <h2 className="text-primary font-bold">Guarda i miei ultimi lavori</h2>
+        <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {projects.slice(0, showLastProjects).map((project: Project) => (
+            <CardProject key={project.name} {...project} />
+          ))}
+        </main>
+      </section>
     </>
   );
 };

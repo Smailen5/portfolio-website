@@ -27,3 +27,7 @@ idee.md
 *.sln
 *.sw?
 .env
+
+# Local Netlify folder
+.netlify
+.cursorrules

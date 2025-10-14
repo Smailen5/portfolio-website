@@ -1,8 +1,9 @@
 export interface CardProjectProps {
   name: string;
   description: string | null;
-  technologies: string[] | [];
+  technologies: string[];
   imageUrl: string | null;
+  nameFolder: string;
 }
 
 export interface Project extends CardProjectProps {

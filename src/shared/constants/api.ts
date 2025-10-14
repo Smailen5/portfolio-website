@@ -3,9 +3,9 @@ export const ENDPOINTS = {
     CDN: {
       PROJECTS: "https://portfolio-cdn.netlify.app/projects.json",
     },
-    RAW: {
-      IMAGES_README_SRC:
-        "https://raw.githubusercontent.com/Smailen5/Frontend-Mentor-Challenge/main/packages",
+    README: {
+      FOLDER:
+        "https://github.com/Smailen5/Frontend-Mentor-Challenge/tree/main/packages/",
     },
   },
 };

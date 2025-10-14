@@ -2,6 +2,143 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0](https://github.com/Smailen5/portfolio-website/compare/v4.5.0...v5.0.0) (2025-10-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* Rimosso TanStack Start SSR, migrato a TanStack Router SPA
+
+- Refactoring completo architettura a SPA
+- Implementato TanStack Router file-based routing
+- Sistema SEO dinamico con React Helmet
+- Migrato da NextUI a DaisyUI
+- Rimosso form contatto (solo email/social)
+- CDN Netlify per progetti
+- Commenti TSDoc completi in italiano
+- README aggiornato con stack v5.0.0.
+
+### Features
+
+* ✨ aggiunti meta tag globali e componente Head per la gestione SEO ([555ec00](https://github.com/Smailen5/portfolio-website/commit/555ec0086219fec6cf95767f487eed6cdfb62cb5))
+* ✨ aggiunto componente Head per la gestione SEO nelle route ([5747472](https://github.com/Smailen5/portfolio-website/commit/574747294393f2b9f3092a437c1f23d4d3980205))
+* ✨ integrato componente Head nella root route per la gestione SEO ([e9753b1](https://github.com/Smailen5/portfolio-website/commit/e9753b1eba8463724b7f00f9590676f1e06c194a))
+* ✨migrazione completa a SPA con TanStack Router ([dc32489](https://github.com/Smailen5/portfolio-website/commit/dc32489336117fde5ad22a591e40ede81c9617e5))
+* 📄 aggiunti nuovi CV in formato PDF ([1f04e2d](https://github.com/Smailen5/portfolio-website/commit/1f04e2d484a9c242d224b9e526a514060d29aac6))
+
+
+### Bug Fixes
+
+* 🔧 aggiornato lo script di sviluppo in package.json per supportare l'accesso remoto ([0e48a7f](https://github.com/Smailen5/portfolio-website/commit/0e48a7f1d7c8f6226852b272047202da52893eb3))
+* 🔧 corretto un errore di battitura nel componente HeaderProject ([0cd951c](https://github.com/Smailen5/portfolio-website/commit/0cd951c7f1adaabcfc8315d4dc0af48d35cdaded))
+
+## [4.5.0](https://github.com/Smailen5/portfolio-website/compare/v4.4.0...v4.5.0) (2025-10-09)
+
+
+### Features
+
+* ✨ aggiornato il componente CardProject per utilizzare nameFolder ([550ce53](https://github.com/Smailen5/portfolio-website/commit/550ce539c8d440cdc53b186e28151bda97b8909b))
+* ✨ aggiunto il campo nameFolder all'interfaccia CardProjectProps ([c604107](https://github.com/Smailen5/portfolio-website/commit/c60410731ba857e43156bdaa6e1c5837fb46892e))
+
+
+### Bug Fixes
+
+* 🐛 aggiornato l'endpoint README per il recupero delle immagini ([c209a6d](https://github.com/Smailen5/portfolio-website/commit/c209a6deeff49b3ca53203a0a25c53a280cecc84))
+* 🐛 corretto l'uso dell'apostrofo nel testo della ContactPage ([7c9ce3b](https://github.com/Smailen5/portfolio-website/commit/7c9ce3b0a6baf93f40b06593132bbd85a94d770a))
+* 🐛 semplificato il gestore di eventi nel componente Filter ([e8ac5d0](https://github.com/Smailen5/portfolio-website/commit/e8ac5d0ad93ac24450c941cd7322d74c23a50372))
+
+## [4.4.0](https://github.com/Smailen5/portfolio-website/compare/v4.3.0...v4.4.0) (2025-10-09)
+
+
+### Features
+
+* ✨ aggiunto il file getProjects.ts per il fetch dei progetti ([2fc025c](https://github.com/Smailen5/portfolio-website/commit/2fc025cce80bbbe23dcf47cb3606d95c4c58f0f9))
+* ✨ aggiunto il supporto per la funzione fetch nel file di configurazione ESLint ([3a28838](https://github.com/Smailen5/portfolio-website/commit/3a28838a145c15b1ecf0a9cea04d866a224d83f7))
+* ✨ aggiunto supporto per Netlify nel file di configurazione e aggiornate le dipendenze ([7a98387](https://github.com/Smailen5/portfolio-website/commit/7a9838767af3ebec4d3aeb086a0ee09e894e3eac))
+* ✨ implementato il ThemeContext per la gestione del tema ([80db58e](https://github.com/Smailen5/portfolio-website/commit/80db58ed9b9c991d9207cb2f1effff3b0e59283f))
+
+
+### Bug Fixes
+
+* 🐛 migliorata la gestione della SideBar con useEffect ([cdda6db](https://github.com/Smailen5/portfolio-website/commit/cdda6db904f91cda95157d6558af11365fadf3c1))
+* 🐛 semplificata la logica del filtro nei componenti Filter e Section ([3df052b](https://github.com/Smailen5/portfolio-website/commit/3df052b8b3e9cf7f4c2fdab74f23e86716977b2e))
+* 🗑️ rimosso il supporto per Netlify e aggiornato il file di configurazione ([4fb257b](https://github.com/Smailen5/portfolio-website/commit/4fb257b525b0784dedf99f69c858f6d9613c3bc2))
+
+## [4.3.0](https://github.com/Smailen5/portfolio-website/compare/v4.2.0...v4.3.0) (2025-10-03)
+
+
+### Features
+
+* ✨ aggiunti i componenti Icon e SocialIcons per la visualizzazione delle icone social ([9fbb55d](https://github.com/Smailen5/portfolio-website/commit/9fbb55d47afad13e81d3a0290844b06c2f2deeff))
+* ✨ aggiunto il componente Footer nel file __root.tsx ([548d49b](https://github.com/Smailen5/portfolio-website/commit/548d49b922c058992a36637ca783d325781840e7))
+
+
+### Bug Fixes
+
+* 🛠️ aggiornato l'anno di copyright nel footer ([59ba1f9](https://github.com/Smailen5/portfolio-website/commit/59ba1f9c38bf3c2535bd2931ff59ffa5bb4f239c))
+
+## [4.2.0](https://github.com/Smailen5/portfolio-website/compare/v4.1.0...v4.2.0) (2025-10-02)
+
+
+### Features
+
+* ✨ aggiornato il componente CardProject con nuove funzionalità e stili ([2373a24](https://github.com/Smailen5/portfolio-website/commit/2373a24803094c0f6ecedba7c4c830855efca369))
+* ✨ aggiornato il componente Homepage con nuovi elementi ([ca28d22](https://github.com/Smailen5/portfolio-website/commit/ca28d2288cd466ab295e48bc934eef6bf69929ac))
+* ✨ aggiunti hook useFetch e servizio projectService per il recupero dei progetti ([b971a63](https://github.com/Smailen5/portfolio-website/commit/b971a63af10b77bcaf33595a1c428d80123ad754))
+* ✨ aggiunto componente ToggleTheme nella Navbar ([ac37f8f](https://github.com/Smailen5/portfolio-website/commit/ac37f8fab9482aef8bb5798088acd159f482dece))
+* ✨ aggiunto componente ToggleTheme per la gestione del tema ([3c28fae](https://github.com/Smailen5/portfolio-website/commit/3c28fae6244653f79cc66b50ae4c75f8ec03fcce))
+* ✨ aggiunto il componente Strong per evidenziare il testo ([30ed8b0](https://github.com/Smailen5/portfolio-website/commit/30ed8b02a9308a5df0ad973969055ab5da4783d9))
+* ✨ aggiunto nuovo icona di chiusura multipla in formato SVG ([93430f3](https://github.com/Smailen5/portfolio-website/commit/93430f36807d0396ad434a55c567f5a8e41fe7fd))
+* ✨ aggiunto pulsante di chiusura con icona SVG nella SideBar ([5329064](https://github.com/Smailen5/portfolio-website/commit/5329064d7b0156d28079465b174a00867533e020))
+
+
+### Bug Fixes
+
+* 🐛 rimosso il testo "toggle tema" dalla SideBar ([4452939](https://github.com/Smailen5/portfolio-website/commit/4452939caa2e754648a23f97dc0d03054daaa12b))
+
+## [4.1.0](https://github.com/Smailen5/portfolio-website/compare/v4.0.0...v4.1.0) (2025-10-02)
+
+
+### Features
+
+* ✨ aggiornato il componente Navbar per supportare la navigazione desktop e mobile ([a626384](https://github.com/Smailen5/portfolio-website/commit/a626384fdfe9b7cb9f2b6f7dbd01879ff275ca4f))
+* ✨ aggiornato il componente SideBar con navigazione dinamica e chiusura al click ([f6c3237](https://github.com/Smailen5/portfolio-website/commit/f6c323725295015f37cb9b25e7b77cbba0e7542b))
+* ✨ aggiunta configurazione per il plugin daisyui ([471f9d6](https://github.com/Smailen5/portfolio-website/commit/471f9d60de88f1a06366cba1eac81d8b49b8dd55))
+* ✨ aggiunta dipendenza da daisyui ([4b19cb1](https://github.com/Smailen5/portfolio-website/commit/4b19cb12b69798ab346bfc3084e319774071cd0c))
+* ✨ aggiunta funzionalità di apertura del menu nella Navbar ([bc55c1d](https://github.com/Smailen5/portfolio-website/commit/bc55c1d8c6217deea816cc1ad3d8003598fe3ea1))
+* ✨ aggiunti componenti ContactPage, ErrorPage e ProjectPage ([b6b6f99](https://github.com/Smailen5/portfolio-website/commit/b6b6f995b439322227d5798369138f59bfe224ae))
+* ✨ aggiunto componente Avatar nella Navbar ([60d66bf](https://github.com/Smailen5/portfolio-website/commit/60d66bf1cddde9e22de01771e50a7e25cd265efc))
+* ✨ aggiunto componente CurriculumDownload per il download del CV ([6cd22c5](https://github.com/Smailen5/portfolio-website/commit/6cd22c586384a983654893832102c8c959023fad))
+* ✨ aggiunto componente DesktopNavbar per la navigazione desktop ([168c4d6](https://github.com/Smailen5/portfolio-website/commit/168c4d609599b095940edb8ea457774ace1f2b84))
+* ✨ aggiunto componente NotFound per gestire le pagine non trovate ([ac10644](https://github.com/Smailen5/portfolio-website/commit/ac106443fe08c96bd5177179bdafb5bca60f7339))
+* ✨ aggiunto componente SideBar per la navigazione ([6fa782a](https://github.com/Smailen5/portfolio-website/commit/6fa782aec2aa6bb5bf3340fa9de6d269a8cb2a53))
+* ✨ aggiunto toggle tema nella SideBar ([6cff8dc](https://github.com/Smailen5/portfolio-website/commit/6cff8dc6157899bfa9ebfae009e1b7f2ef24c21f))
+* ✨ rimosso il componente ErrorPage e le relative rotte ([2c13433](https://github.com/Smailen5/portfolio-website/commit/2c1343357b38133ae142d6e338edf2ec43920688))
+* 🆕 aggiunta Navbar e importazione di app.css nel componente principale ([7b7d6df](https://github.com/Smailen5/portfolio-website/commit/7b7d6df606ebaac422089574b97274346def8dcc))
+* 🆕 creata la Navbar come componente e aggiunto l'export nel modulo ([5f006d1](https://github.com/Smailen5/portfolio-website/commit/5f006d1e509c3aaedd6a8be8b439874e4c5ea220))
+
+
+### Bug Fixes
+
+* 🐛 aggiunto gestore di chiusura al click nel componente SideBar ([1116bd9](https://github.com/Smailen5/portfolio-website/commit/1116bd9ec042683f138b611e887adb44b8be52fa))
+* 🐛 reso il metodo closeSideBar opzionale nel componente CurriculumDownload ([6cc8ac6](https://github.com/Smailen5/portfolio-website/commit/6cc8ac6d7fd9660fd331a3545b32678648c89c39))
+* 🛠️ ripristinata la funzione HomePage e aggiornato il rendering ([9358248](https://github.com/Smailen5/portfolio-website/commit/935824847c017c1b516af85913c22ea68fca52a0))
+* 🛠️ sposta il provider in __root.tsx ([09961dc](https://github.com/Smailen5/portfolio-website/commit/09961dc459e924d78524074020a42e52a79436b3))
+
+## [4.0.0](https://github.com/Smailen5/portfolio-website/compare/v3.9.2...v4.0.0) (2025-09-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* rimosso react-router-dom dalle dipendenze del progetto.
+
+### Bug Fixes
+
+* 🛠️ aggiornato l'importazione di Link e useNavigate per utilizzare TanStack Router ([d02f464](https://github.com/Smailen5/portfolio-website/commit/d02f46420f5db7482bcedd4fd2d19f9dc16d293c))
+* 🛠️ aggiunta la HomePage come componente della rotta principale ([e854c2f](https://github.com/Smailen5/portfolio-website/commit/e854c2f973b3a1b39e5d3d33be341c6de0756e8d))
+* 🛠️ rimosso react-router-dom dalle dipendenze ([1b258e2](https://github.com/Smailen5/portfolio-website/commit/1b258e23b89154f1c9ee2174b460884610acb1f9))
+* aggiornato l'importazione di useParams da react-router-dom a @tanstack/react-router ([7c63e61](https://github.com/Smailen5/portfolio-website/commit/7c63e6179a3c5645734ccfc2c8b49657317203e2))
+
 ### [3.9.2](https://github.com/Smailen5/portfolio-website/compare/v3.9.1...v3.9.2) (2025-09-29)
 
 ### [3.9.1](https://github.com/Smailen5/portfolio-website/compare/v3.9.0...v3.9.1) (2025-09-25)

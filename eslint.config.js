@@ -25,6 +25,7 @@ export default [
         console: "readonly",
         localStorage: "readonly",
         sessionStorage: "readonly",
+        fetch: "readonly",
 
         // Node.js globals
         process: "readonly",

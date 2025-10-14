@@ -1,18 +1,42 @@
 import useScroll from "@/shared/hooks/useScroll";
-import Footer from "@components/organisms/Footer";
-import NavbarSample from "@features/navigation/components/Navbar";
+import { twMerge } from "tailwind-merge";
 
-export const Layout = ({ children }: { children: React.ReactNode }) => {
+interface LayoutProps {
+  children: React.ReactNode;
+  classLayout?: string;
+  classContent?: string;
+}
+
+/**
+ * Componente Layout - Container principale per sezioni
+ *
+ * Fornisce layout centrato con larghezza massima responsive
+ * e gestisce lo scroll automatico all'inizio della pagina
+ *
+ * Features:
+ * - Larghezza max 1024px centrata
+ * - Classi personalizzabili per layout e contenuto
+ * - Auto-scroll to top al montaggio (useScroll hook)
+ *
+ * @param {React.ReactNode} children - Contenuto da wrappare
+ * @param {string} [classLayout] - Classi Tailwind custom per container esterno
+ * @param {string} [classContent] - Classi Tailwind custom per contenitore interno
+ */
+export const Layout = ({
+  children,
+  classLayout,
+  classContent,
+}: LayoutProps) => {
   useScroll();
   return (
     <>
-      <NavbarSample />
-      <div className="flex h-auto w-full justify-center bg-background">
-        <main className="flex w-full max-w-[1024px] flex-col flex-nowrap gap-20 px-6 pb-14 pt-36 md:items-center">
+      <div
+        className={twMerge("flex h-auto w-full justify-center", classLayout)}
+      >
+        <div className={twMerge("w-full max-w-[1024px]", classContent)}>
           {children}
-        </main>
+        </div>
       </div>
-      <Footer />
     </>
   );
 };
