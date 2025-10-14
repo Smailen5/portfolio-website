@@ -5,9 +5,9 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/33b32928-0abb-4427-ac58-3f980cfc51ed/deploy-status)](https://app.netlify.com/sites/smailenvargas/deploys)
 ![Version](https://img.shields.io/github/package-json/v/Smailen5/portfolio-website.svg)
 
-Portfolio personale che mostra i miei progetti e competenze come Frontend Developer.
+Portfolio personale come Frontend Developer.
 
-Costruito con **React 18**, **TypeScript 5+**, **TanStack Router** e **Tailwind CSS v4**.
+**React 18** · **TypeScript 5+** · **TanStack Router** · **Tailwind CSS v4**
 
 [🌐 Esplora il Sito](https://smailenvargas.com) · [📝 Changelog](CHANGELOG.md) · [🐛 Segnala Bug](https://github.com/Smailen5/portfolio-website/issues)
 
