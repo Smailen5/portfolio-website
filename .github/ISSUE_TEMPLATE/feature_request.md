@@ -7,30 +7,24 @@ assignees: 'Smailen5'
 ---
 
 ## Descrizione Feature
-
 <!-- Descrivi la feature che vorresti aggiungere o migliorare -->
 
 ## Motivazione
-
 <!-- Spiega perché la feature è necessaria -->
 
 ## Descrizione Dettagliata
-
 <!-- Descrivi nel dettaglio come la feature dovrebbe funzionare -->
 
 ## Screenshot, video, link o mockup (opzionale ma gradito)
-
 <!-- Screenshot, video, link o mockup che mostra la feature -->
 
 ## Casi di Uso
-
 <!-- Elenca i casi di uso tipici -->
 
 1. **Caso di uso 1**: <!-- Descrizione del caso di uso -->
 2. **Caso di uso 2**: <!-- Descrizione del caso di uso -->
 
 ## Esempio di implementazione (opzionale)
-
 <!-- Se hai un esempio di implementazione, spiega come può essere implementata -->
 
 ```typescript
@@ -49,11 +43,9 @@ localStorage.removeItem("theme");
 ```
 
 ## Soluzione Alternativa (opzionale)
-
 <!-- Se hai una soluzione alternativa, spiega come può essere implementata -->
 
 ## Labels
-
 <!-- Aggiungi i labels appropriati ed elimina questa sezione -->
 
 - `feature` - Feature richiesta
