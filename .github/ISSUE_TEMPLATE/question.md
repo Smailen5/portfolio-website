@@ -8,15 +8,15 @@ assignees: 'Smailen5'
 
 ## Domanda
 
-Poni la tua domanda
+<!-- Poni la tua domanda -->
 
 ## Screenshot, video, link o documentazione (opzionale)
 
-Qualsiasi altra cosa trovi utile da aggiungere
+<!-- Qualsiasi altra cosa trovi utile da aggiungere -->
 
 ## Labels
 
-Aggiungi i labels appropriati:
+<!-- Aggiungi i labels appropriati ed elimina questa sezione -->
 
 - `question` - Domanda
 - `help wanted` - Aiuto richiesto
