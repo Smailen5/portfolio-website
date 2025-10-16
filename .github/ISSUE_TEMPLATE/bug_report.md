@@ -1,30 +1,46 @@
 ---
 name: Bug Report 🐞
 about: Segnala un bug nel progetto
-title: "[BUG]"
-labels: bug
+title: '[BUG]'
+labels: ['bug', 'help wanted', 'documentation', 'enhancement']
 assignees: 'Smailen5'
-
 ---
 
 ## Descrizione del problema
 <!-- Spiega cosa non funziona -->
 
 ## Passaggi per riprodurre
-1.
-2.
-3.
+
+1. <!-- Vai alla pagina ... -->
+2. <!-- Clicca sul pulsante ... -->
+3. <!-- Scrolla fino a ... -->
+4. <!-- Errore ... -->
 
 ## Comportamento atteso
 <!-- Cosa ti aspettavi che succedesse -->
 
 ## Ambiente
-- Sistema operativo:
-- Browser (se web):
-- Versione del progetto:
+
+- Sistema operativo: <!-- Aggiungi il sistema operativo es. Windows 11, Iphone 12 -->
+- Browser: <!-- Aggiungi il browser es. Chrome, Firefox, Safari -->
+- Versione del progetto: <!-- Aggiungi la versione del progetto es. 5.0.0 -->
 
 ## Log o errori
 <!-- Eventuali messaggi di errore o log utili -->
 
 ## Note aggiuntive
 <!-- Qualsiasi altra info utile -->
+
+## Screenshot o video (opzionale)
+<!-- Screenshot o video che mostra il problema -->
+
+## Possibile soluzione (opzionale)
+<!-- Se hai una soluzione, spiega come può essere risolto -->
+
+## Labels
+<!-- Aggiungi i labels appropriati ed elimina questa sezione -->
+
+- `bug` - Bug
+- `help wanted` - Aiuto richiesto
+- `documentation` - Documentazione
+- `enhancement` - Miglioramento
