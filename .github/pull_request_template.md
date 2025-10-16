@@ -2,6 +2,10 @@
 
 Descrivi brevemente lo scopo di questa PR
 
+## Issue correlata (solo se necessario)
+
+Close #(numero dell'issue correlata)
+
 ## ✨ Cambiamenti Principali
 
 Elenca le funzionalità o le modifiche principali
@@ -14,13 +18,13 @@ Spiega eventuali dettagli tecnici, refactor o miglioramenti nascosti
 
 -
 
-## 🐛 Errori Corretti
+## 🐛 Errori Corretti (solo se necessario)
 
 Se hai corretto dei bug, descrivili
 
 -
 
-## ⚠️ Breaking Changes
+## ⚠️ Breaking Changes (solo se necessario)
 
 Specifica se ci sono cambiamenti che rompono qualcosa nella vecchia versione
 
@@ -32,7 +36,7 @@ Spiega come hai testato la PR e se tutto funziona
 
 ✅
 
-## 📝 Note
+## 📝 Note (opzionale)
 
 Qualsiasi info utile per capire meglio la PR in futuro
 
@@ -42,7 +46,7 @@ Qualsiasi info utile per capire meglio la PR in futuro
 
 Facoltativo: se pochi file, puoi elencarli
 
-## 🐾 Pss
+## 🐾 Pss (opzionale)
 
 Messaggi per il te del futuro
 
