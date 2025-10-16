@@ -8,7 +8,7 @@ assignees: 'Smailen5'
 
 ## Descrizione del problema
 
-<!-- Spiega cosa non funziona -->
+Spiega cosa non funziona
 
 ## Passaggi per riprodurre
 1. Vai alla pagina ...
@@ -18,7 +18,7 @@ assignees: 'Smailen5'
 
 ## Comportamento atteso
 
-<!-- Cosa ti aspettavi che succedesse -->
+Cosa ti aspettavi che succedesse
 
 ## Ambiente
 
@@ -28,23 +28,23 @@ assignees: 'Smailen5'
 
 ## Log o errori
 
-<!-- Eventuali messaggi di errore o log utili -->
+Eventuali messaggi di errore o log utili
 
 ## Note aggiuntive
 
-<!-- Qualsiasi altra info utile -->
+Qualsiasi altra info utile
 
 ## Screenshot o video (opzionale)
 
-<!-- Screenshot o video che mostra il problema -->
+Screenshot o video che mostra il problema
 
 ## Possibile soluzione (opzionale)
 
-<!-- Se hai una soluzione, spiega come può essere risolto -->
+Se hai una soluzione, spiega come può essere risolto
 
 ## Labels
 
-<!-- Aggiungi i labels appropriati -->
+Aggiungi i labels appropriati:
 
 - `bug` - Bug
 - `help wanted` - Aiuto richiesto
