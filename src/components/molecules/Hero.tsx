@@ -22,7 +22,7 @@ export const Hero = () => {
             sono
           </p>
           <h2
-            className="text-secondary lg:tooltip text-6xl font-bold"
+            className="text-primary lg:tooltip text-6xl font-bold"
             data-tip="Si, il mio nome significa 'sorridi sempre'! 😊"
           >
             Smailen Vargas
@@ -32,10 +32,10 @@ export const Hero = () => {
 
         {/* call to action */}
         <nav className="md:flex-star flex flex-col flex-wrap gap-4 md:flex-row">
-          <Link to="/contact" className="btn btn-primary">
+          <Link to="/contact" className="btn">
             Contattami
           </Link>
-          <Link to="/projects" className="btn btn-secondary">
+          <Link to="/projects" className="btn btn-primary">
             Progetti
           </Link>
         </nav>
