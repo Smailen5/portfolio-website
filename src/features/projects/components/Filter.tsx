@@ -72,7 +72,7 @@ export const Filter = ({
   return (
     <section
       id="filter"
-      className="bg-secondary flex w-full flex-col items-start gap-8 rounded-md p-2 md:flex-row md:items-end md:justify-between md:gap-0"
+      className="bg-secondary flex w-full flex-col items-start gap-8 rounded-4xl p-2 md:flex-row md:items-center md:justify-between md:gap-0"
     >
       <details
         className="dropdown"
@@ -97,7 +97,7 @@ export const Filter = ({
           })}
         </ul>
       </details>
-      <p className="text-secondary-content">
+      <p className="text-secondary-content pl-2 md:pr-2 md:p-0">
         Progetti{" "}
         {selectedTechnology === "Tutto"
           ? "visualizzati"
