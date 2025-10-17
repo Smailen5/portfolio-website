@@ -34,6 +34,7 @@ export const CardProject: React.FC<CardProjectProps> = ({
             <img
               src={imageUrl || ""}
               alt={`Screenshot del progetto ${nameCorrect(name)}`}
+              className="transition-all duration-300 lg:hover:scale-105"
             />
           </a>
         </figure>
