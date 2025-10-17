@@ -64,7 +64,7 @@ export const CardProject: React.FC<CardProjectProps> = ({
           <div className="flex justify-center">
             <a
               href={`${ENDPOINTS.GITHUB.README.FOLDER}${nameFolder}`}
-              className="btn btn-primary btn-wide"
+              className="btn btn-primary w-full"
               target="_blank"
               rel="noopener noreferrer"
             >
