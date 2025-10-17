@@ -9,7 +9,7 @@
  *
  * Include tooltip informativi su termini tecnici per migliorare l'UX
  */
-const Presentation = () => {
+export const Presentation = () => {
   return (
     <section className="mx-auto flex w-full flex-col gap-16">
       <h2 className="sr-only">Presentazione</h2>
@@ -67,5 +67,3 @@ const Presentation = () => {
     </section>
   );
 };
-
-export default Presentation;

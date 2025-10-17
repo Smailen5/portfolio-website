@@ -23,7 +23,7 @@ export const Navbar = () => {
       {/* Layout */}
       <Layout>
         {/* Navbar */}
-        <nav className="bg-base-100 flex items-center justify-between px-4 py-2">
+        <nav className="flex items-center justify-between px-4 py-2">
           <Avatar name="Smailen Vargas" />
 
           <div className="flex items-center gap-4">

@@ -34,10 +34,11 @@ export const CardProject: React.FC<CardProjectProps> = ({
             <img
               src={imageUrl || ""}
               alt={`Screenshot del progetto ${nameCorrect(name)}`}
+              className="transition-all duration-300 lg:hover:scale-105"
             />
           </a>
         </figure>
-        <div className="card-body">
+        <div className="card-body gap-4">
           <h3 className="card-title uppercase">{nameCorrect(name)}</h3>
           <p>{description}</p>
 
@@ -64,7 +65,7 @@ export const CardProject: React.FC<CardProjectProps> = ({
           <div className="flex justify-center">
             <a
               href={`${ENDPOINTS.GITHUB.README.FOLDER}${nameFolder}`}
-              className="btn btn-primary btn-wide"
+              className="btn btn-primary w-full"
               target="_blank"
               rel="noopener noreferrer"
             >

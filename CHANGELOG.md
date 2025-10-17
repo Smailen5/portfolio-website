@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.1.0](https://github.com/Smailen5/portfolio-website/compare/v5.0.0...v5.1.0) (2025-10-17)
+
+
+### Features
+
+* 🎨 aggiorna classe del contenitore nel componente Filter ([7d42c68](https://github.com/Smailen5/portfolio-website/commit/7d42c68790bf93071aff146a574705d70d0f3a83))
+* 🎨 aggiorna classe del pulsante nel componente Card ([8386c85](https://github.com/Smailen5/portfolio-website/commit/8386c85c0273321fa4e5009f9683bd21d8fa8ac9))
+* 🎨 aggiorna classi CSS nel componente Hero ([61686e1](https://github.com/Smailen5/portfolio-website/commit/61686e166cf145dd13f550601889307b3a3c962d))
+* 🎨 aggiorna padding nel componente Filter ([43a5f6e](https://github.com/Smailen5/portfolio-website/commit/43a5f6ef796f5ff01a9f6b41796e21d7173f1510))
+* 🎨 aggiorna stili nei componenti Layout e Navbar ([29a0d79](https://github.com/Smailen5/portfolio-website/commit/29a0d791596303b638304f0a196823db2f574961))
+* 🎨 aggiorna stili nei componenti SectionSkill e Latest ([2f60e64](https://github.com/Smailen5/portfolio-website/commit/2f60e64c37c2855456bec89b9fb4a297ea21d09e))
+* 🎨 aggiorna stili nel componente Filter ([6933121](https://github.com/Smailen5/portfolio-website/commit/6933121338ad5977ab9540dc08f12c2581c18d88))
+* 🎨 aggiunge gap alla classe card-body nel componente Card ([6eee41f](https://github.com/Smailen5/portfolio-website/commit/6eee41f98017bbf6a5ab003ddccc42de59e8662d))
+* 🎨 aggiunge transizione al componente Card ([6fd1b58](https://github.com/Smailen5/portfolio-website/commit/6fd1b58ba2b3ea549966e007c3c5d932a8cc1efd))
+* 🎨 aggiunge variabili tema daisyUi ([2539743](https://github.com/Smailen5/portfolio-website/commit/2539743153ba5ed9bbc285f0f2734c87204b8af7))
+* 📱 aggiorna la griglia delle competenze nel componente Skills ([52b7d1f](https://github.com/Smailen5/portfolio-website/commit/52b7d1f9911f494e8bebe3ba7343daaed5d998b8))
+
+
+### Bug Fixes
+
+* 🚚 modifica esportazione del componente Presentation ([cbad9ce](https://github.com/Smailen5/portfolio-website/commit/cbad9ce261c15fb4e2518ea3cf38c132830e8ca9))
+
 ## [5.0.0](https://github.com/Smailen5/portfolio-website/compare/v4.5.0...v5.0.0) (2025-10-13)
 
 
