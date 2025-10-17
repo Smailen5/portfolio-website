@@ -31,7 +31,7 @@ export const Layout = ({
   return (
     <>
       <div
-        className={twMerge("flex h-auto w-full justify-center", classLayout)}
+        className={twMerge("flex h-auto w-full justify-center bg-base-200", classLayout)}
       >
         <div className={twMerge("w-full max-w-[1024px]", classContent)}>
           {children}
