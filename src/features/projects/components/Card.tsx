@@ -38,7 +38,7 @@ export const CardProject: React.FC<CardProjectProps> = ({
             />
           </a>
         </figure>
-        <div className="card-body">
+        <div className="card-body gap-4">
           <h3 className="card-title uppercase">{nameCorrect(name)}</h3>
           <p>{description}</p>
 
