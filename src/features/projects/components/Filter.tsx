@@ -80,7 +80,7 @@ export const Filter = ({
         onToggle={(e) => setIsOpen(e.currentTarget.open)}
       >
         <summary className="btn m-1">Seleziona una tecnologia</summary>
-        <ul className="menu dropdown-content bg-base-100 rounded-box z-10 w-52 p-2 shadow-sm">
+        <ul className="menu dropdown-content bg-base-100 rounded-box z-10 w-52 p-3 shadow-sm">
           {technologies.map((tech) => {
             return (
               <li key={tech}>
