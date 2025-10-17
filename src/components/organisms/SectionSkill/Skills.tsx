@@ -21,7 +21,7 @@ const Skills = ({ title, section }: SkillsProps) => {
   return (
     <>
       <section className="mx-auto flex w-full flex-col gap-10">
-        <h3 className="text-secondary font-semibold">{title}</h3>
+        <h3 className="text-accent font-semibold">{title}</h3>
         <ul className="grid gap-2 md:grid-cols-4">
           {section.map((skill) => (
             <Skill key={skill.name} {...skill} />

@@ -30,7 +30,7 @@ export const LastProjects = () => {
   return (
     <>
       <section className="mx-auto flex w-full flex-col gap-4">
-        <h2 className="text-primary font-bold">Guarda i miei ultimi lavori</h2>
+        <h2 className="text-primary font-bold uppercase text-center">Guarda i miei ultimi lavori</h2>
         <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {projects.slice(0, showLastProjects).map((project: Project) => (
             <CardProject key={project.name} {...project} />
