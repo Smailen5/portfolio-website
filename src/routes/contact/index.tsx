@@ -1,11 +1,11 @@
 // src/routes/contact/index.tsx
 
-import { Head } from "@/components/atoms/Head";
-import { Layout } from "@/components/molecules/Layout";
-import SocialIcons from "@/components/molecules/Social/SocialIcon";
-import { createFileRoute } from "@tanstack/react-router";
+import { Head } from '@/components/atoms/Head';
+import { Layout } from '@/components/molecules/Layout';
+import SocialIcons from '@/components/molecules/Social/SocialIcon';
+import { createFileRoute } from '@tanstack/react-router';
 
-export const Route = createFileRoute("/contact/")({
+export const Route = createFileRoute('/contact/')({
   component: ContactPage,
 });
 
@@ -35,7 +35,7 @@ function ContactPage() {
           {/* Email */}
           <div className="flex flex-col gap-2">
             <p>
-              Scrivimi a:{" "}
+              Scrivimi a:{' '}
               <a
                 href="mailto:smailenv91@gmail.com?subject=42-website-contact"
                 className="link link-accent font-semibold"

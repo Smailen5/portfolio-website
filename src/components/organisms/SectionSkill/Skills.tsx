@@ -1,5 +1,5 @@
 // import { Section } from "@components/atoms/Section";
-import Skill from "./Skill";
+import Skill from './Skill';
 
 interface SkillsProps {
   title: string;
@@ -23,7 +23,7 @@ const Skills = ({ title, section }: SkillsProps) => {
       <section className="mx-auto flex w-full flex-col gap-10">
         <h3 className="text-accent font-semibold">{title}</h3>
         <ul className="grid gap-2 md:grid-cols-3 lg:grid-cols-4">
-          {section.map((skill) => (
+          {section.map(skill => (
             <Skill key={skill.name} {...skill} />
           ))}
         </ul>

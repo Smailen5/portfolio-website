@@ -1,8 +1,8 @@
-import { CloseIcon } from "@/assets/icons";
-import { CurriculumDownload } from "@/features/cv/components/CurriculumDownload";
-import { NAVIGATION_LINKS } from "@/shared/constants/navigation";
-import { Link } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { CloseIcon } from '@/assets/icons';
+import { CurriculumDownload } from '@/features/cv/components/CurriculumDownload';
+import { NAVIGATION_LINKS } from '@/shared/constants/navigation';
+import { Link } from '@tanstack/react-router';
+import { useEffect, useState } from 'react';
 
 interface SideBarProps {
   isOpen: boolean;
@@ -38,14 +38,14 @@ export const SideBar = ({ isOpen, setIsOpen }: SideBarProps) => {
     <>
       {/* Overlay scuro che copre la pagina quando SideBar è aperto */}
       <div
-        className={`bg-base-300 fixed inset-0 z-10 h-screen transition-opacity duration-300 lg:hidden ${isOpen ? "opacity-80" : "pointer-events-none opacity-0"} `}
+        className={`bg-base-300 fixed inset-0 z-10 h-screen transition-opacity duration-300 lg:hidden ${isOpen ? 'opacity-80' : 'pointer-events-none opacity-0'} `}
         onClick={closeSideBar}
       />
 
       {/* Contenitore principale della SideBar */}
       <div
-        className={`bg-base-200 fixed inset-y-0 top-0 right-0 z-20 h-screen w-[70%] transform shadow-lg ${mounted ? "transition-transform duration-300 ease-in-out" : ""}lg:hidden ${
-          isOpen ? "translate-x-0" : "translate-x-full"
+        className={`bg-base-200 fixed inset-y-0 top-0 right-0 z-20 h-screen w-[70%] transform shadow-lg ${mounted ? 'transition-transform duration-300 ease-in-out' : ''}lg:hidden ${
+          isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         <div className="p-4">
@@ -59,7 +59,7 @@ export const SideBar = ({ isOpen, setIsOpen }: SideBarProps) => {
           </div>
 
           <nav className="flex flex-col gap-4">
-            {NAVIGATION_LINKS.map((link) => (
+            {NAVIGATION_LINKS.map(link => (
               <Link
                 key={link.params}
                 to={link.linkTo}

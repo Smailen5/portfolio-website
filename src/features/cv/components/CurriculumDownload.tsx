@@ -14,7 +14,9 @@ export const CurriculumDownload = ({
   return (
     <>
       <details className="dropdown">
-        <summary className="m-1 text-base font-semibold lg:cursor-pointer">Curriculum</summary>
+        <summary className="m-1 text-base font-semibold lg:cursor-pointer">
+          Curriculum
+        </summary>
 
         <ul className="menu dropdown-content bg-base-100 rounded-box z-10 w-52 p-2 shadow-sm">
           <li>

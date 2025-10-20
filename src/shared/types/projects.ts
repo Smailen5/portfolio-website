@@ -17,4 +17,4 @@ export interface Project extends CardProjectProps {
 export type CachedProjects = {
   projects: Project[];
   timestamp: number;
-}
+};

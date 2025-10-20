@@ -1,108 +1,108 @@
-import axiosIcon from "@/assets/icons/axios.svg";
-import formikIcon from "@/assets/icons/formik.svg";
-import githubIcon from "@/assets/icons/GitHubIcon.svg";
-import bootstrapIcon from "@/assets/icons/icons8-bootstrap.svg";
-import css3Icon from "@/assets/icons/icons8-css3.svg";
-import typescriptIcon from "@/assets/icons/icons8-dattiloscritto.svg";
-import gitIcon from "@/assets/icons/icons8-git.svg";
-import html5Icon from "@/assets/icons/icons8-html5.svg";
-import jsIcon from "@/assets/icons/icons8-javascript-48.svg";
-import reactIcon from "@/assets/icons/icons8-react.svg";
-import tailwindIcon from "@/assets/icons/icons8-tailwind-css.svg";
-import netlifyIcon from "@/assets/icons/netlify.svg";
-import nextuiIcon from "@/assets/icons/nextjs.svg";
-import pnpmIcon from "@/assets/icons/pnpm.svg";
-import shadcnIcon from "@/assets/icons/shadcn.svg";
-import viteIcon from "@/assets/icons/vite.svg";
+import axiosIcon from '@/assets/icons/axios.svg';
+import formikIcon from '@/assets/icons/formik.svg';
+import githubIcon from '@/assets/icons/GitHubIcon.svg';
+import bootstrapIcon from '@/assets/icons/icons8-bootstrap.svg';
+import css3Icon from '@/assets/icons/icons8-css3.svg';
+import typescriptIcon from '@/assets/icons/icons8-dattiloscritto.svg';
+import gitIcon from '@/assets/icons/icons8-git.svg';
+import html5Icon from '@/assets/icons/icons8-html5.svg';
+import jsIcon from '@/assets/icons/icons8-javascript-48.svg';
+import reactIcon from '@/assets/icons/icons8-react.svg';
+import tailwindIcon from '@/assets/icons/icons8-tailwind-css.svg';
+import netlifyIcon from '@/assets/icons/netlify.svg';
+import nextuiIcon from '@/assets/icons/nextjs.svg';
+import pnpmIcon from '@/assets/icons/pnpm.svg';
+import shadcnIcon from '@/assets/icons/shadcn.svg';
+import viteIcon from '@/assets/icons/vite.svg';
 
 const icons = [
   {
-    name: "Javascript",
+    name: 'Javascript',
     icon: jsIcon,
   },
   {
-    name: "React",
+    name: 'React',
     icon: reactIcon,
   },
   {
-    name: "Tailwind",
+    name: 'Tailwind',
     icon: tailwindIcon,
   },
   {
-    name: "Git",
+    name: 'Git',
     icon: gitIcon,
   },
 ];
 
 export const language = [
   {
-    name: "HTML5",
+    name: 'HTML5',
     icon: html5Icon,
   },
   {
-    name: "Css3",
+    name: 'Css3',
     icon: css3Icon,
   },
   {
-    name: "Javascript",
+    name: 'Javascript',
     icon: jsIcon,
   },
   {
-    name: "Typescript",
+    name: 'Typescript',
     icon: typescriptIcon,
   },
 ];
 
 export const framework = [
   {
-    name: "React",
+    name: 'React',
     icon: reactIcon,
   },
   {
-    name: "Shadcn ui",
+    name: 'Shadcn ui',
     icon: shadcnIcon,
   },
   {
-    name: "Next ui",
+    name: 'Next ui',
     icon: nextuiIcon,
   },
   {
-    name: "Tailwind",
+    name: 'Tailwind',
     icon: tailwindIcon,
   },
   {
-    name: "Bootstrap",
+    name: 'Bootstrap',
     icon: bootstrapIcon,
   },
   {
-    name: "Formik",
+    name: 'Formik',
     icon: formikIcon,
   },
 ];
 
 export const utility = [
   {
-    name: "Vite",
+    name: 'Vite',
     icon: viteIcon,
   },
   {
-    name: "pnpm",
+    name: 'pnpm',
     icon: pnpmIcon,
   },
   {
-    name: "Axios",
+    name: 'Axios',
     icon: axiosIcon,
   },
   {
-    name: "Git",
+    name: 'Git',
     icon: gitIcon,
   },
   {
-    name: "GitHub",
+    name: 'GitHub',
     icon: githubIcon,
   },
   {
-    name: "Netlify",
+    name: 'Netlify',
     icon: netlifyIcon,
   },
 ];

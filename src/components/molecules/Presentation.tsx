@@ -15,41 +15,41 @@ export const Presentation = () => {
       <h2 className="sr-only">Presentazione</h2>
       <p>
         Sono un <strong className="text-accent">frontend developer</strong> con
-        una passione che nasce dall&apos;infanzia. Tutto è iniziato con uno{" "}
+        una passione che nasce dall&apos;infanzia. Tutto è iniziato con uno{' '}
         <strong
           className="lg:tooltip text-accent"
           data-tip="Un computer personale degli anni '80, famoso per i suoi giochi e programmi"
         >
           ZX Spectrum
-        </strong>{" "}
+        </strong>{' '}
         e la magia della programmazione in Basic, quei primi programmi
         rudimentali hanno acceso una scintilla che non si è mai spenta.
       </p>
       <p>
         Il mio percorso è stato guidato dalla curiosità e dalla creatività. Ho
-        esplorato la{" "}
+        esplorato la{' '}
         <strong
           className="lg:tooltip text-accent"
           data-tip="Creazione di modelli tridimensionali utilizzando software come 3ds Max e SketchUp"
         >
           modelazione 3D
         </strong>
-        , il{" "}
+        , il{' '}
         <strong
           className="lg:tooltip text-accent"
           data-tip="Uso di software come Clipt Studio Paint per creare illustrazioni digitali"
         >
           disegno digitale
         </strong>
-        , e gli esperimenti con{" "}
+        , e gli esperimenti con{' '}
         <strong
           className="lg:tooltip text-accent"
           data-tip="Piattaforma open-source per creare progetti di elettronica e programmazione"
         >
           arduino.
-        </strong>{" "}
+        </strong>{' '}
         Questa varietà di esperienze mi ha portato a trovare la mia vera
-        vocazione nello sviluppo{" "}
+        vocazione nello sviluppo{' '}
         <strong className="text-accent">frontend</strong>.
       </p>
       <p>

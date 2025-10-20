@@ -17,7 +17,7 @@ interface SkillProps {
  */
 const Skills = ({ name, icon }: SkillProps) => {
   // Dimensione fissa per le icone
-  const iconSize = "w-12 h-12";
+  const iconSize = 'w-12 h-12';
 
   return (
     <li
@@ -25,7 +25,7 @@ const Skills = ({ name, icon }: SkillProps) => {
       data-tip={name}
     >
       <p className="font-semibold uppercase md:hidden">{name}</p>
-      <img src={icon} alt={name + "icon"} className={`${iconSize}`} />
+      <img src={icon} alt={name + 'icon'} className={`${iconSize}`} />
     </li>
   );
 };

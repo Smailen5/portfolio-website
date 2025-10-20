@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from '@tanstack/react-router';
 
 /**
  * Componente Hero - Sezione principale della homepage
@@ -17,8 +17,8 @@ export const Hero = () => {
         <header className="space-y-4">
           <p className="text-4xl">
             <span className="animate-typing text-base-content w-fit overflow-hidden border-r-2 font-mono tracking-wide whitespace-nowrap">
-              {"<Hello World>"}
-            </span>{" "}
+              {'<Hello World>'}
+            </span>{' '}
             sono
           </p>
           <h2

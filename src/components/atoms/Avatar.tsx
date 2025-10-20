@@ -1,7 +1,7 @@
-import useChangeAvatar from "@/shared/hooks/useChangeAvatar";
-import { getInitials } from "@/shared/utils/getInitials";
-import { useState } from "react";
-import { twMerge } from "tailwind-merge";
+import useChangeAvatar from '@/shared/hooks/useChangeAvatar';
+import { getInitials } from '@/shared/utils/getInitials';
+import { useState } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 /**
  * Componente Ring - Contenitore decorativo per avatar
@@ -35,7 +35,7 @@ const Ring = ({ children }: { children: React.ReactNode }) => {
 export const Avatar = ({ name }: { name?: string }) => {
   const { currentAvatar, animation } = useChangeAvatar();
   const [loadingError, setLoadingError] = useState<boolean>(false);
-  const initialName = getInitials(name || "");
+  const initialName = getInitials(name || '');
 
   return (
     <Ring>
@@ -43,7 +43,7 @@ export const Avatar = ({ name }: { name?: string }) => {
         // Fallback con iniziali se l'immagine non si carica
         <div
           role="img"
-          aria-label={`${name ? `Avatar di ${name}` : "Avatar"}`}
+          aria-label={`${name ? `Avatar di ${name}` : 'Avatar'}`}
           className="bg-accent-content text-accent flex h-full w-full items-center justify-center rounded-full"
         >
           {initialName}
@@ -54,7 +54,7 @@ export const Avatar = ({ name }: { name?: string }) => {
           src={currentAvatar}
           onError={() => setLoadingError(true)}
           className={twMerge(`rounded-full`, animation)}
-          alt={`${name !== undefined ? `Avatar di ${name}` : "Avatar"}`}
+          alt={`${name !== undefined ? `Avatar di ${name}` : 'Avatar'}`}
         />
       )}
     </Ring>

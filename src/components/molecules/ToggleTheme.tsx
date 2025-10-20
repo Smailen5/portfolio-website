@@ -1,4 +1,4 @@
-import { useTheme } from "@/context/ThemeContext";
+import { useTheme } from '@/context/ThemeContext';
 
 /**
  * Componente ToggleTheme - Switch per cambiare il tema
@@ -18,7 +18,7 @@ export const ToggleTheme = () => {
         type="checkbox"
         className="theme-controller"
         value="synthwave"
-        onChange={() => setTheme(theme === "light" ? "dark" : "light")}
+        onChange={() => setTheme(theme === 'light' ? 'dark' : 'light')}
       />
 
       {/* sun icon */}

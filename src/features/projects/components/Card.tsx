@@ -1,6 +1,6 @@
-import { ENDPOINTS } from "@/shared/constants/api";
-import { CardProjectProps } from "@/shared/types/projects";
-import { nameCorrect } from "@/shared/utils/nameCorrect";
+import { ENDPOINTS } from '@/shared/constants/api';
+import { CardProjectProps } from '@/shared/types/projects';
+import { nameCorrect } from '@/shared/utils/nameCorrect';
 
 /**
  * Componente CardProject - Card per visualizzare un singolo progetto
@@ -32,7 +32,7 @@ export const CardProject: React.FC<CardProjectProps> = ({
             rel="noopener noreferrer"
           >
             <img
-              src={imageUrl || ""}
+              src={imageUrl || ''}
               alt={`Screenshot del progetto ${nameCorrect(name)}`}
               className="transition-all duration-300 lg:hover:scale-105"
             />
@@ -49,7 +49,7 @@ export const CardProject: React.FC<CardProjectProps> = ({
             ) : (
               [...technologies]
                 .sort((a, b) => a.localeCompare(b))
-                .map((tech) => {
+                .map(tech => {
                   return (
                     <li
                       key={tech}

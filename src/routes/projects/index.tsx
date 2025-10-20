@@ -1,19 +1,19 @@
 // src/routes/projects/index.tsx
 
-import { fetchProjects } from "@/api/getProjects";
-import { Layout } from "@/components/molecules/Layout";
-import { HeaderProject } from "@/features/projects/components/Header";
-import { SectionProjects } from "@/features/projects/components/Section";
-import { Head } from "@/components/atoms/Head";
-import { createFileRoute, useLoaderData } from "@tanstack/react-router";
+import { fetchProjects } from '@/api/getProjects';
+import { Layout } from '@/components/molecules/Layout';
+import { HeaderProject } from '@/features/projects/components/Header';
+import { SectionProjects } from '@/features/projects/components/Section';
+import { Head } from '@/components/atoms/Head';
+import { createFileRoute, useLoaderData } from '@tanstack/react-router';
 
-export const Route = createFileRoute("/projects/")({
+export const Route = createFileRoute('/projects/')({
   loader: () => fetchProjects(),
   component: ProjectPage,
 });
 
 function ProjectPage() {
-  const projects = useLoaderData({ from: "/projects/" });
+  const projects = useLoaderData({ from: '/projects/' });
   return (
     <>
       <Head

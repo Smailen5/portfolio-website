@@ -1,7 +1,7 @@
-import reactIcon from "@/assets/icons/icons8-react.svg";
-import tailwindIcon from "@/assets/icons/icons8-tailwind-css.svg";
-import SocialIcons from "@/components/molecules/Social/SocialIcon";
-import { Layout } from "../molecules/Layout";
+import reactIcon from '@/assets/icons/icons8-react.svg';
+import tailwindIcon from '@/assets/icons/icons8-tailwind-css.svg';
+import SocialIcons from '@/components/molecules/Social/SocialIcon';
+import { Layout } from '../molecules/Layout';
 
 /**
  * Componente Footer - Piè di pagina del sito
@@ -31,11 +31,11 @@ const Footer = () => {
           <div className="flex flex-col items-start space-y-4">
             <p>
               © 2024-{new Date().getFullYear()} Smailen Vargas. Tutti i diritti
-              riservati.{" "}
+              riservati.{' '}
               <span>
-                Icons by{" "}
+                Icons by{' '}
                 <a
-                  href={"https://icons8.com"}
+                  href={'https://icons8.com'}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-accent link font-bold"
