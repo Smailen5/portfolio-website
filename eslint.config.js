@@ -59,22 +59,29 @@ export default [
       "@typescript-eslint": tseslint, react,
     },
     rules: {
+      // Recommended rules
+      ...js.configs.recommended.rules,
       ...tseslint.configs.recommended.rules,
       ...react.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
+
+      // Prettier
       "prettier/prettier": "error",
+
+      // TypeScript
       "@typescript-eslint/no-unused-vars": "error",
       "@typescript-eslint/no-explicit-any": "warn",
+
+      // React
       "react/react-in-jsx-scope": "off",
       "react/prop-types": "off",
       "react/jsx-no-target-blank": "off",
       "react/no-unescaped-entities": "warn",
+      "react-refresh/only-export-components": [ "warn", { allowConstantExport: true }, ],
+
+      // JS base
       "no-unused-vars": "off",
       "no-redeclare": "off",
-      "react-refresh/only-export-components": [
-      "warn",
-        { allowConstantExport: true },
-      ],
     },
     settings: {
       react: {
