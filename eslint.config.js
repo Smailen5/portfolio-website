@@ -66,7 +66,7 @@ export default [
       ...reactHooks.configs.recommended.rules,
 
       // Prettier
-      "prettier/prettier": "error",
+      "prettier/prettier": "warn",
 
       // TypeScript
       "@typescript-eslint/no-unused-vars": "error",

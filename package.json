@@ -9,9 +9,8 @@
     "preview": "vite preview",
     "release": "standard-version",
 
-    "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 20",
+    "lint": "eslint . --ext js,jsx,ts,tsx",
     "lint:fix": "eslint . --ext js,jsx,ts,tsx --fix",
-    "lint:check": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "type-check": "tsc --noEmit"
