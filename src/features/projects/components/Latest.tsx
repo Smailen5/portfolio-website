@@ -1,7 +1,7 @@
-import { fetchProjects } from "@/api/getProjects";
-import { CardProject } from "@/features/projects/components/Card";
-import { Project } from "@/shared/types/projects";
-import { useEffect, useState } from "react";
+import { fetchProjects } from '@/api/getProjects';
+import { CardProject } from '@/features/projects/components/Card';
+import { Project } from '@/shared/types/projects';
+import { useEffect, useState } from 'react';
 
 /**
  * Componente LastProjects - Ultimi progetti in homepage
@@ -19,10 +19,10 @@ export const LastProjects = () => {
 
   useEffect(() => {
     fetchProjects()
-      .then((data) => {
+      .then(data => {
         setProjects(data);
       })
-      .catch((error) => {
+      .catch(error => {
         console.error(error);
       });
   }, []);
@@ -30,7 +30,9 @@ export const LastProjects = () => {
   return (
     <>
       <section className="mx-auto flex w-full flex-col gap-4">
-        <h2 className="text-primary font-bold uppercase text-center">Guarda i miei ultimi lavori</h2>
+        <h2 className="text-primary text-center font-bold uppercase">
+          Guarda i miei ultimi lavori
+        </h2>
         <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {projects.slice(0, showLastProjects).map((project: Project) => (
             <CardProject key={project.name} {...project} />

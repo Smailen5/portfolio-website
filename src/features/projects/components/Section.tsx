@@ -1,7 +1,7 @@
-import { Project } from "@/shared/types/projects";
-import { useState } from "react";
-import { CardProject } from "./Card";
-import { Filter } from "./Filter";
+import { Project } from '@/shared/types/projects';
+import { useState } from 'react';
+import { CardProject } from './Card';
+import { Filter } from './Filter';
 
 interface SectionProjectsProps {
   projects: Project[];

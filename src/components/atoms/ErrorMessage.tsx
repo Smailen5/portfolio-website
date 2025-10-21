@@ -7,7 +7,7 @@ export const ErrorMessage = ({ children }: ErrorMessageProps) => {
     <div
       role="alert"
       aria-live="assertive"
-      className="rounded-md bg-destructive p-3 text-destructive-foreground"
+      className="bg-destructive text-destructive-foreground rounded-md p-3"
     >
       <p>{children}</p>
     </div>

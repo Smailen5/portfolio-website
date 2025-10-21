@@ -1,5 +1,5 @@
-import useScroll from "@/shared/hooks/useScroll";
-import { twMerge } from "tailwind-merge";
+import useScroll from '@/shared/hooks/useScroll';
+import { twMerge } from 'tailwind-merge';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -31,9 +31,12 @@ export const Layout = ({
   return (
     <>
       <div
-        className={twMerge("flex h-auto w-full justify-center bg-base-200", classLayout)}
+        className={twMerge(
+          'bg-base-200 flex h-auto w-full justify-center',
+          classLayout
+        )}
       >
-        <div className={twMerge("w-full max-w-[1024px]", classContent)}>
+        <div className={twMerge('w-full max-w-[1024px]', classContent)}>
           {children}
         </div>
       </div>

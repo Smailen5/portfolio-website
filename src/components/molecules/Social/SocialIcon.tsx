@@ -1,5 +1,5 @@
-import social from "@/data/social";
-import { Icon } from "./Icon";
+import social from '@/data/social';
+import { Icon } from './Icon';
 
 /**
  * Componente SocialIcons - Lista icone social

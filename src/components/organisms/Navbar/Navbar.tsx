@@ -1,11 +1,11 @@
-import { Avatar } from "@/components/atoms/Avatar";
-import { Layout } from "@/components/molecules/Layout";
-import { ToggleTheme } from "@/components/molecules/ToggleTheme";
-import { CurriculumDownload } from "@/features/cv/components/CurriculumDownload";
-import { NAVIGATION_LINKS } from "@/shared/constants/navigation";
-import { Link } from "@tanstack/react-router";
-import { useState } from "react";
-import { SideBar } from "./SideBar";
+import { Avatar } from '@/components/atoms/Avatar';
+import { Layout } from '@/components/molecules/Layout';
+import { ToggleTheme } from '@/components/molecules/ToggleTheme';
+import { CurriculumDownload } from '@/features/cv/components/CurriculumDownload';
+import { NAVIGATION_LINKS } from '@/shared/constants/navigation';
+import { Link } from '@tanstack/react-router';
+import { useState } from 'react';
+import { SideBar } from './SideBar';
 
 /**
  * Componente Navbar - Barra di navigazione principale
@@ -41,7 +41,7 @@ export const Navbar = () => {
             {/* Menu Desktop */}
             <div className="hidden lg:block">
               <nav className="flex items-center gap-4">
-                {NAVIGATION_LINKS.map((link) => (
+                {NAVIGATION_LINKS.map(link => (
                   <Link
                     key={link.params}
                     to={link.linkTo}

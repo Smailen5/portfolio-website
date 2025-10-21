@@ -139,16 +139,16 @@ Il progetto utilizza path aliases configurati in `tsconfig.json`:
 
 ```typescript
 // Componenti globali
-import { Avatar } from "@/components/atoms/Avatar";
-import { Layout } from "@/components/molecules/Layout";
+import { Avatar } from '@/components/atoms/Avatar';
+import { Layout } from '@/components/molecules/Layout';
 
 // Features
-import { CardProject } from "@/features/projects/components/Card";
-import { fetchProjects } from "@/api/getProjects";
+import { CardProject } from '@/features/projects/components/Card';
+import { fetchProjects } from '@/api/getProjects';
 
 // Shared
-import { useTheme } from "@/shared/hooks/useTheme";
-import { ENDPOINTS } from "@/shared/constants/api";
+import { useTheme } from '@/shared/hooks/useTheme';
+import { ENDPOINTS } from '@/shared/constants/api';
 ```
 
 ### Convenzioni di Codice

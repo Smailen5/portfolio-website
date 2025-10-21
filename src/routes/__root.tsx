@@ -1,11 +1,11 @@
 //src/routes/__root.tsx
 /// <reference types="vite/client" />
 
-import Footer from "@/components/organisms/Footer";
-import { ThemeProvider } from "@/context/ThemeContext";
-import { Navbar } from "@components/organisms/Navbar";
-import { createRootRoute, Outlet } from "@tanstack/react-router";
-import { Head } from "@/components/atoms/Head";
+import Footer from '@/components/organisms/Footer';
+import { ThemeProvider } from '@/context/ThemeContext';
+import { Navbar } from '@components/organisms/Navbar';
+import { createRootRoute, Outlet } from '@tanstack/react-router';
+import { Head } from '@/components/atoms/Head';
 
 export const Route = createRootRoute({
   component: RootComponent,
