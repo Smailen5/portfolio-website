@@ -1,13 +1,13 @@
-# Versione 3.5.0 - *Manutenzione & Organizzazione*
+# Versione 3.5.0 - _Manutenzione & Organizzazione_
 
 ## 📋 Descrizione
+
 In questa versione ho aggiunto un template per la segnalazione di bug, un template per le pull request e fatto alcune modifiche al layout del componente Card.
 
 ## ✨ Cambiamenti Principali
 
 - aggiunge un template per la segnalazione di bug
 - aggiunge un template per le pull request
-
 
 ## 🛠️ Modifiche Tecniche
 
