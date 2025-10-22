@@ -18,7 +18,7 @@ function ContactPage() {
         keywords="Contatti, Smailen Vargas, Email, Collaborazioni, Frontend Developer"
         ogUrl="https://smailenvargas.com/contact"
       />
-      <Layout classContent="p-6">
+      <Layout classContent="p-6 md:h-[calc(100vh-160px)]">
         <section
           aria-labelledby="contact-heading"
           className="flex-1 space-y-4 md:flex md:flex-col md:justify-center md:text-left lg:w-1/2 lg:text-left"
