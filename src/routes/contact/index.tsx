@@ -23,7 +23,7 @@ function ContactPage() {
           aria-labelledby="contact-heading"
           className="flex-1 space-y-4 md:flex md:flex-col md:justify-center md:text-left lg:w-1/2 lg:text-left"
         >
-          <h3 className="sr-only text-3xl font-semibold">Contattami</h3>
+          <h3 className="sr-only">Contattami</h3>
           <p>
             Se hai domande, richieste di collaborazione, o semplicemente vuoi
             parlare di React, non esitare a contattarmi. Sarò felice di
