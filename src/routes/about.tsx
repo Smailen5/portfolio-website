@@ -1,8 +1,7 @@
 // src/routes/about.tsx
 
 import { Head } from '@/components/atoms/Head';
-import H1 from '@/components/atoms/heading/H1';
-import H2 from '@/components/atoms/heading/H2';
+import { H1, H2 } from '@/components/atoms/heading';
 import Section from '@/components/atoms/Section';
 import Separator from '@/components/atoms/Separator';
 import Strong from '@/components/atoms/Strong';
