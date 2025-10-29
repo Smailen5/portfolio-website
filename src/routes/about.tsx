@@ -2,6 +2,7 @@
 
 import { Head } from '@/components/atoms/Head';
 import Separator from '@/components/atoms/Separator';
+import Strong from '@/components/atoms/Strong';
 import { Layout } from '@/components/molecules/Layout';
 import { createFileRoute } from '@tanstack/react-router';
 
@@ -25,15 +26,14 @@ function AboutPage() {
         <section>
           <h2>Il Mio Percorso</h2>
           <p>
-            Sono un <strong className="text-accent">frontend developer</strong>{' '}
-            con una passione che nasce dall'infanzia.
+            Sono un <Strong>frontend developer</Strong> con una passione che
+            nasce dall'infanzia.
           </p>
           <p>
-            Tutto è iniziato con uno{' '}
-            <strong className="text-accent">ZX Spectrum</strong> e la
-            programmazione in <strong className="text-accent">Basic</strong>.
-            Quella prima esperienza ha acceso una passione che nel tempo si è
-            trasformata in una carriera dedicata allo sviluppo frontend.
+            Tutto è iniziato con uno <Strong>ZX Spectrum</Strong> e la
+            programmazione in <Strong>Basic</Strong>. Quella prima esperienza ha
+            acceso una passione che nel tempo si è trasformata in una carriera
+            dedicata allo sviluppo frontend.
           </p>
 
           <p>
@@ -41,11 +41,10 @@ function AboutPage() {
             sperimentare. Ho esplorato diversi campi creativi e tecnici che
             hanno arricchito il mio approccio allo sviluppo: dalla modellazione
             3D al disegno digitale, dagli esperimenti con{' '}
-            <strong className="text-accent">Arduino</strong> alla
-            programmazione. Questa varietà di esperienze mi ha portato a trovare
-            la mia vocazione nel{' '}
-            <strong className="text-accent">frontend development</strong>, dove
-            posso combinare creatività e problem solving.
+            <Strong>Arduino</Strong> alla programmazione. Questa varietà di
+            esperienze mi ha portato a trovare la mia vocazione nel{' '}
+            <Strong>frontend development</Strong>, dove posso combinare
+            creatività e problem solving.
           </p>
         </section>
 
@@ -56,20 +55,17 @@ function AboutPage() {
           <p>
             Nel corso degli anni ho sviluppato una solida conoscenza delle
             tecnologie moderne per lo sviluppo web. Partendo dai fondamenti con{' '}
-            <strong className="text-accent">HTML5</strong>,{' '}
-            <strong className="text-accent">CSS3</strong> e{' '}
-            <strong className="text-accent">JavaScript</strong>, ho poi
-            approfondito l'utilizzo di{' '}
-            <strong className="text-accent">TypeScript</strong> per aver
-            maggiore robustezza nel codice.
+            <Strong>HTML5</Strong>, <Strong>CSS3</Strong> e{' '}
+            <Strong>JavaScript</Strong>, ho poi approfondito l'utilizzo di{' '}
+            <Strong>TypeScript</Strong> per aver maggiore robustezza nel codice.
           </p>
           <p>
-            Nel mondo dei frameworks, <strong>React</strong> è diventato il mio
+            Nel mondo dei frameworks, <Strong>React</Strong> è diventato il mio
             strumento principale, accompagnato da librerie come{' '}
-            <strong>TanStack Router</strong> e strumenti di styling come{' '}
-            <strong>Tailwind CSS</strong>. Uso <strong>Git</strong> e{' '}
-            <strong>GitHub</strong> per la gestione del codice e workflow
-            moderni con <strong>Vite</strong>.
+            <Strong>TanStack Router</Strong> e strumenti di styling come{' '}
+            <Strong>Tailwind CSS</Strong>. Uso <Strong>Git</Strong> e{' '}
+            <Strong>GitHub</Strong> per la gestione del codice e workflow
+            moderni con <Strong>Vite</Strong>.
           </p>
 
           <p>
