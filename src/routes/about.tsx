@@ -1,6 +1,7 @@
 // src/routes/about.tsx
 
 import { Head } from '@/components/atoms/Head';
+import Section from '@/components/atoms/Section';
 import Separator from '@/components/atoms/Separator';
 import Strong from '@/components/atoms/Strong';
 import { Layout } from '@/components/molecules/Layout';
@@ -23,7 +24,7 @@ function AboutPage() {
         <Separator />
         <h1>Chi sono</h1>
 
-        <section>
+        <Section>
           <h2>Il Mio Percorso</h2>
           <p>
             Sono un <Strong>frontend developer</Strong> con una passione che
@@ -46,11 +47,11 @@ function AboutPage() {
             <Strong>frontend development</Strong>, dove posso combinare
             creatività e problem solving.
           </p>
-        </section>
+        </Section>
 
         <Separator />
 
-        <section>
+        <Section>
           <h2>Le Mie Competenze</h2>
           <p>
             Nel corso degli anni ho sviluppato una solida conoscenza delle
@@ -73,11 +74,11 @@ function AboutPage() {
             del settore, perché credo che nell'ambito tech l'apprendimento
             continuo sia fondamentale.
           </p>
-        </section>
+        </Section>
 
         <Separator />
 
-        <section>
+        <Section>
           <h2>Il Mio Approccio</h2>
           <p>
             Nel <strong className="text-accent">frontend development</strong> ho
@@ -88,11 +89,11 @@ function AboutPage() {
             applicare nuove soluzioni, sempre mantenendo un focus sulla qualità
             del codice, l'usabilità e le performance.
           </p>
-        </section>
+        </Section>
 
         <Separator />
 
-        <section>
+        <Section>
           <h2>Fuori dal Codice</h2>
           <p>
             Quando non sono immerso nel codice, mi dedico ad attività che
@@ -109,7 +110,7 @@ function AboutPage() {
             Questi hobby non solo mi permettono di staccare mentalmente, ma
             arricchiscono anche il mio approccio creativo al lavoro.
           </p>
-        </section>
+        </Section>
 
         <Separator />
       </Layout>
