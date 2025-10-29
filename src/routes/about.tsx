@@ -1,6 +1,8 @@
 // src/routes/about.tsx
 
 import { Head } from '@/components/atoms/Head';
+import H1 from '@/components/atoms/heading/H1';
+import H2 from '@/components/atoms/heading/H2';
 import Section from '@/components/atoms/Section';
 import Separator from '@/components/atoms/Separator';
 import Strong from '@/components/atoms/Strong';
@@ -22,10 +24,10 @@ function AboutPage() {
       />
       <Layout classContent="min-h-[calc(100vh-160px)] px-4">
         <Separator />
-        <h1>Chi sono</h1>
+        <H1>Chi sono</H1>
 
         <Section>
-          <h2>Il Mio Percorso</h2>
+          <H2>Il Mio Percorso</H2>
           <p>
             Sono un <Strong>frontend developer</Strong> con una passione che
             nasce dall'infanzia.
@@ -52,7 +54,7 @@ function AboutPage() {
         <Separator />
 
         <Section>
-          <h2>Le Mie Competenze</h2>
+          <H2>Le Mie Competenze</H2>
           <p>
             Nel corso degli anni ho sviluppato una solida conoscenza delle
             tecnologie moderne per lo sviluppo web. Partendo dai fondamenti con{' '}
@@ -79,7 +81,7 @@ function AboutPage() {
         <Separator />
 
         <Section>
-          <h2>Il Mio Approccio</h2>
+          <H2>Il Mio Approccio</H2>
           <p>
             Nel <strong className="text-accent">frontend development</strong> ho
             trovato il perfetto equilibrio tra problem solving e creatività. Mi
@@ -94,7 +96,7 @@ function AboutPage() {
         <Separator />
 
         <Section>
-          <h2>Fuori dal Codice</h2>
+          <H2>Fuori dal Codice</H2>
           <p>
             Quando non sono immerso nel codice, mi dedico ad attività che
             nutrono la mia creatività e curiosità:
