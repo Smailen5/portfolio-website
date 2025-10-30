@@ -29,7 +29,7 @@ function AboutPage() {
           <H2>Il Mio Percorso</H2>
           <p>
             Sono un <Strong>frontend developer</Strong> con una passione che
-            nasce dall'infanzia.
+            nasce dall&apos;infanzia.
           </p>
           <p>
             Tutto è iniziato con uno <Strong>ZX Spectrum</Strong> e la
@@ -58,7 +58,7 @@ function AboutPage() {
             Nel corso degli anni ho sviluppato una solida conoscenza delle
             tecnologie moderne per lo sviluppo web. Partendo dai fondamenti con{' '}
             <Strong>HTML5</Strong>, <Strong>CSS3</Strong> e{' '}
-            <Strong>JavaScript</Strong>, ho poi approfondito l'utilizzo di{' '}
+            <Strong>JavaScript</Strong>, ho poi approfondito l&apos;utilizzo di{' '}
             <Strong>TypeScript</Strong> per aver maggiore robustezza nel codice.
           </p>
           <p>
@@ -72,8 +72,8 @@ function AboutPage() {
 
           <p>
             Mi aggiorno costantemente sulle nuove tecnologie e best practices
-            del settore, perché credo che nell'ambito tech l'apprendimento
-            continuo sia fondamentale.
+            del settore, perché credo che nell&apos;ambito tech
+            l&apos;apprendimento continuo sia fondamentale.
           </p>
         </Section>
 
@@ -86,9 +86,9 @@ function AboutPage() {
             trovato il perfetto equilibrio tra problem solving e creatività. Mi
             appassiona trasformare concept di design in interfacce interattive,
             ottimizzando ogni dettaglio per creare esperienze web coinvolgenti e
-            accessibili. Ogni progetto è per me un'opportunità per migliorare e
-            applicare nuove soluzioni, sempre mantenendo un focus sulla qualità
-            del codice, l'usabilità e le performance.
+            accessibili. Ogni progetto è per me un&apos;opportunità per
+            migliorare e applicare nuove soluzioni, sempre mantenendo un focus
+            sulla qualità del codice, l&apos;usabilità e le performance.
           </p>
         </Section>
 
