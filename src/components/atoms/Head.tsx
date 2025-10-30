@@ -23,7 +23,7 @@ export const Head = ({
   title = 'Smailen Vargas | Frontend Developer',
   description = 'Ciao, sono Smailen Vargas, Frontend Developer specializzato in React, TypeScript e Tailwind CSS',
   keywords = 'Smailen Vargas, Frontend Developer, React, TypeScript, Tailwind CSS, DaisyUi, Portfolio',
-  ogUrl = SITE_INFO.url,
+  ogUrl,
 }: HeadProps) => {
   return (
     <Helmet>
@@ -41,7 +41,7 @@ export const Head = ({
           content={tag.content}
         />
       ))}
-      <meta property="og:url" content={SITE_INFO.url + ogUrl} />
+      <meta property="og:url" content={SITE_INFO.url + (ogUrl ? ogUrl : '')} />
       <meta property="og:description" content={description} />
       <meta property="og:title" content={title} />
 
