@@ -11,7 +11,7 @@
 export const SITE_INFO = {
   name: 'Smailen Vargas Portfolio',
   author: 'Smailen Vargas',
-  url: 'https://smailenvargas.com',
+  url: 'https://smailenvargas.com/',
   locale: 'it_IT',
   themeColor: '#ffffff',
 } as const;
