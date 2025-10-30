@@ -41,7 +41,9 @@ export const Head = ({
           content={tag.content}
         />
       ))}
-      <meta property="og:url" content={ogUrl} />
+      <meta property="og:url" content={SITE_INFO.url + ogUrl} />
+      <meta property="og:description" content={description} />
+      <meta property="og:title" content={title} />
 
       {/* Mobile App */}
       {MOBILE_APP_TAGS.map(tag => (
