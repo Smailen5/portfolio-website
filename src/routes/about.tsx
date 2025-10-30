@@ -21,9 +21,10 @@ function AboutPage() {
         keywords="smailen vargas, frontend developer, sviluppatore frontend, react, typescript, tailwind css, tanstack router, accessibilità, performance, ui/ux, portfolio, progetti"
         ogUrl="about"
       />
-      <Layout classContent="min-h-[calc(100vh-160px)] px-4">
+      <Layout classContent="min-h-[calc(100vh-160px)] px-6">
         <Separator />
         <H1>Chi sono</H1>
+        <Separator className="h-4" />
 
         <Section>
           <H2>Il Mio Percorso</H2>
