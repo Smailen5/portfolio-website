@@ -30,10 +30,6 @@
 
 ## <!-- Qualsiasi info utile per capire meglio la versione in futuro -->
 
-## 🔗 File Modificati
-
-<!-- Facoltativo: se pochi file, puoi elencarli -->
-
 ## 🐾 Pss
 
 ## <!-- Messaggi per il te del futuro  -->
