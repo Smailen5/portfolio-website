@@ -79,7 +79,7 @@ Portfolio moderno e performante sviluppato con le tecnologie frontend più recen
 
 ## 📋 Ultima Versione
 
-**v5.1.0 - Stili e componenti aggiornati** - [Scopri di più](release/v5.1.0.md)
+**v5.2.0 - Aggiunta pagina About** - [Scopri di più](release/v5.2.0.md)
 
 Architettura SPA moderna con TanStack Router, SEO ottimizzato e DaisyUI
 
