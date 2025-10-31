@@ -16,7 +16,7 @@ function ContactPage() {
         title="Contatti | Smailen Vargas"
         description="Contatta Smailen Vargas per collaborazioni, domande o progetti. Disponibile via email e social media."
         keywords="Contatti, Smailen Vargas, Email, Collaborazioni, Frontend Developer"
-        ogUrl="https://smailenvargas.com/contact"
+        ogUrl="contact"
       />
       <Layout classContent="p-6 h-[calc(100vh-160px)] md:text-center">
         <div className="flex h-full flex-col items-center justify-center">
