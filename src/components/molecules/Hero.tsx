@@ -42,10 +42,10 @@ export const Hero = () => {
 
         {/* call to action */}
         <nav className="md:flex-star flex flex-col flex-wrap gap-4 md:flex-row">
-          <Link to="/contact" className="btn">
+          <Link to="/contact" className="btn btn-xl md:btn-lg">
             Contattami
           </Link>
-          <Link to="/projects" className="btn btn-primary">
+          <Link to="/projects" className="btn btn-primary btn-xl md:btn-lg">
             Progetti
           </Link>
         </nav>
