@@ -1,18 +1,18 @@
 import { Link } from '@tanstack/react-router';
-import Strong from '../atoms/Strong';
 import Section from '../atoms/Section';
 import Separator from '../atoms/Separator';
+import Strong from '../atoms/Strong';
 
 /**
- * Componente Presentation - Sezione "Chi sono"
+ * Componente Presentation - Sezione "Chi sono" (versione sintetica)
  *
- * Racconta la storia personale e professionale:
- * - Origini della passione per la programmazione (ZX Spectrum, Basic)
- * - Percorso creativo (3D, disegno digitale, Arduino)
- * - Vocazione nel frontend development
- * - Hobby e interessi personali
+ * Presentazione professionale concisa per la homepage che:
+ * - Introduce il ruolo di frontend developer e le tecnologie principali (React, TypeScript, Tailwind CSS)
+ * - Descrive l'approccio al lavoro (problem solving, creatività, qualità del codice)
+ * - Include un link alla pagina About per informazioni dettagliate
  *
- * Include tooltip informativi su termini tecnici per migliorare l'UX
+ * Questa versione sintetica mantiene la homepage pulita e invita gli utenti
+ * a visitare la pagina About per maggiori dettagli sul percorso e le competenze.
  */
 export const Presentation = () => {
   return (
@@ -55,5 +55,3 @@ export const Presentation = () => {
     </Section>
   );
 };
-
-// className="mx-auto flex w-full flex-col gap-16"
