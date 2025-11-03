@@ -28,7 +28,7 @@ export const Presentation = () => {
         dalla voglia di creare soluzioni innovative.
       </p>
 
-      <Separator />
+      <Separator className="h-4" />
 
       <p>
         Nel mio lavoro, cerco sempre il perfetto equilibrio tra{' '}
@@ -40,7 +40,7 @@ export const Presentation = () => {
         practices del settore.
       </p>
 
-      <Separator />
+      <Separator className="h-4" />
 
       <p>
         Se vuoi saperne di più sul mio percorso, le mie competenze tecniche
@@ -51,7 +51,7 @@ export const Presentation = () => {
         per maggiori informazioni.
       </p>
 
-      <Separator />
+      <Separator className="h-4" />
     </Section>
   );
 };
