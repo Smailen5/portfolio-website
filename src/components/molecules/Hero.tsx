@@ -36,7 +36,7 @@ export const Hero = () => {
 
         <Separator />
 
-        <p className="text-3xl">Frontend developer</p>
+        <p className="text-3xl font-semibold">Frontend developer</p>
 
         <Separator />
 
