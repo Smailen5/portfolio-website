@@ -1,5 +1,17 @@
-const Section = ({ children }: { children: React.ReactNode }) => {
-  return <section className="w-full space-y-4">{children}</section>;
+import { twMerge } from 'tailwind-merge';
+
+const Section = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
+  return (
+    <section className={twMerge('w-full space-y-4', className)}>
+      {children}
+    </section>
+  );
 };
 
 export default Section;
