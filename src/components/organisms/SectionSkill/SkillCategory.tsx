@@ -1,7 +1,7 @@
 // import { Section } from "@components/atoms/Section";
 import { H3 } from '@/components/atoms/heading';
 import Separator from '@/components/atoms/Separator';
-import { SkillCard } from './Skill';
+import { SkillCard } from './SkillCard';
 
 interface SkillCategoryProps {
   title: string;

@@ -1,7 +1,7 @@
 import Separator from '@/components/atoms/Separator';
 import { H2 } from '@/components/atoms/heading';
 import { framework, language, utility } from '@/data/skillsData';
-import { SkillCategory } from './Skills';
+import { SkillCategory } from './SkillCategory';
 
 /**
  * Componente SkillsSection - Sezione competenze tecniche

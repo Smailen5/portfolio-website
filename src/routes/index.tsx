@@ -3,7 +3,7 @@
 import { Hero } from '@/components/molecules/Hero';
 import { Layout } from '@/components/molecules/Layout';
 import { Presentation } from '@/components/molecules/Presentation';
-import { SkillsSection } from '@/components/organisms/SectionSkill/Section';
+import { SkillsSection } from '@/components/organisms/SectionSkill';
 import { LastProjects } from '@/features/projects/components/Latest';
 import { createFileRoute } from '@tanstack/react-router';
 
