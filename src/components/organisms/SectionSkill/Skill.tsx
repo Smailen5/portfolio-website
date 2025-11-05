@@ -1,10 +1,10 @@
-interface SKillCardProps {
+interface SkillCardProps {
   name: string;
   icon: string;
 }
 
 /**
- * Componente Skill - Singola skill/tecnologia
+ * Componente SkillCard - Singola skill/tecnologia
  *
  * Visualizza una competenza tecnica con icona
  *
@@ -15,7 +15,7 @@ interface SKillCardProps {
  * @param {string} name - Nome della tecnologia (es: "React", "TypeScript")
  * @param {string} icon - URL dell'icona SVG/PNG della tecnologia
  */
-export const SkillCard = ({ name, icon }: SKillCardProps) => {
+export const SkillCard = ({ name, icon }: SkillCardProps) => {
   // Dimensione fissa per le icone
   const iconSize = 'w-12 h-12';
 
