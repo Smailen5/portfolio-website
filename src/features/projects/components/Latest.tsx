@@ -1,4 +1,6 @@
 import { fetchProjects } from '@/api/getProjects';
+import { H2 } from '@/components/atoms/heading';
+import Section from '@/components/atoms/Section';
 import Separator from '@/components/atoms/Separator';
 import { CardProject } from '@/features/projects/components/Card';
 import { Project } from '@/shared/types/projects';
@@ -30,10 +32,8 @@ export const LastProjects = () => {
 
   return (
     <>
-      <section className="mx-auto flex w-full flex-col">
-        <h2 className="text-primary text-center font-bold uppercase">
-          Guarda i miei ultimi lavori
-        </h2>
+      <Section className="text-center">
+        <H2>Guarda i miei ultimi lavori</H2>
 
         <Separator />
 
@@ -42,7 +42,7 @@ export const LastProjects = () => {
             <CardProject key={project.name} {...project} />
           ))}
         </main>
-      </section>
+      </Section>
     </>
   );
 };
