@@ -37,7 +37,7 @@ export const LastProjects = () => {
 
         <Separator />
 
-        <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <main className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {projects.slice(0, showLastProjects).map((project: Project) => (
             <CardProject key={project.name} {...project} />
           ))}
