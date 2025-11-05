@@ -1,4 +1,5 @@
 import { fetchProjects } from '@/api/getProjects';
+import Separator from '@/components/atoms/Separator';
 import { CardProject } from '@/features/projects/components/Card';
 import { Project } from '@/shared/types/projects';
 import { useEffect, useState } from 'react';
@@ -29,10 +30,13 @@ export const LastProjects = () => {
 
   return (
     <>
-      <section className="mx-auto flex w-full flex-col gap-4">
+      <section className="mx-auto flex w-full flex-col">
         <h2 className="text-primary text-center font-bold uppercase">
           Guarda i miei ultimi lavori
         </h2>
+
+        <Separator />
+
         <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {projects.slice(0, showLastProjects).map((project: Project) => (
             <CardProject key={project.name} {...project} />
