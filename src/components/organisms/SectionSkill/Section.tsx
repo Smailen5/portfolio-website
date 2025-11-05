@@ -1,5 +1,5 @@
 import { framework, language, utility } from '@/data/skillsData';
-import Skills from './Skills';
+import { SkillCategory } from './Skills';
 import Separator from '@/components/atoms/Separator';
 import { H2 } from '@/components/atoms/heading';
 
@@ -13,7 +13,7 @@ import { H2 } from '@/components/atoms/heading';
  *
  * Layout responsive: colonna su mobile, grid 3 colonne su desktop
  */
-export const SectionSkill = () => {
+export const SkillsSection = () => {
   return (
     <section className="mx-auto w-full text-center">
       <H2>Competenze acquisite</H2>
@@ -21,9 +21,9 @@ export const SectionSkill = () => {
       <Separator />
 
       <main className="flex h-full w-full flex-col flex-wrap gap-12 md:grid md:grid-cols-3">
-        <Skills section={language} title="Linguaggi" />
-        <Skills section={framework} title="Framework e Librerie" />
-        <Skills section={utility} title="Strumenti di Sviluppo" />
+        <SkillCategory section={language} title="Linguaggi" />
+        <SkillCategory section={framework} title="Framework e Librerie" />
+        <SkillCategory section={utility} title="Strumenti di Sviluppo" />
       </main>
     </section>
   );

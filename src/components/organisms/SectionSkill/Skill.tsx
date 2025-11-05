@@ -1,4 +1,4 @@
-interface SkillProps {
+interface SKillCardProps {
   name: string;
   icon: string;
 }
@@ -15,7 +15,7 @@ interface SkillProps {
  * @param {string} name - Nome della tecnologia (es: "React", "TypeScript")
  * @param {string} icon - URL dell'icona SVG/PNG della tecnologia
  */
-const Skills = ({ name, icon }: SkillProps) => {
+export const SkillCard = ({ name, icon }: SKillCardProps) => {
   // Dimensione fissa per le icone
   const iconSize = 'w-12 h-12';
 
@@ -29,5 +29,3 @@ const Skills = ({ name, icon }: SkillProps) => {
     </li>
   );
 };
-
-export default Skills;

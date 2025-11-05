@@ -1,9 +1,9 @@
 // import { Section } from "@components/atoms/Section";
 import { H3 } from '@/components/atoms/heading';
-import Skill from './Skill';
+import { SkillCard } from './Skill';
 import Separator from '@/components/atoms/Separator';
 
-interface SkillsProps {
+interface SectionSkillsProps {
   title: string;
   section: { name: string; icon: string }[];
 }
@@ -19,7 +19,7 @@ interface SkillsProps {
  * @param {string} title - Titolo della categoria (es: "Linguaggi")
  * @param {Array} section - Array di skill con nome e icona
  */
-const Skills = ({ title, section }: SkillsProps) => {
+export const SkillCategory = ({ title, section }: SectionSkillsProps) => {
   return (
     <>
       <section className="mx-auto flex w-full flex-col">
@@ -29,12 +29,10 @@ const Skills = ({ title, section }: SkillsProps) => {
 
         <ul className="grid gap-2 md:grid-cols-3 lg:grid-cols-4">
           {section.map(skill => (
-            <Skill key={skill.name} {...skill} />
+            <SkillCard key={skill.name} {...skill} />
           ))}
         </ul>
       </section>
     </>
   );
 };
-
-export default Skills;
