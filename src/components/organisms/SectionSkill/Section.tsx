@@ -1,5 +1,7 @@
 import { framework, language, utility } from '@/data/skillsData';
 import Skills from './Skills';
+import Separator from '@/components/atoms/Separator';
+import { H2 } from '@/components/atoms/heading';
 
 /**
  * Componente SectionSkill - Sezione competenze tecniche
@@ -13,10 +15,10 @@ import Skills from './Skills';
  */
 export const SectionSkill = () => {
   return (
-    <section className="mx-auto flex w-full flex-col gap-4">
-      <h2 className="text-primary text-center font-bold uppercase">
-        Competenze acquisite
-      </h2>
+    <section className="mx-auto w-full text-center">
+      <H2>Competenze acquisite</H2>
+
+      <Separator />
 
       <main className="flex h-full w-full flex-col flex-wrap gap-12 md:grid md:grid-cols-3">
         <Skills section={language} title="Linguaggi" />
