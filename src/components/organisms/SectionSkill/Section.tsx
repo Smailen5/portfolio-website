@@ -1,10 +1,10 @@
-import { framework, language, utility } from '@/data/skillsData';
-import { SkillCategory } from './Skills';
 import Separator from '@/components/atoms/Separator';
 import { H2 } from '@/components/atoms/heading';
+import { framework, language, utility } from '@/data/skillsData';
+import { SkillCategory } from './Skills';
 
 /**
- * Componente SectionSkill - Sezione competenze tecniche
+ * Componente SkillsSection - Sezione competenze tecniche
  *
  * Organizza e mostra le skill in tre categorie:
  * - Linguaggi (HTML, CSS, JavaScript, TypeScript)

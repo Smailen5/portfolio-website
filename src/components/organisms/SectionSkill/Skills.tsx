@@ -1,15 +1,15 @@
 // import { Section } from "@components/atoms/Section";
 import { H3 } from '@/components/atoms/heading';
-import { SkillCard } from './Skill';
 import Separator from '@/components/atoms/Separator';
+import { SkillCard } from './Skill';
 
-interface SectionSkillsProps {
+interface SkillCategoryProps {
   title: string;
   section: { name: string; icon: string }[];
 }
 
 /**
- * Componente Skills - Sezione categoria di competenze
+ * Componente SkillCategory - Sezione categoria di competenze
  *
  * Raggruppa e visualizza una categoria specifica di skill
  * (es: Linguaggi, Framework, Strumenti)
@@ -19,7 +19,7 @@ interface SectionSkillsProps {
  * @param {string} title - Titolo della categoria (es: "Linguaggi")
  * @param {Array} section - Array di skill con nome e icona
  */
-export const SkillCategory = ({ title, section }: SectionSkillsProps) => {
+export const SkillCategory = ({ title, section }: SkillCategoryProps) => {
   return (
     <>
       <section className="mx-auto flex w-full flex-col">
