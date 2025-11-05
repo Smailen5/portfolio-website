@@ -2,6 +2,7 @@
 import { H3 } from '@/components/atoms/heading';
 import Separator from '@/components/atoms/Separator';
 import { SkillCard } from './SkillCard';
+import Section from '@/components/atoms/Section';
 
 interface SkillCategoryProps {
   title: string;
@@ -22,7 +23,7 @@ interface SkillCategoryProps {
 export const SkillCategory = ({ title, section }: SkillCategoryProps) => {
   return (
     <>
-      <section className="mx-auto flex w-full flex-col">
+      <Section>
         <H3>{title}</H3>
 
         <Separator />
@@ -32,7 +33,7 @@ export const SkillCategory = ({ title, section }: SkillCategoryProps) => {
             <SkillCard key={skill.name} {...skill} />
           ))}
         </ul>
-      </section>
+      </Section>
     </>
   );
 };

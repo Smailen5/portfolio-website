@@ -2,6 +2,7 @@ import Separator from '@/components/atoms/Separator';
 import { H2 } from '@/components/atoms/heading';
 import { framework, language, utility } from '@/data/skillsData';
 import { SkillCategory } from './SkillCategory';
+import Section from '@/components/atoms/Section';
 
 /**
  * Componente SkillsSection - Sezione competenze tecniche
@@ -15,7 +16,7 @@ import { SkillCategory } from './SkillCategory';
  */
 export const SkillsSection = () => {
   return (
-    <section className="mx-auto w-full text-center">
+    <Section className="text-center">
       <H2>Competenze acquisite</H2>
 
       <Separator />
@@ -25,6 +26,6 @@ export const SkillsSection = () => {
         <SkillCategory section={framework} title="Framework e Librerie" />
         <SkillCategory section={utility} title="Strumenti di Sviluppo" />
       </main>
-    </section>
+    </Section>
   );
 };
