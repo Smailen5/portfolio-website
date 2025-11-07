@@ -11,6 +11,20 @@
   logs: true;
 }
 
+:root {
+  --primary-50: #FAFEFE; /* per highlight leggerissimi */
+  --primary-100: #E3F7F9;
+  --primary-200: #B4E9F0; /* per sfondi chiari */
+  --primary-300: #85DBE7;
+  --primary-400: #57CDDD;
+  --primary-500: #2ABDD2; /* come colore principale */
+  --primary-600: #2197A7;
+  --primary-700: #19707D;
+  --primary-800: #104A52; /* hover */
+  --primary-900: #082428;
+  --primary-950: #041113; /* per testi scuri (dark mode) */
+}
+
 @plugin "daisyui/theme" {
   name: 'light';
   default: true;
