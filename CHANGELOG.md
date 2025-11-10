@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.3.0](https://github.com/Smailen5/portfolio-website/compare/v5.2.0...v5.3.0) (2025-11-10)
+
+
+### Features
+
+* ✨ aggiorna il componente Presentation con nuovi elementi e contenuti ([ad94be2](https://github.com/Smailen5/portfolio-website/commit/ad94be2aaeee639d749f9fb908d5db6d8be8da3b))
+* ✨ aggiungi il componente H3 per migliorare la gerarchia dei titoli ([75f08d4](https://github.com/Smailen5/portfolio-website/commit/75f08d467b7e81c6697b1d42ac3387ffaf6eec5e))
+
 ## [5.2.0](https://github.com/Smailen5/portfolio-website/compare/v5.1.0...v5.2.0) (2025-10-31)
 
 
