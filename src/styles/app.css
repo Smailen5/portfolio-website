@@ -12,15 +12,15 @@
 }
 
 :root {
-  --primary-50: #FAFEFE; /* per highlight leggerissimi */
-  --primary-100: #E3F7F9;
-  --primary-200: #B4E9F0; /* per sfondi chiari */
-  --primary-300: #85DBE7;
-  --primary-400: #57CDDD;
-  --primary-500: #2ABDD2; /* come colore principale */
-  --primary-600: #2197A7;
-  --primary-700: #19707D;
-  --primary-800: #104A52; /* hover */
+  --primary-50: #fafefe; /* per highlight leggerissimi */
+  --primary-100: #e3f7f9;
+  --primary-200: #b4e9f0; /* per sfondi chiari */
+  --primary-300: #85dbe7;
+  --primary-400: #57cddd;
+  --primary-500: #2abdd2; /* come colore principale */
+  --primary-600: #2197a7;
+  --primary-700: #19707d;
+  --primary-800: #104a52; /* hover */
   --primary-900: #082428;
   --primary-950: #041113; /* per testi scuri (dark mode) */
 
@@ -108,7 +108,7 @@
   --color-warning-content: oklch(41% 0.112 45.904);
   --color-error: oklch(71% 0.194 13.428);
   --color-error-content: oklch(27% 0.105 12.094);
-  
+
   --radius-selector: 2rem;
   --radius-field: 2rem;
   --radius-box: 2rem;
