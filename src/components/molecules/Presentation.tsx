@@ -45,7 +45,7 @@ export const Presentation = () => {
       <p>
         Se vuoi saperne di più sul mio percorso, le mie competenze tecniche
         dettagliate e il mio approccio al lavoro, visita la pagina{' '}
-        <Link to="/about" className="text-accent underline">
+        <Link to="/about" className="text-accent font-bold underline">
           About
         </Link>{' '}
         per maggiori informazioni.
