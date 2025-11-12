@@ -12,9 +12,11 @@ export const ToggleTheme = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <label className="swap swap-rotate">
+    <label htmlFor="theme-toggle" className="swap swap-rotate">
       {/* this hidden checkbox controls the state */}
       <input
+        id="theme-toggle"
+        aria-label="Cambia tema"
         type="checkbox"
         className="theme-controller"
         value="synthwave"

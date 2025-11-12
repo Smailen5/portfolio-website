@@ -24,7 +24,7 @@ export const CardProject: React.FC<CardProjectProps> = ({
   return (
     <>
       {/* PROGETTO SINGOLO */}
-      <article className="card bg-base-100 w-full shadow-sm" key={name}>
+      <article className="card bg-base-300 w-full shadow-sm" key={name}>
         <figure>
           <a
             href={`${ENDPOINTS.GITHUB.README.FOLDER}${nameFolder}`}
