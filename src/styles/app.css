@@ -47,13 +47,13 @@
   --color-base-300: var(--n-200);
   --color-base-content: var(--n-900);
 
-  --color-primary: var(--primary-500);
+  --color-primary: var(--primary-700);
   --color-primary-content: var(--primary-50);
 
-  --color-secondary: var(--primary-300);
+  --color-secondary: var(--primary-600);
   --color-secondary-content: var(--primary-50);
 
-  --color-accent: var(--primary-200);
+  --color-accent: var(--primary-300);
   --color-accent-content: var(--primary-900);
 
   --color-neutral: var(--n-500);
