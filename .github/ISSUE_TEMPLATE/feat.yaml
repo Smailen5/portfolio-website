@@ -5,58 +5,58 @@ labels: ['feature', 'enhancement']
 assignees: 'Smailen5'
 type: feature
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Descrivi la feature che vorresti aggiungere in modo chiaro e dettagliato.
+- type: markdown
+  attributes:
+    value: |
+      Descrivi la feature che vorresti aggiungere in modo chiaro e dettagliato.
 
-  - type: textarea
-    id: description
-    attributes:
-      label: 📋 Descrizione
-      placeholder: 'Spiega cosa vorresti aggiungere'
-    validations:
-      required: true
-      errorMessage: 'La descrizione della feature è obbligatoria'
+- type: textarea
+  id: description
+  attributes:
+    label: 📋 Descrizione
+    placeholder: 'Spiega cosa vorresti aggiungere'
+  validations:
+    required: true
+    errorMessage: 'La descrizione della feature è obbligatoria'
 
-  - type: textarea
-    id: motivation
-    attributes:
-      label: 📋 Motivazione
-      placeholder: 'Spiega perché la feature è necessaria'
-    validations:
-      required: true
-      errorMessage: 'I motivi per cui la feature è necessaria sono obbligatori'
+- type: textarea
+  id: motivation
+  attributes:
+    label: 📋 Motivazione
+    placeholder: 'Spiega perché la feature è necessaria'
+  validations:
+    required: true
+    errorMessage: 'I motivi per cui la feature è necessaria sono obbligatori'
 
-  - type: textarea
-    id: detailed_description
-    attributes:
-      label: 📋 Descrizione dettagliata
-      placeholder: 'Spiega nel dettaglio come la feature dovrebbe funzionare'
-    validations:
-      required: true
-      errorMessage: 'La descrizione dettagliata è obbligatoria'
+- type: textarea
+  id: detailed_description
+  attributes:
+    label: 📋 Descrizione dettagliata
+    placeholder: 'Spiega nel dettaglio come la feature dovrebbe funzionare'
+  validations:
+    required: true
+    errorMessage: 'La descrizione dettagliata è obbligatoria'
 
-  - type: textarea
-    id: use_cases
-    attributes:
-      label: 📋 Casi di uso tipici (opzionale)
-      placeholder: 'Elenca i casi di uso tipici'
+- type: textarea
+  id: use_cases
+  attributes:
+    label: 📋 Casi di uso tipici (opzionale)
+    placeholder: 'Elenca i casi di uso tipici'
 
-  - type: textarea
-    id: resource_example
-    attributes:
-      label: 📋 Esempio di implementazione (opzionale)
-      placeholder: 'Se hai un esempio di implementazione, documentazione o link, inseriscilo qui'
+- type: textarea
+  id: resource_example
+  attributes:
+    label: 📋 Esempio di implementazione (opzionale)
+    placeholder: 'Se hai un esempio di implementazione, documentazione o link, inseriscilo qui'
 
-  - type: textarea
-    id: screenshots
-    attributes:
-      label: 📷 Screenshot, video, link o documentazione (opzionale)
-      description: 'Screenshot, video, link o documentazione che ritieni utile da aggiungere'
+- type: textarea
+  id: screenshots
+  attributes:
+    label: 📷 Screenshot, video, link o documentazione (opzionale)
+    description: 'Screenshot, video, link o documentazione che ritieni utile da aggiungere'
 
-  - type: textarea
-    id: notes
-    attributes:
-      label: 📝 Note aggiuntive (opzionale)
-      placeholder: 'Qualsiasi altra info utile'
+- type: textarea
+  id: notes
+  attributes:
+    label: 📝 Note aggiuntive (opzionale)
+    placeholder: 'Qualsiasi altra info utile'

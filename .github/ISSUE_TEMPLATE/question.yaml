@@ -5,28 +5,28 @@ labels: ['question', 'documentation', 'enhancement']
 assignees: 'Smailen5'
 type: question
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Poni la tua domanda in modo chiaro e dettagliato.
+- type: markdown
+  attributes:
+    value: |
+      Poni la tua domanda in modo chiaro e dettagliato.
 
-  - type: textarea
-    id: question
-    attributes:
-      label: ❔ Domanda
-      placeholder: 'Poni la tua domanda'
-    validations:
-      required: true
-      errorMessage: 'La domanda è obbligatoria'
+- type: textarea
+  id: question
+  attributes:
+    label: ❔ Domanda
+    placeholder: 'Poni la tua domanda'
+  validations:
+    required: true
+    errorMessage: 'La domanda è obbligatoria'
 
-  - type: textarea
-    id: screenshots
-    attributes:
-      label: 📷 Screenshot, video, link o documentazione (opzionale)
-      description: 'Screenshot, video, link o documentazione che ritieni utile da aggiungere'
+- type: textarea
+  id: screenshots
+  attributes:
+    label: 📷 Screenshot, video, link o documentazione (opzionale)
+    description: 'Screenshot, video, link o documentazione che ritieni utile da aggiungere'
 
-  - type: textarea
-    id: notes
-    attributes:
-      label: 📝 Note aggiuntive (opzionale)
-      description: 'Qualsiasi altra info utile'
+- type: textarea
+  id: notes
+  attributes:
+    label: 📝 Note aggiuntive (opzionale)
+    description: 'Qualsiasi altra info utile'
