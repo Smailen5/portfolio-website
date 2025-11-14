@@ -1,8 +1,8 @@
 ---
 name: Feature Request ✨
 about: Aggiungi una nuova funzione o migliora una funzione esistente
-title: '[FEATURE]'
-labels: ['feature', 'enhancement', 'needs-triage', 'documentation']
+title: '[FEAT]'
+labels: ['feature', 'enhancement']
 assignees: 'Smailen5'
 ---
 
@@ -44,11 +44,3 @@ localStorage.removeItem("theme");
 
 ## Soluzione Alternativa (opzionale)
 <!-- Se hai una soluzione alternativa, spiega come può essere implementata -->
-
-## Labels
-<!-- Aggiungi i labels appropriati ed elimina questa sezione -->
-
-- `feature` - Feature richiesta
-- `enhancement` - Miglioramento
-- `needs-triage` - Da analizzare
-- `documentation` - Migliorare o aggiungere documentazione
