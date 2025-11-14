@@ -3,7 +3,6 @@ description: Crea un Epic
 title: '[EPIC]: '
 labels: ['epic']
 assignees: 'Smailen5'
-type: epic
 body:
 - type: markdown
   attributes:
