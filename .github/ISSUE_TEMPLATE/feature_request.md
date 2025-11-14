@@ -44,11 +44,3 @@ localStorage.removeItem("theme");
 
 ## Soluzione Alternativa (opzionale)
 <!-- Se hai una soluzione alternativa, spiega come può essere implementata -->
-
-## Labels
-<!-- Aggiungi i labels appropriati ed elimina questa sezione -->
-
-- `feature` - Feature richiesta
-- `enhancement` - Miglioramento
-- `needs-triage` - Da analizzare
-- `documentation` - Migliorare o aggiungere documentazione

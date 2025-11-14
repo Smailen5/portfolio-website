@@ -11,11 +11,3 @@ assignees: 'Smailen5'
 
 ## Screenshot, video, link o documentazione (opzionale)
 <!-- Qualsiasi altra cosa trovi utile da aggiungere -->
-
-## Labels
-<!-- Aggiungi i labels appropriati ed elimina questa sezione -->
-
-- `question` - Domanda
-- `help wanted` - Aiuto richiesto
-- `documentation` - Documentazione
-- `enhancement` - Miglioramento

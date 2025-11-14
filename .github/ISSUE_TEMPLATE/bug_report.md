@@ -36,11 +36,3 @@ assignees: 'Smailen5'
 
 ## Possibile soluzione (opzionale)
 <!-- Se hai una soluzione, spiega come può essere risolto -->
-
-## Labels
-<!-- Aggiungi i labels appropriati ed elimina questa sezione -->
-
-- `bug` - Bug
-- `help wanted` - Aiuto richiesto
-- `documentation` - Documentazione
-- `enhancement` - Miglioramento
