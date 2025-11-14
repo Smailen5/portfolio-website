@@ -3,7 +3,6 @@ description: Segnala un bug nel progetto
 title: '[BUG]: '
 labels: ['bug']
 assignees: 'Smailen5'
-type: bug
 body:
 - type: markdown
   attributes:
