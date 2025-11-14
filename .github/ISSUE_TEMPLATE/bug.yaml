@@ -5,81 +5,81 @@ labels: ['bug']
 assignees: 'Smailen5'
 type: bug
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Descrivi quanto più possibile il bug, in modo chiaro e dettagliato.
+- type: markdown
+  attributes:
+    value: |
+      Descrivi quanto più possibile il bug, in modo chiaro e dettagliato.
 
-  - type: textarea
-    id: description
-    attributes:
-      label: 📋 Descrizione
-      placeholder: 'Spiega cosa non funziona'
-    validations:
-      required: true
-      errorMessage: 'La descrizione del bug è obbligatoria'
+- type: textarea
+  id: description
+  attributes:
+    label: 📋 Descrizione
+    placeholder: 'Spiega cosa non funziona'
+  validations:
+    required: true
+    errorMessage: 'La descrizione del bug è obbligatoria'
 
-  - type: textarea
-    id: steps
-    attributes:
-      label: 🪜 Passaggi per riprodurre
-      description: 'Descrivi i passaggi per riprodurre il problema'
-    validations:
-      required: true
-      errorMessage: 'I passaggi per riprodurre il problema sono obbligatori'
+- type: textarea
+  id: steps
+  attributes:
+    label: 🪜 Passaggi per riprodurre
+    description: 'Descrivi i passaggi per riprodurre il problema'
+  validations:
+    required: true
+    errorMessage: 'I passaggi per riprodurre il problema sono obbligatori'
 
-  - type: textarea
-    id: expected
-    attributes:
-      label: 👍 Comportamento atteso
-      placeholder: 'Spiega cosa ti aspettavi che succedesse'
-    validations:
-      required: true
-      errorMessage: 'Il comportamento atteso è obbligatorio'
+- type: textarea
+  id: expected
+  attributes:
+    label: 👍 Comportamento atteso
+    placeholder: 'Spiega cosa ti aspettavi che succedesse'
+  validations:
+    required: true
+    errorMessage: 'Il comportamento atteso è obbligatorio'
 
-  - type: input
-    id: version
-    attributes:
-      label: 📦 Versione del progetto
-      description: 'Inserisci la versione del progetto, puoi trovare la versione nel file package.json'
-      placeholder: 'es. 5.3.0'
-    validations:
-      required: true
-      pattern: '^(\d+)\.(\d+)\.(\d+)(-.*)?$'
-      errorMessage: 'Formato non valido. Usa il formato semver: x.y.z (es. 5.3.1)'
+- type: input
+  id: version
+  attributes:
+    label: 📦 Versione del progetto
+    description: 'Inserisci la versione del progetto, puoi trovare la versione nel file package.json'
+    placeholder: 'es. 5.3.0'
+  validations:
+    required: true
+    pattern: '^(\d+)\.(\d+)\.(\d+)(-.*)?$'
+    errorMessage: 'Formato non valido. Usa il formato semver: x.y.z (es. 5.3.1)'
 
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: 🌐 Su quale browser stai riscontrando il bug?
-      multiple: true
-      options:
-        - Arc
-        - Chrome
-        - Firefox
-        - Safari
+- type: dropdown
+  id: browsers
+  attributes:
+    label: 🌐 Su quale browser stai riscontrando il bug?
+    multiple: true
+    options:
+      - Arc
+      - Chrome
+      - Firefox
+      - Safari
 
-  - type: textarea
-    id: logs
-    attributes:
-      label: ⚠️ Log o errori (opzionale ma gradito)
-      description: 'Inserisci i log o errori che stai riscontrando'
-      render: shell
+- type: textarea
+  id: logs
+  attributes:
+    label: ⚠️ Log o errori (opzionale ma gradito)
+    description: 'Inserisci i log o errori che stai riscontrando'
+    render: shell
 
-  - type: textarea
-    id: solution
-    attributes:
-      label: 💯 Possibile soluzione (opzionale)
-      description: 'Se hai una soluzione, spiega come può essere risolto'
+- type: textarea
+  id: solution
+  attributes:
+    label: 💯 Possibile soluzione (opzionale)
+    description: 'Se hai una soluzione, spiega come può essere risolto'
 
-  - type: textarea
-    id: screenshots
-    attributes:
-      label: 📷 Screenshot o video (opzionale)
-      description: 'Screenshot o video che mostra il problema'
+- type: textarea
+  id: screenshots
+  attributes:
+    label: 📷 Screenshot o video (opzionale)
+    description: 'Screenshot o video che mostra il problema'
 
-  - type: textarea
-    id: notes
-    attributes:
-      label: 📝 Note aggiuntive (opzionale)
-      description: 'Qualsiasi altra info utile'
+- type: textarea
+  id: notes
+  attributes:
+    label: 📝 Note aggiuntive (opzionale)
+    description: 'Qualsiasi altra info utile'
