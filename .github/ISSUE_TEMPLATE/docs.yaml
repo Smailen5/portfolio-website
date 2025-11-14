@@ -1,0 +1,32 @@
+name: Documentation 📃
+description: Aggiungi o aggiorna la documentazione
+title: '[DOCS]: '
+labels: ['documentation']
+assignees: 'Smailen5'
+type: documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Aggiungi o aggiorna la documentazione in modo chiaro e dettagliato.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 📋 Descrizione
+      placeholder: 'Spiega cosa vuoi aggiungere o aggiornare'
+    validations:
+      required: true
+      errorMessage: 'La descrizione della documentazione è obbligatoria'
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📷 Screenshot, video, link o documentazione (opzionale)
+      description: 'Screenshot, video, link o documentazione che ritieni utile da aggiungere'
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 📝 Note aggiuntive (opzionale)
+      description: 'Qualsiasi altra info utile'
