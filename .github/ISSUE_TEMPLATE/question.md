@@ -2,7 +2,7 @@
 name: Question
 about: Fai una domanda
 title: '[QUESTION]'
-labels: ['question', 'help wanted', 'documentation', 'enhancement']
+labels: ['question', 'documentation', 'enhancement']
 assignees: 'Smailen5'
 ---
 

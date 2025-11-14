@@ -2,7 +2,7 @@
 name: Bug Report 🐞
 about: Segnala un bug nel progetto
 title: '[BUG]'
-labels: ['bug', 'help wanted', 'documentation', 'enhancement']
+labels: ['bug']
 assignees: 'Smailen5'
 ---
 
