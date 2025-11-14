@@ -3,7 +3,6 @@ description: Fai una domanda
 title: '[QUESTION]: '
 labels: ['question', 'documentation', 'enhancement']
 assignees: 'Smailen5'
-type: question
 body:
 - type: markdown
   attributes:

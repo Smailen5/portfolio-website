@@ -3,7 +3,6 @@ description: Aggiungi una nuova funzione
 title: '[FEAT]: '
 labels: ['feature', 'enhancement']
 assignees: 'Smailen5'
-type: feature
 body:
 - type: markdown
   attributes:

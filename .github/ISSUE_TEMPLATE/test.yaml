@@ -3,7 +3,6 @@ description: Testa una nuova funzione o un bug
 title: '[TEST]: '
 labels: ['test']
 assignees: 'Smailen5'
-type: test
 body:
 - type: markdown
   attributes:

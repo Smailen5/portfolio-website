@@ -3,7 +3,6 @@ description: Refactoring del codice
 title: '[REFACTOR]: '
 labels: ['refactor']
 assignees: 'Smailen5'
-type: refactor
 body:
 - type: markdown
   attributes:

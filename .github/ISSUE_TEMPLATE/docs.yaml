@@ -3,7 +3,6 @@ description: Aggiungi o aggiorna la documentazione
 title: '[DOCS]: '
 labels: ['documentation']
 assignees: 'Smailen5'
-type: documentation
 body:
 - type: markdown
   attributes:
