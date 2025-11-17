@@ -8,7 +8,7 @@ body:
     attributes:
       value: |
         Descrivi l'epic in modo chiaro e dettagliato.
-
+        
   - type: textarea
     id: description
     attributes:
