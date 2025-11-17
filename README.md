@@ -296,3 +296,4 @@ pnpm type-check       # TypeScript check
 ## 📝 Note Legali
 
 © 2024 - 2025 Smailen Vargas. Tutti i diritti riservati.
+
