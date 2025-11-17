@@ -13,7 +13,8 @@ body:
     id: question
     attributes:
       label: ❔ Domanda
-      placeholder: 'Poni la tua domanda'
+      description: 'Poni la tua domanda.'
+      placeholder: "Es. 'Perche non hai integrato la funzione di login nel progetto?'"
     validations:
       required: true
       errorMessage: 'La domanda è obbligatoria'
