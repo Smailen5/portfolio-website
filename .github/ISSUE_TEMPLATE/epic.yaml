@@ -4,90 +4,90 @@ title: '[EPIC]: '
 labels: ['epic']
 assignees: 'Smailen5'
 body:
-- type: markdown
-  attributes:
-    value: |
-      Descrivi l'epic in modo chiaro e dettagliato.
+  - type: markdown
+    attributes:
+      value: |
+        Descrivi l'epic in modo chiaro e dettagliato.
 
-- type: textarea
-  id: description
-  attributes:
-    label: 📋 Descrizione
-    placeholder: "Descrivi cosa include l'epic"
-  validations:
-    required: true
-    errorMessage: "La descrizione dell'epic è obbligatoria"
+  - type: textarea
+    id: description
+    attributes:
+      label: 📋 Descrizione
+      placeholder: "Descrivi cosa include l'epic"
+    validations:
+      required: true
+      errorMessage: "La descrizione dell'epic è obbligatoria"
 
-- type: textarea
-  id: closed_issues
-  attributes:
-    label: 📋 Issue Correlate
-    description: "Elenca le issue chiuse come parte dell'epic"
-    value: |
-      - Close #(numero dell'issue)
+  - type: textarea
+    id: closed_issues
+    attributes:
+      label: 📋 Issue Correlate
+      description: "Elenca le issue chiuse come parte dell'epic"
+      value: |
+        - Close #(numero dell'issue)
 
-- type: textarea
-  id: feature
-  attributes:
-    label: ✨ Cambiamenti principali
-    description: "Elenca i cambiamenti in modo semplice e chiaro. Descrivendo cosa è stato aggiunto, migliorato, corretto in termini di funzionalità visibili all'utente."
-    value: |
-      - ...
-      - ...
-      - ...
+  - type: textarea
+    id: feature
+    attributes:
+      label: ✨ Cambiamenti principali
+      description: "Elenca i cambiamenti in modo semplice e chiaro. Descrivendo cosa è stato aggiunto, migliorato, corretto in termini di funzionalità visibili all'utente."
+      value: |
+        - ...
+        - ...
+        - ...
 
-- type: textarea
-  id: technical_changes
-  attributes:
-    label: 🛠️ Modifiche tecniche
-    description: 'Elenca le modifiche tecniche in dettaglio. Spiega cosa è stato modificato a livello di codice, architettura, componenti, API, configurazioni, ecc.'
-    value: |
-      - ...
-      - ...
-      - ...
+  - type: textarea
+    id: technical_changes
+    attributes:
+      label: 🛠️ Modifiche tecniche
+      description: 'Elenca le modifiche tecniche in dettaglio. Spiega cosa è stato modificato a livello di codice, architettura, componenti, API, configurazioni, ecc.'
+      value: |
+        - ...
+        - ...
+        - ...
 
-- type: textarea
-  id: bugs_fixed
-  attributes:
-    label: 🐛 Errori Corretti (solo se necessario)
-    description: 'Elenca i bug corretti'
-    value: |
-      - Fixed #(numero dell'issue)
+  - type: textarea
+    id: bugs_fixed
+    attributes:
+      label: 🐛 Errori Corretti (solo se necessario)
+      description: 'Elenca i bug corretti'
+      value: |
+        - Fixed #(numero dell'issue)
 
-- type: textarea
-  id: breaking_changes
-  attributes:
-    label: ⚠️ Breaking Changes (solo se necessario)
-    description: 'Elenca i cambiamenti che rompono qualcosa nella vecchia versione'
-    value: |
-      - ...
+  - type: textarea
+    id: breaking_changes
+    attributes:
+      label: ⚠️ Breaking Changes (solo se necessario)
+      description: 'Elenca i cambiamenti che rompono qualcosa nella vecchia versione'
+      value: |
+        - ...
 
-- type: textarea
-  id: tests
-  attributes:
-    label: 🧪 Test
-    description: 'Spiega come hai testato il codice e se tutto funziona'
-    value: |
-      ✅ Testato manualmente in sviluppo.
+  - type: textarea
+    id: tests
+    attributes:
+      label: 🧪 Test
+      description: 'Spiega come hai testato il codice e se tutto funziona'
+      value: |
+        ✅ Testato manualmente in sviluppo.
 
-- type: textarea
-  id: pr
-  attributes:
-    label: 👷‍♂️ Pull Request Collegate
-    description: 'Elenca le pull request collegate'
-    value: |
-      - #(numero della pull request)
+  - type: textarea
+    id: pr
+    attributes:
+      label: 👷‍♂️ Pull Request Collegate
+      description: 'Elenca le pull request collegate'
+      value: |
+        - #(numero della pull request)
 
-- type: textarea
-  id: files_modified
-  attributes:
-    label: 🔗 File Modificati
-    description: 'Elenca i file modificati'
-    value: |
-      - `src/...`
+  - type: textarea
+    id: files_modified
+    attributes:
+      label: 🔗 File Modificati
+      description: 'Elenca i file modificati'
+      value: |
+        - `src/...`
 
-- type: textarea
-  id: notes
-  attributes:
-    label: 🐾 Pss (opzionale)
-    description: 'Messaggi per il te del futuro'
+  - type: textarea
+    id: notes
+    attributes:
+      label: 🐾 Pss (opzionale)
+      description: 'Messaggi per il te del futuro'
