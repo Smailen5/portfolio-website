@@ -17,7 +17,6 @@ body:
       placeholder: "Es. 'Il pulsante dettagli non funziona quando clicco su di esso'"
     validations:
       required: true
-      errorMessage: 'La descrizione del bug è obbligatoria'
 
   - type: textarea
     id: steps
@@ -31,7 +30,6 @@ body:
         - Errore ...
     validations:
       required: true
-      errorMessage: 'I passaggi per riprodurre il problema sono obbligatori'
 
   - type: textarea
     id: expected
@@ -41,7 +39,6 @@ body:
       placeholder: "Es. 'Il pulsante dettagli dovrebbe mostrare i dettagli del prodotto'"
     validations:
       required: true
-      errorMessage: 'Il comportamento atteso è obbligatorio'
 
   - type: input
     id: version
@@ -52,7 +49,6 @@ body:
     validations:
       required: true
       pattern: '^(\d+)\.(\d+)\.(\d+)(-.*)?$'
-      errorMessage: 'Formato non valido. Usa il formato semver: x.y.z (es. 5.3.1)'
 
   - type: dropdown
     id: browsers

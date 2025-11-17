@@ -17,7 +17,6 @@ body:
       placeholder: "Es. 'Aggiungi la funzione di login'"
     validations:
       required: true
-      errorMessage: 'La descrizione della feature è obbligatoria'
 
   - type: textarea
     id: motivation
@@ -27,7 +26,6 @@ body:
       placeholder: "Es. 'La funzione di login e' necessaria per permettere agli utenti di accedere al sistema'"
     validations:
       required: true
-      errorMessage: 'I motivi per cui la feature è necessaria sono obbligatori'
 
   - type: textarea
     id: detailed_description
@@ -37,7 +35,6 @@ body:
       placeholder: "Es. 'La funzione di login deve permettere agli utenti di accedere al sistema tramite email e password'"
     validations:
       required: true
-      errorMessage: 'La descrizione dettagliata è obbligatoria'
 
   - type: textarea
     id: use_cases

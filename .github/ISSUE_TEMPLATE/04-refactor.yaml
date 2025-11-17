@@ -17,7 +17,6 @@ body:
       placeholder: "Es. 'Migliorare il componente CardProject'"
     validations:
       required: true
-      errorMessage: 'La descrizione del refactoring è obbligatoria'
 
   - type: textarea
     id: screenshots
