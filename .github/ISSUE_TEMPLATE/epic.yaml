@@ -13,7 +13,8 @@ body:
   id: description
   attributes:
     label: 📋 Descrizione
-    placeholder: "Descrivi cosa include l'epic"
+    description: "Descrivi cosa includer l'epic."
+    placeholder: "Es. 'Epic per integrare le feature x e y'"
   validations:
     required: true
     errorMessage: "La descrizione dell'epic è obbligatoria"
@@ -22,15 +23,20 @@ body:
   id: closed_issues
   attributes:
     label: 📋 Issue Correlate
-    description: "Elenca le issue chiuse come parte dell'epic"
+    description: "Nella epic chiudi solo la issue epic, le issue feature devono avere il loro numero di issue associato e stessa cosa vale per le sub-issue"
+    placeholder: |
+      - Close #(numero dell'epic)
     value: |
-      - Close #(numero dell'issue)
+      - Close #(numero dell'epic)
 
 - type: textarea
   id: feature
   attributes:
     label: ✨ Cambiamenti principali
     description: "Elenca i cambiamenti in modo semplice e chiaro. Descrivendo cosa è stato aggiunto, migliorato, corretto in termini di funzionalità visibili all'utente."
+    placeholder: |
+      - Aggiunto il componente x
+      - Migliorato il componente y
     value: |
       - ...
       - ...
@@ -41,6 +47,8 @@ body:
   attributes:
     label: 🛠️ Modifiche tecniche
     description: 'Elenca le modifiche tecniche in dettaglio. Spiega cosa è stato modificato a livello di codice, architettura, componenti, API, configurazioni, ecc.'
+    placeholder: |
+      - Aggiunto il componente x utilizzando la libreria y
     value: |
       - ...
       - ...
@@ -51,6 +59,8 @@ body:
   attributes:
     label: 🐛 Errori Corretti (solo se necessario)
     description: 'Elenca i bug corretti'
+    placeholder: |
+      - Fixed #(numero dell'issue)
     value: |
       - Fixed #(numero dell'issue)
 
@@ -59,6 +69,8 @@ body:
   attributes:
     label: ⚠️ Breaking Changes (solo se necessario)
     description: 'Elenca i cambiamenti che rompono qualcosa nella vecchia versione'
+    placeholder: |
+      - L'API x non e' piu' supportata
     value: |
       - ...
 
@@ -74,7 +86,9 @@ body:
   id: pr
   attributes:
     label: 👷‍♂️ Pull Request Collegate
-    description: 'Elenca le pull request collegate'
+    description: 'Elenca le pull request collegate incluse le sub-issue'
+    placeholder: |
+      - #(numero della pull request)
     value: |
       - #(numero della pull request)
 
@@ -83,6 +97,8 @@ body:
   attributes:
     label: 🔗 File Modificati
     description: 'Elenca i file modificati'
+    placeholder: |
+      - `src/...`
     value: |
       - `src/...`
 

@@ -13,7 +13,7 @@ body:
   id: description
   attributes:
     label: 📋 Descrizione
-    placeholder: 'Spiega cosa vorresti aggiungere'
+    placeholder: "Spiega cosa vorresti aggiungere. Es. 'Aggiungi la funzione di login'"
   validations:
     required: true
     errorMessage: 'La descrizione della feature è obbligatoria'
@@ -22,7 +22,7 @@ body:
   id: motivation
   attributes:
     label: 📋 Motivazione
-    placeholder: 'Spiega perché la feature è necessaria'
+    placeholder: "Spiega perché la feature è necessaria. Es. 'La funzione di login è necessaria per permettere agli utenti di accedere al sistema'"
   validations:
     required: true
     errorMessage: 'I motivi per cui la feature è necessaria sono obbligatori'
@@ -31,7 +31,7 @@ body:
   id: detailed_description
   attributes:
     label: 📋 Descrizione dettagliata
-    placeholder: 'Spiega nel dettaglio come la feature dovrebbe funzionare'
+    placeholder: "Spiega nel dettaglio come la feature dovrebbe funzionare. Es. 'La funzione di login deve permettere agli utenti di accedere al sistema tramite email e password'"
   validations:
     required: true
     errorMessage: 'La descrizione dettagliata è obbligatoria'
@@ -40,7 +40,7 @@ body:
   id: use_cases
   attributes:
     label: 📋 Casi di uso tipici (opzionale)
-    placeholder: 'Elenca i casi di uso tipici'
+    placeholder: "Elenca i casi di uso tipici con un elenco non ordinato. Es. '*Caso di uso 1*: 'Gli utenti possono avere un'area personale per salvare i loro preferiti'"
 
 - type: textarea
   id: resource_example

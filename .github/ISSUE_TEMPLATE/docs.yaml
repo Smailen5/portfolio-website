@@ -13,7 +13,7 @@ body:
   id: description
   attributes:
     label: 📋 Descrizione
-    placeholder: 'Spiega cosa vuoi aggiungere o aggiornare'
+    placeholder: "Spiega cosa vuoi aggiungere o aggiornare. Es. 'Aggiungi la documentazione per la funzione x'"
   validations:
     required: true
     errorMessage: 'La descrizione della documentazione è obbligatoria'

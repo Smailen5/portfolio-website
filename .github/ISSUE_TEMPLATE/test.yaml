@@ -13,7 +13,8 @@ body:
   id: description
   attributes:
     label: 📋 Descrizione
-    placeholder: 'Spiega cosa vuoi testare'
+    description: 'Spiega cosa vuoi testare.'
+    placeholder: "Es. 'Aggiungi test per la funzione di login' o 'Aggiorna i test per la funzione di login'"
   validations:
     required: true
     errorMessage: 'La descrizione del test è obbligatoria'

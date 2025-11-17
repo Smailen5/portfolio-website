@@ -13,7 +13,8 @@ body:
   id: description
   attributes:
     label: 📋 Descrizione
-    placeholder: 'Spiega cosa non funziona'
+    description: 'Spiega cosa non funziona brevemente.'
+    placeholder: 'Es. "Il pulsante dettagli non funziona quando clicco su di esso'
   validations:
     required: true
     errorMessage: 'La descrizione del bug è obbligatoria'
@@ -22,7 +23,12 @@ body:
   id: steps
   attributes:
     label: 🪜 Passaggi per riprodurre
-    description: 'Descrivi i passaggi per riprodurre il problema'
+    description: 'Descrivi i passaggi per riprodurre il problema.'
+    placeholder: |
+      - Vai alla pagina ...
+      - Clicca sul pulsante ...
+      - Scolla fino a ...
+      - Errore ...
   validations:
     required: true
     errorMessage: 'I passaggi per riprodurre il problema sono obbligatori'
@@ -31,7 +37,8 @@ body:
   id: expected
   attributes:
     label: 👍 Comportamento atteso
-    placeholder: 'Spiega cosa ti aspettavi che succedesse'
+    description: 'Spiega cosa ti aspettavi che succedesse.'
+    placeholder: 'Es. "Il pulsante dettagli dovrebbe mostrare i dettagli del prodotto"'
   validations:
     required: true
     errorMessage: 'Il comportamento atteso è obbligatorio'
@@ -62,14 +69,21 @@ body:
   id: logs
   attributes:
     label: ⚠️ Log o errori (opzionale ma gradito)
-    description: 'Inserisci i log o errori che stai riscontrando'
+    description: "Inserisci i log o errori che stai riscontrando. Utilizza un blocco di codice per elencare i log o errori. Specifica da dove arriva l'errore."
+    placeholder: |
+      ```ts
+      /* log DevTools */
+      Errore del componente Button
+      ```
     render: shell
 
 - type: textarea
   id: solution
   attributes:
     label: 💯 Possibile soluzione (opzionale)
-    description: 'Se hai una soluzione, spiega come può essere risolto'
+    description: 'Se hai una soluzione, spiega come può essere risolto. Aggiungi un esempio di codice se possibile o documentazione se necessario.'
+    placeholder: |
+      In questo [link](https://www.documentazione.com) viene mostrato come risolvere il problema.
 
 - type: textarea
   id: screenshots
