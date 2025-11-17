@@ -17,7 +17,6 @@ body:
       placeholder: "Es. 'Epic per integrare le feature x e y'"
     validations:
       required: true
-      errorMessage: "La descrizione dell'epic è obbligatoria"
 
   - type: textarea
     id: closed_issues

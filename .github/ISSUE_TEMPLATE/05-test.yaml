@@ -17,7 +17,6 @@ body:
       placeholder: "Es. 'Aggiungi test per la funzione di login' o 'Aggiorna i test per la funzione di login'"
     validations:
       required: true
-      errorMessage: 'La descrizione del test è obbligatoria'
 
   - type: textarea
     id: screenshots

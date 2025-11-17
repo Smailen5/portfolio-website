@@ -17,7 +17,6 @@ body:
       placeholder: "Es. 'Aggiungi la documentazione per la funzione di login'"
     validations:
       required: true
-      errorMessage: 'La descrizione della documentazione è obbligatoria'
 
   - type: textarea
     id: screenshots
