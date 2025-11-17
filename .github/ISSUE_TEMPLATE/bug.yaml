@@ -8,7 +8,7 @@ body:
     attributes:
       value: |
         Descrivi quanto più possibile il bug, in modo chiaro e dettagliato.
-
+        
   - type: textarea
     id: description
     attributes:
