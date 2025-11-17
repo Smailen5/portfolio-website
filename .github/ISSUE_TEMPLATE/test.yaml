@@ -4,28 +4,28 @@ title: '[TEST]: '
 labels: ['test']
 assignees: 'Smailen5'
 body:
-- type: markdown
-  attributes:
-    value: |
-      Descrivi il test in modo chiaro e dettagliato.
+  - type: markdown
+    attributes:
+      value: |
+        Descrivi il test in modo chiaro e dettagliato.
 
-- type: textarea
-  id: description
-  attributes:
-    label: 📋 Descrizione
-    placeholder: 'Spiega cosa vuoi testare'
-  validations:
-    required: true
-    errorMessage: 'La descrizione del test è obbligatoria'
+  - type: textarea
+    id: description
+    attributes:
+      label: 📋 Descrizione
+      placeholder: 'Spiega cosa vuoi testare'
+    validations:
+      required: true
+      errorMessage: 'La descrizione del test è obbligatoria'
 
-- type: textarea
-  id: screenshots
-  attributes:
-    label: 📷 Screenshot, video, link o documentazione (opzionale)
-    description: 'Screenshot, video, link o documentazione che ritieni utile da aggiungere'
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📷 Screenshot, video, link o documentazione (opzionale)
+      description: 'Screenshot, video, link o documentazione che ritieni utile da aggiungere'
 
-- type: textarea
-  id: notes
-  attributes:
-    label: 📝 Note aggiuntive (opzionale)
-    description: 'Qualsiasi altra info utile'
+  - type: textarea
+    id: notes
+    attributes:
+      label: 📝 Note aggiuntive (opzionale)
+      description: 'Qualsiasi altra info utile'
