@@ -25,8 +25,6 @@ body:
       description: "Inserisci solo la issue epic, le issue feature devono avere il loro numero di issue associato e stessa cosa vale per le sub-issue"
       placeholder: |
         - Close #(numero dell'epic)
-      value: |
-        - Close #(numero dell'issue)
 
   - type: textarea
     id: feature
@@ -36,10 +34,6 @@ body:
       placeholder: |
         - Migliorato il componente x
         - Aggiunto il componente y
-      value: |
-        - ...
-        - ...
-        - ...
 
   - type: textarea
     id: technical_changes
@@ -48,10 +42,6 @@ body:
       description: 'Elenca le modifiche tecniche in dettaglio. Spiega cosa è stato modificato a livello di codice, architettura, componenti, API, configurazioni, ecc.'
       placeholder: |
         - Migliorato il componente x utilizzando la libreria y
-      value: |
-        - ...
-        - ...
-        - ...
 
   - type: textarea
     id: bugs_fixed
@@ -59,8 +49,6 @@ body:
       label: 🐛 Errori Corretti (solo se necessario)
       description: 'Elenca i bug corretti'
       placeholder: |
-        - Fixed #(numero dell'issue)
-      value: |
         - Fixed #(numero dell'issue)
 
   - type: textarea
@@ -70,8 +58,6 @@ body:
       description: 'Elenca i cambiamenti che rompono qualcosa nella vecchia versione'
       placeholder: |
         - L'API x non e' piu' supportata
-      value: |
-        - ...
 
   - type: textarea
     id: tests
@@ -88,8 +74,6 @@ body:
       description: 'Elenca le pull request collegate'
       placeholder: |
         - #(numero della pull request)
-      value: |
-        - #(numero della pull request)
 
   - type: textarea
     id: files_modified
@@ -97,8 +81,6 @@ body:
       label: 🔗 File Modificati
       description: 'Elenca i file modificati'
       placeholder: |
-        - `src/...`
-      value: |
         - `src/...`
 
   - type: textarea
