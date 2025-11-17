@@ -13,7 +13,8 @@ body:
     id: description
     attributes:
       label: 📋 Descrizione
-      placeholder: 'Spiega cosa vuoi migliorare'
+      description: 'Spiega cosa vuoi migliorare.'
+      placeholder: "Es. 'Migliorare il componente CardProject'"
     validations:
       required: true
       errorMessage: 'La descrizione del refactoring è obbligatoria'
