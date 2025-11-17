@@ -4,10 +4,10 @@ title: '[FEAT]: '
 labels: ['feature', 'enhancement']
 assignees: 'Smailen5'
 body:
-- type: markdown
-  attributes:
-    value: |
-      Descrivi la feature che vorresti aggiungere in modo chiaro e dettagliato.
+  - type: markdown
+    attributes:
+      value: |
+        Descrivi la feature che vorresti aggiungere in modo chiaro e dettagliato.
 
 - type: textarea
   id: description
@@ -56,14 +56,14 @@ body:
       // codice
       ```
 
-- type: textarea
-  id: screenshots
-  attributes:
-    label: 📷 Screenshot, video, link o documentazione (opzionale)
-    description: 'Screenshot, video, link o documentazione che ritieni utile da aggiungere'
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📷 Screenshot, video, link o documentazione (opzionale)
+      description: 'Screenshot, video, link o documentazione che ritieni utile da aggiungere'
 
-- type: textarea
-  id: notes
-  attributes:
-    label: 📝 Note aggiuntive (opzionale)
-    placeholder: 'Qualsiasi altra info utile'
+  - type: textarea
+    id: notes
+    attributes:
+      label: 📝 Note aggiuntive (opzionale)
+      placeholder: 'Qualsiasi altra info utile'

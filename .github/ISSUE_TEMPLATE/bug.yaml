@@ -4,10 +4,10 @@ title: '[BUG]: '
 labels: ['bug']
 assignees: 'Smailen5'
 body:
-- type: markdown
-  attributes:
-    value: |
-      Descrivi quanto più possibile il bug, in modo chiaro e dettagliato.
+  - type: markdown
+    attributes:
+      value: |
+        Descrivi quanto più possibile il bug, in modo chiaro e dettagliato.
 
 - type: textarea
   id: description
@@ -43,27 +43,27 @@ body:
     required: true
     errorMessage: 'Il comportamento atteso è obbligatorio'
 
-- type: input
-  id: version
-  attributes:
-    label: 📦 Versione del progetto
-    description: 'Inserisci la versione del progetto, puoi trovare la versione nel file package.json'
-    placeholder: 'es. 5.3.0'
-  validations:
-    required: true
-    pattern: '^(\d+)\.(\d+)\.(\d+)(-.*)?$'
-    errorMessage: 'Formato non valido. Usa il formato semver: x.y.z (es. 5.3.1)'
+  - type: input
+    id: version
+    attributes:
+      label: 📦 Versione del progetto
+      description: 'Inserisci la versione del progetto, puoi trovare la versione nel file package.json'
+      placeholder: 'es. 5.3.0'
+    validations:
+      required: true
+      pattern: '^(\d+)\.(\d+)\.(\d+)(-.*)?$'
+      errorMessage: 'Formato non valido. Usa il formato semver: x.y.z (es. 5.3.1)'
 
-- type: dropdown
-  id: browsers
-  attributes:
-    label: 🌐 Su quale browser stai riscontrando il bug?
-    multiple: true
-    options:
-      - Arc
-      - Chrome
-      - Firefox
-      - Safari
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: 🌐 Su quale browser stai riscontrando il bug?
+      multiple: true
+      options:
+        - Arc
+        - Chrome
+        - Firefox
+        - Safari
 
 - type: textarea
   id: logs
@@ -85,14 +85,14 @@ body:
     placeholder: |
       In questo [link](https://www.documentazione.com) viene mostrato come risolvere il problema.
 
-- type: textarea
-  id: screenshots
-  attributes:
-    label: 📷 Screenshot o video (opzionale)
-    description: 'Screenshot o video che mostra il problema'
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📷 Screenshot o video (opzionale)
+      description: 'Screenshot o video che mostra il problema'
 
-- type: textarea
-  id: notes
-  attributes:
-    label: 📝 Note aggiuntive (opzionale)
-    description: 'Qualsiasi altra info utile'
+  - type: textarea
+    id: notes
+    attributes:
+      label: 📝 Note aggiuntive (opzionale)
+      description: 'Qualsiasi altra info utile'

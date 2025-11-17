@@ -4,10 +4,10 @@ title: '[EPIC]: '
 labels: ['epic']
 assignees: 'Smailen5'
 body:
-- type: markdown
-  attributes:
-    value: |
-      Descrivi l'epic in modo chiaro e dettagliato.
+  - type: markdown
+    attributes:
+      value: |
+        Descrivi l'epic in modo chiaro e dettagliato.
 
 - type: textarea
   id: description
@@ -74,13 +74,13 @@ body:
     value: |
       - ...
 
-- type: textarea
-  id: tests
-  attributes:
-    label: 🧪 Test
-    description: 'Spiega come hai testato il codice e se tutto funziona'
-    value: |
-      ✅ Testato manualmente in sviluppo.
+  - type: textarea
+    id: tests
+    attributes:
+      label: 🧪 Test
+      description: 'Spiega come hai testato il codice e se tutto funziona'
+      value: |
+        ✅ Testato manualmente in sviluppo.
 
 - type: textarea
   id: pr
@@ -102,8 +102,8 @@ body:
     value: |
       - `src/...`
 
-- type: textarea
-  id: notes
-  attributes:
-    label: 🐾 Pss (opzionale)
-    description: 'Messaggi per il te del futuro'
+  - type: textarea
+    id: notes
+    attributes:
+      label: 🐾 Pss (opzionale)
+      description: 'Messaggi per il te del futuro'
