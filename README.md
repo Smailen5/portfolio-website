@@ -30,15 +30,6 @@ Portfolio moderno e performante sviluppato con le tecnologie frontend più recen
 
 ---
 
-## 🌟 Caratteristiche Principali
-
-- 📱 Design completamente responsivo
-- 🌓 Tema chiaro/scuro
-- 🔍 Filtro progetti per tecnologia
-- 📄 Download/visualizzazione CV
-- 📬 ~~Form di contatto integrato~~(Rimosso)
-- 🔄 ~~Integrazione API GitHub~~ (Sostituito con CDN)
-
 ## 🖼️ Screenshot
 
 <details>
@@ -76,16 +67,6 @@ Portfolio moderno e performante sviluppato con le tecnologie frontend più recen
 - [GitHub](https://github.com) - Repository progetti (link esterni)
 - ~~[Formspree](https://formspree.io/) - Form Backend~~ (Rimosso v5.0.0)
 - [GoDaddy](https://www.godaddy.com/) - Domain Provider
-
-## 📋 Ultima Versione
-
-**v5.2.0 - Aggiunta pagina About** - [Scopri di più](release/v5.2.0.md)
-
-Architettura SPA moderna con TanStack Router, SEO ottimizzato e DaisyUI
-
-Tutta la storia dello sviluppo è disponibile nel [CHANGELOG.md](CHANGELOG.md).
-
-Guarda nel dettaglio le [release](release/).
 
 ## 🏗️ Struttura del Progetto
 
@@ -296,4 +277,3 @@ pnpm type-check       # TypeScript check
 ## 📝 Note Legali
 
 © 2024 - 2025 Smailen Vargas. Tutti i diritti riservati.
-
