@@ -24,7 +24,7 @@ export const SkillCard = ({ name, icon }: SkillCardProps) => {
       className="border-accent text-accent-content lg:tooltip mb-4 flex items-center justify-between rounded-md border-2 p-2 lg:cursor-pointer"
       data-tip={name}
     >
-      <p className="font-semibold uppercase md:hidden">{name}</p>
+      <p className="text-primary font-semibold uppercase md:hidden">{name}</p>
       <img src={icon} alt={name + 'icon'} className={`${iconSize}`} />
     </li>
   );
