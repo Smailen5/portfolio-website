@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.3.1](https://github.com/Smailen5/portfolio-website/compare/v5.3.0...v5.3.1) (2025-11-18)
+
+
+### Bug Fixes
+
+* ♿ aggiorna i colori primari nel file app.css per coerenza visiva ([43d25dc](https://github.com/Smailen5/portfolio-website/commit/43d25dc841b66c3f2a17e2312b8cc24c6d40d097))
+* ♿ migliora l'accessibilita' del componente Icon ([2f7cd03](https://github.com/Smailen5/portfolio-website/commit/2f7cd03d6a6d5c681d4c4d7110e2aa3301f95c30))
+* ♿ migliora l'accessibilita' del componente ToggleTheme ([ff066c4](https://github.com/Smailen5/portfolio-website/commit/ff066c45a0202b38d09a65fd8db3bc03ea5927af))
+* 💄 aggiorna i colori dei link nel componente Presentazione e Footer per coerenza visiva ([94ee64e](https://github.com/Smailen5/portfolio-website/commit/94ee64e264e5a62995853588dd21cfb08e7f8389))
+* 💄 aggiorna il colore del testo nel componente SkillCard per coerenza visiva ([df19e64](https://github.com/Smailen5/portfolio-website/commit/df19e64eb24ff2936d325b396441ea024e4adc64))
+* 💄 aggiorna il colore di sfondo del componente Card per una migliore coerenza visiva ([77914ef](https://github.com/Smailen5/portfolio-website/commit/77914effe7f221588f3990a66c26c9cedaff2218))
+* 💄 corregge la formattazione del testo nel componente AboutPage ([3a5ddbe](https://github.com/Smailen5/portfolio-website/commit/3a5ddbeb29c65c5d94427e5d0dc97373c91f40e5))
+
 ## [5.3.0](https://github.com/Smailen5/portfolio-website/compare/v5.2.0...v5.3.0) (2025-11-10)
 
 
