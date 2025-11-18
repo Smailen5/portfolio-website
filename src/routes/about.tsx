@@ -83,9 +83,9 @@ function AboutPage() {
         <Section>
           <H2>Il Mio Approccio</H2>
           <p>
-            Nel <Strong>frontend development</Strong> ho
-            trovato il perfetto equilibrio tra problem solving e creatività. Mi
-            appassiona trasformare concept di design in interfacce interattive,
+            Nel <Strong>frontend development</Strong> ho trovato il perfetto
+            equilibrio tra problem solving e creatività. Mi appassiona
+            trasformare concept di design in interfacce interattive,
             ottimizzando ogni dettaglio per creare esperienze web coinvolgenti e
             accessibili. Ogni progetto è per me un&apos;opportunità per
             migliorare e applicare nuove soluzioni, sempre mantenendo un focus
