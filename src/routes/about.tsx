@@ -83,7 +83,7 @@ function AboutPage() {
         <Section>
           <H2>Il Mio Approccio</H2>
           <p>
-            Nel <strong className="text-accent">frontend development</strong> ho
+            Nel <Strong>frontend development</Strong> ho
             trovato il perfetto equilibrio tra problem solving e creatività. Mi
             appassiona trasformare concept di design in interfacce interattive,
             ottimizzando ogni dettaglio per creare esperienze web coinvolgenti e
