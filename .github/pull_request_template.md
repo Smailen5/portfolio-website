@@ -12,7 +12,7 @@ Prima di compilare questa PR, **vai alla tab `Template Disponibili`** e selezion
 
 ---
 
-**⚠️ Se non vedi il menu dei template, usa i link sopra per caricare il template corretto.**
+**⚠️ Se non vedi la lista dei template sopra o non funzionano i link, usa il template generico sottostante.**
 
 ---
 
@@ -21,7 +21,7 @@ Prima di compilare questa PR, **vai alla tab `Template Disponibili`** e selezion
 ### 📋 Descrizione
 <!-- Descrivi brevemente lo scopo di questa PR -->
 
-### Issue correlata (solo se necessario)
+### Issue correlata
 <!-- Close #(numero dell'issue correlata) -->
 
 ### ✨ Cambiamenti Principali
@@ -32,7 +32,7 @@ Prima di compilare questa PR, **vai alla tab `Template Disponibili`** e selezion
 <!-- Spiega eventuali dettagli tecnici, refactor o miglioramenti nascosti -->
 -
 
-### 🐛 Errori Corretti (solo se necessario)
+### 🐛 Errori Corretti
 <!-- Se hai corretto dei bug, descrivili -->
 -
 
@@ -40,6 +40,6 @@ Prima di compilare questa PR, **vai alla tab `Template Disponibili`** e selezion
 <!-- Spiega come hai testato la PR e se tutto funziona -->
 ✅
 
-### 📝 Note (opzionale)
+### 📝 Note o Riferimenti
 <!-- Qualsiasi info utile per capire meglio la PR in futuro -->
 -
