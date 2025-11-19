@@ -19,7 +19,11 @@ fixes #
 
 ## 🧪 Test
 <!-- Spiega come hai testato la PR e se tutto funziona -->
-✅ Testato manualmente in sviluppo.
+✅ Testato manualmente in sviluppo:
+- [ ] Bug corretto verificato e funzionante
+- [ ] Comportamento atteso confermato
+- [ ] Nessuna regressione introdotta
+- [ ] Testato il caso d'uso specifico del bug
 
 ## 📝 Note o Riferimenti
 <!-- Qualsiasi info utile per capire meglio la PR in futuro -->
