@@ -19,7 +19,11 @@ closes #
 
 ## 🧪 Test
 <!-- Spiega come hai testato la PR e se tutto funziona -->
-✅ Testato manualmente in sviluppo.
+✅ Testato manualmente in sviluppo:
+- [ ] Funzionalità nuova funziona correttamente
+- [ ] Nessuna regressione nelle funzionalità esistenti
+- [ ] Testato su diversi dispositivi/browser (se applicabile)
+- [ ] Accessibilità verificata (se applicabile)
 
 ## 📝 Note o riferimenti
 <!-- Qualsiasi info utile per capire meglio la PR in futuro -->

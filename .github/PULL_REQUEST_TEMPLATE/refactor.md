@@ -19,7 +19,9 @@ closes #
 ✅ Testato manualmente in sviluppo:
 - [ ] Funzionalità esistenti funzionano correttamente
 - [ ] Nessuna regressione introdotta
-- [ ] Performance mantenute o migliorate
+- Performance:
+  - [ ] Mantenute
+  - [ ] Migliorate
 
 ## 📝 Note o Riferimenti
 <!-- Qualsiasi info utile per capire meglio la PR in futuro -->

@@ -18,7 +18,10 @@
 
 ## 🧪 Test
 <!-- Spiega come hai testato la PR e se tutto funziona -->
-✅
+✅ Testato manualmente in sviluppo:
+- [ ] Tutte le sub-PR testate individualmente
+- [ ] Integrazione tra le feature funziona correttamente
+- [ ] Nessuna regressione introdotta
 
 ## 📝 Note (opzionale)
 <!-- Qualsiasi info utile per capire meglio la PR in futuro -->
