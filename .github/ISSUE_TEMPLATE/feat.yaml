@@ -2,6 +2,7 @@ name: Feature Request ✨
 description: Aggiungi una nuova funzione
 title: '[FEAT]: '
 labels: ['feature', 'enhancement']
+projects: ['Portfolio']
 assignees: 'Smailen5'
 body:
   - type: markdown

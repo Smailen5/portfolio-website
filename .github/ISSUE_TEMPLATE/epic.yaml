@@ -2,13 +2,14 @@ name: Epic 🚀
 description: Crea un Epic
 title: '[EPIC]: '
 labels: ['epic']
+projects: ['Portfolio']
 assignees: 'Smailen5'
 body:
   - type: markdown
     attributes:
       value: |
         Descrivi l'epic in modo chiaro e dettagliato.
-        
+
   - type: textarea
     id: description
     attributes:
@@ -19,72 +20,21 @@ body:
       required: true
 
   - type: textarea
-    id: closed_issues
+    id: motivation
+    attributes:
+      label: 💡 Motivazione
+      description: 'Spiega perché crei questa epic e perché rilasciare queste feature insieme.'
+      placeholder: "Es. 'Rilasciare insieme le feature x e y per una versione più corposa'"
+    validations:
+      required: true
+
+  - type: textarea
+    id: related_issues
     attributes:
       label: 📋 Issue Correlate
-      description: "Inserisci solo la issue epic, le issue feature devono avere il loro numero di issue associato e stessa cosa vale per le sub-issue"
-      placeholder: |
-        - Close #(numero dell'epic)
-
-  - type: textarea
-    id: feature
-    attributes:
-      label: ✨ Cambiamenti principali
-      description: "Elenca i cambiamenti in modo semplice e chiaro. Descrivendo cosa è stato aggiunto, migliorato, corretto in termini di funzionalità visibili all'utente."
-      placeholder: |
-        - Migliorato il componente x
-        - Aggiunto il componente y
-
-  - type: textarea
-    id: technical_changes
-    attributes:
-      label: 🛠️ Modifiche tecniche
-      description: 'Elenca le modifiche tecniche in dettaglio. Spiega cosa è stato modificato a livello di codice, architettura, componenti, API, configurazioni, ecc.'
-      placeholder: |
-        - Migliorato il componente x utilizzando la libreria y
-
-  - type: textarea
-    id: bugs_fixed
-    attributes:
-      label: 🐛 Errori Corretti (solo se necessario)
-      description: 'Elenca i bug corretti'
-      placeholder: |
-        - Fixed #(numero dell'issue)
-
-  - type: textarea
-    id: breaking_changes
-    attributes:
-      label: ⚠️ Breaking Changes (solo se necessario)
-      description: 'Elenca i cambiamenti che rompono qualcosa nella vecchia versione'
-      placeholder: |
-        - L'API x non e' piu' supportata
-
-  - type: textarea
-    id: tests
-    attributes:
-      label: 🧪 Test
-      description: 'Spiega come hai testato il codice e se tutto funziona'
+      description: "Inserisci le issue che vengono integrate in questa epic (usa una checklist)"
       value: |
-        ✅ Testato manualmente in sviluppo.
-
-  - type: textarea
-    id: pr
-    attributes:
-      label: 👷‍♂️ Pull Request Collegate
-      description: 'Elenca le pull request collegate'
-      placeholder: |
-        - #(numero della pull request)
-
-  - type: textarea
-    id: files_modified
-    attributes:
-      label: 🔗 File Modificati
-      description: 'Elenca i file modificati'
-      placeholder: |
-        - `src/...`
-
-  - type: textarea
-    id: notes
-    attributes:
-      label: 🐾 Pss (opzionale)
-      description: 'Messaggi per il te del futuro'
+        - [ ] #(numero dell'issue)
+        - [ ] #(numero dell'issue)
+    validations:
+      required: true

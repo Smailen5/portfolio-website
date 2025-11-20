@@ -2,13 +2,14 @@ name: Question 🤔
 description: Fai una domanda
 title: '[QUESTION]: '
 labels: ['question', 'documentation', 'enhancement']
+projects: ['Portfolio']
 assignees: 'Smailen5'
 body:
   - type: markdown
     attributes:
       value: |
         Poni la tua domanda in modo chiaro e dettagliato.
-        
+
   - type: textarea
     id: question
     attributes:

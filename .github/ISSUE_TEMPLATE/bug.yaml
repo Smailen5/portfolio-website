@@ -2,13 +2,14 @@ name: Bug Report 🐞
 description: Segnala un bug nel progetto
 title: '[BUG]: '
 labels: ['bug']
+projects: ['Portfolio']
 assignees: 'Smailen5'
 body:
   - type: markdown
     attributes:
       value: |
         Descrivi quanto più possibile il bug, in modo chiaro e dettagliato.
-        
+
   - type: textarea
     id: description
     attributes:
