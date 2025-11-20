@@ -2,6 +2,7 @@ name: Documentation 📃
 description: Aggiungi o aggiorna la documentazione
 title: '[DOCS]: '
 labels: ['documentation']
+projects: ['Portfolio']
 assignees: 'Smailen5'
 body:
   - type: markdown

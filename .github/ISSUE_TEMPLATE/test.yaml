@@ -2,13 +2,14 @@ name: Test 🧪
 description: Testa una nuova funzione o un bug
 title: '[TEST]: '
 labels: ['test']
+projects: ['Portfolio']
 assignees: 'Smailen5'
 body:
   - type: markdown
     attributes:
       value: |
         Descrivi il test in modo chiaro e dettagliato.
-        
+
   - type: textarea
     id: description
     attributes:

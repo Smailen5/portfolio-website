@@ -2,13 +2,14 @@ name: Epic 🚀
 description: Crea un Epic
 title: '[EPIC]: '
 labels: ['epic']
+projects: ['Portfolio']
 assignees: 'Smailen5'
 body:
   - type: markdown
     attributes:
       value: |
         Descrivi l'epic in modo chiaro e dettagliato.
-        
+
   - type: textarea
     id: description
     attributes:

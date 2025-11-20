@@ -2,13 +2,14 @@ name: Refactor ♻️
 description: Refactoring del codice
 title: '[REFACTOR]: '
 labels: ['refactor']
+projects: ['Portfolio']
 assignees: 'Smailen5'
 body:
   - type: markdown
     attributes:
       value: |
         Descrivi il refactoring in modo chiaro e dettagliato.
-        
+
   - type: textarea
     id: description
     attributes:
