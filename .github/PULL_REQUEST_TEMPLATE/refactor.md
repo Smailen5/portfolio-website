@@ -1,4 +1,4 @@
-<!-- TITOLO PR: Il titolo di questa PR deve essere `[REFACTOR]: <descrizione> (#numero_issue)`
+<!-- TITOLO PR: Il titolo di questa PR deve essere `[REFACTOR]: <descrizione>`
 ⚠️ Elimina questa sezione prima della review o del draft.
 -->
 

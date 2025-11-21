@@ -1,4 +1,4 @@
-<!-- TITOLO PR: Il titolo di questa PR deve essere `[DOCS]: <descrizione> (#numero_issue)`
+<!-- TITOLO PR: Il titolo di questa PR deve essere `[DOCS]: <descrizione>`
 ⚠️ Elimina questa sezione prima della review o del draft.
 -->
 

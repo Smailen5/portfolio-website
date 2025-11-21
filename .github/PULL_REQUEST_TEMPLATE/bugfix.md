@@ -1,4 +1,4 @@
-<!-- TITOLO PR: Il titolo di questa Pr deve essere `[BUGFIX]: <descrizione> (#numero_issue)`
+<!-- TITOLO PR: Il titolo di questa Pr deve essere `[BUGFIX]: <descrizione>`
 ⚠️ Elimina questa sezione prima della review o del draft.
 -->
 
