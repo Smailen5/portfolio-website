@@ -1,3 +1,7 @@
+<!-- TITOLO PR: Il titolo di questa PR deve essere `[EPIC]: <descrizione>`
+⚠️ Elimina questa sezione prima della review o del draft.
+-->
+
 ## 📋 Descrizione
 <!-- Descrivi brevemente cosa include l'epic -->
 
