@@ -1,6 +1,4 @@
-<!-- TITOLO PR: Il titolo di questa PR deve essere `[DOCS]: <descrizione>`
-⚠️ Elimina questa sezione prima della review o del draft.
--->
+<!-- TITOLO PR: Il titolo di questa PR deve essere `[DOCS]: <descrizione>`-->
 
 ## 📋 Descrizione
 <!-- Descrivi brevemente cosa include l'aggiornamento della documentazione -->
