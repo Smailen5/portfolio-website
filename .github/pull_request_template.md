@@ -1,6 +1,6 @@
 # 📋 Seleziona il Template Corretto
 
-Prima di compilare questa PR, **vai alla tab `Template Disponibili`** e seleziona il template appropriato.
+Prima di compilare questa PR, **vai alla tab `Preview`** e seleziona il link del template appropriato.
 
 ## 🎯 Template Disponibili
 

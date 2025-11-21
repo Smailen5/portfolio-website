@@ -1,6 +1,4 @@
-<!-- TITOLO PR: Il titolo di questa Pr deve essere `[FEAT]: <descrizione> (#numero_issue)`
-⚠️ Elimina questa sezione prima della review o del draft.
--->
+<!-- TITOLO PR: Il titolo di questa Pr deve essere `[FEAT]: <descrizione>`-->
 
 ## 📋 Descrizione
 <!-- Descrivi brevemente cosa include la feature -->
