@@ -32,7 +32,7 @@ export const Layout = ({
     <>
       <div
         className={twMerge(
-          'bg-base-200 flex h-auto w-full justify-center',
+          'bg-base-200 flex h-auto w-full justify-center pt-10',
           classLayout
         )}
       >
