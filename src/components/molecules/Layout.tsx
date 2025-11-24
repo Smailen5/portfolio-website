@@ -18,6 +18,11 @@ interface LayoutProps {
  * - Classi personalizzabili per layout e contenuto
  * - Auto-scroll to top al montaggio (useScroll hook)
  *
+ * ⚠️ IMPORTANTE: Questo componente wrappa la Navbar fixed.
+ * Non aggiungere proprieta' che creano stacking context (transform, filter,
+ * perspective, will-change, position relative/absolute) al div principale,
+ * altrimenti la navbar smettera' di funzionare correttamente.
+ *
  * @param {React.ReactNode} children - Contenuto da wrappare
  * @param {string} [classLayout] - Classi Tailwind custom per container esterno
  * @param {string} [classContent] - Classi Tailwind custom per contenitore interno
@@ -32,7 +37,7 @@ export const Layout = ({
     <>
       <div
         className={twMerge(
-          'bg-base-200 flex h-auto w-full justify-center',
+          'bg-base-200 flex h-auto w-full justify-center pt-10',
           classLayout
         )}
       >
