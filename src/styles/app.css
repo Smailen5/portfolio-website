@@ -125,11 +125,12 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-136%);
+    transform: translateX(-50%);
   }
 }
 
 .animate-scroll {
+  display: inline-flex;
   animation: scroll 10s linear infinite;
   will-change: transform;
 }
