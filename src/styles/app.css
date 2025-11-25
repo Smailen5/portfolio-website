@@ -118,3 +118,22 @@
   --depth: 1;
   --noise: 0;
 }
+
+/* Animazione carousel infinito */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-136%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 10s linear infinite;
+  will-change: transform;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
