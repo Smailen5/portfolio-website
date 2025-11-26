@@ -13,7 +13,7 @@ export const SkillsCarousel = () => {
       <div className="mx-auto w-full overflow-hidden md:max-w-[976px]">
         <div className="animate-scroll flex">
           {duplicatedSkills.map((skill, index) => (
-            <div key={index} className="mr-4 w-[70px] flex-shrink-0">
+            <div key={`${skill.name}-${index}`} className="mr-4 w-[70px] flex-shrink-0">
               <SkillCard name={skill.name} icon={skill.icon} />
             </div>
           ))}
