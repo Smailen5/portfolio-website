@@ -1,6 +1,7 @@
 interface SkillCardProps {
   name: string;
   icon: string;
+  carousel?: boolean;
 }
 
 /**
@@ -15,7 +16,7 @@ interface SkillCardProps {
  * @param {string} name - Nome della tecnologia (es: "React", "TypeScript")
  * @param {string} icon - URL dell'icona SVG/PNG della tecnologia
  */
-export const SkillCard = ({ name, icon }: SkillCardProps) => {
+export const SkillCard = ({ name, icon, carousel }: SkillCardProps) => {
   // Dimensione fissa per le icone
   const iconSize = 'w-12 h-12';
 
@@ -24,7 +25,7 @@ export const SkillCard = ({ name, icon }: SkillCardProps) => {
       className="border-accent text-accent-content lg:tooltip mb-4 flex items-center justify-between rounded-md border-2 p-2 lg:cursor-pointer"
       data-tip={name}
     >
-      <p className="text-primary font-semibold uppercase md:hidden">{name}</p>
+      <p className={`text-primary font-semibold uppercase md:hidden ${carousel ? 'hidden': ''}`}>{name}</p>
       <img src={icon} alt={name + 'icon'} className={`${iconSize}`} />
     </li>
   );
