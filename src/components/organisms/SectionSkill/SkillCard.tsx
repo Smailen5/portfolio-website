@@ -22,7 +22,7 @@ export const SkillCard = ({ name, icon, carousel }: SkillCardProps) => {
 
   return (
     <li
-      className="border-accent text-accent-content lg:tooltip mb-4 flex items-center justify-between rounded-md border-2 p-2 lg:cursor-pointer"
+      className="lg:tooltip shadow-dark mb-4 flex items-center justify-between rounded-md p-2 shadow-md lg:cursor-pointer"
       data-tip={name}
     >
       <p
