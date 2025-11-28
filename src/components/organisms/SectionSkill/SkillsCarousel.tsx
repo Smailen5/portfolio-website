@@ -17,7 +17,7 @@ export const SkillsCarousel = () => {
               key={`${skill.name}-${index}`}
               className="mr-4 w-[70px] flex-shrink-0"
             >
-              <SkillCard name={skill.name} icon={skill.icon} />
+              <SkillCard name={skill.name} icon={skill.icon} carousel />
             </div>
           ))}
         </div>
