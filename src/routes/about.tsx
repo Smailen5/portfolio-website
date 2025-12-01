@@ -78,7 +78,7 @@ function AboutPage() {
             l&apos;apprendimento continuo sia fondamentale.
           </p>
 
-          <SkillsSection />
+          <SkillsSection noTitle />
         </Section>
 
         <Separator />

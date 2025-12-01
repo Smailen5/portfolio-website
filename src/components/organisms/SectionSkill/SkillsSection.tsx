@@ -4,6 +4,10 @@ import { framework, language, utility } from '@/data/skillsData';
 import { SkillCategory } from './SkillCategory';
 import Section from '@/components/atoms/Section';
 
+interface SkillsSectionProps {
+  noTitle?: boolean;
+}
+
 /**
  * Componente SkillsSection - Sezione competenze tecniche
  *
@@ -14,10 +18,10 @@ import Section from '@/components/atoms/Section';
  *
  * Layout responsive: colonna su mobile, grid 3 colonne su desktop
  */
-export const SkillsSection = () => {
+export const SkillsSection = ({ noTitle }: SkillsSectionProps) => {
   return (
     <Section className="text-center">
-      <H2>Competenze acquisite</H2>
+      <H2 screenReaderOnly={noTitle}>Competenze acquisite</H2>
 
       <Separator />
 
