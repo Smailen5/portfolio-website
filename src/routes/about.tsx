@@ -6,6 +6,7 @@ import Section from '@/components/atoms/Section';
 import Separator from '@/components/atoms/Separator';
 import Strong from '@/components/atoms/Strong';
 import { Layout } from '@/components/molecules/Layout';
+import { SkillsSection } from '@/components/organisms/SectionSkill';
 import { createFileRoute } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/about')({
@@ -76,6 +77,8 @@ function AboutPage() {
             del settore, perché credo che nell&apos;ambito tech
             l&apos;apprendimento continuo sia fondamentale.
           </p>
+
+          <SkillsSection />
         </Section>
 
         <Separator />
