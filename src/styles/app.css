@@ -135,9 +135,9 @@
   will-change: transform;
 }
 
-.animate-scroll:hover {
+/* .animate-scroll:hover {
   animation-play-state: paused;
-}
+} */
 
 @layer utilities {
   [data-theme="dark"] .shadow-dark {
