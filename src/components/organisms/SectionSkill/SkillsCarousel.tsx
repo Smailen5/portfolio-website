@@ -8,7 +8,7 @@ export const SkillsCarousel = () => {
   const duplicatedSkills = [...allSkills, ...allSkills];
   return (
     <>
-      <H2>Le tecnologie che uso</H2>
+      <H2 textCenter>Le tecnologie che uso</H2>
 
       <div className="mx-auto w-full overflow-x-hidden md:max-w-[976px]">
         <div className="animate-scroll flex">
