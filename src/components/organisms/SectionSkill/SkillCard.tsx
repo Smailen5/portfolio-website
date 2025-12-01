@@ -20,16 +20,20 @@ export const SkillCard = ({ name, icon, carousel }: SkillCardProps) => {
   // Dimensione fissa per le icone
   const iconSize = 'w-12 h-12';
 
+  if (carousel) {
+    return (
+      <div className="shadow-dark rounded-md p-2 shadow-md">
+        <img src={icon} alt={name + 'icon'} className={`${iconSize}`} />
+      </div>
+    );
+  }
+
   return (
     <li
       className="lg:tooltip shadow-dark mb-4 flex items-center justify-between rounded-md p-2 shadow-md lg:cursor-pointer"
       data-tip={name}
     >
-      <p
-        className={`text-primary font-semibold uppercase md:hidden ${carousel ? 'hidden' : ''}`}
-      >
-        {name}
-      </p>
+      <p className="text-primary font-semibold uppercase md:hidden">{name}</p>
       <img src={icon} alt={name + 'icon'} className={`${iconSize}`} />
     </li>
   );
