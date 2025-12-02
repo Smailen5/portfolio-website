@@ -77,9 +77,9 @@ function AboutPage() {
             del settore, perché credo che nell&apos;ambito tech
             l&apos;apprendimento continuo sia fondamentale.
           </p>
-
-          <SkillsSection noTitle />
         </Section>
+
+        <SkillsSection noTitle />
 
         <Separator />
 
