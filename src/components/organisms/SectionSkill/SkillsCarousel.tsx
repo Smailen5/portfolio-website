@@ -1,7 +1,28 @@
-import { SkillCard } from './SkillCard';
-// import { SkillCategory } from './SkillCategory';
 import { H2 } from '@/components/atoms/heading';
 import { framework, language, utility } from '@/data/skillsData';
+import { SkillCard } from './SkillCard';
+
+/**
+ * Componente SkillsCarousel - Carosello infinito delle tecnologie
+ *
+ * Visualizza tutte le skill (linguaggi, framework, utility) in un carosello
+ * che scorre continuamente da destra verso sinistra.
+ *
+ * Features:
+ * - Animazione CSS infinita (scroll continuo)
+ * - Duplicazione delle skill per effetto seamless
+ * - Solo icone (modalità carousel), senza tooltip o nomi
+ * - Titolo centrato "Le tecnologie che uso"
+ *
+ * Layout responsive:
+ * - Mobile: Larghezza piena, scroll orizzontale nascosto
+ * - Desktop: Larghezza massima 976px, allineato al contenuto della pagina
+ *
+ * Note tecniche:
+ * - Utilizza SkillCard con prop `carousel={true}` per visualizzare solo l'icona
+ * - Le skill vengono duplicate per creare l'effetto di scroll infinito
+ * - Animazione definita in `app.css` con classe `.animate-scroll`
+ */
 
 export const SkillsCarousel = () => {
   const allSkills = [...language, ...framework, ...utility];
