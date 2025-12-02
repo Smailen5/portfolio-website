@@ -1,5 +1,4 @@
 import { Avatar } from '@/components/atoms/Avatar';
-import { Layout } from '@/components/molecules/Layout';
 import { ToggleTheme } from '@/components/molecules/ToggleTheme';
 import { CurriculumDownload } from '@/features/cv/components/CurriculumDownload';
 import { NAVIGATION_LINKS } from '@/shared/constants/navigation';
@@ -20,10 +19,9 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      {/* Layout */}
-      <Layout>
-        {/* Navbar */}
-        <nav className="bg-base-200/60 fixed inset-x-0 top-0 z-50 flex items-center justify-between px-4 py-2 shadow-sm backdrop-blur-sm">
+      {/* Navbar */}
+      <nav className="bg-base-200/60 fixed inset-x-0 top-0 z-50 flex justify-center px-4 py-2 shadow-sm backdrop-blur-sm">
+        <div className="flex w-full max-w-[1024px] justify-between">
           <Avatar name="Smailen Vargas" />
 
           <div className="flex items-center gap-4">
@@ -55,8 +53,8 @@ export const Navbar = () => {
               </nav>
             </div>
           </div>
-        </nav>
-      </Layout>
+        </div>
+      </nav>
     </>
   );
 };
