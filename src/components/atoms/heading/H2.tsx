@@ -9,7 +9,7 @@ export const H2 = ({
 }) => {
   return (
     <h2
-      className={`text-secondary text-2xl font-bold capitalize ${screenReaderOnly && 'sr-only'} ${textCenter && 'text-center'}`}
+      className={`text-secondary text-2xl font-bold capitalize ${screenReaderOnly ? 'sr-only' : ''} ${textCenter ? 'text-center' : ''}`}
     >
       {children}
     </h2>
