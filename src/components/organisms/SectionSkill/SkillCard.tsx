@@ -22,7 +22,7 @@ export const SkillCard = ({ name, icon, carousel }: SkillCardProps) => {
 
   if (carousel) {
     return (
-      <div className="shadow-dark rounded-md p-2 shadow-md">
+      <div className="shadow-dark bg-base-300 rounded-md p-2 shadow-md">
         <img src={icon} alt={name + 'icon'} className={`${iconSize}`} />
       </div>
     );
@@ -30,7 +30,7 @@ export const SkillCard = ({ name, icon, carousel }: SkillCardProps) => {
 
   return (
     <li
-      className="lg:tooltip shadow-dark mb-4 flex items-center justify-between rounded-md p-2 shadow-md lg:cursor-pointer"
+      className="lg:tooltip bg-base-300 mb-4 flex items-center justify-between rounded-md p-2 shadow-md lg:cursor-pointer"
       data-tip={name}
     >
       <p className="text-primary font-semibold uppercase md:hidden">{name}</p>
