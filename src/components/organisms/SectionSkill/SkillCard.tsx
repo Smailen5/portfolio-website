@@ -7,14 +7,22 @@ interface SkillCardProps {
 /**
  * Componente SkillCard - Singola skill/tecnologia
  *
- * Visualizza una competenza tecnica con icona
+ * Visualizza una competenza tecnica con icona. Supporta due modalità:
+ * - Normale: Lista con nome visibile su mobile e tooltip su desktop
+ * - Carousel: Solo icona, senza tooltip e senza nome (per caroselli)
  *
- * Layout responsive:
+ * Layout responsive (modalità normale):
  * - Mobile: Nome + Icona affiancati
  * - Desktop: Solo icona con tooltip al hover (nome nascosto)
  *
+ * Modalità carousel:
+ * - Solo icona con sfondo e ombra
+ * - Nessun tooltip o nome visibile
+ * - Utilizzato in SkillsCarousel per scroll infinito
+ *
  * @param {string} name - Nome della tecnologia (es: "React", "TypeScript")
  * @param {string} icon - URL dell'icona SVG/PNG della tecnologia
+ * @param {boolean} [carousel] - Se true, mostra solo icona senza tooltip/nome
  */
 export const SkillCard = ({ name, icon, carousel }: SkillCardProps) => {
   // Dimensione fissa per le icone
