@@ -133,13 +133,3 @@
   animation: scroll 20s linear infinite;
   will-change: transform;
 }
-
-/* .animate-scroll:hover {
-  animation-play-state: paused;
-} */
-
-@layer utilities {
-  [data-theme='dark'] .shadow-dark {
-    box-shadow: 0 4px 6px -1px var(--color-base-300);
-  }
-}

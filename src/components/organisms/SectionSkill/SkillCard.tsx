@@ -30,7 +30,7 @@ export const SkillCard = ({ name, icon, carousel }: SkillCardProps) => {
 
   if (carousel) {
     return (
-      <div className="shadow-dark bg-base-300 rounded-md p-2 shadow-md">
+      <div className="bg-base-300 rounded-md p-2 shadow-md">
         <img src={icon} alt={name + 'icon'} className={`${iconSize}`} />
       </div>
     );
