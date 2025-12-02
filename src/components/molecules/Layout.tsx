@@ -15,6 +15,7 @@ interface LayoutProps {
  *
  * Features:
  * - Larghezza max 1024px centrata
+ * - Padding top per navbar fixed (pt-20)
  * - Classi personalizzabili per layout e contenuto
  * - Auto-scroll to top al montaggio (useScroll hook)
  *

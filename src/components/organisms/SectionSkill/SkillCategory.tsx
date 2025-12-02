@@ -15,7 +15,10 @@ interface SkillCategoryProps {
  * Raggruppa e visualizza una categoria specifica di skill
  * (es: Linguaggi, Framework, Strumenti)
  *
- * Layout: grid responsive da 1 colonna (mobile) a 4 colonne (desktop)
+ * Layout responsive:
+ * - Mobile: 2 colonne (grid-cols-2)
+ * - Tablet: 3 colonne (md:grid-cols-3)
+ * - Desktop: 4 colonne (lg:grid-cols-4)
  *
  * @param {string} title - Titolo della categoria (es: "Linguaggi")
  * @param {Array} section - Array di skill con nome e icona

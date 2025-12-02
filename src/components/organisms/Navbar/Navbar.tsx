@@ -9,9 +9,18 @@ import { SideBar } from './SideBar';
 /**
  * Componente Navbar - Barra di navigazione principale
  *
+ * Navbar fixed in alto alla pagina con backdrop blur e ombra leggera.
+ * Rimane visibile durante lo scroll per facilitare la navigazione.
+ *
  * Layout responsive:
  * - Mobile: Avatar + ToggleTheme + Bottone Menu (apre SideBar)
  * - Desktop: Avatar + ToggleTheme + Link navigazione + Download CV
+ *
+ * Features:
+ * - Position fixed con z-index 50
+ * - Backdrop blur e sfondo semitrasparente (bg-base-200/60)
+ * - Larghezza massima 1024px centrata
+ * - Ombra leggera (shadow-sm)
  *
  * Gestisce lo stato di apertura/chiusura della SideBar mobile
  */
