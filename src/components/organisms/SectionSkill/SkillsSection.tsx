@@ -1,8 +1,8 @@
+import Section from '@/components/atoms/Section';
 import Separator from '@/components/atoms/Separator';
 import { H2 } from '@/components/atoms/heading';
 import { framework, language, utility } from '@/data/skillsData';
 import { SkillCategory } from './SkillCategory';
-import Section from '@/components/atoms/Section';
 
 interface SkillsSectionProps {
   noTitle?: boolean;
@@ -17,6 +17,9 @@ interface SkillsSectionProps {
  * - Strumenti di Sviluppo (Git, Vite, pnpm, etc.)
  *
  * Layout responsive: colonna su mobile, grid 3 colonne su desktop
+ *
+ * @param {boolean} [noTitle] - Se true, nasconde il titolo visivamente (solo screen reader)
+ *                               Utile quando il titolo è già presente nella pagina
  */
 export const SkillsSection = ({ noTitle }: SkillsSectionProps) => {
   return (
