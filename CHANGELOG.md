@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.4.0](https://github.com/Smailen5/portfolio-website/compare/v5.3.1...v5.4.0) (2025-12-03)
+
+
+### Features
+
+* ✨ aggiungi animazione per il carousel infinito ([114a6ec](https://github.com/Smailen5/portfolio-website/commit/114a6ec088a0e5d9219b63ab381f5bf7565ea4d9))
+* ✨ aggiungi componente SkillsCarousel ([0ea1c84](https://github.com/Smailen5/portfolio-website/commit/0ea1c848c7309793f42ffdb09f1470912650e539))
+* ✨ aggiungi SkillsSection alla pagina About ([4cc905d](https://github.com/Smailen5/portfolio-website/commit/4cc905d37cfa6f546241e45389c0cdd205de251d))
+* ✨ aggiungi supporto per la proprietà noTitle nel componente SkillsSection ([157fb51](https://github.com/Smailen5/portfolio-website/commit/157fb51ba0603486b44b9f1ce383f882e1e52e40))
+* ✨ aggiungi supporto per la proprietà textCenter nel componente H2 ([0ec0431](https://github.com/Smailen5/portfolio-website/commit/0ec0431e3b5217601fd4be93a9298898749d5c05))
+* ✨ aggiungi supporto per la visualizzazione condizionale del nome nella SkillCard ([043474c](https://github.com/Smailen5/portfolio-website/commit/043474c2d82cdbef896ee7157b5e6b8e0a2ef25d))
+* ✨ aggiungi supporto per la visualizzazione del carousel nella SkillCard ([665f3fc](https://github.com/Smailen5/portfolio-website/commit/665f3fc2a57b6babd1ddc25ab801aabcfde9b6f6))
+* ✨ aggiungi supporto per screen reader nel componente H2 ([3ccca77](https://github.com/Smailen5/portfolio-website/commit/3ccca771cd3032eb762f6942a4a232bbc4fef0fc))
+* ✨ aggiungi titolo al SkillsCarousel ([185020b](https://github.com/Smailen5/portfolio-website/commit/185020be63bb4d74f8d8d5c3a5f8fa4eee620912))
+* ✨ rendi Navbar fixed durante lo scroll ([95c8d01](https://github.com/Smailen5/portfolio-website/commit/95c8d0139df7253c00f28af49c8395bc015c76dc))
+* 💄 aggiungi griglia responsive per SkillCategory ([968dca7](https://github.com/Smailen5/portfolio-website/commit/968dca737c9ff04c5bcec4975e1641319c5723d1))
+
+
+### Bug Fixes
+
+* 🐛 corregge la classe di visualizzazione nel componente SkillsCarousel ([3ed9351](https://github.com/Smailen5/portfolio-website/commit/3ed93515dfe2f5a3efe6951cc31577e191864af6))
+* 🐛 corregge la logica di assegnazione delle classi nel componente H2 ([ab79902](https://github.com/Smailen5/portfolio-website/commit/ab7990276d257a8b89028e362064db7f7ad75692))
+* 🐛 correggi overflow nel SkillsCarousel ([422ed2e](https://github.com/Smailen5/portfolio-website/commit/422ed2ef37e5d7bb44d1ef212a7e24b53d01dc0a))
+* 🐛 riposiziona il componente SkillsSection nella pagina About ([5e16c8a](https://github.com/Smailen5/portfolio-website/commit/5e16c8aec01aa00ea08d91d6b9993615edb48868))
+
 ### [5.3.1](https://github.com/Smailen5/portfolio-website/compare/v5.3.0...v5.3.1) (2025-11-18)
 
 
