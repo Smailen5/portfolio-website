@@ -27,58 +27,59 @@ export const CardProject = ({
     return [...technologies].sort((a, b) => a.localeCompare(b));
   }, [technologies]);
 
+  const projectUrl = `${ENDPOINTS.GITHUB.README.FOLDER}${nameFolder}`;
+
   return (
-    <>
-      {/* PROGETTO SINGOLO */}
-      <article className="card bg-base-300 w-full shadow-sm" key={name}>
-        <figure>
+    //* PROGETTO SINGOLO */
+    <article className="card bg-base-300 w-full shadow-sm">
+      <figure>
+        <a
+          href={projectUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Visualizza il progetto ${nameCorrect(name)} su GitHub`}
+        >
+          <img
+            src={imageUrl || ''}
+            alt={`Screenshot del progetto ${nameCorrect(name)}`}
+            className="transition-all duration-300 lg:hover:scale-105"
+          />
+        </a>
+      </figure>
+      <div className="card-body gap-4">
+        <h3 className="card-title uppercase">{nameCorrect(name)}</h3>
+        <p>{description}</p>
+
+        {/* array delle tecnologie utilizzate */}
+        {sortedTechnologies.length > 0 ? (
+          <ul className="flex flex-wrap gap-2 uppercase">
+            {sortedTechnologies.map((tech)=> (
+              <li
+                key={tech}
+                className="badge badge-outline text-xs font-semibold md:text-sm"
+              >
+                {tech}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="text-sm italic opacity-70">
+            Nessuna tecnologia disponibile
+          </p>
+        )}
+
+        <div className="flex justify-center">
           <a
-            href={`${ENDPOINTS.GITHUB.README.FOLDER}${nameFolder}`}
+            href={projectUrl}
+            className="btn btn-primary btn-xl md:btn-lg w-full"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={`Visualizza i dettagli di ${nameCorrect(name)} su GitHub`}
           >
-            <img
-              src={imageUrl || ''}
-              alt={`Screenshot del progetto ${nameCorrect(name)}`}
-              className="transition-all duration-300 lg:hover:scale-105"
-            />
+            Dettagli
           </a>
-        </figure>
-        <div className="card-body gap-4">
-          <h3 className="card-title uppercase">{nameCorrect(name)}</h3>
-          <p>{description}</p>
-
-          {/* array delle tecnologie utilizzate */}
-          {sortedTechnologies.length > 0 ? (
-            <ul className="flex flex-wrap gap-2 uppercase">
-              {sortedTechnologies.map((tech)=> (
-                <li
-                  key={tech}
-                  className="badge badge-outline text-xs font-semibold md:text-sm"
-                >
-                  {tech}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="text-sm italic opacity-70">
-              Nessuna tecnologia disponibile
-            </p>
-          )}
-
-          <div className="flex justify-center">
-            <a
-              href={`${ENDPOINTS.GITHUB.README.FOLDER}${nameFolder}`}
-              className="btn btn-primary btn-xl md:btn-lg w-full"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`Visualizza i dettagli di ${nameCorrect(name)} su GitHub`}
-            >
-              Dettagli
-            </a>
-          </div>
         </div>
-      </article>
-    </>
+      </div>
+    </article>
   );
 };
