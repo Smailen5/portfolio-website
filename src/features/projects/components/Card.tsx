@@ -44,6 +44,7 @@ export const CardProject = ({
             src={imageUrl ?? ''}
             alt={`Screenshot del progetto ${formattedName}`}
             className="transition-all duration-300 lg:hover:scale-105"
+            loading="lazy"
           />
         </a>
       </figure>
