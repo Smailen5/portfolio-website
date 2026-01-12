@@ -40,7 +40,7 @@ export const CardProject = ({
           aria-label={`Visualizza il progetto ${nameCorrect(name)} su GitHub`}
         >
           <img
-            src={imageUrl || ''}
+            src={imageUrl ?? ''}
             alt={`Screenshot del progetto ${nameCorrect(name)}`}
             className="transition-all duration-300 lg:hover:scale-105"
           />
@@ -53,7 +53,7 @@ export const CardProject = ({
         {/* array delle tecnologie utilizzate */}
         {sortedTechnologies.length > 0 ? (
           <ul className="flex flex-wrap gap-2 uppercase">
-            {sortedTechnologies.map((tech)=> (
+            {sortedTechnologies.map(tech => (
               <li
                 key={tech}
                 className="badge badge-outline text-xs font-semibold md:text-sm"
