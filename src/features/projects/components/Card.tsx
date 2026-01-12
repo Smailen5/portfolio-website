@@ -1,6 +1,7 @@
 import { ENDPOINTS } from '@/shared/constants/api';
 import { CardProjectProps } from '@/shared/types/projects';
 import { nameCorrect } from '@/shared/utils/nameCorrect';
+import { useMemo } from 'react';
 
 /**
  * Componente CardProject - Card per visualizzare un singolo progetto
@@ -21,6 +22,11 @@ export const CardProject: React.FC<CardProjectProps> = ({
   imageUrl,
   nameFolder,
 }) => {
+  const sortedTechnologies = useMemo(() => {
+    if (!technologies) return [];
+    return [...technologies].sort((a, b) => a.localeCompare(b));
+  }, [technologies]);
+
   return (
     <>
       {/* PROGETTO SINGOLO */}
@@ -43,24 +49,22 @@ export const CardProject: React.FC<CardProjectProps> = ({
           <p>{description}</p>
 
           {/* array delle tecnologie utilizzate */}
-          <ul className="flex flex-wrap gap-2 uppercase">
-            {!technologies ? (
-              <p>Tecnologie non disponibili</p>
-            ) : (
-              [...technologies]
-                .sort((a, b) => a.localeCompare(b))
-                .map(tech => {
-                  return (
-                    <li
-                      key={tech}
-                      className="badge badge-outline text-xs font-semibold md:text-sm"
-                    >
-                      {tech}
-                    </li>
-                  );
-                })
-            )}
-          </ul>
+          {sortedTechnologies.length > 0 ? (
+            <ul className="flex flex-wrap gap-2 uppercase">
+              {sortedTechnologies.map((tech)=> (
+                <li
+                  key={tech}
+                  className="badge badge-outline text-xs font-semibold md:text-sm"
+                >
+                  {tech}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text-sm italic opacity-70">
+              Nessuna tecnologia disponibile
+            </p>
+          )}
 
           <div className="flex justify-center">
             <a
