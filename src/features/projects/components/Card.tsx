@@ -15,13 +15,13 @@ import { useMemo } from 'react';
  *
  * @param {CardProjectProps} props - Dati del progetto da visualizzare
  */
-export const CardProject: React.FC<CardProjectProps> = ({
+export const CardProject = ({
   name,
   description,
   technologies,
   imageUrl,
   nameFolder,
-}) => {
+}: CardProjectProps) => {
   const sortedTechnologies = useMemo(() => {
     if (!technologies) return [];
     return [...technologies].sort((a, b) => a.localeCompare(b));
@@ -72,6 +72,7 @@ export const CardProject: React.FC<CardProjectProps> = ({
               className="btn btn-primary btn-xl md:btn-lg w-full"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`Visualizza i dettagli di ${nameCorrect(name)} su GitHub`}
             >
               Dettagli
             </a>
