@@ -28,6 +28,7 @@ export const CardProject = ({
   }, [technologies]);
 
   const projectUrl = `${ENDPOINTS.GITHUB.README.FOLDER}${nameFolder}`;
+  const formattedName = nameCorrect(name);
 
   return (
     //* PROGETTO SINGOLO */
@@ -37,17 +38,17 @@ export const CardProject = ({
           href={projectUrl}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`Visualizza il progetto ${nameCorrect(name)} su GitHub`}
+          aria-label={`Visualizza il progetto ${formattedName} su GitHub`}
         >
           <img
             src={imageUrl ?? ''}
-            alt={`Screenshot del progetto ${nameCorrect(name)}`}
+            alt={`Screenshot del progetto ${formattedName}`}
             className="transition-all duration-300 lg:hover:scale-105"
           />
         </a>
       </figure>
       <div className="card-body gap-4">
-        <h3 className="card-title uppercase">{nameCorrect(name)}</h3>
+        <h3 className="card-title uppercase">{formattedName}</h3>
         <p>{description}</p>
 
         {/* array delle tecnologie utilizzate */}
@@ -74,7 +75,7 @@ export const CardProject = ({
             className="btn btn-primary btn-xl md:btn-lg w-full"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`Visualizza i dettagli di ${nameCorrect(name)} su GitHub`}
+            aria-label={`Visualizza i dettagli di ${formattedName} su GitHub`}
           >
             Dettagli
           </a>
