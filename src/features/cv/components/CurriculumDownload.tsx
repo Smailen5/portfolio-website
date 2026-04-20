@@ -21,18 +21,20 @@ export const CurriculumDownload = ({
         <ul className="menu dropdown-content bg-base-100 rounded-box z-10 w-52 p-2 shadow-sm">
           <li>
             <a
-              href="/assets/curriculum/CV-Smailen-Vargas-Frontend-IT.pdf"
-              download="CV-Smailen-Vargas-Frontend-IT.pdf"
+              // href="/assets/curriculum/CV-Smailen-Vargas-Frontend-IT.pdf"
+              // download="CV-Smailen-Vargas-Frontend-IT.pdf"
               onClick={handleDownload}
+              className="cursor-not-allowed"
             >
               Curriculum in Italiano
             </a>
           </li>
           <li>
             <a
-              href="/assets/curriculum/CV-Smailen-Vargas-Frontend-EN.pdf"
-              download="CV-Smailen-Vargas-Frontend-EN.pdf"
+              // href="/assets/curriculum/CV-Smailen-Vargas-Frontend-EN.pdf"
+              // download="CV-Smailen-Vargas-Frontend-EN.pdf"
               onClick={handleDownload}
+              className="cursor-not-allowed"
             >
               Curriculum in Inglese
             </a>
