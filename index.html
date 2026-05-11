@@ -1,23 +1,55 @@
 <!doctype html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Manifest PWA -->
-    <link rel="manifest" href="/site.webmanifest" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
 
-    <!-- Meta tags dinamici gestiti da react-helmet -->
-  </head>
+  <!-- Manutenzione -->
+  <meta name="robots" content="noindex, nofollow" />
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <main>
+    <section class="container">
+
+      <h1>503: Service Migrating</h1>
+      <p>Il mio portfolio sta cambiando pelle. Dopo tre anni di sviluppo e il recente conseguimento di nuove
+        certificazioni tecniche (Linux LPI, Docker), sto ristrutturando il sito per riflettere il mio attuale stack
+        tecnologico e la mia esperienza come sviluppatore Full-Stack. Tornerò online a breve con una vetrina
+        totalmente rinnovata e più professionale.</p>
+
+    </section>
+    <section>
+      <a href="https://github.com/Smailen5" target="_blank" rel="noreferrer noopener">
+        <span class="social-links">GitHub</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/smailen-vargas/" target="_blank" rel="noreferrer noopener">
+        <span class="social-links">Linkedin</span>
+      </a>
+
+      <a href="mailto:job@smailenvargas.com">
+        <span class="social-links">Inviami una mail</span>
+      </a>
+    </section>
+
+    <p>job@smailenvargas.com</p>
+
+  </main>
+
+  <footer>
+    <p>HTTP Status: 503 Service Unavailable (Maintenance Mode)</p>
+    <p>Hosted with ❤️ on Netlify | Domain managed via Cloudflare</p>
+  </footer>
+</body>
+
 </html>
