@@ -7,6 +7,7 @@
     "dev": "vite --host",
     "build": "vite build --minify",
     "preview": "vite preview",
+    "prepare": "husky",
     "lint:check": "eslint . --ext js,jsx,ts,tsx",
     "lint:fix": "eslint . --ext js,jsx,ts,tsx --fix",
     "format:check": "prettier --check .",
@@ -23,6 +24,8 @@
     "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^21.2.1",
+    "@commitlint/config-conventional": "^21.2.0",
     "@eslint/js": "^9.36.0",
     "@tailwindcss/vite": "^4.1.14",
     "@tanstack/router-plugin": "^1.133.32",
@@ -40,6 +43,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.23",
+    "husky": "^9.1.7",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.14",
     "tailwindcss": "^4.1.14",
