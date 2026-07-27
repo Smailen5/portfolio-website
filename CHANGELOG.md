@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.4.1](https://github.com/Smailen5/portfolio-website/compare/v5.4.0...v5.4.1) (2026-07-27)
+
+
+### Chores
+
+* aggiorna template issue e allinea a standard ([#127](https://github.com/Smailen5/portfolio-website/issues/127)) ([46045f5](https://github.com/Smailen5/portfolio-website/commit/46045f521605bad8d7932c0dff7f21597ac1c681))
+* aggiorna template pull request e allinea a standard ([#129](https://github.com/Smailen5/portfolio-website/issues/129)) ([96afb7b](https://github.com/Smailen5/portfolio-website/commit/96afb7beebf3ee47f9f756407a6b7ab5183430d7))
+* aggiunge file AGENTS.md, CONVENTION.md e struttura .opencode ([#132](https://github.com/Smailen5/portfolio-website/issues/132)) ([b043846](https://github.com/Smailen5/portfolio-website/commit/b0438464e5abe73b00f495c0957e544b21a1d6c6))
+* aggiungi husky e commitlint ([#128](https://github.com/Smailen5/portfolio-website/issues/128)) ([a0166d1](https://github.com/Smailen5/portfolio-website/commit/a0166d17520dec08b91318fee1d3173063257ba1))
+* migra a release-please e configura CI/CD ([#125](https://github.com/Smailen5/portfolio-website/issues/125)) ([7f8b84e](https://github.com/Smailen5/portfolio-website/commit/7f8b84ed269f1d4b9b6e7dcbd06acdfaec98f606))
+* ottimizza hook per commit e pre-push ([#133](https://github.com/Smailen5/portfolio-website/issues/133)) ([4614bc8](https://github.com/Smailen5/portfolio-website/commit/4614bc82891cb0befd0ac1bcc3af7ed7069ce8dd))
+* rimuove template pr non utilizzati ([#130](https://github.com/Smailen5/portfolio-website/issues/130)) ([c6354e3](https://github.com/Smailen5/portfolio-website/commit/c6354e35b6ab23091f494cbaed652d2336d6ce85))
+
+
+### Refactoring
+
+* 🔄 aggiunge il caricamento lazy per le immagini nel componente CardProject ([76d9a6a](https://github.com/Smailen5/portfolio-website/commit/76d9a6ab7791639781068d943a5dac3514fbb98b))
+* 🔄 disabilita i link di download nel componente CurriculumDownload ([b8248dc](https://github.com/Smailen5/portfolio-website/commit/b8248dce551f4813d36051c891b0d3eb3ed569f1))
+* 🔄 migliora la gestione dei nomi dei progetti nel componente CardProject ([79b0821](https://github.com/Smailen5/portfolio-website/commit/79b08219907d08cf40e63d9dfbfd126abbdba9b5))
+* 🔄 migliora la gestione delle immagini e semplifica il rendering nel componente CardProject ([a3326a2](https://github.com/Smailen5/portfolio-website/commit/a3326a284cc85f7d2e8ac972426aefc3c3916f18))
+* 🔄 migliora la gestione delle tecnologie nel componente CardProject ([75813d9](https://github.com/Smailen5/portfolio-website/commit/75813d9792113e47e107c88b8800c4518b1c73e4))
+* 🔄 migliora la tipizzazione e l'accessibilità nel componente CardProject ([0750774](https://github.com/Smailen5/portfolio-website/commit/0750774d5a5cdda897f1a046c5cba033e1cd5423))
+* 🔄 semplifica il rendering e migliora l'accessibilità nel componente CardProject ([9445a79](https://github.com/Smailen5/portfolio-website/commit/9445a7969cf33a9132aff26fc649653e770f3eb7))
+
 ## [5.4.0](https://github.com/Smailen5/portfolio-website/compare/v5.3.1...v5.4.0) (2025-12-03)
 
 
