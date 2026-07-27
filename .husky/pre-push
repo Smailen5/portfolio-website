@@ -1,2 +1,2 @@
 pnpm lint:check
-pnpm build
+pnpm type-check
