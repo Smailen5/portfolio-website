@@ -13,5 +13,5 @@ eslint.config.js
 .prettierrc
 pnpm-lock.yaml
 CHANGELOG.md
-AGENTs.md
+AGENTS.md
 CONVENTION.md
