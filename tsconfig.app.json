@@ -6,12 +6,7 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "paths": {
-      "@/*": ["./src/*"],
-      "@components/*": ["./src/components/*"],
-      "@features/*": ["./src/features/*"],
-      "@shared/*": ["./src/shared/*"],
-      "@pages/*": ["./src/pages/*"],
-      "@server/*": ["./src/server/*"]
+      "@/*": ["./src/*"]
     },
 
     /* Bundler mode */
@@ -28,5 +23,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "router.tsx"]
+  "include": ["src"]
 }
