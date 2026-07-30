@@ -12,7 +12,7 @@
     "lint:fix": "eslint . --ext js,jsx,ts,tsx --fix",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write .",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.node.json"
   },
   "dependencies": {
     "@tanstack/react-router": "^1.132.23",
