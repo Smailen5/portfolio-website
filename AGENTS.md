@@ -11,8 +11,8 @@ pnpm preview          # Preview build locale
 
 **Verifica (pre-push):**
 ```bash
-pnpm lint:check       # Controllo ESLint
-pnpm type-check       # TypeScript type checking (noEmit)
+pnpm lint             # Controllo ESLint
+pnpm typecheck        # TypeScript type checking (noEmit)
 ```
 
 La build produzione (`pnpm build`) viene eseguita in CI.
