@@ -1,4 +1,4 @@
-import { ENDPOINTS } from '@/shared/constants/api';
+import { GITHUB_README_FOLDER } from '@/shared/constants/api';
 import { CardProjectProps } from '@/shared/types/projects';
 import { nameCorrect } from '@/shared/utils/nameCorrect';
 import { useMemo } from 'react';
@@ -27,7 +27,7 @@ export const CardProject = ({
     return [...technologies].sort((a, b) => a.localeCompare(b));
   }, [technologies]);
 
-  const projectUrl = `${ENDPOINTS.GITHUB.README.FOLDER}${nameFolder}`;
+  const projectUrl = `${GITHUB_README_FOLDER}${nameFolder}`;
   const formattedName = nameCorrect(name);
 
   return (
