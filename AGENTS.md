@@ -41,13 +41,14 @@ pnpm format:fix       # Formattazione Prettier
 - `routeTree.gen.ts` - generato automaticamente da TanStack Router
 
 **Path aliases:**
+
+Il progetto usa un solo alias: `@/*` mappa a `./src/*`.
+
 ```typescript
 import Component from '@/components/Component'
-import Shared from '@shared/Shared'
-import Feature from '@features/Feature'
 ```
 
-Configurati in `tsconfig.json` e `vite.config.ts`.
+Configurato in `tsconfig.app.json` (`compilerOptions.paths`) e risolto da Vite tramite il plugin `vite-tsconfig-paths` in `vite.config.ts`.
 
 ## CI/CD e Deployment
 
