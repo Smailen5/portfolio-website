@@ -9,12 +9,13 @@ pnpm build            # Build produzione con minificazione
 pnpm preview          # Preview build locale
 ```
 
-**Verifica (ordine pre-push):**
+**Verifica (pre-push):**
 ```bash
 pnpm lint:check       # Controllo ESLint
 pnpm type-check       # TypeScript type checking (noEmit)
-pnpm build            # Build produzione
 ```
+
+La build produzione (`pnpm build`) viene eseguita in CI.
 
 **Fix automatici:**
 ```bash
@@ -54,7 +55,7 @@ Configurato in `tsconfig.app.json` (`compilerOptions.paths`) e risolto da Vite t
 
 **CI/CD:**
 - CI valida titolo PR con conventional commit (max 72 caratteri, descrittivo per changelog/release)
-- CI esegue lint, build, type-check su pull request
+- CI esegue lint, type-check, build su pull request
 
 **Release:**
 - release-please automatico su `main` e branch `v[0-9]*` (es. `v3.0.x` per hotfix)
