@@ -29,11 +29,11 @@ jobs:
       - name: Lint
         run: pnpm lint:check
 
-      - name: Build
-        run: pnpm build
-
       - name: Type Check
         run: pnpm type-check
+
+      - name: Build
+        run: pnpm build
 
   validate-pr-title:
     runs-on: ubuntu-latest
