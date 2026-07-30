@@ -1,8 +1,8 @@
+import { CDN_URL } from '@/shared/constants/api';
+
 export const fetchProjects = async () => {
   try {
-    const response = await fetch(
-      'https://portfolio-cdn.netlify.app/projects.json'
-    );
+    const response = await fetch(CDN_URL);
 
     if (!response.ok) throw new Error(`Richiesta fallita: ${response.status}`);
 
