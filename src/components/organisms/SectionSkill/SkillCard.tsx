@@ -31,7 +31,7 @@ export const SkillCard = ({ name, icon, carousel }: SkillCardProps) => {
   if (carousel) {
     return (
       <div className="bg-base-300 rounded-md p-2 shadow-md">
-        <img src={icon} alt={name + 'icon'} className={`${iconSize}`} />
+        <img src={icon} alt={`${name} icon`} className={`${iconSize}`} />
       </div>
     );
   }
@@ -42,7 +42,7 @@ export const SkillCard = ({ name, icon, carousel }: SkillCardProps) => {
       data-tip={name}
     >
       <p className="text-primary font-semibold uppercase md:hidden">{name}</p>
-      <img src={icon} alt={name + 'icon'} className={`${iconSize}`} />
+      <img src={icon} alt={`${name} icon`} className={`${iconSize}`} />
     </li>
   );
 };
