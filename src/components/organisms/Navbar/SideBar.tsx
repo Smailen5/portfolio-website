@@ -45,7 +45,6 @@ export const SideBar = ({ isOpen, setIsOpen }: SideBarProps) => {
       {/* Contenitore principale della SideBar */}
       <div
         role="dialog"
-        aria-modal="true"
         id="sidebar"
         aria-hidden={!isOpen}
         className={`bg-base-200 fixed inset-y-0 top-0 right-0 z-20 h-screen w-[70%] transform shadow-lg ${mounted ? 'transition-transform duration-300 ease-in-out' : ''}lg:hidden ${
