@@ -38,7 +38,7 @@ export const Navbar = () => {
 
             {/* Menu Mobile: Bottone menu + SideBar */}
             <div className="lg:hidden">
-              <button onClick={() => setIsOpen(true)} className="btn">
+              <button onClick={() => setIsOpen(true)} aria-expanded={isOpen} aria-controls='sidebar' className="btn" aria-label='Apri menu'>
                 Menu
               </button>
 
