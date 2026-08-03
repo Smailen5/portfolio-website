@@ -5,6 +5,7 @@
     dark --prefersdark;
   darkmode: 'data-theme';
   root: ':root';
+  /* DaisyUI necessita queste chiavi anche se con valori vuoti, non rimuovere `include`, `exclude` o `prefix` */
   include: ;
   exclude: ;
   prefix: ''; /* Attenzione a non lasciare vuoto questo campo senza "" */
