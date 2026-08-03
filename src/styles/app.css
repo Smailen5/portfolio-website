@@ -5,8 +5,8 @@
     dark --prefersdark;
   darkmode: 'data-theme';
   root: ':root';
-  include:;
-  exclude:;
+  include: ;
+  exclude: ;
   prefix: ''; /* Attenzione a non lasciare vuoto questo campo senza "" */
   logs: true;
 }
