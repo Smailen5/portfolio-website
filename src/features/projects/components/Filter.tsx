@@ -62,7 +62,8 @@ export const Filter = ({
       if (!project.technologies || project.technologies.length === 0)
         return false;
 
-      return project.technologies.includes(technology.toLowerCase());
+      const technologiesLower = project.technologies.map(t => t.toLowerCase());
+      return technologiesLower.includes(technology.toLowerCase());
     });
     setFilteredProject(filteredProjects);
     setSelectedTechnology(technology);
