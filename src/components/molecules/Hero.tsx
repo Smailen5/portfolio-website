@@ -14,44 +14,42 @@ import Separator from '../atoms/Separator';
 export const Hero = () => {
   return (
     <Section>
-      <main className="">
-        {/* presentazione */}
-        <header className="">
-          <p className="text-4xl">
-            <span className="animate-typing text-base-content w-fit overflow-hidden border-r-2 font-mono tracking-wide whitespace-nowrap">
-              {'<Hello World>'}
-            </span>{' '}
-            sono
-          </p>
-
-          <Separator />
-
-          <h2
-            className="text-primary lg:tooltip text-6xl font-bold"
-            data-tip="Si, il mio nome significa 'sorridi sempre'! 😊"
-          >
-            Smailen Vargas
-          </h2>
-        </header>
+      {/* presentazione */}
+      <header className="">
+        <p className="text-4xl">
+          <span className="animate-typing text-base-content w-fit overflow-hidden border-r-2 font-mono tracking-wide whitespace-nowrap">
+            {'<Hello World>'}
+          </span>{' '}
+          sono
+        </p>
 
         <Separator />
 
-        <p className="text-3xl font-semibold">Frontend developer</p>
+        <h2
+          className="text-primary lg:tooltip text-6xl font-bold"
+          data-tip="Si, il mio nome significa 'sorridi sempre'! 😊"
+        >
+          Smailen Vargas
+        </h2>
+      </header>
 
-        <Separator />
+      <Separator />
 
-        {/* call to action */}
-        <nav className="md:flex-star flex flex-col flex-wrap gap-4 md:flex-row">
-          <Link to="/contact" className="btn btn-xl md:btn-lg">
-            Contattami
-          </Link>
-          <Link to="/projects" className="btn btn-primary btn-xl md:btn-lg">
-            Progetti
-          </Link>
-        </nav>
+      <p className="text-3xl font-semibold">Frontend developer</p>
 
-        <Separator />
-      </main>
+      <Separator />
+
+      {/* call to action */}
+      <nav className="md:flex-star flex flex-col flex-wrap gap-4 md:flex-row">
+        <Link to="/contact" className="btn btn-xl md:btn-lg">
+          Contattami
+        </Link>
+        <Link to="/projects" className="btn btn-primary btn-xl md:btn-lg">
+          Progetti
+        </Link>
+      </nav>
+
+      <Separator />
     </Section>
   );
 };
