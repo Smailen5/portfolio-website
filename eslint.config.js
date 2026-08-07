@@ -72,6 +72,7 @@ export default [
 
       // Tailwindcss
       ...eslintPluginTailwindcss.configs.recommended.rules,
+      "tailwindcss/classnames-order": "off",
 
       // TypeScript
       "@typescript-eslint/no-unused-vars": "error",
