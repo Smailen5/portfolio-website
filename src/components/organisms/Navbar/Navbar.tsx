@@ -58,7 +58,6 @@ export const Navbar = () => {
                   <Link
                     key={link.params}
                     to={link.linkTo}
-                    params={link.params}
                     className="capitalize"
                   >
                     {link.params}
