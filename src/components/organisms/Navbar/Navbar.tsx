@@ -56,11 +56,11 @@ export const Navbar = () => {
               <nav className="flex items-center gap-4">
                 {NAVIGATION_LINKS.map(link => (
                   <Link
-                    key={link.params}
+                    key={link.label}
                     to={link.linkTo}
                     className="capitalize"
                   >
-                    {link.params}
+                    {link.label}
                   </Link>
                 ))}
                 <CurriculumDownload />
