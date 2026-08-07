@@ -11,10 +11,7 @@ interface ThemeContextType {
 
 const defaultTheme: Theme = 'light';
 
-const ThemeContext = createContext<ThemeContextType>({
-  theme: defaultTheme,
-  setTheme: () => null,
-});
+const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 interface ThemeProviderProps {
   children: React.ReactNode;
