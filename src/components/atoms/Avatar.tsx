@@ -44,7 +44,7 @@ export const Avatar = ({ name }: { name?: string }) => {
         <div
           role="img"
           aria-label={`${name ? `Avatar di ${name}` : 'Avatar'}`}
-          className="bg-accent-content text-accent flex h-full w-full items-center justify-center rounded-full"
+          className="bg-accent-content text-accent flex size-full items-center justify-center rounded-full"
         >
           {initialName}
         </div>

@@ -18,7 +18,6 @@ export const ToggleTheme = () => {
         id="theme-toggle"
         aria-label="Cambia tema"
         type="checkbox"
-        className="theme-controller"
         value="synthwave"
         onChange={() => setTheme(theme === 'light' ? 'dark' : 'light')}
       />

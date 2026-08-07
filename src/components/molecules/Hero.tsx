@@ -17,7 +17,7 @@ export const Hero = () => {
       {/* presentazione */}
       <header className="">
         <p className="text-4xl">
-          <span className="animate-typing text-base-content w-fit overflow-hidden border-r-2 font-mono tracking-wide whitespace-nowrap">
+          <span className="text-base-content w-fit overflow-hidden border-r-2 font-mono tracking-wide whitespace-nowrap">
             {'<Hello World>'}
           </span>{' '}
           sono
@@ -40,7 +40,7 @@ export const Hero = () => {
       <Separator />
 
       {/* call to action */}
-      <nav className="md:flex-star flex flex-col flex-wrap gap-4 md:flex-row">
+      <nav className="flex flex-col flex-wrap gap-4 md:flex-row">
         <Link to="/contact" className="btn btn-xl md:btn-lg">
           Contattami
         </Link>
