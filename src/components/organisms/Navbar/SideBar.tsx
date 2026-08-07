@@ -65,13 +65,12 @@ export const SideBar = ({ isOpen, setIsOpen }: SideBarProps) => {
           <nav className="flex flex-col gap-4">
             {NAVIGATION_LINKS.map(link => (
               <Link
-                key={link.params}
+                key={link.label}
                 to={link.linkTo}
-                params={link.params}
                 className="capitalize"
                 onClick={closeSideBar}
               >
-                {link.params}
+                {link.label}
               </Link>
             ))}
             <CurriculumDownload closeSideBar={closeSideBar} />
