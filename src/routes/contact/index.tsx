@@ -24,7 +24,7 @@ function ContactPage() {
             aria-labelledby="contact-heading"
             className="space-y-4 lg:w-1/2"
           >
-            <h3 className="sr-only">Contattami</h3>
+            <h1 className="sr-only">Contattami</h1>
             <p>
               Se hai domande, richieste di collaborazione, o semplicemente vuoi
               parlare di React, non esitare a contattarmi. Sarò felice di
