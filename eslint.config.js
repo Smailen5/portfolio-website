@@ -57,7 +57,7 @@ export default [
       react,
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh, prettier,
-      "@typescript-eslint": tseslint, react,
+      "@typescript-eslint": tseslint,
       tailwindcss: eslintPluginTailwindcss,
     },
     rules: {
