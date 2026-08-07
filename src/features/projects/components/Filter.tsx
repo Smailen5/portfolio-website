@@ -62,7 +62,9 @@ export const Filter = ({
       if (!project.technologies || project.technologies.length === 0)
         return false;
 
-      const normalizeTechnologies = project.technologies.map(t => t.toLowerCase());
+      const normalizeTechnologies = project.technologies.map(t =>
+        t.toLowerCase()
+      );
       return normalizeTechnologies.includes(technology.toLowerCase());
     });
     setFilteredProject(filteredProjects);
