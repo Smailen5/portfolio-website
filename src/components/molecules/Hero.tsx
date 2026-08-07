@@ -44,7 +44,7 @@ export const Hero = () => {
         <Link to="/contact" className="btn btn-xl md:btn-lg">
           Contattami
         </Link>
-        <Link to="/projects" className="btn btn-primary btn-xl md:btn-lg">
+        <Link to="/projects" className="btn btn-xl btn-primary md:btn-lg">
           Progetti
         </Link>
       </nav>
