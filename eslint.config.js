@@ -74,19 +74,19 @@ export default [
       ...eslintPluginTailwindcss.configs.recommended.rules,
       "tailwindcss/classnames-order": "off",
       "tailwindcss/no-custom-classname": [
-        "warn", 
+        "warn",
         {
           whitelist: [
-          'animate-scroll',
-          'swap(?:-.*)?',
-          'btn(?:-.*)?',
-          'dropdown(?:-content)?',
-          'menu',
-          'rounded-box',
-          'tooltip(?:-.*)?',
-          'card(?:-.*)?',
-          'badge(?:-outline)?',
-          'link(?:-(primary|accent))?',
+            'animate-scroll',
+            'swap(?:-.*)?',
+            'btn(?:-.*)?',
+            'dropdown(?:-content)?',
+            'menu',
+            'rounded-box',
+            'tooltip(?:-.*)?',
+            'card(?:-.*)?',
+            'badge(?:-outline)?',
+            'link(?:-(primary|accent))?',
         ],
       },
     ],
@@ -116,6 +116,6 @@ export default [
     },
   },
   {
-    ignores: ["dist", "eslint.config.js", "test-db.js", ".netlify/**/*"],
+    ignores: ["dist", "test-db.js", ".netlify/**/*"],
   },
 ];
