@@ -5,6 +5,7 @@ import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 import prettier from "eslint-plugin-prettier";
+import eslintPluginTailwindcss from 'eslint-plugin-tailwindcss'
 
 export default [
   js.configs.recommended,
@@ -57,6 +58,7 @@ export default [
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh, prettier,
       "@typescript-eslint": tseslint, react,
+      tailwindcss: eslintPluginTailwindcss,
     },
     rules: {
       // Recommended rules
@@ -67,6 +69,9 @@ export default [
 
       // Prettier
       "prettier/prettier": "warn",
+
+      // Tailwindcss
+      ...eslintPluginTailwindcss.configs.recommended.rules,
 
       // TypeScript
       "@typescript-eslint/no-unused-vars": "error",
@@ -87,6 +92,9 @@ export default [
       react: {
         version: "detect",
       },
+      tailwindcss: {
+        cssConfigPath: './src/styles/app.css'
+      }
     },
   },
   {
