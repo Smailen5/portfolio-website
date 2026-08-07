@@ -23,6 +23,7 @@ function ProjectPage() {
         ogUrl="projects"
       />
       <Layout classContent="flex flex-col flex-nowrap gap-20 px-6 pb-14 pt-20 md:items-center">
+        <h1 className="sr-only">Progetti</h1>
         <HeaderProject />
         <SectionProjects projects={projects} />
       </Layout>
