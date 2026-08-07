@@ -55,7 +55,7 @@ export const SideBar = ({ isOpen, setIsOpen }: SideBarProps) => {
           <div className="flex items-center justify-end pr-2 pb-6">
             <button
               onClick={() => setIsOpen(false)}
-              className="btn btn-error btn-circle"
+              className="btn btn-circle btn-error"
               aria-label="Chiudi menu"
             >
               <img src={CloseIcon} alt="close" />

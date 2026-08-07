@@ -31,7 +31,7 @@ export const SkillsCarousel = () => {
     <>
       <H2 textCenter>Le tecnologie che uso</H2>
 
-      <div className="mx-auto w-full overflow-x-hidden md:max-w-[976px]">
+      <div className="mx-auto w-full overflow-x-hidden md:max-w-244">
         <div className="animate-scroll inline-flex">
           {duplicatedSkills.map((skill, index) => (
             <div

@@ -73,7 +73,7 @@ export const CardProject = ({
         <div className="flex justify-center">
           <a
             href={projectUrl}
-            className="btn btn-primary btn-xl md:btn-lg w-full"
+            className="btn btn-xl btn-primary md:btn-lg w-full"
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Visualizza i dettagli di ${formattedName} su GitHub`}

@@ -38,7 +38,7 @@ export const SkillCard = ({ name, icon, carousel }: SkillCardProps) => {
 
   return (
     <li
-      className="lg:tooltip bg-base-300 mb-4 flex items-center justify-between rounded-md p-2 shadow-md lg:cursor-pointer"
+      className="bg-base-300 lg:tooltip mb-4 flex items-center justify-between rounded-md p-2 shadow-md lg:cursor-pointer"
       data-tip={name}
     >
       <p className="text-primary font-semibold uppercase md:hidden">{name}</p>

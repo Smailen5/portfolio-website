@@ -57,7 +57,7 @@ export default [
       react,
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh, prettier,
-      "@typescript-eslint": tseslint, react,
+      "@typescript-eslint": tseslint,
       tailwindcss: eslintPluginTailwindcss,
     },
     rules: {
@@ -72,6 +72,24 @@ export default [
 
       // Tailwindcss
       ...eslintPluginTailwindcss.configs.recommended.rules,
+      "tailwindcss/classnames-order": "off",
+      "tailwindcss/no-custom-classname": [
+        "warn",
+        {
+          whitelist: [
+            'animate-scroll',
+            'swap(?:-.*)?',
+            'btn(?:-.*)?',
+            'dropdown(?:-content)?',
+            'menu',
+            'rounded-box',
+            'tooltip(?:-.*)?',
+            'card(?:-.*)?',
+            'badge(?:-outline)?',
+            'link(?:-(primary|accent))?',
+        ],
+      },
+    ],
 
       // TypeScript
       "@typescript-eslint/no-unused-vars": "error",
@@ -93,11 +111,11 @@ export default [
         version: "detect",
       },
       tailwindcss: {
-        cssConfigPath: './src/styles/app.css'
+        cssConfigPath: './src/styles/app.css',
       }
     },
   },
   {
-    ignores: ["dist", "eslint.config.js", "test-db.js", ".netlify/**/*"],
+    ignores: ["dist", "test-db.js", ".netlify/**/*"],
   },
 ];

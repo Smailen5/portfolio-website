@@ -17,7 +17,7 @@ import { Layout } from '../molecules/Layout';
 const Footer = () => {
   return (
     <Layout>
-      <footer className="bg-background flex w-full flex-row items-center justify-center text-center">
+      <footer className="flex w-full flex-row items-center justify-center text-center">
         <div className="flex w-full flex-col gap-4 px-6 py-4 md:flex-row md:justify-between">
           <div className="flex justify-center gap-4 md:order-2">
             <p className="hidden md:block">Powered by</p>
@@ -38,7 +38,7 @@ const Footer = () => {
                   href={'https://icons8.com'}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary link font-bold"
+                  className="link text-primary font-bold"
                 >
                   Icons8
                 </a>

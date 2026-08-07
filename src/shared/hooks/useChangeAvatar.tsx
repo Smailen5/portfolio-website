@@ -9,7 +9,12 @@ const useChangeAvatar = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setAnimation('animate-appearance-out');
+      /* 
+        TODO: le classi `animate-appearance-out`, `animate-appearance-in` non esistono piu'
+        (rimosse da un refactor precedente). l'animazione dell'avatar e' disabilitata.
+        Ripristinare definendo le animazioni in src/styles/app.css o rimuovere logica.
+        */
+      setAnimation('');
       // fa apparire il nuovo avatar
       setTimeout(() => {
         // filtra le immagini per non ripetere l'immagine corrente
@@ -19,7 +24,8 @@ const useChangeAvatar = () => {
 
         const randomIndex = Math.floor(Math.random() * filteredImages.length);
         setCurrentAvatar(filteredImages[randomIndex]);
-        setAnimation('animate-appearance-in');
+        //! anche qui va visto cosa fare con la classe
+        setAnimation('');
       }, 50);
     }, 5000);
     return () => clearInterval(interval);

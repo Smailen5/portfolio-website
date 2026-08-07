@@ -28,7 +28,7 @@ export const SkillsSection = ({ noTitle }: SkillsSectionProps) => {
 
       <Separator />
 
-      <section className="flex h-full w-full flex-col flex-wrap gap-12 md:grid md:grid-cols-3">
+      <section className="flex size-full flex-col flex-wrap gap-12 md:grid md:grid-cols-3">
         <SkillCategory section={language} title="Linguaggi" />
         <SkillCategory section={framework} title="Framework e Librerie" />
         <SkillCategory section={utility} title="Strumenti di Sviluppo" />

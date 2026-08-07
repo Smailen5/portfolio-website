@@ -18,7 +18,7 @@ export const CurriculumDownload = ({
           Curriculum
         </summary>
 
-        <ul className="menu dropdown-content bg-base-100 rounded-box z-10 w-52 p-2 shadow-sm">
+        <ul className="dropdown-content menu rounded-box bg-base-100 z-10 w-52 p-2 shadow-sm">
           <li>
             <a
               // href="/assets/curriculum/CV-Smailen-Vargas-Frontend-IT.pdf"

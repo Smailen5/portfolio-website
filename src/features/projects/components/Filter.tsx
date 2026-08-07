@@ -75,7 +75,7 @@ export const Filter = ({
   return (
     <section
       id="filter"
-      className="bg-secondary rounded-box flex w-full flex-col items-start gap-8 p-2 md:flex-row md:items-center md:justify-between md:gap-0"
+      className="rounded-box bg-secondary flex w-full flex-col items-start gap-8 p-2 md:flex-row md:items-center md:justify-between md:gap-0"
     >
       <details
         className="dropdown"
@@ -83,7 +83,7 @@ export const Filter = ({
         onToggle={e => setIsOpen(e.currentTarget.open)}
       >
         <summary className="btn m-1">Seleziona una tecnologia</summary>
-        <ul className="menu dropdown-content bg-base-100 rounded-box z-10 w-52 p-3 shadow-sm">
+        <ul className="dropdown-content menu rounded-box bg-base-100 z-10 w-52 p-3 shadow-sm">
           {technologies.map(tech => {
             return (
               <li key={tech}>
