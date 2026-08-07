@@ -1,5 +1,3 @@
-import { Link } from '@tanstack/react-router';
-
 /**
  * Componente HeaderProject - Intestazione pagina progetti
  *
@@ -28,32 +26,32 @@ export const HeaderProject = () => {
         </p>
         <p>
           Vuoi scoprire di più? Visita il mio{' '}
-          <Link
-            to="https://www.frontendmentor.io/profile/Smailen5"
+          <a
+            href="https://www.frontendmentor.io/profile/Smailen5"
             target="_blank"
             rel="noopener noreferrer"
             className="link link-primary"
           >
             profilo Frontend Mentor
-          </Link>{' '}
+          </a>{' '}
           per vedere le sfide completate o il mio{' '}
-          <Link
-            to="https://github.com/Smailen5"
+          <a
+            href="https://github.com/Smailen5"
             target="_blank"
             rel="noopener noreferrer"
             className="link link-primary"
           >
             profilo GitHub
-          </Link>{' '}
+          </a>{' '}
           per tutti i progetti, incluso il{' '}
-          <Link
-            to="https://github.com/Smailen5/portfolio-website"
+          <a
+            href="https://github.com/Smailen5/portfolio-website"
             target="_blank"
             rel="noopener noreferrer"
             className="link link-primary"
           >
             codice sorgente di questo sito
-          </Link>
+          </a>
           .
         </p>
       </header>
