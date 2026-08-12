@@ -134,3 +134,38 @@
   animation: scroll 20s linear infinite;
   will-change: transform;
 }
+
+/* Animazione fade per cambio avatar */
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-out {
+  animation: fade-out 300ms forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 300ms forwards;
+}
+
+/* Rispetta la preferenza di sistema per ridurre le animazioni */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-out,
+  .animate-fade-in {
+    animation: none;
+  }
+}

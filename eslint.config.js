@@ -49,6 +49,7 @@ export default [
         HTMLDivElement: "readonly",
         HTMLButtonElement: "readonly",
         MouseEvent: "readonly",
+        MediaQueryListEvent: "readonly",
         Node: "readonly",
         Response: "readonly",
       },
