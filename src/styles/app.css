@@ -161,3 +161,11 @@
 .animate-fade-in {
   animation: fade-in 300ms forwards;
 }
+
+/* Rispetta la preferenza di sistema per ridurre le animazioni */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-out,
+  .animate-fade-in {
+    animation: none;
+  }
+}
