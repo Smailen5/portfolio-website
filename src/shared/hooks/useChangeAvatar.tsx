@@ -1,35 +1,38 @@
 import { avatarImages } from '@/data/images';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+
+const FADE_DURATION = 300;
+const CHANGE_INTERVAL = 5000;
 
 const useChangeAvatar = () => {
-  // gestisce le immagini
   const [currentAvatar, setCurrentAvatar] = useState(avatarImages[0]);
-  // gestisce l'animazione del nuovo avatar
   const [animation, setAnimation] = useState('');
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      /* 
-        TODO: le classi `animate-appearance-out`, `animate-appearance-in` non esistono piu'
-        (rimosse da un refactor precedente). l'animazione dell'avatar e' disabilitata.
-        Ripristinare definendo le animazioni in src/styles/app.css o rimuovere logica.
-        */
-      setAnimation('');
-      // fa apparire il nuovo avatar
-      setTimeout(() => {
-        // filtra le immagini per non ripetere l'immagine corrente
-        const filteredImages = avatarImages.filter(
-          image => image !== currentAvatar
-        );
+      setAnimation('animate-fade-out');
 
-        const randomIndex = Math.floor(Math.random() * filteredImages.length);
-        setCurrentAvatar(filteredImages[randomIndex]);
-        //! anche qui va visto cosa fare con la classe
-        setAnimation('');
-      }, 50);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [currentAvatar]);
+      timeoutRef.current = setTimeout(() => {
+        setCurrentAvatar(previousAvatar => {
+          const filteredImages = avatarImages.filter(
+            image => image !== previousAvatar
+          );
+          const randomIndex = Math.floor(Math.random() * filteredImages.length);
+          return filteredImages[randomIndex];
+        });
+        setAnimation('animate-fade-in');
+      }, FADE_DURATION);
+    }, CHANGE_INTERVAL);
+
+    return () => {
+      clearInterval(interval);
+      if (timeoutRef.current !== null) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
+
   return { currentAvatar, animation };
 };
 
