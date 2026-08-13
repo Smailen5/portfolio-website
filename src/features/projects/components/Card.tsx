@@ -1,4 +1,3 @@
-import { GITHUB_README_FOLDER } from '@/shared/constants/api';
 import { CardProjectProps } from '@/shared/types/projects';
 import { nameCorrect } from '@/shared/utils/nameCorrect';
 import { useMemo } from 'react';
@@ -20,14 +19,14 @@ export const CardProject = ({
   description,
   technologies,
   imageUrl,
-  nameFolder,
+  repoUrl,
 }: CardProjectProps) => {
   const sortedTechnologies = useMemo(() => {
     if (!technologies) return [];
     return [...technologies].sort((a, b) => a.localeCompare(b));
   }, [technologies]);
 
-  const projectUrl = `${GITHUB_README_FOLDER}${nameFolder}`;
+  const projectUrl = `${repoUrl}`;
   const formattedName = nameCorrect(name);
 
   return (
