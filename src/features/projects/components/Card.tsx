@@ -1,4 +1,4 @@
-import { GITHUB_README_FOLDER } from '@/shared/constants/api';
+import { API_URL } from '@/shared/constants/api';
 import { CardProjectProps } from '@/shared/types/projects';
 import { nameCorrect } from '@/shared/utils/nameCorrect';
 import { useMemo } from 'react';
@@ -19,16 +19,17 @@ export const CardProject = ({
   name,
   description,
   technologies,
-  imageUrl,
-  nameFolder,
+  imagesUrl,
+  repoUrl,
 }: CardProjectProps) => {
   const sortedTechnologies = useMemo(() => {
     if (!technologies) return [];
     return [...technologies].sort((a, b) => a.localeCompare(b));
   }, [technologies]);
 
-  const projectUrl = `${GITHUB_README_FOLDER}${nameFolder}`;
+  const projectUrl = `${repoUrl}`;
   const formattedName = nameCorrect(name);
+  const firstImage = imagesUrl[0] ? `${API_URL}${imagesUrl[0]}` : undefined;
 
   return (
     //* PROGETTO SINGOLO */
@@ -41,7 +42,7 @@ export const CardProject = ({
           aria-label={`Visualizza il progetto ${formattedName} su GitHub`}
         >
           <img
-            src={imageUrl ?? ''}
+            src={firstImage}
             alt={`Screenshot del progetto ${formattedName}`}
             className="transition-all duration-300 lg:hover:scale-105"
             loading="lazy"
