@@ -2,6 +2,43 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.4.2](https://github.com/Smailen5/portfolio-website/compare/v5.4.1...v5.4.2) (2026-08-13)
+
+
+### Bug Fixes
+
+* aggiunge attributi aria alla sidebar e ai bottoni ([#157](https://github.com/Smailen5/portfolio-website/issues/157)) ([aaa05c7](https://github.com/Smailen5/portfolio-website/commit/aaa05c711ff6927c1e704a6b73f04cfd39c2779d))
+* aggiunge spazio prima di lg:hidden ([#168](https://github.com/Smailen5/portfolio-website/issues/168)) ([f073b90](https://github.com/Smailen5/portfolio-website/commit/f073b90c70b3fd2e2fb0de7a784cbef7bbbdcb6f))
+* corregge anteprima immagini e bottone dettagli ([#180](https://github.com/Smailen5/portfolio-website/issues/180)) ([714d02d](https://github.com/Smailen5/portfolio-website/commit/714d02d0ac8d7cbbd2b4906b389e49076ddfe499))
+* corregge classi Tailwind inesistenti e configura whitelist ESLint ([#171](https://github.com/Smailen5/portfolio-website/issues/171)) ([f2d9183](https://github.com/Smailen5/portfolio-website/commit/f2d9183c525c282601192db10400d2e9b88c3f8b))
+* corregge configurazione css di DaisyUI ([#159](https://github.com/Smailen5/portfolio-website/issues/159)) ([0bbe78e](https://github.com/Smailen5/portfolio-website/commit/0bbe78e14ea79cb37b6eff85d2286c2b2ac2d42f))
+* corregge filtro tecnologie in projects ([#161](https://github.com/Smailen5/portfolio-website/issues/161)) ([cb6a69e](https://github.com/Smailen5/portfolio-website/commit/cb6a69e075745657346974aa317830aecd5a4902))
+* corregge testo alt delle icone skill ([#160](https://github.com/Smailen5/portfolio-website/issues/160)) ([4d22c30](https://github.com/Smailen5/portfolio-website/commit/4d22c30c6109a622a09cddbb48c08e1dcdd56174))
+* migliora semantica html e aggiunge h1 per route ([#162](https://github.com/Smailen5/portfolio-website/issues/162)) ([466e427](https://github.com/Smailen5/portfolio-website/commit/466e42779d0bcc8b3515a3583a9eabdc7caac40f))
+* rende controllata la checkbox del toggle tema ([#173](https://github.com/Smailen5/portfolio-website/issues/173)) ([c3f9766](https://github.com/Smailen5/portfolio-website/commit/c3f97665dfb2e4aa5f3ed50038a94ec6c5163013))
+* rende efficace il controllo useTheme fuori dal provider ([#166](https://github.com/Smailen5/portfolio-website/issues/166)) ([7b1515f](https://github.com/Smailen5/portfolio-website/commit/7b1515f1ae75286705645c7cbd0c23f32b2a0b1a))
+* rimuove params stringa dai Link di navigazione ([#164](https://github.com/Smailen5/portfolio-website/issues/164)) ([97a3eb9](https://github.com/Smailen5/portfolio-website/commit/97a3eb96f00e2bb637e90b4ee7687228889a54f7))
+* ripristina animazione fade durante cambio avatar ([#174](https://github.com/Smailen5/portfolio-website/issues/174)) ([fd52dd8](https://github.com/Smailen5/portfolio-website/commit/fd52dd8dfeec1dc4b15020375931f7bc459e2b23))
+* sostituisce `srcSet` con `src` nelle icone social ([#158](https://github.com/Smailen5/portfolio-website/issues/158)) ([8e2c39f](https://github.com/Smailen5/portfolio-website/commit/8e2c39f72c6cd12a41b979fc0982c86496926b39))
+* sostituisce Link con tag a per URL esterni ([#163](https://github.com/Smailen5/portfolio-website/issues/163)) ([25710ca](https://github.com/Smailen5/portfolio-website/commit/25710ca9ccd015efa0f8df249f4f704bb11124b1))
+
+
+### Chores
+
+* aggiunge eslint-plugin-tailwindcss ([#169](https://github.com/Smailen5/portfolio-website/issues/169)) ([f103219](https://github.com/Smailen5/portfolio-website/commit/f103219f1ab6e2c2026c162191760c4af281e5db))
+* aggiunge template issue markdown per CLI ([#185](https://github.com/Smailen5/portfolio-website/issues/185)) ([47ef54a](https://github.com/Smailen5/portfolio-website/commit/47ef54abaf9cf8cd4d4cf46890e42a9918dc1bbd))
+* aggiunge variabili d'ambiente con .env e .env.example ([#137](https://github.com/Smailen5/portfolio-website/issues/137)) ([040ec63](https://github.com/Smailen5/portfolio-website/commit/040ec63bab9a68a7e25cb74b3c784c8f05a40f20))
+* allinea configurazione TypeScript, CI e commitlint ([#139](https://github.com/Smailen5/portfolio-website/issues/139)) ([eca79de](https://github.com/Smailen5/portfolio-website/commit/eca79dee1d834e70c039c29aa7be8e243f11b160))
+* rimuove checklist di controllo ([#182](https://github.com/Smailen5/portfolio-website/issues/182)) ([28e1660](https://github.com/Smailen5/portfolio-website/commit/28e16602f481ef20c049bf497fcc870b9fb68ddc))
+* rimuove codice morto non utilizzato ([#165](https://github.com/Smailen5/portfolio-website/issues/165)) ([a91f1aa](https://github.com/Smailen5/portfolio-website/commit/a91f1aa07b16099f9e527851ed86ee1f3e589ecf))
+* uniforma e semplifica gli script pnpm ([#140](https://github.com/Smailen5/portfolio-website/issues/140)) ([02af7a2](https://github.com/Smailen5/portfolio-website/commit/02af7a27342e6c3153b1b70a64ea660a81cddbee))
+
+
+### Refactoring
+
+* migra fetchProjects per chiamare server-portfolio ([#175](https://github.com/Smailen5/portfolio-website/issues/175)) ([e36be3e](https://github.com/Smailen5/portfolio-website/commit/e36be3e153285984962dddf5f99a85b847173ca5))
+* rinomina proprieta nelle interfacce ([#184](https://github.com/Smailen5/portfolio-website/issues/184)) ([614df19](https://github.com/Smailen5/portfolio-website/commit/614df19a989262a3d5143ed275b4f510d37dc9a9))
+
 ## [5.4.1](https://github.com/Smailen5/portfolio-website/compare/v5.4.0...v5.4.1) (2026-07-27)
 
 
