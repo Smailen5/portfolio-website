@@ -1,3 +1,4 @@
+import { API_URL } from '@/shared/constants/api';
 import { CardProjectProps } from '@/shared/types/projects';
 import { nameCorrect } from '@/shared/utils/nameCorrect';
 import { useMemo } from 'react';
@@ -18,7 +19,7 @@ export const CardProject = ({
   name,
   description,
   technologies,
-  imageUrl,
+  imagesUrl,
   repoUrl,
 }: CardProjectProps) => {
   const sortedTechnologies = useMemo(() => {
@@ -28,6 +29,7 @@ export const CardProject = ({
 
   const projectUrl = `${repoUrl}`;
   const formattedName = nameCorrect(name);
+  const firstImage = `${API_URL}${imagesUrl[0]}`;
 
   return (
     //* PROGETTO SINGOLO */
@@ -40,7 +42,7 @@ export const CardProject = ({
           aria-label={`Visualizza il progetto ${formattedName} su GitHub`}
         >
           <img
-            src={imageUrl ?? ''}
+            src={firstImage}
             alt={`Screenshot del progetto ${formattedName}`}
             className="transition-all duration-300 lg:hover:scale-105"
             loading="lazy"
