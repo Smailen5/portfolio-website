@@ -2,7 +2,7 @@
 name: Feature Request (CLI)
 about: Aggiungi una nuova funzionalita'
 title: 'feat: [descrizione breve]'
-labels: feature, enhancement
+labels: feat
 assignees: Smailen5
 ---
 

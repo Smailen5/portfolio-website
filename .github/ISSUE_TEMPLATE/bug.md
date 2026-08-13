@@ -1,8 +1,8 @@
 ---
-name: Bug Report (CLI)
+name: Fix (CLI)
 about: Segnala e risolvi un malfunzionamento
-title: 'bug: [descrizione breve]'
-labels: bug
+title: 'fix: [descrizione breve]'
+labels: fix
 assignees: Smailen5
 ---
 

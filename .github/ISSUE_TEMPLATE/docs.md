@@ -2,7 +2,7 @@
 name: Documentation (CLI)
 about: Aggiungi o aggiorna la documentazione
 title: 'docs: [descrizione breve]'
-labels: documentation
+labels: docs
 assignees: Smailen5
 ---
 
