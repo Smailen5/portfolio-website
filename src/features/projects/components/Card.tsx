@@ -29,7 +29,7 @@ export const CardProject = ({
 
   const projectUrl = `${repoUrl}`;
   const formattedName = nameCorrect(name);
-  const firstImage = `${imagesUrl[0]} ? ${API_URL}${imagesUrl[0]} : null }`;
+  const firstImage = imagesUrl[0] ? `${API_URL}${imagesUrl[0]}` : undefined;
 
   return (
     //* PROGETTO SINGOLO */
