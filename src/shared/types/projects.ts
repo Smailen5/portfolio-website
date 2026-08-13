@@ -2,7 +2,7 @@ export interface CardProjectProps {
   name: string;
   description: string | null;
   technologies: string[];
-  imageUrl: string | null;
+  imagesUrl: string[];
   repoUrl: string;
 }
 
