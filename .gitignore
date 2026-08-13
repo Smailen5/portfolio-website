@@ -27,6 +27,7 @@ idee.md
 *.sln
 *.sw?
 .env
+.env.*.local
 .cursor
 .cursorrules
 .opencode/plans/PLAN*.md
