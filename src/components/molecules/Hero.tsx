@@ -17,7 +17,10 @@ export const Hero = () => {
       {/* presentazione */}
       <header className="">
         <p className="text-4xl">
-          <span className="text-base-content w-fit overflow-hidden border-r-2 font-mono tracking-wide whitespace-nowrap">
+          <span
+            className="text-base-content typing font-mono"
+            aria-label="<Hello World>"
+          >
             {'<Hello World>'}
           </span>{' '}
           sono
