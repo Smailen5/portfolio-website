@@ -5,7 +5,6 @@ import {
   JSON_LD_PERSON,
   MOBILE_APP_TAGS,
   OPEN_GRAPH_TAGS,
-  SITE_INFO,
 } from '@/shared/constants/metaTags';
 import { Helmet } from 'react-helmet';
 
