@@ -21,8 +21,8 @@ interface HeadProps {
  */
 export const Head = ({
   title = 'Smailen Vargas | Frontend Developer',
-  description = 'Ciao, sono Smailen Vargas, Frontend Developer specializzato in React, TypeScript e Tailwind CSS',
-  keywords = 'Smailen Vargas, Frontend Developer, React, TypeScript, Tailwind CSS, DaisyUi, Portfolio',
+  description,
+  keywords,
 }: HeadProps) => {
   return (
     <Helmet>
