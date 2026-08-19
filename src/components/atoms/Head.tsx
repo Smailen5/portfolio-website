@@ -1,6 +1,7 @@
 // src/shared/utils/Head.tsx
 
 import {
+  BASE_META_TAGS,
   JSON_LD_PERSON,
   MOBILE_APP_TAGS,
   OPEN_GRAPH_TAGS,
@@ -27,9 +28,19 @@ export const Head = ({
     <Helmet>
       {/* SEO Base */}
       <title>{title}</title>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
-      <meta name="author" content={SITE_INFO.author} />
+      {BASE_META_TAGS.map(tag => (
+        <meta
+          key={tag.name}
+          name={tag.name}
+          content={
+            tag.name === 'description' && description
+              ? description
+              : tag.name === 'keywords' && keywords
+                ? keywords
+                : tag.content
+          }
+        />
+      ))}
 
       {/* Open Graph */}
       {OPEN_GRAPH_TAGS.map(tag => (
