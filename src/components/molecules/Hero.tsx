@@ -22,7 +22,8 @@ export const Hero = () => {
             aria-label="<Hello World>"
           >
             {'<Hello World>'}
-          </span>{' '}
+          </span>
+          <br />
           sono
         </p>
 
