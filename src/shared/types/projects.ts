@@ -11,8 +11,3 @@ export interface Project extends CardProjectProps {
   readmeContent: string | null;
   version: string;
 }
-
-export type CachedProjects = {
-  projects: Project[];
-  timestamp: number;
-};

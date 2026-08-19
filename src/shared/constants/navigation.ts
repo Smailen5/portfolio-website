@@ -4,5 +4,3 @@ export const NAVIGATION_LINKS = [
   { linkTo: '/contact', label: 'contact' },
   { linkTo: '/about', label: 'about' },
 ] as const;
-
-export type NavigationLink = (typeof NAVIGATION_LINKS)[number];
