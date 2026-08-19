@@ -105,12 +105,3 @@ export const JSON_LD_PERSON = {
   description:
     'Ciao, sono Smailen Vargas, Frontend Developer specializzato in React, TypeScript e Tailwind CSS. Scopri i miei progetti e competenze.',
 } as const;
-
-// ========================================
-// Helper: Tutti i meta tags globali
-// ========================================
-export const GLOBAL_META_TAGS = [
-  ...BASE_META_TAGS,
-  ...OPEN_GRAPH_TAGS,
-  ...MOBILE_APP_TAGS,
-] as const;
