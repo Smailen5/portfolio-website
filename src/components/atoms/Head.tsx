@@ -3,6 +3,7 @@
 import {
   JSON_LD_PERSON,
   MOBILE_APP_TAGS,
+  OPEN_GRAPH_TAGS,
   SITE_INFO,
 } from '@/shared/constants/metaTags';
 import { Helmet } from 'react-helmet';
@@ -11,7 +12,6 @@ interface HeadProps {
   title?: string;
   description?: string;
   keywords?: string;
-  ogUrl?: string;
 }
 
 /**
@@ -22,7 +22,6 @@ export const Head = ({
   title = 'Smailen Vargas | Frontend Developer',
   description = 'Ciao, sono Smailen Vargas, Frontend Developer specializzato in React, TypeScript e Tailwind CSS',
   keywords = 'Smailen Vargas, Frontend Developer, React, TypeScript, Tailwind CSS, DaisyUi, Portfolio',
-  ogUrl,
 }: HeadProps) => {
   return (
     <Helmet>
@@ -33,16 +32,13 @@ export const Head = ({
       <meta name="author" content={SITE_INFO.author} />
 
       {/* Open Graph */}
-      <meta property="og:type" content="website" />
-      <meta property="og:locale" content={SITE_INFO.locale} />
-      <meta property="og:site_name" content={SITE_INFO.name} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:url" content={SITE_INFO.url + (ogUrl ? ogUrl : '')} />
-      <meta
-        property="og:image"
-        content={`${SITE_INFO.url}/images/immagine-sito.jpeg`}
-      />
+      {OPEN_GRAPH_TAGS.map(tag => (
+        <meta
+          key={tag.property}
+          property={tag.property}
+          content={tag.content}
+        />
+      ))}
 
       {/* Mobile App */}
       {MOBILE_APP_TAGS.map(tag => (
