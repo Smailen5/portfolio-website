@@ -20,6 +20,7 @@ function ProjectPage() {
         title="Progetti | Smailen Vargas"
         description="Esplora i progetti realizzati da Smailen Vargas come Frontend Developer. Scopri le tecnologie utilizzate e i risultati ottenuti."
         keywords="Smailen Vargas, Progetti, Frontend Developer, React, TypeScript, Portfolio"
+        ogUrl="/projects"
       />
       <Layout classContent="flex flex-col flex-nowrap gap-20 px-6 pb-14 pt-20 md:items-center">
         <h1 className="sr-only">Progetti</h1>
