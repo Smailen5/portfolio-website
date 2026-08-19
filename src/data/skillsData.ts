@@ -15,25 +15,6 @@ import pnpmIcon from '@/assets/icons/pnpm.svg';
 import shadcnIcon from '@/assets/icons/shadcn.svg';
 import viteIcon from '@/assets/icons/vite.svg';
 
-const icons = [
-  {
-    name: 'Javascript',
-    icon: jsIcon,
-  },
-  {
-    name: 'React',
-    icon: reactIcon,
-  },
-  {
-    name: 'Tailwind',
-    icon: tailwindIcon,
-  },
-  {
-    name: 'Git',
-    icon: gitIcon,
-  },
-];
-
 export const language = [
   {
     name: 'HTML5',
@@ -106,4 +87,3 @@ export const utility = [
     icon: netlifyIcon,
   },
 ];
-export default icons;
