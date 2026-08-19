@@ -46,7 +46,13 @@ export const Head = ({
         <meta
           key={tag.property}
           property={tag.property}
-          content={tag.content}
+          content={
+            tag.property === 'og:title' && title
+              ? title
+              : tag.property === 'og:description' && description
+                ? description
+                : tag.content
+          }
         />
       ))}
 
