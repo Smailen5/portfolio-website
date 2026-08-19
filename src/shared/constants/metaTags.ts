@@ -65,7 +65,7 @@ export const OPEN_GRAPH_TAGS = [
   },
   {
     property: 'og:url',
-    content: `${SITE_INFO.url}/images/immagine-sito.jpeg`,
+    content: `${SITE_INFO.url}`,
   },
   {
     property: 'og:image',
