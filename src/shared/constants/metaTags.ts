@@ -64,6 +64,10 @@ export const OPEN_GRAPH_TAGS = [
       'Ciao, sono Smailen Vargas, Frontend Developer specializzato in React, TypeScript e Tailwind CSS',
   },
   {
+    property: 'og:url',
+    content: `${SITE_INFO.url}/images/immagine-sito.jpeg`,
+  },
+  {
     property: 'og:image',
     content: `${SITE_INFO.url}/images/immagine-sito.jpeg`,
   },
