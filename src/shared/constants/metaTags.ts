@@ -11,7 +11,7 @@
 export const SITE_INFO = {
   name: 'Smailen Vargas Portfolio',
   author: 'Smailen Vargas',
-  url: 'https://smailenvargas.com/',
+  url: 'https://smailenvargas.com',
   locale: 'it_IT',
   themeColor: '#ffffff',
 } as const;
@@ -19,9 +19,6 @@ export const SITE_INFO = {
 // Meta Tags SEO Base
 // ========================================
 export const BASE_META_TAGS = [
-  {
-    title: 'Smailen Vargas | Frontend Developer',
-  },
   {
     name: 'description',
     content:
@@ -62,6 +59,10 @@ export const OPEN_GRAPH_TAGS = [
     property: 'og:description',
     content:
       'Ciao, sono Smailen Vargas, Frontend Developer specializzato in React, TypeScript e Tailwind CSS',
+  },
+  {
+    property: 'og:url',
+    content: `${SITE_INFO.url}`,
   },
   {
     property: 'og:image',

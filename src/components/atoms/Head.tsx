@@ -1,8 +1,10 @@
 // src/shared/utils/Head.tsx
 
 import {
+  BASE_META_TAGS,
   JSON_LD_PERSON,
   MOBILE_APP_TAGS,
+  OPEN_GRAPH_TAGS,
   SITE_INFO,
 } from '@/shared/constants/metaTags';
 import { Helmet } from 'react-helmet';
@@ -20,29 +22,44 @@ interface HeadProps {
  */
 export const Head = ({
   title = 'Smailen Vargas | Frontend Developer',
-  description = 'Ciao, sono Smailen Vargas, Frontend Developer specializzato in React, TypeScript e Tailwind CSS',
-  keywords = 'Smailen Vargas, Frontend Developer, React, TypeScript, Tailwind CSS, DaisyUi, Portfolio',
+  description,
+  keywords,
   ogUrl,
 }: HeadProps) => {
   return (
     <Helmet>
       {/* SEO Base */}
       <title>{title}</title>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
-      <meta name="author" content={SITE_INFO.author} />
+      {BASE_META_TAGS.map(tag => (
+        <meta
+          key={tag.name}
+          name={tag.name}
+          content={
+            tag.name === 'description' && description
+              ? description
+              : tag.name === 'keywords' && keywords
+                ? keywords
+                : tag.content
+          }
+        />
+      ))}
 
       {/* Open Graph */}
-      <meta property="og:type" content="website" />
-      <meta property="og:locale" content={SITE_INFO.locale} />
-      <meta property="og:site_name" content={SITE_INFO.name} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:url" content={SITE_INFO.url + (ogUrl ? ogUrl : '')} />
-      <meta
-        property="og:image"
-        content={`${SITE_INFO.url}/images/immagine-sito.jpeg`}
-      />
+      {OPEN_GRAPH_TAGS.map(tag => (
+        <meta
+          key={tag.property}
+          property={tag.property}
+          content={
+            tag.property === 'og:title' && title
+              ? title
+              : tag.property === 'og:description' && description
+                ? description
+                : tag.property === 'og:url' && ogUrl
+                  ? SITE_INFO.url + ogUrl
+                  : tag.content
+          }
+        />
+      ))}
 
       {/* Mobile App */}
       {MOBILE_APP_TAGS.map(tag => (
