@@ -5,6 +5,7 @@ import {
   JSON_LD_PERSON,
   MOBILE_APP_TAGS,
   OPEN_GRAPH_TAGS,
+  SITE_INFO,
 } from '@/shared/constants/metaTags';
 import { Helmet } from 'react-helmet';
 
@@ -12,6 +13,7 @@ interface HeadProps {
   title?: string;
   description?: string;
   keywords?: string;
+  ogUrl?: string;
 }
 
 /**
@@ -22,6 +24,7 @@ export const Head = ({
   title = 'Smailen Vargas | Frontend Developer',
   description,
   keywords,
+  ogUrl,
 }: HeadProps) => {
   return (
     <Helmet>
@@ -51,7 +54,9 @@ export const Head = ({
               ? title
               : tag.property === 'og:description' && description
                 ? description
-                : tag.content
+                : tag.property === 'og:url' && ogUrl
+                  ? SITE_INFO.url + ogUrl
+                  : tag.content
           }
         />
       ))}
