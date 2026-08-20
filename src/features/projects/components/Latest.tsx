@@ -1,10 +1,9 @@
-import { fetchProjects } from '@/api/getProjects';
 import { H2 } from '@/components/atoms/heading';
 import Section from '@/components/atoms/Section';
 import Separator from '@/components/atoms/Separator';
 import { CardProject } from '@/features/projects/components/Card';
+import { useProjects } from '@/shared/hooks/useProjects';
 import { Project } from '@/shared/types/projects';
-import { useEffect, useState } from 'react';
 
 /**
  * Componente LastProjects - Ultimi progetti in homepage
@@ -16,19 +15,9 @@ import { useEffect, useState } from 'react';
  * @see CardProject - Componente per visualizzare singolo progetto
  */
 export const LastProjects = () => {
-  const [projects, setProjects] = useState<Project[]>([]);
+  const { projects, isLoading, error } = useProjects();
   // !Modifica qui i progetti da mostrare
   const showLastProjects = 3;
-
-  useEffect(() => {
-    fetchProjects()
-      .then(data => {
-        setProjects(data);
-      })
-      .catch(error => {
-        console.error(error);
-      });
-  }, []);
 
   return (
     <Section className="text-center">
@@ -36,11 +25,17 @@ export const LastProjects = () => {
 
       <Separator />
 
-      <main className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-        {projects.slice(0, showLastProjects).map((project: Project) => (
-          <CardProject key={project.name} {...project} />
-        ))}
-      </main>
+      {isLoading ? null : error ? (
+        <p className="text-error">
+          Errore nel recupero dei progetti. Riprova piu&apos; tardi.
+        </p>
+      ) : (
+        <main className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+          {projects.slice(0, showLastProjects).map((project: Project) => (
+            <CardProject key={project.name} {...project} />
+          ))}
+        </main>
+      )}
     </Section>
   );
 };
