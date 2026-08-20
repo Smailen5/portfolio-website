@@ -1,4 +1,3 @@
-// import { Section } from "@components/atoms/Section";
 import { H3 } from '@/components/atoms/heading';
 import Section from '@/components/atoms/Section';
 import Separator from '@/components/atoms/Separator';
