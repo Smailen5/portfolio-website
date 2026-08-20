@@ -31,18 +31,16 @@ export const LastProjects = () => {
   }, []);
 
   return (
-    <>
-      <Section className="text-center">
-        <H2>Guarda i miei ultimi lavori</H2>
+    <Section className="text-center">
+      <H2>Guarda i miei ultimi lavori</H2>
 
-        <Separator />
+      <Separator />
 
-        <main className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-          {projects.slice(0, showLastProjects).map((project: Project) => (
-            <CardProject key={project.name} {...project} />
-          ))}
-        </main>
-      </Section>
-    </>
+      <main className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+        {projects.slice(0, showLastProjects).map((project: Project) => (
+          <CardProject key={project.name} {...project} />
+        ))}
+      </main>
+    </Section>
   );
 };

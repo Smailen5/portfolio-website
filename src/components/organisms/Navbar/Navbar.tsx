@@ -27,48 +27,41 @@ import { SideBar } from './SideBar';
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <>
-      {/* Navbar */}
-      <nav className="bg-base-200/60 fixed inset-x-0 top-0 z-50 flex justify-center px-4 py-2 shadow-sm backdrop-blur-sm">
-        <div className="flex w-full max-w-256 justify-between">
-          <Avatar name="Smailen Vargas" />
+    <nav className="bg-base-200/60 fixed inset-x-0 top-0 z-50 flex justify-center px-4 py-2 shadow-sm backdrop-blur-sm">
+      <div className="flex w-full max-w-256 justify-between">
+        <Avatar name="Smailen Vargas" />
 
-          <div className="flex items-center gap-4">
-            <ToggleTheme />
+        <div className="flex items-center gap-4">
+          <ToggleTheme />
 
-            {/* Menu Mobile: Bottone menu + SideBar */}
-            <div className="lg:hidden">
-              <button
-                onClick={() => setIsOpen(true)}
-                aria-expanded={isOpen}
-                aria-controls="sidebar"
-                className="btn"
-                aria-label="Apri menu"
-              >
-                Menu
-              </button>
+          {/* Menu Mobile: Bottone menu + SideBar */}
+          <div className="lg:hidden">
+            <button
+              onClick={() => setIsOpen(true)}
+              aria-expanded={isOpen}
+              aria-controls="sidebar"
+              className="btn"
+              aria-label="Apri menu"
+            >
+              Menu
+            </button>
 
-              <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
-            </div>
+            <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
+          </div>
 
-            {/* Menu Desktop */}
-            <div className="hidden lg:block">
-              <nav className="flex items-center gap-4">
-                {NAVIGATION_LINKS.map(link => (
-                  <Link
-                    key={link.label}
-                    to={link.linkTo}
-                    className="capitalize"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-                <CurriculumDownload />
-              </nav>
-            </div>
+          {/* Menu Desktop */}
+          <div className="hidden lg:block">
+            <nav className="flex items-center gap-4">
+              {NAVIGATION_LINKS.map(link => (
+                <Link key={link.label} to={link.linkTo} className="capitalize">
+                  {link.label}
+                </Link>
+              ))}
+              <CurriculumDownload />
+            </nav>
           </div>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 };

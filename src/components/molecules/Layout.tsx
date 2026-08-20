@@ -30,17 +30,15 @@ export const Layout = ({
 }: LayoutProps) => {
   useScroll();
   return (
-    <>
-      <div
-        className={twMerge(
-          'bg-base-200 flex h-auto w-full justify-center pt-20',
-          classLayout
-        )}
-      >
-        <div className={twMerge('w-full max-w-256', classContent)}>
-          {children}
-        </div>
+    <div
+      className={twMerge(
+        'bg-base-200 flex h-auto w-full justify-center pt-20',
+        classLayout
+      )}
+    >
+      <div className={twMerge('w-full max-w-256', classContent)}>
+        {children}
       </div>
-    </>
+    </div>
   );
 };

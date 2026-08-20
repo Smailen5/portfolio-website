@@ -12,35 +12,33 @@ export const CurriculumDownload = ({
   };
 
   return (
-    <>
-      <details className="dropdown">
-        <summary className="m-1 text-base font-semibold lg:cursor-pointer">
-          Curriculum
-        </summary>
+    <details className="dropdown">
+      <summary className="m-1 text-base font-semibold lg:cursor-pointer">
+        Curriculum
+      </summary>
 
-        <ul className="dropdown-content menu rounded-box bg-base-100 z-10 w-52 p-2 shadow-sm">
-          <li>
-            <a
-              // href="/assets/curriculum/CV-Smailen-Vargas-Frontend-IT.pdf"
-              // download="CV-Smailen-Vargas-Frontend-IT.pdf"
-              onClick={handleDownload}
-              className="cursor-not-allowed"
-            >
-              Curriculum in Italiano
-            </a>
-          </li>
-          <li>
-            <a
-              // href="/assets/curriculum/CV-Smailen-Vargas-Frontend-EN.pdf"
-              // download="CV-Smailen-Vargas-Frontend-EN.pdf"
-              onClick={handleDownload}
-              className="cursor-not-allowed"
-            >
-              Curriculum in Inglese
-            </a>
-          </li>
-        </ul>
-      </details>
-    </>
+      <ul className="dropdown-content menu rounded-box bg-base-100 z-10 w-52 p-2 shadow-sm">
+        <li>
+          <a
+            // href="/assets/curriculum/CV-Smailen-Vargas-Frontend-IT.pdf"
+            // download="CV-Smailen-Vargas-Frontend-IT.pdf"
+            onClick={handleDownload}
+            className="cursor-not-allowed"
+          >
+            Curriculum in Italiano
+          </a>
+        </li>
+        <li>
+          <a
+            // href="/assets/curriculum/CV-Smailen-Vargas-Frontend-EN.pdf"
+            // download="CV-Smailen-Vargas-Frontend-EN.pdf"
+            onClick={handleDownload}
+            className="cursor-not-allowed"
+          >
+            Curriculum in Inglese
+          </a>
+        </li>
+      </ul>
+    </details>
   );
 };

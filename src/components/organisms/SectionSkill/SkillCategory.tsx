@@ -24,18 +24,16 @@ interface SkillCategoryProps {
  */
 export const SkillCategory = ({ title, section }: SkillCategoryProps) => {
   return (
-    <>
-      <Section>
-        <H3>{title}</H3>
+    <Section>
+      <H3>{title}</H3>
 
-        <Separator />
+      <Separator />
 
-        <ul className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4">
-          {section.map(skill => (
-            <SkillCard key={skill.name} {...skill} />
-          ))}
-        </ul>
-      </Section>
-    </>
+      <ul className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4">
+        {section.map(skill => (
+          <SkillCard key={skill.name} {...skill} />
+        ))}
+      </ul>
+    </Section>
   );
 };
