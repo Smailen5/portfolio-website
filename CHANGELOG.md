@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.4.3](https://github.com/Smailen5/portfolio-website/compare/v5.4.2...v5.4.3) (2026-08-20)
+
+
+### Bug Fixes
+
+* ripristina animazione typing nella scritta hero ([#205](https://github.com/Smailen5/portfolio-website/issues/205)) ([54a9283](https://github.com/Smailen5/portfolio-website/commit/54a92839819e496d1a28ae4c2081d643324a7e22))
+
+
+### Chores
+
+* rimuove componenti e asset mai usati ([#207](https://github.com/Smailen5/portfolio-website/issues/207)) ([389c814](https://github.com/Smailen5/portfolio-website/commit/389c8148874b0c360d1ef8050d1c7364eb3d08af))
+* rimuove export inutilizzati ([#210](https://github.com/Smailen5/portfolio-website/issues/210)) ([68cb6c4](https://github.com/Smailen5/portfolio-website/commit/68cb6c4523a81f8914902fb31a25d0a2aa7d28e2))
+* rimuove frammenti inutili, className vuote e commenti obsoleti ([#213](https://github.com/Smailen5/portfolio-website/issues/213)) ([1559281](https://github.com/Smailen5/portfolio-website/commit/15592818cbe124094d404d33865d33e383719fea))
+* rivede configurazione deploy netlify e aggiunge file netlify.toml ([#214](https://github.com/Smailen5/portfolio-website/issues/214)) ([da4f9eb](https://github.com/Smailen5/portfolio-website/commit/da4f9ebe4162f7c2bdc31d42077216b2b1e06ab7))
+
+
+### Refactoring
+
+* centralizza meta tags Open Graph in metaTags.ts ([#209](https://github.com/Smailen5/portfolio-website/issues/209)) ([e470859](https://github.com/Smailen5/portfolio-website/commit/e470859e45887141a08930427a8e0f500422bd89))
+
 ## [5.4.2](https://github.com/Smailen5/portfolio-website/compare/v5.4.1...v5.4.2) (2026-08-13)
 
 
