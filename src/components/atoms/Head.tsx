@@ -1,5 +1,3 @@
-// src/shared/utils/Head.tsx
-
 import {
   BASE_META_TAGS,
   JSON_LD_PERSON,
