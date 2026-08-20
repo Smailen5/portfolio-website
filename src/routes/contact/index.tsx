@@ -54,7 +54,7 @@ function ContactPage() {
             </div>
 
             {/* Telefono */}
-            <div className="">
+            <div>
               <p>
                 Per contatto telefonico e dettagli completi, scarica il mio CV,
                 o contattami in uno dei social qui sotto.
