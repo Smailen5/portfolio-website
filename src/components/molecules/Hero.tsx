@@ -15,7 +15,7 @@ export const Hero = () => {
   return (
     <Section>
       {/* presentazione */}
-      <header className="">
+      <header>
         <p className="text-4xl">
           <span
             className="text-base-content typing font-mono"
