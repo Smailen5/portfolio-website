@@ -1,19 +1,18 @@
 // src/routes/projects/index.tsx
 
-import { fetchProjects } from '@/api/getProjects';
 import { Layout } from '@/components/molecules/Layout';
 import { HeaderProject } from '@/features/projects/components/Header';
 import { SectionProjects } from '@/features/projects/components/Section';
 import { Head } from '@/components/atoms/Head';
-import { createFileRoute, useLoaderData } from '@tanstack/react-router';
+import { createFileRoute } from '@tanstack/react-router';
+import { useProjects } from '@/shared/hooks/useProjects';
 
 export const Route = createFileRoute('/projects/')({
-  loader: () => fetchProjects(),
   component: ProjectPage,
 });
 
 function ProjectPage() {
-  const projects = useLoaderData({ from: '/projects/' });
+  const { projects, isLoading, error } = useProjects();
   return (
     <>
       <Head
@@ -25,7 +24,13 @@ function ProjectPage() {
       <Layout classContent="flex flex-col flex-nowrap gap-20 px-6 pb-14 pt-20 md:items-center">
         <h1 className="sr-only">Progetti</h1>
         <HeaderProject />
-        <SectionProjects projects={projects} />
+        {isLoading ? null : error ? (
+          <p className="text-error">
+            Errore nel recupero dei progetti. Riprova piu&apos; tardi
+          </p>
+        ) : (
+          <SectionProjects projects={projects} />
+        )}
       </Layout>
     </>
   );
