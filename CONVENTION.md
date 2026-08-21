@@ -4,13 +4,13 @@ L'agente deve leggere questo file all'inizio di ogni sessione.
 
 ## Quick Reference
 
-| Elemento  | Formato                     | Limite   | Esempio                 |
-| --------- | --------------------------- | -------- | ----------------------- |
-| **Commit**| `<tipo>: <verbo 3a persona>`| 42 chars | `feat: aggiunge login`  |
-| **PR**    | `<tipo>: <descrizione>`     | 72 chars | `feat: login con Google`|
-| **Issue** | `<tipo>: <descrizione>`     | libero   | `feat: implementa login`|
-| **Label** | tipo + priorità             | obblig.  | `feat`, `high`          |
-| **Lingua**| IT testi, EN codice         | -        | -                       |
+| Elemento | Formato                      | Limite    | Esempio               |
+| -------- | ---------------------------- | --------- | --------------------- |
+| Commit   | `<tipo>: <verbo 3a persona>` | 42 chars  | `feat: aggiunge login`|
+| PR       | `<tipo>: <descrizione>`      | 72 chars  | `feat: login Google`  |
+| Issue    | `<tipo>: <descrizione>`      | libero    | `feat: impl login`    |
+| Label    | tipo + priorità              | required  | `feat`, `high`        |
+| Lingua   | IT testi, EN codice          | -         | -                     |
 
 ## DO e DON'T
 
