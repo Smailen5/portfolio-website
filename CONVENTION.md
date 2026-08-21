@@ -37,7 +37,7 @@ L'agente deve leggere questo file all'inizio di ogni sessione.
 - Mai superare 42 caratteri nei commit
 - Mai superare 72 caratteri nei titoli PR
 
-## Issue
+## Creazione Issue
 
 1. Leggi template: `ls .github/ISSUE_TEMPLATE/` e `cat .github/ISSUE_TEMPLATE/<tipo>.yaml`
 2. Titolo: `<tipo>: <descrizione in italiano>`
@@ -45,7 +45,7 @@ L'agente deve leggere questo file all'inizio di ogni sessione.
 4. Crea con: `bash -c 'gh issue create --repo Smailen5/portfolio-website --title "..." --label "<tipo>,<priorità>" --body-file <tmpfile>'`
 5. Non cancellare issue, modifica con `gh issue edit`
 
-## PR
+## Creazione PR
 
 1. Leggi template: `cat .github/pull_request_template.md`
 2. Titolo: conventional commit + italiano, **max 72 caratteri** (CI rifiuta titoli più lunghi)
