@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.4.4](https://github.com/Smailen5/portfolio-website/compare/v5.4.3...v5.4.4) (2026-08-21)
+
+
+### Documentation
+
+* semplifica CONVENTION.md e AGENTS.md ([#220](https://github.com/Smailen5/portfolio-website/issues/220)) ([bbb4c4a](https://github.com/Smailen5/portfolio-website/commit/bbb4c4af972535a78327891e4bb38708c3a9c582))
+
+
+### Refactoring
+
+* unifica fetch progetti con hook useProjects condiviso ([#215](https://github.com/Smailen5/portfolio-website/issues/215)) ([8267445](https://github.com/Smailen5/portfolio-website/commit/82674450fb6ba5c4ea7d91858d119fcee0b68198))
+
 ## [5.4.3](https://github.com/Smailen5/portfolio-website/compare/v5.4.2...v5.4.3) (2026-08-20)
 
 
