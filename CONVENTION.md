@@ -4,20 +4,21 @@ L'agente deve leggere questo file all'inizio di ogni sessione.
 
 ## Quick Reference
 
-| Elemento | Formato | Limite | Esempio |
-|----------|---------|--------|---------|
-| **Commit** | `<tipo>: <verbo 3a persona>` | 42 caratteri | `feat: aggiunge login` |
-| **PR** | `<tipo>: <cosa è stato fatto>` | 72 caratteri | `feat: aggiunge login con Google` |
-| **Issue** | `<tipo>: <descrizione>` | libero | `feat: implementa login` |
-| **Label issue** | tipo + priorità | obbligatori | `feat`, `high` |
-| **Lingua** | Italiano per testi, Inglese per codice | - | - |
+| Elemento  | Formato                     | Limite   | Esempio                 |
+| --------- | --------------------------- | -------- | ----------------------- |
+| **Commit**| `<tipo>: <verbo 3a persona>`| 42 chars | `feat: aggiunge login`  |
+| **PR**    | `<tipo>: <descrizione>`     | 72 chars | `feat: login con Google`|
+| **Issue** | `<tipo>: <descrizione>`     | libero   | `feat: implementa login`|
+| **Label** | tipo + priorità             | obblig.  | `feat`, `high`          |
+| **Lingua**| IT testi, EN codice         | -        | -                       |
 
 ## DO e DON'T
 
 ### ✅ FAI
 
 - Leggi `CONVENTION.md` e `AGENTS.md` all'inizio
-- Conventional commit in italiano: `feat:`, `fix:`, `chore:`, `refactor:`, `test:`, `docs:`, `ci:`, `perf:`, `build:`
+- Conventional commit in italiano: `feat:`, `fix:`, `chore:`, `refactor:`,
+  `test:`, `docs:`, `ci:`, `perf:`, `build:`
 - Verbo al presente indicativo 3a persona: "aggiunge", non "aggiunto" o "aggiungere"
 - Aggiungi file individualmente: `git add file1 file2`
 - Commit atomici: una cosa logica per commit
@@ -41,17 +42,21 @@ L'agente deve leggere questo file all'inizio di ogni sessione.
 
 1. Leggi template: `ls .github/ISSUE_TEMPLATE/` e `cat .github/ISSUE_TEMPLATE/<tipo>.yaml`
 2. Titolo: `<tipo>: <descrizione in italiano>`
-3. Label obbligatori: tipo (`feat`, `fix`, `chore`, etc.) + priorità (`high`, `medium`, `low`)
-4. Crea con: `bash -c 'gh issue create --repo Smailen5/portfolio-website --title "..." --label "<tipo>,<priorità>" --body-file <tmpfile>'`
+3. Label obbligatori: tipo (`feat`, `fix`, `chore`, etc.) + priorità
+   (`high`, `medium`, `low`)
+4. Crea con: `bash -c 'gh issue create --repo Smailen5/portfolio-website
+   --title "..." --label "<tipo>,<priorità>" --body-file <tmpfile>'`
 5. Non cancellare issue, modifica con `gh issue edit`
 
 ## Creazione PR
 
 1. Leggi template: `cat .github/pull_request_template.md`
-2. Titolo: conventional commit + italiano, **max 72 caratteri** (CI rifiuta titoli più lunghi)
+2. Titolo: conventional commit + italiano, **max 72 caratteri**
+   (CI rifiuta titoli più lunghi)
 3. Body: `Closes #numero` + descrizione
 4. Label: tipo corrispondente al prefisso (`feat`, `fix`, etc.)
-5. Crea con: `bash -c 'gh pr create --repo Smailen5/portfolio-website --base main --title "..." --label "<tipo>" --body-file <tmpfile>'`
+5. Crea con: `bash -c 'gh pr create --repo Smailen5/portfolio-website
+   --base main --title "..." --label "<tipo>" --body-file <tmpfile>'`
 6. Una PR = una issue, mai duplicate
 7. Mai chiudere PR, fixa il branch e pusha
 
@@ -67,7 +72,8 @@ L'agente deve leggere questo file all'inizio di ogni sessione.
 
 ### Issue
 
-- **Tipo** (obbligatorio): `feat`, `fix`, `chore`, `refactor`, `test`, `docs`, `ci`, `perf`, `build`
+- **Tipo** (obbligatorio): `feat`, `fix`, `chore`, `refactor`, `test`,
+  `docs`, `ci`, `perf`, `build`
 - **Priorità** (obbligatoria): `high`, `medium`, `low`
 - **Opzionale**: `quick win` per issue semplici (5-10 min)
 
