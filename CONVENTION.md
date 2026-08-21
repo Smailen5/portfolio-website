@@ -7,7 +7,7 @@ L'agente deve leggere questo file all'inizio di ogni sessione.
 | Elemento | Formato                      | Limite    | Esempio               |
 | -------- | ---------------------------- | --------- | --------------------- |
 | Commit   | `<tipo>: <verbo 3a persona>` | 42 chars  | `feat: aggiunge login`|
-| PR       | `<tipo>: <descrizione>`      | 72 chars  | `feat: login Google`  |
+| PR       | `<tipo>: <verbo 3a persona>` | 72 chars  | `feat: aggiunge login`|
 | Issue    | `<tipo>: <descrizione>`      | libero    | `feat: impl login`    |
 | Label    | tipo + priorità              | required  | `feat`, `high`        |
 | Lingua   | IT testi, EN codice          | -         | -                     |
