@@ -29,6 +29,7 @@ idee.md
 .env
 .cursor
 .cursorrules
+.opencode/
 
 # Local Netlify folder
 .netlify
