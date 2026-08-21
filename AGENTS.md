@@ -35,7 +35,8 @@ src/
 
 ## Deployment
 
-- **Produzione:** branch `maintenance` (Netlify, modalità manuale)
+- **Produzione:** branch `main` (Netlify, deploy manuale)
+- **Branch legacy:** `maintenance` (non più usato, mantenuto per riferimento)
 - **CI:** valida titolo PR, esegue lint/typecheck/build
 - **Release:** release-please automatico su `main`
 - **Hotfix:** mergiano su branch `v[0-9]*` (es. `v3.0.x`)
