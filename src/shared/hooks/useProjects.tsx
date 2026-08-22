@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Project } from '../types/projects';
-import { fetchProjects } from '@/api/getProjects';
+import { API_URL } from '@/shared/constants/api';
 
 interface ProjectsCache {
   data: Project[];
@@ -14,6 +14,12 @@ interface UseProjectsReturn {
   projects: Project[];
   isLoading: boolean;
   error: Error | null;
+}
+
+async function fetchProjects(): Promise<Project[]> {
+  const response = await fetch(`${API_URL}/api/projects`);
+  if (!response.ok) throw new Error(`Richiesta fallita: ${response.status}`);
+  return response.json();
 }
 
 export function useProjects(): UseProjectsReturn {
