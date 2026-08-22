@@ -1,5 +1,3 @@
-// src/routes/index.tsx
-
 import { Hero } from '@/components/molecules/Hero';
 import { Layout } from '@/components/molecules/Layout';
 import { Presentation } from '@/components/molecules/Presentation';
