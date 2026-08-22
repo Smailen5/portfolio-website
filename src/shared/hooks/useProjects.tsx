@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Project } from '../types/projects';
-import { fetchProjects } from '@/api/getProjects';
+import { API_URL } from '@/shared/constants/api';
 
 interface ProjectsCache {
   data: Project[];
@@ -26,25 +26,27 @@ export function useProjects(): UseProjectsReturn {
       return;
     }
 
-    setIsLoading(true);
-    setError(null);
-
-    fetchProjects()
-      .then(data => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(`${API_URL}/api/projects`);
+        if (!response.ok) throw new Error(`Richiesta fallita: ${response.status}`);
+        const data = await response.json();
         cache = { data, timestamp: Date.now() };
         setProjects(data);
-      })
-      .catch(err => {
+      } catch (err) {
         const normalizedError =
           err instanceof Error
             ? err
             : new Error('Errore nel recupero dei progetti');
         setError(normalizedError);
         setProjects([]);
-      })
-      .finally(() => {
+      } finally {
         setIsLoading(false);
-      });
+      }
+    };
+
+    fetchData();
   }, []);
+
   return { projects, isLoading, error };
 }
