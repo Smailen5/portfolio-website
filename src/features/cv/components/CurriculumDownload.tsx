@@ -1,4 +1,3 @@
-// Props per il componente CurriculumDownload
 interface CurriculumDownloadProps {
   closeSideBar?: () => void;
 }
@@ -19,22 +18,12 @@ export const CurriculumDownload = ({
 
       <ul className="dropdown-content menu rounded-box bg-base-100 z-10 w-52 p-2 shadow-sm">
         <li>
-          <a
-            // href="/assets/curriculum/CV-Smailen-Vargas-Frontend-IT.pdf"
-            // download="CV-Smailen-Vargas-Frontend-IT.pdf"
-            onClick={handleDownload}
-            className="cursor-not-allowed"
-          >
+          <a onClick={handleDownload} className="cursor-not-allowed">
             Curriculum in Italiano
           </a>
         </li>
         <li>
-          <a
-            // href="/assets/curriculum/CV-Smailen-Vargas-Frontend-EN.pdf"
-            // download="CV-Smailen-Vargas-Frontend-EN.pdf"
-            onClick={handleDownload}
-            className="cursor-not-allowed"
-          >
+          <a onClick={handleDownload} className="cursor-not-allowed">
             Curriculum in Inglese
           </a>
         </li>

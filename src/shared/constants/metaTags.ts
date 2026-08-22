@@ -1,5 +1,3 @@
-// src/shared/constants/metaTags.ts
-
 /**
  * Meta tags globali per il sito
  * Usati come fallback in __root.tsx
