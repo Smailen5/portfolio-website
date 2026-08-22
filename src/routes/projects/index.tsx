@@ -1,5 +1,3 @@
-// src/routes/projects/index.tsx
-
 import { Layout } from '@/components/molecules/Layout';
 import { HeaderProject } from '@/features/projects/components/Header';
 import { SectionProjects } from '@/features/projects/components/Section';

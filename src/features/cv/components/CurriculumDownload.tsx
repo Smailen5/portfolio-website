@@ -1,4 +1,3 @@
-// Props per il componente CurriculumDownload
 interface CurriculumDownloadProps {
   closeSideBar?: () => void;
 }

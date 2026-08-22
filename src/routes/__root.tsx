@@ -1,4 +1,3 @@
-//src/routes/__root.tsx
 /// <reference types="vite/client" />
 
 import Footer from '@/components/organisms/Footer';
