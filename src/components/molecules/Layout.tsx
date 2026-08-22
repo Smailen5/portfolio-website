@@ -36,7 +36,7 @@ export const Layout = ({
         classLayout
       )}
     >
-      <div className={twMerge('w-full max-w-256', classContent)}>
+      <div className={twMerge('w-full max-w-5xl', classContent)}>
         {children}
       </div>
     </div>
