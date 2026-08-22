@@ -74,6 +74,7 @@ export default [
       // Tailwindcss
       ...eslintPluginTailwindcss.configs.recommended.rules,
       "tailwindcss/classnames-order": "off",
+      "tailwindcss/enforces-shorthand": "warn",
       "tailwindcss/no-custom-classname": [
         "warn",
         {
