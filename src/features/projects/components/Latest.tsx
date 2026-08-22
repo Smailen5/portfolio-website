@@ -11,7 +11,6 @@ import { Project } from '@/shared/types/projects';
  * Mostra gli ultimi N progetti (configurabile con showLastProjects)
  * dalla lista completa recuperata da GitHub API
  *
- * @see fetchProjects - Funzione per recuperare i progetti da API
  * @see CardProject - Componente per visualizzare singolo progetto
  */
 export const LastProjects = () => {
