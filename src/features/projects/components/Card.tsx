@@ -27,7 +27,6 @@ export const CardProject = ({
     return [...technologies].sort((a, b) => a.localeCompare(b));
   }, [technologies]);
 
-  const projectUrl = `${repoUrl}`;
   const formattedName = nameCorrect(name);
   const firstImage = imagesUrl[0] ? `${API_URL}${imagesUrl[0]}` : undefined;
 
@@ -36,7 +35,7 @@ export const CardProject = ({
     <article className="card bg-base-300 w-full shadow-sm">
       <figure>
         <a
-          href={projectUrl}
+          href={repoUrl}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Visualizza il progetto ${formattedName} su GitHub`}
@@ -73,7 +72,7 @@ export const CardProject = ({
 
         <div className="flex justify-center">
           <a
-            href={projectUrl}
+            href={repoUrl}
             className="btn btn-xl btn-primary md:btn-lg w-full"
             target="_blank"
             rel="noopener noreferrer"
