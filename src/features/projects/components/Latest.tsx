@@ -30,11 +30,11 @@ export const LastProjects = () => {
           Errore nel recupero dei progetti. Riprova piu&apos; tardi.
         </p>
       ) : (
-        <main className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {projects.slice(0, showLastProjects).map((project: Project) => (
             <CardProject key={project.name} {...project} />
           ))}
-        </main>
+        </div>
       )}
     </Section>
   );
