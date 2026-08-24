@@ -28,7 +28,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="bg-base-200/60 fixed inset-x-0 top-0 z-50 flex justify-center px-4 py-2 shadow-sm backdrop-blur-sm">
-      <div className="flex w-full max-w-256 justify-between">
+      <div className="flex w-full max-w-5xl justify-between">
         <Avatar name="Smailen Vargas" />
 
         <div className="flex items-center gap-4">
