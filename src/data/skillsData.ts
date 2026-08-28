@@ -10,7 +10,7 @@ import jsIcon from '@/assets/icons/icons8-javascript-48.svg';
 import reactIcon from '@/assets/icons/icons8-react.svg';
 import tailwindIcon from '@/assets/icons/icons8-tailwind-css.svg';
 import netlifyIcon from '@/assets/icons/netlify.svg';
-import nextuiIcon from '@/assets/icons/nextjs.svg';
+import nextuiIcon from '@/assets/icons/nextui.svg';
 import pnpmIcon from '@/assets/icons/pnpm.svg';
 import shadcnIcon from '@/assets/icons/shadcn.svg';
 import viteIcon from '@/assets/icons/vite.svg';
