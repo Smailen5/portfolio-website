@@ -16,7 +16,7 @@ import { Project } from '@/shared/types/projects';
 export const LastProjects = () => {
   const { projects, isLoading, error } = useProjects();
   // !Modifica qui i progetti da mostrare
-  const showLastProjects = 3;
+  const maxProjectsToShow = 3;
 
   return (
     <Section className="text-center">
@@ -30,7 +30,7 @@ export const LastProjects = () => {
         </p>
       ) : (
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-          {projects.slice(0, showLastProjects).map((project: Project) => (
+          {projects.slice(0, maxProjectsToShow).map((project: Project) => (
             <CardProject key={project.name} {...project} />
           ))}
         </div>
