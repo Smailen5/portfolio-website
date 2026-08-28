@@ -30,9 +30,16 @@ export const LastProjects = () => {
         </p>
       ) : (
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-          {projects.slice(0, maxProjectsToShow).map((project: Project) => (
-            <CardProject key={project.name} {...project} />
-          ))}
+          {[...projects]
+            .sort(
+              (a, b) =>
+                new Date(b.createdAt).getTime() -
+                new Date(a.createdAt).getTime()
+            )
+            .slice(0, maxProjectsToShow)
+            .map((project: Project) => (
+              <CardProject key={project.name} {...project} />
+            ))}
         </div>
       )}
     </Section>
