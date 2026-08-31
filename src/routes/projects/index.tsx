@@ -22,13 +22,11 @@ function ProjectPage() {
       <Layout classContent="flex flex-col flex-nowrap gap-20 px-6 pb-14 pt-20 md:items-center">
         <h1 className="sr-only">Progetti</h1>
         <HeaderProject />
-        {isLoading ? null : error ? (
-          <p className="text-error">
-            Errore nel recupero dei progetti. Riprova piu&apos; tardi
-          </p>
-        ) : (
-          <SectionProjects projects={projects} />
-        )}
+        <SectionProjects
+          projects={projects}
+          isLoading={isLoading}
+          error={error}
+        />
       </Layout>
     </>
   );
