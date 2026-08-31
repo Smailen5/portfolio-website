@@ -10,7 +10,7 @@ export const Route = createFileRoute('/projects/')({
 });
 
 function ProjectPage() {
-  const { projects, isLoading, error } = useProjects();
+  const { projects, isLoading, error, retry } = useProjects();
   return (
     <>
       <Head
@@ -26,6 +26,7 @@ function ProjectPage() {
           projects={projects}
           isLoading={isLoading}
           error={error}
+          retry={retry}
         />
       </Layout>
     </>

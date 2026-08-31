@@ -9,6 +9,7 @@ interface SectionProjectsProps {
   projects: Project[];
   isLoading: boolean;
   error: Error | null;
+  retry: () => void;
 }
 
 /**
@@ -28,6 +29,7 @@ export const SectionProjects = ({
   projects,
   isLoading,
   error,
+  retry,
 }: SectionProjectsProps) => {
   const [filteredProjects, setFilteredProjects] = useState<Project[]>(projects);
 
@@ -49,7 +51,7 @@ export const SectionProjects = ({
           </div>
         </>
       ) : error ? (
-        <CardError />
+        <CardError onRetry={retry} />
       ) : (
         <section className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {filteredProjects.map((project: Project) => (

@@ -16,7 +16,7 @@ import { Project } from '@/shared/types/projects';
  * @see CardProject - Componente per visualizzare singolo progetto
  */
 export const LastProjects = () => {
-  const { projects, isLoading, error } = useProjects();
+  const { projects, isLoading, error, retry } = useProjects();
   // !Modifica qui i progetti da mostrare
   const maxProjectsToShow = 3;
 
@@ -35,7 +35,7 @@ export const LastProjects = () => {
           </div>
         </>
       ) : error ? (
-        <CardError />
+        <CardError onRetry={retry} />
       ) : (
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {[...projects]
