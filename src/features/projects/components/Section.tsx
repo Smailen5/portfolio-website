@@ -1,9 +1,10 @@
 import { Project } from '@/shared/types/projects';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { CardProject } from './Card';
 import { Filter } from './Filter';
 import { CardSkeleton } from '@/components/molecules/CardSkeleton';
 import { CardError } from '@/components/molecules/CardError';
+import { filterProjectsByTechnology } from '@/shared/utils/filterProjects';
 
 interface SectionProjectsProps {
   projects: Project[];
@@ -31,14 +32,18 @@ export const SectionProjects = ({
   error,
   retry,
 }: SectionProjectsProps) => {
-  const [filteredProjects, setFilteredProjects] = useState<Project[]>(projects);
+  const [selectedTechnology, setSelectedTechnology] = useState<string>('Tutto');
+  const filteredProjects = useMemo(
+    () => filterProjectsByTechnology(projects, selectedTechnology),
+    [projects, selectedTechnology]
+  );
 
   return (
     <div className="flex w-full flex-col gap-8">
       <Filter
         number={filteredProjects.length}
-        setFilteredProject={setFilteredProjects}
-        projectsNoFiltered={projects}
+        onSelect={setSelectedTechnology}
+        selected={selectedTechnology}
       />
       {isLoading ? (
         <>

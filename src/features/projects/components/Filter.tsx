@@ -1,9 +1,8 @@
-import { Project } from '@/shared/types/projects';
-import { Dispatch, SetStateAction, useState } from 'react';
+import { useState } from 'react';
 
 interface FilterProps {
-  setFilteredProject: Dispatch<SetStateAction<Project[]>>;
-  projectsNoFiltered: Project[];
+  selected: string;
+  onSelect: (tech: string) => void;
   number?: number;
 }
 
@@ -35,40 +34,11 @@ const technologies = [
  *
  * @param {FilterProps} props - Funzione setter, progetti originali, conteggio
  */
-export const Filter = ({
-  setFilteredProject,
-  projectsNoFiltered,
-  number,
-}: FilterProps) => {
+export const Filter = ({ selected, onSelect, number }: FilterProps) => {
   // Stato per chiudere il dropdown
   const [isOpen, setIsOpen] = useState(false);
-  // Stato per il filtro selezionato
-  const [selectedTechnology, setSelectedTechnology] = useState('Tutto');
-
-  /**
-   * Filtra i progetti in base alla tecnologia selezionata
-   * Se "Tutto" mostra tutti i progetti, altrimenti filtra per tecnologia
-   */
-  const handleFilter = (technology: string) => {
-    if (technology === 'Tutto')
-      return (
-        setFilteredProject(projectsNoFiltered),
-        setIsOpen(false),
-        setSelectedTechnology(technology)
-      );
-
-    const filteredProjects = projectsNoFiltered.filter(project => {
-      // Se non ci sono tecnologie, non filtrare
-      if (!project.technologies || project.technologies.length === 0)
-        return false;
-
-      const normalizedTechnologies = project.technologies.map(t =>
-        t.toLowerCase()
-      );
-      return normalizedTechnologies.includes(technology.toLowerCase());
-    });
-    setFilteredProject(filteredProjects);
-    setSelectedTechnology(technology);
+  const handleSelect = (tech: string) => {
+    onSelect(tech);
     setIsOpen(false);
   };
 
@@ -87,12 +57,7 @@ export const Filter = ({
           {technologies.map(tech => {
             return (
               <li key={tech}>
-                <a
-                  href="#filter"
-                  onClick={() => {
-                    handleFilter(tech);
-                  }}
-                >
+                <a href="#filter" onClick={() => handleSelect(tech)}>
                   {tech}
                 </a>
               </li>
@@ -101,11 +66,8 @@ export const Filter = ({
         </ul>
       </details>
       <p className="text-secondary-content pl-2 md:p-0 md:pr-2">
-        Progetti{' '}
-        {selectedTechnology === 'Tutto'
-          ? 'visualizzati'
-          : `${selectedTechnology}`}
-        : <span className="font-semibold">{number}</span>
+        Progetti {selected === 'Tutto' ? 'visualizzati' : `${selected}`}:{' '}
+        <span className="font-semibold">{number}</span>
       </p>
     </section>
   );
