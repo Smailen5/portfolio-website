@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-@plugin "daisyui" {
+@plugin 'daisyui' {
   themes:
     light --default,
     dark --prefersdark;
@@ -38,7 +38,7 @@
   --n-950: oklch(12.9% 0.042 264.695);
 }
 
-@plugin "daisyui/theme" {
+@plugin 'daisyui/theme' {
   name: 'light';
   default: true;
   prefersdark: false;
@@ -79,7 +79,7 @@
   --noise: 0;
 }
 
-@plugin "daisyui/theme" {
+@plugin 'daisyui/theme' {
   name: 'dark';
   default: false;
   prefersdark: true;
@@ -137,13 +137,16 @@
 
 /* Animazione typing per hero */
 @keyframes typing {
-  0%, 10% {
+  0%,
+  10% {
     width: 0;
   }
-  45%, 55% {
+  45%,
+  55% {
     width: 13ch;
   }
-  90%, 100% {
+  90%,
+  100% {
     width: 0;
   }
 }
