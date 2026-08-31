@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.4.4](https://github.com/Smailen5/portfolio-website/compare/v5.4.3...v5.4.4) (2026-08-31)
+
+
+### Bug Fixes
+
+* aggiunge icona nextui agli assets sostituendo nextjs ([#229](https://github.com/Smailen5/portfolio-website/issues/229)) ([d1e585a](https://github.com/Smailen5/portfolio-website/commit/d1e585ac9016098905e6b5d870b95c31c4e98ed5))
+* gestisce errori e stato di caricamento nel fetch dei progetti ([#233](https://github.com/Smailen5/portfolio-website/issues/233)) ([0042325](https://github.com/Smailen5/portfolio-website/commit/0042325592f260f396db1cad5d46fff835d52819))
+* ordina i progetti per createdAt decrescente in Latest ([#231](https://github.com/Smailen5/portfolio-website/issues/231)) ([e17dc8d](https://github.com/Smailen5/portfolio-website/commit/e17dc8df92dda359fbb12d57770e8c8360782a05))
+* rimuove main annidato per validità HTML e accessibilità ([#228](https://github.com/Smailen5/portfolio-website/issues/228)) ([98a353c](https://github.com/Smailen5/portfolio-website/commit/98a353c3b5e79520a84993f8ffb26c9f9499c351))
+* rimuove slice no-op in getInitials ([#230](https://github.com/Smailen5/portfolio-website/issues/230)) ([2aef286](https://github.com/Smailen5/portfolio-website/commit/2aef28652c8e579e2f118d31a524f64ff96daf2c))
+* rimuove template literal inutile in Card ([#227](https://github.com/Smailen5/portfolio-website/issues/227)) ([4751cb6](https://github.com/Smailen5/portfolio-website/commit/4751cb6daf9d3f80e89b47291631e2f48c656efa))
+
+
+### Documentation
+
+* semplifica CONVENTION.md e AGENTS.md ([#220](https://github.com/Smailen5/portfolio-website/issues/220)) ([bbb4c4a](https://github.com/Smailen5/portfolio-website/commit/bbb4c4af972535a78327891e4bb38708c3a9c582))
+
+
+### Chores
+
+* applica formattazione prettier ([#232](https://github.com/Smailen5/portfolio-website/issues/232)) ([8959806](https://github.com/Smailen5/portfolio-website/commit/8959806f311d75dffef956d4169ea39139bcee34))
+* sostituisce max-w-256 con max-w-5xl nelle classi Tailwind ([#226](https://github.com/Smailen5/portfolio-website/issues/226)) ([ea93f25](https://github.com/Smailen5/portfolio-website/commit/ea93f251ab4c780ae6f8d3fcfe9080b3046c40d5))
+
+
+### Refactoring
+
+* rimuove commenti all'inizio dei file ([#223](https://github.com/Smailen5/portfolio-website/issues/223)) ([b26cd0f](https://github.com/Smailen5/portfolio-website/commit/b26cd0f5e8db83a00bb532f14703687966c35013))
+* sposta fetchProjects dentro useProjects e rimuove src/api ([#222](https://github.com/Smailen5/portfolio-website/issues/222)) ([cc4833b](https://github.com/Smailen5/portfolio-website/commit/cc4833baccbfc8412427bcfb700685e22b143272))
+* unifica fetch progetti con hook useProjects condiviso ([#215](https://github.com/Smailen5/portfolio-website/issues/215)) ([8267445](https://github.com/Smailen5/portfolio-website/commit/82674450fb6ba5c4ea7d91858d119fcee0b68198))
+
 ## [5.4.3](https://github.com/Smailen5/portfolio-website/compare/v5.4.2...v5.4.3) (2026-08-20)
 
 
