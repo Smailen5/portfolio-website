@@ -1,6 +1,7 @@
 import { H2 } from '@/components/atoms/heading';
 import Section from '@/components/atoms/Section';
 import Separator from '@/components/atoms/Separator';
+import { CardSkeleton } from '@/components/molecules/CardSkeleton';
 import { CardProject } from '@/features/projects/components/Card';
 import { useProjects } from '@/shared/hooks/useProjects';
 import { Project } from '@/shared/types/projects';
@@ -24,7 +25,15 @@ export const LastProjects = () => {
 
       <Separator />
 
-      {isLoading ? null : error ? (
+      {isLoading ? (
+        <>
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+            <CardSkeleton />
+            <CardSkeleton />
+            <CardSkeleton />
+          </div>
+        </>
+      ) : error ? (
         <p className="text-error">
           Errore nel recupero dei progetti. Riprova piu&apos; tardi.
         </p>
