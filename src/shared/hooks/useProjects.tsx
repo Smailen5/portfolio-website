@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Project } from '../types/projects';
 import { API_URL } from '@/shared/constants/api';
 
@@ -14,6 +14,7 @@ interface UseProjectsReturn {
   projects: Project[];
   isLoading: boolean;
   error: Error | null;
+  retry: () => void;
 }
 
 async function fetchProjects(): Promise<Project[]> {
@@ -27,14 +28,9 @@ export function useProjects(): UseProjectsReturn {
   const [isLoading, setIsLoading] = useState<boolean>(cache === null);
   const [error, setError] = useState<Error | null>(null);
 
-  useEffect(() => {
-    if (cache !== null && Date.now() - cache.timestamp < STALE_TIME_MS) {
-      return;
-    }
-
+  const load = useCallback(() => {
     setIsLoading(true);
     setError(null);
-
     fetchProjects()
       .then(data => {
         cache = { data, timestamp: Date.now() };
@@ -52,5 +48,13 @@ export function useProjects(): UseProjectsReturn {
         setIsLoading(false);
       });
   }, []);
-  return { projects, isLoading, error };
+
+  useEffect(() => {
+    if (cache !== null && Date.now() - cache.timestamp < STALE_TIME_MS) {
+      return;
+    }
+
+    load();
+  }, [load]);
+  return { projects, isLoading, error, retry: load };
 }
