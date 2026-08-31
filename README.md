@@ -82,6 +82,7 @@ Portfolio moderno e performante sviluppato con le tecnologie frontend più recen
 - **Type Safety**: TypeScript strict mode con zero `any` types
 - ~~**Form di Contatto**: Form con validazione Formik~~ (Rimosso v5.0.0)
 - ~~**API GitHub**: Rate limiting e caching progetti~~ (Sostituito con CDN Netlify v3.9.0)
+
 </details>
 
 ## 📋 Road Map
@@ -115,6 +116,7 @@ Portfolio moderno e performante sviluppato con le tecnologie frontend più recen
 - ~~Temi multipli~~ (Bastano light/dark)
 - ~~Form di contatto~~ (Email + Social sufficienti)
 - ~~API GitHub con rate limiting~~ (Sostituito con CDN Netlify)
+
 </details>
 
 ## 📚 Risorse Utili
@@ -146,6 +148,7 @@ Portfolio moderno e performante sviluppato con le tecnologie frontend più recen
 
 - ~~[Formik Docs](https://formik.org/docs)~~ (Non più usato)
 - ~~[NextUI Docs](https://nextui.org/)~~ (Sostituito con DaisyUI)
+
 </details>
 
 ## 📝 Note Legali
