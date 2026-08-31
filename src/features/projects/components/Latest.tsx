@@ -1,6 +1,8 @@
+import { CardError } from '@/components/molecules/CardError';
 import { H2 } from '@/components/atoms/heading';
 import Section from '@/components/atoms/Section';
 import Separator from '@/components/atoms/Separator';
+import { CardSkeleton } from '@/components/molecules/CardSkeleton';
 import { CardProject } from '@/features/projects/components/Card';
 import { useProjects } from '@/shared/hooks/useProjects';
 import { Project } from '@/shared/types/projects';
@@ -14,7 +16,7 @@ import { Project } from '@/shared/types/projects';
  * @see CardProject - Componente per visualizzare singolo progetto
  */
 export const LastProjects = () => {
-  const { projects, isLoading, error } = useProjects();
+  const { projects, isLoading, error, retry } = useProjects();
   // !Modifica qui i progetti da mostrare
   const maxProjectsToShow = 3;
 
@@ -24,10 +26,16 @@ export const LastProjects = () => {
 
       <Separator />
 
-      {isLoading ? null : error ? (
-        <p className="text-error">
-          Errore nel recupero dei progetti. Riprova piu&apos; tardi.
-        </p>
+      {isLoading ? (
+        <>
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+            <CardSkeleton />
+            <CardSkeleton />
+            <CardSkeleton />
+          </div>
+        </>
+      ) : error ? (
+        <CardError onRetry={retry} />
       ) : (
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {[...projects]
