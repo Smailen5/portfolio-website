@@ -1,3 +1,4 @@
+import { CardError } from '@/components/molecules/CardError';
 import { H2 } from '@/components/atoms/heading';
 import Section from '@/components/atoms/Section';
 import Separator from '@/components/atoms/Separator';
@@ -34,9 +35,7 @@ export const LastProjects = () => {
           </div>
         </>
       ) : error ? (
-        <p className="text-error">
-          Errore nel recupero dei progetti. Riprova piu&apos; tardi.
-        </p>
+        <CardError />
       ) : (
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {[...projects]
