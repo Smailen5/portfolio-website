@@ -21,18 +21,19 @@ const technologies = [
 ];
 
 /**
- * Componente Filter - Filtro progetti per tecnologia
+ * Componente Filter - Dropdown di selezione tecnologia (controllato)
  *
- * Permette di filtrare i progetti visualizzati in base alla tecnologia utilizzata
- * usando un dropdown DaisyUI
+ * Mostra il dropdown DaisyUI con le tecnologie disponibili e segnala
+ * la selezione al genitore tramite onSelect. Non effettua alcun
+ * filtraggio: la logica è delegata a filterProjectsByTechnology.
  *
  * Funzionalità:
  * - Dropdown con lista tecnologie predefinite
- * - Filtraggio case-insensitive
- * - Contatore progetti filtrati
- * - Reset con opzione "Tutto"
+ * - Mostra la tecnologia selezionata e il conteggio ricevuto
+ * - Opzione "Tutto" per azzerare il filtro
  *
- * @param {FilterProps} props - Funzione setter, progetti originali, conteggio
+ * @param {FilterProps} props - selected: tecnologia attiva, onSelect: callback
+ * di selezione, number: numero di progetti filtrati da mostrare
  */
 export const Filter = ({ selected, onSelect, number }: FilterProps) => {
   // Stato per chiudere il dropdown

@@ -16,8 +16,10 @@ interface SectionProjectsProps {
 /**
  * Componente SectionProjects - Griglia progetti con filtro
  *
- * Visualizza tutti i progetti in una griglia responsive
- * con sistema di filtraggio per tecnologia
+ * Gestisce lo stato della tecnologia selezionata e filtra i progetti
+ * tramite filterProjectsByTechnology (in useMemo). Delega al
+ * componente Filter solo la UI del dropdown.
+ * Mostra skeleton in caricamento e CardError in caso di errore.
  *
  * Layout responsive:
  * - Mobile: 1 colonna
@@ -25,6 +27,9 @@ interface SectionProjectsProps {
  * - Desktop: 3 colonne
  *
  * @param {Project[]} projects - Array completo dei progetti da visualizzare
+ * @param {boolean} isLoading - True durante il fetch, mostra i skeleton
+ * @param {Error | null} error - Errore del fetch, mostra CardError
+ * @param {() => void} retry - Callback per ripetere il fetch
  */
 export const SectionProjects = ({
   projects,
