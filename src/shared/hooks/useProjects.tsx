@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { Project } from '../types/projects';
 import { API_URL } from '@/shared/constants/api';
 
@@ -17,8 +17,8 @@ interface UseProjectsReturn {
   retry: () => void;
 }
 
-async function fetchProjects(): Promise<Project[]> {
-  const response = await fetch(`${API_URL}/api/projects`);
+async function fetchProjects(signal: AbortSignal): Promise<Project[]> {
+  const response = await fetch(`${API_URL}/api/projects`, { signal });
   if (!response.ok) throw new Error(`Richiesta fallita: ${response.status}`);
   return response.json();
 }
@@ -27,16 +27,21 @@ export function useProjects(): UseProjectsReturn {
   const [projects, setProjects] = useState<Project[]>(cache?.data ?? []);
   const [isLoading, setIsLoading] = useState<boolean>(cache === null);
   const [error, setError] = useState<Error | null>(null);
+  const controllerRef = useRef<AbortController | null>(null);
 
   const load = useCallback(() => {
+    controllerRef.current?.abort();
+    const controller = new AbortController();
+    controllerRef.current = controller;
     setIsLoading(true);
     setError(null);
-    fetchProjects()
+    fetchProjects(controller.signal)
       .then(data => {
         cache = { data, timestamp: Date.now() };
         setProjects(data);
       })
       .catch(err => {
+        if (err.name === 'AbortError') return; // ignora abort error
         const normalizedError =
           err instanceof Error
             ? err
@@ -45,7 +50,7 @@ export function useProjects(): UseProjectsReturn {
         setProjects([]);
       })
       .finally(() => {
-        setIsLoading(false);
+        if (!controller.signal.aborted) setIsLoading(false);
       });
   }, []);
 
@@ -55,6 +60,7 @@ export function useProjects(): UseProjectsReturn {
     }
 
     load();
+    return () => controllerRef.current?.abort();
   }, [load]);
   return { projects, isLoading, error, retry: load };
 }
