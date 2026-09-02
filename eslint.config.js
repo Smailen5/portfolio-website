@@ -46,6 +46,8 @@ export default [
         React: "readonly",
 
         // DOM types
+        AbortController: "readonly",
+        AbortSignal: "readonly",
         HTMLDivElement: "readonly",
         HTMLButtonElement: "readonly",
         MouseEvent: "readonly",
