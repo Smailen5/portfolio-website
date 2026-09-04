@@ -1,4 +1,3 @@
-import useScroll from '@/shared/hooks/useScroll';
 import { twMerge } from 'tailwind-merge';
 
 interface LayoutProps {
@@ -28,7 +27,6 @@ export const Layout = ({
   classLayout,
   classContent,
 }: LayoutProps) => {
-  useScroll();
   return (
     <div
       className={twMerge(
