@@ -10,13 +10,11 @@ interface LayoutProps {
  * Componente Layout - Container principale per sezioni
  *
  * Fornisce layout centrato con larghezza massima responsive
- * e gestisce lo scroll automatico all'inizio della pagina
  *
  * Features:
  * - Larghezza max 1024px centrata
  * - Padding top per navbar fixed (pt-20)
  * - Classi personalizzabili per layout e contenuto
- * - Auto-scroll to top al montaggio (useScroll hook)
  *
  * @param {React.ReactNode} children - Contenuto da wrappare
  * @param {string} [classLayout] - Classi Tailwind custom per container esterno

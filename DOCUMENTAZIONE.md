@@ -28,7 +28,7 @@ src/
 │
 ├── shared/               # Codice condiviso cross-feature
 │   ├── constants/        # API endpoints, navigation links
-│   ├── hooks/            # useTheme, useScroll, etc.
+│   ├── hooks/            # useProjects, useChangeAvatar
 │   ├── types/            # TypeScript types globali
 │   └── utils/            # Funzioni di utilità
 │
