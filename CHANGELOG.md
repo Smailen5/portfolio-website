@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.4.5](https://github.com/Smailen5/portfolio-website/compare/v5.4.4...v5.4.5) (2026-09-04)
+
+
+### Bug Fixes
+
+* aggiunge AbortController al fetch dei progetti ([#235](https://github.com/Smailen5/portfolio-website/issues/235)) ([b93aa57](https://github.com/Smailen5/portfolio-website/commit/b93aa572917684673eeab2f45669d5dd5c52a4f0))
+
+
+### Documentation
+
+* consolida CONVENTION.md sui puntamenti alle fonti ([#238](https://github.com/Smailen5/portfolio-website/issues/238)) ([9e18711](https://github.com/Smailen5/portfolio-website/commit/9e18711271bd258f97c917f24f8fc936f7b516dd))
+
+
+### Refactoring
+
+* delega lo scroll a tanstack router ed elimina useScroll ([#237](https://github.com/Smailen5/portfolio-website/issues/237)) ([62e5ca4](https://github.com/Smailen5/portfolio-website/commit/62e5ca4e0befb22e243a713ab25624d6839ad20e))
+
 ## [5.4.4](https://github.com/Smailen5/portfolio-website/compare/v5.4.3...v5.4.4) (2026-08-31)
 
 
