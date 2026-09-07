@@ -1,4 +1,4 @@
-import social from '@/data/social';
+import { social } from '@/data/social';
 import { Icon } from './Icon';
 
 /**
@@ -10,7 +10,7 @@ import { Icon } from './Icon';
  * @see social - Array con i dati dei social da visualizzare
  * @see Icon - Componente singola icona social
  */
-const SocialIcons = () => {
+export const SocialIcons = () => {
   return (
     <div className="flex flex-wrap justify-center gap-4">
       {social.map((el, index) => (
@@ -19,5 +19,3 @@ const SocialIcons = () => {
     </div>
   );
 };
-
-export default SocialIcons;

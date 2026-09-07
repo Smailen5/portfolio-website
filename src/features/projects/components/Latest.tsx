@@ -1,7 +1,7 @@
 import { CardError } from '@/components/molecules/CardError';
 import { H2 } from '@/components/atoms/heading';
-import Section from '@/components/atoms/Section';
-import Separator from '@/components/atoms/Separator';
+import { Section } from '@/components/atoms/Section';
+import { Separator } from '@/components/atoms/Separator';
 import { CardSkeleton } from '@/components/molecules/CardSkeleton';
 import { CardProject } from '@/features/projects/components/Card';
 import { useProjects } from '@/shared/hooks/useProjects';

@@ -1,6 +1,6 @@
 import { twMerge } from 'tailwind-merge';
 
-const Section = ({
+export const Section = ({
   children,
   className,
 }: {
@@ -13,5 +13,3 @@ const Section = ({
     </section>
   );
 };
-
-export default Section;

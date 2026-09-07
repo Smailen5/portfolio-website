@@ -5,7 +5,7 @@ const FADE_DURATION = 300;
 const CHANGE_INTERVAL = 5000;
 const REDUCED_MOTION_QUERY = '(prefers-reduced-motion: reduce)';
 
-const useChangeAvatar = () => {
+export const useChangeAvatar = () => {
   const [currentAvatar, setCurrentAvatar] = useState(avatarImages[0]);
   const [animation, setAnimation] = useState('');
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -67,5 +67,3 @@ const useChangeAvatar = () => {
 
   return { currentAvatar, animation };
 };
-
-export default useChangeAvatar;

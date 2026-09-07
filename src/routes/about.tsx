@@ -1,8 +1,8 @@
 import { Head } from '@/components/atoms/Head';
 import { H1, H2 } from '@/components/atoms/heading';
-import Section from '@/components/atoms/Section';
-import Separator from '@/components/atoms/Separator';
-import Strong from '@/components/atoms/Strong';
+import { Section } from '@/components/atoms/Section';
+import { Separator } from '@/components/atoms/Separator';
+import { Strong } from '@/components/atoms/Strong';
 import { Layout } from '@/components/molecules/Layout';
 import { SkillsSection } from '@/components/organisms/SectionSkill';
 import { createFileRoute } from '@tanstack/react-router';

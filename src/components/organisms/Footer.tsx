@@ -1,6 +1,6 @@
 import reactIcon from '@/assets/icons/icons8-react.svg';
 import tailwindIcon from '@/assets/icons/icons8-tailwind-css.svg';
-import SocialIcons from '@/components/molecules/Social/SocialIcon';
+import { SocialIcons } from '@/components/molecules/Social/SocialIcon';
 import { Layout } from '../molecules/Layout';
 
 /**
@@ -14,7 +14,7 @@ import { Layout } from '../molecules/Layout';
  *
  * Layout responsive: colonna su mobile, row su desktop
  */
-const Footer = () => {
+export const Footer = () => {
   return (
     <Layout>
       <footer className="flex w-full flex-row items-center justify-center text-center">
@@ -51,5 +51,3 @@ const Footer = () => {
     </Layout>
   );
 };
-
-export default Footer;

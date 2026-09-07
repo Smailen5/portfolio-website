@@ -6,7 +6,7 @@ type SocialItem = {
   icon: keyof typeof icons;
 };
 
-const social: SocialItem[] = [
+export const social: SocialItem[] = [
   {
     name: 'Github',
     link: 'https://github.com/Smailen5',
@@ -23,5 +23,3 @@ const social: SocialItem[] = [
     icon: 'frontendMentor',
   },
 ];
-
-export default social;
