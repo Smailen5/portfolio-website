@@ -1,6 +1,6 @@
 /// <reference types="vite/client" />
 
-import Footer from '@/components/organisms/Footer';
+import { Footer } from '@/components/organisms/Footer';
 import { ThemeProvider } from '@/context/ThemeContext';
 import { Navbar } from '@/components/organisms/Navbar';
 import { createRootRoute, Outlet } from '@tanstack/react-router';

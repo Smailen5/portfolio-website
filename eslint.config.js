@@ -10,7 +10,7 @@ import eslintPluginTailwindcss from 'eslint-plugin-tailwindcss'
 export default [
   js.configs.recommended,
   {
-    files: ["**/*.{js,jsx,ts,tsx}"],
+    files: ["src/**/*.{js,jsx,ts,tsx}"],
     languageOptions: {
       parser: tsparser,
       parserOptions: {
@@ -69,6 +69,11 @@ export default [
       ...tseslint.configs.recommended.rules,
       ...react.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
+      "no-restricted-syntax": [
+        "warn",
+        "ExportDefaultDeclaration",
+        "ExportSpecifier[exported.name='default']",
+      ],
 
       // Prettier
       "prettier/prettier": "warn",
@@ -90,6 +95,7 @@ export default [
             'card(?:-.*)?',
             'badge(?:-outline)?',
             'link(?:-(primary|accent))?',
+            'typing'
         ],
       },
     ],

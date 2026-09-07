@@ -1,4 +1,4 @@
-import useChangeAvatar from '@/shared/hooks/useChangeAvatar';
+import { useChangeAvatar } from '@/shared/hooks/useChangeAvatar';
 import { getInitials } from '@/shared/utils/getInitials';
 import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
