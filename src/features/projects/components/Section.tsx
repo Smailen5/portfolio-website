@@ -2,8 +2,7 @@ import { Project } from '@/shared/types/projects';
 import { useMemo, useState } from 'react';
 import { CardProject } from './Card';
 import { Filter } from './Filter';
-import { CardSkeleton } from '@/components/molecules/CardSkeleton';
-import { CardError } from '@/components/molecules/CardError';
+import { CardError, CardSkeleton } from '@/components/molecules';
 import { filterProjectsByTechnology } from '@/shared/utils/filterProjects';
 
 interface SectionProjectsProps {

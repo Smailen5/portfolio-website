@@ -1,6 +1,5 @@
 import { Link } from '@tanstack/react-router';
-import { Section } from '../atoms/Section';
-import { Separator } from '../atoms/Separator';
+import { Section, Separator } from '@/components/atoms';
 
 /**
  * Componente Hero - Sezione principale della homepage

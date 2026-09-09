@@ -1,7 +1,7 @@
-import { Layout } from '@/components/molecules/Layout';
+import { Layout } from '@/components/molecules';
 import { HeaderProject } from '@/features/projects/components/Header';
 import { SectionProjects } from '@/features/projects/components/Section';
-import { Head } from '@/components/atoms/Head';
+import { Head } from '@/components/atoms';
 import { createFileRoute } from '@tanstack/react-router';
 import { useProjects } from '@/shared/hooks/useProjects';
 

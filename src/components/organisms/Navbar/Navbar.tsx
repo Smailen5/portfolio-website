@@ -1,5 +1,5 @@
-import { Avatar } from '@/components/atoms/Avatar';
-import { ToggleTheme } from '@/components/molecules/ToggleTheme';
+import { Avatar } from '@/components/atoms';
+import { ToggleTheme } from '@/components/molecules';
 import { CurriculumDownload } from '@/features/cv/components/CurriculumDownload';
 import { NAVIGATION_LINKS } from '@/shared/constants/navigation';
 import { Link } from '@tanstack/react-router';

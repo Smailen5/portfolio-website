@@ -1,7 +1,5 @@
-import { Hero } from '@/components/molecules/Hero';
-import { Layout } from '@/components/molecules/Layout';
-import { Presentation } from '@/components/molecules/Presentation';
-import { SkillsCarousel } from '@/components/organisms/SectionSkill/SkillsCarousel';
+import { Hero, Layout, Presentation } from '@/components/molecules';
+import { SkillsCarousel } from '@/components/organisms';
 import { LastProjects } from '@/features/projects/components/Latest';
 import { createFileRoute } from '@tanstack/react-router';
 
