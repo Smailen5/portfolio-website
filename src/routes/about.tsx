@@ -1,9 +1,6 @@
-import { Head } from '@/components/atoms/Head';
-import { Section } from '@/components/atoms/Section';
-import { Separator } from '@/components/atoms/Separator';
-import { Strong } from '@/components/atoms/Strong';
-import { Layout } from '@/components/molecules/Layout';
-import { SkillsSection } from '@/components/organisms/SectionSkill';
+import { Head, Section, Separator, Strong } from '@/components/atoms/';
+import { Layout } from '@/components/molecules/';
+import { SkillsSection } from '@/components/organisms/';
 import { createFileRoute } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/about')({
