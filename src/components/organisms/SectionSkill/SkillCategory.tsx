@@ -1,4 +1,3 @@
-import { H3 } from '@/components/atoms/heading';
 import { Section } from '@/components/atoms/Section';
 import { Separator } from '@/components/atoms/Separator';
 import { SkillCard } from './SkillCard';
@@ -25,7 +24,7 @@ interface SkillCategoryProps {
 export const SkillCategory = ({ title, section }: SkillCategoryProps) => {
   return (
     <Section>
-      <H3>{title}</H3>
+      <h3 className="heading-3">{title}</h3>
 
       <Separator />
 

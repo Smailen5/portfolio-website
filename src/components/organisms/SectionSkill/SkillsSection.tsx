@@ -1,12 +1,7 @@
 import { Section } from '@/components/atoms/Section';
 import { Separator } from '@/components/atoms/Separator';
-import { H2 } from '@/components/atoms/heading';
 import { framework, language, utility } from '@/data/skillsData';
 import { SkillCategory } from './SkillCategory';
-
-interface SkillsSectionProps {
-  noTitle?: boolean;
-}
 
 /**
  * Componente SkillsSection - Sezione competenze tecniche
@@ -21,11 +16,9 @@ interface SkillsSectionProps {
  * @param {boolean} [noTitle] - Se true, nasconde il titolo visivamente (solo screen reader)
  *                               Utile quando il titolo è già presente nella pagina
  */
-export const SkillsSection = ({ noTitle }: SkillsSectionProps) => {
+export const SkillsSection = () => {
   return (
     <Section className="text-center">
-      <H2 screenReaderOnly={noTitle}>Competenze acquisite</H2>
-
       <Separator />
 
       <section className="flex size-full flex-col flex-wrap gap-12 md:grid md:grid-cols-3">

@@ -1,5 +1,4 @@
 import { CardError } from '@/components/molecules/CardError';
-import { H2 } from '@/components/atoms/heading';
 import { Section } from '@/components/atoms/Section';
 import { Separator } from '@/components/atoms/Separator';
 import { CardSkeleton } from '@/components/molecules/CardSkeleton';
@@ -22,7 +21,7 @@ export const LastProjects = () => {
 
   return (
     <Section className="text-center">
-      <H2>Guarda i miei ultimi lavori</H2>
+      <h2>Guarda i miei ultimi lavori</h2>
 
       <Separator />
 

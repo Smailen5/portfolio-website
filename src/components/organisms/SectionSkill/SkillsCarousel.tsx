@@ -1,4 +1,3 @@
-import { H2 } from '@/components/atoms/heading';
 import { framework, language, utility } from '@/data/skillsData';
 import { SkillCard } from './SkillCard';
 
@@ -29,7 +28,7 @@ export const SkillsCarousel = () => {
   const duplicatedSkills = [...allSkills, ...allSkills];
   return (
     <>
-      <H2 textCenter>Le tecnologie che uso</H2>
+      <h2 className="text-center">Le tecnologie che uso</h2>
 
       <div className="mx-auto w-full overflow-x-hidden md:max-w-244">
         <div className="animate-scroll inline-flex">
