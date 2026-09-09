@@ -5,4 +5,3 @@ export { Layout } from './Layout';
 export { Presentation } from './Presentation';
 export { SocialIcons } from './SocialIcons';
 export { ToggleTheme } from './ToggleTheme';
-export { NotFound } from './NotFound';

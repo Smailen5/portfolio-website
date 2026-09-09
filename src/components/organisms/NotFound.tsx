@@ -1,6 +1,6 @@
 import { Head } from '@/components/atoms';
+import { Layout } from '@/components/molecules';
 import { Link } from '@tanstack/react-router';
-import { Layout } from './Layout';
 
 export function NotFound() {
   return (
