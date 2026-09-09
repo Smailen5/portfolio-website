@@ -1,6 +1,6 @@
 import { Head } from '@/components/atoms/Head';
 import { Layout } from '@/components/molecules/Layout';
-import { SocialIcons } from '@/components/molecules/Social/SocialIcons';
+import { SocialIcons } from '@/components/molecules/SocialIcons';
 import { createFileRoute } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/contact/')({
