@@ -1,12 +1,7 @@
 import { Head } from '@/components/atoms';
 import { Layout, SocialIcons } from '@/components/molecules';
-import { createFileRoute } from '@tanstack/react-router';
 
-export const Route = createFileRoute('/contact/')({
-  component: ContactPage,
-});
-
-function ContactPage() {
+export function ContactPage() {
   return (
     <>
       <Head

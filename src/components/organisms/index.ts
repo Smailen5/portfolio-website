@@ -5,3 +5,4 @@ export { SkillCategory } from './SectionSkill/SkillCategory';
 export { SkillsCarousel } from './SectionSkill/SkillsCarousel';
 export { SkillsSection } from './SectionSkill/SkillsSection';
 export { Footer } from './Footer';
+export { Root } from './Root';
