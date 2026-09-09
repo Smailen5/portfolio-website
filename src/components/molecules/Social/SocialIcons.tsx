@@ -14,7 +14,6 @@ export const SocialIcons = () => {
   return (
     <div className="flex flex-wrap justify-center gap-4">
       {social.map((el, index) => (
-        // <Icon key={index} {...el} />
         <a
           key={index}
           aria-label={`apri il profilo ${el.name} di Smailen Vargas`}
