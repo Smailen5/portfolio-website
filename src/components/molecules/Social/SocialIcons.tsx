@@ -2,13 +2,16 @@ import { social } from '@/data/social';
 import { icons } from '@/assets/icons/index';
 
 /**
- * Componente SocialIcons - Lista icone social
+ * Componente SocialIcons - Lista icone social interattive
  *
  * Mostra le icone dei social media (GitHub, LinkedIn, Frontend Mentor)
  * in un layout flessibile e responsive
  *
+ * Effetti hover:
+ * - Mobile: icona + nome sempre visibile
+ * - Desktop: solo icona, il nome appare al hover con animazione slide
+ *
  * @see social - Array con i dati dei social da visualizzare
- * @see Icon - Componente singola icona social
  */
 export const SocialIcons = () => {
   return (
