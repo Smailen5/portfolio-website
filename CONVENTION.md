@@ -69,6 +69,16 @@ fondo): non copiarli qui con valori hardcoded, per evitare drift.
 - Mai `git add .` o `git commit -am`
 - Commit atomici
 
+## Import barrel
+
+- Un solo `index.ts` per livello: `components/atoms`, `molecules`, `organisms`
+- Cross-level: sempre dal barrel di livello con alias `@/components/<livello>`,
+  senza slash finale
+- Sibling dello stesso livello: path diretto `./Component` (vietato il ciclo
+  through-the-barrel)
+- Re-export nel barrel: named `export { X } from './X'`
+- Costo accettato: ogni nuovo componente va aggiunto all'`index.ts` del livello
+
 ## Label
 
 ### Issue
