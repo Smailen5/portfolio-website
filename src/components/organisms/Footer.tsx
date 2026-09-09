@@ -1,6 +1,6 @@
 import reactIcon from '@/assets/icons/icons8-react.svg';
 import tailwindIcon from '@/assets/icons/icons8-tailwind-css.svg';
-import { SocialIcons } from '@/components/molecules/Social/SocialIcon';
+import { SocialIcons } from '@/components/molecules/SocialIcons';
 import { Layout } from '../molecules/Layout';
 
 /**
