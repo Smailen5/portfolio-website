@@ -1,5 +1,4 @@
 import { Head } from '@/components/atoms/Head';
-import { H1, H2 } from '@/components/atoms/heading';
 import { Section } from '@/components/atoms/Section';
 import { Separator } from '@/components/atoms/Separator';
 import { Strong } from '@/components/atoms/Strong';
@@ -22,11 +21,11 @@ function AboutPage() {
       />
       <Layout classContent="min-h-[calc(100vh-160px)] px-6">
         <Separator />
-        <H1>Chi sono</H1>
+        <h1>Chi sono</h1>
         <Separator className="h-4" />
 
         <Section>
-          <H2>Il Mio Percorso</H2>
+          <h2>Il Mio Percorso</h2>
           <p>
             Sono un <Strong>frontend developer</Strong> con una passione che
             nasce dall&apos;infanzia.
@@ -53,7 +52,7 @@ function AboutPage() {
         <Separator />
 
         <Section>
-          <H2>Le Mie Competenze</H2>
+          <h2>Le Mie Competenze</h2>
           <p>
             Nel corso degli anni ho sviluppato una solida conoscenza delle
             tecnologie moderne per lo sviluppo web. Partendo dai fondamenti con{' '}
@@ -77,12 +76,12 @@ function AboutPage() {
           </p>
         </Section>
 
-        <SkillsSection noTitle />
+        <SkillsSection />
 
         <Separator />
 
         <Section>
-          <H2>Il Mio Approccio</H2>
+          <h2>Il Mio Approccio</h2>
           <p>
             Nel <Strong>frontend development</Strong> ho trovato il perfetto
             equilibrio tra problem solving e creatività. Mi appassiona
@@ -97,7 +96,7 @@ function AboutPage() {
         <Separator />
 
         <Section>
-          <H2>Fuori dal Codice</H2>
+          <h2>Fuori dal Codice</h2>
           <p>
             Quando non sono immerso nel codice, mi dedico ad attività che
             nutrono la mia creatività e curiosità:
