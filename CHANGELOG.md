@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.4.6](https://github.com/Smailen5/portfolio-website/compare/v5.4.5...v5.4.6) (2026-09-09)
+
+
+### Bug Fixes
+
+* rende riconoscibile e centrata la pagina 404 ([#252](https://github.com/Smailen5/portfolio-website/issues/252)) ([7c48f96](https://github.com/Smailen5/portfolio-website/commit/7c48f965e2e6ac6eb35202e04007880648b5d08f))
+
+
+### Refactoring
+
+* adotta i barrel import per livello e allinea tutti gli import ([#245](https://github.com/Smailen5/portfolio-website/issues/245)) ([9100347](https://github.com/Smailen5/portfolio-website/commit/910034782f4fe263a3815a9d9d6e386fd50fc3d4))
+* corregge warnings di fast refresh di eslint ([#249](https://github.com/Smailen5/portfolio-website/issues/249)) ([7b91517](https://github.com/Smailen5/portfolio-website/commit/7b91517ae7e1c52d90f5d1149cf03ce3a83d7f6e))
+* rimuove sezione modifiche effettuate dal template PR ([#248](https://github.com/Smailen5/portfolio-website/issues/248)) ([d100086](https://github.com/Smailen5/portfolio-website/commit/d100086049756457d2063374aa0870cffbe408c3))
+* sostituisce i componenti Heading con stili tailwind e utility ([#243](https://github.com/Smailen5/portfolio-website/issues/243)) ([9f4a185](https://github.com/Smailen5/portfolio-website/commit/9f4a185f6ca007117d3a7b9ba6981541941f46c9))
+* unisce i componenti Social e SocialIcon in SocialIcons ([#241](https://github.com/Smailen5/portfolio-website/issues/241)) ([6e53369](https://github.com/Smailen5/portfolio-website/commit/6e533691b8b3feba6108b6e416f8fbcca9436d67))
+
 ## [5.4.5](https://github.com/Smailen5/portfolio-website/compare/v5.4.4...v5.4.5) (2026-09-07)
 
 
