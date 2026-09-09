@@ -1,7 +1,7 @@
 import { Project } from '@/shared/types/projects';
 import { useMemo, useState } from 'react';
-import { CardProject } from '@/features/projects/components/Card';
-import { Filter } from '@/features/projects/components/Filter';
+import { CardProject } from './Card';
+import { Filter } from './Filter';
 import { CardError, CardSkeleton } from '@/components/molecules';
 import { filterProjectsByTechnology } from '@/shared/utils/filterProjects';
 
