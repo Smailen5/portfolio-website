@@ -1,6 +1,6 @@
-import { Head, Section, Separator, Strong } from '@/components/atoms/';
-import { Layout } from '@/components/molecules/';
-import { SkillsSection } from '@/components/organisms/';
+import { Head, Section, Separator, Strong } from '@/components/atoms';
+import { Layout } from '@/components/molecules';
+import { SkillsSection } from '@/components/organisms';
 import { createFileRoute } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/about')({

@@ -1,5 +1,4 @@
-import { Section } from '@/components/atoms/Section';
-import { Separator } from '@/components/atoms/Separator';
+import { Section, Separator } from '@/components/atoms';
 import { framework, language, utility } from '@/data/skillsData';
 import { SkillCategory } from './SkillCategory';
 

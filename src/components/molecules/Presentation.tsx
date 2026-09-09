@@ -1,7 +1,5 @@
 import { Link } from '@tanstack/react-router';
-import { Section } from '../atoms/Section';
-import { Separator } from '../atoms/Separator';
-import { Strong } from '../atoms/Strong';
+import { Section, Separator, Strong } from '@/components/atoms';
 
 /**
  * Componente Presentation - Sezione "Chi sono" (versione sintetica)

@@ -1,5 +1,5 @@
-import { CardError, CardSkeleton } from '@/components/molecules/';
-import { Section, Separator } from '@/components/atoms/';
+import { CardError, CardSkeleton } from '@/components/molecules';
+import { Section, Separator } from '@/components/atoms';
 import { CardProject } from '@/features/projects/components/Card';
 import { useProjects } from '@/shared/hooks/useProjects';
 import { Project } from '@/shared/types/projects';

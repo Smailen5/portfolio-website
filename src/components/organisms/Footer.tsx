@@ -1,7 +1,6 @@
 import reactIcon from '@/assets/icons/icons8-react.svg';
 import tailwindIcon from '@/assets/icons/icons8-tailwind-css.svg';
-import { SocialIcons } from '@/components/molecules/SocialIcons';
-import { Layout } from '../molecules/Layout';
+import { SocialIcons, Layout } from '@/components/molecules';
 
 /**
  * Componente Footer - Piè di pagina del sito
