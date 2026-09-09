@@ -19,8 +19,6 @@ import { SkillCategory } from './SkillCategory';
 export const SkillsSection = () => {
   return (
     <Section className="text-center">
-      <h2 className="sr-only">Competenze acquisite</h2>
-
       <Separator />
 
       <section className="flex size-full flex-col flex-wrap gap-12 md:grid md:grid-cols-3">
