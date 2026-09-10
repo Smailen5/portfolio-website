@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.4.7](https://github.com/Smailen5/portfolio-website/compare/v5.4.6...v5.4.7) (2026-09-10)
+
+
+### Bug Fixes
+
+* sostituisce i link del filtro con bottoni nativi ([#255](https://github.com/Smailen5/portfolio-website/issues/255)) ([a38eb8a](https://github.com/Smailen5/portfolio-website/commit/a38eb8a2e39380f6037b024a258e3a5e650ef2de))
+
+
+### Refactoring
+
+* aggiorna classi tailwind in SkillsCarousel ([#253](https://github.com/Smailen5/portfolio-website/issues/253)) ([dd2b8ec](https://github.com/Smailen5/portfolio-website/commit/dd2b8ecac68dff6378f2d8c183ea8e45ce50e6a8))
+
 ## [5.4.6](https://github.com/Smailen5/portfolio-website/compare/v5.4.5...v5.4.6) (2026-09-09)
 
 
