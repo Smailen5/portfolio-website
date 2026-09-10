@@ -58,9 +58,9 @@ export const Filter = ({ selected, onSelect, number }: FilterProps) => {
           {technologies.map(tech => {
             return (
               <li key={tech}>
-                <a href="#filter" onClick={() => handleSelect(tech)}>
+                <button type="button" onClick={() => handleSelect(tech)}>
                   {tech}
-                </a>
+                </button>
               </li>
             );
           })}
