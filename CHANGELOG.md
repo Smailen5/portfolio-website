@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.4.8](https://github.com/Smailen5/portfolio-website/compare/v5.4.7...v5.4.8) (2026-09-18)
+
+
+### Bug Fixes
+
+* verifica i link del navbar con le rotte generate ([#258](https://github.com/Smailen5/portfolio-website/issues/258)) ([03b5996](https://github.com/Smailen5/portfolio-website/commit/03b59964d8bbd554799da24379ba079453624d42))
+
+
+### Chores
+
+* migra react-helmet a tanstack router head ([#257](https://github.com/Smailen5/portfolio-website/issues/257)) ([ecb96f6](https://github.com/Smailen5/portfolio-website/commit/ecb96f666b75a8bff66db01528d089d08c9e7164))
+
+
+### Refactoring
+
+* organizza app.css in sezioni commentate ([#256](https://github.com/Smailen5/portfolio-website/issues/256)) ([40e1be4](https://github.com/Smailen5/portfolio-website/commit/40e1be4cd6b3a5b3136fb6542f199e1975d973b5))
+
 ## [5.4.7](https://github.com/Smailen5/portfolio-website/compare/v5.4.6...v5.4.7) (2026-09-10)
 
 
