@@ -1,11 +1,14 @@
-import { Head } from '@/components/atoms';
+import { useEffect } from 'react';
 import { Layout } from '@/components/molecules';
 import { Link } from '@tanstack/react-router';
 
 export function NotFound() {
+  useEffect(() => {
+    document.title = 'Pagina non trovata | Smailen Vargas';
+  }, []);
+
   return (
     <Layout classContent="flex min-h-[calc(100vh-160px)] flex-col items-center justify-center gap-6 px-6 pb-14 text-center">
-      <Head title="Pagina non trovata | Smailen Vargas" />
       <h1 className="sr-only">Pagina non trovata</h1>
       <p aria-hidden="true" className="text-8xl font-extrabold">
         404
