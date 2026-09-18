@@ -1,18 +1,47 @@
+/**
+ * app.css — Portfolio Website
+ * ---------------------------------------------------------------------
+ * Indice:
+ *   1. Tailwind + configurazione DaisyUI
+ *   2. Design tokens (palette custom)
+ *   3. Temi DaisyUI (light / dark)
+ *   4. Stili base (elementi)
+ *   5. Utility personalizzate
+ *   6. Animazioni
+ *   7. Accessibilità (prefers-reduced-motion)
+ * ---------------------------------------------------------------------
+ */
+
+/* =====================================================================
+   1. Tailwind + configurazione DaisyUI
+   ===================================================================== */
+
 @import 'tailwindcss';
+
 @plugin 'daisyui' {
   themes:
     light --default,
     dark --prefersdark;
   darkmode: 'data-theme';
   root: ':root';
-  /* DaisyUI necessita queste chiavi anche se con valori vuoti, non rimuovere `include`, `exclude` o `prefix` */
+
+  /* DaisyUI necessita queste chiavi anche se con valori vuoti,
+     non rimuovere `include`, `exclude` o `prefix` */
   include:;
   exclude:;
-  prefix: ''; /* Attenzione a non lasciare vuoto questo campo senza "" */
+  prefix: ''; /* Attenzione: non lasciare vuoto questo campo senza "" */
   logs: true;
 }
 
+/* =====================================================================
+   2. Design tokens (palette custom)
+   ---------------------------------------------------------------------
+   Le scale sono complete e mantenute come riferimento: le voci non
+   referenziate direttamente sono predisposizioni per usi futuri.
+   ===================================================================== */
+
 :root {
+  /* Scala primaria (teal) */
   --primary-50: #fafefe; /* per highlight leggerissimi */
   --primary-100: #e3f7f9;
   --primary-200: #b4e9f0; /* per sfondi chiari */
@@ -25,6 +54,7 @@
   --primary-900: #082428;
   --primary-950: #041113; /* per testi scuri (dark mode) */
 
+  /* Scala neutral */
   --n-50: oklch(98.4% 0.003 247.858);
   --n-100: oklch(96.8% 0.007 247.896);
   --n-200: oklch(92.9% 0.013 255.508);
@@ -38,16 +68,28 @@
   --n-950: oklch(12.9% 0.042 264.695);
 }
 
+/* =====================================================================
+   3. Temi DaisyUI (light / dark)
+   ---------------------------------------------------------------------
+   Ogni blocco `@plugin 'daisyui/theme'` è auto-contenuto: i token di
+   forma/dimensione e gli stati semantici sono duplicati di proposito
+   tra i due temi, non condivisi tramite variabile.
+   ===================================================================== */
+
+/* --- Tema light --- */
 @plugin 'daisyui/theme' {
   name: 'light';
   default: true;
   prefersdark: false;
   color-scheme: 'light';
+
+  /* Superfici e testo base */
   --color-base-100: var(--n-50);
   --color-base-200: var(--n-100);
   --color-base-300: var(--n-200);
   --color-base-content: var(--n-900);
 
+  /* Brand */
   --color-primary: var(--primary-700);
   --color-primary-content: var(--primary-50);
 
@@ -60,6 +102,7 @@
   --color-neutral: var(--n-500);
   --color-neutral-content: var(--n-50);
 
+  /* Stati semantici */
   --color-info: oklch(74% 0.16 232.661);
   --color-info-content: oklch(29% 0.066 243.157);
   --color-success: oklch(76% 0.177 163.223);
@@ -69,6 +112,7 @@
   --color-error: oklch(71% 0.194 13.428);
   --color-error-content: oklch(27% 0.105 12.094);
 
+  /* Forma e dimensioni */
   --radius-selector: 2rem;
   --radius-field: 2rem;
   --radius-box: 2rem;
@@ -79,16 +123,20 @@
   --noise: 0;
 }
 
+/* --- Tema dark --- */
 @plugin 'daisyui/theme' {
   name: 'dark';
   default: false;
   prefersdark: true;
   color-scheme: 'dark';
+
+  /* Superfici e testo base */
   --color-base-100: var(--n-950);
   --color-base-200: var(--n-800);
   --color-base-300: var(--n-700);
   --color-base-content: var(--n-50);
 
+  /* Brand */
   --color-primary: var(--primary-400);
   --color-primary-content: var(--primary-50);
 
@@ -101,6 +149,7 @@
   --color-neutral: var(--n-600);
   --color-neutral-content: var(--n-50);
 
+  /* Stati semantici */
   --color-info: oklch(74% 0.16 232.661);
   --color-info-content: oklch(29% 0.066 243.157);
   --color-success: oklch(76% 0.177 163.223);
@@ -110,6 +159,7 @@
   --color-error: oklch(71% 0.194 13.428);
   --color-error-content: oklch(27% 0.105 12.094);
 
+  /* Forma e dimensioni */
   --radius-selector: 2rem;
   --radius-field: 2rem;
   --radius-box: 2rem;
@@ -120,7 +170,59 @@
   --noise: 0;
 }
 
-/* Animazione carousel infinito */
+/* =====================================================================
+   4. Stili base (elementi)
+   ===================================================================== */
+
+@layer base {
+  h1 {
+    font-size: var(--text-3xl);
+    line-height: var(--text-3xl--line-height);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+
+  h2 {
+    font-size: var(--text-2xl);
+    line-height: var(--text-2xl--line-height);
+    font-weight: var(--font-weight-bold);
+    text-transform: capitalize;
+    color: var(--color-secondary);
+  }
+}
+
+/* =====================================================================
+   5. Utility personalizzate
+   ===================================================================== */
+
+@utility heading-3 {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+  font-size: var(--text-xl);
+  line-height: var(--text-xl--line-height);
+  font-weight: var(--font-weight-semibold);
+  text-transform: capitalize;
+  color: var(--color-base-content);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-primary);
+  }
+}
+
+/* =====================================================================
+   6. Animazioni
+   ===================================================================== */
+
+/* --- Carousel infinito --- */
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -135,7 +237,7 @@
   will-change: transform;
 }
 
-/* Animazione typing per hero */
+/* --- Typing per hero --- */
 @keyframes typing {
   0%,
   10% {
@@ -167,7 +269,7 @@
     blink-caret 0.75s step-end infinite;
 }
 
-/* Animazione fade per cambio avatar */
+/* --- Fade per cambio avatar --- */
 @keyframes fade-out {
   from {
     opacity: 1;
@@ -194,6 +296,10 @@
   animation: fade-in 300ms forwards;
 }
 
+/* =====================================================================
+   7. Accessibilità (prefers-reduced-motion)
+   ===================================================================== */
+
 /* Rispetta la preferenza di sistema per ridurre le animazioni */
 @media (prefers-reduced-motion: reduce) {
   .typing {
@@ -205,44 +311,5 @@
   .animate-fade-out,
   .animate-fade-in {
     animation: none;
-  }
-}
-
-@layer base {
-  h1 {
-    color: var(--color-primary);
-    font-size: var(--text-3xl);
-    line-height: var(--text-3xl--line-height);
-    font-weight: var(--font-weight-bold);
-    text-transform: uppercase;
-  }
-  h2 {
-    color: var(--color-secondary);
-    font-size: var(--text-2xl);
-    line-height: var(--text-2xl--line-height);
-    font-weight: var(--font-weight-bold);
-    text-transform: capitalize;
-  }
-}
-
-@utility heading-3 {
-  position: relative;
-  display: inline-block;
-  isolation: isolate;
-  color: var(--color-base-content);
-  font-size: var(--text-xl);
-  line-height: var(--text-xl--line-height);
-  font-weight: var(--font-weight-semibold);
-  text-transform: capitalize;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    z-index: -1;
-    width: 100%;
-    height: 2px;
-    background-color: var(--color-primary);
   }
 }
