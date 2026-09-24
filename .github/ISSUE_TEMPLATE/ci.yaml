@@ -30,13 +30,7 @@ body:
       required: true
       
   - type: textarea
-    id: task
+    id: add_notes
     attributes:
-      label: Task
-      description: "Passaggi tecnici per completare la modifica."
-      placeholder: |
-        - [ ] Modificare .github/workflows/ci.yml
-        - [ ] Aprire PR di test
-        - [ ] Verificare esecuzione su GitHub
-    validations:
-      required: true
+      label: Note Aggiuntive
+      description: "Note aggiuntive sull'implementazione del CI/CD. (facoltativo)."

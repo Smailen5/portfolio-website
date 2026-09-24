@@ -28,15 +28,9 @@ body:
         - Nessun warning nuovo
     validations:
       required: true
-      
+
   - type: textarea
-    id: task
+    id: add_notes
     attributes:
-      label: Task
-      description: "Passaggi tecnici per completare la modifica."
-      placeholder: |
-        - [ ] Modificare tsconfig.json
-        - [ ] Verificare build con pnpm build
-        - [ ] Verificare lint con pnpm lint
-    validations:
-      required: true
+      label: Note Aggiuntive
+      description: "Note aggiuntive sull'implementazione del build. (facoltativo)"
