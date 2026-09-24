@@ -27,15 +27,3 @@ body:
         - Sezione chiara nel README sui comandi di avvio locale
     validations:
       required: true
-
-  - type: textarea
-    id: task
-    attributes:
-      label: Task
-      description: "Cosa bisogna scrivere concretamente."
-      placeholder: |
-        - [ ] Creare .env.example
-        - [ ] Scrivere sezione 'Getting Started'
-        - [ ] Aggiungere commenti JSDoc/TSDoc alle funzioni utility principali
-    validations:
-      required: true

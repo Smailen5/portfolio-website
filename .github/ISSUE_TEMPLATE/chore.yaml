@@ -7,6 +7,7 @@ body:
     attributes:
       value: |
         Task di manutenzione ordinaria che non modifica il codice sorgente ne' introduce nuove funzionalita'.
+
   - type: textarea
     id: description
     attributes:
@@ -15,6 +16,7 @@ body:
       placeholder: "Rimuovere il file morto src/routes/index.ts che non viene importato da nessuna parte."
     validations:
       required: true
+
   - type: textarea
     id: acceptance_criteria
     attributes:
@@ -25,6 +27,7 @@ body:
         - Build e lint passano
     validations:
       required: true
+      
   - type: textarea
     id: task
     attributes:

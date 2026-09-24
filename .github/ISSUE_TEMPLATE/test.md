@@ -14,7 +14,5 @@ assignees: Smailen5
 -
 -
 
-## Task
-<!-- Passaggi tecnici per la stesura. (facoltativo) -->
-- [ ] ...
-- [ ] ...
+## Note Aggiuntive
+<!-- Note aggiuntive sull'implementazione del test. (facoltativo). -->

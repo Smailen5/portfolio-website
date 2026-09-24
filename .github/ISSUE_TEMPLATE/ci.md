@@ -14,7 +14,5 @@ assignees: Smailen5
 -
 -
 
-## Task
-<!-- Passaggi tecnici per completare la modifica. (facoltativo) -->
-- [ ] ...
-- [ ] ...
+## Note Aggiuntive
+<!-- Note aggiuntive sull'implementazione del CI/CD. (facoltativo). -->

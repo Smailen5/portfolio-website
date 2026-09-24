@@ -14,7 +14,5 @@ assignees: Smailen5
 -
 -
 
-## Task
-<!-- Passaggi tecnici per completare l'attivita'. (facoltativo) -->
-- [ ] ...
-- [ ] ...
+## Note Aggiuntive
+<!-- Note aggiuntive sull'implementazione del chore. (facoltativo) -->

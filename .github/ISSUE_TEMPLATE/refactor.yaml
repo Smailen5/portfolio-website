@@ -30,16 +30,6 @@ body:
       required: true
 
   - type: textarea
-    id: task
-    attributes:
-      label: Task
-      description: 'File da toccare o passaggi tecnici'
-      placeholder: |
-        - [ ] Estrarre logica di paginazione in un hook custom
-        - [ ] Creare componente isolato per le righe
-        - [ ] Pulire le impostazioni inutilizzate
-
-  - type: textarea
     id: notes
     attributes:
       label: Note aggiuntive (opzionale)

@@ -16,10 +16,5 @@ assignees: Smailen5
 -
 -
 
-## Task (Risoluzione)
-<!-- Ipotesi o passaggi tecnici per risolvere il bug. (obbligatorio) -->
-- [ ] ...
-- [ ] ...
-
 ## Log / Stack Trace
 <!-- Incolla qui l'errore del terminale o della console. (facoltativo) -->
