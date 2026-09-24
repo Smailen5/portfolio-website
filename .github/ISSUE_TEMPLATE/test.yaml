@@ -28,15 +28,3 @@ body:
         - Il test deve fallire se si passa un valore negativo
     validations:
       required: true
-
-  - type: textarea
-    id: task
-    attributes:
-      label: Task
-      description: "Passaggi tecnici per la stesura."
-      placeholder: |
-        - [ ] Configurare il file di test separato (.test.ts)
-        - [ ] Scrivere i mock per i dati di input
-        - [ ] Eseguire copertura e raggiungere il 90% sulla funzione
-    validations:
-      required: true

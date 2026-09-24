@@ -7,6 +7,7 @@ body:
     attributes:
       value: |
         Modifiche al sistema di build, al compilatore TypeScript o agli script di progetto.
+
   - type: textarea
     id: description
     attributes:
@@ -15,6 +16,7 @@ body:
       placeholder: "Aggiornare tsconfig.json per supportare il nuovo modulo ES."
     validations:
       required: true
+
   - type: textarea
     id: acceptance_criteria
     attributes:
@@ -26,14 +28,9 @@ body:
         - Nessun warning nuovo
     validations:
       required: true
+
   - type: textarea
-    id: task
+    id: add_notes
     attributes:
-      label: Task
-      description: "Passaggi tecnici per completare la modifica."
-      placeholder: |
-        - [ ] Modificare tsconfig.json
-        - [ ] Verificare build con pnpm build
-        - [ ] Verificare lint con pnpm lint
-    validations:
-      required: true
+      label: Note Aggiuntive
+      description: "Note aggiuntive sull'implementazione del build. (facoltativo)"

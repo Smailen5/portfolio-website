@@ -14,7 +14,5 @@ assignees: Smailen5
 -
 -
 
-## Task
-<!-- Cosa bisogna scrivere concretamente. (facoltativo) -->
-- [ ] ...
-- [ ] ...
+## Note Aggiuntive
+<!-- Note aggiuntive sull'implementazione della documentazione. (facoltativo) -->

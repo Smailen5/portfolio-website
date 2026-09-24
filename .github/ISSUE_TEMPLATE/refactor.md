@@ -14,10 +14,5 @@ assignees: Smailen5
 -
 -
 
-## Task
-<!-- File da toccare o passaggi tecnici. (facoltativo) -->
-- [ ] ...
-- [ ] ...
-
 ## Note Aggiuntive
 <!-- Librerie esterne da valutare, link e pattern design. (facoltativo) -->
