@@ -11,7 +11,7 @@ permissions:
   pull-requests: read
 
 jobs:
-  lint-build:
+  code-checks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
