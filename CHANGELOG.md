@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.4.9](https://github.com/Smailen5/portfolio-website/compare/v5.4.8...v5.4.9) (2026-09-25)
+
+
+### Chores
+
+* allinea label dei template issue ai nomi reali ([#280](https://github.com/Smailen5/portfolio-website/issues/280)) ([102feb9](https://github.com/Smailen5/portfolio-website/commit/102feb9ccaeba6a931c3935b8fa38142bd016f09))
+* rimuove campo task dai template, aggiunge `Note Aggiuntive` ([#263](https://github.com/Smailen5/portfolio-website/issues/263)) ([83ff30c](https://github.com/Smailen5/portfolio-website/commit/83ff30c46635e7974b9fb0de5e84f6d7b577aa77))
+
 ## [5.4.8](https://github.com/Smailen5/portfolio-website/compare/v5.4.7...v5.4.8) (2026-09-18)
 
 
