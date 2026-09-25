@@ -1,7 +1,8 @@
 name: Feature Request
 description: Aggiungi una nuova funzione
 title: 'feat: [descrizione breve]'
-labels: ['feature', 'enhancement']
+labels: ['feat', 'low']
+assignees: ['Smailen5']
 body:
   - type: markdown
     attributes:

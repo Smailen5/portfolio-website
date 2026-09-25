@@ -1,7 +1,8 @@
 name: Bug Report
 description: Segnala e risolvi un malfunzionamento nel codice
 title: 'bug: [descrizione breve]'
-labels: ['bug']
+labels: ['fix']
+assignees: ['Smailen5']
 body:
  - type: markdown
    attributes:
