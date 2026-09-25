@@ -13,7 +13,7 @@
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "typecheck": "tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.node.json",
-    "pre:push": "pnpm lint && pnpm typecheck && pnpm build"
+    "check": "pnpm lint  && pnpm format && pnpm typecheck && pnpm build"
   },
   "dependencies": {
     "@tanstack/react-router": "^1.170.27",
