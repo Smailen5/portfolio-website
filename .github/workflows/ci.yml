@@ -11,7 +11,7 @@ permissions:
   pull-requests: read
 
 jobs:
-  lint-build:
+  code-checks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,6 +28,9 @@ jobs:
 
       - name: Lint
         run: pnpm lint
+
+      - name: Format
+        run: pnpm format
 
       - name: Type Check
         run: pnpm typecheck
