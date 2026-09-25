@@ -2,6 +2,7 @@ name: Documentation
 description: Aggiungi o aggiorna la documentazione (README, commenti, wiki)
 title: 'docs: [descrizione breve]'
 labels: ['docs', 'medium', 'quick win']
+assignees: ['Smailen5']
 body: 
   - type: markdown
     attributes:
