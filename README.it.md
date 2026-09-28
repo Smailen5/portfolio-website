@@ -149,6 +149,14 @@ Il frontend è una SPA statica. I dati dei progetti sono serviti da un'API REST 
 
 **Repository backend:** [Smailen5/server-portfolio](https://github.com/Smailen5/server-portfolio)
 
+## Contatti
+
+- **Sito:** [smailenvargas.com](https://smailenvargas.com)
+- **Email:** [job@smailenvargas.com](mailto:job@smailenvargas.com)
+- **GitHub:** [@Smailen5](https://github.com/Smailen5)
+- **LinkedIn:** [smailen-vargas](https://www.linkedin.com/in/smailen-vargas/)
+- **Frontend Mentor:** [@Smailen5](https://www.frontendmentor.io/profile/Smailen5)
+
 ## Licenza
 
 © 2024-2026 Smailen Vargas. Tutti i diritti riservati.
