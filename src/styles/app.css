@@ -4,7 +4,7 @@
  * Indice:
  *   1. Tailwind + configurazione DaisyUI
  *   2. Design tokens (palette custom)
- *   3. Temi DaisyUI (light / dark)
+ *   3. Temi DaisyUI (dark)
  *   4. Stili base (elementi)
  *   5. Utility personalizzate
  *   6. Animazioni
@@ -19,9 +19,7 @@
 @import 'tailwindcss';
 
 @plugin 'daisyui' {
-  themes:
-    light --default,
-    dark --prefersdark;
+  themes: dark --default;
   darkmode: 'data-theme';
   root: ':root';
 
@@ -69,64 +67,17 @@
 }
 
 /* =====================================================================
-   3. Temi DaisyUI (light / dark)
+   3. Temi DaisyUI (dark)
    ---------------------------------------------------------------------
    Ogni blocco `@plugin 'daisyui/theme'` è auto-contenuto: i token di
    forma/dimensione e gli stati semantici sono duplicati di proposito
-   tra i due temi, non condivisi tramite variabile.
+   tra i temi, non condivisi tramite variabile.
    ===================================================================== */
-
-/* --- Tema light --- */
-@plugin 'daisyui/theme' {
-  name: 'light';
-  default: true;
-  prefersdark: false;
-  color-scheme: 'light';
-
-  /* Superfici e testo base */
-  --color-base-100: var(--n-50);
-  --color-base-200: var(--n-100);
-  --color-base-300: var(--n-200);
-  --color-base-content: var(--n-900);
-
-  /* Brand */
-  --color-primary: var(--primary-700);
-  --color-primary-content: var(--primary-50);
-
-  --color-secondary: var(--primary-600);
-  --color-secondary-content: var(--primary-50);
-
-  --color-accent: var(--primary-300);
-  --color-accent-content: var(--primary-900);
-
-  --color-neutral: var(--n-500);
-  --color-neutral-content: var(--n-50);
-
-  /* Stati semantici */
-  --color-info: oklch(74% 0.16 232.661);
-  --color-info-content: oklch(29% 0.066 243.157);
-  --color-success: oklch(76% 0.177 163.223);
-  --color-success-content: oklch(37% 0.077 168.94);
-  --color-warning: oklch(82% 0.189 84.429);
-  --color-warning-content: oklch(41% 0.112 45.904);
-  --color-error: oklch(71% 0.194 13.428);
-  --color-error-content: oklch(27% 0.105 12.094);
-
-  /* Forma e dimensioni */
-  --radius-selector: 2rem;
-  --radius-field: 2rem;
-  --radius-box: 2rem;
-  --size-selector: 0.25rem;
-  --size-field: 0.25rem;
-  --border: 1px;
-  --depth: 1;
-  --noise: 0;
-}
 
 /* --- Tema dark --- */
 @plugin 'daisyui/theme' {
   name: 'dark';
-  default: false;
+  default: true;
   prefersdark: true;
   color-scheme: 'dark';
 

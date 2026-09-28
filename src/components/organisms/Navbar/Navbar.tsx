@@ -1,5 +1,4 @@
 import { Avatar } from '@/components/atoms';
-import { ToggleTheme } from '@/components/molecules';
 import { CurriculumDownload } from '@/features/cv/components/CurriculumDownload';
 import { NAVIGATION_LINKS } from '@/shared/constants/navigation';
 import { Link } from '@tanstack/react-router';
@@ -13,8 +12,8 @@ import { SideBar } from './SideBar';
  * Rimane visibile durante lo scroll per facilitare la navigazione.
  *
  * Layout responsive:
- * - Mobile: Avatar + ToggleTheme + Bottone Menu (apre SideBar)
- * - Desktop: Avatar + ToggleTheme + Link navigazione + Download CV
+ * - Mobile: Avatar + Bottone Menu (apre SideBar)
+ * - Desktop: Avatar + Link navigazione + Download CV
  *
  * Features:
  * - Position fixed con z-index 50
@@ -32,8 +31,6 @@ export const Navbar = () => {
         <Avatar name="Smailen Vargas" />
 
         <div className="flex items-center gap-4">
-          <ToggleTheme />
-
           {/* Menu Mobile: Bottone menu + SideBar */}
           <div className="lg:hidden">
             <button
