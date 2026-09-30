@@ -3,12 +3,11 @@
  * ---------------------------------------------------------------------
  * Indice:
  *   1. Tailwind + configurazione DaisyUI
- *   2. Design tokens (palette custom)
- *   3. Temi DaisyUI (dark)
- *   4. Stili base (elementi)
- *   5. Utility personalizzate
- *   6. Animazioni
- *   7. Accessibilità (prefers-reduced-motion)
+ *   2. Temi DaisyUI (nebula)
+ *   3. Stili base (elementi)
+ *   4. Utility personalizzate
+ *   5. Animazioni
+ *   6. Accessibilità (prefers-reduced-motion)
  * ---------------------------------------------------------------------
  */
 
@@ -19,7 +18,7 @@
 @import 'tailwindcss';
 
 @plugin 'daisyui' {
-  themes: dark --default;
+  themes: nebula --default;
   darkmode: 'data-theme';
   root: ':root';
 
@@ -32,73 +31,42 @@
 }
 
 /* =====================================================================
-   2. Design tokens (palette custom)
-   ---------------------------------------------------------------------
-   Le scale sono complete e mantenute come riferimento: le voci non
-   referenziate direttamente sono predisposizioni per usi futuri.
-   ===================================================================== */
-
-:root {
-  /* Scala primaria (teal) */
-  --primary-50: #fafefe; /* per highlight leggerissimi */
-  --primary-100: #e3f7f9;
-  --primary-200: #b4e9f0; /* per sfondi chiari */
-  --primary-300: #85dbe7;
-  --primary-400: #57cddd;
-  --primary-500: #2abdd2; /* come colore principale */
-  --primary-600: #2197a7;
-  --primary-700: #19707d;
-  --primary-800: #104a52; /* hover */
-  --primary-900: #082428;
-  --primary-950: #041113; /* per testi scuri (dark mode) */
-
-  /* Scala neutral */
-  --n-50: oklch(98.4% 0.003 247.858);
-  --n-100: oklch(96.8% 0.007 247.896);
-  --n-200: oklch(92.9% 0.013 255.508);
-  --n-300: oklch(86.9% 0.022 252.894);
-  --n-400: oklch(70.4% 0.04 256.788);
-  --n-500: oklch(55.4% 0.046 257.417);
-  --n-600: oklch(44.6% 0.043 257.281);
-  --n-700: oklch(37.2% 0.044 257.287);
-  --n-800: oklch(27.9% 0.041 260.031);
-  --n-900: oklch(20.8% 0.042 265.755);
-  --n-950: oklch(12.9% 0.042 264.695);
-}
-
-/* =====================================================================
-   3. Temi DaisyUI (dark)
+   2. Temi DaisyUI (nebula)
    ---------------------------------------------------------------------
    Ogni blocco `@plugin 'daisyui/theme'` è auto-contenuto: i token di
    forma/dimensione e gli stati semantici sono duplicati di proposito
    tra i temi, non condivisi tramite variabile.
    ===================================================================== */
 
-/* --- Tema dark --- */
+/* --- Tema Nebula --- */
 @plugin 'daisyui/theme' {
-  name: 'dark';
+  name: 'nebula';
   default: true;
   prefersdark: true;
   color-scheme: 'dark';
 
   /* Superfici e testo base */
-  --color-base-100: var(--n-950);
-  --color-base-200: var(--n-800);
-  --color-base-300: var(--n-700);
-  --color-base-content: var(--n-50);
+  --color-base-100: #090a12; /* Sfondo principale dell'intera pagina (Deep Void) */
+  --color-base-200: #121324; /* Sfondo di Card, riquadri e sezioni in rilievo */
+  --color-base-300: #1c1d36; /* Bordi di card, divisori e linee sottili */
+  --color-base-content: #f8fafc; /* Testo principale e titoli (Bianco ghiaccio AAA) */
 
-  /* Brand */
-  --color-primary: var(--primary-400);
-  --color-primary-content: var(--primary-50);
+  /* BRAND MONOCROMATICO (3 Livelli di Viola Neon) */
+  /* Livello 1: Azione pricipale (CTA, link hover, focus, nome hero) */
+  --color-primary: #a855f7; /* Viola Neon viavace */
+  --color-primary-content: #090a12; /* Testo scuro a contrasto per bottoni primari */
 
-  --color-secondary: var(--primary-600);
-  --color-secondary-content: var(--primary-50);
+  /* Livello 2: Struttura visiva (Titoli h2, bordi illuminati, glow) */
+  --color-secondary: #c084fc; /* Lilla elettrico chiaro */
+  --color-secondary-content: #090a12; /* Testo su sfondi secondari */
 
-  --color-accent: var(--primary-300);
-  --color-accent-content: var(--primary-900);
+  /* Livello 3: Punti focali speciali (componente <Strong>, sticker, badge) */
+  --color-accent: #8b5cf6; /* Deep Violet per sfondi evidenziati */
+  --color-accent-content: #ffffff; /* Testo bianco dentro lo <Strong> */
 
-  --color-neutral: var(--n-600);
-  --color-neutral-content: var(--n-50);
+  /* Neutri scuri (Pulsanti secondari tipo "Contattami", footer, tag disattivati) */
+  --color-neutral: #1e1b2e;
+  --color-neutral-content: #f8fafc;
 
   /* Stati semantici */
   --color-info: oklch(74% 0.16 232.661);
@@ -122,7 +90,7 @@
 }
 
 /* =====================================================================
-   4. Stili base (elementi)
+   3. Stili base (elementi)
    ===================================================================== */
 
 @layer base {
@@ -144,7 +112,7 @@
 }
 
 /* =====================================================================
-   5. Utility personalizzate
+   4. Utility personalizzate
    ===================================================================== */
 
 @utility heading-3 {
@@ -170,7 +138,7 @@
 }
 
 /* =====================================================================
-   6. Animazioni
+   5. Animazioni
    ===================================================================== */
 
 /* --- Carousel infinito --- */
@@ -248,7 +216,7 @@
 }
 
 /* =====================================================================
-   7. Accessibilità (prefers-reduced-motion)
+   6. Accessibilità (prefers-reduced-motion)
    ===================================================================== */
 
 /* Rispetta la preferenza di sistema per ridurre le animazioni */
