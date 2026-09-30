@@ -3,12 +3,11 @@
  * ---------------------------------------------------------------------
  * Indice:
  *   1. Tailwind + configurazione DaisyUI
- *   2. Design tokens (palette custom)
- *   3. Temi DaisyUI (dark)
- *   4. Stili base (elementi)
- *   5. Utility personalizzate
- *   6. Animazioni
- *   7. Accessibilità (prefers-reduced-motion)
+ *   2. Temi DaisyUI (nebula)
+ *   3. Stili base (elementi)
+ *   4. Utility personalizzate
+ *   5. Animazioni
+ *   6. Accessibilità (prefers-reduced-motion)
  * ---------------------------------------------------------------------
  */
 
@@ -32,22 +31,14 @@
 }
 
 /* =====================================================================
-   2. Design tokens (palette custom)
-   ---------------------------------------------------------------------
-   Le scale sono complete e mantenute come riferimento: le voci non
-   referenziate direttamente sono predisposizioni per usi futuri.
-   ===================================================================== */
-
-
-/* =====================================================================
-   3. Temi DaisyUI (dark)
+   2. Temi DaisyUI (nebula)
    ---------------------------------------------------------------------
    Ogni blocco `@plugin 'daisyui/theme'` è auto-contenuto: i token di
    forma/dimensione e gli stati semantici sono duplicati di proposito
    tra i temi, non condivisi tramite variabile.
    ===================================================================== */
 
-/* --- Tema dark --- */
+/* --- Tema Nebula --- */
 @plugin 'daisyui/theme' {
   name: 'nebula';
   default: true;
@@ -99,7 +90,7 @@
 }
 
 /* =====================================================================
-   4. Stili base (elementi)
+   3. Stili base (elementi)
    ===================================================================== */
 
 @layer base {
@@ -121,7 +112,7 @@
 }
 
 /* =====================================================================
-   5. Utility personalizzate
+   4. Utility personalizzate
    ===================================================================== */
 
 @utility heading-3 {
@@ -147,7 +138,7 @@
 }
 
 /* =====================================================================
-   6. Animazioni
+   5. Animazioni
    ===================================================================== */
 
 /* --- Carousel infinito --- */
@@ -225,7 +216,7 @@
 }
 
 /* =====================================================================
-   7. Accessibilità (prefers-reduced-motion)
+   6. Accessibilità (prefers-reduced-motion)
    ===================================================================== */
 
 /* Rispetta la preferenza di sistema per ridurre le animazioni */
