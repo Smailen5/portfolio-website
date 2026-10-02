@@ -8,7 +8,7 @@ export const CardError = ({ onRetry }: CardErrorProps) => {
       <p className="mb-4">
         Errore nel recupero dei progetti. Riprova piu&apos; tardi.
       </p>
-      <button className="btn btn-accent" onClick={onRetry}>
+      <button className="btn btn-secondary text-lg font-bold" onClick={onRetry}>
         Riprova
       </button>
     </div>
