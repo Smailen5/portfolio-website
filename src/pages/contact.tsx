@@ -25,7 +25,7 @@ export function ContactPage() {
               Scrivimi a:{' '}
               <a
                 href="mailto:smailenv91@gmail.com?subject=42-website-contact"
-                className="link link-accent font-semibold"
+                className="link link-primary font-semibold"
               >
                 smailenv91@gmail.com
               </a>
