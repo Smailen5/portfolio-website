@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0](https://github.com/Smailen5/portfolio-website/compare/v5.4.9...v6.0.0) (2026-10-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* rimuove light mode e imposta tema scuro permanente ([#283](https://github.com/Smailen5/portfolio-website/issues/283))
+
+### Features
+
+* adotta una palette viola monocromatica ([#287](https://github.com/Smailen5/portfolio-website/issues/287)) ([c6d8e82](https://github.com/Smailen5/portfolio-website/commit/c6d8e826b91f62d47687d295462623da93258e04))
+* aggiungee la scrollbar personalizzata al tema ([#289](https://github.com/Smailen5/portfolio-website/issues/289)) ([f4751e3](https://github.com/Smailen5/portfolio-website/commit/f4751e3b5db39b61011b237db7bf655ba32bbfdc))
+* rimuove light mode e imposta tema scuro permanente ([#283](https://github.com/Smailen5/portfolio-website/issues/283)) ([a611738](https://github.com/Smailen5/portfolio-website/commit/a611738fb5ac2930cd60083e3412a2daa7453b79))
+
+
+### Bug Fixes
+
+* corregge i contrasti non conformi del tema e delle icone ([#288](https://github.com/Smailen5/portfolio-website/issues/288)) ([3affb91](https://github.com/Smailen5/portfolio-website/commit/3affb9108f88a9384927fbfe13790c2e3d9bc4d0))
+
 ## [5.4.9](https://github.com/Smailen5/portfolio-website/compare/v5.4.8...v5.4.9) (2026-09-25)
 
 
