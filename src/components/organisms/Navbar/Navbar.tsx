@@ -26,8 +26,8 @@ import { SideBar } from './SideBar';
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="bg-base-200/60 fixed inset-x-0 top-0 z-50 flex justify-center px-4 py-2 shadow-sm backdrop-blur-sm">
-      <div className="flex w-full max-w-5xl justify-between">
+    <nav className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 py-2">
+      <div className="bg-base-200/90 border-accent/60 from-accent/20 flex w-full max-w-5xl justify-between rounded-2xl border bg-linear-to-b to-transparent px-4 py-2 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xs">
         <Avatar name="Smailen Vargas" />
 
         <div className="flex items-center gap-4">
