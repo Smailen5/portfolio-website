@@ -8,34 +8,34 @@ interface SideBarProps {
 }
 
 /**
- * Componente SideBar - Menu laterale mobile
+ * Componente SideBar - Menu a tendina mobile
  *
- * Pannello slide-in da destra per la navigazione mobile
- * con overlay di sfondo semi-trasparente
+ * Pannello che compare sotto l'isola della Navbar a menu aperto,
+ * con overlay scuro cliccabile per chiudere.
  *
  * Features:
- * - Animazione slide-in/out da destra
- * - Overlay cliccabile per chiudere
- * - Link navigazione + Download CV
- * - Auto-chiusura dopo click su link
- * - Previene animazione al primo render (mounted state)
+ * - Animazione di comparsa dall'alto (translate + opacity)
+ * - Overlay a tutto schermo che chiude il menu al click
+ * - Link di navigazione + Curriculum
+ * - Auto-chiusura dopo il click su un link
+ * - Visibile solo sotto il breakpoint lg
  *
- * @param {boolean} isOpen - Stato apertura/chiusura sidebar
- * @param {Function} setIsOpen - Funzione per cambiare stato sidebar
+ * @param {boolean} isOpen - Stato apertura/chiusura del menu
+ * @param {Function} setIsOpen - Funzione per aggiornare lo stato del menu
  */
 export const SideBar = ({ isOpen, setIsOpen }: SideBarProps) => {
   const closeSideBar = () => setIsOpen(false);
 
   return (
     <>
-      {/* Overlay scuro che copre la pagina quando SideBar è aperto */}
+      {/* Overlay cliccabile: chiude il menu */}
       <div
         className={`bg-base-300 fixed inset-0 z-0 transition-opacity duration-300 lg:hidden ${isOpen ? 'opacity-80' : 'pointer-events-none opacity-0'} `}
         onClick={closeSideBar}
         aria-hidden="true"
       />
 
-      {/* Contenitore principale della SideBar */}
+      {/* Pannello a tendina ancorato sotto l'isola */}
       <div
         role="dialog"
         id="sidebar"

@@ -7,18 +7,18 @@ import { SideBar } from './SideBar';
 /**
  * Componente Navbar - Barra di navigazione principale
  *
- * Navbar fixed in alto alla pagina con backdrop blur e ombra leggera.
- * Rimane visibile durante lo scroll per facilitare la navigazione.
+ * Navbar fixed in alto, centrata, a isola fluttuante con backdrop blur,
+ * bordo luminoso e gradiente sottile.
  *
  * Layout responsive:
- * - Mobile: Avatar + Bottone Menu (apre SideBar)
- * - Desktop: Avatar + Link navigazione + Download CV
+ * - Mobile/tablet (< lg): wordmark + bottone hamburger che apre il pannello SideBar
+ * - Desktop (>= lg): wordmark + link di navigazione + Curriculum
  *
  * Features:
  * - Position fixed con z-index 50
- * - Backdrop blur e sfondo semitrasparente (bg-base-200/60)
- * - Larghezza massima 1024px centrata
- * - Ombra leggera (shadow-sm)
+ * - Isola centrata (max-w-5xl) con z-index 10, sopra l'overlay della SideBar
+ * - Link attivo evidenziato con underline animata (viola)
+ * - Bottone hamburger che si trasforma in X a menu aperto
  *
  * Gestisce lo stato di apertura/chiusura della SideBar mobile
  */
@@ -33,7 +33,7 @@ export const Navbar = () => {
         </Link>
 
         <div className="flex items-center gap-4">
-          {/* Menu Mobile: Bottone menu + SideBar */}
+          {/* Trigger menu mobile (apre/chiude il pannello) */}
           <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(open => !open)}
@@ -56,7 +56,7 @@ export const Navbar = () => {
             </button>
           </div>
 
-          {/* Menu Desktop */}
+          {/* Link di navigazione (desktop) */}
           <div className="hidden lg:block">
             <ul className="flex items-center gap-4">
               {NAVIGATION_LINKS.map(link => (
