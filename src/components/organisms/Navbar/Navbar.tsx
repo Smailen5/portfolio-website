@@ -1,4 +1,3 @@
-import { Avatar } from '@/components/atoms';
 import { CurriculumDownload } from '@/features/cv/components/CurriculumDownload';
 import { NAVIGATION_LINKS } from '@/shared/constants/navigation';
 import { Link } from '@tanstack/react-router';
@@ -27,8 +26,10 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 py-2">
-      <div className="bg-base-200/90 border-accent/60 from-accent/20 flex w-full max-w-5xl justify-between rounded-2xl border bg-linear-to-b to-transparent px-4 py-2 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xs">
-        <Avatar name="Smailen Vargas" />
+      <div className="bg-base-200/90 border-accent/60 from-accent/20 flex w-full max-w-5xl items-center justify-between rounded-2xl border bg-linear-to-b to-transparent px-4 py-2 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xs">
+        <Link to="/" className="text-xl font-bold tracking-wider">
+          Smailen
+        </Link>
 
         <div className="flex items-center gap-4">
           {/* Menu Mobile: Bottone menu + SideBar */}
