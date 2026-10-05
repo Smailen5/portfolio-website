@@ -49,14 +49,18 @@ export const Navbar = () => {
 
           {/* Menu Desktop */}
           <div className="hidden lg:block">
-            <nav className="flex items-center gap-4">
+            <ul className="flex items-center gap-4">
               {NAVIGATION_LINKS.map(link => (
-                <Link key={link.label} to={link.linkTo} className="capitalize">
-                  {link.label}
-                </Link>
+                <li key={link.label}>
+                  <Link to={link.linkTo} className="capitalize">
+                    {link.label}
+                  </Link>
+                </li>
               ))}
-              <CurriculumDownload />
-            </nav>
+              <li>
+                <CurriculumDownload />
+              </li>
+            </ul>
           </div>
         </div>
       </div>
