@@ -52,7 +52,13 @@ export const Navbar = () => {
             <ul className="flex items-center gap-4">
               {NAVIGATION_LINKS.map(link => (
                 <li key={link.label}>
-                  <Link to={link.linkTo} className="capitalize">
+                  <Link
+                    to={link.linkTo}
+                    className="after:bg-primary data-[status=active]:text-primary relative inline-block capitalize after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:rounded-full after:transition-transform after:duration-300 after:content-[''] data-[status=active]:after:scale-x-100"
+                    activeProps={{
+                      className: 'text-primary after:scale-x-100',
+                    }}
+                  >
                     {link.label}
                   </Link>
                 </li>
