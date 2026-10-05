@@ -1,4 +1,3 @@
-import { Avatar } from '@/components/atoms';
 import { CurriculumDownload } from '@/features/cv/components/CurriculumDownload';
 import { NAVIGATION_LINKS } from '@/shared/constants/navigation';
 import { Link } from '@tanstack/react-router';
@@ -8,54 +7,75 @@ import { SideBar } from './SideBar';
 /**
  * Componente Navbar - Barra di navigazione principale
  *
- * Navbar fixed in alto alla pagina con backdrop blur e ombra leggera.
- * Rimane visibile durante lo scroll per facilitare la navigazione.
+ * Navbar fixed in alto, centrata, a isola fluttuante con backdrop blur,
+ * bordo luminoso e gradiente sottile.
  *
  * Layout responsive:
- * - Mobile: Avatar + Bottone Menu (apre SideBar)
- * - Desktop: Avatar + Link navigazione + Download CV
+ * - Mobile/tablet (< lg): wordmark + bottone hamburger che apre il pannello SideBar
+ * - Desktop (>= lg): wordmark + link di navigazione + Curriculum
  *
  * Features:
  * - Position fixed con z-index 50
- * - Backdrop blur e sfondo semitrasparente (bg-base-200/60)
- * - Larghezza massima 1024px centrata
- * - Ombra leggera (shadow-sm)
+ * - Isola centrata (max-w-5xl) con z-index 10, sopra l'overlay della SideBar
+ * - Link attivo evidenziato con underline animata (viola)
+ * - Bottone hamburger che si trasforma in X a menu aperto
  *
  * Gestisce lo stato di apertura/chiusura della SideBar mobile
  */
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="bg-base-200/60 fixed inset-x-0 top-0 z-50 flex justify-center px-4 py-2 shadow-sm backdrop-blur-sm">
-      <div className="flex w-full max-w-5xl justify-between">
-        <Avatar name="Smailen Vargas" />
+    <nav className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 py-2">
+      <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
+      <div className="bg-base-200/90 border-accent/60 from-accent/20 relative z-10 flex w-full max-w-5xl items-center justify-between rounded-2xl border bg-linear-to-b to-transparent px-4 py-2 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xs">
+        <Link to="/" className="text-xl font-bold tracking-wider">
+          Smailen
+        </Link>
 
         <div className="flex items-center gap-4">
-          {/* Menu Mobile: Bottone menu + SideBar */}
+          {/* Trigger menu mobile (apre/chiude il pannello) */}
           <div className="lg:hidden">
             <button
-              onClick={() => setIsOpen(true)}
+              onClick={() => setIsOpen(open => !open)}
               aria-expanded={isOpen}
               aria-controls="sidebar"
-              className="btn"
-              aria-label="Apri menu"
+              className="btn btn-square rounded-md"
+              aria-label={isOpen ? 'chiudi menu' : 'apri menu'}
             >
-              Menu
+              <span className="flex w-6 flex-col items-center gap-1.5">
+                <span
+                  className={`h-0.5 w-6 rounded-full bg-current transition duration-300 ${isOpen ? 'translate-y-2 rotate-45' : ''}`}
+                ></span>
+                <span
+                  className={`h-0.5 w-6 rounded-full bg-current transition duration-300 ${isOpen ? 'translate-x-2 opacity-0' : ''}`}
+                ></span>
+                <span
+                  className={`h-0.5 w-6 rounded-full bg-current transition duration-300 ${isOpen ? '-translate-y-2 -rotate-45' : ''}`}
+                ></span>
+              </span>
             </button>
-
-            <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
           </div>
 
-          {/* Menu Desktop */}
+          {/* Link di navigazione (desktop) */}
           <div className="hidden lg:block">
-            <nav className="flex items-center gap-4">
+            <ul className="flex items-center gap-4">
               {NAVIGATION_LINKS.map(link => (
-                <Link key={link.label} to={link.linkTo} className="capitalize">
-                  {link.label}
-                </Link>
+                <li key={link.label}>
+                  <Link
+                    to={link.linkTo}
+                    className="after:bg-primary relative inline-block capitalize after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:rounded-full after:transition-transform after:duration-300 after:content-['']"
+                    activeProps={{
+                      className: 'text-primary after:scale-x-100',
+                    }}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
               ))}
-              <CurriculumDownload />
-            </nav>
+              <li>
+                <CurriculumDownload />
+              </li>
+            </ul>
           </div>
         </div>
       </div>

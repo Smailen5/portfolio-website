@@ -1,8 +1,6 @@
-import { CloseIcon } from '@/assets/icons';
 import { CurriculumDownload } from '@/features/cv/components/CurriculumDownload';
 import { NAVIGATION_LINKS } from '@/shared/constants/navigation';
 import { Link } from '@tanstack/react-router';
-import { useEffect, useState } from 'react';
 
 interface SideBarProps {
   isOpen: boolean;
@@ -10,72 +8,57 @@ interface SideBarProps {
 }
 
 /**
- * Componente SideBar - Menu laterale mobile
+ * Componente SideBar - Menu a tendina mobile
  *
- * Pannello slide-in da destra per la navigazione mobile
- * con overlay di sfondo semi-trasparente
+ * Pannello che compare sotto l'isola della Navbar a menu aperto,
+ * con overlay scuro cliccabile per chiudere.
  *
  * Features:
- * - Animazione slide-in/out da destra
- * - Overlay cliccabile per chiudere
- * - Link navigazione + Download CV
- * - Auto-chiusura dopo click su link
- * - Previene animazione al primo render (mounted state)
+ * - Animazione di comparsa dall'alto (translate + opacity)
+ * - Overlay a tutto schermo che chiude il menu al click
+ * - Link di navigazione + Curriculum
+ * - Auto-chiusura dopo il click su un link
+ * - Visibile solo sotto il breakpoint lg
  *
- * @param {boolean} isOpen - Stato apertura/chiusura sidebar
- * @param {Function} setIsOpen - Funzione per cambiare stato sidebar
+ * @param {boolean} isOpen - Stato apertura/chiusura del menu
+ * @param {Function} setIsOpen - Funzione per aggiornare lo stato del menu
  */
 export const SideBar = ({ isOpen, setIsOpen }: SideBarProps) => {
-  const [mounted, setMounted] = useState(false);
   const closeSideBar = () => setIsOpen(false);
-
-  // Previene animazione al primo rendering
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   return (
     <>
-      {/* Overlay scuro che copre la pagina quando SideBar è aperto */}
+      {/* Overlay cliccabile: chiude il menu */}
       <div
-        className={`bg-base-300 fixed inset-0 z-10 h-screen transition-opacity duration-300 lg:hidden ${isOpen ? 'opacity-80' : 'pointer-events-none opacity-0'} `}
+        className={`bg-base-300 fixed inset-0 z-0 transition-opacity duration-300 lg:hidden ${isOpen ? 'opacity-80' : 'pointer-events-none opacity-0'} `}
         onClick={closeSideBar}
+        aria-hidden="true"
       />
 
-      {/* Contenitore principale della SideBar */}
+      {/* Pannello a tendina ancorato sotto l'isola */}
       <div
         role="dialog"
         id="sidebar"
         aria-hidden={!isOpen}
-        className={`bg-base-200 fixed inset-y-0 top-0 right-0 z-20 h-screen w-[70%] transform shadow-lg ${mounted ? 'transition-transform duration-300 ease-in-out' : ''} lg:hidden ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`bg-base-200 border-accent/60 absolute inset-x-4 top-full z-20 mx-auto max-w-5xl rounded-2xl border p-8 shadow-lg transition duration-300 ease-in-out lg:hidden ${
+          isOpen
+            ? 'translate-y-0 opacity-100'
+            : 'pointer-events-none -translate-y-full opacity-0'
         }`}
       >
-        <div className="p-4">
-          <div className="flex items-center justify-end pr-2 pb-6">
-            <button
-              onClick={() => setIsOpen(false)}
-              className="btn btn-circle btn-error"
-              aria-label="Chiudi menu"
+        <nav className="flex flex-col gap-4">
+          {NAVIGATION_LINKS.map(link => (
+            <Link
+              key={link.label}
+              to={link.linkTo}
+              className="capitalize"
+              onClick={closeSideBar}
             >
-              <img src={CloseIcon} alt="close" />
-            </button>
-          </div>
-
-          <nav className="flex flex-col gap-4">
-            {NAVIGATION_LINKS.map(link => (
-              <Link
-                key={link.label}
-                to={link.linkTo}
-                className="capitalize"
-                onClick={closeSideBar}
-              >
-                {link.label}
-              </Link>
-            ))}
-            <CurriculumDownload closeSideBar={closeSideBar} />
-          </nav>
-        </div>
+              {link.label}
+            </Link>
+          ))}
+          <CurriculumDownload closeSideBar={closeSideBar} />
+        </nav>
       </div>
     </>
   );
