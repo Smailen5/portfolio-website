@@ -26,7 +26,8 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 py-2">
-      <div className="bg-base-200/90 border-accent/60 from-accent/20 flex w-full max-w-5xl items-center justify-between rounded-2xl border bg-linear-to-b to-transparent px-4 py-2 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xs">
+      <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
+      <div className="bg-base-200/90 border-accent/60 from-accent/20 relative z-10 flex w-full max-w-5xl items-center justify-between rounded-2xl border bg-linear-to-b to-transparent px-4 py-2 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xs">
         <Link to="/" className="text-xl font-bold tracking-wider">
           Smailen
         </Link>
@@ -35,16 +36,24 @@ export const Navbar = () => {
           {/* Menu Mobile: Bottone menu + SideBar */}
           <div className="lg:hidden">
             <button
-              onClick={() => setIsOpen(true)}
+              onClick={() => setIsOpen(open => !open)}
               aria-expanded={isOpen}
               aria-controls="sidebar"
-              className="btn"
-              aria-label="Apri menu"
+              className="btn btn-square rounded-md"
+              aria-label={isOpen ? 'chiudi menu' : 'apri menu'}
             >
-              Menu
+              <span className="flex w-6 flex-col items-center gap-1.5">
+                <span
+                  className={`h-0.5 w-6 rounded-full bg-current transition duration-300 ${isOpen ? 'translate-y-2 rotate-45' : ''}`}
+                ></span>
+                <span
+                  className={`h-0.5 w-6 rounded-full bg-current transition duration-300 ${isOpen ? 'translate-x-2 opacity-0' : ''}`}
+                ></span>
+                <span
+                  className={`h-0.5 w-6 rounded-full bg-current transition duration-300 ${isOpen ? '-translate-y-2 -rotate-45' : ''}`}
+                ></span>
+              </span>
             </button>
-
-            <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
           </div>
 
           {/* Menu Desktop */}
@@ -54,7 +63,7 @@ export const Navbar = () => {
                 <li key={link.label}>
                   <Link
                     to={link.linkTo}
-                    className="after:bg-primary data-[status=active]:text-primary relative inline-block capitalize after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:rounded-full after:transition-transform after:duration-300 after:content-[''] data-[status=active]:after:scale-x-100"
+                    className="after:bg-primary relative inline-block capitalize after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:rounded-full after:transition-transform after:duration-300 after:content-['']"
                     activeProps={{
                       className: 'text-primary after:scale-x-100',
                     }}
