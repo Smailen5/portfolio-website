@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.1.0](https://github.com/Smailen5/portfolio-website/compare/v6.0.0...v6.1.0) (2026-10-09)
+
+
+### Features
+
+* aggiunge la sezione dei tre pilastri tecnici ([#297](https://github.com/Smailen5/portfolio-website/issues/297)) ([f360739](https://github.com/Smailen5/portfolio-website/commit/f3607394d81db008e79c6282757c293c2ef51f38))
+* implementa nuova hero section in home ([#292](https://github.com/Smailen5/portfolio-website/issues/292)) ([3ee71ae](https://github.com/Smailen5/portfolio-website/commit/3ee71ae072a31d565d06a001cec8780d039a408d))
+* ridisegna card progetti con anteprima incorniciata e link ([#294](https://github.com/Smailen5/portfolio-website/issues/294)) ([54e2b86](https://github.com/Smailen5/portfolio-website/commit/54e2b8617b7ac08c120dc4ba76a608e48aa892cc))
+* ridisegna la pagina progetti con filtro a pillole e nuova header ([#298](https://github.com/Smailen5/portfolio-website/issues/298)) ([daf6d67](https://github.com/Smailen5/portfolio-website/commit/daf6d6715db4c0a43bebcc75d87c568198061efa))
+* rinnova gli stati di caricamento ed errore delle card progetti ([#296](https://github.com/Smailen5/portfolio-website/issues/296)) ([09b652c](https://github.com/Smailen5/portfolio-website/commit/09b652c787270e91e9d70f60acfda692c3746006))
+
 ## [6.0.0](https://github.com/Smailen5/portfolio-website/compare/v5.4.9...v6.0.0) (2026-10-05)
 
 
