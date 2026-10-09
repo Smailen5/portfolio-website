@@ -25,7 +25,7 @@ export const LastProjects = () => {
 
       {isLoading ? (
         <>
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             <CardSkeleton />
             <CardSkeleton />
             <CardSkeleton />
@@ -34,7 +34,7 @@ export const LastProjects = () => {
       ) : error ? (
         <CardError onRetry={retry} />
       ) : (
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {[...projects]
             .sort(
               (a, b) =>
