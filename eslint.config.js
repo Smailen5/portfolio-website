@@ -85,7 +85,6 @@ export default [
         "warn",
         {
           whitelist: [
-            'animate-scroll',
             'swap(?:-.*)?',
             'btn(?:-.*)?',
             'dropdown(?:-content)?',
