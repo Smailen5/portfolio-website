@@ -1,6 +1,7 @@
 import { API_URL } from '@/shared/constants/api';
 import { Project } from '@/shared/types/projects';
 import { getLiveUrl } from '@/shared/utils/getLiveUrl';
+import { getProjectYear } from '@/shared/utils/getProjectYear';
 import { nameCorrect } from '@/shared/utils/nameCorrect';
 import { useMemo } from 'react';
 
@@ -23,6 +24,7 @@ export const CardProject = ({
   imagesUrl,
   repoUrl,
   readmeContent,
+  createdAt,
 }: Project) => {
   const sortedTechnologies = useMemo(() => {
     if (!technologies) return [];
@@ -32,11 +34,12 @@ export const CardProject = ({
   const formattedName = nameCorrect(name);
   const firstImage = imagesUrl[0] ? `${API_URL}${imagesUrl[0]}` : undefined;
   const liveUrl = getLiveUrl(readmeContent);
+  const year = getProjectYear(createdAt);
 
   return (
     //* PROGETTO SINGOLO */
     <article className="card bg-base-300 w-full rounded-lg shadow-sm">
-      <figure className="p-4">
+      <figure className="relative p-4">
         <a
           href={repoUrl}
           target="_blank"
@@ -51,6 +54,11 @@ export const CardProject = ({
             loading="lazy"
           />
         </a>
+        {year && (
+          <span className="badge badge-outline border-primary/40 bg-base-100/80 absolute top-5 right-5 rounded-md text-xs backdrop-blur-sm">
+            {year}
+          </span>
+        )}
       </figure>
       <div className="card-body gap-4">
         <h3 className="card-title uppercase">{formattedName}</h3>
