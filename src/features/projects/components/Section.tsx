@@ -2,6 +2,7 @@ import { Project } from '@/shared/types/projects';
 import { useMemo, useState } from 'react';
 import { CardProject } from './Card';
 import { Filter } from './Filter';
+import { FILTER_TECHNOLOGIES } from '@/shared/constants/filterTechnologies';
 import { CardError, CardSkeleton } from '@/components/molecules';
 import { filterProjectsByTechnology } from '@/shared/utils/filterProjects';
 
@@ -16,8 +17,8 @@ interface SectionProjectsProps {
  * Componente SectionProjects - Griglia progetti con filtro
  *
  * Gestisce lo stato della tecnologia selezionata e filtra i progetti
- * tramite filterProjectsByTechnology (in useMemo). Delega al
- * componente Filter solo la UI del dropdown.
+ * tramite filterProjectsByTechnology (in useMemo). Calcola anche il conteggio
+ * per tecnologia e lo passa a Filter, che renderizza le pillole.
  * Mostra skeleton in caricamento e CardError in caso di errore.
  *
  * Layout responsive:
@@ -41,14 +42,22 @@ export const SectionProjects = ({
     () => filterProjectsByTechnology(projects, selectedTechnology),
     [projects, selectedTechnology]
   );
+  const counts = useMemo(() => {
+    const result: Record<string, number> = { Tutto: projects.length };
+    for (const tech of FILTER_TECHNOLOGIES) {
+      result[tech] = filterProjectsByTechnology(projects, tech).length;
+    }
+    return result;
+  }, [projects]);
 
   return (
     <div className="flex w-full flex-col gap-8">
       <Filter
-        number={filteredProjects.length}
+        counts={counts}
         onSelect={setSelectedTechnology}
         selected={selectedTechnology}
       />
+      <h2 className="sr-only">Elenco progetti</h2>
       {isLoading ? (
         <>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">

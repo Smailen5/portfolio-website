@@ -1,57 +1,16 @@
 /**
  * Componente HeaderProject - Intestazione pagina progetti
  *
- * Spiega il contesto dei progetti mostrati:
- * - Origine (sfide Frontend Mentor)
- * - Approccio professionale e attenzione all'accessibilità
- * - Nota sui progetti più vecchi (percorso di miglioramento)
- * - Link utili (Frontend Mentor, GitHub, codice sorgente sito)
+ * Titolo della pagina e introduzione essenziale alla collezione
+ * di progetti, senza il vecchio testo esplicativo.
  */
 export const HeaderProject = () => {
   return (
-    <header className="space-y-4 text-left">
+    <header className="w-full space-y-4 text-left">
+      <h1>Archivio Progetti</h1>
       <p>
-        Questi progetti sono stati sviluppati nell&apos;ambito delle sfide di
-        Frontend Mentor e sono stati fondamentali per affinare le competenze
-        acquisite durante i miei studi. Sono stati trattati come veri e propri
-        progetti reali, completamente funzionanti e con particolare attenzione
-        all&apos;accessibilità e al design.
-      </p>
-      <p>
-        Alcuni dei progetti più vecchi, realizzati durante il primo anno,
-        potrebbero contenere errori o soluzioni meno ottimali. Ho deciso di
-        lasciarli intatti per mostrare il mio percorso di miglioramento e la
-        crescita come sviluppatore.
-      </p>
-      <p>
-        Vuoi scoprire di più? Visita il mio{' '}
-        <a
-          href="https://www.frontendmentor.io/profile/Smailen5"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link link-primary"
-        >
-          profilo Frontend Mentor
-        </a>{' '}
-        per vedere le sfide completate o il mio{' '}
-        <a
-          href="https://github.com/Smailen5"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link link-primary"
-        >
-          profilo GitHub
-        </a>{' '}
-        per tutti i progetti, incluso il{' '}
-        <a
-          href="https://github.com/Smailen5/portfolio-website"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link link-primary"
-        >
-          codice sorgente di questo sito
-        </a>
-        .
+        Una collezione curata di applicazioni web focalizzate su design
+        responsive, prestazioni e codice pulito. Esplora i miei lavori recenti.
       </p>
     </header>
   );

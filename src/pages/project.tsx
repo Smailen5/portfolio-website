@@ -7,7 +7,6 @@ export function ProjectPage() {
   const { projects, isLoading, error, retry } = useProjects();
   return (
     <Layout classContent="flex flex-col min-h-screen flex-nowrap gap-20 px-6 pb-14 pt-20 md:items-center">
-      <h1 className="sr-only">Progetti</h1>
       <HeaderProject />
       <SectionProjects
         projects={projects}
