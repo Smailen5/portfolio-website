@@ -1,38 +1,45 @@
-import Skeleton from 'react-loading-skeleton';
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 
 export const CardSkeleton = () => {
   return (
-    <article className="card bg-base-300 w-full shadow-sm">
-      {/* Immagine Progetto */}
-      <figure>
-        <div className="w-full leading-none">
-          <Skeleton borderRadius={0} height={200} />
+    <SkeletonTheme
+      baseColor="var(--color-base-200)"
+      highlightColor="var(--color-base-300)"
+    >
+      <article className="card bg-base-300 w-full rounded-lg shadow-sm">
+        {/* Anteprima progetto */}
+        <div className="p-4">
+          <div className="border-primary/40 aspect-video w-full overflow-hidden rounded-lg border">
+            <Skeleton
+              borderRadius={0}
+              containerClassName="block h-full"
+              height="100%"
+            />
+          </div>
         </div>
-      </figure>
-      <div className="card-body gap-4">
-        {/* Titolo Progetto */}
-        <h3>
-          <Skeleton height={25} />
-        </h3>
+        <div className="card-body gap-4 p-4 pt-0">
+          {/* Titolo e descrizione */}
+          <div className="space-y-1">
+            <Skeleton width="60%" height={20} />
+            <Skeleton count={2} />
+          </div>
 
-        {/* Descrizione paragrafo */}
-        <p>
-          <Skeleton count={3} />
-        </p>
+          {/* Tecnologie */}
+          <ul className="flex flex-wrap gap-2">
+            <Skeleton borderRadius={6} width={72} height={18} />
+            <Skeleton borderRadius={6} width={96} height={18} />
+            <Skeleton borderRadius={6} width={64} height={18} />
+            <Skeleton borderRadius={6} width={88} height={18} />
+          </ul>
 
-        {/* Sezione tecnologie */}
-        <ul className="flex flex-wrap gap-2 uppercase">
-          <Skeleton borderRadius={32} width={40} height={25} />
-          <Skeleton borderRadius={32} width={70} height={25} />
-          <Skeleton borderRadius={32} width={50} height={25} />
-          <Skeleton borderRadius={32} width={30} height={25} />
-        </ul>
-
-        {/* Bottone Dettagli */}
-
-        <Skeleton borderRadius={32} className="btn btn-xl" />
-      </div>
-    </article>
+          {/* Pulsanti */}
+          <div className="grid grid-cols-2 gap-2">
+            <Skeleton width="100%" borderRadius={6} height={40} />
+            <Skeleton width="100%" borderRadius={6} height={40} />
+          </div>
+        </div>
+      </article>
+    </SkeletonTheme>
   );
 };
