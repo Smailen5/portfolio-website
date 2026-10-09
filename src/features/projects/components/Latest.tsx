@@ -18,8 +18,8 @@ export const LastProjects = () => {
   const maxProjectsToShow = 3;
 
   return (
-    <Section className="text-center">
-      <h2>Guarda i miei ultimi lavori</h2>
+    <Section>
+      <h2 className="text-center">Guarda i miei ultimi lavori</h2>
 
       <Separator />
 
