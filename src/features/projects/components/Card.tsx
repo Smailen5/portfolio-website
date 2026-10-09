@@ -35,7 +35,7 @@ export const CardProject = ({
 
   return (
     //* PROGETTO SINGOLO */
-    <article className="card bg-base-300 w-full shadow-sm">
+    <article className="card bg-base-300 w-full rounded-lg shadow-sm">
       <figure className="p-4">
         <a
           href={repoUrl}
