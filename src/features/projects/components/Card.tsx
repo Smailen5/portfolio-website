@@ -70,7 +70,7 @@ export const CardProject = ({
             {sortedTechnologies.map(tech => (
               <li
                 key={tech}
-                className="badge badge-outline text-xs font-semibold md:text-sm"
+                className="badge badge-outline border-primary/40 rounded-md text-[0.625rem] font-extrabold"
               >
                 {tech}
               </li>
