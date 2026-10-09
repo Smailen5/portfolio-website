@@ -9,6 +9,7 @@ interface ProjectsCache {
 
 let cache: ProjectsCache | null = null;
 const STALE_TIME_MS = 5 * 60 * 1000; // 5 minuti
+const MIN_LOADING_MS = 300; // tempo minimo di visualizzazione del loading
 
 interface UseProjectsReturn {
   projects: Project[];
@@ -29,6 +30,7 @@ async function fetchProjects(signal: AbortSignal): Promise<Project[]> {
  * non viene emessa nessuna richiesta.
  * Le richieste in volo vengono annullate quando il componente che
  * usa l'hook si smonta (es. cambio di route).
+ * Il loading resta visibile per almeno `MIN_LOADING_MS` ms (anti-flash).
  * @returns stato dei progetti, loading, errore e funzione di retry
  */
 export function useProjects(): UseProjectsReturn {
@@ -42,6 +44,7 @@ export function useProjects(): UseProjectsReturn {
     controllerRef.current?.abort();
     const controller = new AbortController();
     controllerRef.current = controller;
+    const startedAt = Date.now();
     setIsLoading(true);
     setError(null);
     fetchProjects(controller.signal)
@@ -60,7 +63,15 @@ export function useProjects(): UseProjectsReturn {
       })
       .finally(() => {
         // una fetch annullata non deve spegnere il loading di quella nuova
-        if (!controller.signal.aborted) setIsLoading(false);
+        if (controller.signal.aborted) return;
+        // mantiene visibile il loading per almeno MIN_LOADING_MS
+        const remaining = Math.max(
+          0,
+          MIN_LOADING_MS - (Date.now() - startedAt)
+        );
+        window.setTimeout(() => {
+          if (!controller.signal.aborted) setIsLoading(false);
+        }, remaining);
       });
   }, []);
 
