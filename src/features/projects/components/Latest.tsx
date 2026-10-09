@@ -18,14 +18,14 @@ export const LastProjects = () => {
   const maxProjectsToShow = 3;
 
   return (
-    <Section className="text-center">
-      <h2>Guarda i miei ultimi lavori</h2>
+    <Section>
+      <h2 className="text-center">Guarda i miei ultimi lavori</h2>
 
       <Separator />
 
       {isLoading ? (
         <>
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             <CardSkeleton />
             <CardSkeleton />
             <CardSkeleton />
@@ -34,7 +34,7 @@ export const LastProjects = () => {
       ) : error ? (
         <CardError onRetry={retry} />
       ) : (
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {[...projects]
             .sort(
               (a, b) =>
