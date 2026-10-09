@@ -33,17 +33,18 @@ export const CardProject = ({
   return (
     //* PROGETTO SINGOLO */
     <article className="card bg-base-300 w-full shadow-sm">
-      <figure>
+      <figure className="p-4">
         <a
           href={repoUrl}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Visualizza il progetto ${formattedName} su GitHub`}
+          className="border-primary/40 block overflow-hidden rounded-lg border"
         >
           <img
             src={firstImage}
             alt={`Screenshot del progetto ${formattedName}`}
-            className="transition-all duration-300 lg:hover:scale-105"
+            className="aspect-video w-full object-cover object-top transition-transform duration-300 lg:hover:scale-105"
             loading="lazy"
           />
         </a>
