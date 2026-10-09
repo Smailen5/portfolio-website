@@ -49,6 +49,7 @@ export const SectionProjects = ({
         onSelect={setSelectedTechnology}
         selected={selectedTechnology}
       />
+      <h2 className="sr-only">Elenco progetti</h2>
       {isLoading ? (
         <>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
