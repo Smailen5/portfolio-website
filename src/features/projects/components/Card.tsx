@@ -60,7 +60,7 @@ export const CardProject = ({
           </span>
         )}
       </figure>
-      <div className="card-body gap-4">
+      <div className="card-body gap-4 p-4 pt-0">
         <h3 className="card-title uppercase">{formattedName}</h3>
         <p className="line-clamp-2">{description}</p>
 
