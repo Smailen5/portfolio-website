@@ -1,5 +1,6 @@
 import { API_URL } from '@/shared/constants/api';
-import { CardProjectProps } from '@/shared/types/projects';
+import { Project } from '@/shared/types/projects';
+import { getLiveUrl } from '@/shared/utils/getLiveUrl';
 import { nameCorrect } from '@/shared/utils/nameCorrect';
 import { useMemo } from 'react';
 
@@ -7,13 +8,13 @@ import { useMemo } from 'react';
  * Componente CardProject - Card per visualizzare un singolo progetto
  *
  * Mostra:
- * - Immagine di anteprima (cliccabile → GitHub README)
+ * - Immagine di anteprima incorniciata (cliccabile → GitHub README)
  * - Nome progetto (formattato con nameCorrect)
  * - Descrizione breve
  * - Lista tecnologie utilizzate (badge ordinati alfabeticamente)
- * - Bottone "Dettagli" → GitHub README completo
+ * - Pulsanti "Live Site" (disabilitato se il link manca) e "GitHub"
  *
- * @param {CardProjectProps} props - Dati del progetto da visualizzare
+ * @param {Project} props - Dati del progetto da visualizzare
  */
 export const CardProject = ({
   name,
@@ -21,7 +22,8 @@ export const CardProject = ({
   technologies,
   imagesUrl,
   repoUrl,
-}: CardProjectProps) => {
+  readmeContent,
+}: Project) => {
   const sortedTechnologies = useMemo(() => {
     if (!technologies) return [];
     return [...technologies].sort((a, b) => a.localeCompare(b));
@@ -29,6 +31,7 @@ export const CardProject = ({
 
   const formattedName = nameCorrect(name);
   const firstImage = imagesUrl[0] ? `${API_URL}${imagesUrl[0]}` : undefined;
+  const liveUrl = getLiveUrl(readmeContent);
 
   return (
     //* PROGETTO SINGOLO */
@@ -71,15 +74,35 @@ export const CardProject = ({
           </p>
         )}
 
-        <div className="flex justify-center">
+        <div className="flex gap-2">
+          {liveUrl ? (
+            <a
+              href={liveUrl}
+              className="btn btn-primary flex-1 rounded-md"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Apri il sito live di ${formattedName}`}
+            >
+              Live Site
+            </a>
+          ) : (
+            <button
+              type="button"
+              className="btn btn-primary flex-1 rounded-md"
+              disabled
+              aria-label={`Sito live di ${formattedName} non disponibile`}
+            >
+              Live Site
+            </button>
+          )}
           <a
             href={repoUrl}
-            className="btn btn-xl btn-primary md:btn-lg w-full"
+            className="btn btn-outline btn-primary flex-1 rounded-md"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`Visualizza i dettagli di ${formattedName} su GitHub`}
+            aria-label={`Apri il repository GitHub di ${formattedName}`}
           >
-            Dettagli
+            GitHub
           </a>
         </div>
       </div>
