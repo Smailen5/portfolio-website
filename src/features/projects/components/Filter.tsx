@@ -1,75 +1,52 @@
-import { useState } from 'react';
+import { FILTER_TECHNOLOGIES } from '@/shared/constants/filterTechnologies';
 
 interface FilterProps {
   selected: string;
   onSelect: (tech: string) => void;
-  number?: number;
+  counts: Record<string, number>;
 }
 
 /**
- * Lista delle tecnologie disponibili per il filtro
- * "Tutto" resetta il filtro e mostra tutti i progetti
- */
-const technologies = [
-  'Tutto',
-  'JavaScript',
-  'TypeScript',
-  'Tailwind CSS',
-  'React',
-  'Next.js',
-  'Responsive design',
-];
-
-/**
- * Componente Filter - Dropdown di selezione tecnologia (controllato)
+ * Componente Filter - Barra di pillole di filtro (controllato)
  *
- * Mostra il dropdown DaisyUI con le tecnologie disponibili e segnala
- * la selezione al genitore tramite onSelect. Non effettua alcun
- * filtraggio: la logica è delegata a filterProjectsByTechnology.
- *
- * Funzionalità:
- * - Dropdown con lista tecnologie predefinite
- * - Mostra la tecnologia selezionata e il conteggio ricevuto
- * - Opzione "Tutto" per azzerare il filtro
+ * Mostra le tecnologie come pillole con il conteggio dei progetti in tempo
+ * reale. Le tecnologie senza progetti non vengono mostrate, mentre "Tutto"
+ * resta sempre visibile. Su schermi stretti le pillole vanno a capo.
  *
  * @param {FilterProps} props - selected: tecnologia attiva, onSelect: callback
- * di selezione, number: numero di progetti filtrati da mostrare
+ * di selezione, counts: conteggio progetti per tecnologia
  */
-export const Filter = ({ selected, onSelect, number }: FilterProps) => {
-  // Stato per chiudere il dropdown
-  const [isOpen, setIsOpen] = useState(false);
-  const handleSelect = (tech: string) => {
-    onSelect(tech);
-    setIsOpen(false);
-  };
+export const Filter = ({ selected, onSelect, counts }: FilterProps) => {
+  const options = ['Tutto', ...FILTER_TECHNOLOGIES].filter(
+    label => label === 'Tutto' || (counts[label] ?? 0) > 0
+  );
 
   return (
     <section
       id="filter"
-      className="rounded-box bg-secondary flex w-full flex-col items-start gap-8 p-2 md:flex-row md:items-center md:justify-between md:gap-0"
+      className="bg-base-100 border-primary/40 w-full rounded-lg border p-3"
     >
-      <details
-        className="dropdown"
-        open={isOpen}
-        onToggle={e => setIsOpen(e.currentTarget.open)}
-      >
-        <summary className="btn m-1">Seleziona una tecnologia</summary>
-        <ul className="dropdown-content menu rounded-box bg-base-100 z-10 w-52 p-3 shadow-sm">
-          {technologies.map(tech => {
-            return (
-              <li key={tech}>
-                <button type="button" onClick={() => handleSelect(tech)}>
-                  {tech}
-                </button>
-              </li>
-            );
-          })}
-        </ul>
-      </details>
-      <p className="text-secondary-content pl-2 md:p-0 md:pr-2">
-        Progetti {selected === 'Tutto' ? 'visualizzati' : `${selected}`}:{' '}
-        <span className="font-semibold">{number}</span>
-      </p>
+      <ul className="flex flex-wrap gap-2">
+        {options.map(label => {
+          const isActive = selected === label;
+          return (
+            <li key={label}>
+              <button
+                type="button"
+                onClick={() => onSelect(label)}
+                aria-pressed={isActive}
+                className={`cursor-pointer rounded-md border px-3 py-1 text-sm font-semibold transition-colors duration-300 ease-out ${
+                  isActive
+                    ? 'border-primary bg-primary/20 text-primary'
+                    : 'border-primary/40 text-base-content/70 hover:border-primary hover:text-primary'
+                }`}
+              >
+                {label} ({counts[label] ?? 0})
+              </button>
+            </li>
+          );
+        })}
+      </ul>
     </section>
   );
 };
