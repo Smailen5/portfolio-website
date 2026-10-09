@@ -62,7 +62,7 @@ export const CardProject = ({
       </figure>
       <div className="card-body gap-4">
         <h3 className="card-title uppercase">{formattedName}</h3>
-        <p>{description}</p>
+        <p className="line-clamp-2">{description}</p>
 
         {/* array delle tecnologie utilizzate */}
         {sortedTechnologies.length > 0 ? (
