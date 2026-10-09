@@ -1,4 +1,5 @@
 import { Layout, Hero } from '@/components/molecules';
+import { TechPillars } from '@/components/organisms';
 import { LastProjects } from '@/features/projects/components/Latest';
 
 export function HomePage() {
@@ -7,6 +8,7 @@ export function HomePage() {
       <h1 className="sr-only">Portfolio di Smailen Vargas</h1>
       <Hero />
       <LastProjects />
+      <TechPillars />
     </Layout>
   );
 }
