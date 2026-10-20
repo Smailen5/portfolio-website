@@ -25,7 +25,7 @@ export const ContactCard = ({
   return (
     <article
       aria-labelledby={id}
-      className="border-primary/30 bg-base-200 relative overflow-hidden rounded-lg border p-6"
+      className="border-primary/30 bg-base-300 relative overflow-hidden rounded-lg border p-6"
     >
       <span
         aria-hidden="true"
