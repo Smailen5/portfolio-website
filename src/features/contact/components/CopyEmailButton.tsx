@@ -17,7 +17,11 @@ export const CopyEmailButton = ({ email }: CopyEmailButtonProps) => {
 
   return (
     <>
-      <button type="button" onClick={() => copy(email)}>
+      <button
+        type="button"
+        onClick={() => copy(email)}
+        className="btn btn-primary rounded-md"
+      >
         {copied ? 'Copiato!' : 'Copia Indirizzo'}
       </button>
       <span aria-live="polite" className="sr-only">

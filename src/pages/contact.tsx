@@ -22,20 +22,24 @@ const CURRICULUM_FILES = [
 
 export function ContactPage() {
   return (
-    <Layout>
-      <header>
+    <Layout classLayout="bg-base-100" classContent="max-w-4xl px-6 py-10">
+      <header className="mt-4">
         <h1>Mettiamoci in Contatto</h1>
-        <p>
+        <p className="text-base-content/70 mt-2 max-w-2xl">
           Aperto a collaborazioni creative, discussioni tecniche e nuovi
           progetti. Scrivimi direttamente, rispondo solitamente entro 48 ore.
         </p>
       </header>
 
-      <div>
+      <div className="mt-10 grid gap-4 md:grid-cols-2">
         <ContactCard
           id="contact-email"
           title="Email Diretta"
-          description={<a href={MAILTO_URL}>{EMAIL}</a>}
+          description={
+            <a href={MAILTO_URL} className="link link-primary font-semibold">
+              {EMAIL}
+            </a>
+          }
         >
           <CopyEmailButton email={EMAIL} />
         </ContactCard>
@@ -45,7 +49,12 @@ export function ContactPage() {
           title="LinkedIn"
           description="Profilo professionale con esperienze, competenze e certificazioni."
         >
-          <a href={LINKEDIN_URL}>Connettiti</a>
+          <a
+            href={LINKEDIN_URL}
+            className="btn btn-outline btn-primary rounded-md"
+          >
+            Connettiti
+          </a>
         </ContactCard>
 
         <ContactCard
@@ -53,7 +62,12 @@ export function ContactPage() {
           title="GitHub"
           description="Attività open source, progetti personali e codice dei siti che costruisco."
         >
-          <a href={GITHUB_URL}>Esplora Profilo</a>
+          <a
+            href={GITHUB_URL}
+            className="btn btn-outline btn-primary rounded-md"
+          >
+            Esplora Profilo
+          </a>
         </ContactCard>
 
         <ContactCard
@@ -62,7 +76,12 @@ export function ContactPage() {
           description="Aggiornato a ottobre 2026, disponibile in italiano e in inglese."
         >
           {CURRICULUM_FILES.map(({ label, href, fileName }) => (
-            <a key={href} href={href} download={fileName}>
+            <a
+              key={href}
+              href={href}
+              download={fileName}
+              className="btn btn-outline btn-primary rounded-md"
+            >
               {label}
             </a>
           ))}
