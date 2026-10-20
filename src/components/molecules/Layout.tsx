@@ -13,6 +13,7 @@ interface LayoutProps {
  *
  * Features:
  * - Larghezza max 1024px centrata
+ * - Cresce in altezza per riempire lo spazio disponibile nel main
  * - Padding top per navbar fixed (pt-20)
  * - Classi personalizzabili per layout e contenuto
  *
@@ -28,7 +29,7 @@ export const Layout = ({
   return (
     <div
       className={twMerge(
-        'bg-base-200 flex h-auto w-full justify-center pt-20',
+        'bg-base-200 flex w-full flex-1 justify-center pt-20',
         classLayout
       )}
     >
