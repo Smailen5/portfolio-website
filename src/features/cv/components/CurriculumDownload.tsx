@@ -22,6 +22,7 @@ export const CurriculumDownload = ({
             href="/curriculum/cv-smailen-vargas-it.pdf"
             download="CV-Smailen-Vargas-IT.pdf"
             onClick={handleDownload}
+            className="focus-visible:ring-primary focus-visible:ring-2"
           >
             Curriculum in Italiano
           </a>
@@ -31,6 +32,7 @@ export const CurriculumDownload = ({
             href="/curriculum/cv-smailen-vargas-en.pdf"
             download="CV-Smailen-Vargas-EN.pdf"
             onClick={handleDownload}
+            className="focus-visible:ring-primary focus-visible:ring-2"
           >
             Curriculum in Inglese
           </a>
