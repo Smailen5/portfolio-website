@@ -7,7 +7,7 @@ export const Route = createFileRoute('/contact')({
     createRouteHead({
       title: 'Contatti | Smailen Vargas',
       description:
-        'Contatta Smailen Vargas per collaborazioni, domande o progetti. Disponibile via email e social media.',
+        'Contatta Smailen Vargas via email, LinkedIn o GitHub e scarica il curriculum in italiano o in inglese.',
       keywords:
         'Contatti, Smailen Vargas, Email, Collaborazioni, Frontend Developer',
       ogUrl: '/contact',
