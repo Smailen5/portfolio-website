@@ -51,6 +51,9 @@ export function ContactPage() {
         >
           <a
             href={LINKEDIN_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Connettiti al profilo LinkedIn di Smailen Vargas"
             className="btn btn-outline btn-primary rounded-md"
           >
             Connettiti
@@ -64,6 +67,9 @@ export function ContactPage() {
         >
           <a
             href={GITHUB_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Esplora Profilo GitHub di Smailen Vargas"
             className="btn btn-outline btn-primary rounded-md"
           >
             Esplora Profilo
