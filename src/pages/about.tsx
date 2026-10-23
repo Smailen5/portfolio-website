@@ -4,7 +4,7 @@ import { SkillsSection } from '@/components/organisms';
 
 export function AboutPage() {
   return (
-    <Layout classContent="min-h-[calc(100vh-160px)] px-6">
+    <Layout classContent="min-h-[calc(100vh-160px)] px-4 lg:px-0">
       <Separator />
       <h1>Chi sono</h1>
       <Separator className="h-4" />
