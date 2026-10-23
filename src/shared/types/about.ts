@@ -26,7 +26,7 @@ export interface HomelabSystem {
   id: string;
   title: string;
   image?: ImageAsset;
-  fact: HomelabFact;
+  facts: HomelabFact[];
 }
 
 export interface StudyItem {
