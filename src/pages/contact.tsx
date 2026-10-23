@@ -22,7 +22,7 @@ const CURRICULUM_FILES = [
 
 export function ContactPage() {
   return (
-    <Layout classContent="px-6 py-10">
+    <Layout classContent="px-4 lg:px-0 py-10">
       <header className="mt-4">
         <h1>Mettiamoci in Contatto</h1>
         <p className="text-base-content/70 mt-2 max-w-2xl">
