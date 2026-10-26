@@ -27,8 +27,8 @@ export const CertificationsCard = ({ className }: CertificationsCardProps) => {
         {/* Nel caso dimentichi di aggiungere una immagine per la certificazione non mostra l'immagine rotta */}
         {badge && (
           <img
-            src={badge?.src}
-            alt={badge?.alt}
+            src={badge.src}
+            alt={badge.alt}
             className="size-20 object-contain"
           />
         )}
