@@ -6,6 +6,7 @@ import type {
   StudyItem,
   TechGroup,
 } from '@/shared/types/about';
+import lpiIcon from '@/assets/icons/lpi.svg';
 
 export const profile: Profile = {
   name: 'Smailen Vargas',
@@ -18,30 +19,39 @@ export const profile: Profile = {
 
 export const certifications: Certification[] = [
   {
-    name: 'TODO certificazione',
-    status: 'in preparazione',
-    topics: [
-      'TODO punto 1',
-      'TODO punto 2',
-      'TODO punto 3',
-      'TODO punto 4',
-      'TODO punto 5',
-    ],
-  },
-  {
-    name: 'TODO certificazione',
+    name: 'LPI Linux Essentials',
+    issuer: 'Linux Professional Institute (LPI)',
     status: 'conseguita',
     topics: [
-      'TODO punto 1',
-      'TODO punto 2',
-      'TODO punto 3',
-      'TODO punto 4',
-      'TODO punto 5',
-      'TODO punto 6',
+      'Linux Architecture',
+      'Command Line (CLI)',
+      'Bash Scripting',
+      'Filesystem & FHS',
+      'Users & Permissions',
+      'System Security',
     ],
     badge: {
-      src: '/assets/images/badges/certified.svg',
-      alt: 'certificazione',
+      src: lpiIcon,
+      alt: 'Logo Linux Professional Institute',
+    },
+    credentialUrl:
+      'https://www.credly.com/badges/8dbbb7da-80fd-4c5a-a696-39a2311d8020/public_url',
+  },
+  {
+    name: 'LPIC-1: Linux Administrator (101-500)',
+    issuer: 'Linux Professional Institute (LPI)',
+    status: 'in preparazione',
+    topics: [
+      'System Architecture',
+      'Boot & systemd',
+      'Package Management',
+      'LVM Storage',
+      'Linux Networking',
+      'Security & SSH',
+    ],
+    badge: {
+      src: lpiIcon,
+      alt: 'Logo Linux Professional Institute',
     },
   },
 ];
