@@ -1,4 +1,5 @@
 import { Layout } from '@/components/molecules';
+import { CURRICULUM_FILES } from '@/data/curriculum';
 import { CertificationsCard } from '@/features/about/components/CertificationsCard';
 import { HomelabCard } from '@/features/about/components/HomelabCard';
 import { ProfileCard } from '@/features/about/components/ProfileCard';
@@ -15,7 +16,24 @@ export function AboutPage() {
         <CertificationsCard className="md:col-span-4" />
         <TechStackCard className="md:col-span-4" />
         <HomelabCard className="md:col-span-4" />
-        <LabCard className="md:col-span-4" />
+
+        <div className="flex flex-col gap-4 md:col-span-4">
+          <LabCard className="flex-1" />
+
+          <div className="grid gap-3 sm:grid-cols-2">
+            {CURRICULUM_FILES.map(file => (
+              <a
+                key={file.href}
+                href={file.href}
+                download={file.fileName}
+                aria-label={file.ariaLabel}
+                className="btn btn-outline btn-primary w-full rounded-md"
+              >
+                {file.label}
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
     </Layout>
   );
