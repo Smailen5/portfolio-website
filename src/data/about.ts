@@ -3,7 +3,7 @@ import type {
   Certification,
   HomelabSystem,
   Profile,
-  StudyItem,
+  LabItem,
   TechGroup,
 } from '@/shared/types/about';
 import lpiIcon from '@/assets/icons/lpi.svg';
@@ -190,7 +190,7 @@ export const homelabSystems: HomelabSystem[] = [
   },
 ];
 
-export const studyItems: StudyItem[] = [
+export const labItems: LabItem[] = [
   {
     title: 'Multi-Distro Sandbox (Debian 13 & Rocky Linux 9)',
     description:

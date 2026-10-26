@@ -30,7 +30,7 @@ export interface HomelabSystem {
   facts: HomelabFact[];
 }
 
-export interface StudyItem {
+export interface LabItem {
   title: string;
   description: string;
   href?: string;

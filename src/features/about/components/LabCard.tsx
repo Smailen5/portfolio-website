@@ -1,11 +1,11 @@
 import { BentoCard } from './BentoCard';
 
-interface StudyCardProps {
+interface LabCardProps {
   className?: string;
 }
 
-export const StudyCard = ({ className }: StudyCardProps) => (
-  <BentoCard id="study-card" title="Studio" className={className}>
+export const LabCard = ({ className }: LabCardProps) => (
+  <BentoCard id="lab-card" title="Lab R&D" className={className}>
     <p>
       Contenuto di test per study card. Lorem ipsum dolor sit amet consectetur
       adipisicing elit. Ad eveniet porro nisi, illum at commodi? Doloremque

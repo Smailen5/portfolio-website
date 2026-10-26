@@ -2,7 +2,7 @@ import { Layout } from '@/components/molecules';
 import { CertificationsCard } from '@/features/about/components/CertificationsCard';
 import { HomelabCard } from '@/features/about/components/HomelabCard';
 import { ProfileCard } from '@/features/about/components/ProfileCard';
-import { StudyCard } from '@/features/about/components/StudyCard';
+import { LabCard } from '@/features/about/components/LabCard';
 import { TechStackCard } from '@/features/about/components/TechStackCard';
 
 export function AboutPage() {
@@ -15,7 +15,7 @@ export function AboutPage() {
         <CertificationsCard className="md:col-span-4" />
         <TechStackCard className="md:col-span-4" />
         <HomelabCard className="md:col-span-4" />
-        <StudyCard className="md:col-span-4" />
+        <LabCard className="md:col-span-4" />
       </div>
     </Layout>
   );
