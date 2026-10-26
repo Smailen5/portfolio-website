@@ -7,6 +7,7 @@ import type {
   TechGroup,
 } from '@/shared/types/about';
 import lpiIcon from '@/assets/icons/lpi.svg';
+import proxmoxIcon from '@/assets/icons/proxmox.svg';
 
 export const profile: Profile = {
   name: 'Smailen Vargas',
@@ -54,6 +55,56 @@ export const certifications: Certification[] = [
       alt: 'Logo Linux Professional Institute',
     },
   },
+  {
+    name: 'Introduction to Cloud 101',
+    issuer: 'AWS Educate',
+    status: 'conseguita',
+    topics: [
+      'Cloud Architecture',
+      'Compute & Storage',
+      'Cloud Security',
+      'Shared Responsibility',
+      'Networking & Scaling',
+    ],
+    credentialUrl:
+      'https://www.credly.com/badges/d84de33b-afb4-4663-8b78-8ee18ad2342b/public_url',
+  },
+  {
+    name: 'Technical Writing',
+    issuer: 'Arkigest / Forma.Temp',
+    status: 'conseguita',
+    topics: [
+      'Technical Docs',
+      'ADR Authoring',
+      'Operations Runbooks',
+      'API Documentation',
+      'Information Architecture',
+    ],
+  },
+  {
+    name: 'Virtualizzazione & Proxmox VE',
+    issuer: 'Udemy',
+    status: 'conseguita',
+    topics: [
+      'KVM & LXC',
+      'LVM-Thin Storage',
+      'Linux Bridge',
+      'Backup & PBS',
+      'Disaster Recovery',
+    ],
+  },
+  {
+    name: 'Full-Stack & DevOps',
+    issuer: 'Udemy & Formazione Continua',
+    status: 'conseguita',
+    topics: [
+      'JavaScript ES6+',
+      'React & TypeScript',
+      'Node.js & REST API',
+      'MongoDB',
+      'Docker Containers',
+    ],
+  },
 ];
 
 export const techGroups: TechGroup[] = [
@@ -73,38 +124,67 @@ export const techGroups: TechGroup[] = [
 
 export const homelabSystems: HomelabSystem[] = [
   {
-    id: 'TODO id',
-    title: 'TODO name',
+    id: 'monday',
+    title: 'Proxmox VE Node (monday)',
     image: {
-      src: '/todo/src/url',
-      alt: 'TODO alt text',
+      src: proxmoxIcon,
+      alt: 'Logo Proxmox',
     },
     facts: [
       {
-        label: 'TODO label 1',
-        value: 'TODO value 1',
+        label: 'Host',
+        value: 'Mini-PC GMKtec G10 (AMD Ryzen 5 3500U, 16 GB RAM DDR4)',
       },
       {
-        label: 'TODO label 2',
-        value: 'TODO value 2',
+        label: 'Storage',
+        value: '512 GB NVMe (LVM-Thin) + 500 GB SSD SATA secondario',
+      },
+      {
+        label: 'Hypervisor',
+        value: 'Proxmox VE su base Debian con orchestrazione VM (KVM) e LXC',
+      },
+      {
+        label: 'Produzione',
+        value:
+          'VM gateway (Nginx Proxy Manager + Cloudflare Tunnel), VM server-portfolio (Docker), VM agente AI DevOps (OpenClaw)',
+      },
+      {
+        label: 'Sicurezza',
+        value:
+          'Zero porte esposte sul router, firewall UFW restrittivo su LAN, SSH solo a chiavi con root disabilitato',
       },
     ],
   },
   {
-    id: 'TODO id 2',
-    title: 'TODO name',
+    id: 'yesterday',
+    title: 'Proxmox Backup Server (yesterday)',
     image: {
-      src: '/todo/src/url 2',
-      alt: 'TODO alt text 2',
+      src: proxmoxIcon,
+      alt: 'Logo Proxmox',
     },
     facts: [
       {
-        label: 'TODO label 1',
-        value: 'TODO value 1',
+        label: 'Host',
+        value: 'Server fisico dedicato (Intel Core i3-6098P, 8 GB RAM)',
       },
       {
-        label: 'TODO label 2',
-        value: 'TODO value 2',
+        label: 'Storage',
+        value:
+          '500 GB dedicati ai datastore di backup + 1 TB storage aggiuntivo',
+      },
+      {
+        label: 'Sistema',
+        value: 'Proxmox Backup Server (PBS) su Debian 13',
+      },
+      {
+        label: 'Strategia',
+        value:
+          'Backup automatici orari deduplicati e incrementali di tutte le VM e container LXC del nodo primario',
+      },
+      {
+        label: 'Isolamento',
+        value:
+          'Accessibile esclusivamente in rete locale con accesso SSH blindato e Runbook di disaster recovery',
       },
     ],
   },
