@@ -192,13 +192,23 @@ export const homelabSystems: HomelabSystem[] = [
 
 export const studyItems: StudyItem[] = [
   {
-    title: 'Preparazione LPIC-1 101',
-    description: 'TODO description',
-    href: 'https://www.w3schools.com/html/',
+    title: 'Multi-Distro Sandbox (Debian 13 & Rocky Linux 9)',
+    description:
+      'Ambiente di test via terminale su VM isolate con snapshot puliti: simulazione scenari enterprise multi-distro (apt/dpkg vs dnf/rpm), gestione servizi con systemd e troubleshooting di rete.',
   },
   {
-    title: 'Esercitazioni Frontend Mentor',
-    description: 'TODO description',
-    href: 'https://www.frontendmentor.io/profile/Smailen5',
+    title: 'Storage & Recovery Lab (LVM & PBS)',
+    description:
+      'Collaudo avanzato di volumi logici LVM (creazione, estensione/riduzione a caldo), simulazione di guasti e validazione delle procedure di ripristino con Proxmox Backup Server.',
+  },
+  {
+    title: 'Local AI Benchmarking (GPU 16 GB VRAM)',
+    description:
+      'Esecuzione locale e benchmarking di LLM open source (Ollama / LM Studio su Radeon RX 9070 XT 16 GB), studio della quantizzazione e orchestrazione di agenti per code review asincrona.',
+  },
+  {
+    title: 'Hardening & Network Automation',
+    description:
+      'Configurazione di policy restrittive su firewall UFW, gestione accessi SSH a chiavi e stesura di script Bash per manutenzione autonoma e monitoraggio dei servizi.',
   },
 ];
