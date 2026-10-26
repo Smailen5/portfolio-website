@@ -6,6 +6,7 @@ export interface ImageAsset {
 
 export interface Certification {
   name: string;
+  issuer: string;
   status: CertificationStatus;
   topics: string[];
   badge?: ImageAsset;
