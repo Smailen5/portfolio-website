@@ -8,7 +8,7 @@ interface TechStackCardProps {
 
 export const TechStackCard = ({ className }: TechStackCardProps) => (
   <BentoCard id="tech-stack" title="Tech Stack" className={className}>
-    <div className="space-y-4">
+    <div className="flex flex-1 flex-col justify-between gap-4">
       {techGroups.map(group => (
         <div key={group.title}>
           <h3 className="text-sm font-semibold">{group.title}</h3>

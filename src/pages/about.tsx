@@ -13,8 +13,8 @@ export function AboutPage() {
       <div className="grid grid-cols-1 gap-4 md:grid-cols-12">
         <ProfileCard className="md:col-span-8" />
         <CertificationsCard className="md:col-span-4" />
-        <TechStackCard className="md:col-span-5" />
-        <HomelabCard className="md:col-span-3" />
+        <TechStackCard className="md:col-span-4" />
+        <HomelabCard className="md:col-span-4" />
         <StudyCard className="md:col-span-4" />
       </div>
     </Layout>
