@@ -192,23 +192,23 @@ export const homelabSystems: HomelabSystem[] = [
 
 export const labItems: LabItem[] = [
   {
-    title: 'Multi-Distro Sandbox (Debian 13 & Rocky Linux 9)',
+    title: 'Multi-Distro Sandbox',
     description:
-      'Ambiente di test via terminale su VM isolate con snapshot puliti: simulazione scenari enterprise multi-distro (apt/dpkg vs dnf/rpm), gestione servizi con systemd e troubleshooting di rete.',
+      'VM isolate Debian 13 e Rocky Linux per test di pacchettizzazione (apt vs rpm), systemd e rete.',
   },
   {
-    title: 'Storage & Recovery Lab (LVM & PBS)',
+    title: 'Storage & Disaster Recovery',
     description:
-      'Collaudo avanzato di volumi logici LVM (creazione, estensione/riduzione a caldo), simulazione di guasti e validazione delle procedure di ripristino con Proxmox Backup Server.',
+      'Gestione volumi logici LVM (ridimensionamento a caldo), simulazione guasti e restore con PBS.',
   },
   {
-    title: 'Local AI Benchmarking (GPU 16 GB VRAM)',
+    title: 'Local AI & Automation',
     description:
-      'Esecuzione locale e benchmarking di LLM open source (Ollama / LM Studio su Radeon RX 9070 XT 16 GB), studio della quantizzazione e orchestrazione di agenti per code review asincrona.',
+      'Benchmarking di LLM locali (Ollama/LM Studio su RX 9070 XT) per code review e automazioni.',
   },
   {
-    title: 'Hardening & Network Automation',
+    title: 'Security & Hardening',
     description:
-      'Configurazione di policy restrittive su firewall UFW, gestione accessi SSH a chiavi e stesura di script Bash per manutenzione autonoma e monitoraggio dei servizi.',
+      'Policy restrittive UFW, SSH blindato solo a chiavi e scripting Bash per manutenzione autonoma.',
   },
 ];
