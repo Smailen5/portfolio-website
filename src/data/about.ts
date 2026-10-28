@@ -110,15 +110,42 @@ export const certifications: Certification[] = [
 export const techGroups: TechGroup[] = [
   {
     title: 'Frontend',
-    items: ['React', 'TypeScript', 'TanStack Router', 'Tailwind CSS', 'Vite'],
+    items: [
+      'React',
+      'TypeScript',
+      'TanStack Router',
+      'Tailwind CSS',
+      'Vite',
+      'Next.js',
+      'DaisyUI',
+    ],
   },
   {
     title: 'Backend',
-    items: ['Node.js', 'Express', 'MongoDB'],
+    items: [
+      'Node.js',
+      'Express',
+      'REST API',
+      'MongoDB',
+      'Mongoose',
+      'JWT',
+      'Zod',
+      'Sharp',
+      'Vitest',
+    ],
   },
   {
-    title: 'Sistemi & Strumenti',
-    items: ['Debian/GNU linux', 'Bash', 'Docker', 'Git', 'Nginx'],
+    title: 'Infrastruttura & Sistemi',
+    items: [
+      'Debian',
+      'Rocky',
+      'Proxmox VE',
+      'Cloudflare Tunnels',
+      'Bash',
+      'Docker',
+      'Git',
+      'Nginx',
+    ],
   },
 ];
 
