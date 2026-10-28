@@ -8,7 +8,7 @@ import { TechStackCard } from '@/features/about/components/TechStackCard';
 
 export function AboutPage() {
   return (
-    <Layout classContent="min-h-[calc(100vh-160px)] px-4 lg:px-0">
+    <Layout classContent="px-4 lg:px-0">
       <h1 className="sr-only">Chi sono</h1>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-12">

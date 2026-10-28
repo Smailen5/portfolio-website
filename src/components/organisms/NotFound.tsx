@@ -8,7 +8,7 @@ export function NotFound() {
   }, []);
 
   return (
-    <Layout classContent="flex min-h-[calc(100vh-160px)] flex-col items-center justify-center gap-6 px-4 lg:px-0 pb-14 text-center">
+    <Layout classContent="flex flex-col items-center justify-center gap-6 px-4 lg:px-0 pb-14 text-center">
       <h1 className="sr-only">Pagina non trovata</h1>
       <p aria-hidden="true" className="text-8xl font-extrabold">
         404
