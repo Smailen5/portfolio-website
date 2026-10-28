@@ -110,6 +110,11 @@
     text-transform: capitalize;
     color: var(--color-secondary);
   }
+
+  strong {
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-base-content);
+  }
 }
 
 /* =====================================================================
