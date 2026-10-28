@@ -7,7 +7,7 @@ interface ProfileCardProps {
 }
 
 export const ProfileCard = ({ className }: ProfileCardProps) => (
-  <BentoCard id="profile" title="Chi Sono" className={className}>
+  <BentoCard id="profile" title="Profilo" className={className}>
     <div className="flow-root">
       <div className="border-primary/50 float-left mr-4 mb-2 rounded-lg border p-1">
         <img

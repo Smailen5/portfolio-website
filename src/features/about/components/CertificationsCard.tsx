@@ -11,7 +11,7 @@ export const CertificationsCard = ({ className }: CertificationsCardProps) => {
   return (
     <BentoCard
       id="certification-card"
-      title="Certification"
+      title="Certificazioni"
       className={className}
     >
       <div className="flex items-start gap-3">
