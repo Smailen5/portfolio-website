@@ -6,7 +6,7 @@ interface HomelabCardProps {
 }
 
 export const HomelabCard = ({ className }: HomelabCardProps) => {
-  const { title, image, facts } = homelabSystems[1];
+  const { title, image, facts } = homelabSystems[0];
   return (
     <BentoCard
       id="homelab-card"
