@@ -1,104 +1,40 @@
-import { Section, Separator, Strong } from '@/components/atoms';
 import { Layout } from '@/components/molecules';
-import { SkillsSection } from '@/components/organisms';
+import { CURRICULUM_FILES } from '@/data/curriculum';
+import { CertificationsCard } from '@/features/about/components/CertificationsCard';
+import { HomelabCard } from '@/features/about/components/HomelabCard';
+import { ProfileCard } from '@/features/about/components/ProfileCard';
+import { LabCard } from '@/features/about/components/LabCard';
+import { TechStackCard } from '@/features/about/components/TechStackCard';
 
 export function AboutPage() {
   return (
-    <Layout classContent="min-h-[calc(100vh-160px)] px-4 lg:px-0">
-      <Separator />
-      <h1>Chi sono</h1>
-      <Separator className="h-4" />
+    <Layout classContent="px-4 lg:px-0">
+      <h1 className="sr-only">Chi sono</h1>
 
-      <Section>
-        <h2>Il Mio Percorso</h2>
-        <p>
-          Sono un <Strong>frontend developer</Strong> con una passione che nasce
-          dall&apos;infanzia.
-        </p>
-        <p>
-          Tutto è iniziato con uno <Strong>ZX Spectrum</Strong> e la
-          programmazione in <Strong>Basic</Strong>. Quella prima esperienza ha
-          acceso una passione che nel tempo si è trasformata in una carriera
-          dedicata allo sviluppo frontend.
-        </p>
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-12">
+        <ProfileCard className="md:col-span-8" />
+        <CertificationsCard className="md:col-span-4" />
+        <TechStackCard className="md:col-span-4" />
+        <HomelabCard className="md:col-span-4" />
 
-        <p>
-          Il mio percorso è stato guidato dalla curiosità e dalla voglia di
-          sperimentare. Ho esplorato diversi campi creativi e tecnici che hanno
-          arricchito il mio approccio allo sviluppo: dalla modellazione 3D al
-          disegno digitale, dagli esperimenti con <Strong>Arduino</Strong> alla
-          programmazione. Questa varietà di esperienze mi ha portato a trovare
-          la mia vocazione nel <Strong>frontend development</Strong>, dove posso
-          combinare creatività e problem solving.
-        </p>
-      </Section>
+        <div className="flex flex-col gap-4 md:col-span-4">
+          <LabCard className="flex-1" />
 
-      <Separator />
-
-      <Section>
-        <h2>Le Mie Competenze</h2>
-        <p>
-          Nel corso degli anni ho sviluppato una solida conoscenza delle
-          tecnologie moderne per lo sviluppo web. Partendo dai fondamenti con{' '}
-          <Strong>HTML5</Strong>, <Strong>CSS3</Strong> e{' '}
-          <Strong>JavaScript</Strong>, ho poi approfondito l&apos;utilizzo di{' '}
-          <Strong>TypeScript</Strong> per aver maggiore robustezza nel codice.
-        </p>
-        <p>
-          Nel mondo dei frameworks, <Strong>React</Strong> è diventato il mio
-          strumento principale, accompagnato da librerie come{' '}
-          <Strong>TanStack Router</Strong> e strumenti di styling come{' '}
-          <Strong>Tailwind CSS</Strong>. Uso <Strong>Git</Strong> e{' '}
-          <Strong>GitHub</Strong> per la gestione del codice e workflow moderni
-          con <Strong>Vite</Strong>.
-        </p>
-
-        <p>
-          Mi aggiorno costantemente sulle nuove tecnologie e best practices del
-          settore, perché credo che nell&apos;ambito tech l&apos;apprendimento
-          continuo sia fondamentale.
-        </p>
-      </Section>
-
-      <SkillsSection />
-
-      <Separator />
-
-      <Section>
-        <h2>Il Mio Approccio</h2>
-        <p>
-          Nel <Strong>frontend development</Strong> ho trovato il perfetto
-          equilibrio tra problem solving e creatività. Mi appassiona trasformare
-          concept di design in interfacce interattive, ottimizzando ogni
-          dettaglio per creare esperienze web coinvolgenti e accessibili. Ogni
-          progetto è per me un&apos;opportunità per migliorare e applicare nuove
-          soluzioni, sempre mantenendo un focus sulla qualità del codice,
-          l&apos;usabilità e le performance.
-        </p>
-      </Section>
-
-      <Separator />
-
-      <Section>
-        <h2>Fuori dal Codice</h2>
-        <p>
-          Quando non sono immerso nel codice, mi dedico ad attività che nutrono
-          la mia creatività e curiosità:
-        </p>
-        <ul>
-          <li>Musica: Studio autodidatta della chitarra elettrica</li>
-          <li>
-            Game Development: Sperimento con Phaser e Kaboom.js per creare
-            piccoli videogiochi
-          </li>
-        </ul>
-        <p>
-          Questi hobby non solo mi permettono di staccare mentalmente, ma
-          arricchiscono anche il mio approccio creativo al lavoro.
-        </p>
-      </Section>
-
-      <Separator />
+          <div className="grid gap-3 sm:grid-cols-2">
+            {CURRICULUM_FILES.map(file => (
+              <a
+                key={file.href}
+                href={file.href}
+                download={file.fileName}
+                aria-label={file.ariaLabel}
+                className="btn btn-outline btn-primary w-full rounded-md"
+              >
+                {file.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 }
