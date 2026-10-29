@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.2.0](https://github.com/Smailen5/portfolio-website/compare/v6.1.0...v6.2.0) (2026-10-29)
+
+
+### Features
+
+* ridisegna pagina contatti con griglia canali e copia email ([#301](https://github.com/Smailen5/portfolio-website/issues/301)) ([28bc92c](https://github.com/Smailen5/portfolio-website/commit/28bc92c82f24004595740f53c607c356ea3a44c1))
+* trasforma pagina about in bento grid ([#303](https://github.com/Smailen5/portfolio-website/issues/303)) ([9dc2ab4](https://github.com/Smailen5/portfolio-website/commit/9dc2ab4c6bcad967740eea6316133e7da39f877a))
+
+
+### Bug Fixes
+
+* corregge link download cv con href reale per seo e a11y ([#299](https://github.com/Smailen5/portfolio-website/issues/299)) ([8b43d37](https://github.com/Smailen5/portfolio-website/commit/8b43d37f8d8c4dbf7f08e9df48e0431fb65dfc48))
+
 ## [6.1.0](https://github.com/Smailen5/portfolio-website/compare/v6.0.0...v6.1.0) (2026-10-09)
 
 
