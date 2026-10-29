@@ -9,11 +9,7 @@ export const CertificationsCard = ({ className }: CertificationsCardProps) => {
   const { name, issuer, badge, topics, credentialUrl, status } =
     certifications[0];
   return (
-    <BentoCard
-      id="certification-card"
-      title="Certificazioni"
-      className={className}
-    >
+    <BentoCard title="Certificazioni" className={className}>
       <div className="flex items-start gap-3">
         <h3 className="text-xl font-bold">{name}</h3>
         <p

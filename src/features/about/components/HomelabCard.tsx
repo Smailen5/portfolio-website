@@ -8,11 +8,7 @@ interface HomelabCardProps {
 export const HomelabCard = ({ className }: HomelabCardProps) => {
   const { title, image, facts } = homelabSystems[0];
   return (
-    <BentoCard
-      id="homelab-card"
-      title="Homelab & Infrastruttura"
-      className={className}
-    >
+    <BentoCard title="Homelab & Infrastruttura" className={className}>
       <div className="flex items-center gap-3">
         {image && (
           <img src={image.src} alt="" className="size-20 object-contain" />

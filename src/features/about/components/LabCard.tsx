@@ -6,7 +6,7 @@ interface LabCardProps {
 }
 
 export const LabCard = ({ className }: LabCardProps) => (
-  <BentoCard id="lab-card" title="Lab R&S" className={className}>
+  <BentoCard title="Lab R&S" className={className}>
     <ul className="space-y-3">
       {labItems.map(item => {
         return (
