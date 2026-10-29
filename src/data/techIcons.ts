@@ -22,7 +22,7 @@ export const TECH_ICONS: Record<string, string> = {
   TypeScript: typescriptIcon,
   'Tailwind CSS': tailwindIcon,
   Vite: viteIcon,
-  'Debian/GNU linux': linuxIcon,
+  Debian: linuxIcon,
   Git: gitIcon,
   Axios: axiosIcon,
   Formik: formikIcon,
