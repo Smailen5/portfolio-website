@@ -35,8 +35,8 @@ export const CertificationsCard = ({ className }: CertificationsCardProps) => {
         <div>
           <p className="text-sm font-semibold">Syllabus highlights:</p>
           <ul className="mt-1 list-disc space-y-1 pl-4 text-sm">
-            {topics.map((a, index) => (
-              <li key={index}>{a}</li>
+            {topics.map(topic => (
+              <li key={topic}>{topic}</li>
             ))}
           </ul>
         </div>
