@@ -26,11 +26,7 @@ export const CertificationsCard = ({ className }: CertificationsCardProps) => {
       <div className="mt-4 grid grid-cols-[auto_1fr] items-start gap-4">
         {/* Nel caso dimentichi di aggiungere una immagine per la certificazione non mostra l'immagine rotta */}
         {badge && (
-          <img
-            src={badge.src}
-            alt={badge.alt}
-            className="size-20 object-contain"
-          />
+          <img src={badge.src} alt="" className="size-20 object-contain" />
         )}
         <div>
           <p className="text-sm font-semibold">Syllabus highlights:</p>

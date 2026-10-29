@@ -15,11 +15,7 @@ export const HomelabCard = ({ className }: HomelabCardProps) => {
     >
       <div className="flex items-center gap-3">
         {image && (
-          <img
-            src={image.src}
-            alt={image.alt}
-            className="size-20 object-contain"
-          />
+          <img src={image.src} alt="" className="size-20 object-contain" />
         )}
         <h3 className="text-sm font-semibold">{title}</h3>
       </div>
