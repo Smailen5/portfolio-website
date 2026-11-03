@@ -50,6 +50,7 @@ export default [
         AbortSignal: "readonly",
         HTMLDivElement: "readonly",
         HTMLButtonElement: "readonly",
+        HTMLElement: "readonly",
         MouseEvent: "readonly",
         MediaQueryListEvent: "readonly",
         Node: "readonly",
