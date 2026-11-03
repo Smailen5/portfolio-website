@@ -5,8 +5,10 @@ const FOCUSABLE = 'a[href]:not(details:not([open]) a), button, summary';
 /**
  * Hook useFocusTrap - Confina il focus dentro un contenitore
  *
- * Restituisce un gestore per `onKeyDown` che tiene il focus dentro all'interno dell'elemento
+ * Restituisce un gestore per `onKeyDown` che tiene il focus all'interno dell'elemento
  * su cui viene agganciato finche' `isActive` e' `true`.
+ *
+ * Se il focus e' fuori dal contenitore, `Shift+Tab` puo' uscire.
  * @param {boolean} isActive - Se il trap e' attivo (es. menu mobile aperto)
  * @param {() => void} onClose - Callback invocata alla pressione di Escape
  * @returns {(e: KeyboardEvent<HTMLElement>) => void} - Gestore da passare a onKeyDown
