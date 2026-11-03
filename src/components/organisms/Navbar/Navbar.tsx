@@ -26,7 +26,6 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 py-2">
-      <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className="bg-base-200/90 border-accent/60 from-accent/20 relative z-10 flex w-full max-w-5xl items-center justify-between rounded-2xl border bg-linear-to-b to-transparent px-4 py-2 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)] backdrop-blur-xs">
         <Link to="/" className="text-xl font-bold tracking-wider">
           Smailen
@@ -79,6 +78,7 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
+      <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
     </nav>
   );
 };

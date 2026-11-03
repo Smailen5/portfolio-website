@@ -39,11 +39,10 @@ export const SideBar = ({ isOpen, setIsOpen }: SideBarProps) => {
       <div
         role="dialog"
         id="sidebar"
-        aria-hidden={!isOpen}
         className={`bg-base-200 border-accent/60 absolute inset-x-4 top-full z-20 mx-auto max-w-5xl rounded-2xl border p-8 shadow-lg transition duration-300 ease-in-out lg:hidden ${
           isOpen
             ? 'translate-y-0 opacity-100'
-            : 'pointer-events-none -translate-y-full opacity-0'
+            : 'pointer-events-none invisible -translate-y-full opacity-0'
         }`}
       >
         <nav className="flex flex-col gap-4">
