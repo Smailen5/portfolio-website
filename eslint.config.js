@@ -94,8 +94,7 @@ export default [
             'tooltip(?:-.*)?',
             'card(?:-.*)?',
             'badge(?:-outline)?',
-            'link(?:-(primary|accent))?',
-            'typing'
+            'link(?:-(primary|accent))?'
         ],
       },
     ],
