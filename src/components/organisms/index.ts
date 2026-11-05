@@ -1,8 +1,5 @@
 export { Navbar } from './Navbar/Navbar';
 export { SideBar } from './Navbar/SideBar';
-export { SkillCard } from './SectionSkill/SkillCard';
-export { SkillCategory } from './SectionSkill/SkillCategory';
-export { SkillsSection } from './SectionSkill/SkillsSection';
 export { TechPillars } from './TechPillars';
 export { Footer } from './Footer';
 export { Root } from './Root';
