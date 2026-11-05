@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.2.1](https://github.com/Smailen5/portfolio-website/compare/v6.2.0...v6.2.1) (2026-11-05)
+
+
+### Bug Fixes
+
+* corregge la navigazione da tastiera del menu mobile ([#305](https://github.com/Smailen5/portfolio-website/issues/305)) ([6bf3f8b](https://github.com/Smailen5/portfolio-website/commit/6bf3f8b5d8d74534654cae5ed64adebc4a382323))
+
 ## [6.2.0](https://github.com/Smailen5/portfolio-website/compare/v6.1.0...v6.2.0) (2026-10-29)
 
 
