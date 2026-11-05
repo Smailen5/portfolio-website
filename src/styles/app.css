@@ -153,16 +153,6 @@
 
 /* Rispetta la preferenza di sistema per ridurre le animazioni */
 @media (prefers-reduced-motion: reduce) {
-  .typing {
-    width: auto;
-    border-right: none;
-    animation: none;
-  }
-
-  .animate-fade-out,
-  .animate-fade-in {
-    animation: none;
-  }
 }
 
 /* =====================================================================
