@@ -1,24 +1,12 @@
 import { Layout } from '@/components/molecules';
 import { ContactCard } from '@/features/contact/components/ContactCard';
 import { CopyEmailButton } from '@/features/contact/components/CopyEmailButton';
+import { CURRICULUM_FILES } from '@/data/curriculum';
 
 const EMAIL = 'job@smailenvargas.com';
 const MAILTO_URL = `mailto:${EMAIL}?subject=42-website-contact`;
 const LINKEDIN_URL = 'https://www.linkedin.com/in/smailen-vargas/';
 const GITHUB_URL = 'https://github.com/Smailen5';
-
-const CURRICULUM_FILES = [
-  {
-    label: 'Scarica CV in italiano',
-    href: '/curriculum/cv-smailen-vargas-it.pdf',
-    fileName: 'CV-Smailen-Vargas-IT.pdf',
-  },
-  {
-    label: 'Scarica CV in inglese',
-    href: '/curriculum/cv-smailen-vargas-en.pdf',
-    fileName: 'CV-Smailen-Vargas-EN.pdf',
-  },
-];
 
 export function ContactPage() {
   return (
