@@ -1,24 +1,11 @@
 import { Layout } from '@/components/molecules';
 import { ContactCard } from '@/features/contact/components/ContactCard';
 import { CopyEmailButton } from '@/features/contact/components/CopyEmailButton';
+import { CURRICULUM_FILES } from '@/data/curriculum';
+import { SOCIAL_PROFILES } from '@/data/social';
 
 const EMAIL = 'job@smailenvargas.com';
 const MAILTO_URL = `mailto:${EMAIL}?subject=42-website-contact`;
-const LINKEDIN_URL = 'https://www.linkedin.com/in/smailen-vargas/';
-const GITHUB_URL = 'https://github.com/Smailen5';
-
-const CURRICULUM_FILES = [
-  {
-    label: 'Scarica CV in italiano',
-    href: '/curriculum/cv-smailen-vargas-it.pdf',
-    fileName: 'CV-Smailen-Vargas-IT.pdf',
-  },
-  {
-    label: 'Scarica CV in inglese',
-    href: '/curriculum/cv-smailen-vargas-en.pdf',
-    fileName: 'CV-Smailen-Vargas-EN.pdf',
-  },
-];
 
 export function ContactPage() {
   return (
@@ -46,11 +33,11 @@ export function ContactPage() {
 
         <ContactCard
           id="contact-linkedin"
-          title="LinkedIn"
+          title={SOCIAL_PROFILES.linkedin.name}
           description="Profilo professionale con esperienze, competenze e certificazioni."
         >
           <a
-            href={LINKEDIN_URL}
+            href={SOCIAL_PROFILES.linkedin.link}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Connettiti al profilo LinkedIn di Smailen Vargas"
@@ -62,11 +49,11 @@ export function ContactPage() {
 
         <ContactCard
           id="contact-github"
-          title="GitHub"
+          title={SOCIAL_PROFILES.github.name}
           description="Attività open source, progetti personali e codice dei siti che costruisco."
         >
           <a
-            href={GITHUB_URL}
+            href={SOCIAL_PROFILES.github.link}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Esplora Profilo GitHub di Smailen Vargas"
