@@ -19,8 +19,8 @@ export const CurriculumDownload = ({
       </summary>
 
       <ul className="dropdown-content menu rounded-box bg-base-100 z-10 w-52 p-2 shadow-sm">
-        {CURRICULUM_FILES.map((cv, index) => (
-          <li key={index}>
+        {CURRICULUM_FILES.map(cv => (
+          <li key={cv.href}>
             <a
               href={cv.href}
               download={cv.fileName}
