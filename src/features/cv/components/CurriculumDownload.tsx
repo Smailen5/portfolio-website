@@ -1,3 +1,5 @@
+import { CURRICULUM_FILES } from '@/data/curriculum';
+
 interface CurriculumDownloadProps {
   closeSideBar?: () => void;
 }
@@ -17,26 +19,18 @@ export const CurriculumDownload = ({
       </summary>
 
       <ul className="dropdown-content menu rounded-box bg-base-100 z-10 w-52 p-2 shadow-sm">
-        <li>
-          <a
-            href="/curriculum/cv-smailen-vargas-it.pdf"
-            download="CV-Smailen-Vargas-IT.pdf"
-            onClick={handleDownload}
-            className="focus-visible:ring-primary focus-visible:ring-2"
-          >
-            Curriculum in Italiano
-          </a>
-        </li>
-        <li>
-          <a
-            href="/curriculum/cv-smailen-vargas-en.pdf"
-            download="CV-Smailen-Vargas-EN.pdf"
-            onClick={handleDownload}
-            className="focus-visible:ring-primary focus-visible:ring-2"
-          >
-            Curriculum in Inglese
-          </a>
-        </li>
+        {CURRICULUM_FILES.map((cv, index) => (
+          <li key={index}>
+            <a
+              href={cv.href}
+              download={cv.fileName}
+              onClick={handleDownload}
+              className="focus-visible:ring-primary focus-visible:ring-2"
+            >
+              {cv.label}
+            </a>
+          </li>
+        ))}
       </ul>
     </details>
   );
