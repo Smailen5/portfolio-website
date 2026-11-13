@@ -1,10 +1,12 @@
 import { Layout } from '@/components/molecules';
 import { CURRICULUM_FILES } from '@/data/curriculum';
-import { CertificationsCard } from '@/features/about/components/CertificationsCard';
-import { HomelabCard } from '@/features/about/components/HomelabCard';
-import { ProfileCard } from '@/features/about/components/ProfileCard';
-import { LabCard } from '@/features/about/components/LabCard';
-import { TechStackCard } from '@/features/about/components/TechStackCard';
+import {
+  CertificationsCard,
+  HomelabCard,
+  ProfileCard,
+  LabCard,
+  TechStackCard,
+} from '@/components/organisms';
 
 export function AboutPage() {
   return (

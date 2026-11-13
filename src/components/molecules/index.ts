@@ -1,5 +1,9 @@
+export { BentoCard } from './BentoCard';
 export { CardError } from './CardError';
+export { CardProject } from './CardProject';
 export { CardSkeleton } from './CardSkeleton';
-export { Hero } from './Hero';
+export { ContactCard } from './ContactCard';
+export { CurriculumDownload } from './CurriculumDownload';
+export { Filter } from './Filter';
 export { Layout } from './Layout';
 export { SocialIcons } from './SocialIcons';

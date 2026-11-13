@@ -1,4 +1,4 @@
-import { BentoCard } from './BentoCard';
+import { BentoCard } from '@/components/molecules';
 import { profile } from '@/data/about';
 import { renderBold } from '@/shared/utils/renderBold';
 
