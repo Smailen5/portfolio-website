@@ -1,4 +1,4 @@
-import { BentoCard } from './BentoCard';
+import { BentoCard } from '@/components/molecules';
 import { techGroups } from '@/data/about';
 import { TECH_ICONS } from '@/data/techIcons';
 

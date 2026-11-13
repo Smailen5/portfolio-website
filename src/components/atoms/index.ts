@@ -1,3 +1,4 @@
+export { CopyEmailButton } from './CopyEmailButton';
 export { Section } from './Section';
 export { Separator } from './Separator';
 export { Strong } from './Strong';

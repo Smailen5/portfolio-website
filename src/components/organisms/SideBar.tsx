@@ -1,4 +1,4 @@
-import { CurriculumDownload } from '@/features/cv/components/CurriculumDownload';
+import { CurriculumDownload } from '@/components/molecules';
 import { NAVIGATION_LINKS } from '@/shared/constants/navigation';
 import { Link } from '@tanstack/react-router';
 

@@ -1,6 +1,5 @@
-import { Layout, Hero } from '@/components/molecules';
-import { TechPillars } from '@/components/organisms';
-import { LastProjects } from '@/features/projects/components/Latest';
+import { Layout } from '@/components/molecules';
+import { TechPillars, Hero, LastProjects } from '@/components/organisms';
 
 export function HomePage() {
   return (

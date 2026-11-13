@@ -1,7 +1,7 @@
 import { Outlet } from '@tanstack/react-router';
 import { DocumentHead } from '@/shared/components/DocumentHead';
 import { Footer } from './Footer';
-import { Navbar } from './Navbar/Navbar';
+import { Navbar } from './Navbar';
 
 export function Root() {
   return (
