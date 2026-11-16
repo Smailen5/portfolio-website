@@ -1,6 +1,5 @@
-import { Layout } from '@/components/molecules';
-import { ContactCard } from '@/features/contact/components/ContactCard';
-import { CopyEmailButton } from '@/features/contact/components/CopyEmailButton';
+import { ContactCard, Layout } from '@/components/molecules';
+import { CopyEmailButton } from '@/components/atoms';
 import { CURRICULUM_FILES } from '@/data/curriculum';
 import { SOCIAL_PROFILES } from '@/data/social';
 

@@ -1,4 +1,4 @@
-import { BentoCard } from './BentoCard';
+import { BentoCard } from '@/components/molecules';
 import { homelabSystems } from '@/data/about';
 
 interface HomelabCardProps {

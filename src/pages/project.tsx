@@ -1,6 +1,5 @@
 import { Layout } from '@/components/molecules';
-import { HeaderProject } from '@/features/projects/components/Header';
-import { SectionProjects } from '@/features/projects/components/Section';
+import { HeaderProject, SectionProjects } from '@/components/organisms';
 import { useProjects } from '@/shared/hooks/useProjects';
 
 export function ProjectPage() {
