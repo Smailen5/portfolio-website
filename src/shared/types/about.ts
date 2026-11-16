@@ -15,7 +15,16 @@ export interface Certification {
 
 export interface TechGroup {
   title: string;
-  items: string[];
+  items: readonly string[];
+}
+
+export interface TechIcon {
+  src: string;
+  /**
+   * Tono della piastrina su cui poggia l'icona: `light` per i brand scuri che
+   * non raggiungono 3:1 sul fondo del tema, `dark` per tutti gli altri.
+   */
+  chip: 'light' | 'dark';
 }
 
 export interface HomelabFact {

@@ -107,7 +107,7 @@ export const certifications: Certification[] = [
   },
 ];
 
-export const techGroups: TechGroup[] = [
+export const techGroups = [
   {
     title: 'Frontend',
     items: [
@@ -147,7 +147,10 @@ export const techGroups: TechGroup[] = [
       'Nginx',
     ],
   },
-];
+] as const satisfies readonly TechGroup[];
+
+/** Unione dei nomi tecnologia definiti in `techGroups` (unica fonte di verità). */
+export type TechName = (typeof techGroups)[number]['items'][number];
 
 export const homelabSystems: HomelabSystem[] = [
   {
