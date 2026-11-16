@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.3.0](https://github.com/Smailen5/portfolio-website/compare/v6.2.0...v6.3.0) (2026-11-16)
+
+
+### Features
+
+* aggiunge icone svg per tutte le tecnologie di about ([#325](https://github.com/Smailen5/portfolio-website/issues/325)) ([1157940](https://github.com/Smailen5/portfolio-website/commit/115794088b61cfdb586f973ee2d5926358e7cd88))
+
+
+### Bug Fixes
+
+* corregge la navigazione da tastiera del menu mobile ([#305](https://github.com/Smailen5/portfolio-website/issues/305)) ([6bf3f8b](https://github.com/Smailen5/portfolio-website/commit/6bf3f8b5d8d74534654cae5ed64adebc4a382323))
+
 ## [6.2.0](https://github.com/Smailen5/portfolio-website/compare/v6.1.0...v6.2.0) (2026-10-29)
 
 
