@@ -6,8 +6,8 @@ import type {
   LabItem,
   TechGroup,
 } from '@/shared/types/about';
-import lpiIcon from '@/assets/icons/lpi.svg';
-import proxmoxIcon from '@/assets/icons/proxmox.svg';
+import lpiIcon from '@/assets/icons/tech/linuxprofessionalinstitute.svg';
+import proxmoxIcon from '@/assets/icons/tech/proxmox.svg';
 
 export const profile: Profile = {
   name: 'Smailen Vargas',
@@ -107,7 +107,7 @@ export const certifications: Certification[] = [
   },
 ];
 
-export const techGroups: TechGroup[] = [
+export const techGroups = [
   {
     title: 'Frontend',
     items: [
@@ -147,7 +147,10 @@ export const techGroups: TechGroup[] = [
       'Nginx',
     ],
   },
-];
+] as const satisfies readonly TechGroup[];
+
+/** Unione dei nomi tecnologia definiti in `techGroups` (unica fonte di verità). */
+export type TechName = (typeof techGroups)[number]['items'][number];
 
 export const homelabSystems: HomelabSystem[] = [
   {
