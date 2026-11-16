@@ -1,5 +1,5 @@
-import reactIcon from '@/assets/icons/icons8-react.svg';
-import tailwindIcon from '@/assets/icons/icons8-tailwind-css.svg';
+import reactIcon from '@/assets/icons/tech/react.svg';
+import tailwindIcon from '@/assets/icons/tech/tailwindcss.svg';
 import { SocialIcons, Layout } from '@/components/molecules';
 
 /**
@@ -7,7 +7,7 @@ import { SocialIcons, Layout } from '@/components/molecules';
  *
  * Contiene:
  * - Copyright e anno dinamico
- * - Crediti per le icone (Icons8)
+ * - Disclaimer sui marchi e credito per le icone tech (Simple Icons)
  * - Link social (GitHub, LinkedIn, Frontend Mentor)
  * - Badge "Powered by" React + Tailwind CSS
  *
@@ -30,18 +30,23 @@ export const Footer = () => {
           <div className="flex flex-col items-start space-y-4">
             <p>
               © 2024-{new Date().getFullYear()} Smailen Vargas. Tutti i diritti
-              riservati.{' '}
-              <span>
-                Icons by{' '}
-                <a
-                  href={'https://icons8.com'}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="link text-primary font-bold"
-                >
-                  Icons8
-                </a>
-              </span>
+              riservati.
+            </p>
+            <p>
+              Tutti i nomi, i loghi e i marchi citati sono di proprietà dei
+              rispettivi titolari e sono usati a solo scopo identificativo.
+            </p>
+            <p>
+              Tech icons by{' '}
+              <a
+                href={'https://simpleicons.org'}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link text-primary font-bold"
+              >
+                Simple Icons
+              </a>{' '}
+              (CC0 1.0).
             </p>
             <SocialIcons />
           </div>
