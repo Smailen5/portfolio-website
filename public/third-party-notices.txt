@@ -12,12 +12,11 @@ Licenza: CC0 1.0 Universal
 Uso: icone delle tecnologie in src/assets/icons/tech/ (React, TypeScript, Tailwind CSS, Docker, Debian e altre).
 
 
-theSVG
-------
-Fonte: https://thesvg.org
-Licenza: MIT per il file SVG
-Uso: logo colorato di Linux (Tux) in src/assets/icons/tech/linux.svg.
-L'artwork Tux resta degli autori originali indicati più sotto.
+Linux (Tux)
+-----------
+File: src/assets/icons/tech/linux.svg
+Fonte del file SVG: https://thesvg.org
+Licenza del file SVG: MIT, Copyright (c) 2025 thesvg.org
 
 MIT License
 
@@ -42,12 +41,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-Tux, la mascotte di Linux
--------------------------
-Artwork: Larry Ewing, Simon Budig, Garrett LeSage
-Attribuzione: Larry Ewing (lewing@isc.tamu.edu) and The GIMP
-Licenza: uso, modifica e redistribuzione consentiti con attribuzione a Larry Ewing e The GIMP
+Artwork originale
+-----------------
+Autori: Larry Ewing, Simon Budig, Garrett LeSage
+Attribuzione richiesta: Larry Ewing (lewing@isc.tamu.edu) and The GIMP
+Licenza dell'artwork: uso, modifica e redistribuzione consentiti con attribuzione a Larry Ewing e The GIMP
 Fonte: https://isc.tamu.edu/~lewing/linux/
+Nota: la licenza MIT sopra copre il file SVG distribuito da theSVG, non l'artwork Tux.
 
 
 Radix Icons
@@ -83,4 +83,6 @@ Frontend Mentor
 ---------------
 Fonte: https://www.frontendmentor.io
 Uso: logo in src/assets/icons/FrontendMentorLogoIcon.svg.
-Licenza: nessuna licenza OSS, marchio usato a scopo identificativo.
+Titolare: Frontend Mentor (Matt Studdert)
+Licenza: nessuna licenza OSS, marchio usato a solo scopo identificativo
+L'uso non implica endorsement, affiliazione o approvazione da parte di Frontend Mentor.
