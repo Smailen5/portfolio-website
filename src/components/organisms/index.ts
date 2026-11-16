@@ -10,6 +10,5 @@ export { NotFound } from './NotFound';
 export { ProfileCard } from './ProfileCard';
 export { Root } from './Root';
 export { SectionProjects } from './SectionProjects';
-export { SideBar } from './SideBar';
 export { TechPillars } from './TechPillars';
 export { TechStackCard } from './TechStackCard';
