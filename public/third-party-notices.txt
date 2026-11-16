@@ -1,0 +1,86 @@
+THIRD-PARTY NOTICES
+===================
+
+Questo sito include icone e loghi di terze parti. Di seguito fonti, licenze e attribuzioni.
+I nomi e i marchi citati restano di proprietà dei rispettivi titolari e sono usati a solo scopo identificativo.
+
+
+Simple Icons
+------------
+Fonte: https://simpleicons.org
+Licenza: CC0 1.0 Universal
+Uso: icone delle tecnologie in src/assets/icons/tech/ (React, TypeScript, Tailwind CSS, Docker, Debian e altre).
+
+
+theSVG
+------
+Fonte: https://thesvg.org
+Licenza: MIT per il file SVG
+Uso: logo colorato di Linux (Tux) in src/assets/icons/tech/linux.svg.
+L'artwork Tux resta degli autori originali indicati più sotto.
+
+MIT License
+
+Copyright (c) 2025 thesvg.org
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+Tux, la mascotte di Linux
+-------------------------
+Artwork: Larry Ewing, Simon Budig, Garrett LeSage
+Attribuzione: Larry Ewing (lewing@isc.tamu.edu) and The GIMP
+Licenza: uso, modifica e redistribuzione consentiti con attribuzione a Larry Ewing e The GIMP
+Fonte: https://isc.tamu.edu/~lewing/linux/
+
+
+Radix Icons
+-----------
+Fonte: https://www.radix-ui.com/icons
+Licenza: MIT
+Uso: icone GitHub e LinkedIn in src/assets/icons/ (GitHubIcon.svg, LinkedInLogoIcon.svg).
+
+MIT License
+
+Copyright (c) 2022 WorkOS
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+Frontend Mentor
+---------------
+Fonte: https://www.frontendmentor.io
+Uso: logo in src/assets/icons/FrontendMentorLogoIcon.svg.
+Licenza: nessuna licenza OSS, marchio usato a scopo identificativo.

@@ -1,7 +1,7 @@
 import { Link } from '@tanstack/react-router';
 import { Section } from '@/components/atoms';
-import lpiIcon from '@/assets/icons/lpi.svg';
-import proxmoxIcon from '@/assets/icons/proxmox.svg';
+import lpiIcon from '@/assets/icons/tech/linuxprofessionalinstitute.svg';
+import proxmoxIcon from '@/assets/icons/tech/proxmox.svg';
 
 /**
  * Componente Hero - Sezione principale della homepage

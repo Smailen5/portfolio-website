@@ -7,7 +7,7 @@ import { SocialIcons, Layout } from '@/components/molecules';
  *
  * Contiene:
  * - Copyright e anno dinamico
- * - Disclaimer sui marchi e credito per le icone tech (Simple Icons)
+ * - Disclaimer sui marchi e link alle attribuzioni delle icone
  * - Link social (GitHub, LinkedIn, Frontend Mentor)
  * - Badge "Powered by" React + Tailwind CSS
  *
@@ -37,16 +37,14 @@ export const Footer = () => {
               rispettivi titolari e sono usati a solo scopo identificativo.
             </p>
             <p>
-              Tech icons by{' '}
               <a
-                href={'https://simpleicons.org'}
+                href={'/third-party-notices.txt'}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link text-primary font-bold"
               >
-                Simple Icons
-              </a>{' '}
-              (CC0 1.0).
+                Licenze e attribuzioni
+              </a>
             </p>
             <SocialIcons />
           </div>

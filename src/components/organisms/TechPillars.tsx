@@ -1,7 +1,7 @@
 import { Section, Separator } from '@/components/atoms';
-import linuxIcon from '@/assets/icons/linux.svg';
-import proxmoxIcon from '@/assets/icons/proxmox.svg';
-import reactIcon from '@/assets/icons/react.svg';
+import linuxIcon from '@/assets/icons/tech/linux.svg';
+import proxmoxIcon from '@/assets/icons/tech/proxmox.svg';
+import reactIcon from '@/assets/icons/tech/react.svg';
 
 /**
  * Dati dei tre pilastri tecnici mostrati nella Home.
