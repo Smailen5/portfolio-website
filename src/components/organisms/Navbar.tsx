@@ -68,7 +68,7 @@ export const Navbar = () => {
                 <li key={link.label}>
                   <Link
                     to={link.linkTo}
-                    className="after:bg-primary relative inline-block capitalize after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:rounded-full after:transition-transform after:duration-300 after:content-['']"
+                    className="after:bg-primary relative inline-block after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:rounded-full after:transition-transform after:duration-300 after:content-['']"
                     activeProps={{
                       className: 'text-primary after:scale-x-100',
                     }}

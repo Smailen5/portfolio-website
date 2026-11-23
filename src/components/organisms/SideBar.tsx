@@ -47,12 +47,7 @@ export const SideBar = ({ isOpen, setIsOpen }: SideBarProps) => {
       >
         <nav className="flex flex-col gap-4">
           {NAVIGATION_LINKS.map(link => (
-            <Link
-              key={link.label}
-              to={link.linkTo}
-              className="capitalize"
-              onClick={closeSideBar}
-            >
+            <Link key={link.label} to={link.linkTo} onClick={closeSideBar}>
               {link.label}
             </Link>
           ))}
