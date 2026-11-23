@@ -5,7 +5,7 @@ import { createRouteHead } from '@/shared/utils/seo';
 export const Route = createFileRoute('/about')({
   head: () =>
     createRouteHead({
-      title: 'About | Smailen Vargas',
+      title: 'Chi sono | Smailen Vargas',
       description:
         'Sono Smailen Vargas, Frontend Developer. React, TypeScript e Tailwind. Creo interfacce accessibili, veloci e curate. Qui trovi percorso, competenze e approccio.',
       keywords:

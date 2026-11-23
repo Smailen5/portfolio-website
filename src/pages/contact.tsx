@@ -20,7 +20,7 @@ export function ContactPage() {
       <div className="mt-10 grid gap-4 md:grid-cols-2">
         <ContactCard
           id="contact-email"
-          title="Email Diretta"
+          title="Email diretta"
           description={
             <a href={MAILTO_URL} className="link link-primary font-semibold">
               {EMAIL}
