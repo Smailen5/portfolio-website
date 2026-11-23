@@ -15,9 +15,9 @@ import proxmoxIcon from '@/assets/icons/tech/proxmox.svg';
 export const Hero = () => {
   return (
     <Section className="flex flex-col items-center gap-6 space-y-0 text-center">
-      <h2 className="text-primary text-5xl font-bold md:text-6xl">
+      <h1 className="text-primary text-5xl font-bold capitalize md:text-6xl">
         Smailen Vargas
-      </h2>
+      </h1>
 
       <p className="text-2xl font-semibold md:text-3xl">
         Frontend Developer · Full-Stack & Linux Systems
