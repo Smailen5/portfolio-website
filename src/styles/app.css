@@ -107,7 +107,6 @@
     font-size: var(--text-2xl);
     line-height: var(--text-2xl--line-height);
     font-weight: var(--font-weight-bold);
-    text-transform: capitalize;
     color: var(--color-secondary);
   }
 
@@ -128,7 +127,6 @@
   font-size: var(--text-xl);
   line-height: var(--text-xl--line-height);
   font-weight: var(--font-weight-semibold);
-  text-transform: capitalize;
   color: var(--color-base-content);
 
   &::after {

@@ -91,18 +91,18 @@ export const CardProject = ({
               className="btn btn-primary flex-1 rounded-md"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`Apri il sito live di ${formattedName}`}
+              aria-label={`Apri la demo live di ${formattedName}`}
             >
-              Live Site
+              Demo live
             </a>
           ) : (
             <button
               type="button"
               className="btn btn-primary flex-1 rounded-md"
               disabled
-              aria-label={`Sito live di ${formattedName} non disponibile`}
+              aria-label={`Demo live di ${formattedName} non disponibile`}
             >
-              Live Site
+              Demo live
             </button>
           )}
           <a
