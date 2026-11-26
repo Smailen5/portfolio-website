@@ -17,7 +17,7 @@ import { SocialIcons, Layout } from '@/components/molecules';
 export const Footer = () => {
   return (
     <Layout classLayout="flex-none pt-14">
-      <footer className="flex w-full flex-row items-center justify-center text-center">
+      <footer className="flex w-full flex-row items-center justify-center text-start">
         <div className="flex w-full flex-col gap-4 p-4 md:flex-row md:justify-between lg:px-0">
           <div className="flex justify-center gap-4 md:order-2">
             <p className="hidden md:block">Powered by</p>
