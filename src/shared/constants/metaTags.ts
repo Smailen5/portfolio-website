@@ -35,6 +35,8 @@ export const BASE_META_TAGS = [
 
 // ========================================
 // Open Graph - Social Media Sharing
+// Applicati a runtime da TanStack Router
+// Tenere i valori identici ai meta statici in index.html
 // ========================================
 export const OPEN_GRAPH_TAGS = [
   {
@@ -65,6 +67,18 @@ export const OPEN_GRAPH_TAGS = [
   {
     property: 'og:image',
     content: `${SITE_INFO.url}/images/immagine-sito.jpeg`,
+  },
+  {
+    property: 'og:image:width',
+    content: '1515',
+  },
+  {
+    property: 'og:image:height',
+    content: '826',
+  },
+  {
+    property: 'og:image:alt',
+    content: 'Anteprima del portfolio di Smailen Vargas, Frontend Developer',
   },
 ] as const;
 
