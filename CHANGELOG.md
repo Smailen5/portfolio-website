@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.3.1](https://github.com/Smailen5/portfolio-website/compare/v6.3.0...v6.3.1) (2026-11-26)
+
+
+### Bug Fixes
+
+* aggiunge meta tags statici in index.html ([#342](https://github.com/Smailen5/portfolio-website/issues/342)) ([8916938](https://github.com/Smailen5/portfolio-website/commit/89169381ae3d90117a8b00297913c4adba71e1cc))
+* allinea il testo a sinistra per tutto il footer ([#340](https://github.com/Smailen5/portfolio-website/issues/340)) ([98897e7](https://github.com/Smailen5/portfolio-website/commit/98897e7421aeef7dd9a51e9c1bc712e1617a015b))
+* promuove a h1 il nome visibile nella hero della home ([#337](https://github.com/Smailen5/portfolio-website/issues/337)) ([4d90014](https://github.com/Smailen5/portfolio-website/commit/4d900147a7bcaae1e416c82273beddf072e2271d))
+* uniforma i testi in italiano e rimuove capitalize dai titoli ([#339](https://github.com/Smailen5/portfolio-website/issues/339)) ([ee72692](https://github.com/Smailen5/portfolio-website/commit/ee726920d539bae9c00e70637bcf884a422c7b22))
+
 ## [6.3.0](https://github.com/Smailen5/portfolio-website/compare/v6.2.0...v6.3.0) (2026-11-16)
 
 
